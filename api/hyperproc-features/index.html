@@ -1,0 +1,6162 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Multi-sensor hyperspectral processing for terrestrial ecosystem research.">
+      
+      
+      
+        <link rel="canonical" href="https://fujiangji.github.io/hyperproc/api/hyperproc-features/">
+      
+      
+        <link rel="prev" href="../hyperproc-align/">
+      
+      
+        <link rel="next" href="../hyperproc-geometry/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logos/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>hyperproc.features - hyperproc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../assets/vendor/leaflet/leaflet.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hyperprocfeatures" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="hyperproc" class="md-header__button md-logo" aria-label="hyperproc" data-md-component="logo">
+      <img class="theme-light" src="../../assets/logos/circular.svg" alt="hyperproc circular logo" width="44" height="44">
+<img class="theme-dark" src="../../assets/logos/circular-dark.svg" alt="hyperproc circular logo, dark theme" width="44" height="44">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            hyperproc
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              hyperproc.features
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FujiangJi/hyperproc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FujiangJi/hyperproc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../background/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Background
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sensors/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Sensors
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../workflows/search/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Workflows
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tutorials/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  API reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../development/architecture/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Developers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/about/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="hyperproc" class="md-nav__button md-logo" aria-label="hyperproc" data-md-component="logo">
+      <img class="theme-light" src="../../assets/logos/circular.svg" alt="hyperproc circular logo" width="44" height="44">
+<img class="theme-dark" src="../../assets/logos/circular-dark.svg" alt="hyperproc circular logo, dark theme" width="44" height="44">
+    </a>
+    hyperproc
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FujiangJi/hyperproc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FujiangJi/hyperproc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Background
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Background
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why hyperproc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/measurements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measurements and product levels
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/data-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data model and geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/decision-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processing decision guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scientific references
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First dataset
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/data-access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Input files and data access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration and external assets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../sensors/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sensors
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sensors/aviris/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVIRIS family
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sensors/neon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NEON AOP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sensors/emit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EMIT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sensors/prisma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRISMA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sensors/enmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EnMAP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sensors/desis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DESIS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sensors/pace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PACE OCI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sensors/tanager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tanager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflows
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workflows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Search and download
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/reading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Read and inspect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/atmosphere/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atmospheric correction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/airborne/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Airborne topographic and BRDF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/satellite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Satellite BRDF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quality flags and masking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/spectral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spectral processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/resampling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spectral resampling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features and indices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/spatial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial grids and alignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/export/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export and provenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance and large scenes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation and uncertainty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tutorials/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/aviris3-walkthrough/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVIRIS-3 walkthrough
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/pace-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PACE tutorial update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/caveats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notebook caveats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notebook library
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notebook library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/aviris3-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVIRIS-3 — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/aviris5-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVIRIS-5 — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/avirisclassic-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVIRIS Classic — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/avirisng-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVIRIS-NG — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/desis-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DESIS — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/desis-window-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DESIS — window tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/emit-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EMIT — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/emit-window-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EMIT — window tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/enmap-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EnMAP — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/enmap-window-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EnMAP — window tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/neon-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NEON AOP — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/pace-window-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PACE OCI — window tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/prisma-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRISMA — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/prisma-window-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRISMA — window tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/search-download-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive search and download — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/tanager-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tanager — tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/tanager-window-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tanager — window tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API reference
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Core
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-align/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.align
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.features
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exported-entry-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exported entry points
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.INDICES" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INDICES
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.FEATURES" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FEATURES
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features._TOKEN" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _TOKEN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features._FUNCS" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _FUNCS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features._evaluate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _evaluate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        index
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.describe_indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        describe_indices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features._argmin_wavelength" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _argmin_wavelength
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.band_depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        band_depth
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-geometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-grid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.grid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.io
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.quality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.registry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-archive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.archive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-archive-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.archive.api
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-archive-cmr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.archive.cmr
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-archive-collections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.archive.collections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-archive-dlr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.archive.dlr
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-archive-interactive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.archive.interactive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-archive-neon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.archive.neon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-archive-results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.archive.results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Readers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Readers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers-_common/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers._common
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers-aviris/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers.aviris
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers-desis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers.desis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers-emit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers.emit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers-enmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers.enmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers-neon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers.neon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers-pace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers.pace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers-prisma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers.prisma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-readers-tanager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.readers.tanager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corrections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Corrections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-correct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.correct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-correct-brdf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.correct.brdf
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-correct-cfactor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.correct.cfactor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-correct-coefficients/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.correct.coefficients
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-correct-kernels/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.correct.kernels
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-correct-masks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.correct.masks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-correct-mcd43/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.correct.mcd43
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-correct-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.correct.pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-correct-topo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.correct.topo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spectral
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spectral
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-spectral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.spectral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-spectral-_smoothspline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.spectral._smoothspline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-spectral-bands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.spectral.bands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-spectral-continuum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.spectral.continuum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-spectral-derivatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.spectral.derivatives
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-spectral-resampling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.spectral.resampling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-spectral-smoothing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.spectral.smoothing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-spectral-srf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.spectral.srf
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atmosphere
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Atmosphere
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-atmos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.atmos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-atmos-_runner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.atmos._runner
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-atmos-aerosols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.atmos.aerosols
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-atmos-correct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.atmos.correct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-atmos-dem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.atmos.dem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-atmos-engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.atmos.engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-atmos-inputs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.atmos.inputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-atmos-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.atmos.process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyperproc-atmos-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc.atmos.setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/adding-reader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a reader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing and reproducibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintaining this site
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About and branding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Citation, license, and contribution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/releases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exported-entry-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exported entry points
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.INDICES" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INDICES
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.FEATURES" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FEATURES
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features._TOKEN" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _TOKEN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features._FUNCS" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _FUNCS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features._evaluate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _evaluate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        index
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.describe_indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        describe_indices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features._argmin_wavelength" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _argmin_wavelength
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperproc.features.band_depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        band_depth
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="hyperprocfeatures"><code>hyperproc.features</code><a class="headerlink" href="#hyperprocfeatures" title="Permanent link">&para;</a></h1>
+<p><span class="status-pill">Source-derived reference</span></p>
+<p>Implementation: <code>hyperproc/features.py</code>. Signatures, defaults, docstrings, and expandable source are extracted statically; the module is not imported or executed. Names beginning with <code>_</code> are implementation details, not a stable public API.</p>
+<p>Use the function signature as the authority for individual parameter defaults and return annotations. Original docstrings sometimes group parameter names or wrap return descriptions across lines; these descriptions are preserved rather than inferred or rewritten.</p>
+<h2 id="exported-entry-points">Exported entry points<a class="headerlink" href="#exported-entry-points" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Importable name</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hyperproc.features.band_at</code></td>
+<td><a href="../hyperproc-spectral-bands/#hyperproc.spectral.bands.band_at"><code>hyperproc.spectral.bands.band_at</code></a></td>
+</tr>
+<tr>
+<td><code>hyperproc.features.index</code></td>
+<td><a href="./#hyperproc.features.index"><code>hyperproc.features.index</code></a></td>
+</tr>
+<tr>
+<td><code>hyperproc.features.INDICES</code></td>
+<td><a href="./#hyperproc.features.INDICES"><code>hyperproc.features.INDICES</code></a></td>
+</tr>
+<tr>
+<td><code>hyperproc.features.band_depth</code></td>
+<td><a href="./#hyperproc.features.band_depth"><code>hyperproc.features.band_depth</code></a></td>
+</tr>
+<tr>
+<td><code>hyperproc.features.FEATURES</code></td>
+<td><a href="./#hyperproc.features.FEATURES"><code>hyperproc.features.FEATURES</code></a></td>
+</tr>
+<tr>
+<td><code>hyperproc.features.describe_indices</code></td>
+<td><a href="./#hyperproc.features.describe_indices"><code>hyperproc.features.describe_indices</code></a></td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+
+    <div class="doc doc-contents first">
+
+        <p>Spectral features: indices and absorption depths.</p>
+<p>What separates these from :mod:<code>hyperproc.spectral</code> is what comes out. Those
+transform a cube into a cube; these reduce each spectrum to one number per
+pixel, so the result is a map.</p>
+<p>Both halves address bands by <strong>wavelength</strong>, never by band number, which is
+what lets one call run unchanged on EMIT at 285 bands, PACE at 122 and AVIRIS
+at 425::</p>
+<div class="highlight"><pre><span></span><code>import hyperproc as hp
+hp.spectral_index(ds, "NDVI")                          # a named index
+hp.spectral_index(ds, "(R800 - R670) / (R800 + R670)") # or write your own
+hp.band_depth(ds, "cellulose")
+print(hp.describe_indices(ds))              # which indices this sensor can compute
+</code></pre></div>
+<p>Fit these on the <strong>unsmoothed</strong> cube: :func:<code>hyperproc.smooth_spectra</code> is
+cosmetic and correlates neighbouring bands, which biases exactly the narrow
+features measured here.</p>
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="hyperproc.features.INDICES" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">INDICES</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'NDVI'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'(R860 - R660) / (R860 + R660)'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'normalised difference vegetation index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Rouse et al. 1974'</span><span class="p">},</span> <span class="s1">'EVI'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'2.5 * (R860 - R660) / (R860 + 6*R660 - 7.5*R480 + 1)'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'enhanced vegetation index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Huete et al. 2002'</span><span class="p">},</span> <span class="s1">'NDWI'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'(R860 - R1240) / (R860 + R1240)'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'normalised difference water index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Gao 1996'</span><span class="p">},</span> <span class="s1">'NDII'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'(R820 - R1650) / (R820 + R1650)'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'normalised difference infrared index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Hunt and Rock 1989'</span><span class="p">},</span> <span class="s1">'PRI'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'(R531 - R570) / (R531 + R570)'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'photochemical reflectance index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Gamon et al. 1992'</span><span class="p">},</span> <span class="s1">'NDNI'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'(log(1/R1510) - log(1/R1680)) / (log(1/R1510) + log(1/R1680))'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'normalised difference nitrogen index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Serrano et al. 2002'</span><span class="p">},</span> <span class="s1">'CAI'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'0.5 * (R2020 + R2220) - R2100'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'cellulose absorption index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Nagler et al. 2003'</span><span class="p">},</span> <span class="s1">'MCARI'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'((R700 - R670) - 0.2 * (R700 - R550)) * (R700 / R670)'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'modified chlorophyll absorption ratio index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Daughtry et al. 2000'</span><span class="p">},</span> <span class="s1">'ARI1'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'1/R550 - 1/R700'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'anthocyanin reflectance index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Gitelson et al. 2001'</span><span class="p">},</span> <span class="s1">'CRI1'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'1/R510 - 1/R550'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'carotenoid reflectance index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Gitelson et al. 2002'</span><span class="p">},</span> <span class="s1">'PSRI'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'(R680 - R500) / R750'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'plant senescence reflectance index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Merzlyak et al. 1999'</span><span class="p">},</span> <span class="s1">'NDSI'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'formula'</span><span class="p">:</span> <span class="s1">'(R550 - R1640) / (R550 + R1640)'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'normalised difference snow index'</span><span class="p">,</span> <span class="s1">'reference'</span><span class="p">:</span> <span class="s1">'Hall et al. 1995'</span><span class="p">}}</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#hyperproc.features.INDICES" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="hyperproc.features.FEATURES" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">FEATURES</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'chlorophyll'</span><span class="p">:</span> <span class="p">(</span><span class="mf">550.0</span><span class="p">,</span> <span class="mf">750.0</span><span class="p">),</span> <span class="s1">'water_970'</span><span class="p">:</span> <span class="p">(</span><span class="mf">900.0</span><span class="p">,</span> <span class="mf">1050.0</span><span class="p">),</span> <span class="s1">'water_1200'</span><span class="p">:</span> <span class="p">(</span><span class="mf">1100.0</span><span class="p">,</span> <span class="mf">1300.0</span><span class="p">),</span> <span class="s1">'lignin_1730'</span><span class="p">:</span> <span class="p">(</span><span class="mf">1650.0</span><span class="p">,</span> <span class="mf">1850.0</span><span class="p">),</span> <span class="s1">'cellulose'</span><span class="p">:</span> <span class="p">(</span><span class="mf">2000.0</span><span class="p">,</span> <span class="mf">2300.0</span><span class="p">),</span> <span class="s1">'clay_2200'</span><span class="p">:</span> <span class="p">(</span><span class="mf">2100.0</span><span class="p">,</span> <span class="mf">2300.0</span><span class="p">)}</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#hyperproc.features.FEATURES" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="hyperproc.features._TOKEN" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">_TOKEN</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">'</span><span class="se">\\</span><span class="s1">bR(</span><span class="se">\\</span><span class="s1">d+(?:</span><span class="se">\\</span><span class="s1">.</span><span class="se">\\</span><span class="s1">d+)?)</span><span class="se">\\</span><span class="s1">b'</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#hyperproc.features._TOKEN" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="hyperproc.features._FUNCS" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">_FUNCS</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'log'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="s1">'log10'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">,</span> <span class="s1">'sqrt'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">,</span> <span class="s1">'exp'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">,</span> <span class="s1">'abs'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">}</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#hyperproc.features._FUNCS" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="hyperproc.features._evaluate" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">_evaluate</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">names</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span></code>
+
+<a href="#hyperproc.features._evaluate" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Evaluate a whitelisted arithmetic AST. No attribute access, no calls but _FUNCS.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>hyperproc/features.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-0-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-0-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-0-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-0-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-0-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-0-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-0-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-0-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-0-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-0-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-0-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-0-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-0-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-0-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-0-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-0-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-0-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-0-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-0-100">100</a></span>
+<span class="normal"><a href="#__codelineno-0-101">101</a></span>
+<span class="normal"><a href="#__codelineno-0-102">102</a></span>
+<span class="normal"><a href="#__codelineno-0-103">103</a></span>
+<span class="normal"><a href="#__codelineno-0-104">104</a></span>
+<span class="normal"><a href="#__codelineno-0-105">105</a></span>
+<span class="normal"><a href="#__codelineno-0-106">106</a></span>
+<span class="normal"><a href="#__codelineno-0-107">107</a></span>
+<span class="normal"><a href="#__codelineno-0-108">108</a></span>
+<span class="normal"><a href="#__codelineno-0-109">109</a></span>
+<span class="normal"><a href="#__codelineno-0-110">110</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-81" name="__codelineno-0-81"></a><span class="k">def</span><span class="w"> </span><span class="nf">_evaluate</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">names</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
+<a id="__codelineno-0-82" name="__codelineno-0-82"></a><span class="w">    </span><span class="sd">"""Evaluate a whitelisted arithmetic AST. No attribute access, no calls but _FUNCS."""</span>
+<a id="__codelineno-0-83" name="__codelineno-0-83"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">Expression</span><span class="p">):</span>
+<a id="__codelineno-0-84" name="__codelineno-0-84"></a>        <span class="k">return</span> <span class="n">_evaluate</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">body</span><span class="p">,</span> <span class="n">names</span><span class="p">)</span>
+<a id="__codelineno-0-85" name="__codelineno-0-85"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">Constant</span><span class="p">):</span>
+<a id="__codelineno-0-86" name="__codelineno-0-86"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+<a id="__codelineno-0-87" name="__codelineno-0-87"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"only numbers are allowed in a formula, got </span><span class="si">{</span><span class="n">node</span><span class="o">.</span><span class="n">value</span><span class="si">!r}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-0-88" name="__codelineno-0-88"></a>        <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="n">value</span>
+<a id="__codelineno-0-89" name="__codelineno-0-89"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">):</span>
+<a id="__codelineno-0-90" name="__codelineno-0-90"></a>        <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
+<a id="__codelineno-0-91" name="__codelineno-0-91"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"unknown name </span><span class="si">{</span><span class="n">node</span><span class="o">.</span><span class="n">id</span><span class="si">!r}</span><span class="s2"> in the formula; bands are written R&lt;wavelength&gt;"</span><span class="p">)</span>
+<a id="__codelineno-0-92" name="__codelineno-0-92"></a>        <span class="k">return</span> <span class="n">names</span><span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">id</span><span class="p">]</span>
+<a id="__codelineno-0-93" name="__codelineno-0-93"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">UnaryOp</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">op</span><span class="p">,</span> <span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">UAdd</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">USub</span><span class="p">)):</span>
+<a id="__codelineno-0-94" name="__codelineno-0-94"></a>        <span class="n">v</span> <span class="o">=</span> <span class="n">_evaluate</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">operand</span><span class="p">,</span> <span class="n">names</span><span class="p">)</span>
+<a id="__codelineno-0-95" name="__codelineno-0-95"></a>        <span class="k">return</span> <span class="n">v</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">op</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">UAdd</span><span class="p">)</span> <span class="k">else</span> <span class="o">-</span><span class="n">v</span>
+<a id="__codelineno-0-96" name="__codelineno-0-96"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">):</span>
+<a id="__codelineno-0-97" name="__codelineno-0-97"></a>        <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">_evaluate</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">left</span><span class="p">,</span> <span class="n">names</span><span class="p">),</span> <span class="n">_evaluate</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">right</span><span class="p">,</span> <span class="n">names</span><span class="p">)</span>
+<a id="__codelineno-0-98" name="__codelineno-0-98"></a>        <span class="k">for</span> <span class="n">kind</span><span class="p">,</span> <span class="n">fn</span> <span class="ow">in</span> <span class="p">((</span><span class="n">ast</span><span class="o">.</span><span class="n">Add</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">),</span> <span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">Sub</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">),</span>
+<a id="__codelineno-0-99" name="__codelineno-0-99"></a>                         <span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">Mult</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">),</span> <span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">Div</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">),</span>
+<a id="__codelineno-0-100" name="__codelineno-0-100"></a>                         <span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">Pow</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">**</span> <span class="n">b</span><span class="p">)):</span>
+<a id="__codelineno-0-101" name="__codelineno-0-101"></a>            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">op</span><span class="p">,</span> <span class="n">kind</span><span class="p">):</span>
+<a id="__codelineno-0-102" name="__codelineno-0-102"></a>                <span class="k">return</span> <span class="n">fn</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span>
+<a id="__codelineno-0-103" name="__codelineno-0-103"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"operator </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">op</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2"> is not allowed in a formula"</span><span class="p">)</span>
+<a id="__codelineno-0-104" name="__codelineno-0-104"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">Call</span><span class="p">):</span>
+<a id="__codelineno-0-105" name="__codelineno-0-105"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">func</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">)</span> <span class="ow">or</span> <span class="n">node</span><span class="o">.</span><span class="n">func</span><span class="o">.</span><span class="n">id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">_FUNCS</span><span class="p">:</span>
+<a id="__codelineno-0-106" name="__codelineno-0-106"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"only </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">_FUNCS</span><span class="p">)</span><span class="si">}</span><span class="s2"> may be called in a formula"</span><span class="p">)</span>
+<a id="__codelineno-0-107" name="__codelineno-0-107"></a>        <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">keywords</span><span class="p">:</span>
+<a id="__codelineno-0-108" name="__codelineno-0-108"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"keyword arguments are not allowed in a formula"</span><span class="p">)</span>
+<a id="__codelineno-0-109" name="__codelineno-0-109"></a>        <span class="k">return</span> <span class="n">_FUNCS</span><span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">func</span><span class="o">.</span><span class="n">id</span><span class="p">](</span><span class="o">*</span><span class="p">[</span><span class="n">_evaluate</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">names</span><span class="p">)</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">args</span><span class="p">])</span>
+<a id="__codelineno-0-110" name="__codelineno-0-110"></a>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">node</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2"> is not allowed in a formula"</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="hyperproc.features.index" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">index</span><span class="p">(</span><span class="n">ds</span><span class="p">:</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span><span class="p">,</span> <span class="n">formula</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">var</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">TOLERANCE</span><span class="p">,</span> <span class="n">good_only</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span></code>
+
+<a href="#hyperproc.features.index" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Evaluate a spectral index written over wavelengths.</p>
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">PARAMETER</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>ds</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>dataset with a wavelength cube.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="xarray.Dataset">Dataset</span></code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>formula</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>a name from :data:<code>INDICES</code> (<code>"NDVI"</code>) or an expression in
+which <code>R&lt;wavelength&gt;</code> means the band nearest that wavelength in
+nm, for example <code>"(R800 - R670) / (R800 + R670)"</code>. Arithmetic,
+and the functions log, log10, sqrt, exp and abs, are allowed;
+nothing else is, so a formula from a paper is safe to paste.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="str">str</span></code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>var</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>variable name; the main cube by default.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="str">str</span> | None</code>
+                  </span>
+                  <span class="doc-param-default">
+                    <b>DEFAULT:</b>
+                      <code>None</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>tolerance</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>how far each band may sit from its requested wavelength.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="float">float</span></code>
+                  </span>
+                  <span class="doc-param-default">
+                    <b>DEFAULT:</b>
+                      <code><a class="autorefs autorefs-internal" title="            TOLERANCE = 20.0
+
+  
+      module-attribute
+   (hyperproc.spectral.bands.TOLERANCE)" href="../hyperproc-spectral-bands/#hyperproc.spectral.bands.TOLERANCE">TOLERANCE</a></code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>good_only</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>ignore bands flagged unusable.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="bool">bool</span></code>
+                  </span>
+                  <span class="doc-param-default">
+                    <b>DEFAULT:</b>
+                      <code>True</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>name</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>name for the result; the index name or <code>"index"</code>.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="str">str</span> | None</code>
+                  </span>
+                  <span class="doc-param-default">
+                    <b>DEFAULT:</b>
+                      <code>None</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">RETURNS</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <span class="doc-returns-annotation">
+                    <code><span title="xarray.DataArray">DataArray</span></code>
+                </span>
+            </td>
+            <td class="doc-returns-details">
+              <div class="doc-md-description">
+                <p>A lazy 2-D DataArray recording the formula and the wavelengths it</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <span class="doc-returns-annotation">
+                    <code><span title="xarray.DataArray">DataArray</span></code>
+                </span>
+            </td>
+            <td class="doc-returns-details">
+              <div class="doc-md-description">
+                <p>actually used in <code>attrs</code>.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">RAISES</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+              <span class="doc-raises-annotation">
+                  <code><span title="ValueError">ValueError</span></code>
+              </span>
+            </td>
+            <td class="doc-raises-details">
+              <div class="doc-md-description">
+                <p>the formula names no bands, uses something not allowed, or
+asks for a wavelength this sensor does not cover.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>hyperproc/features.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-113">113</a></span>
+<span class="normal"><a href="#__codelineno-0-114">114</a></span>
+<span class="normal"><a href="#__codelineno-0-115">115</a></span>
+<span class="normal"><a href="#__codelineno-0-116">116</a></span>
+<span class="normal"><a href="#__codelineno-0-117">117</a></span>
+<span class="normal"><a href="#__codelineno-0-118">118</a></span>
+<span class="normal"><a href="#__codelineno-0-119">119</a></span>
+<span class="normal"><a href="#__codelineno-0-120">120</a></span>
+<span class="normal"><a href="#__codelineno-0-121">121</a></span>
+<span class="normal"><a href="#__codelineno-0-122">122</a></span>
+<span class="normal"><a href="#__codelineno-0-123">123</a></span>
+<span class="normal"><a href="#__codelineno-0-124">124</a></span>
+<span class="normal"><a href="#__codelineno-0-125">125</a></span>
+<span class="normal"><a href="#__codelineno-0-126">126</a></span>
+<span class="normal"><a href="#__codelineno-0-127">127</a></span>
+<span class="normal"><a href="#__codelineno-0-128">128</a></span>
+<span class="normal"><a href="#__codelineno-0-129">129</a></span>
+<span class="normal"><a href="#__codelineno-0-130">130</a></span>
+<span class="normal"><a href="#__codelineno-0-131">131</a></span>
+<span class="normal"><a href="#__codelineno-0-132">132</a></span>
+<span class="normal"><a href="#__codelineno-0-133">133</a></span>
+<span class="normal"><a href="#__codelineno-0-134">134</a></span>
+<span class="normal"><a href="#__codelineno-0-135">135</a></span>
+<span class="normal"><a href="#__codelineno-0-136">136</a></span>
+<span class="normal"><a href="#__codelineno-0-137">137</a></span>
+<span class="normal"><a href="#__codelineno-0-138">138</a></span>
+<span class="normal"><a href="#__codelineno-0-139">139</a></span>
+<span class="normal"><a href="#__codelineno-0-140">140</a></span>
+<span class="normal"><a href="#__codelineno-0-141">141</a></span>
+<span class="normal"><a href="#__codelineno-0-142">142</a></span>
+<span class="normal"><a href="#__codelineno-0-143">143</a></span>
+<span class="normal"><a href="#__codelineno-0-144">144</a></span>
+<span class="normal"><a href="#__codelineno-0-145">145</a></span>
+<span class="normal"><a href="#__codelineno-0-146">146</a></span>
+<span class="normal"><a href="#__codelineno-0-147">147</a></span>
+<span class="normal"><a href="#__codelineno-0-148">148</a></span>
+<span class="normal"><a href="#__codelineno-0-149">149</a></span>
+<span class="normal"><a href="#__codelineno-0-150">150</a></span>
+<span class="normal"><a href="#__codelineno-0-151">151</a></span>
+<span class="normal"><a href="#__codelineno-0-152">152</a></span>
+<span class="normal"><a href="#__codelineno-0-153">153</a></span>
+<span class="normal"><a href="#__codelineno-0-154">154</a></span>
+<span class="normal"><a href="#__codelineno-0-155">155</a></span>
+<span class="normal"><a href="#__codelineno-0-156">156</a></span>
+<span class="normal"><a href="#__codelineno-0-157">157</a></span>
+<span class="normal"><a href="#__codelineno-0-158">158</a></span>
+<span class="normal"><a href="#__codelineno-0-159">159</a></span>
+<span class="normal"><a href="#__codelineno-0-160">160</a></span>
+<span class="normal"><a href="#__codelineno-0-161">161</a></span>
+<span class="normal"><a href="#__codelineno-0-162">162</a></span>
+<span class="normal"><a href="#__codelineno-0-163">163</a></span>
+<span class="normal"><a href="#__codelineno-0-164">164</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-113" name="__codelineno-0-113"></a><span class="k">def</span><span class="w"> </span><span class="nf">index</span><span class="p">(</span><span class="n">ds</span><span class="p">:</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span><span class="p">,</span> <span class="n">formula</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">var</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">TOLERANCE</span><span class="p">,</span>
+<a id="__codelineno-0-114" name="__codelineno-0-114"></a>          <span class="n">good_only</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">:</span>
+<a id="__codelineno-0-115" name="__codelineno-0-115"></a><span class="w">    </span><span class="sd">"""Evaluate a spectral index written over wavelengths.</span>
+<a id="__codelineno-0-116" name="__codelineno-0-116"></a>
+<a id="__codelineno-0-117" name="__codelineno-0-117"></a><span class="sd">    Args:</span>
+<a id="__codelineno-0-118" name="__codelineno-0-118"></a><span class="sd">        ds: dataset with a wavelength cube.</span>
+<a id="__codelineno-0-119" name="__codelineno-0-119"></a><span class="sd">        formula: a name from :data:`INDICES` (``"NDVI"``) or an expression in</span>
+<a id="__codelineno-0-120" name="__codelineno-0-120"></a><span class="sd">            which ``R&lt;wavelength&gt;`` means the band nearest that wavelength in</span>
+<a id="__codelineno-0-121" name="__codelineno-0-121"></a><span class="sd">            nm, for example ``"(R800 - R670) / (R800 + R670)"``. Arithmetic,</span>
+<a id="__codelineno-0-122" name="__codelineno-0-122"></a><span class="sd">            and the functions log, log10, sqrt, exp and abs, are allowed;</span>
+<a id="__codelineno-0-123" name="__codelineno-0-123"></a><span class="sd">            nothing else is, so a formula from a paper is safe to paste.</span>
+<a id="__codelineno-0-124" name="__codelineno-0-124"></a><span class="sd">        var: variable name; the main cube by default.</span>
+<a id="__codelineno-0-125" name="__codelineno-0-125"></a><span class="sd">        tolerance: how far each band may sit from its requested wavelength.</span>
+<a id="__codelineno-0-126" name="__codelineno-0-126"></a><span class="sd">        good_only: ignore bands flagged unusable.</span>
+<a id="__codelineno-0-127" name="__codelineno-0-127"></a><span class="sd">        name: name for the result; the index name or ``"index"``.</span>
+<a id="__codelineno-0-128" name="__codelineno-0-128"></a>
+<a id="__codelineno-0-129" name="__codelineno-0-129"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-0-130" name="__codelineno-0-130"></a><span class="sd">        A lazy 2-D DataArray recording the formula and the wavelengths it</span>
+<a id="__codelineno-0-131" name="__codelineno-0-131"></a><span class="sd">        actually used in ``attrs``.</span>
+<a id="__codelineno-0-132" name="__codelineno-0-132"></a>
+<a id="__codelineno-0-133" name="__codelineno-0-133"></a><span class="sd">    Raises:</span>
+<a id="__codelineno-0-134" name="__codelineno-0-134"></a><span class="sd">        ValueError: the formula names no bands, uses something not allowed, or</span>
+<a id="__codelineno-0-135" name="__codelineno-0-135"></a><span class="sd">            asks for a wavelength this sensor does not cover.</span>
+<a id="__codelineno-0-136" name="__codelineno-0-136"></a><span class="sd">    """</span>
+<a id="__codelineno-0-137" name="__codelineno-0-137"></a>    <span class="n">key</span> <span class="o">=</span> <span class="n">formula</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<a id="__codelineno-0-138" name="__codelineno-0-138"></a>    <span class="n">meta</span> <span class="o">=</span> <span class="n">INDICES</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<a id="__codelineno-0-139" name="__codelineno-0-139"></a>    <span class="n">expr</span> <span class="o">=</span> <span class="n">meta</span><span class="p">[</span><span class="s2">"formula"</span><span class="p">]</span> <span class="k">if</span> <span class="n">meta</span> <span class="k">else</span> <span class="n">formula</span>
+<a id="__codelineno-0-140" name="__codelineno-0-140"></a>    <span class="n">name</span> <span class="o">=</span> <span class="n">name</span> <span class="ow">or</span> <span class="p">(</span><span class="n">key</span> <span class="k">if</span> <span class="n">meta</span> <span class="k">else</span> <span class="s2">"index"</span><span class="p">)</span>
+<a id="__codelineno-0-141" name="__codelineno-0-141"></a>
+<a id="__codelineno-0-142" name="__codelineno-0-142"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">_TOKEN</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">expr</span><span class="p">):</span>
+<a id="__codelineno-0-143" name="__codelineno-0-143"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"the formula names no bands; write them as R&lt;wavelength&gt;, e.g. R860. Got: </span><span class="si">{</span><span class="n">expr</span><span class="si">!r}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-0-144" name="__codelineno-0-144"></a>    <span class="n">bands</span><span class="p">,</span> <span class="n">used</span> <span class="o">=</span> <span class="p">{},</span> <span class="p">{}</span>
+<a id="__codelineno-0-145" name="__codelineno-0-145"></a>    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">_TOKEN</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="n">expr</span><span class="p">):</span>          <span class="c1"># the token text is the variable name, kept verbatim</span>
+<a id="__codelineno-0-146" name="__codelineno-0-146"></a>        <span class="n">token</span><span class="p">,</span> <span class="n">wl</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<a id="__codelineno-0-147" name="__codelineno-0-147"></a>        <span class="k">if</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">bands</span><span class="p">:</span>
+<a id="__codelineno-0-148" name="__codelineno-0-148"></a>            <span class="k">continue</span>
+<a id="__codelineno-0-149" name="__codelineno-0-149"></a>        <span class="n">da</span> <span class="o">=</span> <span class="n">band_at</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">wl</span><span class="p">,</span> <span class="n">var</span><span class="o">=</span><span class="n">var</span><span class="p">,</span> <span class="n">tolerance</span><span class="o">=</span><span class="n">tolerance</span><span class="p">,</span> <span class="n">good_only</span><span class="o">=</span><span class="n">good_only</span><span class="p">)</span>
+<a id="__codelineno-0-150" name="__codelineno-0-150"></a>        <span class="n">bands</span><span class="p">[</span><span class="n">token</span><span class="p">]</span> <span class="o">=</span> <span class="n">da</span>
+<a id="__codelineno-0-151" name="__codelineno-0-151"></a>        <span class="n">used</span><span class="p">[</span><span class="n">token</span><span class="p">]</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s2">"wavelength_used"</span><span class="p">]</span>
+<a id="__codelineno-0-152" name="__codelineno-0-152"></a>
+<a id="__codelineno-0-153" name="__codelineno-0-153"></a>    <span class="n">tree</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"eval"</span><span class="p">)</span>
+<a id="__codelineno-0-154" name="__codelineno-0-154"></a>    <span class="k">with</span> <span class="n">np</span><span class="o">.</span><span class="n">errstate</span><span class="p">(</span><span class="n">divide</span><span class="o">=</span><span class="s2">"ignore"</span><span class="p">,</span> <span class="n">invalid</span><span class="o">=</span><span class="s2">"ignore"</span><span class="p">):</span>
+<a id="__codelineno-0-155" name="__codelineno-0-155"></a>        <span class="n">out</span> <span class="o">=</span> <span class="n">_evaluate</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">bands</span><span class="p">)</span>
+<a id="__codelineno-0-156" name="__codelineno-0-156"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">):</span>
+<a id="__codelineno-0-157" name="__codelineno-0-157"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"the formula produced a constant, not a map; it must reference at least one band"</span><span class="p">)</span>
+<a id="__codelineno-0-158" name="__codelineno-0-158"></a>    <span class="n">out</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<a id="__codelineno-0-159" name="__codelineno-0-159"></a>    <span class="n">out</span><span class="o">.</span><span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"long_name"</span><span class="p">:</span> <span class="p">(</span><span class="n">meta</span> <span class="ow">or</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"name"</span><span class="p">,</span> <span class="n">name</span><span class="p">),</span> <span class="s2">"formula"</span><span class="p">:</span> <span class="n">expr</span><span class="p">,</span>
+<a id="__codelineno-0-160" name="__codelineno-0-160"></a>                 <span class="s2">"bands_used"</span><span class="p">:</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">=</span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s2">"</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">used</span><span class="o">.</span><span class="n">items</span><span class="p">())),</span>
+<a id="__codelineno-0-161" name="__codelineno-0-161"></a>                 <span class="s2">"units"</span><span class="p">:</span> <span class="s2">"unitless"</span><span class="p">}</span>
+<a id="__codelineno-0-162" name="__codelineno-0-162"></a>    <span class="k">if</span> <span class="n">meta</span> <span class="ow">and</span> <span class="n">meta</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"reference"</span><span class="p">):</span>
+<a id="__codelineno-0-163" name="__codelineno-0-163"></a>        <span class="n">out</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s2">"reference"</span><span class="p">]</span> <span class="o">=</span> <span class="n">meta</span><span class="p">[</span><span class="s2">"reference"</span><span class="p">]</span>
+<a id="__codelineno-0-164" name="__codelineno-0-164"></a>    <span class="k">return</span> <span class="n">out</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="hyperproc.features.describe_indices" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">describe_indices</span><span class="p">(</span><span class="n">ds</span><span class="p">:</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">TOLERANCE</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+
+<a href="#hyperproc.features.describe_indices" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The named indices, and which ones a given sensor can actually compute.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>hyperproc/features.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-167">167</a></span>
+<span class="normal"><a href="#__codelineno-0-168">168</a></span>
+<span class="normal"><a href="#__codelineno-0-169">169</a></span>
+<span class="normal"><a href="#__codelineno-0-170">170</a></span>
+<span class="normal"><a href="#__codelineno-0-171">171</a></span>
+<span class="normal"><a href="#__codelineno-0-172">172</a></span>
+<span class="normal"><a href="#__codelineno-0-173">173</a></span>
+<span class="normal"><a href="#__codelineno-0-174">174</a></span>
+<span class="normal"><a href="#__codelineno-0-175">175</a></span>
+<span class="normal"><a href="#__codelineno-0-176">176</a></span>
+<span class="normal"><a href="#__codelineno-0-177">177</a></span>
+<span class="normal"><a href="#__codelineno-0-178">178</a></span>
+<span class="normal"><a href="#__codelineno-0-179">179</a></span>
+<span class="normal"><a href="#__codelineno-0-180">180</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-167" name="__codelineno-0-167"></a><span class="k">def</span><span class="w"> </span><span class="nf">describe_indices</span><span class="p">(</span><span class="n">ds</span><span class="p">:</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">TOLERANCE</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<a id="__codelineno-0-168" name="__codelineno-0-168"></a><span class="w">    </span><span class="sd">"""The named indices, and which ones a given sensor can actually compute."""</span>
+<a id="__codelineno-0-169" name="__codelineno-0-169"></a>    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="s1">'index'</span><span class="si">:</span><span class="s2">7s</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">'status'</span><span class="si">:</span><span class="s2">10s</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">'formula'</span><span class="si">:</span><span class="s2">58s</span><span class="si">}</span><span class="s2"> reference"</span><span class="p">,</span>
+<a id="__codelineno-0-170" name="__codelineno-0-170"></a>             <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="s1">'-'</span><span class="o">*</span><span class="mi">7</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">'-'</span><span class="o">*</span><span class="mi">10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">'-'</span><span class="o">*</span><span class="mi">58</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">'-'</span><span class="o">*</span><span class="mi">24</span><span class="si">}</span><span class="s2">"</span><span class="p">]</span>
+<a id="__codelineno-0-171" name="__codelineno-0-171"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">meta</span> <span class="ow">in</span> <span class="n">INDICES</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a id="__codelineno-0-172" name="__codelineno-0-172"></a>        <span class="n">status</span> <span class="o">=</span> <span class="s2">""</span>
+<a id="__codelineno-0-173" name="__codelineno-0-173"></a>        <span class="k">if</span> <span class="n">ds</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-174" name="__codelineno-0-174"></a>            <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-175" name="__codelineno-0-175"></a>                <span class="n">index</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">tolerance</span><span class="o">=</span><span class="n">tolerance</span><span class="p">)</span>
+<a id="__codelineno-0-176" name="__codelineno-0-176"></a>                <span class="n">status</span> <span class="o">=</span> <span class="s2">"available"</span>
+<a id="__codelineno-0-177" name="__codelineno-0-177"></a>            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+<a id="__codelineno-0-178" name="__codelineno-0-178"></a>                <span class="n">status</span> <span class="o">=</span> <span class="s2">"no bands"</span>
+<a id="__codelineno-0-179" name="__codelineno-0-179"></a>        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">key</span><span class="si">:</span><span class="s2">7s</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">status</span><span class="si">:</span><span class="s2">10s</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">meta</span><span class="p">[</span><span class="s1">'formula'</span><span class="p">]</span><span class="si">:</span><span class="s2">58s</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">meta</span><span class="p">[</span><span class="s1">'reference'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-0-180" name="__codelineno-0-180"></a>    <span class="k">return</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="hyperproc.features._argmin_wavelength" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">_argmin_wavelength</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">wl</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span></code>
+
+<a href="#hyperproc.features._argmin_wavelength" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Wavelength of the smallest value in each spectrum, NaN where all are missing.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>hyperproc/features.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-187">187</a></span>
+<span class="normal"><a href="#__codelineno-0-188">188</a></span>
+<span class="normal"><a href="#__codelineno-0-189">189</a></span>
+<span class="normal"><a href="#__codelineno-0-190">190</a></span>
+<span class="normal"><a href="#__codelineno-0-191">191</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-187" name="__codelineno-0-187"></a><span class="k">def</span><span class="w"> </span><span class="nf">_argmin_wavelength</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">wl</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<a id="__codelineno-0-188" name="__codelineno-0-188"></a><span class="w">    </span><span class="sd">"""Wavelength of the smallest value in each spectrum, NaN where all are missing."""</span>
+<a id="__codelineno-0-189" name="__codelineno-0-189"></a>    <span class="n">filled</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">a</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<a id="__codelineno-0-190" name="__codelineno-0-190"></a>    <span class="n">out</span> <span class="o">=</span> <span class="n">wl</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">filled</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">"float32"</span><span class="p">)</span>
+<a id="__codelineno-0-191" name="__codelineno-0-191"></a>    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">),</span> <span class="n">out</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">"float32"</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="hyperproc.features.band_depth" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">band_depth</span><span class="p">(</span><span class="n">ds</span><span class="p">:</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span><span class="p">,</span> <span class="n">feature</span><span class="p">,</span> <span class="n">var</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">good_only</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span></code>
+
+<a href="#hyperproc.features.band_depth" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Depth, position and area of an absorption feature.</p>
+<p>The continuum is the upper hull fitted inside the feature window, so the
+depth is measured against the shoulders rather than against an absolute
+reflectance, which is what makes it comparable between scenes.</p>
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">PARAMETER</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>ds</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>dataset with a wavelength cube.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="xarray.Dataset">Dataset</span></code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>feature</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>a name from :data:<code>FEATURES</code> (<code>"cellulose"</code>) or a
+<code>(lo, hi)</code> window in nm.</p>
+              </div>
+              <p>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>var</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>variable name; the main cube by default.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="str">str</span> | None</code>
+                  </span>
+                  <span class="doc-param-default">
+                    <b>DEFAULT:</b>
+                      <code>None</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>good_only</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>fit only within runs of usable bands.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="bool">bool</span></code>
+                  </span>
+                  <span class="doc-param-default">
+                    <b>DEFAULT:</b>
+                      <code>True</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">RETURNS</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <span class="doc-returns-annotation">
+                    <code><span title="xarray.Dataset">Dataset</span></code>
+                </span>
+            </td>
+            <td class="doc-returns-details">
+              <div class="doc-md-description">
+                <p>A Dataset with <code>depth</code> (1 - the minimum of the continuum-removed</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <span class="doc-returns-annotation">
+                    <code><span title="xarray.Dataset">Dataset</span></code>
+                </span>
+            </td>
+            <td class="doc-returns-details">
+              <div class="doc-md-description">
+                <p>spectrum), <code>position</code> (wavelength of that minimum, nm) and <code>area</code></p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <span class="doc-returns-annotation">
+                    <code><span title="xarray.Dataset">Dataset</span></code>
+                </span>
+            </td>
+            <td class="doc-returns-details">
+              <div class="doc-md-description">
+                <p>(integral of 1 - CR over the window, nm).</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>hyperproc/features.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-194">194</a></span>
+<span class="normal"><a href="#__codelineno-0-195">195</a></span>
+<span class="normal"><a href="#__codelineno-0-196">196</a></span>
+<span class="normal"><a href="#__codelineno-0-197">197</a></span>
+<span class="normal"><a href="#__codelineno-0-198">198</a></span>
+<span class="normal"><a href="#__codelineno-0-199">199</a></span>
+<span class="normal"><a href="#__codelineno-0-200">200</a></span>
+<span class="normal"><a href="#__codelineno-0-201">201</a></span>
+<span class="normal"><a href="#__codelineno-0-202">202</a></span>
+<span class="normal"><a href="#__codelineno-0-203">203</a></span>
+<span class="normal"><a href="#__codelineno-0-204">204</a></span>
+<span class="normal"><a href="#__codelineno-0-205">205</a></span>
+<span class="normal"><a href="#__codelineno-0-206">206</a></span>
+<span class="normal"><a href="#__codelineno-0-207">207</a></span>
+<span class="normal"><a href="#__codelineno-0-208">208</a></span>
+<span class="normal"><a href="#__codelineno-0-209">209</a></span>
+<span class="normal"><a href="#__codelineno-0-210">210</a></span>
+<span class="normal"><a href="#__codelineno-0-211">211</a></span>
+<span class="normal"><a href="#__codelineno-0-212">212</a></span>
+<span class="normal"><a href="#__codelineno-0-213">213</a></span>
+<span class="normal"><a href="#__codelineno-0-214">214</a></span>
+<span class="normal"><a href="#__codelineno-0-215">215</a></span>
+<span class="normal"><a href="#__codelineno-0-216">216</a></span>
+<span class="normal"><a href="#__codelineno-0-217">217</a></span>
+<span class="normal"><a href="#__codelineno-0-218">218</a></span>
+<span class="normal"><a href="#__codelineno-0-219">219</a></span>
+<span class="normal"><a href="#__codelineno-0-220">220</a></span>
+<span class="normal"><a href="#__codelineno-0-221">221</a></span>
+<span class="normal"><a href="#__codelineno-0-222">222</a></span>
+<span class="normal"><a href="#__codelineno-0-223">223</a></span>
+<span class="normal"><a href="#__codelineno-0-224">224</a></span>
+<span class="normal"><a href="#__codelineno-0-225">225</a></span>
+<span class="normal"><a href="#__codelineno-0-226">226</a></span>
+<span class="normal"><a href="#__codelineno-0-227">227</a></span>
+<span class="normal"><a href="#__codelineno-0-228">228</a></span>
+<span class="normal"><a href="#__codelineno-0-229">229</a></span>
+<span class="normal"><a href="#__codelineno-0-230">230</a></span>
+<span class="normal"><a href="#__codelineno-0-231">231</a></span>
+<span class="normal"><a href="#__codelineno-0-232">232</a></span>
+<span class="normal"><a href="#__codelineno-0-233">233</a></span>
+<span class="normal"><a href="#__codelineno-0-234">234</a></span>
+<span class="normal"><a href="#__codelineno-0-235">235</a></span>
+<span class="normal"><a href="#__codelineno-0-236">236</a></span>
+<span class="normal"><a href="#__codelineno-0-237">237</a></span>
+<span class="normal"><a href="#__codelineno-0-238">238</a></span>
+<span class="normal"><a href="#__codelineno-0-239">239</a></span>
+<span class="normal"><a href="#__codelineno-0-240">240</a></span>
+<span class="normal"><a href="#__codelineno-0-241">241</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-194" name="__codelineno-0-194"></a><span class="k">def</span><span class="w"> </span><span class="nf">band_depth</span><span class="p">(</span><span class="n">ds</span><span class="p">:</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span><span class="p">,</span> <span class="n">feature</span><span class="p">,</span> <span class="n">var</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">good_only</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span><span class="p">:</span>
+<a id="__codelineno-0-195" name="__codelineno-0-195"></a><span class="w">    </span><span class="sd">"""Depth, position and area of an absorption feature.</span>
+<a id="__codelineno-0-196" name="__codelineno-0-196"></a>
+<a id="__codelineno-0-197" name="__codelineno-0-197"></a><span class="sd">    The continuum is the upper hull fitted inside the feature window, so the</span>
+<a id="__codelineno-0-198" name="__codelineno-0-198"></a><span class="sd">    depth is measured against the shoulders rather than against an absolute</span>
+<a id="__codelineno-0-199" name="__codelineno-0-199"></a><span class="sd">    reflectance, which is what makes it comparable between scenes.</span>
+<a id="__codelineno-0-200" name="__codelineno-0-200"></a>
+<a id="__codelineno-0-201" name="__codelineno-0-201"></a><span class="sd">    Args:</span>
+<a id="__codelineno-0-202" name="__codelineno-0-202"></a><span class="sd">        ds: dataset with a wavelength cube.</span>
+<a id="__codelineno-0-203" name="__codelineno-0-203"></a><span class="sd">        feature: a name from :data:`FEATURES` (``"cellulose"``) or a</span>
+<a id="__codelineno-0-204" name="__codelineno-0-204"></a><span class="sd">            ``(lo, hi)`` window in nm.</span>
+<a id="__codelineno-0-205" name="__codelineno-0-205"></a><span class="sd">        var: variable name; the main cube by default.</span>
+<a id="__codelineno-0-206" name="__codelineno-0-206"></a><span class="sd">        good_only: fit only within runs of usable bands.</span>
+<a id="__codelineno-0-207" name="__codelineno-0-207"></a>
+<a id="__codelineno-0-208" name="__codelineno-0-208"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-0-209" name="__codelineno-0-209"></a><span class="sd">        A Dataset with ``depth`` (1 - the minimum of the continuum-removed</span>
+<a id="__codelineno-0-210" name="__codelineno-0-210"></a><span class="sd">        spectrum), ``position`` (wavelength of that minimum, nm) and ``area``</span>
+<a id="__codelineno-0-211" name="__codelineno-0-211"></a><span class="sd">        (integral of 1 - CR over the window, nm).</span>
+<a id="__codelineno-0-212" name="__codelineno-0-212"></a><span class="sd">    """</span>
+<a id="__codelineno-0-213" name="__codelineno-0-213"></a>    <span class="n">var</span> <span class="o">=</span> <span class="n">var</span> <span class="ow">or</span> <span class="n">main_var</span><span class="p">(</span><span class="n">ds</span><span class="p">)</span>
+<a id="__codelineno-0-214" name="__codelineno-0-214"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">feature</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="n">feature</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">FEATURES</span><span class="p">:</span>
+<a id="__codelineno-0-215" name="__codelineno-0-215"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"unknown feature </span><span class="si">{</span><span class="n">feature</span><span class="si">!r}</span><span class="s2">; choose from </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">FEATURES</span><span class="p">)</span><span class="si">}</span><span class="s2"> or pass (lo, hi) nm"</span><span class="p">)</span>
+<a id="__codelineno-0-216" name="__codelineno-0-216"></a>    <span class="n">window</span> <span class="o">=</span> <span class="n">FEATURES</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">feature</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">else</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
+<a id="__codelineno-0-217" name="__codelineno-0-217"></a>    <span class="n">cr</span> <span class="o">=</span> <span class="n">continuum_removal</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">var</span><span class="o">=</span><span class="n">var</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">,</span> <span class="n">good_only</span><span class="o">=</span><span class="n">good_only</span><span class="p">)[</span><span class="n">var</span><span class="p">]</span>
+<a id="__codelineno-0-218" name="__codelineno-0-218"></a>    <span class="n">wl</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">ds</span><span class="p">[</span><span class="n">var</span><span class="p">][</span><span class="s2">"wavelength"</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">"float64"</span><span class="p">)</span>
+<a id="__codelineno-0-219" name="__codelineno-0-219"></a>    <span class="n">inside</span> <span class="o">=</span> <span class="p">(</span><span class="n">wl</span> <span class="o">&gt;=</span> <span class="n">window</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">wl</span> <span class="o">&lt;=</span> <span class="n">window</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<a id="__codelineno-0-220" name="__codelineno-0-220"></a>    <span class="k">if</span> <span class="n">inside</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-0-221" name="__codelineno-0-221"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"only </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">inside</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="si">}</span><span class="s2"> bands inside </span><span class="si">{</span><span class="n">window</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">window</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2"> nm"</span><span class="p">)</span>
+<a id="__codelineno-0-222" name="__codelineno-0-222"></a>    <span class="n">sub</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">wavelength</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">flatnonzero</span><span class="p">(</span><span class="n">inside</span><span class="p">))</span>
+<a id="__codelineno-0-223" name="__codelineno-0-223"></a>    <span class="n">depth</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">sub</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">"wavelength"</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">"float32"</span><span class="p">)</span>
+<a id="__codelineno-0-224" name="__codelineno-0-224"></a>    <span class="c1"># The wavelength of the minimum is found inside the block rather than by indexing</span>
+<a id="__codelineno-0-225" name="__codelineno-0-225"></a>    <span class="c1"># with argmin: a chunked indexer cannot index a chunked array, so doing it the</span>
+<a id="__codelineno-0-226" name="__codelineno-0-226"></a>    <span class="c1"># obvious way works on a numpy cube and fails on every real, lazily read one.</span>
+<a id="__codelineno-0-227" name="__codelineno-0-227"></a>    <span class="n">position</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">apply_ufunc</span><span class="p">(</span><span class="n">_argmin_wavelength</span><span class="p">,</span> <span class="n">sub</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">wl</span><span class="o">=</span><span class="n">wl</span><span class="p">[</span><span class="n">inside</span><span class="p">]),</span>
+<a id="__codelineno-0-228" name="__codelineno-0-228"></a>                              <span class="n">input_core_dims</span><span class="o">=</span><span class="p">[[</span><span class="s2">"wavelength"</span><span class="p">]],</span> <span class="n">dask</span><span class="o">=</span><span class="s2">"parallelized"</span><span class="p">,</span>
+<a id="__codelineno-0-229" name="__codelineno-0-229"></a>                              <span class="n">output_dtypes</span><span class="o">=</span><span class="p">[</span><span class="s2">"float32"</span><span class="p">])</span>
+<a id="__codelineno-0-230" name="__codelineno-0-230"></a>    <span class="n">spacing</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wl</span><span class="p">[</span><span class="n">inside</span><span class="p">])))</span>
+<a id="__codelineno-0-231" name="__codelineno-0-231"></a>    <span class="n">area</span> <span class="o">=</span> <span class="p">((</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">sub</span><span class="p">)</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">"wavelength"</span><span class="p">)</span> <span class="o">*</span> <span class="n">spacing</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">"float32"</span><span class="p">)</span>
+<a id="__codelineno-0-232" name="__codelineno-0-232"></a>
+<a id="__codelineno-0-233" name="__codelineno-0-233"></a>    <span class="n">out</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span><span class="p">({</span><span class="s2">"depth"</span><span class="p">:</span> <span class="n">depth</span><span class="p">,</span> <span class="s2">"position"</span><span class="p">:</span> <span class="n">position</span><span class="p">,</span> <span class="s2">"area"</span><span class="p">:</span> <span class="n">area</span><span class="p">},</span>
+<a id="__codelineno-0-234" name="__codelineno-0-234"></a>                     <span class="n">attrs</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">))</span>
+<a id="__codelineno-0-235" name="__codelineno-0-235"></a>    <span class="n">label</span> <span class="o">=</span> <span class="n">feature</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">feature</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">else</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">window</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">window</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2"> nm"</span>
+<a id="__codelineno-0-236" name="__codelineno-0-236"></a>    <span class="n">out</span><span class="p">[</span><span class="s2">"depth"</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">long_name</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2"> absorption depth"</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s2">"unitless"</span><span class="p">)</span>
+<a id="__codelineno-0-237" name="__codelineno-0-237"></a>    <span class="n">out</span><span class="p">[</span><span class="s2">"position"</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">long_name</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2"> absorption minimum"</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s2">"nm"</span><span class="p">)</span>
+<a id="__codelineno-0-238" name="__codelineno-0-238"></a>    <span class="n">out</span><span class="p">[</span><span class="s2">"area"</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">long_name</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2"> absorption area"</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s2">"nm"</span><span class="p">)</span>
+<a id="__codelineno-0-239" name="__codelineno-0-239"></a>    <span class="n">out</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">band_depth_feature</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">band_depth_window</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">window</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">window</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2"> nm"</span><span class="p">,</span>
+<a id="__codelineno-0-240" name="__codelineno-0-240"></a>                     <span class="n">band_depth_bands</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">inside</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
+<a id="__codelineno-0-241" name="__codelineno-0-241"></a>    <span class="k">return</span> <span class="n">out</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../hyperproc-align/" class="md-footer__link md-footer__link--prev" aria-label="Previous: hyperproc.align">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                hyperproc.align
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../hyperproc-geometry/" class="md-footer__link md-footer__link--next" aria-label="Next: hyperproc.geometry">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                hyperproc.geometry
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      hyperproc 0.1.0 · MIT · Fujiang Ji
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/vendor/leaflet/leaflet.js"></script>
+      
+        <script src="../../javascripts/notebook-maps.js"></script>
+      
+    
+  </body>
+</html>

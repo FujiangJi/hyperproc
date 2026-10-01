@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "hyperproc: readers, atmospheric, topographic and BRDF correction for imaging spectrometers"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Ji
+    given-names: Fujiang
+    email: fujiang.ji@wisc.edu
+    affiliation: "University of Wisconsin-Madison"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # <- fill this in
+repository-code: "https://github.com/FujiangJi/hyperproc"
+url: "https://github.com/FujiangJi/hyperproc"
+abstract: >-
+  A Python package for processing imaging-spectrometer data from raw radiance to
+  analysis-ready reflectance. Readers for eleven airborne and satellite
+  instruments return one uniform xarray contract; ISOFIT-driven atmospheric
+  correction, topographic correction and two BRDF routes (MODIS c-factor for
+  satellites, fitted kernel models for airborne flightline groups) run on top of
+  it, alongside spectral transforms, resampling, a unified quality layer and
+  coregistration.
+keywords:
+  - imaging spectroscopy
+  - hyperspectral
+  - remote sensing
+  - atmospheric correction
+  - BRDF
+  - topographic correction
+  - ISOFIT
+license: MIT
+version: 0.1.0
+date-released: "2026-09-29"

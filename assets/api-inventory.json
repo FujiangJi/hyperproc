@@ -1,0 +1,3674 @@
+[
+  {
+    "name": "hyperproc.open",
+    "module": "hyperproc",
+    "line": 70,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.open_builtin",
+    "module": "hyperproc",
+    "line": 119,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.__getattr__",
+    "module": "hyperproc",
+    "line": 124,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.align._grid_of",
+    "module": "hyperproc.align",
+    "line": 55,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.align._band_on",
+    "module": "hyperproc.align",
+    "line": 68,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.align._prepare",
+    "module": "hyperproc.align",
+    "line": 87,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.align._common_box",
+    "module": "hyperproc.align",
+    "line": 104,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.align._phase_shift",
+    "module": "hyperproc.align",
+    "line": 121,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.align.tie_points",
+    "module": "hyperproc.align",
+    "line": 161,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.align._to_metres",
+    "module": "hyperproc.align",
+    "line": 209,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.align._nearest_band",
+    "module": "hyperproc.align",
+    "line": 228,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.align.estimate_shift",
+    "module": "hyperproc.align",
+    "line": 234,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.align.apply_shift",
+    "module": "hyperproc.align",
+    "line": 301,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.align.coregister",
+    "module": "hyperproc.align",
+    "line": 341,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.align._to_reference_grid",
+    "module": "hyperproc.align",
+    "line": 388,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.__getattr__",
+    "module": "hyperproc.archive",
+    "line": 40,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.api.search",
+    "module": "hyperproc.archive.api",
+    "line": 30,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.api.download",
+    "module": "hyperproc.archive.api",
+    "line": 63,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.api.credentials",
+    "module": "hyperproc.archive.api",
+    "line": 125,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.api.can_download",
+    "module": "hyperproc.archive.api",
+    "line": 154,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.api.files",
+    "module": "hyperproc.archive.api",
+    "line": 166,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.cmr._earthaccess",
+    "module": "hyperproc.archive.cmr",
+    "line": 15,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.cmr._bbox_of",
+    "module": "hyperproc.archive.cmr",
+    "line": 27,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.cmr._browse_of",
+    "module": "hyperproc.archive.cmr",
+    "line": 49,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.cmr._time_of",
+    "module": "hyperproc.archive.cmr",
+    "line": 63,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.cmr.search",
+    "module": "hyperproc.archive.cmr",
+    "line": 72,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.cmr._granule",
+    "module": "hyperproc.archive.cmr",
+    "line": 134,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.cmr.download",
+    "module": "hyperproc.archive.cmr",
+    "line": 148,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.collections.Collection",
+    "module": "hyperproc.archive.collections",
+    "line": 30,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.collections.resolve",
+    "module": "hyperproc.archive.collections",
+    "line": 167,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.collections.describe",
+    "module": "hyperproc.archive.collections",
+    "line": 203,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.dlr.needs_login",
+    "module": "hyperproc.archive.dlr",
+    "line": 57,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.dlr._requests",
+    "module": "hyperproc.archive.dlr",
+    "line": 88,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.dlr.credentials",
+    "module": "hyperproc.archive.dlr",
+    "line": 98,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.dlr._page_says",
+    "module": "hyperproc.archive.dlr",
+    "line": 132,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.dlr._Forms",
+    "module": "hyperproc.archive.dlr",
+    "line": 156,
+    "kind": "class",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.dlr._post_to",
+    "module": "hyperproc.archive.dlr",
+    "line": 218,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.dlr.sign_in",
+    "module": "hyperproc.archive.dlr",
+    "line": 237,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.dlr.read_policy",
+    "module": "hyperproc.archive.dlr",
+    "line": 327,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.dlr._visible_text",
+    "module": "hyperproc.archive.dlr",
+    "line": 387,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.dlr._rfc3339",
+    "module": "hyperproc.archive.dlr",
+    "line": 393,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.dlr._time_of",
+    "module": "hyperproc.archive.dlr",
+    "line": 411,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.dlr._links",
+    "module": "hyperproc.archive.dlr",
+    "line": 427,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.dlr.search",
+    "module": "hyperproc.archive.dlr",
+    "line": 443,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.dlr._granule",
+    "module": "hyperproc.archive.dlr",
+    "line": 532,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.dlr.download",
+    "module": "hyperproc.archive.dlr",
+    "line": 549,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.interactive.has_cloud",
+    "module": "hyperproc.archive.interactive",
+    "line": 27,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.interactive.sensors",
+    "module": "hyperproc.archive.interactive",
+    "line": 44,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.interactive.SearchState",
+    "module": "hyperproc.archive.interactive",
+    "line": 52,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.interactive.zoom_for",
+    "module": "hyperproc.archive.interactive",
+    "line": 170,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.interactive._flatten",
+    "module": "hyperproc.archive.interactive",
+    "line": 189,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.interactive._px",
+    "module": "hyperproc.archive.interactive",
+    "line": 204,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.interactive._widgets",
+    "module": "hyperproc.archive.interactive",
+    "line": 212,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.interactive.Map",
+    "module": "hyperproc.archive.interactive",
+    "line": 226,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.interactive.search_map",
+    "module": "hyperproc.archive.interactive",
+    "line": 568,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.neon._requests",
+    "module": "hyperproc.archive.neon",
+    "line": 63,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.neon._get",
+    "module": "hyperproc.archive.neon",
+    "line": 73,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.neon.token_from",
+    "module": "hyperproc.archive.neon",
+    "line": 88,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.neon.sites",
+    "module": "hyperproc.archive.neon",
+    "line": 93,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.neon._months",
+    "module": "hyperproc.archive.neon",
+    "line": 107,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.neon._hit",
+    "module": "hyperproc.archive.neon",
+    "line": 123,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.neon.search",
+    "module": "hyperproc.archive.neon",
+    "line": 133,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.neon.files",
+    "module": "hyperproc.archive.neon",
+    "line": 220,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.neon._flight_time",
+    "module": "hyperproc.archive.neon",
+    "line": 279,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.archive.neon.download",
+    "module": "hyperproc.archive.neon",
+    "line": 289,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.results.plural",
+    "module": "hyperproc.archive.results",
+    "line": 16,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.results.Granule",
+    "module": "hyperproc.archive.results",
+    "line": 22,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.archive.results.Results",
+    "module": "hyperproc.archive.results",
+    "line": 71,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos._runner.libradtran_dir",
+    "module": "hyperproc.atmos._runner",
+    "line": 38,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos._runner.apply_overrides",
+    "module": "hyperproc.atmos._runner",
+    "line": 48,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos._runner.rewrite_config",
+    "module": "hyperproc.atmos._runner",
+    "line": 74,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos._runner.install",
+    "module": "hyperproc.atmos._runner",
+    "line": 121,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos._runner.main",
+    "module": "hyperproc.atmos._runner",
+    "line": 147,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.atmosphere_for",
+    "module": "hyperproc.atmos.correct",
+    "line": 60,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct._env",
+    "module": "hyperproc.atmos.correct",
+    "line": 78,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.correct.emulator_path",
+    "module": "hyperproc.atmos.correct",
+    "line": 86,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.surface_recipe",
+    "module": "hyperproc.atmos.correct",
+    "line": 95,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct._cache_dir",
+    "module": "hyperproc.atmos.correct",
+    "line": 109,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.correct._surface_key",
+    "module": "hyperproc.atmos.correct",
+    "line": 113,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.correct.resolve_surface",
+    "module": "hyperproc.atmos.correct",
+    "line": 119,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.build_command",
+    "module": "hyperproc.atmos.correct",
+    "line": 138,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.atm_terms",
+    "module": "hyperproc.atmos.correct",
+    "line": 269,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.segment_count",
+    "module": "hyperproc.atmos.correct",
+    "line": 287,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.neighbor_cap",
+    "module": "hyperproc.atmos.correct",
+    "line": 308,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.resolve_neighbors",
+    "module": "hyperproc.atmos.correct",
+    "line": 326,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct._clean_partial",
+    "module": "hyperproc.atmos.correct",
+    "line": 348,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.correct.run_record",
+    "module": "hyperproc.atmos.correct",
+    "line": 376,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.settings_of",
+    "module": "hyperproc.atmos.correct",
+    "line": 392,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.is_complete",
+    "module": "hyperproc.atmos.correct",
+    "line": 417,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct._tail",
+    "module": "hyperproc.atmos.correct",
+    "line": 425,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.correct.run_isofit",
+    "module": "hyperproc.atmos.correct",
+    "line": 433,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct._hdr",
+    "module": "hyperproc.atmos.correct",
+    "line": 477,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.correct._hdr_list",
+    "module": "hyperproc.atmos.correct",
+    "line": 484,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.correct._open_bil",
+    "module": "hyperproc.atmos.correct",
+    "line": 490,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.correct.read_outputs",
+    "module": "hyperproc.atmos.correct",
+    "line": 501,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.redo_line",
+    "module": "hyperproc.atmos.correct",
+    "line": 608,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct.correct",
+    "module": "hyperproc.atmos.correct",
+    "line": 628,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.correct._window",
+    "module": "hyperproc.atmos.correct",
+    "line": 709,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.dem.cache_dir",
+    "module": "hyperproc.atmos.dem",
+    "line": 36,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.dem.tile_id",
+    "module": "hyperproc.atmos.dem",
+    "line": 42,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.dem.tile_url",
+    "module": "hyperproc.atmos.dem",
+    "line": 50,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.dem.fetch_tile",
+    "module": "hyperproc.atmos.dem",
+    "line": 55,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.dem._read_tile",
+    "module": "hyperproc.atmos.dem",
+    "line": 79,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.dem.sample",
+    "module": "hyperproc.atmos.dem",
+    "line": 90,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.dem.add_elevation",
+    "module": "hyperproc.atmos.dem",
+    "line": 129,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.engines.read_settings",
+    "module": "hyperproc.atmos.engines",
+    "line": 32,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.engines.write_settings",
+    "module": "hyperproc.atmos.engines",
+    "line": 37,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.engines.SixS",
+    "module": "hyperproc.atmos.engines",
+    "line": 44,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.engines.LibRadTran",
+    "module": "hyperproc.atmos.engines",
+    "line": 121,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.engines.register",
+    "module": "hyperproc.atmos.engines",
+    "line": 141,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.SensorSpec",
+    "module": "hyperproc.atmos.inputs",
+    "line": 71,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.sensor_spec",
+    "module": "hyperproc.atmos.inputs",
+    "line": 144,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.acquisition_time",
+    "module": "hyperproc.atmos.inputs",
+    "line": 154,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.names_for",
+    "module": "hyperproc.atmos.inputs",
+    "line": 170,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.Inputs",
+    "module": "hyperproc.atmos.inputs",
+    "line": 184,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.hdr_path",
+    "module": "hyperproc.atmos.inputs",
+    "line": 261,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.write_envi_header",
+    "module": "hyperproc.atmos.inputs",
+    "line": 272,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs._row_blocks",
+    "module": "hyperproc.atmos.inputs",
+    "line": 293,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.inputs._write_cube",
+    "module": "hyperproc.atmos.inputs",
+    "line": 312,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.inputs._write_layers",
+    "module": "hyperproc.atmos.inputs",
+    "line": 335,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.inputs._layer",
+    "module": "hyperproc.atmos.inputs",
+    "line": 344,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.inputs._latlon",
+    "module": "hyperproc.atmos.inputs",
+    "line": 353,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.inputs._phase",
+    "module": "hyperproc.atmos.inputs",
+    "line": 362,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.inputs._earth_sun_au",
+    "module": "hyperproc.atmos.inputs",
+    "line": 367,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.inputs.assemble_obs",
+    "module": "hyperproc.atmos.inputs",
+    "line": 372,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.assemble_loc",
+    "module": "hyperproc.atmos.inputs",
+    "line": 408,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs._apply_window",
+    "module": "hyperproc.atmos.inputs",
+    "line": 418,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.inputs._stats",
+    "module": "hyperproc.atmos.inputs",
+    "line": 430,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.inputs.oci_rsr_bands",
+    "module": "hyperproc.atmos.inputs",
+    "line": 449,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.match_bands",
+    "module": "hyperproc.atmos.inputs",
+    "line": 470,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.pace_rhot_scales",
+    "module": "hyperproc.atmos.inputs",
+    "line": 485,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.inputs.prepare_inputs",
+    "module": "hyperproc.atmos.inputs",
+    "line": 512,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.process._open_for_ac",
+    "module": "hyperproc.atmos.process",
+    "line": 32,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.process._ortho_emit",
+    "module": "hyperproc.atmos.process",
+    "line": 52,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.process.to_map_grid",
+    "module": "hyperproc.atmos.process",
+    "line": 102,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.process.process",
+    "module": "hyperproc.atmos.process",
+    "line": 126,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.setup._quiet",
+    "module": "hyperproc.atmos.setup",
+    "line": 39,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.setup._isofit",
+    "module": "hyperproc.atmos.setup",
+    "line": 43,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.setup._assets_for",
+    "module": "hyperproc.atmos.setup",
+    "line": 51,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.setup.libradtran_exe",
+    "module": "hyperproc.atmos.setup",
+    "line": 58,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.setup.build_libradtran",
+    "module": "hyperproc.atmos.setup",
+    "line": 68,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.setup.check",
+    "module": "hyperproc.atmos.setup",
+    "line": 115,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.setup._report",
+    "module": "hyperproc.atmos.setup",
+    "line": 172,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.atmos.setup.setup",
+    "module": "hyperproc.atmos.setup",
+    "line": 192,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.atmos.setup.main",
+    "module": "hyperproc.atmos.setup",
+    "line": 249,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.brdf.dynamic_bins",
+    "module": "hyperproc.correct.brdf",
+    "line": 49,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.brdf._second_split",
+    "module": "hyperproc.correct.brdf",
+    "line": 75,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.brdf.assign_bins",
+    "module": "hyperproc.correct.brdf",
+    "line": 86,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.brdf.bin_centres",
+    "module": "hyperproc.correct.brdf",
+    "line": 95,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.brdf.FlexFit",
+    "module": "hyperproc.correct.brdf",
+    "line": 103,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.brdf.fit_flex",
+    "module": "hyperproc.correct.brdf",
+    "line": 153,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.brdf.interpolate_coeffs",
+    "module": "hyperproc.correct.brdf",
+    "line": 201,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.brdf.apply_flex",
+    "module": "hyperproc.correct.brdf",
+    "line": 237,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.brdf.fit_group",
+    "module": "hyperproc.correct.brdf",
+    "line": 276,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.cfactor.band_map",
+    "module": "hyperproc.correct.cfactor",
+    "line": 71,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.cfactor.band_weights",
+    "module": "hyperproc.correct.cfactor",
+    "line": 86,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.cfactor.model_reflectance",
+    "module": "hyperproc.correct.cfactor",
+    "line": 122,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.cfactor.c_factor",
+    "module": "hyperproc.correct.cfactor",
+    "line": 142,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.cfactor.lonlat_of",
+    "module": "hyperproc.correct.cfactor",
+    "line": 185,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.cfactor.angles_of",
+    "module": "hyperproc.correct.cfactor",
+    "line": 203,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.cfactor._fill_gaps",
+    "module": "hyperproc.correct.cfactor",
+    "line": 220,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.cfactor.nbar",
+    "module": "hyperproc.correct.cfactor",
+    "line": 240,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.cfactor.view_profile",
+    "module": "hyperproc.correct.cfactor",
+    "line": 383,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.cfactor.model_agreement",
+    "module": "hyperproc.correct.cfactor",
+    "line": 466,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.coefficients._now",
+    "module": "hyperproc.correct.coefficients",
+    "line": 37,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.coefficients.provenance",
+    "module": "hyperproc.correct.coefficients",
+    "line": 41,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.coefficients._jsonable",
+    "module": "hyperproc.correct.coefficients",
+    "line": 52,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.coefficients._wl_key",
+    "module": "hyperproc.correct.coefficients",
+    "line": 72,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.coefficients.align_wavelengths",
+    "module": "hyperproc.correct.coefficients",
+    "line": 76,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.coefficients.TopoCoefficients",
+    "module": "hyperproc.correct.coefficients",
+    "line": 93,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.coefficients.BRDFCoefficients",
+    "module": "hyperproc.correct.coefficients",
+    "line": 186,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.coefficients.load",
+    "module": "hyperproc.correct.coefficients",
+    "line": 245,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.phase_angle",
+    "module": "hyperproc.correct.kernels",
+    "line": 38,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.ross_thick",
+    "module": "hyperproc.correct.kernels",
+    "line": 47,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.ross_thin",
+    "module": "hyperproc.correct.kernels",
+    "line": 54,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.volume_kernel",
+    "module": "hyperproc.correct.kernels",
+    "line": 61,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels._li_terms",
+    "module": "hyperproc.correct.kernels",
+    "line": 73,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.kernels.li_sparse",
+    "module": "hyperproc.correct.kernels",
+    "line": 98,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.li_sparse_r",
+    "module": "hyperproc.correct.kernels",
+    "line": 104,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.li_dense",
+    "module": "hyperproc.correct.kernels",
+    "line": 110,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.li_dense_r",
+    "module": "hyperproc.correct.kernels",
+    "line": 116,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.geometric_kernel",
+    "module": "hyperproc.correct.kernels",
+    "line": 122,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.kernel_pair",
+    "module": "hyperproc.correct.kernels",
+    "line": 134,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.kernels.reference_kernels",
+    "module": "hyperproc.correct.kernels",
+    "line": 141,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks.ndi",
+    "module": "hyperproc.correct.masks",
+    "line": 19,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks.ndi_mask",
+    "module": "hyperproc.correct.masks",
+    "line": 28,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks.range_mask",
+    "module": "hyperproc.correct.masks",
+    "line": 34,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks.kernel_finite",
+    "module": "hyperproc.correct.masks",
+    "line": 44,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks.edge_mask",
+    "module": "hyperproc.correct.masks",
+    "line": 49,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks.combine",
+    "module": "hyperproc.correct.masks",
+    "line": 67,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks.sample_indices",
+    "module": "hyperproc.correct.masks",
+    "line": 79,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks._zhai_indices",
+    "module": "hyperproc.correct.masks",
+    "line": 94,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.masks.zhai_stats",
+    "module": "hyperproc.correct.masks",
+    "line": 109,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks.zhai_thresholds",
+    "module": "hyperproc.correct.masks",
+    "line": 128,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.masks.zhai_cloud",
+    "module": "hyperproc.correct.masks",
+    "line": 136,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43.cache_dir",
+    "module": "hyperproc.correct.mcd43",
+    "line": 91,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43.Params",
+    "module": "hyperproc.correct.mcd43",
+    "line": 102,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43.read",
+    "module": "hyperproc.correct.mcd43",
+    "line": 246,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43.bounds_of",
+    "module": "hyperproc.correct.mcd43",
+    "line": 279,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43.date_of",
+    "module": "hyperproc.correct.mcd43",
+    "line": 305,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43.available",
+    "module": "hyperproc.correct.mcd43",
+    "line": 338,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43.resolution_of",
+    "module": "hyperproc.correct.mcd43",
+    "line": 352,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43.step_for",
+    "module": "hyperproc.correct.mcd43",
+    "line": 390,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43.grid_for",
+    "module": "hyperproc.correct.mcd43",
+    "line": 408,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.mcd43._init_ee",
+    "module": "hyperproc.correct.mcd43",
+    "line": 429,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.mcd43._ee_image",
+    "module": "hyperproc.correct.mcd43",
+    "line": 451,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.mcd43._aggregate",
+    "module": "hyperproc.correct.mcd43",
+    "line": 465,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.mcd43._download",
+    "module": "hyperproc.correct.mcd43",
+    "line": 481,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.mcd43.fetch",
+    "module": "hyperproc.correct.mcd43",
+    "line": 511,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.is_airborne",
+    "module": "hyperproc.correct.pipeline",
+    "line": 65,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline._require_airborne",
+    "module": "hyperproc.correct.pipeline",
+    "line": 71,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline._main_var",
+    "module": "hyperproc.correct.pipeline",
+    "line": 76,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline._index_bands",
+    "module": "hyperproc.correct.pipeline",
+    "line": 81,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline._cloud_stats",
+    "module": "hyperproc.correct.pipeline",
+    "line": 95,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline._cloud_mask",
+    "module": "hyperproc.correct.pipeline",
+    "line": 106,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline._geometry_2d",
+    "module": "hyperproc.correct.pipeline",
+    "line": 114,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline.Sample",
+    "module": "hyperproc.correct.pipeline",
+    "line": 133,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.sample_image",
+    "module": "hyperproc.correct.pipeline",
+    "line": 229,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline._sample_chunks",
+    "module": "hyperproc.correct.pipeline",
+    "line": 259,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline._iter_chunks",
+    "module": "hyperproc.correct.pipeline",
+    "line": 319,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline._sample_pixels",
+    "module": "hyperproc.correct.pipeline",
+    "line": 329,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline.merge_samples",
+    "module": "hyperproc.correct.pipeline",
+    "line": 415,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.per_block_effects",
+    "module": "hyperproc.correct.pipeline",
+    "line": 464,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.fit_topo",
+    "module": "hyperproc.correct.pipeline",
+    "line": 502,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.angular_diversity",
+    "module": "hyperproc.correct.pipeline",
+    "line": 598,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline._topo_correct_sample",
+    "module": "hyperproc.correct.pipeline",
+    "line": 631,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline.fit_brdf",
+    "module": "hyperproc.correct.pipeline",
+    "line": 647,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.apply",
+    "module": "hyperproc.correct.pipeline",
+    "line": 721,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.export",
+    "module": "hyperproc.correct.pipeline",
+    "line": 856,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.footprint_bounds",
+    "module": "hyperproc.correct.pipeline",
+    "line": 899,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.footprint_polygon",
+    "module": "hyperproc.correct.pipeline",
+    "line": 911,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.footprint_overlap",
+    "module": "hyperproc.correct.pipeline",
+    "line": 924,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline._window_for_bbox",
+    "module": "hyperproc.correct.pipeline",
+    "line": 933,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline._window_bounds",
+    "module": "hyperproc.correct.pipeline",
+    "line": 946,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline.overlap_windows",
+    "module": "hyperproc.correct.pipeline",
+    "line": 953,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.find_overlapping_pair",
+    "module": "hyperproc.correct.pipeline",
+    "line": 982,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline._common_grid",
+    "module": "hyperproc.correct.pipeline",
+    "line": 999,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline._reproject",
+    "module": "hyperproc.correct.pipeline",
+    "line": 1025,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.pipeline.mosaic_geotiffs",
+    "module": "hyperproc.correct.pipeline",
+    "line": 1037,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.overlap_agreement_tifs",
+    "module": "hyperproc.correct.pipeline",
+    "line": 1082,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.seam_check",
+    "module": "hyperproc.correct.pipeline",
+    "line": 1112,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.view_dependence",
+    "module": "hyperproc.correct.pipeline",
+    "line": 1136,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.pipeline.overlap_agreement",
+    "module": "hyperproc.correct.pipeline",
+    "line": 1188,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.topo.cos_incidence",
+    "module": "hyperproc.correct.topo",
+    "line": 46,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.topo.CFit",
+    "module": "hyperproc.correct.topo",
+    "line": 57,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.topo.fit_c",
+    "module": "hyperproc.correct.topo",
+    "line": 75,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.topo.fit_c_from_sums",
+    "module": "hyperproc.correct.topo",
+    "line": 157,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.topo._check_c",
+    "module": "hyperproc.correct.topo",
+    "line": 208,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.topo.correction_factor",
+    "module": "hyperproc.correct.topo",
+    "line": 217,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.topo.apply_topo",
+    "module": "hyperproc.correct.topo",
+    "line": 238,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.correct.topo._slope_stats",
+    "module": "hyperproc.correct.topo",
+    "line": 278,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.correct.topo.illumination_diagnostic",
+    "module": "hyperproc.correct.topo",
+    "line": 287,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.features._evaluate",
+    "module": "hyperproc.features",
+    "line": 81,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.features.index",
+    "module": "hyperproc.features",
+    "line": 113,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.features.describe_indices",
+    "module": "hyperproc.features",
+    "line": 167,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.features._argmin_wavelength",
+    "module": "hyperproc.features",
+    "line": 187,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.features.band_depth",
+    "module": "hyperproc.features",
+    "line": 194,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.geometry.check_geometry",
+    "module": "hyperproc.geometry",
+    "line": 17,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.geometry.fix_slope_convention",
+    "module": "hyperproc.geometry",
+    "line": 97,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.grid.utm_epsg",
+    "module": "hyperproc.grid",
+    "line": 32,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.grid.georeference",
+    "module": "hyperproc.grid",
+    "line": 51,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.grid.latlon_grid",
+    "module": "hyperproc.grid",
+    "line": 221,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.grid._ecef",
+    "module": "hyperproc.grid",
+    "line": 247,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.grid._nearest_glt",
+    "module": "hyperproc.grid",
+    "line": 261,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.grid._native_spacing",
+    "module": "hyperproc.grid",
+    "line": 308,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.grid._apply_glt",
+    "module": "hyperproc.grid",
+    "line": 319,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.io.main_var",
+    "module": "hyperproc.io",
+    "line": 16,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io.default_name",
+    "module": "hyperproc.io",
+    "line": 27,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io._resolve",
+    "module": "hyperproc.io",
+    "line": 43,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.io._transform_for",
+    "module": "hyperproc.io",
+    "line": 54,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.io.envi_header",
+    "module": "hyperproc.io",
+    "line": 99,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io._write_cube",
+    "module": "hyperproc.io",
+    "line": 131,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.io.to_geotiff",
+    "module": "hyperproc.io",
+    "line": 239,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io.to_envi",
+    "module": "hyperproc.io",
+    "line": 284,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io.to_raster",
+    "module": "hyperproc.io",
+    "line": 320,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io.build_overviews",
+    "module": "hyperproc.io",
+    "line": 331,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io.to_geotiff_2d",
+    "module": "hyperproc.io",
+    "line": 388,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io.export_geometry",
+    "module": "hyperproc.io",
+    "line": 453,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io.bands_to_csv",
+    "module": "hyperproc.io",
+    "line": 479,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.io._write_stats",
+    "module": "hyperproc.io",
+    "line": 516,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.io._spatial_da",
+    "module": "hyperproc.io",
+    "line": 537,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.io.to_latlon_geotiff",
+    "module": "hyperproc.io",
+    "line": 558,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.quality._bit",
+    "module": "hyperproc.quality",
+    "line": 132,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.quality._as_2d",
+    "module": "hyperproc.quality",
+    "line": 138,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.quality._band_nearest",
+    "module": "hyperproc.quality",
+    "line": 144,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.quality.build",
+    "module": "hyperproc.quality",
+    "line": 151,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.quality.decode",
+    "module": "hyperproc.quality",
+    "line": 291,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.quality.set_flag",
+    "module": "hyperproc.quality",
+    "line": 307,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.quality.summary",
+    "module": "hyperproc.quality",
+    "line": 319,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.quality.apply",
+    "module": "hyperproc.quality",
+    "line": 328,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.quality.describe",
+    "module": "hyperproc.quality",
+    "line": 361,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers._common.crs_text",
+    "module": "hyperproc.readers._common",
+    "line": 5,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers._common.datetime_from_id",
+    "module": "hyperproc.readers._common",
+    "line": 45,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers._common.finish_bands",
+    "module": "hyperproc.readers._common",
+    "line": 64,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers._common.normalise_angles",
+    "module": "hyperproc.readers._common",
+    "line": 106,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.aviris._Variant",
+    "module": "hyperproc.readers.aviris",
+    "line": 151,
+    "kind": "class",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris.open_aviris",
+    "module": "hyperproc.readers.aviris",
+    "line": 187,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.aviris._identify",
+    "module": "hyperproc.readers.aviris",
+    "line": 300,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._find_cube",
+    "module": "hyperproc.readers.aviris",
+    "line": 319,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._guess_product",
+    "module": "hyperproc.readers.aviris",
+    "line": 352,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._search",
+    "module": "hyperproc.readers.aviris",
+    "line": 363,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._sibling",
+    "module": "hyperproc.readers.aviris",
+    "line": 389,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris.read_hdr",
+    "module": "hyperproc.readers.aviris",
+    "line": 396,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.aviris._good_bands",
+    "module": "hyperproc.readers.aviris",
+    "line": 414,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._fill_value",
+    "module": "hyperproc.readers.aviris",
+    "line": 431,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._hdr_array",
+    "module": "hyperproc.readers.aviris",
+    "line": 443,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._chunks_for",
+    "module": "hyperproc.readers.aviris",
+    "line": 452,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._open_envi",
+    "module": "hyperproc.readers.aviris",
+    "line": 471,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._hdr_for",
+    "module": "hyperproc.readers.aviris",
+    "line": 568,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._rotation",
+    "module": "hyperproc.readers.aviris",
+    "line": 576,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._read_spc",
+    "module": "hyperproc.readers.aviris",
+    "line": 581,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._gain",
+    "module": "hyperproc.readers.aviris",
+    "line": 590,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._band_subset",
+    "module": "hyperproc.readers.aviris",
+    "line": 602,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._open_av5",
+    "module": "hyperproc.readers.aviris",
+    "line": 616,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._gather",
+    "module": "hyperproc.readers.aviris",
+    "line": 719,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._glt_cube",
+    "module": "hyperproc.readers.aviris",
+    "line": 726,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._av5_cube_group",
+    "module": "hyperproc.readers.aviris",
+    "line": 798,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._av5_grid",
+    "module": "hyperproc.readers.aviris",
+    "line": 815,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._as_str",
+    "module": "hyperproc.readers.aviris",
+    "line": 827,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._apply_glt",
+    "module": "hyperproc.readers.aviris",
+    "line": 831,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._finish",
+    "module": "hyperproc.readers.aviris",
+    "line": 851,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._add_map_coords",
+    "module": "hyperproc.readers.aviris",
+    "line": 880,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._blank_water_bands",
+    "module": "hyperproc.readers.aviris",
+    "line": 890,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._add_geometry",
+    "module": "hyperproc.readers.aviris",
+    "line": 911,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._add_geometry_envi",
+    "module": "hyperproc.readers.aviris",
+    "line": 937,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._add_geometry_av5",
+    "module": "hyperproc.readers.aviris",
+    "line": 966,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._elevation_array",
+    "module": "hyperproc.readers.aviris",
+    "line": 1009,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._add_elevation",
+    "module": "hyperproc.readers.aviris",
+    "line": 1047,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._add_extras",
+    "module": "hyperproc.readers.aviris",
+    "line": 1086,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.aviris._add_uncertainty",
+    "module": "hyperproc.readers.aviris",
+    "line": 1137,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.desis.open_desis",
+    "module": "hyperproc.readers.desis",
+    "line": 77,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.desis._sibling",
+    "module": "hyperproc.readers.desis",
+    "line": 190,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.desis._parse_metadata",
+    "module": "hyperproc.readers.desis",
+    "line": 196,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.desis._add_quality",
+    "module": "hyperproc.readers.desis",
+    "line": 248,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.desis._add_band_quality",
+    "module": "hyperproc.readers.desis",
+    "line": 272,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.emit.open_emit",
+    "module": "hyperproc.readers.emit",
+    "line": 60,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.emit._sibling",
+    "module": "hyperproc.readers.emit",
+    "line": 225,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.emit._add_masks",
+    "module": "hyperproc.readers.emit",
+    "line": 240,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.emit._add_geometry",
+    "module": "hyperproc.readers.emit",
+    "line": 258,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.emit._stack_glt",
+    "module": "hyperproc.readers.emit",
+    "line": 280,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.emit._apply_glt",
+    "module": "hyperproc.readers.emit",
+    "line": 287,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap._beside",
+    "module": "hyperproc.readers.enmap",
+    "line": 72,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap.open_enmap",
+    "module": "hyperproc.readers.enmap",
+    "line": 90,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.enmap._lazy_cube",
+    "module": "hyperproc.readers.enmap",
+    "line": 241,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap._parse_metadata",
+    "module": "hyperproc.readers.enmap",
+    "line": 248,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap._corner_grid",
+    "module": "hyperproc.readers.enmap",
+    "line": 279,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap._footprint_pixels",
+    "module": "hyperproc.readers.enmap",
+    "line": 289,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap._footprint_grid",
+    "module": "hyperproc.readers.enmap",
+    "line": 319,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap._signed_area",
+    "module": "hyperproc.readers.enmap",
+    "line": 343,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap._add_angles",
+    "module": "hyperproc.readers.enmap",
+    "line": 348,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap._add_quality",
+    "module": "hyperproc.readers.enmap",
+    "line": 371,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.enmap._add_pixelmask",
+    "module": "hyperproc.readers.enmap",
+    "line": 389,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon.open_neon",
+    "module": "hyperproc.readers.neon",
+    "line": 111,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.neon._as_str",
+    "module": "hyperproc.readers.neon",
+    "line": 255,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._band_subset",
+    "module": "hyperproc.readers.neon",
+    "line": 259,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._good_bands",
+    "module": "hyperproc.readers.neon",
+    "line": 270,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._grid",
+    "module": "hyperproc.readers.neon",
+    "line": 282,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._H5Array",
+    "module": "hyperproc.readers.neon",
+    "line": 305,
+    "kind": "class",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._chunks_for",
+    "module": "hyperproc.readers.neon",
+    "line": 322,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._lazy_cube",
+    "module": "hyperproc.readers.neon",
+    "line": 335,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._lazy_layer",
+    "module": "hyperproc.readers.neon",
+    "line": 343,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._scaled",
+    "module": "hyperproc.readers.neon",
+    "line": 352,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._add_layers",
+    "module": "hyperproc.readers.neon",
+    "line": 368,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._add_geometry",
+    "module": "hyperproc.readers.neon",
+    "line": 379,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.neon._add_classes",
+    "module": "hyperproc.readers.neon",
+    "line": 405,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.pace.open_pace",
+    "module": "hyperproc.readers.pace",
+    "line": 77,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.pace._fwhm_for",
+    "module": "hyperproc.readers.pace",
+    "line": 157,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.pace._read_l2",
+    "module": "hyperproc.readers.pace",
+    "line": 167,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.pace._read_l1b",
+    "module": "hyperproc.readers.pace",
+    "line": 179,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.pace._add_latlon",
+    "module": "hyperproc.readers.pace",
+    "line": 206,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.pace._add_flags",
+    "module": "hyperproc.readers.pace",
+    "line": 214,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.pace._add_scanline",
+    "module": "hyperproc.readers.pace",
+    "line": 231,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.pace._add_geometry",
+    "module": "hyperproc.readers.pace",
+    "line": 260,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma.open_prisma",
+    "module": "hyperproc.readers.prisma",
+    "line": 74,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.prisma._read_arm",
+    "module": "hyperproc.readers.prisma",
+    "line": 217,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._take",
+    "module": "hyperproc.readers.prisma",
+    "line": 272,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._resolve_overlap",
+    "module": "hyperproc.readers.prisma",
+    "line": 279,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._dec",
+    "module": "hyperproc.readers.prisma",
+    "line": 293,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._scene_attrs",
+    "module": "hyperproc.readers.prisma",
+    "line": 297,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._fill_mask",
+    "module": "hyperproc.readers.prisma",
+    "line": 318,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._add_grid",
+    "module": "hyperproc.readers.prisma",
+    "line": 324,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._add_angles",
+    "module": "hyperproc.readers.prisma",
+    "line": 353,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._add_l1_masks",
+    "module": "hyperproc.readers.prisma",
+    "line": 371,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._l2_sibling",
+    "module": "hyperproc.readers.prisma",
+    "line": 381,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._borrow_geolocation",
+    "module": "hyperproc.readers.prisma",
+    "line": 390,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._add_l1_geometry",
+    "module": "hyperproc.readers.prisma",
+    "line": 405,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._view_from_ephemeris",
+    "module": "hyperproc.readers.prisma",
+    "line": 435,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.prisma._add_l2c_maps",
+    "module": "hyperproc.readers.prisma",
+    "line": 479,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.tanager.open_tanager",
+    "module": "hyperproc.readers.tanager",
+    "line": 65,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.readers.tanager._lazy_cube",
+    "module": "hyperproc.readers.tanager",
+    "line": 203,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.tanager._geotransform",
+    "module": "hyperproc.readers.tanager",
+    "line": 212,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.tanager._add_masks",
+    "module": "hyperproc.readers.tanager",
+    "line": 227,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.readers.tanager._add_geometry",
+    "module": "hyperproc.readers.tanager",
+    "line": 237,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.registry.Entry",
+    "module": "hyperproc.registry",
+    "line": 16,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.registry._tanager",
+    "module": "hyperproc.registry",
+    "line": 37,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.registry._pace",
+    "module": "hyperproc.registry",
+    "line": 43,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.registry._enmap",
+    "module": "hyperproc.registry",
+    "line": 49,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.registry._desis",
+    "module": "hyperproc.registry",
+    "line": 55,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.registry._neon",
+    "module": "hyperproc.registry",
+    "line": 61,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.registry._aviris",
+    "module": "hyperproc.registry",
+    "line": 67,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.registry._prisma",
+    "module": "hyperproc.registry",
+    "line": 73,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.registry._emit",
+    "module": "hyperproc.registry",
+    "line": 79,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.registry.register",
+    "module": "hyperproc.registry",
+    "line": 91,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.registry.sniff",
+    "module": "hyperproc.registry",
+    "line": 242,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.registry.resolve",
+    "module": "hyperproc.registry",
+    "line": 251,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.registry.summary",
+    "module": "hyperproc.registry",
+    "line": 287,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.registry.list_readers",
+    "module": "hyperproc.registry",
+    "line": 293,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.report._thin",
+    "module": "hyperproc.report",
+    "line": 17,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.report.describe",
+    "module": "hyperproc.report",
+    "line": 53,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline.nknots_smspl",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 40,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline._iqr",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 56,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline._collapse",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 62,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline._knot_vector",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 81,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline._basis",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 92,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline._gram",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 102,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline._solve",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 145,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline.SmoothSpline",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 156,
+    "kind": "class",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline._brent_fmin",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 242,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral._smoothspline.smooth_spline",
+    "module": "hyperproc.spectral._smoothspline",
+    "line": 306,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.bands.good_bands",
+    "module": "hyperproc.spectral.bands",
+    "line": 27,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.bands.runs_of_good_bands",
+    "module": "hyperproc.spectral.bands",
+    "line": 37,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.bands.band_at",
+    "module": "hyperproc.spectral.bands",
+    "line": 54,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.continuum._upper_hull",
+    "module": "hyperproc.spectral.continuum",
+    "line": 21,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.continuum._continuum_block",
+    "module": "hyperproc.spectral.continuum",
+    "line": 69,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.continuum.continuum_removal",
+    "module": "hyperproc.spectral.continuum",
+    "line": 80,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.derivatives._derivative_block",
+    "module": "hyperproc.spectral.derivatives",
+    "line": 20,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.derivatives.derivative",
+    "module": "hyperproc.spectral.derivatives",
+    "line": 42,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.resampling._sigma",
+    "module": "hyperproc.spectral.resampling",
+    "line": 69,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.resampling._normal_cdf",
+    "module": "hyperproc.spectral.resampling",
+    "line": 73,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.resampling.build_fwhm",
+    "module": "hyperproc.spectral.resampling",
+    "line": 78,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.resampling._merged_intervals",
+    "module": "hyperproc.spectral.resampling",
+    "line": 100,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.resampling.coverage_of",
+    "module": "hyperproc.spectral.resampling",
+    "line": 115,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.resampling._weights_gaussian",
+    "module": "hyperproc.spectral.resampling",
+    "line": 139,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.resampling._weights_box",
+    "module": "hyperproc.spectral.resampling",
+    "line": 146,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.resampling._weights_interp",
+    "module": "hyperproc.spectral.resampling",
+    "line": 160,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.resampling._weights_response",
+    "module": "hyperproc.spectral.resampling",
+    "line": 168,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.resampling.resampling_matrix",
+    "module": "hyperproc.spectral.resampling",
+    "line": 179,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.resampling.target_grid",
+    "module": "hyperproc.spectral.resampling",
+    "line": 260,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.resampling._apply_block",
+    "module": "hyperproc.spectral.resampling",
+    "line": 312,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.resampling.resample",
+    "module": "hyperproc.spectral.resampling",
+    "line": 347,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.resampling._resample_dataset",
+    "module": "hyperproc.spectral.resampling",
+    "line": 409,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.smoothing._smooth_block",
+    "module": "hyperproc.spectral.smoothing",
+    "line": 44,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.smoothing.smooth_spectra",
+    "module": "hyperproc.spectral.smoothing",
+    "line": 78,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.smoothing.find_spikes",
+    "module": "hyperproc.spectral.smoothing",
+    "line": 134,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.smoothing._in_ranges",
+    "module": "hyperproc.spectral.smoothing",
+    "line": 180,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.smoothing._one_blas_thread",
+    "module": "hyperproc.spectral.smoothing",
+    "line": 188,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.smoothing._gapfill_block",
+    "module": "hyperproc.spectral.smoothing",
+    "line": 209,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.smoothing.spline_gapfill",
+    "module": "hyperproc.spectral.smoothing",
+    "line": 236,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.srf.cache_dir",
+    "module": "hyperproc.spectral.srf",
+    "line": 98,
+    "kind": "function",
+    "documented": false,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.srf.resolve",
+    "module": "hyperproc.spectral.srf",
+    "line": 104,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.srf._load_workbook",
+    "module": "hyperproc.spectral.srf",
+    "line": 119,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.srf._to_nm",
+    "module": "hyperproc.spectral.srf",
+    "line": 130,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.srf._parse_sentinel2",
+    "module": "hyperproc.spectral.srf",
+    "line": 136,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.srf._parse_landsat",
+    "module": "hyperproc.spectral.srf",
+    "line": 150,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.srf._summarise",
+    "module": "hyperproc.spectral.srf",
+    "line": 184,
+    "kind": "function",
+    "documented": true,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.srf._download",
+    "module": "hyperproc.spectral.srf",
+    "line": 201,
+    "kind": "function",
+    "documented": false,
+    "private": true
+  },
+  {
+    "name": "hyperproc.spectral.srf.fetch",
+    "module": "hyperproc.spectral.srf",
+    "line": 215,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.srf.target",
+    "module": "hyperproc.spectral.srf",
+    "line": 272,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  },
+  {
+    "name": "hyperproc.spectral.srf.available",
+    "module": "hyperproc.spectral.srf",
+    "line": 284,
+    "kind": "function",
+    "documented": true,
+    "private": false
+  }
+]

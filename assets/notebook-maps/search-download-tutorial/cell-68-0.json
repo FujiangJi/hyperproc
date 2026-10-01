@@ -1,0 +1,211 @@
+{
+  "center": [
+    37.057305,
+    -119.36915
+  ],
+  "zoom": 8,
+  "layers": [
+    {
+      "name": "DP1.30006.001/TEAK/2024-06",
+      "granule": {
+        "name": "DP1.30006.001/TEAK/2024-06",
+        "saved_name": "DP1.30006.001/TEAK/2024-06",
+        "sensor": "NEON",
+        "level": "L1",
+        "time": "2024-06-01 00:00",
+        "bbox": [
+          -119.00602,
+          37.00583,
+          -119.00602,
+          37.00583
+        ],
+        "size_mb": null,
+        "cloud": null,
+        "browse": null,
+        "extent_kind": "site location"
+      },
+      "type": "marker",
+      "location": [
+        37.00583,
+        -119.00602
+      ]
+    },
+    {
+      "name": "DP1.30006.001/SOAP/2024-06",
+      "granule": {
+        "name": "DP1.30006.001/SOAP/2024-06",
+        "saved_name": "DP1.30006.001/SOAP/2024-06",
+        "sensor": "NEON",
+        "level": "L1",
+        "time": "2024-06-01 00:00",
+        "bbox": [
+          -119.26219,
+          37.03337,
+          -119.26219,
+          37.03337
+        ],
+        "size_mb": null,
+        "cloud": null,
+        "browse": null,
+        "extent_kind": "site location"
+      },
+      "type": "marker",
+      "location": [
+        37.03337,
+        -119.26219
+      ]
+    },
+    {
+      "name": "DP1.30006.001/SJER/2024-04",
+      "granule": {
+        "name": "DP1.30006.001/SJER/2024-04",
+        "saved_name": "DP1.30006.001/SJER/2024-04",
+        "sensor": "NEON",
+        "level": "L1",
+        "time": "2024-04-01 00:00",
+        "bbox": [
+          -119.73228,
+          37.10878,
+          -119.73228,
+          37.10878
+        ],
+        "size_mb": null,
+        "cloud": null,
+        "browse": null,
+        "extent_kind": "site location"
+      },
+      "type": "marker",
+      "location": [
+        37.10878,
+        -119.73228
+      ]
+    },
+    {
+      "name": "DP1.30006.001/TEAK/2023-07",
+      "granule": {
+        "name": "DP1.30006.001/TEAK/2023-07",
+        "saved_name": "DP1.30006.001/TEAK/2023-07",
+        "sensor": "NEON",
+        "level": "L1",
+        "time": "2023-07-01 00:00",
+        "bbox": [
+          -119.00602,
+          37.00583,
+          -119.00602,
+          37.00583
+        ],
+        "size_mb": null,
+        "cloud": null,
+        "browse": null,
+        "extent_kind": "site location"
+      },
+      "type": "marker",
+      "location": [
+        37.00583,
+        -119.00602
+      ]
+    },
+    {
+      "name": "DP1.30006.001/SOAP/2023-07",
+      "granule": {
+        "name": "DP1.30006.001/SOAP/2023-07",
+        "saved_name": "DP1.30006.001/SOAP/2023-07",
+        "sensor": "NEON",
+        "level": "L1",
+        "time": "2023-07-01 00:00",
+        "bbox": [
+          -119.26219,
+          37.03337,
+          -119.26219,
+          37.03337
+        ],
+        "size_mb": null,
+        "cloud": null,
+        "browse": null,
+        "extent_kind": "site location"
+      },
+      "type": "marker",
+      "location": [
+        37.03337,
+        -119.26219
+      ]
+    },
+    {
+      "name": "DP1.30006.001/SOAP/2023-06",
+      "granule": {
+        "name": "DP1.30006.001/SOAP/2023-06",
+        "saved_name": "DP1.30006.001/SOAP/2023-06",
+        "sensor": "NEON",
+        "level": "L1",
+        "time": "2023-06-01 00:00",
+        "bbox": [
+          -119.26219,
+          37.03337,
+          -119.26219,
+          37.03337
+        ],
+        "size_mb": null,
+        "cloud": null,
+        "browse": null,
+        "extent_kind": "site location"
+      },
+      "type": "marker",
+      "location": [
+        37.03337,
+        -119.26219
+      ]
+    },
+    {
+      "name": "DP1.30006.001/SJER/2023-04",
+      "granule": {
+        "name": "DP1.30006.001/SJER/2023-04",
+        "saved_name": "DP1.30006.001/SJER/2023-04",
+        "sensor": "NEON",
+        "level": "L1",
+        "time": "2023-04-01 00:00",
+        "bbox": [
+          -119.73228,
+          37.10878,
+          -119.73228,
+          37.10878
+        ],
+        "size_mb": null,
+        "cloud": null,
+        "browse": null,
+        "extent_kind": "site location"
+      },
+      "type": "marker",
+      "location": [
+        37.10878,
+        -119.73228
+      ]
+    },
+    {
+      "name": "DP1.30006.001/TEAK/2021-07",
+      "granule": {
+        "name": "DP1.30006.001/TEAK/2021-07",
+        "saved_name": "DP1.30006.001/TEAK/2021-07",
+        "sensor": "NEON",
+        "level": "L1",
+        "time": "2021-07-01 00:00",
+        "bbox": [
+          -119.00602,
+          37.00583,
+          -119.00602,
+          37.00583
+        ],
+        "size_mb": null,
+        "cloud": null,
+        "browse": null,
+        "extent_kind": "site location"
+      },
+      "type": "marker",
+      "location": [
+        37.00583,
+        -119.00602
+      ]
+    }
+  ],
+  "evidence": "matched-granule-metadata",
+  "metadata_retrieved_at": "2026-10-01T20:13:39.940226+00:00"
+}

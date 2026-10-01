@@ -1,0 +1,259 @@
+{
+  "center": [
+    36.159590669955236,
+    -119.36593539747135
+  ],
+  "zoom": 8,
+  "layers": [
+    {
+      "name": "AV520250429t185930_000_L1B_RDN_1",
+      "granule": {
+        "name": "AV520250429t185930_000_L1B_RDN_1",
+        "saved_name": "AV520250429t185930_000_L1B_RDN_1",
+        "sensor": "AVIRIS-5",
+        "level": "L1B",
+        "time": "2025-04-29 18:59",
+        "bbox": [
+          -119.26526713326341,
+          36.17216898670718,
+          -119.15013722964139,
+          36.25068682267106
+        ],
+        "size_mb": 4877,
+        "cloud": null,
+        "browse": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV5_L1B_RDN/data/AV520250429t185930_000_L1B_RDN_410aa9e4_RDN_BROWSE.jpg",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          36.17216898670718,
+          -119.26526713326341
+        ],
+        [
+          36.25068682267106,
+          -119.15013722964139
+        ]
+      ]
+    },
+    {
+      "name": "AV520250429t185930_001_L1B_RDN_1",
+      "granule": {
+        "name": "AV520250429t185930_001_L1B_RDN_1",
+        "saved_name": "AV520250429t185930_001_L1B_RDN_1",
+        "sensor": "AVIRIS-5",
+        "level": "L1B",
+        "time": "2025-04-29 19:01",
+        "bbox": [
+          -119.38981922839024,
+          36.17848454785283,
+          -119.2566885744339,
+          36.24429879349759
+        ],
+        "size_mb": 4875,
+        "cloud": null,
+        "browse": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV5_L1B_RDN/data/AV520250429t185930_001_L1B_RDN_410aa9e4_RDN_BROWSE.jpg",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          36.17848454785283,
+          -119.38981922839024
+        ],
+        [
+          36.24429879349759,
+          -119.2566885744339
+        ]
+      ]
+    },
+    {
+      "name": "AV520250429t185930_002_L1B_RDN_1",
+      "granule": {
+        "name": "AV520250429t185930_002_L1B_RDN_1",
+        "saved_name": "AV520250429t185930_002_L1B_RDN_1",
+        "sensor": "AVIRIS-5",
+        "level": "L1B",
+        "time": "2025-04-29 19:02",
+        "bbox": [
+          -119.52024910540179,
+          36.17858790352135,
+          -119.38218319368411,
+          36.24349590522879
+        ],
+        "size_mb": 5476,
+        "cloud": null,
+        "browse": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV5_L1B_RDN/data/AV520250429t185930_002_L1B_RDN_410aa9e4_RDN_BROWSE.jpg",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          36.17858790352135,
+          -119.52024910540179
+        ],
+        [
+          36.24349590522879,
+          -119.38218319368411
+        ]
+      ]
+    },
+    {
+      "name": "AV520250429t190705_000_L1B_RDN_1",
+      "granule": {
+        "name": "AV520250429t190705_000_L1B_RDN_1",
+        "saved_name": "AV520250429t190705_000_L1B_RDN_1",
+        "sensor": "AVIRIS-5",
+        "level": "L1B",
+        "time": "2025-04-29 19:07",
+        "bbox": [
+          -119.5817335653013,
+          36.29764001909309,
+          -119.42091974858832,
+          36.42252597081684
+        ],
+        "size_mb": 4946,
+        "cloud": null,
+        "browse": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV5_L1B_RDN/data/AV520250429t190705_000_L1B_RDN_410aa9e4_RDN_BROWSE.jpg",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          36.29764001909309,
+          -119.5817335653013
+        ],
+        [
+          36.42252597081684,
+          -119.42091974858832
+        ]
+      ]
+    },
+    {
+      "name": "AV520250429t190705_001_L1B_RDN_1",
+      "granule": {
+        "name": "AV520250429t190705_001_L1B_RDN_1",
+        "saved_name": "AV520250429t190705_001_L1B_RDN_1",
+        "sensor": "AVIRIS-5",
+        "level": "L1B",
+        "time": "2025-04-29 19:08",
+        "bbox": [
+          -119.49187425086188,
+          36.22704100081472,
+          -119.35972815265335,
+          36.341289907405994
+        ],
+        "size_mb": 4914,
+        "cloud": null,
+        "browse": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV5_L1B_RDN/data/AV520250429t190705_001_L1B_RDN_410aa9e4_RDN_BROWSE.jpg",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          36.22704100081472,
+          -119.49187425086188
+        ],
+        [
+          36.341289907405994,
+          -119.35972815265335
+        ]
+      ]
+    },
+    {
+      "name": "AV520250429t190705_002_L1B_RDN_1",
+      "granule": {
+        "name": "AV520250429t190705_002_L1B_RDN_1",
+        "saved_name": "AV520250429t190705_002_L1B_RDN_1",
+        "sensor": "AVIRIS-5",
+        "level": "L1B",
+        "time": "2025-04-29 19:09",
+        "bbox": [
+          -119.41665074828758,
+          36.091982178260324,
+          -119.19146932357357,
+          36.272031998906236
+        ],
+        "size_mb": 9885,
+        "cloud": null,
+        "browse": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV5_L1B_RDN/data/AV520250429t190705_002_L1B_RDN_410aa9e4_RDN_BROWSE.jpg",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          36.091982178260324,
+          -119.41665074828758
+        ],
+        [
+          36.272031998906236,
+          -119.19146932357357
+        ]
+      ]
+    },
+    {
+      "name": "AV520250429t191403_000_L1B_RDN_1",
+      "granule": {
+        "name": "AV520250429t191403_000_L1B_RDN_1",
+        "saved_name": "AV520250429t191403_000_L1B_RDN_1",
+        "sensor": "AVIRIS-5",
+        "level": "L1B",
+        "time": "2025-04-29 19:14",
+        "bbox": [
+          -119.43790768172077,
+          35.89665536909363,
+          -119.25159628724822,
+          36.02060098695511
+        ],
+        "size_mb": 4968,
+        "cloud": null,
+        "browse": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV5_L1B_RDN/data/AV520250429t191403_000_L1B_RDN_410aa9e4_RDN_BROWSE.jpg",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          35.89665536909363,
+          -119.43790768172077
+        ],
+        [
+          36.02060098695511,
+          -119.25159628724822
+        ]
+      ]
+    },
+    {
+      "name": "AV520250429t191403_001_L1B_RDN_1",
+      "granule": {
+        "name": "AV520250429t191403_001_L1B_RDN_1",
+        "saved_name": "AV520250429t191403_001_L1B_RDN_1",
+        "sensor": "AVIRIS-5",
+        "level": "L1B",
+        "time": "2025-04-29 19:15",
+        "bbox": [
+          -119.37892470840454,
+          36.0113238001971,
+          -119.26470895534527,
+          36.100534136705626
+        ],
+        "size_mb": 4886,
+        "cloud": null,
+        "browse": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV5_L1B_RDN/data/AV520250429t191403_001_L1B_RDN_410aa9e4_RDN_BROWSE.jpg",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          36.0113238001971,
+          -119.37892470840454
+        ],
+        [
+          36.100534136705626,
+          -119.26470895534527
+        ]
+      ]
+    }
+  ],
+  "evidence": "matched-granule-metadata",
+  "metadata_retrieved_at": "2026-10-01T20:13:39.188117+00:00"
+}

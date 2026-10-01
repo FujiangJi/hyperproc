@@ -1,0 +1,189 @@
+[
+  {
+    "title": "AVIRIS-3 \u2014 tutorial",
+    "file": "aviris3_tutorial.ipynb",
+    "page": "tutorials/aviris3-tutorial.md",
+    "cells": 52,
+    "outputs": 78,
+    "errors": 0,
+    "sha256": "097e183888e838b3e6d3cbf94db71ea18c3280deb21b673fa0873ab83922470b",
+    "figures": 9,
+    "maps": 0
+  },
+  {
+    "title": "AVIRIS-5 \u2014 tutorial",
+    "file": "aviris5_tutorial.ipynb",
+    "page": "tutorials/aviris5-tutorial.md",
+    "cells": 52,
+    "outputs": 62,
+    "errors": 0,
+    "sha256": "02d76ba197bb529e2c34a27172bf593cbbe9b3cc855fdeb871485ee90bcebe6d",
+    "figures": 9,
+    "maps": 0
+  },
+  {
+    "title": "AVIRIS Classic \u2014 tutorial",
+    "file": "avirisclassic_tutorial.ipynb",
+    "page": "tutorials/avirisclassic-tutorial.md",
+    "cells": 52,
+    "outputs": 85,
+    "errors": 0,
+    "sha256": "eded715271a420add30125d3be51e7f63824e69c5cc29f37d041f89d2447838e",
+    "figures": 9,
+    "maps": 0
+  },
+  {
+    "title": "AVIRIS-NG \u2014 tutorial",
+    "file": "avirisng_tutorial.ipynb",
+    "page": "tutorials/avirisng-tutorial.md",
+    "cells": 52,
+    "outputs": 85,
+    "errors": 0,
+    "sha256": "cc9b00ac5938e0f57daec8dce9dfad99524fbc6d606a2dc46def147923c2db60",
+    "figures": 9,
+    "maps": 0
+  },
+  {
+    "title": "DESIS \u2014 tutorial",
+    "file": "desis_tutorial.ipynb",
+    "page": "tutorials/desis-tutorial.md",
+    "cells": 52,
+    "outputs": 79,
+    "errors": 0,
+    "sha256": "1b6f2be3ea5e1954d1393f9a0820480bbdefdd1281062783828f3317d200773f",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "DESIS \u2014 window tutorial",
+    "file": "desis_window_tutorial.ipynb",
+    "page": "tutorials/desis-window-tutorial.md",
+    "cells": 52,
+    "outputs": 65,
+    "errors": 0,
+    "sha256": "bce7475afa71cea94439db85e33ec32c8419514b8d8da803cecdf00a91c8bf8e",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "EMIT \u2014 tutorial",
+    "file": "emit_tutorial.ipynb",
+    "page": "tutorials/emit-tutorial.md",
+    "cells": 53,
+    "outputs": 71,
+    "errors": 0,
+    "sha256": "684e06420e2bb1a51847509dd21b278382683d2772c9303e23ab5ff07e6aedc5",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "EMIT \u2014 window tutorial",
+    "file": "emit_window_tutorial.ipynb",
+    "page": "tutorials/emit-window-tutorial.md",
+    "cells": 53,
+    "outputs": 53,
+    "errors": 0,
+    "sha256": "6f6dc86712330fb8c10440a117bd1290a3cde3ce4d6d736adaf91137e16475f9",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "EnMAP \u2014 tutorial",
+    "file": "enmap_tutorial.ipynb",
+    "page": "tutorials/enmap-tutorial.md",
+    "cells": 52,
+    "outputs": 76,
+    "errors": 0,
+    "sha256": "069242ed1355c8794c970db7c000ece176b71b2d93f09efb8acc1f0e425b1f4f",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "EnMAP \u2014 window tutorial",
+    "file": "enmap_window_tutorial.ipynb",
+    "page": "tutorials/enmap-window-tutorial.md",
+    "cells": 52,
+    "outputs": 59,
+    "errors": 0,
+    "sha256": "9fbbe717ebf9f82bab0c44d1eeca38972e1ec71f8bc851cae859a01482d74a86",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "NEON AOP \u2014 tutorial",
+    "file": "neon_tutorial.ipynb",
+    "page": "tutorials/neon-tutorial.md",
+    "cells": 49,
+    "outputs": 53,
+    "errors": 0,
+    "sha256": "4ee0a50b44376911251004992c1a80e1e8ecaefd2d7cce25d02b20544ef09ac7",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "PACE OCI \u2014 window tutorial",
+    "file": "pace_window_tutorial.ipynb",
+    "page": "tutorials/pace-window-tutorial.md",
+    "cells": 52,
+    "outputs": 61,
+    "errors": 0,
+    "sha256": "98451a79a657b243c38d1e41e08a3190fc840b2ded1a941f67e0b05c44fd35c3",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "PRISMA \u2014 tutorial",
+    "file": "prisma_tutorial.ipynb",
+    "page": "tutorials/prisma-tutorial.md",
+    "cells": 52,
+    "outputs": 73,
+    "errors": 0,
+    "sha256": "a7170a818250d124cd21ef372f99c780e71796643f98a37d1cff71869fd395d8",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "PRISMA \u2014 window tutorial",
+    "file": "prisma_window_tutorial.ipynb",
+    "page": "tutorials/prisma-window-tutorial.md",
+    "cells": 52,
+    "outputs": 62,
+    "errors": 0,
+    "sha256": "dec5a4d81f92de935f8435b95f200ea78f04d6a96dfbc69fd4097cee8eaa1e39",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "Archive search and download \u2014 tutorial",
+    "file": "search_download_tutorial.ipynb",
+    "page": "tutorials/search-download-tutorial.md",
+    "cells": 102,
+    "outputs": 121,
+    "errors": 0,
+    "sha256": "202442a59766e0ed9dfe09a1ab785238a271ffb9f981cfea49f0dbf52d915110",
+    "figures": 15,
+    "maps": 14
+  },
+  {
+    "title": "Tanager \u2014 tutorial",
+    "file": "tanager_tutorial.ipynb",
+    "page": "tutorials/tanager-tutorial.md",
+    "cells": 52,
+    "outputs": 71,
+    "errors": 0,
+    "sha256": "2d4c2dc0e7511d1059c2c8cfd59dade117802fde4ec7c8827bc59d8dbb529153",
+    "figures": 8,
+    "maps": 0
+  },
+  {
+    "title": "Tanager \u2014 window tutorial",
+    "file": "tanager_window_tutorial.ipynb",
+    "page": "tutorials/tanager-window-tutorial.md",
+    "cells": 52,
+    "outputs": 61,
+    "errors": 0,
+    "sha256": "fdfb21a698dca993abb64e44e04040661d3944cd2812d535d856321f0185ca07",
+    "figures": 8,
+    "maps": 0
+  }
+]

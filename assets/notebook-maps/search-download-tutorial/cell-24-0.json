@@ -1,0 +1,166 @@
+{
+  "center": [
+    34.96691206039546,
+    -116.16264433957163
+  ],
+  "zoom": 8,
+  "layers": [
+    {
+      "name": "EMIT_L2A_RFL_002_20230126T220221",
+      "granule": {
+        "name": "EMIT_L2A_RFL_002_20230126T220221",
+        "saved_name": "EMIT_L2A_RFL_002_20230126T220221",
+        "sensor": "EMIT",
+        "level": "L2A",
+        "time": "2023-01-26 22:02",
+        "bbox": [
+          -118.1589347365933,
+          32.57189344967054,
+          -116.90274558974555,
+          33.59784302009359
+        ],
+        "size_mb": 3556,
+        "cloud": 0.0,
+        "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2ARFL.002/EMIT_L2A_RFL_002_20230126T220221/EMIT_L2A_RFL_002_20230126T220221.png",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          32.57189344967054,
+          -118.1589347365933
+        ],
+        [
+          33.59784302009359,
+          -116.90274558974555
+        ]
+      ]
+    },
+    {
+      "name": "EMIT_L2A_RFL_001_20230126T220233_2302615_003",
+      "granule": {
+        "name": "EMIT_L2A_RFL_001_20230126T220233_2302615_003",
+        "saved_name": "EMIT_L2A_RFL_001_20230126T220233_2302615_003",
+        "sensor": "EMIT",
+        "level": "L2A",
+        "time": "2023-01-26 22:02",
+        "bbox": [
+          -117.53628540039062,
+          32.980079650878906,
+          -115.66474914550781,
+          34.70439147949219
+        ],
+        "size_mb": 6980,
+        "cloud": 25.0,
+        "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230126T220233_2302615_003/EMIT_L2A_RFL_001_20230126T220233_2302615_003.png",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          32.980079650878906,
+          -117.53628540039062
+        ],
+        [
+          34.70439147949219,
+          -115.66474914550781
+        ]
+      ]
+    },
+    {
+      "name": "EMIT_L2A_RFL_002_20230126T220233",
+      "granule": {
+        "name": "EMIT_L2A_RFL_002_20230126T220233",
+        "saved_name": "EMIT_L2A_RFL_002_20230126T220233",
+        "sensor": "EMIT",
+        "level": "L2A",
+        "time": "2023-01-26 22:02",
+        "bbox": [
+          -117.53250264918763,
+          33.08749187188769,
+          -115.66473169017084,
+          34.598866432000165
+        ],
+        "size_mb": 6936,
+        "cloud": 1.0,
+        "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2ARFL.002/EMIT_L2A_RFL_002_20230126T220233/EMIT_L2A_RFL_002_20230126T220233.png",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          33.08749187188769,
+          -117.53250264918763
+        ],
+        [
+          34.598866432000165,
+          -115.66473169017084
+        ]
+      ]
+    },
+    {
+      "name": "EMIT_L2A_RFL_002_20230129T211355",
+      "granule": {
+        "name": "EMIT_L2A_RFL_002_20230129T211355",
+        "saved_name": "EMIT_L2A_RFL_002_20230129T211355",
+        "sensor": "EMIT",
+        "level": "L2A",
+        "time": "2023-01-29 21:13",
+        "bbox": [
+          -118.41282877662978,
+          36.34146898603895,
+          -117.10469882184782,
+          37.36193067112038
+        ],
+        "size_mb": 3557,
+        "cloud": 22.0,
+        "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2ARFL.002/EMIT_L2A_RFL_002_20230129T211355/EMIT_L2A_RFL_002_20230129T211355.png",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          36.34146898603895,
+          -118.41282877662978
+        ],
+        [
+          37.36193067112038,
+          -117.10469882184782
+        ]
+      ]
+    },
+    {
+      "name": "EMIT_L2A_RFL_002_20230130T202525",
+      "granule": {
+        "name": "EMIT_L2A_RFL_002_20230130T202525",
+        "saved_name": "EMIT_L2A_RFL_002_20230130T202525",
+        "sensor": "EMIT",
+        "level": "L2A",
+        "time": "2023-01-30 20:25",
+        "bbox": [
+          -115.18859141243861,
+          34.14628660433543,
+          -113.91245990251348,
+          35.16997512570145
+        ],
+        "size_mb": 3557,
+        "cloud": 34.0,
+        "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2ARFL.002/EMIT_L2A_RFL_002_20230130T202525/EMIT_L2A_RFL_002_20230130T202525.png",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          34.14628660433543,
+          -115.18859141243861
+        ],
+        [
+          35.16997512570145,
+          -113.91245990251348
+        ]
+      ]
+    }
+  ],
+  "evidence": "matched-granule-metadata",
+  "metadata_retrieved_at": "2026-10-01T20:13:33.245487+00:00"
+}

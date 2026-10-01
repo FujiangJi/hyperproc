@@ -1,0 +1,259 @@
+{
+  "center": [
+    37.61236,
+    -112.09861500000001
+  ],
+  "zoom": 8,
+  "layers": [
+    {
+      "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240305T194403.L2.SFREFL.V3_1.nc_3.1",
+      "granule": {
+        "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240305T194403.L2.SFREFL.V3_1.nc_3.1",
+        "saved_name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240305T194403.L2.SFREF",
+        "sensor": "PACE",
+        "level": "L2",
+        "time": "2024-03-05 19:44",
+        "bbox": [
+          -122.38535,
+          15.02735,
+          -91.29063,
+          38.03878
+        ],
+        "size_mb": 725,
+        "cloud": 26.0,
+        "browse": "https://oceandata.sci.gsfc.nasa.gov/browse_images/PACE_OCI.20240305T194403.L2.SFREFL.V3_1.nc.png?file_path=PACE_OCI/IMAGES/EDBRS/2024/0305",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          15.02735,
+          -122.38535
+        ],
+        [
+          38.03878,
+          -91.29063
+        ]
+      ]
+    },
+    {
+      "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240308T195103.L2.SFREFL.V3_1.nc_3.1",
+      "granule": {
+        "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240308T195103.L2.SFREFL.V3_1.nc_3.1",
+        "saved_name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240308T195103.L2.SFREF",
+        "sensor": "PACE",
+        "level": "L2",
+        "time": "2024-03-08 19:51",
+        "bbox": [
+          -124.57964,
+          16.16504,
+          -93.13454,
+          39.18724
+        ],
+        "size_mb": 709,
+        "cloud": 45.0,
+        "browse": "https://oceandata.sci.gsfc.nasa.gov/browse_images/PACE_OCI.20240308T195103.L2.SFREFL.V3_1.nc.png?file_path=PACE_OCI/IMAGES/EDBRS/2024/0308",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          16.16504,
+          -124.57964
+        ],
+        [
+          39.18724,
+          -93.13454
+        ]
+      ]
+    },
+    {
+      "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240308T195603.L2.SFREFL.V3_1.nc_3.1",
+      "granule": {
+        "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240308T195603.L2.SFREFL.V3_1.nc_3.1",
+        "saved_name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240308T195603.L2.SFREF",
+        "sensor": "PACE",
+        "level": "L2",
+        "time": "2024-03-08 19:56",
+        "bbox": [
+          -135.64127,
+          33.62415,
+          -95.18333,
+          56.94816
+        ],
+        "size_mb": 690,
+        "cloud": 58.0,
+        "browse": "https://oceandata.sci.gsfc.nasa.gov/browse_images/PACE_OCI.20240308T195603.L2.SFREFL.V3_1.nc.png?file_path=PACE_OCI/IMAGES/EDBRS/2024/0308",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          33.62415,
+          -135.64127
+        ],
+        [
+          56.94816,
+          -95.18333
+        ]
+      ]
+    },
+    {
+      "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240310T192255.L2.SFREFL.V3_1.nc_3.1",
+      "granule": {
+        "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240310T192255.L2.SFREFL.V3_1.nc_3.1",
+        "saved_name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240310T192255.L2.SFREF",
+        "sensor": "PACE",
+        "level": "L2",
+        "time": "2024-03-10 19:22",
+        "bbox": [
+          -117.77813,
+          16.88262,
+          -86.15797,
+          39.91328
+        ],
+        "size_mb": 711,
+        "cloud": 48.0,
+        "browse": "https://oceandata.sci.gsfc.nasa.gov/browse_images/PACE_OCI.20240310T192255.L2.SFREFL.V3_1.nc.png?file_path=PACE_OCI/IMAGES/EDBRS/2024/0310",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          16.88262,
+          -117.77813
+        ],
+        [
+          39.91328,
+          -86.15797
+        ]
+      ]
+    },
+    {
+      "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240310T192755.L2.SFREFL.V3_1.nc_3.1",
+      "granule": {
+        "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240310T192755.L2.SFREFL.V3_1.nc_3.1",
+        "saved_name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240310T192755.L2.SFREF",
+        "sensor": "PACE",
+        "level": "L2",
+        "time": "2024-03-10 19:27",
+        "bbox": [
+          -129.18382,
+          34.32926,
+          -88.15426,
+          57.66718
+        ],
+        "size_mb": 689,
+        "cloud": 55.0,
+        "browse": "https://oceandata.sci.gsfc.nasa.gov/browse_images/PACE_OCI.20240310T192755.L2.SFREFL.V3_1.nc.png?file_path=PACE_OCI/IMAGES/EDBRS/2024/0310",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          34.32926,
+          -129.18382
+        ],
+        [
+          57.66718,
+          -88.15426
+        ]
+      ]
+    },
+    {
+      "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240311T195804.L2.SFREFL.V3_1.nc_3.1",
+      "granule": {
+        "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240311T195804.L2.SFREFL.V3_1.nc_3.1",
+        "saved_name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240311T195804.L2.SFREF",
+        "sensor": "PACE",
+        "level": "L2",
+        "time": "2024-03-11 19:58",
+        "bbox": [
+          -126.84326,
+          17.42484,
+          -94.98705,
+          40.45937
+        ],
+        "size_mb": 709,
+        "cloud": 50.0,
+        "browse": "https://oceandata.sci.gsfc.nasa.gov/browse_images/PACE_OCI.20240311T195804.L2.SFREFL.V3_1.nc.png?file_path=PACE_OCI/IMAGES/EDBRS/2024/0311",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          17.42484,
+          -126.84326
+        ],
+        [
+          40.45937,
+          -94.98705
+        ]
+      ]
+    },
+    {
+      "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240315T204009.L2.SFREFL.V3_1.nc_3.1",
+      "granule": {
+        "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240315T204009.L2.SFREFL.V3_1.nc_3.1",
+        "saved_name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240315T204009.L2.SFREF",
+        "sensor": "PACE",
+        "level": "L2",
+        "time": "2024-03-15 20:40",
+        "bbox": [
+          -138.03926,
+          19.01636,
+          -105.67603,
+          42.05516
+        ],
+        "size_mb": 732,
+        "cloud": 52.0,
+        "browse": "https://oceandata.sci.gsfc.nasa.gov/browse_images/PACE_OCI.20240315T204009.L2.SFREFL.V3_1.nc.png?file_path=PACE_OCI/IMAGES/EDBRS/2024/0315",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          19.01636,
+          -138.03926
+        ],
+        [
+          42.05516,
+          -105.67603
+        ]
+      ]
+    },
+    {
+      "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240316T194155.L2.SFREFL.V3_1.nc_3.1",
+      "granule": {
+        "name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240316T194155.L2.SFREFL.V3_1.nc_3.1",
+        "saved_name": "PACE_OCI_L2_SFREFL_PACE_OCI.20240316T194155.L2.SFREF",
+        "sensor": "PACE",
+        "level": "L2",
+        "time": "2024-03-16 19:41",
+        "bbox": [
+          -134.85806,
+          36.77288,
+          -91.48348,
+          60.19737
+        ],
+        "size_mb": 710,
+        "cloud": 50.0,
+        "browse": "https://oceandata.sci.gsfc.nasa.gov/browse_images/PACE_OCI.20240316T194155.L2.SFREFL.V3_1.nc.png?file_path=PACE_OCI/IMAGES/EDBRS/2024/0316",
+        "extent_kind": "granule bounding box"
+      },
+      "type": "rectangle",
+      "locations": [
+        [
+          36.77288,
+          -134.85806
+        ],
+        [
+          60.19737,
+          -91.48348
+        ]
+      ]
+    }
+  ],
+  "evidence": "matched-granule-metadata",
+  "metadata_retrieved_at": "2026-10-01T20:13:36.070325+00:00"
+}
