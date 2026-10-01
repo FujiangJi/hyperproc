@@ -1,0 +1,210 @@
+{
+  "key": "f6432a17b6585eb7442a9948511de110440d74b7a39c4be97efd82f1874c09bc",
+  "retrieved_at": "2026-10-01T20:13:39.940226+00:00",
+  "query": {
+    "key": "f6432a17b6585eb7442a9948511de110440d74b7a39c4be97efd82f1874c09bc",
+    "rows": [
+      {
+        "name": "DP1.30006.001/TEAK/2024-06",
+        "time": "2024-06-01 00:00",
+        "size_mb": null,
+        "cloud": null
+      },
+      {
+        "name": "DP1.30006.001/SOAP/2024-06",
+        "time": "2024-06-01 00:00",
+        "size_mb": null,
+        "cloud": null
+      },
+      {
+        "name": "DP1.30006.001/SJER/2024-04",
+        "time": "2024-04-01 00:00",
+        "size_mb": null,
+        "cloud": null
+      },
+      {
+        "name": "DP1.30006.001/TEAK/2023-07",
+        "time": "2023-07-01 00:00",
+        "size_mb": null,
+        "cloud": null
+      },
+      {
+        "name": "DP1.30006.001/SOAP/2023-07",
+        "time": "2023-07-01 00:00",
+        "size_mb": null,
+        "cloud": null
+      },
+      {
+        "name": "DP1.30006.001/SOAP/2023-06",
+        "time": "2023-06-01 00:00",
+        "size_mb": null,
+        "cloud": null
+      },
+      {
+        "name": "DP1.30006.001/SJER/2023-04",
+        "time": "2023-04-01 00:00",
+        "size_mb": null,
+        "cloud": null
+      },
+      {
+        "name": "DP1.30006.001/TEAK/2021-07",
+        "time": "2021-07-01 00:00",
+        "size_mb": null,
+        "cloud": null
+      }
+    ],
+    "collection": "DP1.30006.001",
+    "sensor": "NEON",
+    "level": "L1",
+    "kwargs": {
+      "bbox": [
+        -121.0,
+        33.5,
+        -115.0,
+        37.5
+      ],
+      "date": [
+        "2021-01",
+        "2024-12"
+      ]
+    }
+  },
+  "granules": [
+    {
+      "name": "DP1.30006.001/TEAK/2024-06",
+      "saved_name": "DP1.30006.001/TEAK/2024-06",
+      "sensor": "NEON",
+      "level": "L1",
+      "time": "2024-06-01 00:00",
+      "bbox": [
+        -119.00602,
+        37.00583,
+        -119.00602,
+        37.00583
+      ],
+      "size_mb": null,
+      "cloud": null,
+      "browse": null,
+      "extent_kind": "site location"
+    },
+    {
+      "name": "DP1.30006.001/SOAP/2024-06",
+      "saved_name": "DP1.30006.001/SOAP/2024-06",
+      "sensor": "NEON",
+      "level": "L1",
+      "time": "2024-06-01 00:00",
+      "bbox": [
+        -119.26219,
+        37.03337,
+        -119.26219,
+        37.03337
+      ],
+      "size_mb": null,
+      "cloud": null,
+      "browse": null,
+      "extent_kind": "site location"
+    },
+    {
+      "name": "DP1.30006.001/SJER/2024-04",
+      "saved_name": "DP1.30006.001/SJER/2024-04",
+      "sensor": "NEON",
+      "level": "L1",
+      "time": "2024-04-01 00:00",
+      "bbox": [
+        -119.73228,
+        37.10878,
+        -119.73228,
+        37.10878
+      ],
+      "size_mb": null,
+      "cloud": null,
+      "browse": null,
+      "extent_kind": "site location"
+    },
+    {
+      "name": "DP1.30006.001/TEAK/2023-07",
+      "saved_name": "DP1.30006.001/TEAK/2023-07",
+      "sensor": "NEON",
+      "level": "L1",
+      "time": "2023-07-01 00:00",
+      "bbox": [
+        -119.00602,
+        37.00583,
+        -119.00602,
+        37.00583
+      ],
+      "size_mb": null,
+      "cloud": null,
+      "browse": null,
+      "extent_kind": "site location"
+    },
+    {
+      "name": "DP1.30006.001/SOAP/2023-07",
+      "saved_name": "DP1.30006.001/SOAP/2023-07",
+      "sensor": "NEON",
+      "level": "L1",
+      "time": "2023-07-01 00:00",
+      "bbox": [
+        -119.26219,
+        37.03337,
+        -119.26219,
+        37.03337
+      ],
+      "size_mb": null,
+      "cloud": null,
+      "browse": null,
+      "extent_kind": "site location"
+    },
+    {
+      "name": "DP1.30006.001/SOAP/2023-06",
+      "saved_name": "DP1.30006.001/SOAP/2023-06",
+      "sensor": "NEON",
+      "level": "L1",
+      "time": "2023-06-01 00:00",
+      "bbox": [
+        -119.26219,
+        37.03337,
+        -119.26219,
+        37.03337
+      ],
+      "size_mb": null,
+      "cloud": null,
+      "browse": null,
+      "extent_kind": "site location"
+    },
+    {
+      "name": "DP1.30006.001/SJER/2023-04",
+      "saved_name": "DP1.30006.001/SJER/2023-04",
+      "sensor": "NEON",
+      "level": "L1",
+      "time": "2023-04-01 00:00",
+      "bbox": [
+        -119.73228,
+        37.10878,
+        -119.73228,
+        37.10878
+      ],
+      "size_mb": null,
+      "cloud": null,
+      "browse": null,
+      "extent_kind": "site location"
+    },
+    {
+      "name": "DP1.30006.001/TEAK/2021-07",
+      "saved_name": "DP1.30006.001/TEAK/2021-07",
+      "sensor": "NEON",
+      "level": "L1",
+      "time": "2021-07-01 00:00",
+      "bbox": [
+        -119.00602,
+        37.00583,
+        -119.00602,
+        37.00583
+      ],
+      "size_mb": null,
+      "cloud": null,
+      "browse": null,
+      "extent_kind": "site location"
+    }
+  ]
+}

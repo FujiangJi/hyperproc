@@ -1,0 +1,214 @@
+{
+  "key": "e6b9f7dafdc518a5f56296d5e3a509abb188d30384af99494c8a2333b72095b7",
+  "retrieved_at": "2026-10-01T20:13:48.833956+00:00",
+  "query": {
+    "key": "e6b9f7dafdc518a5f56296d5e3a509abb188d30384af99494c8a2333b72095b7",
+    "rows": [
+      {
+        "name": "ENMAP01-____L2A-DT0000107338_20241220T191330Z_003_V0",
+        "time": "2024-12-20 19:13",
+        "size_mb": null,
+        "cloud": 10.0
+      },
+      {
+        "name": "ENMAP01-____L2A-DT0000107338_20241220T191326Z_002_V0",
+        "time": "2024-12-20 19:13",
+        "size_mb": null,
+        "cloud": 0.0
+      },
+      {
+        "name": "ENMAP01-____L2A-DT0000107338_20241220T191321Z_001_V0",
+        "time": "2024-12-20 19:13",
+        "size_mb": null,
+        "cloud": 0.0
+      },
+      {
+        "name": "ENMAP01-____L2A-DT0000103238_20241127T191649Z_022_V0",
+        "time": "2024-11-27 19:16",
+        "size_mb": null,
+        "cloud": 28.0
+      },
+      {
+        "name": "ENMAP01-____L2A-DT0000103238_20241127T191631Z_018_V0",
+        "time": "2024-11-27 19:16",
+        "size_mb": null,
+        "cloud": 30.0
+      },
+      {
+        "name": "ENMAP01-____L2A-DT0000103238_20241127T191627Z_017_V0",
+        "time": "2024-11-27 19:16",
+        "size_mb": null,
+        "cloud": 17.0
+      },
+      {
+        "name": "ENMAP01-____L2A-DT0000102006_20241119T190955Z_004_V0",
+        "time": "2024-11-19 19:09",
+        "size_mb": null,
+        "cloud": 2.0
+      },
+      {
+        "name": "ENMAP01-____L2A-DT0000102006_20241119T190950Z_003_V0",
+        "time": "2024-11-19 19:09",
+        "size_mb": null,
+        "cloud": 19.0
+      }
+    ],
+    "collection": "ENMAP_HSI_L2A",
+    "sensor": "ENMAP",
+    "level": "L2A",
+    "kwargs": {
+      "bbox": [
+        -121.0,
+        33.5,
+        -115.0,
+        37.5
+      ],
+      "date": [
+        "2023-01-01",
+        "2024-12-31"
+      ],
+      "cloud": [
+        0,
+        30
+      ]
+    }
+  },
+  "granules": [
+    {
+      "name": "ENMAP01-____L2A-DT0000107338_20241220T191330Z_003_V010502_20241221T074443Z",
+      "saved_name": "ENMAP01-____L2A-DT0000107338_20241220T191330Z_003_V0",
+      "sensor": "ENMAP",
+      "level": "L2A",
+      "time": "2024-12-20 19:13",
+      "bbox": [
+        -120.1743524,
+        34.3917139,
+        -119.7505813,
+        34.708491
+      ],
+      "size_mb": null,
+      "cloud": 10.0,
+      "browse": null,
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "ENMAP01-____L2A-DT0000107338_20241220T191326Z_002_V010502_20241221T074448Z",
+      "saved_name": "ENMAP01-____L2A-DT0000107338_20241220T191326Z_002_V0",
+      "sensor": "ENMAP",
+      "level": "L2A",
+      "time": "2024-12-20 19:13",
+      "bbox": [
+        -120.1066097,
+        34.6599286,
+        -119.6835248,
+        34.9797144
+      ],
+      "size_mb": null,
+      "cloud": 0.0,
+      "browse": null,
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "ENMAP01-____L2A-DT0000107338_20241220T191321Z_001_V010502_20241221T074430Z",
+      "saved_name": "ENMAP01-____L2A-DT0000107338_20241220T191321Z_001_V0",
+      "sensor": "ENMAP",
+      "level": "L2A",
+      "time": "2024-12-20 19:13",
+      "bbox": [
+        -120.0377678,
+        34.9313947,
+        -119.6160836,
+        35.2485084
+      ],
+      "size_mb": null,
+      "cloud": 0.0,
+      "browse": null,
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "ENMAP01-____L2A-DT0000103238_20241127T191649Z_022_V010502_20260626T033547Z",
+      "saved_name": "ENMAP01-____L2A-DT0000103238_20241127T191649Z_022_V0",
+      "sensor": "ENMAP",
+      "level": "L2A",
+      "time": "2024-11-27 19:16",
+      "bbox": [
+        -119.8656589,
+        34.4033188,
+        -119.4645862,
+        34.7221223
+      ],
+      "size_mb": null,
+      "cloud": 28.0,
+      "browse": null,
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "ENMAP01-____L2A-DT0000103238_20241127T191631Z_018_V010502_20260626T033102Z",
+      "saved_name": "ENMAP01-____L2A-DT0000103238_20241127T191631Z_018_V0",
+      "sensor": "ENMAP",
+      "level": "L2A",
+      "time": "2024-11-27 19:16",
+      "bbox": [
+        -119.5809126,
+        35.4867614,
+        -119.1754024,
+        35.8062141
+      ],
+      "size_mb": null,
+      "cloud": 30.0,
+      "browse": null,
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "ENMAP01-____L2A-DT0000103238_20241127T191627Z_017_V010502_20260626T032802Z",
+      "saved_name": "ENMAP01-____L2A-DT0000103238_20241127T191627Z_017_V0",
+      "sensor": "ENMAP",
+      "level": "L2A",
+      "time": "2024-11-27 19:16",
+      "bbox": [
+        -119.508752,
+        35.7574235,
+        -119.1021402,
+        36.0772443
+      ],
+      "size_mb": null,
+      "cloud": 17.0,
+      "browse": null,
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "ENMAP01-____L2A-DT0000102006_20241119T190955Z_004_V010502_20260620T004246Z",
+      "saved_name": "ENMAP01-____L2A-DT0000102006_20241119T190955Z_004_V0",
+      "sensor": "ENMAP",
+      "level": "L2A",
+      "time": "2024-11-19 19:09",
+      "bbox": [
+        -118.0528717,
+        33.4625516,
+        -117.6605521,
+        33.7788299
+      ],
+      "size_mb": null,
+      "cloud": 2.0,
+      "browse": null,
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "ENMAP01-____L2A-DT0000102006_20241119T190950Z_003_V010502_20260620T003023Z",
+      "saved_name": "ENMAP01-____L2A-DT0000102006_20241119T190950Z_003_V0",
+      "sensor": "ENMAP",
+      "level": "L2A",
+      "time": "2024-11-19 19:09",
+      "bbox": [
+        -117.9828265,
+        33.7306289,
+        -117.5887957,
+        34.0497867
+      ],
+      "size_mb": null,
+      "cloud": 19.0,
+      "browse": null,
+      "extent_kind": "granule bounding box"
+    }
+  ]
+}

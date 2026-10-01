@@ -1,0 +1,2250 @@
+{
+ "AVIRIS-CLASSIC/L1B": {
+  "attrs": {
+   "level": "L1B",
+   "product": "radiance",
+   "sensor": "AVIRIS-Classic",
+   "units": "uW nm-1 cm-2 sr-1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32610",
+  "data_vars": [
+   "aspect",
+   "cos_i",
+   "elev",
+   "ice",
+   "liquid_water",
+   "path_length",
+   "phase",
+   "raa",
+   "radiance",
+   "saa",
+   "slope",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza",
+   "wv"
+  ],
+  "file": "f201013t01p00r10rdn_e",
+  "fwhm": [
+   9.1518,
+   11.927
+  ],
+  "geometry": {
+   "aspect": [
+    0.0,
+    359.9992
+   ],
+   "cos_i": [
+    -0.0256,
+    0.9995
+   ],
+   "elev": [
+    -5.6203,
+    1148.8472
+   ],
+   "raa": [
+    24.1488,
+    346.7068
+   ],
+   "saa": [
+    162.6269,
+    169.0727
+   ],
+   "slope": [
+    0.0,
+    51.8443
+   ],
+   "sza": [
+    46.3155,
+    47.7233
+   ],
+   "vaa": [
+    0.0218,
+    359.9979
+   ],
+   "vza": [
+    0.0128,
+    43.6283
+   ]
+  },
+  "good_bands": 194,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 224,
+   "x": 1632,
+   "y": 17404
+  },
+  "wavelength": {
+   "digest": "6982b5d79b5299d3",
+   "max": 2495.336,
+   "min": 365.93,
+   "n": 224
+  },
+  "window": {
+   "digest": "d30f4810c0830ce0",
+   "finite": 0.9999,
+   "origin": [
+    7609,
+    709
+   ],
+   "range": [
+    -0.1467,
+    6.55
+   ]
+  }
+ },
+ "AVIRIS-CLASSIC/L2A": {
+  "attrs": {
+   "level": "L2A",
+   "product": "reflectance",
+   "sensor": "AVIRIS-Classic",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32610",
+  "data_vars": [
+   "aspect",
+   "cos_i",
+   "elev",
+   "ice",
+   "liquid_water",
+   "path_length",
+   "phase",
+   "raa",
+   "reflectance",
+   "saa",
+   "slope",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza",
+   "wv"
+  ],
+  "file": "f201013t01p00r10_rfl_v1l1",
+  "fwhm": [
+   9.1518,
+   11.927
+  ],
+  "geometry": {
+   "aspect": [
+    0.0,
+    359.9992
+   ],
+   "cos_i": [
+    -0.0256,
+    0.9995
+   ],
+   "elev": [
+    -5.6203,
+    1148.8472
+   ],
+   "raa": [
+    24.1488,
+    346.7068
+   ],
+   "saa": [
+    162.6269,
+    169.0727
+   ],
+   "slope": [
+    0.0,
+    51.8443
+   ],
+   "sza": [
+    46.3155,
+    47.7233
+   ],
+   "vaa": [
+    0.0218,
+    359.9979
+   ],
+   "vza": [
+    0.0128,
+    43.6283
+   ]
+  },
+  "good_bands": 194,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 224,
+   "x": 1632,
+   "y": 17404
+  },
+  "wavelength": {
+   "digest": "6216a2edf2a8a985",
+   "max": 2496.224,
+   "min": 365.914,
+   "n": 224
+  },
+  "window": {
+   "digest": "4395c5f8f761f7b8",
+   "finite": 1.0,
+   "origin": [
+    7609,
+    709
+   ],
+   "range": [
+    -451.0281,
+    453.1324
+   ]
+  }
+ },
+ "AVIRIS-NG/L1B": {
+  "attrs": {
+   "level": "L1B",
+   "product": "radiance",
+   "sensor": "AVIRIS-NG",
+   "units": "uW nm-1 cm-2 sr-1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32610",
+  "data_vars": [
+   "aspect",
+   "cos_i",
+   "earth_sun_distance",
+   "elev",
+   "path_length",
+   "phase",
+   "raa",
+   "radiance",
+   "saa",
+   "slope",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza"
+  ],
+  "file": "ang20220224t210144_rdn_v2aa1",
+  "fwhm": [
+   5.57,
+   6.03
+  ],
+  "geometry": {
+   "aspect": [
+    0.001,
+    359.999
+   ],
+   "cos_i": [
+    -0.029,
+    0.9999
+   ],
+   "elev": [
+    -0.3373,
+    1317.4286
+   ],
+   "raa": [
+    0.0053,
+    359.9996
+   ],
+   "saa": [
+    196.2831,
+    197.0259
+   ],
+   "slope": [
+    0.0,
+    53.0069
+   ],
+   "sza": [
+    45.0107,
+    45.55
+   ],
+   "vaa": [
+    145.9995,
+    328.0389
+   ],
+   "vza": [
+    0.9265,
+    34.3774
+   ]
+  },
+  "good_bands": 370,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 425,
+   "x": 1098,
+   "y": 15810
+  },
+  "wavelength": {
+   "digest": "9187a844cb8d2dee",
+   "max": 2500.876,
+   "min": 377.196,
+   "n": 425
+  },
+  "window": {
+   "digest": "4527e6505beb98c9",
+   "finite": 1.0,
+   "origin": [
+    6911,
+    475
+   ],
+   "range": [
+    -0.0253,
+    10.5427
+   ]
+  }
+ },
+ "AVIRIS-NG/L2A": {
+  "attrs": {
+   "level": "L2A",
+   "product": "reflectance",
+   "sensor": "AVIRIS-NG",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32610",
+  "data_vars": [
+   "aspect",
+   "cos_i",
+   "earth_sun_distance",
+   "elev",
+   "path_length",
+   "phase",
+   "raa",
+   "reflectance",
+   "saa",
+   "slope",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza"
+  ],
+  "file": "ang20220224t210144_rfl_v2aa1",
+  "fwhm": [
+   5.57,
+   6.03
+  ],
+  "geometry": {
+   "aspect": [
+    0.001,
+    359.999
+   ],
+   "cos_i": [
+    -0.029,
+    0.9999
+   ],
+   "elev": [
+    -0.3373,
+    1317.4286
+   ],
+   "raa": [
+    0.0053,
+    359.9996
+   ],
+   "saa": [
+    196.2831,
+    197.0259
+   ],
+   "slope": [
+    0.0,
+    53.0069
+   ],
+   "sza": [
+    45.0107,
+    45.55
+   ],
+   "vaa": [
+    145.9995,
+    328.0389
+   ],
+   "vza": [
+    0.9265,
+    34.3774
+   ]
+  },
+  "good_bands": 370,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 425,
+   "x": 1098,
+   "y": 15810
+  },
+  "wavelength": {
+   "digest": "9187a844cb8d2dee",
+   "max": 2500.876,
+   "min": 377.196,
+   "n": 425
+  },
+  "window": {
+   "digest": "f8f070c28894923b",
+   "finite": 1.0,
+   "origin": [
+    6911,
+    475
+   ],
+   "range": [
+    -0.3291,
+    0.8892
+   ]
+  }
+ },
+ "AVIRIS3/L1B": {
+  "attrs": {
+   "level": "L1B",
+   "product": "radiance",
+   "sensor": "AVIRIS-3",
+   "units": "uW nm-1 cm-2 sr-1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32612",
+  "data_vars": [
+   "aot",
+   "aspect",
+   "cos_i",
+   "earth_sun_distance",
+   "elev",
+   "path_length",
+   "phase",
+   "raa",
+   "radiance",
+   "saa",
+   "slope",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza",
+   "wv"
+  ],
+  "file": "AV320231005t181518_L1B_RDN_main_d71e8b07_RDN_ORT",
+  "fwhm": [
+   7.6174,
+   8.3076
+  ],
+  "geometry": {
+   "aspect": [
+    0.0011,
+    359.9982
+   ],
+   "cos_i": [
+    0.1562,
+    0.9934
+   ],
+   "elev": [
+    2061.4419,
+    2596.2979
+   ],
+   "raa": [
+    0.086,
+    359.9553
+   ],
+   "saa": [
+    158.4837,
+    158.6908
+   ],
+   "slope": [
+    0.0234,
+    40.5457
+   ],
+   "sza": [
+    45.5005,
+    45.6903
+   ],
+   "vaa": [
+    101.8332,
+    280.0549
+   ],
+   "vza": [
+    0.0312,
+    21.4932
+   ]
+  },
+  "good_bands": 248,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 284,
+   "x": 1342,
+   "y": 7182
+  },
+  "wavelength": {
+   "digest": "cde22f597887c72c",
+   "max": 2493.481,
+   "min": 389.755,
+   "n": 284
+  },
+  "window": {
+   "digest": "1a8240217e25eafe",
+   "finite": 1.0,
+   "origin": [
+    3137,
+    582
+   ],
+   "range": [
+    0.0019,
+    5.8176
+   ]
+  }
+ },
+ "AVIRIS3/L2A": {
+  "attrs": {
+   "level": "L2A",
+   "product": "reflectance",
+   "sensor": "AVIRIS-3",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32612",
+  "data_vars": [
+   "aot",
+   "aspect",
+   "cos_i",
+   "earth_sun_distance",
+   "elev",
+   "path_length",
+   "phase",
+   "raa",
+   "reflectance",
+   "saa",
+   "slope",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza",
+   "wv"
+  ],
+  "file": "AV320231005t181518_L2A_OE_main_98b13fff_RFL_ORT",
+  "fwhm": [
+   7.6174,
+   8.3076
+  ],
+  "geometry": {
+   "aspect": [
+    0.0011,
+    359.9982
+   ],
+   "cos_i": [
+    0.1562,
+    0.9934
+   ],
+   "elev": [
+    2061.4419,
+    2596.2979
+   ],
+   "raa": [
+    0.086,
+    359.9553
+   ],
+   "saa": [
+    158.4837,
+    158.6908
+   ],
+   "slope": [
+    0.0234,
+    40.5457
+   ],
+   "sza": [
+    45.5005,
+    45.6903
+   ],
+   "vaa": [
+    101.8332,
+    280.0549
+   ],
+   "vza": [
+    0.0312,
+    21.4932
+   ]
+  },
+  "good_bands": 249,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 284,
+   "x": 1342,
+   "y": 7182
+  },
+  "wavelength": {
+   "digest": "cde22f597887c72c",
+   "max": 2493.481,
+   "min": 389.755,
+   "n": 284
+  },
+  "window": {
+   "digest": "b40190cfa857aa45",
+   "finite": 1.0,
+   "origin": [
+    3137,
+    582
+   ],
+   "range": [
+    -0.01,
+    0.2571
+   ]
+  }
+ },
+ "AVIRIS5/L1B": {
+  "attrs": {
+   "level": "L1B",
+   "product": "radiance",
+   "sensor": "AVIRIS-5",
+   "units": "uW nm-1 cm-2 sr-1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32612",
+  "data_vars": [
+   "aspect",
+   "cos_i",
+   "earth_sun_distance",
+   "elev",
+   "path_length",
+   "phase",
+   "raa",
+   "radiance",
+   "saa",
+   "slope",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza"
+  ],
+  "file": "AV520250508t173511_000_L1B_RDN_1032338f_RDN.nc",
+  "fwhm": [
+   5.5698,
+   5.8451
+  ],
+  "geometry": {
+   "aspect": [
+    0.0003,
+    359.9995
+   ],
+   "cos_i": [
+    -0.1125,
+    1.0
+   ],
+   "elev": [
+    1412.1945,
+    3727.7246
+   ],
+   "raa": [
+    81.654,
+    256.2698
+   ],
+   "saa": [
+    128.0357,
+    128.6731
+   ],
+   "slope": [
+    0.0638,
+    67.5442
+   ],
+   "sza": [
+    29.831,
+    29.932
+   ],
+   "vaa": [
+    0.0013,
+    359.9984
+   ],
+   "vza": [
+    1.4183,
+    45.7695
+   ]
+  },
+  "good_bands": 369,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 424,
+   "x": 3605,
+   "y": 2009
+  },
+  "wavelength": {
+   "digest": "c130e008bc182985",
+   "max": 2499.739,
+   "min": 381.799,
+   "n": 424
+  },
+  "window": {
+   "digest": "8faf6a867bc18315",
+   "finite": 1.0,
+   "origin": [
+    873,
+    1572
+   ],
+   "range": [
+    -0.0131,
+    7.109
+   ]
+  }
+ },
+ "AVIRIS5/L2A": {
+  "attrs": {
+   "level": "L2A",
+   "product": "reflectance",
+   "sensor": "AVIRIS-5",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32612",
+  "data_vars": [
+   "aot",
+   "aspect",
+   "co2",
+   "cos_i",
+   "earth_sun_distance",
+   "elev",
+   "path_length",
+   "phase",
+   "raa",
+   "reflectance",
+   "saa",
+   "slope",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza",
+   "wv"
+  ],
+  "file": "AV520250508t173511_000_L2A_OE_f9b3b7e7_RFL_ORT.nc",
+  "fwhm": [
+   5.5698,
+   5.8451
+  ],
+  "geometry": {
+   "aspect": [
+    0.0003,
+    359.9995
+   ],
+   "cos_i": [
+    -0.1125,
+    1.0
+   ],
+   "elev": [
+    1412.1945,
+    3727.7246
+   ],
+   "raa": [
+    81.654,
+    256.2698
+   ],
+   "saa": [
+    128.0357,
+    128.6731
+   ],
+   "slope": [
+    0.0638,
+    67.5442
+   ],
+   "sza": [
+    29.831,
+    29.932
+   ],
+   "vaa": [
+    0.0013,
+    359.9984
+   ],
+   "vza": [
+    1.4183,
+    45.7695
+   ]
+  },
+  "good_bands": 369,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 424,
+   "x": 3605,
+   "y": 2009
+  },
+  "wavelength": {
+   "digest": "c130e008bc182985",
+   "max": 2499.739,
+   "min": 381.799,
+   "n": 424
+  },
+  "window": {
+   "digest": "29a663d0cbf215ba",
+   "finite": 1.0,
+   "origin": [
+    873,
+    1572
+   ],
+   "range": [
+    -0.01,
+    0.3139
+   ]
+  }
+ },
+ "DESIS/L1B": {
+  "attrs": {
+   "level": "L1B",
+   "product": "",
+   "sensor": "DESIS",
+   "units": "mW/cm^2/sr/um"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength"
+  ],
+  "crs": "",
+  "data_vars": [
+   "raa",
+   "radiance",
+   "saa",
+   "sza",
+   "vaa",
+   "vza"
+  ],
+  "file": "DESIS-HSI-L1B-DT0117241957_024-20240117T195540-V0220-SPECTRAL_IMAGE.tif",
+  "fwhm": [
+   2.6,
+   6.6
+  ],
+  "geometry": {
+   "raa": [
+    247.6134,
+    247.6134
+   ],
+   "saa": [
+    238.7292,
+    238.7292
+   ],
+   "sza": [
+    60.4413,
+    60.4413
+   ],
+   "vaa": [
+    126.3426,
+    126.3426
+   ],
+   "vza": [
+    12.74,
+    12.74
+   ]
+  },
+  "good_bands": 235,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 235,
+   "x": 1024,
+   "y": 1024
+  },
+  "wavelength": {
+   "digest": "70f72e4b004a3409",
+   "max": 999.98,
+   "min": 401.43,
+   "n": 235
+  },
+  "window": {
+   "digest": "d007f8fe645b8171",
+   "finite": 1.0,
+   "origin": [
+    443,
+    443
+   ],
+   "range": [
+    0.0,
+    8.8959
+   ]
+  }
+ },
+ "DESIS/L1C": {
+  "attrs": {
+   "level": "L1C",
+   "product": "",
+   "sensor": "DESIS",
+   "units": "mW/cm^2/sr/um"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32620",
+  "data_vars": [
+   "raa",
+   "radiance",
+   "saa",
+   "sza",
+   "vaa",
+   "vza"
+  ],
+  "file": "DESIS-HSI-L1C-DT0117241957_024-20240117T195540-V0220-SPECTRAL_IMAGE.tif",
+  "fwhm": [
+   2.6,
+   6.6
+  ],
+  "geometry": {
+   "raa": [
+    249.1908,
+    249.1908
+   ],
+   "saa": [
+    238.7292,
+    238.7292
+   ],
+   "sza": [
+    60.4413,
+    60.4413
+   ],
+   "vaa": [
+    127.92,
+    127.92
+   ],
+   "vza": [
+    12.74,
+    12.74
+   ]
+  },
+  "good_bands": 235,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 235,
+   "x": 1493,
+   "y": 1493
+  },
+  "wavelength": {
+   "digest": "70f72e4b004a3409",
+   "max": 999.98,
+   "min": 401.43,
+   "n": 235
+  },
+  "window": {
+   "digest": "46d90e77bc69ae8e",
+   "finite": 1.0,
+   "origin": [
+    648,
+    648
+   ],
+   "range": [
+    0.1181,
+    9.2099
+   ]
+  }
+ },
+ "DESIS/L2A": {
+  "attrs": {
+   "level": "L2A",
+   "product": "",
+   "sensor": "DESIS",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32620",
+  "data_vars": [
+   "aot550",
+   "cloud",
+   "cloud_land",
+   "cloud_water",
+   "haze_land",
+   "haze_water",
+   "land",
+   "raa",
+   "reflectance",
+   "saa",
+   "shadow",
+   "snow",
+   "sza",
+   "vaa",
+   "vza",
+   "water",
+   "wv_cm"
+  ],
+  "file": "DESIS-HSI-L2A-DT0117241957_024-20240117T195540-V0220-SPECTRAL_IMAGE.tif",
+  "fwhm": [
+   2.6,
+   6.6
+  ],
+  "geometry": {
+   "raa": [
+    249.1908,
+    249.1908
+   ],
+   "saa": [
+    238.7292,
+    238.7292
+   ],
+   "sza": [
+    60.4413,
+    60.4413
+   ],
+   "vaa": [
+    127.92,
+    127.92
+   ],
+   "vza": [
+    12.74,
+    12.74
+   ]
+  },
+  "good_bands": 235,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 235,
+   "x": 1493,
+   "y": 1493
+  },
+  "wavelength": {
+   "digest": "70f72e4b004a3409",
+   "max": 999.98,
+   "min": 401.43,
+   "n": 235
+  },
+  "window": {
+   "digest": "aa2e1a3f38c78221",
+   "finite": 1.0,
+   "origin": [
+    648,
+    648
+   ],
+   "range": [
+    -0.011,
+    0.3497
+   ]
+  }
+ },
+ "EMIT/L1B": {
+  "attrs": {
+   "level": "L1B",
+   "product": "RAD",
+   "sensor": "EMIT",
+   "units": "uW/cm^2/SR/nm"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:4326",
+  "data_vars": [
+   "aod550",
+   "aspect",
+   "cirrus",
+   "cloud",
+   "cos_i",
+   "dilated_cloud",
+   "earth_sun_distance",
+   "elev",
+   "h2o_g_cm2",
+   "path_length",
+   "raa",
+   "radiance",
+   "saa",
+   "slope",
+   "solar_phase",
+   "spacecraft",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza",
+   "water"
+  ],
+  "file": "EMIT_L1B_RAD_001_20230422T195924_2311213_002.nc",
+  "fwhm": [
+   8.415,
+   8.809
+  ],
+  "geometry": {
+   "aspect": [
+    0.0001,
+    359.9974
+   ],
+   "cos_i": [
+    0.4398,
+    1.0
+   ],
+   "elev": [
+    -37.637,
+    1257.762
+   ],
+   "raa": [
+    283.0933,
+    340.4031
+   ],
+   "saa": [
+    178.0031,
+    181.2119
+   ],
+   "slope": [
+    0.0,
+    45.0146
+   ],
+   "sza": [
+    21.6674,
+    22.7628
+   ],
+   "vaa": [
+    102.4892,
+    160.232
+   ],
+   "vza": [
+    10.9993,
+    12.8362
+   ]
+  },
+  "good_bands": 244,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 285,
+   "x": 2203,
+   "y": 2023
+  },
+  "wavelength": {
+   "digest": "60be2a164353f1b2",
+   "max": 2492.924,
+   "min": 381.006,
+   "n": 285
+  },
+  "window": {
+   "digest": "a0bd2ce1adcc18a1",
+   "finite": 1.0,
+   "origin": [
+    880,
+    958
+   ],
+   "range": [
+    0.0048,
+    12.1811
+   ]
+  }
+ },
+ "EMIT/L1B/sensor-grid": {
+  "attrs": {
+   "level": "L1B",
+   "product": "RAD",
+   "sensor": "EMIT",
+   "units": "uW/cm^2/SR/nm"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength"
+  ],
+  "crs": "",
+  "data_vars": [
+   "aod550",
+   "aspect",
+   "cirrus",
+   "cloud",
+   "cos_i",
+   "dilated_cloud",
+   "earth_sun_distance",
+   "elev",
+   "h2o_g_cm2",
+   "lat",
+   "lon",
+   "path_length",
+   "raa",
+   "radiance",
+   "saa",
+   "slope",
+   "solar_phase",
+   "spacecraft",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza",
+   "water"
+  ],
+  "file": "EMIT_L1B_RAD_001_20230422T195924_2311213_002.nc",
+  "fwhm": [
+   8.415,
+   8.809
+  ],
+  "geometry": {
+   "aspect": [
+    0.0005,
+    359.997
+   ],
+   "cos_i": [
+    0.4395,
+    1.0
+   ],
+   "elev": [
+    -37.637,
+    1270.2595
+   ],
+   "raa": [
+    283.0854,
+    340.3753
+   ],
+   "saa": [
+    178.0031,
+    181.2129
+   ],
+   "slope": [
+    0.0,
+    46.7931
+   ],
+   "sza": [
+    21.6664,
+    22.7624
+   ],
+   "vaa": [
+    102.4892,
+    160.2048
+   ],
+   "vza": [
+    10.9993,
+    12.8326
+   ]
+  },
+  "good_bands": 244,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 285,
+   "x": 1242,
+   "y": 1280
+  },
+  "wavelength": {
+   "digest": "60be2a164353f1b2",
+   "max": 2492.924,
+   "min": 381.006,
+   "n": 285
+  },
+  "window": {
+   "digest": "5681144d6bd65ea1",
+   "finite": 1.0,
+   "origin": [
+    555,
+    538
+   ],
+   "range": [
+    0.0057,
+    10.2356
+   ]
+  }
+ },
+ "EMIT/L2A": {
+  "attrs": {
+   "level": "L2A",
+   "product": "RFL",
+   "sensor": "EMIT",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:4326",
+  "data_vars": [
+   "aod550",
+   "aspect",
+   "cirrus",
+   "cloud",
+   "cos_i",
+   "dilated_cloud",
+   "earth_sun_distance",
+   "elev",
+   "h2o_g_cm2",
+   "path_length",
+   "raa",
+   "reflectance",
+   "saa",
+   "slope",
+   "solar_phase",
+   "spacecraft",
+   "sza",
+   "utc_time",
+   "vaa",
+   "vza",
+   "water"
+  ],
+  "file": "EMIT_L2A_RFL_001_20230422T195924_2311213_002.nc",
+  "fwhm": [
+   8.415,
+   8.809
+  ],
+  "geometry": {
+   "aspect": [
+    0.0001,
+    359.9974
+   ],
+   "cos_i": [
+    0.4398,
+    1.0
+   ],
+   "elev": [
+    -37.637,
+    1257.762
+   ],
+   "raa": [
+    283.0933,
+    340.4031
+   ],
+   "saa": [
+    178.0031,
+    181.2119
+   ],
+   "slope": [
+    0.0,
+    45.0146
+   ],
+   "sza": [
+    21.6674,
+    22.7628
+   ],
+   "vaa": [
+    102.4892,
+    160.232
+   ],
+   "vza": [
+    10.9993,
+    12.8362
+   ]
+  },
+  "good_bands": 244,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 285,
+   "x": 2203,
+   "y": 2023
+  },
+  "wavelength": {
+   "digest": "60be2a164353f1b2",
+   "max": 2492.924,
+   "min": 381.006,
+   "n": 285
+  },
+  "window": {
+   "digest": "012d397a6b680576",
+   "finite": 1.0,
+   "origin": [
+    880,
+    958
+   ],
+   "range": [
+    -0.01,
+    0.4202
+   ]
+  }
+ },
+ "ENMAP/L1C": {
+  "attrs": {
+   "level": "L1C",
+   "product": "",
+   "sensor": "EnMAP",
+   "units": "W/m^2/sr/nm"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32610",
+  "data_vars": [
+   "across_off_nadir",
+   "along_off_nadir",
+   "cirrus",
+   "classes",
+   "cloud",
+   "cloudshadow",
+   "haze",
+   "raa",
+   "radiance",
+   "saa",
+   "scene_azimuth",
+   "snow",
+   "sza",
+   "testflags",
+   "vaa",
+   "vza"
+  ],
+  "file": "ENMAP01-____L1C-DT0000191711_20260507T195102Z_003_V010506_20260511T103237Z-SPECTRAL_IMAGE.TIF",
+  "fwhm": [
+   5.8022,
+   11.4329
+  ],
+  "geometry": {
+   "raa": [
+    110.966,
+    112.1983
+   ],
+   "saa": [
+    169.7974,
+    170.9521
+   ],
+   "sza": [
+    24.7294,
+    25.0965
+   ],
+   "vaa": [
+    281.573,
+    282.3408
+   ],
+   "vza": [
+    20.1047,
+    22.749
+   ]
+  },
+  "good_bands": 220,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 224,
+   "x": 1400,
+   "y": 1250
+  },
+  "wavelength": {
+   "digest": "a070e76b960659ff",
+   "max": 2445.3,
+   "min": 418.416,
+   "n": 224
+  },
+  "window": {
+   "digest": "cb1372d0ea650fb0",
+   "finite": 1.0,
+   "origin": [
+    541,
+    607
+   ],
+   "range": [
+    0.0,
+    0.0742
+   ]
+  }
+ },
+ "ENMAP/L2A": {
+  "attrs": {
+   "level": "L2A",
+   "product": "",
+   "sensor": "EnMAP",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32610",
+  "data_vars": [
+   "across_off_nadir",
+   "along_off_nadir",
+   "cirrus",
+   "classes",
+   "cloud",
+   "cloudshadow",
+   "haze",
+   "raa",
+   "reflectance",
+   "saa",
+   "scene_azimuth",
+   "snow",
+   "sza",
+   "testflags",
+   "vaa",
+   "vza"
+  ],
+  "file": "ENMAP01-____L2A-DT0000191711_20260507T195102Z_003_V010506_20260511T103752Z-SPECTRAL_IMAGE.TIF",
+  "fwhm": [
+   5.8022,
+   11.4329
+  ],
+  "geometry": {
+   "raa": [
+    110.966,
+    112.1983
+   ],
+   "saa": [
+    169.7974,
+    170.9521
+   ],
+   "sza": [
+    24.7294,
+    25.0965
+   ],
+   "vaa": [
+    281.573,
+    282.3408
+   ],
+   "vza": [
+    20.1047,
+    22.749
+   ]
+  },
+  "good_bands": 220,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 224,
+   "x": 1400,
+   "y": 1250
+  },
+  "wavelength": {
+   "digest": "a070e76b960659ff",
+   "max": 2445.3,
+   "min": 418.416,
+   "n": 224
+  },
+  "window": {
+   "digest": "82ca2c32dabca5da",
+   "finite": 0.9777,
+   "origin": [
+    541,
+    607
+   ],
+   "range": [
+    0.0131,
+    0.3092
+   ]
+  }
+ },
+ "NEON/L1": {
+  "attrs": {
+   "level": "L1",
+   "product": "reflectance",
+   "sensor": "NEON",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32619",
+  "data_vars": [
+   "aot",
+   "aspect",
+   "cast_shadow_raw",
+   "cos_i",
+   "ddv_class",
+   "elev",
+   "hcw_class",
+   "path_length",
+   "raa",
+   "reflectance",
+   "saa",
+   "sky_view",
+   "slope",
+   "sza",
+   "vaa",
+   "visibility",
+   "vza",
+   "wv"
+  ],
+  "file": "NEON_D01_BART_DP1_20190825_144302_reflectance.h5",
+  "fwhm": [
+   5.5956,
+   6.6966
+  ],
+  "geometry": {
+   "aspect": [
+    0.0,
+    359.9978
+   ],
+   "cos_i": [
+    0.17,
+    1.0
+   ],
+   "elev": [
+    242.8976,
+    767.6226
+   ],
+   "raa": [
+    0.0001,
+    359.9979
+   ],
+   "saa": [
+    132.4452,
+    132.4452
+   ],
+   "slope": [
+    0.023,
+    51.9327
+   ],
+   "sza": [
+    42.3779,
+    42.3779
+   ],
+   "vaa": [
+    0.0001,
+    359.9999
+   ],
+   "vza": [
+    0.0039,
+    35.6712
+   ]
+  },
+  "good_bands": 372,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 426,
+   "x": 12329,
+   "y": 1728
+  },
+  "wavelength": {
+   "digest": "2e176710888f3787",
+   "max": 2512.097,
+   "min": 383.766,
+   "n": 426
+  },
+  "window": {
+   "digest": "f29dad3031d00c18",
+   "finite": 1.0,
+   "origin": [
+    751,
+    5388
+   ],
+   "range": [
+    0.0,
+    0.6223
+   ]
+  }
+ },
+ "PACE/L1B": {
+  "attrs": {
+   "level": "L1B",
+   "product": "",
+   "sensor": "PACE",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength"
+  ],
+  "crs": "",
+  "data_vars": [
+   "elev",
+   "lat",
+   "lon",
+   "raa",
+   "reflectance",
+   "saa",
+   "sza",
+   "vaa",
+   "vza",
+   "water"
+  ],
+  "file": "PACE_OCI.20260422T195047.L1B.V3.nc",
+  "fwhm": [
+   5.0,
+   80.0
+  ],
+  "geometry": {
+   "elev": [
+    -100.0,
+    4077.0
+   ],
+   "raa": [
+    0.0,
+    359.99
+   ],
+   "saa": [
+    164.36,
+    254.07
+   ],
+   "sza": [
+    3.2,
+    33.3
+   ],
+   "vaa": [
+    81.43,
+    252.78
+   ],
+   "vza": [
+    22.07,
+    71.13
+   ]
+  },
+  "good_bands": 290,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 291,
+   "x": 1272,
+   "y": 1709
+  },
+  "wavelength": {
+   "digest": "38797e0ba062a3cd",
+   "max": 2258.429,
+   "min": 314.507,
+   "n": 291
+  },
+  "window": {
+   "digest": "ab47c8ff72e1c3b0",
+   "finite": 1.0,
+   "origin": [
+    742,
+    551
+   ],
+   "range": [
+    0.0004,
+    0.3687
+   ]
+  }
+ },
+ "PACE/L2": {
+  "attrs": {
+   "level": "L2",
+   "product": "",
+   "sensor": "PACE",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "scan_time",
+   "wavelength"
+  ],
+  "crs": "",
+  "data_vars": [
+   "atmfail",
+   "cldice",
+   "cloud",
+   "coastz",
+   "csol_z",
+   "elev",
+   "higlint",
+   "hilt",
+   "hisatzen",
+   "hisolzen",
+   "l2_flags",
+   "land",
+   "lat",
+   "lon",
+   "navfail",
+   "raa",
+   "reflectance",
+   "saa",
+   "straylight",
+   "sza",
+   "tilt",
+   "turbidw",
+   "vaa",
+   "vza",
+   "water"
+  ],
+  "file": "PACE_OCI.20260422T195047.L2.SFREFL.V3_1.nc",
+  "fwhm": [
+   5.0,
+   80.0
+  ],
+  "geometry": {
+   "elev": [
+    -100.0,
+    4077.0
+   ],
+   "raa": [
+    0.0,
+    359.99
+   ],
+   "saa": [
+    164.36,
+    254.07
+   ],
+   "sza": [
+    3.2,
+    33.3
+   ],
+   "vaa": [
+    81.43,
+    252.78
+   ],
+   "vza": [
+    22.07,
+    71.13
+   ]
+  },
+  "good_bands": 122,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 122,
+   "x": 1272,
+   "y": 1709
+  },
+  "wavelength": {
+   "digest": "d850f9f62c258900",
+   "max": 2258.0,
+   "min": 346.0,
+   "n": 122
+  },
+  "window": {
+   "digest": "228ff8b201eeb0e9",
+   "finite": 1.0,
+   "origin": [
+    742,
+    551
+   ],
+   "range": [
+    0.0487,
+    0.3728
+   ]
+  }
+ },
+ "PRISMA/L1": {
+  "attrs": {
+   "level": "L1",
+   "product": "",
+   "sensor": "PRISMA",
+   "units": "W/m^2/sr/um"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "spectrometer",
+   "wavelength"
+  ],
+  "crs": "",
+  "data_vars": [
+   "cloud",
+   "landcover",
+   "lat",
+   "lon",
+   "raa",
+   "radiance",
+   "saa",
+   "sunglint",
+   "sza",
+   "vaa",
+   "vza"
+  ],
+  "file": "PRS_L1_STD_OFFL_20200510162732_20200510162736_0001.he5",
+  "fwhm": [
+   8.9081,
+   15.2823
+  ],
+  "geometry": {
+   "raa": [
+    136.8523,
+    137.7717
+   ],
+   "saa": [
+    146.1005,
+    146.1005
+   ],
+   "sza": [
+    22.4117,
+    22.8077
+   ],
+   "vaa": [
+    282.9528,
+    283.8722
+   ],
+   "vza": [
+    14.6191,
+    17.6635
+   ]
+  },
+  "good_bands": 204,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 230,
+   "x": 1000,
+   "y": 1000
+  },
+  "wavelength": {
+   "digest": "ddb2ae73ade186b8",
+   "max": 2497.115,
+   "min": 406.993,
+   "n": 230
+  },
+  "window": {
+   "digest": "c4e306ca7441e82b",
+   "finite": 1.0,
+   "origin": [
+    432,
+    432
+   ],
+   "range": [
+    0.0,
+    137.22
+   ]
+  }
+ },
+ "PRISMA/L2C": {
+  "attrs": {
+   "level": "L2C",
+   "product": "",
+   "sensor": "PRISMA",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "spectrometer",
+   "wavelength"
+  ],
+  "crs": "",
+  "data_vars": [
+   "aex",
+   "aot",
+   "cot",
+   "lat",
+   "lon",
+   "raa",
+   "reflectance",
+   "saa",
+   "sza",
+   "vza",
+   "wvm"
+  ],
+  "file": "PRS_L2C_STD_20200510162732_20200510162736_0001.he5",
+  "fwhm": [
+   8.9081,
+   15.2823
+  ],
+  "geometry": {
+   "raa": [
+    136.8523,
+    137.7717
+   ],
+   "saa": [
+    146.1005,
+    146.1005
+   ],
+   "sza": [
+    22.4117,
+    22.8077
+   ],
+   "vza": [
+    14.6191,
+    17.6635
+   ]
+  },
+  "good_bands": 204,
+  "main_var": "reflectance",
+  "sizes": {
+   "aex_x": 50,
+   "aex_y": 50,
+   "aot_x": 50,
+   "aot_y": 50,
+   "wavelength": 230,
+   "x": 1000,
+   "y": 1000
+  },
+  "wavelength": {
+   "digest": "dc6fece79ae52d1f",
+   "max": 2497.115,
+   "min": 406.993,
+   "n": 230
+  },
+  "window": {
+   "digest": "eb6a8303c86bd467",
+   "finite": 0.9971,
+   "origin": [
+    432,
+    432
+   ],
+   "range": [
+    0.0001,
+    0.5435
+   ]
+  }
+ },
+ "PRISMA/L2D": {
+  "attrs": {
+   "level": "L2D",
+   "product": "",
+   "sensor": "PRISMA",
+   "units": "1"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "spectrometer",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32617",
+  "data_vars": [
+   "raa",
+   "reflectance",
+   "saa",
+   "sza",
+   "valid",
+   "vza"
+  ],
+  "file": "PRS_L2D_STD_20200510162732_20200510162736_0001.he5",
+  "fwhm": [
+   8.9081,
+   15.2823
+  ],
+  "geometry": {
+   "raa": [
+    136.8531,
+    137.77
+   ],
+   "saa": [
+    146.1005,
+    146.1005
+   ],
+   "sza": [
+    22.4118,
+    22.8076
+   ],
+   "vza": [
+    14.6197,
+    17.663
+   ]
+  },
+  "good_bands": 204,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 230,
+   "x": 1293,
+   "y": 1231
+  },
+  "wavelength": {
+   "digest": "dc6fece79ae52d1f",
+   "max": 2497.115,
+   "min": 406.993,
+   "n": 230
+  },
+  "window": {
+   "digest": "933600b8aa1ca52b",
+   "finite": 0.9999,
+   "origin": [
+    533,
+    560
+   ],
+   "range": [
+    0.0,
+    0.3529
+   ]
+  }
+ },
+ "TANAGER/L1B": {
+  "attrs": {
+   "level": "L1B",
+   "product": "radiance",
+   "sensor": "Tanager",
+   "units": "W/(m^2 sr um)"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32642",
+  "data_vars": [
+   "acq_time",
+   "cirrus",
+   "cloud",
+   "nodata",
+   "path_length",
+   "raa",
+   "radiance",
+   "saa",
+   "sza",
+   "vaa",
+   "valid",
+   "vza"
+  ],
+  "file": "20250503_064345_16_4001_ortho_radiance_hdf5.h5",
+  "fwhm": [
+   5.2,
+   6.81
+  ],
+  "geometry": {
+   "raa": [
+    285.2353,
+    305.208
+   ],
+   "saa": [
+    161.8177,
+    162.4369
+   ],
+   "sza": [
+    26.145,
+    26.3671
+   ],
+   "vaa": [
+    87.6722,
+    107.5066
+   ],
+   "vza": [
+    5.0424,
+    7.7636
+   ]
+  },
+  "good_bands": 376,
+  "main_var": "radiance",
+  "sizes": {
+   "wavelength": 426,
+   "x": 782,
+   "y": 665
+  },
+  "wavelength": {
+   "digest": "7a6d7598aa185318",
+   "max": 2499.0,
+   "min": 376.44,
+   "n": 426
+  },
+  "window": {
+   "digest": "6238aea993dac553",
+   "finite": 1.0,
+   "origin": [
+    285,
+    337
+   ],
+   "range": [
+    -0.047,
+    119.5196
+   ]
+  }
+ },
+ "TANAGER/L2A": {
+  "attrs": {
+   "level": "L2A",
+   "product": "sr",
+   "sensor": "Tanager",
+   "units": "Unitless"
+  },
+  "coords": [
+   "band_index",
+   "fwhm",
+   "good_wavelength",
+   "wavelength",
+   "x",
+   "y"
+  ],
+  "crs": "EPSG:32642",
+  "data_vars": [
+   "acq_time",
+   "aot",
+   "cirrus",
+   "cloud",
+   "nodata",
+   "path_length",
+   "raa",
+   "reflectance",
+   "saa",
+   "sza",
+   "vaa",
+   "valid",
+   "vza",
+   "wv_cm"
+  ],
+  "file": "20250503_064345_16_4001_ortho_sr_hdf5.h5",
+  "fwhm": [
+   5.2,
+   6.81
+  ],
+  "geometry": {
+   "raa": [
+    285.2353,
+    305.208
+   ],
+   "saa": [
+    161.8177,
+    162.4369
+   ],
+   "sza": [
+    26.145,
+    26.3671
+   ],
+   "vaa": [
+    87.6722,
+    107.5066
+   ],
+   "vza": [
+    5.0424,
+    7.7636
+   ]
+  },
+  "good_bands": 368,
+  "main_var": "reflectance",
+  "sizes": {
+   "wavelength": 426,
+   "x": 782,
+   "y": 665
+  },
+  "wavelength": {
+   "digest": "7a6d7598aa185318",
+   "max": 2499.0,
+   "min": 376.44,
+   "n": 426
+  },
+  "window": {
+   "digest": "31e6af15fa896243",
+   "finite": 1.0,
+   "origin": [
+    285,
+    337
+   ],
+   "range": [
+    -0.01,
+    0.4219
+   ]
+  }
+ }
+}

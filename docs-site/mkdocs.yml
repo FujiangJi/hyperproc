@@ -1,0 +1,215 @@
+site_name: hyperproc
+site_description: Multi-sensor hyperspectral processing for terrestrial ecosystem research.
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font: false
+  logo: assets/logos/circular.svg
+  favicon: assets/logos/favicon.svg
+  palette:
+  - scheme: default
+    primary: custom
+    accent: custom
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+  - scheme: slate
+    primary: custom
+    accent: custom
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - navigation.indexes
+  - navigation.top
+  - navigation.footer
+  - search.suggest
+  - search.highlight
+  - content.code.copy
+plugins:
+- search
+- mkdocstrings:
+    handlers:
+      python:
+        paths:
+        - /data/fujiang/Hyperspectral_data_processing
+        options:
+          allow_inspection: false
+          docstring_style: google
+          docstring_section_style: spacy
+          docstring_options:
+            warn_unknown_params: false
+            warn_missing_types: false
+          show_source: true
+          show_signature_annotations: true
+          signature_crossrefs: false
+          show_symbol_type_heading: true
+          heading_level: 2
+          show_submodules: false
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.inlinehilite
+- pymdownx.tabbed:
+    alternate_style: true
+extra_css:
+- assets/vendor/leaflet/leaflet.css
+- stylesheets/extra.css
+extra:
+  generator: false
+copyright: hyperproc 0.1.0 · MIT · Fujiang Ji
+nav:
+- Home: index.md
+- Background:
+  - Why hyperproc: background/overview.md
+  - Measurements and product levels: background/measurements.md
+  - Data model and geometry: background/data-model.md
+  - Processing decision guide: background/decision-guide.md
+  - Scientific references: background/references.md
+- Getting started:
+  - Installation: getting-started/installation.md
+  - First dataset: getting-started/quickstart.md
+  - Input files and data access: getting-started/data-access.md
+  - Configuration and external assets: getting-started/configuration.md
+- Sensors:
+  - Support matrix: sensors/index.md
+  - AVIRIS family: sensors/aviris.md
+  - NEON AOP: sensors/neon.md
+  - EMIT: sensors/emit.md
+  - PRISMA: sensors/prisma.md
+  - EnMAP: sensors/enmap.md
+  - DESIS: sensors/desis.md
+  - PACE OCI: sensors/pace.md
+  - Tanager: sensors/tanager.md
+- Workflows:
+  - Search and download: workflows/search.md
+  - Read and inspect: workflows/reading.md
+  - Atmospheric correction: workflows/atmosphere.md
+  - Airborne topographic and BRDF: workflows/airborne.md
+  - Satellite BRDF: workflows/satellite.md
+  - Quality flags and masking: workflows/quality.md
+  - Spectral processing: workflows/spectral.md
+  - Spectral resampling: workflows/resampling.md
+  - Features and indices: workflows/features.md
+  - Spatial grids and alignment: workflows/spatial.md
+  - Export and provenance: workflows/export.md
+  - Performance and large scenes: workflows/performance.md
+  - Validation and uncertainty: workflows/validation.md
+- Tutorials:
+  - Overview: tutorials/index.md
+  - AVIRIS-3 walkthrough: tutorials/aviris3-walkthrough.md
+  - PACE tutorial update: tutorials/pace-tutorial.md
+  - Notebook caveats: tutorials/caveats.md
+  - Notebook library:
+    - AVIRIS-3 — tutorial: tutorials/aviris3-tutorial.md
+    - AVIRIS-5 — tutorial: tutorials/aviris5-tutorial.md
+    - AVIRIS Classic — tutorial: tutorials/avirisclassic-tutorial.md
+    - AVIRIS-NG — tutorial: tutorials/avirisng-tutorial.md
+    - DESIS — tutorial: tutorials/desis-tutorial.md
+    - DESIS — window tutorial: tutorials/desis-window-tutorial.md
+    - EMIT — tutorial: tutorials/emit-tutorial.md
+    - EMIT — window tutorial: tutorials/emit-window-tutorial.md
+    - EnMAP — tutorial: tutorials/enmap-tutorial.md
+    - EnMAP — window tutorial: tutorials/enmap-window-tutorial.md
+    - NEON AOP — tutorial: tutorials/neon-tutorial.md
+    - PACE OCI — window tutorial: tutorials/pace-window-tutorial.md
+    - PRISMA — tutorial: tutorials/prisma-tutorial.md
+    - PRISMA — window tutorial: tutorials/prisma-window-tutorial.md
+    - Archive search and download — tutorial: tutorials/search-download-tutorial.md
+    - Tanager — tutorial: tutorials/tanager-tutorial.md
+    - Tanager — window tutorial: tutorials/tanager-window-tutorial.md
+- API reference:
+  - Overview: api/index.md
+  - Core:
+    - hyperproc: api/hyperproc.md
+    - hyperproc.align: api/hyperproc-align.md
+    - hyperproc.features: api/hyperproc-features.md
+    - hyperproc.geometry: api/hyperproc-geometry.md
+    - hyperproc.grid: api/hyperproc-grid.md
+    - hyperproc.io: api/hyperproc-io.md
+    - hyperproc.quality: api/hyperproc-quality.md
+    - hyperproc.registry: api/hyperproc-registry.md
+    - hyperproc.report: api/hyperproc-report.md
+  - Archive:
+    - hyperproc.archive: api/hyperproc-archive.md
+    - hyperproc.archive.api: api/hyperproc-archive-api.md
+    - hyperproc.archive.cmr: api/hyperproc-archive-cmr.md
+    - hyperproc.archive.collections: api/hyperproc-archive-collections.md
+    - hyperproc.archive.dlr: api/hyperproc-archive-dlr.md
+    - hyperproc.archive.interactive: api/hyperproc-archive-interactive.md
+    - hyperproc.archive.neon: api/hyperproc-archive-neon.md
+    - hyperproc.archive.results: api/hyperproc-archive-results.md
+  - Readers:
+    - hyperproc.readers: api/hyperproc-readers.md
+    - hyperproc.readers._common: api/hyperproc-readers-_common.md
+    - hyperproc.readers.aviris: api/hyperproc-readers-aviris.md
+    - hyperproc.readers.desis: api/hyperproc-readers-desis.md
+    - hyperproc.readers.emit: api/hyperproc-readers-emit.md
+    - hyperproc.readers.enmap: api/hyperproc-readers-enmap.md
+    - hyperproc.readers.neon: api/hyperproc-readers-neon.md
+    - hyperproc.readers.pace: api/hyperproc-readers-pace.md
+    - hyperproc.readers.prisma: api/hyperproc-readers-prisma.md
+    - hyperproc.readers.tanager: api/hyperproc-readers-tanager.md
+  - Corrections:
+    - hyperproc.correct: api/hyperproc-correct.md
+    - hyperproc.correct.brdf: api/hyperproc-correct-brdf.md
+    - hyperproc.correct.cfactor: api/hyperproc-correct-cfactor.md
+    - hyperproc.correct.coefficients: api/hyperproc-correct-coefficients.md
+    - hyperproc.correct.kernels: api/hyperproc-correct-kernels.md
+    - hyperproc.correct.masks: api/hyperproc-correct-masks.md
+    - hyperproc.correct.mcd43: api/hyperproc-correct-mcd43.md
+    - hyperproc.correct.pipeline: api/hyperproc-correct-pipeline.md
+    - hyperproc.correct.topo: api/hyperproc-correct-topo.md
+  - Spectral:
+    - hyperproc.spectral: api/hyperproc-spectral.md
+    - hyperproc.spectral._smoothspline: api/hyperproc-spectral-_smoothspline.md
+    - hyperproc.spectral.bands: api/hyperproc-spectral-bands.md
+    - hyperproc.spectral.continuum: api/hyperproc-spectral-continuum.md
+    - hyperproc.spectral.derivatives: api/hyperproc-spectral-derivatives.md
+    - hyperproc.spectral.resampling: api/hyperproc-spectral-resampling.md
+    - hyperproc.spectral.smoothing: api/hyperproc-spectral-smoothing.md
+    - hyperproc.spectral.srf: api/hyperproc-spectral-srf.md
+  - Atmosphere:
+    - hyperproc.atmos: api/hyperproc-atmos.md
+    - hyperproc.atmos._runner: api/hyperproc-atmos-_runner.md
+    - hyperproc.atmos.aerosols: api/hyperproc-atmos-aerosols.md
+    - hyperproc.atmos.correct: api/hyperproc-atmos-correct.md
+    - hyperproc.atmos.dem: api/hyperproc-atmos-dem.md
+    - hyperproc.atmos.engines: api/hyperproc-atmos-engines.md
+    - hyperproc.atmos.inputs: api/hyperproc-atmos-inputs.md
+    - hyperproc.atmos.process: api/hyperproc-atmos-process.md
+    - hyperproc.atmos.setup: api/hyperproc-atmos-setup.md
+- Developers:
+  - Architecture: development/architecture.md
+  - Adding a reader: development/adding-reader.md
+  - Testing and reproducibility: development/testing.md
+  - Maintaining this site: development/documentation.md
+- Project:
+  - About and branding: project/about.md
+  - Documentation status: project/status.md
+  - Troubleshooting: project/troubleshooting.md
+  - Citation, license, and contribution: project/governance.md
+  - Release notes: project/releases.md
+site_url: https://fujiangji.github.io/hyperproc/
+repo_url: https://github.com/FujiangJi/hyperproc
+repo_name: FujiangJi/hyperproc
+edit_uri: ''
+hooks:
+- hooks.py
+extra_javascript:
+- assets/vendor/leaflet/leaflet.js
+- javascripts/notebook-maps.js

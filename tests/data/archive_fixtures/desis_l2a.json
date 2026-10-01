@@ -1,0 +1,596 @@
+{
+ "numberMatched": 49,
+ "features": [
+  {
+   "type": "Feature",
+   "stac_version": "1.0.0",
+   "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+   ],
+   "id": "DESIS-HSI-L2A-DT0667868308_018-20211218T214555-V0220",
+   "collection": "DESIS_HSI_L2A",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -118.191827,
+       33.794507
+      ],
+      [
+       -117.739466,
+       33.798048
+      ],
+      [
+       -117.743134,
+       34.220097
+      ],
+      [
+       -118.197737,
+       34.2165
+      ],
+      [
+       -118.191827,
+       33.794507
+      ]
+     ]
+    ]
+   },
+   "bbox": [
+    -118.19773706842192,
+    33.79450684383316,
+    -117.73946609823469,
+    34.22009716445688
+   ],
+   "properties": {
+    "created": "2025-03-12T18:56:15.178Z",
+    "updated": "2025-03-12T18:56:15.178Z",
+    "datetime": "2021-12-18T21:48:38.458756Z",
+    "start_datetime": "2021-12-18T21:48:36.286062Z",
+    "end_datetime": "2021-12-18T21:48:40.631450Z",
+    "platform": "ISS",
+    "gsd": 30.0,
+    "proj:epsg": null,
+    "sci:doi": "10.15489/hxom21uqeo90",
+    "eo:cloud_cover": 0.389705909259,
+    "view:sun_azimuth": 210.025794,
+    "view:sun_elevation": 26.180281,
+    "processing:facility": "NZ",
+    "processing:level": "L2A",
+    "ceosard:specification": "SR",
+    "ceosard:specification_version": "5.0.1",
+    "ceosard:type": "optical",
+    "desis:datatakeID": "0667868308",
+    "desis:eastern_geometric_accuracy": 19.558326,
+    "desis:imageID": "0667868308018",
+    "desis:missionPhase": "routine",
+    "desis:nodata": "-32768",
+    "desis:northern_geometric_accuracy": 21.252079,
+    "desis:numberOfTiles": "39",
+    "desis:ozoneValue": "330",
+    "desis:raster_space": "PixelIsArea",
+    "desis:sceneAzimuthAngle": 236.44,
+    "desis:sceneIncidenceAngle": 3.06,
+    "desis:season": "summer",
+    "desis:si_wavelength_unit": "Nanometer",
+    "desis:tileID": "018",
+    "mission": "DESIS",
+    "processing:datetime": "2025-02-25T03:00:33.978712Z",
+    "processing:version": "02.20",
+    "proj:code": "EPSG:32611",
+    "sci:citation": "DLR (2021): DESIS L1A Product DESIS-HSI-L1A-DT0667868308_018-20211218T214555-V0213 doi: 10.15489/hxom21uqeo90 Processed to Level 2A (version: 02.20, parameters: U0BLNNXXS330G4)",
+    "statistic": {
+     "cloud_shadow": 0.389705909259,
+     "defectivePixels": 0.0,
+     "haze_cover": 35.6493085922
+    }
+   },
+   "assets": {
+    "metadata": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/018/DESIS-HSI-L2A-DT0667868308_018-20211218T214555-V0220-METADATA.xml",
+     "type": "application/xml",
+     "title": "Metadata",
+     "description": "Original XML metadata",
+     "roles": [
+      "metadata"
+     ]
+    },
+    "image": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/018/DESIS-HSI-L2A-DT0667868308_018-20211218T214555-V0220-SPECTRAL_IMAGE.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Spectral Image",
+     "description": "Earth image measurement data covering 1 tile (30x30km) in orthorectified geometry",
+     "proj:epsg": 32611,
+     "proj:shape": [
+      1560,
+      1396
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      389670.0,
+      0.0,
+      -30.0,
+      3786810.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         389670.0,
+         3740010.0
+        ],
+        [
+         431550.0,
+         3740010.0
+        ],
+        [
+         431550.0,
+         3786810.0
+        ],
+        [
+         389670.0,
+         3786810.0
+        ],
+        [
+         389670.0,
+         3740010.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      389670.0,
+      3740010.0,
+      431550.0,
+      3786810.0
+     ],
+     "roles": [
+      "data"
+     ]
+    },
+    "quality": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/018/DESIS-HSI-L2A-DT0667868308_018-20211218T214555-V0220-QL_QUALITY.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Data Quality Test Flags",
+     "description": "Data quality test flags are encoded in 8 bits read from left to right, starting with bit 0. See Product Specification for details.",
+     "roles": [
+      "quality",
+      "flags"
+     ]
+    },
+    "quality2": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/018/DESIS-HSI-L2A-DT0667868308_018-20211218T214555-V0220-QL_QUALITY-2.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Data Quality Layers",
+     "description": "Data quality layers contain information about land cover classes, cloud, cloud shadow, haze, cirrus, snow, vnir/swir pixel masks and vnir/swir quality test flags. See Product Specification for details.",
+     "roles": [
+      "quality",
+      "masks"
+     ]
+    },
+    "overview": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/018/DESIS-HSI-L2A-DT0667868308_018-20211218T214555-V0220-QL_IMAGE.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Overview",
+     "description": "Overview",
+     "roles": [
+      "overview"
+     ]
+    },
+    "thumbnail": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/018/DESIS-HSI-L2A-DT0667868308_018-20211218T214555-V0220-QL_IMAGE_thumbnail.png",
+     "type": "image/png",
+     "title": "Thumbnail",
+     "description": "Thumbnail",
+     "roles": [
+      "thumbnail"
+     ]
+    }
+   }
+  },
+  {
+   "type": "Feature",
+   "stac_version": "1.0.0",
+   "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+   ],
+   "id": "DESIS-HSI-L2A-DT0667868308_017-20211218T214555-V0220",
+   "collection": "DESIS_HSI_L2A",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -118.427906,
+       33.980026
+      ],
+      [
+       -117.974273,
+       33.984454
+      ],
+      [
+       -117.979136,
+       34.406194
+      ],
+      [
+       -118.435031,
+       34.401696
+      ],
+      [
+       -118.427906,
+       33.980026
+      ]
+     ]
+    ]
+   },
+   "bbox": [
+    -118.43503125301025,
+    33.98002579658133,
+    -117.97427271332377,
+    34.4061942993202
+   ],
+   "properties": {
+    "created": "2025-03-12T18:56:15.272Z",
+    "updated": "2025-03-12T18:56:15.272Z",
+    "datetime": "2021-12-18T21:48:34.108989Z",
+    "start_datetime": "2021-12-18T21:48:31.935869Z",
+    "end_datetime": "2021-12-18T21:48:36.282108Z",
+    "platform": "ISS",
+    "gsd": 30.0,
+    "proj:epsg": null,
+    "sci:doi": "10.15489/hxom21uqeo90",
+    "eo:cloud_cover": 0.0596954890139,
+    "view:sun_azimuth": 209.764831,
+    "view:sun_elevation": 26.116251,
+    "processing:facility": "NZ",
+    "processing:level": "L2A",
+    "ceosard:specification": "SR",
+    "ceosard:specification_version": "5.0.1",
+    "ceosard:type": "optical",
+    "desis:datatakeID": "0667868308",
+    "desis:eastern_geometric_accuracy": 21.238917,
+    "desis:imageID": "0667868308017",
+    "desis:missionPhase": "routine",
+    "desis:nodata": "-32768",
+    "desis:northern_geometric_accuracy": 24.519394,
+    "desis:numberOfTiles": "39",
+    "desis:ozoneValue": "330",
+    "desis:raster_space": "PixelIsArea",
+    "desis:sceneAzimuthAngle": 236.32,
+    "desis:sceneIncidenceAngle": 3.06,
+    "desis:season": "summer",
+    "desis:si_wavelength_unit": "Nanometer",
+    "desis:tileID": "017",
+    "mission": "DESIS",
+    "processing:datetime": "2025-02-25T02:55:39.885495Z",
+    "processing:version": "02.20",
+    "proj:code": "EPSG:32611",
+    "sci:citation": "DLR (2021): DESIS L1A Product DESIS-HSI-L1A-DT0667868308_017-20211218T214555-V0213 doi: 10.15489/hxom21uqeo90 Processed to Level 2A (version: 02.20, parameters: U0BLNNXXS330G4)",
+    "statistic": {
+     "cloud_shadow": 0.0596954890139,
+     "defectivePixels": 0.0,
+     "haze_cover": 32.5817613369
+    }
+   },
+   "assets": {
+    "metadata": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/017/DESIS-HSI-L2A-DT0667868308_017-20211218T214555-V0220-METADATA.xml",
+     "type": "application/xml",
+     "title": "Metadata",
+     "description": "Original XML metadata",
+     "roles": [
+      "metadata"
+     ]
+    },
+    "image": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/017/DESIS-HSI-L2A-DT0667868308_017-20211218T214555-V0220-SPECTRAL_IMAGE.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Spectral Image",
+     "description": "Earth image measurement data covering 1 tile (30x30km) in orthorectified geometry",
+     "proj:epsg": 32611,
+     "proj:shape": [
+      1559,
+      1397
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      368100.0,
+      0.0,
+      -30.0,
+      3807630.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         368100.0,
+         3760860.0
+        ],
+        [
+         410010.0,
+         3760860.0
+        ],
+        [
+         410010.0,
+         3807630.0
+        ],
+        [
+         368100.0,
+         3807630.0
+        ],
+        [
+         368100.0,
+         3760860.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      368100.0,
+      3760860.0,
+      410010.0,
+      3807630.0
+     ],
+     "roles": [
+      "data"
+     ]
+    },
+    "quality": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/017/DESIS-HSI-L2A-DT0667868308_017-20211218T214555-V0220-QL_QUALITY.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Data Quality Test Flags",
+     "description": "Data quality test flags are encoded in 8 bits read from left to right, starting with bit 0. See Product Specification for details.",
+     "roles": [
+      "quality",
+      "flags"
+     ]
+    },
+    "quality2": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/017/DESIS-HSI-L2A-DT0667868308_017-20211218T214555-V0220-QL_QUALITY-2.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Data Quality Layers",
+     "description": "Data quality layers contain information about land cover classes, cloud, cloud shadow, haze, cirrus, snow, vnir/swir pixel masks and vnir/swir quality test flags. See Product Specification for details.",
+     "roles": [
+      "quality",
+      "masks"
+     ]
+    },
+    "overview": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/017/DESIS-HSI-L2A-DT0667868308_017-20211218T214555-V0220-QL_IMAGE.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Overview",
+     "description": "Overview",
+     "roles": [
+      "overview"
+     ]
+    },
+    "thumbnail": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/017/DESIS-HSI-L2A-DT0667868308_017-20211218T214555-V0220-QL_IMAGE_thumbnail.png",
+     "type": "image/png",
+     "title": "Thumbnail",
+     "description": "Thumbnail",
+     "roles": [
+      "thumbnail"
+     ]
+    }
+   }
+  },
+  {
+   "type": "Feature",
+   "stac_version": "1.0.0",
+   "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+   ],
+   "id": "DESIS-HSI-L2A-DT0667868308_016-20211218T214555-V0220",
+   "collection": "DESIS_HSI_L2A",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -118.663377,
+       34.16481
+      ],
+      [
+       -118.211077,
+       34.170107
+      ],
+      [
+       -118.217184,
+       34.593153
+      ],
+      [
+       -118.671763,
+       34.587772
+      ],
+      [
+       -118.663377,
+       34.16481
+      ]
+     ]
+    ]
+   },
+   "bbox": [
+    -118.6717625595057,
+    34.16480953486563,
+    -118.21107699303309,
+    34.59315316527069
+   ],
+   "properties": {
+    "created": "2025-03-12T18:56:15.247Z",
+    "updated": "2025-03-12T18:56:15.247Z",
+    "datetime": "2021-12-18T21:48:29.759202Z",
+    "start_datetime": "2021-12-18T21:48:27.586390Z",
+    "end_datetime": "2021-12-18T21:48:31.932015Z",
+    "platform": "ISS",
+    "gsd": 30.0,
+    "proj:epsg": null,
+    "sci:doi": "10.15489/hxom21uqeo90",
+    "eo:cloud_cover": 0.0631592822176,
+    "view:sun_azimuth": 209.503023,
+    "view:sun_elevation": 26.051572999999998,
+    "processing:facility": "NZ",
+    "processing:level": "L2A",
+    "ceosard:specification": "SR",
+    "ceosard:specification_version": "5.0.1",
+    "ceosard:type": "optical",
+    "desis:datatakeID": "0667868308",
+    "desis:eastern_geometric_accuracy": 52.835923,
+    "desis:imageID": "0667868308016",
+    "desis:missionPhase": "routine",
+    "desis:nodata": "-32768",
+    "desis:northern_geometric_accuracy": 61.69213,
+    "desis:numberOfTiles": "39",
+    "desis:ozoneValue": "330",
+    "desis:raster_space": "PixelIsArea",
+    "desis:sceneAzimuthAngle": 236.27,
+    "desis:sceneIncidenceAngle": 3.06,
+    "desis:season": "summer",
+    "desis:si_wavelength_unit": "Nanometer",
+    "desis:tileID": "016",
+    "mission": "DESIS",
+    "processing:datetime": "2025-02-25T02:57:29.433736Z",
+    "processing:version": "02.20",
+    "proj:code": "EPSG:32611",
+    "sci:citation": "DLR (2021): DESIS L1A Product DESIS-HSI-L1A-DT0667868308_016-20211218T214555-V0213 doi: 10.15489/hxom21uqeo90 Processed to Level 2A (version: 02.20, parameters: U0BLNNXXS330G4)",
+    "statistic": {
+     "cloud_shadow": 0.0631592822176,
+     "defectivePixels": 0.0,
+     "haze_cover": 31.6428919262
+    }
+   },
+   "assets": {
+    "metadata": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/016/DESIS-HSI-L2A-DT0667868308_016-20211218T214555-V0220-METADATA.xml",
+     "type": "application/xml",
+     "title": "Metadata",
+     "description": "Original XML metadata",
+     "roles": [
+      "metadata"
+     ]
+    },
+    "image": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/016/DESIS-HSI-L2A-DT0667868308_016-20211218T214555-V0220-SPECTRAL_IMAGE.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Spectral Image",
+     "description": "Earth image measurement data covering 1 tile (30x30km) in orthorectified geometry",
+     "proj:epsg": 32611,
+     "proj:shape": [
+      1564,
+      1390
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      346680.0,
+      0.0,
+      -30.0,
+      3828600.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         346680.0,
+         3781680.0
+        ],
+        [
+         388380.0,
+         3781680.0
+        ],
+        [
+         388380.0,
+         3828600.0
+        ],
+        [
+         346680.0,
+         3828600.0
+        ],
+        [
+         346680.0,
+         3781680.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      346680.0,
+      3781680.0,
+      388380.0,
+      3828600.0
+     ],
+     "roles": [
+      "data"
+     ]
+    },
+    "quality": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/016/DESIS-HSI-L2A-DT0667868308_016-20211218T214555-V0220-QL_QUALITY.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Data Quality Test Flags",
+     "description": "Data quality test flags are encoded in 8 bits read from left to right, starting with bit 0. See Product Specification for details.",
+     "roles": [
+      "quality",
+      "flags"
+     ]
+    },
+    "quality2": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/016/DESIS-HSI-L2A-DT0667868308_016-20211218T214555-V0220-QL_QUALITY-2.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Data Quality Layers",
+     "description": "Data quality layers contain information about land cover classes, cloud, cloud shadow, haze, cirrus, snow, vnir/swir pixel masks and vnir/swir quality test flags. See Product Specification for details.",
+     "roles": [
+      "quality",
+      "masks"
+     ]
+    },
+    "overview": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/016/DESIS-HSI-L2A-DT0667868308_016-20211218T214555-V0220-QL_IMAGE.tif",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Overview",
+     "description": "Overview",
+     "roles": [
+      "overview"
+     ]
+    },
+    "thumbnail": {
+     "href": "https://download.geoservice.dlr.de/DESIS/files/L2A/2021/12/18/DT0667868308/016/DESIS-HSI-L2A-DT0667868308_016-20211218T214555-V0220-QL_IMAGE_thumbnail.png",
+     "type": "image/png",
+     "title": "Thumbnail",
+     "description": "Thumbnail",
+     "roles": [
+      "thumbnail"
+     ]
+    }
+   }
+  }
+ ]
+}

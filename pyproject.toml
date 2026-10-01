@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyperproc"
+dynamic = ["version"]
+description = "Readers, topographic and BRDF correction, and optional ISOFIT atmospheric correction for airborne and satellite imaging spectrometers"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Fujiang Ji", email = "fujiang.ji@wisc.edu" }]
+maintainers = [{ name = "Fujiang Ji", email = "fujiang.ji@wisc.edu" }]
+keywords = [
+    "imaging spectroscopy", "hyperspectral", "remote sensing",
+    "atmospheric correction", "BRDF", "topographic correction", "ISOFIT",
+    "EMIT", "AVIRIS", "PRISMA", "EnMAP", "PACE", "DESIS", "Tanager", "NEON",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.24",
+    "xarray",
+    "dask",
+    "rasterio>=1.3",
+    "rioxarray",
+    "h5py",
+    "netCDF4",
+    "h5netcdf",
+    "scipy",
+    "pyproj",
+    "shapely",
+    "affine",
+    # Holds BLAS to one thread while fitting spectra one at a time. Without it
+    # hyperproc still runs, but spline_gapfill loses a measured factor of 665
+    # on a busy machine - and loses it silently, which is why this is not optional.
+    "threadpoolctl",
+]
+
+[project.optional-dependencies]
+# Atmospheric correction. ISOFIT pins h5py<=3.14 and netCDF4<1.7.4 and pulls in
+# torch and ray; install with `pip install hyperproc[atmos]`, then run
+# `hyperproc-atmos-setup` once to fetch the radiative-transfer engines and
+# data assets (several GB; they cannot ship in a wheel).
+atmos = ["isofit>=4.1,<5"]
+notebooks = ["jupyterlab", "ipykernel", "nbconvert", "matplotlib", "pandas"]
+# Satellite BRDF normalisation downloads MODIS MCD43A1 kernel weights from Earth
+# Engine, so hyperproc.correct.nbar and mcd43.fetch need this. Authenticate once
+# with `earthengine authenticate`. The airborne BRDF route fits its own model and
+# needs nothing here.
+brdf = ["earthengine-api"]
+# Finding granules before reading them. Three archives answer: NASA's CMR
+# (EMIT, PACE, AVIRIS-3/-5) through earthaccess, NEON's Data API (AOP
+# flightlines) and DLR's EOC STAC catalogue (EnMAP, DESIS), the last two over
+# plain HTTP. Searching all three is anonymous; each needs its own credentials
+# to download, and says so. hyperproc.archive.describe() prints the table.
+search = ["earthaccess>=0.11", "requests"]
+# The same search with a map to draw the bounding box on, for notebooks:
+# hyperproc.search_map(). Everything it does is also a plain function call.
+search-map = ["hyperproc[search]", "ipyleaflet>=0.17", "ipywidgets>=7.6", "geopandas"]
+# Published response functions ship as spreadsheets (ESA, USGS), so fetching one
+# needs a reader. Everything else in hyperproc.spectral works without it.
+srf = ["openpyxl", "requests"]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://fujiangji.github.io/hyperproc/"
+Documentation = "https://fujiangji.github.io/hyperproc/"
+Repository = "https://github.com/FujiangJi/hyperproc"
+Issues = "https://github.com/FujiangJi/hyperproc/issues"
+
+[project.scripts]
+hyperproc-atmos-setup = "hyperproc.atmos.setup:main"
+
+# Discovered, not listed. An explicit list means every new subpackage has to be
+# remembered here, and forgetting it ships a wheel that silently lacks the
+# feature - which is exactly what happened to hyperproc.archive.
+[tool.setuptools.packages.find]
+include = ["hyperproc*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "hyperproc.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "data: opens the granules in tests/data; deselect with -m 'not data'",
+    "network: talks to a live archive; deselect with -m 'not network'",
+]

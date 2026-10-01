@@ -1,0 +1,214 @@
+{
+  "key": "9187a49d14c0accb2c076b455bdc64e60a9bb5bde78aa4cac4949b1f1e1abc69",
+  "retrieved_at": "2026-10-01T20:13:35.627975+00:00",
+  "query": {
+    "key": "9187a49d14c0accb2c076b455bdc64e60a9bb5bde78aa4cac4949b1f1e1abc69",
+    "rows": [
+      {
+        "name": "EMIT_L1B_RAD_002_20230126T220221",
+        "time": "2023-01-26 22:02",
+        "size_mb": 1873,
+        "cloud": 0.0
+      },
+      {
+        "name": "EMIT_L1B_RAD_001_20230126T220233_2302615_003",
+        "time": "2023-01-26 22:02",
+        "size_mb": 3650,
+        "cloud": 25.0
+      },
+      {
+        "name": "EMIT_L1B_RAD_002_20230126T220233",
+        "time": "2023-01-26 22:02",
+        "size_mb": 3651,
+        "cloud": 1.0
+      },
+      {
+        "name": "EMIT_L1B_RAD_002_20230129T211355",
+        "time": "2023-01-29 21:13",
+        "size_mb": 1873,
+        "cloud": 22.0
+      },
+      {
+        "name": "EMIT_L1B_RAD_002_20230130T202525",
+        "time": "2023-01-30 20:25",
+        "size_mb": 1873,
+        "cloud": 34.0
+      },
+      {
+        "name": "EMIT_L1B_RAD_001_20230202T193559_2303313_001",
+        "time": "2023-02-02 19:35",
+        "size_mb": 1872,
+        "cloud": 30.0
+      },
+      {
+        "name": "EMIT_L1B_RAD_002_20230202T193559",
+        "time": "2023-02-02 19:35",
+        "size_mb": 1873,
+        "cloud": 17.0
+      },
+      {
+        "name": "EMIT_L1B_RAD_001_20230202T193611_2303313_002",
+        "time": "2023-02-02 19:36",
+        "size_mb": 1872,
+        "cloud": 34.0
+      }
+    ],
+    "collection": "EMITL1BRAD",
+    "sensor": "EMIT",
+    "level": "L1B",
+    "kwargs": {
+      "bbox": [
+        -121.0,
+        33.5,
+        -115.0,
+        37.5
+      ],
+      "date": [
+        "2023-01-01",
+        "2025-12-31"
+      ],
+      "cloud": [
+        0,
+        40
+      ]
+    }
+  },
+  "granules": [
+    {
+      "name": "EMIT_L1B_RAD_002_20230126T220221",
+      "saved_name": "EMIT_L1B_RAD_002_20230126T220221",
+      "sensor": "EMIT",
+      "level": "L1B",
+      "time": "2023-01-26 22:02",
+      "bbox": [
+        -118.1589347365933,
+        32.57189344967054,
+        -116.90274558974555,
+        33.59784302009359
+      ],
+      "size_mb": 1873,
+      "cloud": 0.0,
+      "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL1BRAD.002/EMIT_L1B_RAD_002_20230126T220221/EMIT_L1B_RAD_002_20230126T220221.png",
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "EMIT_L1B_RAD_001_20230126T220233_2302615_003",
+      "saved_name": "EMIT_L1B_RAD_001_20230126T220233_2302615_003",
+      "sensor": "EMIT",
+      "level": "L1B",
+      "time": "2023-01-26 22:02",
+      "bbox": [
+        -117.53628540039062,
+        32.980079650878906,
+        -115.66474914550781,
+        34.70439147949219
+      ],
+      "size_mb": 3650,
+      "cloud": 25.0,
+      "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL1BRAD.001/EMIT_L1B_RAD_001_20230126T220233_2302615_003/EMIT_L1B_RAD_001_20230126T220233_2302615_003.png",
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "EMIT_L1B_RAD_002_20230126T220233",
+      "saved_name": "EMIT_L1B_RAD_002_20230126T220233",
+      "sensor": "EMIT",
+      "level": "L1B",
+      "time": "2023-01-26 22:02",
+      "bbox": [
+        -117.53250264918763,
+        33.08749187188769,
+        -115.66473169017084,
+        34.598866432000165
+      ],
+      "size_mb": 3651,
+      "cloud": 1.0,
+      "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL1BRAD.002/EMIT_L1B_RAD_002_20230126T220233/EMIT_L1B_RAD_002_20230126T220233.png",
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "EMIT_L1B_RAD_002_20230129T211355",
+      "saved_name": "EMIT_L1B_RAD_002_20230129T211355",
+      "sensor": "EMIT",
+      "level": "L1B",
+      "time": "2023-01-29 21:13",
+      "bbox": [
+        -118.41282877662978,
+        36.34146898603895,
+        -117.10469882184782,
+        37.36193067112038
+      ],
+      "size_mb": 1873,
+      "cloud": 22.0,
+      "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL1BRAD.002/EMIT_L1B_RAD_002_20230129T211355/EMIT_L1B_RAD_002_20230129T211355.png",
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "EMIT_L1B_RAD_002_20230130T202525",
+      "saved_name": "EMIT_L1B_RAD_002_20230130T202525",
+      "sensor": "EMIT",
+      "level": "L1B",
+      "time": "2023-01-30 20:25",
+      "bbox": [
+        -115.18859141243861,
+        34.14628660433543,
+        -113.91245990251348,
+        35.16997512570145
+      ],
+      "size_mb": 1873,
+      "cloud": 34.0,
+      "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL1BRAD.002/EMIT_L1B_RAD_002_20230130T202525/EMIT_L1B_RAD_002_20230130T202525.png",
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "EMIT_L1B_RAD_001_20230202T193559_2303313_001",
+      "saved_name": "EMIT_L1B_RAD_001_20230202T193559_2303313_001",
+      "sensor": "EMIT",
+      "level": "L1B",
+      "time": "2023-02-02 19:35",
+      "bbox": [
+        -117.69678497314453,
+        35.91476821899414,
+        -116.38574981689453,
+        37.17207717895508
+      ],
+      "size_mb": 1872,
+      "cloud": 30.0,
+      "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL1BRAD.001/EMIT_L1B_RAD_001_20230202T193559_2303313_001/EMIT_L1B_RAD_001_20230202T193559_2303313_001.png",
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "EMIT_L1B_RAD_002_20230202T193559",
+      "saved_name": "EMIT_L1B_RAD_002_20230202T193559",
+      "sensor": "EMIT",
+      "level": "L1B",
+      "time": "2023-02-02 19:35",
+      "bbox": [
+        -117.69590158028106,
+        36.03807650111619,
+        -116.38578142068275,
+        37.0533217366045
+      ],
+      "size_mb": 1873,
+      "cloud": 17.0,
+      "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL1BRAD.002/EMIT_L1B_RAD_002_20230202T193559/EMIT_L1B_RAD_002_20230202T193559.png",
+      "extent_kind": "granule bounding box"
+    },
+    {
+      "name": "EMIT_L1B_RAD_001_20230202T193611_2303313_002",
+      "saved_name": "EMIT_L1B_RAD_001_20230202T193611_2303313_002",
+      "sensor": "EMIT",
+      "level": "L1B",
+      "time": "2023-02-02 19:36",
+      "bbox": [
+        -117.0130386352539,
+        36.40380859375,
+        -115.69355010986328,
+        37.66058349609375
+      ],
+      "size_mb": 1872,
+      "cloud": 34.0,
+      "browse": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL1BRAD.001/EMIT_L1B_RAD_001_20230202T193611_2303313_002/EMIT_L1B_RAD_001_20230202T193611_2303313_002.png",
+      "extent_kind": "granule bounding box"
+    }
+  ]
+}

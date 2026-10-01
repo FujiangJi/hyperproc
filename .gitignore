@@ -1,0 +1,89 @@
+# ---------------------------------------------------------------------------
+# Data and products. The working tree is ~2.4 TB; the package is ~2 MB.
+# Nothing under these belongs in the repository.
+# ---------------------------------------------------------------------------
+tests/data/*
+tests/output/
+tests/0_old/
+
+# ...with two exceptions, both small test assets that live among the granules:
+# the R reference the smoothing tests check against (92 KB, without it 9 tests
+# skip), and the recorded CMR responses the archive tests replay (66 KB, without
+# them the search tests would have to hit the network).
+!tests/data/r_reference/
+tests/data/r_reference/*
+!tests/data/r_reference/*.npz
+!tests/data/archive_fixtures/
+tests/data/archive_fixtures/*
+!tests/data/archive_fixtures/*.json
+
+# Historical material kept on the working machine, not part of the package.
+0_old_code/
+brdf_old/
+atmospheric_correction_Yin/
+
+# ---------------------------------------------------------------------------
+# Imagery and cubes, wherever they appear
+# ---------------------------------------------------------------------------
+*.tif
+*.tiff
+*.img
+*.hdr
+*.he5
+*.h5
+*.nc
+*.dat
+*.bsq
+*.bil
+*.bip
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Notebooks and editors
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# Run-time scratch
+# ---------------------------------------------------------------------------
+.dryrun/
+isofit_work/
+*.log
+
+# The documentation site: source is tracked, everything derived is not.
+# scripts/generate.py rebuilds docs/api, docs/tutorials and docs/assets from
+# the package and from tests/0_src_code/*.ipynb, which are both in the repo,
+# so a clean clone can reproduce all 549 MB of it with `python manage.py build`.
+docs-site/.venv/
+docs-site/site/
+docs-site/__pycache__/
+docs-site/scripts/__pycache__/
+docs-site/docs/api/
+docs-site/docs/tutorials/
+# assets is mixed: logos/ and vendor/ are source - the theme's logo and
+# favicon, and the vendored leaflet the notebook maps need - while the rest
+# is 115 MB that generate.py rebuilds from the notebooks.
+docs-site/docs/assets/*
+!docs-site/docs/assets/logos/
+!docs-site/docs/assets/vendor/

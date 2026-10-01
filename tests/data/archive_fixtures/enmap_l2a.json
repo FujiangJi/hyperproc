@@ -1,0 +1,2369 @@
+{
+ "numberMatched": 36,
+ "features": [
+  {
+   "type": "Feature",
+   "stac_version": "1.0.0",
+   "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+   ],
+   "id": "ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z",
+   "collection": "ENMAP_HSI_L2A",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       10.983243,
+       47.305515
+      ],
+      [
+       10.889369,
+       47.034275
+      ],
+      [
+       11.27807,
+       46.982008
+      ],
+      [
+       11.374759,
+       47.252896
+      ],
+      [
+       10.983243,
+       47.305515
+      ]
+     ]
+    ]
+   },
+   "bbox": [
+    10.8893693,
+    46.9820082,
+    11.3747587,
+    47.3055145
+   ],
+   "properties": {
+    "version": "01.05.02",
+    "created": "2026-01-20T19:46:33.124Z",
+    "updated": "2026-09-11T23:36:20.993Z",
+    "datetime": "2023-09-29T10:47:13.691539Z",
+    "start_datetime": "2023-09-29T10:47:11.445922Z",
+    "end_datetime": "2023-09-29T10:47:15.937156Z",
+    "platform": "enmap",
+    "proj:epsg": 32632,
+    "sat:relative_orbit": "8045",
+    "sat:orbit_state": "DESCENDING",
+    "eo:cloud_cover": 0,
+    "eo:snow_cover": 1,
+    "view:sun_azimuth": 173.883623,
+    "view:sun_elevation": 40.28677,
+    "processing:facility": "NZ",
+    "processing:level": "L2A",
+    "eop:sensorType": "OPTICAL",
+    "card4l:eastern_geometric_accuracy": 2.0,
+    "card4l:geometric_accuracy_radial_rmse": 4.0,
+    "card4l:northern_geometric_accuracy": 3.0,
+    "card4l:specification": "SR",
+    "card4l:specification_version": "5.0",
+    "data_type": "int16",
+    "enmap:SWIRAOrSWIRBSelected": "SWIRA",
+    "enmap:acquisitionConfiguration": "earth",
+    "enmap:acquisitionType": "EARTH",
+    "enmap:acrossOffNadirAngle": 4.60153589006,
+    "enmap:alongOffNadirAngle": 0.00071922503995,
+    "enmap:archivedVersion": "01.04.00",
+    "enmap:biomeType": "Temperate Coniferous Forests",
+    "enmap:cirrus_cover": 0,
+    "enmap:cloud_shadow": 0,
+    "enmap:compressionType": "COMPRESSED",
+    "enmap:datatakeID": "0000044371",
+    "enmap:defectivePixelsSWIR": 12,
+    "enmap:defectivePixelsVNIR": 2,
+    "enmap:haze_cover": 1,
+    "enmap:imageID": "0000007768",
+    "enmap:instrumentStatusOK": "true",
+    "enmap:missionPhase": "routine",
+    "enmap:nodata": -32768,
+    "enmap:non_cloud_shadow": 3,
+    "enmap:numberOfTiles": "33",
+    "enmap:orbitNo": 8045,
+    "enmap:overallQuality": 0,
+    "enmap:overallQualitySWIR": 0,
+    "enmap:overallQualityVNIR": 0,
+    "enmap:ozoneValue": 269,
+    "enmap:phase": "routine",
+    "enmap:processingDate": "2026-01-06T18:52:19.176536Z",
+    "enmap:productScreeningFailedGroups": "NONE",
+    "enmap:productScreeningResultStatus": "OK",
+    "enmap:qualityAtmosphere": 0,
+    "enmap:saturationCrosstalkSWIR": 0,
+    "enmap:saturationCrosstalkVNIR": 0,
+    "enmap:sceneAOT": 102,
+    "enmap:sceneAzimuthAngle": 14.295551752,
+    "enmap:sceneSunglint": 0,
+    "enmap:sceneTerrain": 0,
+    "enmap:sceneWV": 1104,
+    "enmap:season": "summer",
+    "enmap:status": "NOMINAL",
+    "enmap:statusSWIR": "on",
+    "enmap:statusVNIR": "on",
+    "enmap:sunAzimuthAngle": 173.883623,
+    "enmap:sunElevationAngle": 40.28677,
+    "enmap:swirNumberChannelsMissing": 0,
+    "enmap:tileID": "33",
+    "enmap:vnirNumberChannelsMissing": 0,
+    "enmap:water_cover": 6,
+    "eo:instrument": "HSI",
+    "raster:nodata": "null",
+    "sci:citation": "DLR (2026): EnMAP L0 Product 0000044371_33_L0_20230929T201032_010400_20260106 doi: 10.15489/rlyibn8gjc58 Processed to level 2A (version: 010502, parameters: U0BLNNTS269G)"
+   },
+   "assets": {
+    "metadata": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-METADATA.XML",
+     "type": "application/xml",
+     "title": "Metadata",
+     "description": "Original XML metadata",
+     "roles": [
+      "metadata"
+     ]
+    },
+    "image": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-SPECTRAL_IMAGE_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Spectral Image",
+     "description": "Earth image measurement data covering 1 tile (30x30km) in orthorectified geometry",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "data"
+     ]
+    },
+    "vnir": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_VNIR_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quicklook VNIR",
+     "description": "Visible and Near Infrared (VNIR) quicklook in orthorectified geometry",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "overview",
+      "visual"
+     ]
+    },
+    "thumbnail": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_VNIR_COG_thumbnail.png",
+     "type": "image/png",
+     "title": "Thumbnail VNIR",
+     "description": "Visible and Near Infrared (VNIR) thumbnail in orthorectified geometry",
+     "roles": [
+      "thumbnail"
+     ]
+    },
+    "swir": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_SWIR_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quicklook SWIR",
+     "description": "Short-wave Infrared (SWIR) quicklook in orthorectified geometry",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "overview"
+     ]
+    },
+    "quality_classes": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_QUALITY_CLASSES_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality classes",
+     "description": "Classes quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "quality"
+     ]
+    },
+    "quality_cloud": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_QUALITY_CLOUD_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality cloud",
+     "description": "Cloud quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "quality",
+      "cloud"
+     ]
+    },
+    "quality_cloud_shadow": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_QUALITY_CLOUDSHADOW_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality cloud shadow",
+     "description": "Cloud shadow quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "quality",
+      "cloud-shadow"
+     ]
+    },
+    "quality_haze": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_QUALITY_HAZE_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality haze",
+     "description": "Haze quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "quality",
+      "haze"
+     ]
+    },
+    "quality_cirrus": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_QUALITY_CIRRUS_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality cirrus",
+     "description": "Cirrus quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "quality",
+      "cirrus"
+     ]
+    },
+    "quality_snow": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_QUALITY_SNOW_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality snow",
+     "description": "Snow quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "quality",
+      "snow"
+     ]
+    },
+    "quality_testflags": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_QUALITY_TESTFLAGS_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality test flags",
+     "description": "Test flags quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "quality"
+     ]
+    },
+    "defective_pixel_mask": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/33/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z/ENMAP01-____L2A-DT0000044371_20230929T104711Z_033_V010502_20260106T185219Z-QL_PIXELMASK_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Defective pixel mask",
+     "description": "Defective pixel mask layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1178,
+      1204
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      643545.0,
+      0.0,
+      -30.0,
+      5241045.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         643545.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5205705.0
+        ],
+        [
+         679665.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5241045.0
+        ],
+        [
+         643545.0,
+         5205705.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      643545.0,
+      5205705.0,
+      679665.0,
+      5241045.0
+     ],
+     "roles": [
+      "quality",
+      "data-mask"
+     ]
+    }
+   }
+  },
+  {
+   "type": "Feature",
+   "stac_version": "1.0.0",
+   "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+   ],
+   "id": "ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z",
+   "collection": "ENMAP_HSI_L2A",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       11.079628,
+       47.574015
+      ],
+      [
+       10.981431,
+       47.300536
+      ],
+      [
+       11.373034,
+       47.247901
+      ],
+      [
+       11.473921,
+       47.520986
+      ],
+      [
+       11.079628,
+       47.574015
+      ]
+     ]
+    ]
+   },
+   "bbox": [
+    10.9814311,
+    47.2479005,
+    11.4739207,
+    47.5740153
+   ],
+   "properties": {
+    "version": "01.05.02",
+    "created": "2026-01-20T19:46:45.337Z",
+    "updated": "2026-09-11T23:36:10.037Z",
+    "datetime": "2023-09-29T10:47:09.261183Z",
+    "start_datetime": "2023-09-29T10:47:06.993835Z",
+    "end_datetime": "2023-09-29T10:47:11.528530Z",
+    "platform": "enmap",
+    "proj:epsg": 32632,
+    "sat:relative_orbit": "8045",
+    "sat:orbit_state": "DESCENDING",
+    "eo:cloud_cover": 5,
+    "eo:snow_cover": 0,
+    "view:sun_azimuth": 174.011088,
+    "view:sun_elevation": 40.02546,
+    "processing:facility": "NZ",
+    "processing:level": "L2A",
+    "eop:sensorType": "OPTICAL",
+    "card4l:eastern_geometric_accuracy": 2.0,
+    "card4l:geometric_accuracy_radial_rmse": 4.0,
+    "card4l:northern_geometric_accuracy": 3.0,
+    "card4l:specification": "SR",
+    "card4l:specification_version": "5.0",
+    "data_type": "int16",
+    "enmap:SWIRAOrSWIRBSelected": "SWIRA",
+    "enmap:acquisitionConfiguration": "earth",
+    "enmap:acquisitionType": "EARTH",
+    "enmap:acrossOffNadirAngle": 4.60121525999,
+    "enmap:alongOffNadirAngle": -0.000716973544525,
+    "enmap:archivedVersion": "01.04.00",
+    "enmap:biomeType": "Temperate Coniferous Forests",
+    "enmap:cirrus_cover": 1,
+    "enmap:cloud_shadow": 1,
+    "enmap:compressionType": "COMPRESSED",
+    "enmap:datatakeID": "0000044371",
+    "enmap:defectivePixelsSWIR": 13,
+    "enmap:defectivePixelsVNIR": 2,
+    "enmap:haze_cover": 3,
+    "enmap:imageID": "0000007768",
+    "enmap:instrumentStatusOK": "true",
+    "enmap:missionPhase": "routine",
+    "enmap:nodata": -32768,
+    "enmap:non_cloud_shadow": 3,
+    "enmap:numberOfTiles": "33",
+    "enmap:orbitNo": 8045,
+    "enmap:overallQuality": 0,
+    "enmap:overallQualitySWIR": 0,
+    "enmap:overallQualityVNIR": 0,
+    "enmap:ozoneValue": 271,
+    "enmap:phase": "routine",
+    "enmap:processingDate": "2026-01-06T18:51:08.715549Z",
+    "enmap:productScreeningFailedGroups": "NONE",
+    "enmap:productScreeningResultStatus": "OK",
+    "enmap:qualityAtmosphere": 0,
+    "enmap:saturationCrosstalkSWIR": 0,
+    "enmap:saturationCrosstalkVNIR": 0,
+    "enmap:sceneAOT": 88,
+    "enmap:sceneAzimuthAngle": 14.3418181771,
+    "enmap:sceneSunglint": 0,
+    "enmap:sceneTerrain": 0,
+    "enmap:sceneWV": 1392,
+    "enmap:season": "summer",
+    "enmap:status": "NOMINAL",
+    "enmap:statusSWIR": "on",
+    "enmap:statusVNIR": "on",
+    "enmap:sunAzimuthAngle": 174.011088,
+    "enmap:sunElevationAngle": 40.02546,
+    "enmap:swirNumberChannelsMissing": 0,
+    "enmap:tileID": "32",
+    "enmap:vnirNumberChannelsMissing": 0,
+    "enmap:water_cover": 5,
+    "eo:instrument": "HSI",
+    "raster:nodata": "null",
+    "sci:citation": "DLR (2026): EnMAP L0 Product 0000044371_32_L0_20230929T201032_010400_20260106 doi: 10.15489/rlyibn8gjc58 Processed to level 2A (version: 010502, parameters: U0BLNNTS271G)"
+   },
+   "assets": {
+    "metadata": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-METADATA.XML",
+     "type": "application/xml",
+     "title": "Metadata",
+     "description": "Original XML metadata",
+     "roles": [
+      "metadata"
+     ]
+    },
+    "image": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-SPECTRAL_IMAGE_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Spectral Image",
+     "description": "Earth image measurement data covering 1 tile (30x30km) in orthorectified geometry",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "data"
+     ]
+    },
+    "vnir": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_VNIR_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quicklook VNIR",
+     "description": "Visible and Near Infrared (VNIR) quicklook in orthorectified geometry",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "overview",
+      "visual"
+     ]
+    },
+    "thumbnail": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_VNIR_COG_thumbnail.png",
+     "type": "image/png",
+     "title": "Thumbnail VNIR",
+     "description": "Visible and Near Infrared (VNIR) thumbnail in orthorectified geometry",
+     "roles": [
+      "thumbnail"
+     ]
+    },
+    "swir": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_SWIR_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quicklook SWIR",
+     "description": "Short-wave Infrared (SWIR) quicklook in orthorectified geometry",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "overview"
+     ]
+    },
+    "quality_classes": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_QUALITY_CLASSES_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality classes",
+     "description": "Classes quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "quality"
+     ]
+    },
+    "quality_cloud": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_QUALITY_CLOUD_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality cloud",
+     "description": "Cloud quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "quality",
+      "cloud"
+     ]
+    },
+    "quality_cloud_shadow": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_QUALITY_CLOUDSHADOW_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality cloud shadow",
+     "description": "Cloud shadow quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "quality",
+      "cloud-shadow"
+     ]
+    },
+    "quality_haze": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_QUALITY_HAZE_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality haze",
+     "description": "Haze quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "quality",
+      "haze"
+     ]
+    },
+    "quality_cirrus": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_QUALITY_CIRRUS_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality cirrus",
+     "description": "Cirrus quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "quality",
+      "cirrus"
+     ]
+    },
+    "quality_snow": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_QUALITY_SNOW_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality snow",
+     "description": "Snow quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "quality",
+      "snow"
+     ]
+    },
+    "quality_testflags": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_QUALITY_TESTFLAGS_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality test flags",
+     "description": "Test flags quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "quality"
+     ]
+    },
+    "defective_pixel_mask": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/32/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z/ENMAP01-____L2A-DT0000044371_20230929T104706Z_032_V010502_20260106T185108Z-QL_PIXELMASK_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Defective pixel mask",
+     "description": "Defective pixel mask layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1187,
+      1215
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      649785.0,
+      0.0,
+      -30.0,
+      5271075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         649785.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5235465.0
+        ],
+        [
+         686235.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5271075.0
+        ],
+        [
+         649785.0,
+         5235465.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      649785.0,
+      5235465.0,
+      686235.0,
+      5271075.0
+     ],
+     "roles": [
+      "quality",
+      "data-mask"
+     ]
+    }
+   }
+  },
+  {
+   "type": "Feature",
+   "stac_version": "1.0.0",
+   "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+   ],
+   "id": "ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z",
+   "collection": "ENMAP_HSI_L2A",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       11.176498,
+       47.842288
+      ],
+      [
+       11.077832,
+       47.569036
+      ],
+      [
+       11.472162,
+       47.515998
+      ],
+      [
+       11.572414,
+       47.789059
+      ],
+      [
+       11.176498,
+       47.842288
+      ]
+     ]
+    ]
+   },
+   "bbox": [
+    11.0778317,
+    47.515998,
+    11.5724143,
+    47.8422878
+   ],
+   "properties": {
+    "version": "01.05.02",
+    "created": "2026-01-07T00:21:38.910Z",
+    "updated": "2026-09-11T23:36:05.451Z",
+    "datetime": "2023-09-29T10:47:04.809066Z",
+    "start_datetime": "2023-09-29T10:47:02.541718Z",
+    "end_datetime": "2023-09-29T10:47:07.076413Z",
+    "platform": "enmap",
+    "proj:epsg": 32632,
+    "sat:relative_orbit": "8045",
+    "sat:orbit_state": "DESCENDING",
+    "eo:cloud_cover": 0,
+    "eo:snow_cover": 0,
+    "view:sun_azimuth": 174.134118,
+    "view:sun_elevation": 39.764031,
+    "processing:facility": "NZ",
+    "processing:level": "L2A",
+    "eop:sensorType": "OPTICAL",
+    "card4l:eastern_geometric_accuracy": 2.0,
+    "card4l:geometric_accuracy_radial_rmse": 4.0,
+    "card4l:northern_geometric_accuracy": 3.0,
+    "card4l:specification": "SR",
+    "card4l:specification_version": "5.0",
+    "data_type": "int16",
+    "enmap:SWIRAOrSWIRBSelected": "SWIRA",
+    "enmap:acquisitionConfiguration": "earth",
+    "enmap:acquisitionType": "EARTH",
+    "enmap:acrossOffNadirAngle": 4.60098514973,
+    "enmap:alongOffNadirAngle": -0.00161836418845,
+    "enmap:archivedVersion": "01.04.00",
+    "enmap:biomeType": "Temperate Broadleaf and Mixed Forests",
+    "enmap:cirrus_cover": 0,
+    "enmap:cloud_shadow": 0,
+    "enmap:compressionType": "COMPRESSED",
+    "enmap:datatakeID": "0000044371",
+    "enmap:defectivePixelsSWIR": 14,
+    "enmap:defectivePixelsVNIR": 2,
+    "enmap:haze_cover": 1,
+    "enmap:imageID": "0000007768",
+    "enmap:instrumentStatusOK": "true",
+    "enmap:missionPhase": "routine",
+    "enmap:nodata": -32768,
+    "enmap:non_cloud_shadow": 1,
+    "enmap:numberOfTiles": "33",
+    "enmap:orbitNo": 8045,
+    "enmap:overallQuality": 0,
+    "enmap:overallQualitySWIR": 0,
+    "enmap:overallQualityVNIR": 0,
+    "enmap:ozoneValue": 273,
+    "enmap:phase": "routine",
+    "enmap:processingDate": "2026-01-06T18:50:35.489040Z",
+    "enmap:productScreeningFailedGroups": "NONE",
+    "enmap:productScreeningResultStatus": "OK",
+    "enmap:qualityAtmosphere": 0,
+    "enmap:saturationCrosstalkSWIR": 0,
+    "enmap:saturationCrosstalkVNIR": 0,
+    "enmap:sceneAOT": 71,
+    "enmap:sceneAzimuthAngle": 14.3887182606,
+    "enmap:sceneSunglint": 0,
+    "enmap:sceneTerrain": 0,
+    "enmap:sceneWV": 1684,
+    "enmap:season": "summer",
+    "enmap:status": "NOMINAL",
+    "enmap:statusSWIR": "on",
+    "enmap:statusVNIR": "on",
+    "enmap:sunAzimuthAngle": 174.134118,
+    "enmap:sunElevationAngle": 39.764031,
+    "enmap:swirNumberChannelsMissing": 0,
+    "enmap:tileID": "31",
+    "enmap:vnirNumberChannelsMissing": 0,
+    "enmap:water_cover": 4,
+    "eo:instrument": "HSI",
+    "raster:nodata": "null",
+    "sci:citation": "DLR (2026): EnMAP L0 Product 0000044371_31_L0_20230929T201032_010400_20260106 doi: 10.15489/rlyibn8gjc58 Processed to level 2A (version: 010502, parameters: U0BLNNTS273G)"
+   },
+   "assets": {
+    "metadata": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-METADATA.XML",
+     "type": "application/xml",
+     "title": "Metadata",
+     "description": "Original XML metadata",
+     "roles": [
+      "metadata"
+     ]
+    },
+    "image": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-SPECTRAL_IMAGE_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Spectral Image",
+     "description": "Earth image measurement data covering 1 tile (30x30km) in orthorectified geometry",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "data"
+     ]
+    },
+    "vnir": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_VNIR_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quicklook VNIR",
+     "description": "Visible and Near Infrared (VNIR) quicklook in orthorectified geometry",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "overview",
+      "visual"
+     ]
+    },
+    "thumbnail": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_VNIR_COG_thumbnail.png",
+     "type": "image/png",
+     "title": "Thumbnail VNIR",
+     "description": "Visible and Near Infrared (VNIR) thumbnail in orthorectified geometry",
+     "roles": [
+      "thumbnail"
+     ]
+    },
+    "swir": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_SWIR_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quicklook SWIR",
+     "description": "Short-wave Infrared (SWIR) quicklook in orthorectified geometry",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "overview"
+     ]
+    },
+    "quality_classes": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_QUALITY_CLASSES_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality classes",
+     "description": "Classes quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "quality"
+     ]
+    },
+    "quality_cloud": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_QUALITY_CLOUD_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality cloud",
+     "description": "Cloud quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "quality",
+      "cloud"
+     ]
+    },
+    "quality_cloud_shadow": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_QUALITY_CLOUDSHADOW_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality cloud shadow",
+     "description": "Cloud shadow quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "quality",
+      "cloud-shadow"
+     ]
+    },
+    "quality_haze": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_QUALITY_HAZE_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality haze",
+     "description": "Haze quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "quality",
+      "haze"
+     ]
+    },
+    "quality_cirrus": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_QUALITY_CIRRUS_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality cirrus",
+     "description": "Cirrus quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "quality",
+      "cirrus"
+     ]
+    },
+    "quality_snow": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_QUALITY_SNOW_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality snow",
+     "description": "Snow quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "quality",
+      "snow"
+     ]
+    },
+    "quality_testflags": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_QUALITY_TESTFLAGS_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Quality test flags",
+     "description": "Test flags quality layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "quality"
+     ]
+    },
+    "defective_pixel_mask": {
+     "href": "https://download.geoservice.dlr.de/ENMAP/files/L2A/2023/09/29/DT0000044371/31/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z/ENMAP01-____L2A-DT0000044371_20230929T104702Z_031_V010502_20260106T185035Z-QL_PIXELMASK_COG.TIF",
+     "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+     "title": "Defective pixel mask",
+     "description": "Defective pixel mask layer",
+     "proj:epsg": 32632,
+     "proj:shape": [
+      1186,
+      1213
+     ],
+     "proj:transform": [
+      30.0,
+      0.0,
+      656265.0,
+      0.0,
+      -30.0,
+      5301075.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         656265.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5265495.0
+        ],
+        [
+         692655.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5301075.0
+        ],
+        [
+         656265.0,
+         5265495.0
+        ]
+       ]
+      ]
+     },
+     "proj:bbox": [
+      656265.0,
+      5265495.0,
+      692655.0,
+      5301075.0
+     ],
+     "roles": [
+      "quality",
+      "data-mask"
+     ]
+    }
+   }
+  }
+ ]
+}

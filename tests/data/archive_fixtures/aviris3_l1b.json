@@ -1,0 +1,860 @@
+[
+ {
+  "umm": {
+   "TemporalExtent": {
+    "RangeDateTime": {
+     "BeginningDateTime": "2023-10-05T18:15:36Z",
+     "EndingDateTime": "2023-10-05T18:16:12Z"
+    }
+   },
+   "GranuleUR": "AV320231005t181518_000_L1B_RDN_1",
+   "AdditionalAttributes": [
+    {
+     "Name": "SOFTWARE_BUILD_VERSION",
+     "Values": [
+      "001"
+     ]
+    },
+    {
+     "Name": "Identifier_product_doi_authority",
+     "Values": [
+      "https://doi.org"
+     ]
+    },
+    {
+     "Name": "FLIGHTLINE",
+     "Values": [
+      "AV320231005t181518"
+     ]
+    },
+    {
+     "Name": "SCENE",
+     "Values": [
+      "000"
+     ]
+    },
+    {
+     "Name": "Campaign",
+     "Values": [
+      "FireSense"
+     ]
+    },
+    {
+     "Name": "Identifier_product_doi",
+     "Values": [
+      "https://doi.org/10.3334/ORNLDAAC/2356"
+     ]
+    },
+    {
+     "Name": "SOLAR_ZENITH",
+     "Values": [
+      "45.53"
+     ]
+    },
+    {
+     "Name": "SOLAR_AZIMUTH",
+     "Values": [
+      "158.53"
+     ]
+    },
+    {
+     "Name": "PARAMETER_HASH",
+     "Values": [
+      "cbeae6f8",
+      "3b50f254"
+     ]
+    }
+   ],
+   "SpatialExtent": {
+    "HorizontalSpatialDomain": {
+     "Geometry": {
+      "GPolygons": [
+       {
+        "Boundary": {
+         "Points": [
+          {
+           "Longitude": -111.95100203688635,
+           "Latitude": 38.47036381812989
+          },
+          {
+           "Longitude": -111.95042353453816,
+           "Latitude": 38.426274962805074
+          },
+          {
+           "Longitude": -111.89199360011767,
+           "Latitude": 38.426734304968036
+          },
+          {
+           "Longitude": -111.89253654930371,
+           "Latitude": 38.470823882064884
+          },
+          {
+           "Longitude": -111.95100203688635,
+           "Latitude": 38.47036381812989
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   },
+   "ProviderDates": [
+    {
+     "Date": "2024-09-30T12:08:16Z",
+     "Type": "Create"
+    }
+   ],
+   "CollectionReference": {
+    "ShortName": "AV3_L1B_RDN_2356",
+    "Version": "1"
+   },
+   "PGEVersionClass": {
+    "PGEName": "L1B_RDN",
+    "PGEVersion": "v1.0.0"
+   },
+   "RelatedUrls": [
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN.nc",
+     "Description": "Download AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN.nc",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_ORT_3b50f254_OBS.nc",
+     "Description": "Download AV320231005t181518_000_L1B_ORT_3b50f254_OBS.nc",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_BANDMASK.nc",
+     "Description": "Download AV320231005t181518_000_L1B_RDN_cbeae6f8_BANDMASK.nc",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN_QL.tif",
+     "Description": "Download AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN_QL.tif",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8.yaml",
+     "Description": "Download AV320231005t181518_000_L1B_RDN_cbeae6f8.yaml",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_ORT_3b50f254.yaml",
+     "Description": "Download AV320231005t181518_000_L1B_ORT_3b50f254.yaml",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+     "Description": "Download AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+     "Type": "GET RELATED VISUALIZATION"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN.nc",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_ORT_3b50f254_OBS.nc",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_BANDMASK.nc",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN_QL.tif",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8.yaml",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_ORT_3b50f254.yaml",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-public/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET RELATED VISUALIZATION"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+     "Description": "api endpoint to retrieve temporary credentials valid for same-region direct s3 access",
+     "Type": "VIEW RELATED INFORMATION"
+    }
+   ],
+   "DataGranule": {
+    "DayNightFlag": "Day",
+    "ArchiveAndDistributionInformation": [
+     {
+      "Name": "AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN.nc",
+      "SizeInBytes": 2007854345,
+      "Format": "netCDF-4",
+      "Checksum": {
+       "Value": "723e0d2bb1b0da2cf613090d2e126d9b183d4f42b0ad4bf2814039e61e5c8fb4b448a48239f98275cabf5b4e9bd6fe77ae209bfa1ef725c01fade85cf0f43ab7",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_000_L1B_ORT_3b50f254_OBS.nc",
+      "SizeInBytes": 113879446,
+      "Format": "netCDF-4",
+      "Checksum": {
+       "Value": "249daef3dc7f62e19880451d4fe8a5dcca41916f4dcbb98c8c46ff615f9a3af020ff884807d71a3749c3f377d99a084da52a4aa1ef3078e0d9b5616ddb7866ce",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_000_L1B_RDN_cbeae6f8_BANDMASK.nc",
+      "SizeInBytes": 58998586,
+      "Format": "netCDF-4",
+      "Checksum": {
+       "Value": "72a6488614fab837ade40b51c056c9ee6cec9ba2d4a551ac40b291a95b665786d57ee019f377d684e3af27c41f0a257e2aeed319e035489d01a2ecc406bfb8fd",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN_QL.tif",
+      "SizeInBytes": 4476639,
+      "Format": "GeoTIFF",
+      "Checksum": {
+       "Value": "7bd8a2f1d264794ee34cf8c6ba6ab3b578ce05ed7e8b9cce0d2d9b12eecf63688d375168d81bce77a4c3a002c7742fade3099cdd67ef64609f2953e6693b5242",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+      "SizeInBytes": 252677,
+      "Format": "JPEG",
+      "Checksum": {
+       "Value": "b7e0661a1b34db655d2e7572b9f5a254b7ff83ce9ffe88cfce29d75abfb9796256cedba75610ddf282d5cef7bc3a00c01232018eb1598e387ed56d2211b5ece3",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_000_L1B_RDN_cbeae6f8.yaml",
+      "SizeInBytes": 5538,
+      "Format": "YAML",
+      "Checksum": {
+       "Value": "8e8b2154f9c096b3fe3476a7ddff8d6ff8da0328624aeb4996bbed03147b47f720c7c78ffee0b41882b9348d56f807dc6f4098e067808106e41276bf4599ef80",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_000_L1B_ORT_3b50f254.yaml",
+      "SizeInBytes": 6017,
+      "Format": "YAML",
+      "Checksum": {
+       "Value": "bac8db56b7d497971e4d4348241574c4b9ecada3a800aa14ec30debf87f949cf1654eaa19bfe0081279d4ddd47cb152c25383e229d957e809b371d72435fa691",
+       "Algorithm": "SHA-512"
+      }
+     }
+    ],
+    "ProductionDateTime": "2024-09-30T10:47:33Z"
+   },
+   "Platforms": [
+    {
+     "ShortName": "B-200",
+     "Instruments": [
+      {
+       "ShortName": "AVIRIS-3"
+      }
+     ]
+    }
+   ],
+   "MetadataSpecification": {
+    "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+    "Name": "UMM-G",
+    "Version": "1.6.7"
+   }
+  },
+  "size": 2084.229705810547,
+  "links": [
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN.nc",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_ORT_3b50f254_OBS.nc",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_BANDMASK.nc",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8_RDN_QL.tif",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_RDN_cbeae6f8.yaml",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_000_L1B_ORT_3b50f254.yaml"
+  ]
+ },
+ {
+  "umm": {
+   "TemporalExtent": {
+    "RangeDateTime": {
+     "BeginningDateTime": "2023-10-05T18:16:12Z",
+     "EndingDateTime": "2023-10-05T18:16:47Z"
+    }
+   },
+   "GranuleUR": "AV320231005t181518_001_L1B_RDN_1",
+   "AdditionalAttributes": [
+    {
+     "Name": "SOFTWARE_BUILD_VERSION",
+     "Values": [
+      "001"
+     ]
+    },
+    {
+     "Name": "Identifier_product_doi_authority",
+     "Values": [
+      "https://doi.org"
+     ]
+    },
+    {
+     "Name": "FLIGHTLINE",
+     "Values": [
+      "AV320231005t181518"
+     ]
+    },
+    {
+     "Name": "SCENE",
+     "Values": [
+      "001"
+     ]
+    },
+    {
+     "Name": "Campaign",
+     "Values": [
+      "FireSense"
+     ]
+    },
+    {
+     "Name": "Identifier_product_doi",
+     "Values": [
+      "https://doi.org/10.3334/ORNLDAAC/2356"
+     ]
+    },
+    {
+     "Name": "SOLAR_ZENITH",
+     "Values": [
+      "45.56"
+     ]
+    },
+    {
+     "Name": "SOLAR_AZIMUTH",
+     "Values": [
+      "158.55"
+     ]
+    },
+    {
+     "Name": "PARAMETER_HASH",
+     "Values": [
+      "cbeae6f8",
+      "3b50f254"
+     ]
+    }
+   ],
+   "SpatialExtent": {
+    "HorizontalSpatialDomain": {
+     "Geometry": {
+      "GPolygons": [
+       {
+        "Boundary": {
+         "Points": [
+          {
+           "Longitude": -111.93999819136424,
+           "Latitude": 38.50713455736974
+          },
+          {
+           "Longitude": -111.9394289961824,
+           "Latitude": 38.46330535549731
+          },
+          {
+           "Longitude": -111.88170252873405,
+           "Latitude": 38.46375405672657
+          },
+          {
+           "Longitude": -111.88223675916333,
+           "Latitude": 38.50758395928277
+          },
+          {
+           "Longitude": -111.93999819136424,
+           "Latitude": 38.50713455736974
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   },
+   "ProviderDates": [
+    {
+     "Date": "2024-09-30T12:12:48Z",
+     "Type": "Create"
+    }
+   ],
+   "CollectionReference": {
+    "ShortName": "AV3_L1B_RDN_2356",
+    "Version": "1"
+   },
+   "PGEVersionClass": {
+    "PGEName": "L1B_RDN",
+    "PGEVersion": "v1.0.0"
+   },
+   "RelatedUrls": [
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN.nc",
+     "Description": "Download AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN.nc",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_ORT_3b50f254_OBS.nc",
+     "Description": "Download AV320231005t181518_001_L1B_ORT_3b50f254_OBS.nc",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_BANDMASK.nc",
+     "Description": "Download AV320231005t181518_001_L1B_RDN_cbeae6f8_BANDMASK.nc",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN_QL.tif",
+     "Description": "Download AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN_QL.tif",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8.yaml",
+     "Description": "Download AV320231005t181518_001_L1B_RDN_cbeae6f8.yaml",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_ORT_3b50f254.yaml",
+     "Description": "Download AV320231005t181518_001_L1B_ORT_3b50f254.yaml",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+     "Description": "Download AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+     "Type": "GET RELATED VISUALIZATION"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN.nc",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_ORT_3b50f254_OBS.nc",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_BANDMASK.nc",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN_QL.tif",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8.yaml",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_ORT_3b50f254.yaml",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-public/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET RELATED VISUALIZATION"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+     "Description": "api endpoint to retrieve temporary credentials valid for same-region direct s3 access",
+     "Type": "VIEW RELATED INFORMATION"
+    }
+   ],
+   "DataGranule": {
+    "DayNightFlag": "Day",
+    "ArchiveAndDistributionInformation": [
+     {
+      "Name": "AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN.nc",
+      "SizeInBytes": 2007854113,
+      "Format": "netCDF-4",
+      "Checksum": {
+       "Value": "1eb8824c189b56306f5984cd361ff1cbc9d36a0fc4a5cfede999f6d0d0db6e70a4ea7a5eea0002ceb9b74145643b9d51007f962ad031d04ad97dee7b004dd06f",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_001_L1B_ORT_3b50f254_OBS.nc",
+      "SizeInBytes": 113879214,
+      "Format": "netCDF-4",
+      "Checksum": {
+       "Value": "6c73f45e7d7529719563239ca4e5d39b726cd00e00b1a590f0a2ac10857d0698306c55223010fe96bd0d425aab3677d65f07c27e8d2507dbce885ccea4b406c7",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_001_L1B_RDN_cbeae6f8_BANDMASK.nc",
+      "SizeInBytes": 58998586,
+      "Format": "netCDF-4",
+      "Checksum": {
+       "Value": "0fd346623973b3659abf6ec5d3fa861ce74f7b66458d723fd13f22f77e57649e54d6052d9d71dc5959c41781368516c5778f1cb72bd0743b6d3360b2075b54c5",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN_QL.tif",
+      "SizeInBytes": 4817714,
+      "Format": "GeoTIFF",
+      "Checksum": {
+       "Value": "71229b657c4c11413367dee2898bf3a7f81ded2d9134483096bff965dfe42d6aea4c5e3e4ebb8824bb7a46896bbd0f3fe2cce7e7b07c02edf95e0cdf21c50e5f",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+      "SizeInBytes": 295365,
+      "Format": "JPEG",
+      "Checksum": {
+       "Value": "c3a029087810336ddb933740d4d83dfb5d2af40dfe7dd6645b994ed5e380b5e129ed660c50b3e1b8b469b3164694910d24d7cd1092a5593cbd2e8124a8fa5989",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_001_L1B_RDN_cbeae6f8.yaml",
+      "SizeInBytes": 5538,
+      "Format": "YAML",
+      "Checksum": {
+       "Value": "a015f0570d5876fc57064ac5e11bea61219402d4778e1e58ac6ddcc8d2b596d895107e16dc7016df262c74d67cd70165bd7e1b4c4e5229fdb3c8014b1fb6e8d8",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_001_L1B_ORT_3b50f254.yaml",
+      "SizeInBytes": 6013,
+      "Format": "YAML",
+      "Checksum": {
+       "Value": "def910ec309e2a00f6cc0aec7a7c9c12fb502155f7defb5babc3c2592de73fcacf251bb7a3951d87adc369b49c8973e355960fff047c3b8835d56396f3a83530",
+       "Algorithm": "SHA-512"
+      }
+     }
+    ],
+    "ProductionDateTime": "2024-09-30T10:53:50Z"
+   },
+   "Platforms": [
+    {
+     "ShortName": "B-200",
+     "Instruments": [
+      {
+       "ShortName": "AVIRIS-3"
+      }
+     ]
+    }
+   ],
+   "MetadataSpecification": {
+    "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+    "Name": "UMM-G",
+    "Version": "1.6.7"
+   }
+  },
+  "size": 2084.595244407654,
+  "links": [
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN.nc",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_ORT_3b50f254_OBS.nc",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_BANDMASK.nc",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8_RDN_QL.tif",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_RDN_cbeae6f8.yaml",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_001_L1B_ORT_3b50f254.yaml"
+  ]
+ },
+ {
+  "umm": {
+   "TemporalExtent": {
+    "RangeDateTime": {
+     "BeginningDateTime": "2023-10-05T18:16:47Z",
+     "EndingDateTime": "2023-10-05T18:17:23Z"
+    }
+   },
+   "GranuleUR": "AV320231005t181518_002_L1B_RDN_1",
+   "AdditionalAttributes": [
+    {
+     "Name": "SOFTWARE_BUILD_VERSION",
+     "Values": [
+      "001"
+     ]
+    },
+    {
+     "Name": "Identifier_product_doi_authority",
+     "Values": [
+      "https://doi.org"
+     ]
+    },
+    {
+     "Name": "FLIGHTLINE",
+     "Values": [
+      "AV320231005t181518"
+     ]
+    },
+    {
+     "Name": "SCENE",
+     "Values": [
+      "002"
+     ]
+    },
+    {
+     "Name": "Campaign",
+     "Values": [
+      "FireSense"
+     ]
+    },
+    {
+     "Name": "Identifier_product_doi",
+     "Values": [
+      "https://doi.org/10.3334/ORNLDAAC/2356"
+     ]
+    },
+    {
+     "Name": "SOLAR_ZENITH",
+     "Values": [
+      "45.59"
+     ]
+    },
+    {
+     "Name": "SOLAR_AZIMUTH",
+     "Values": [
+      "158.58"
+     ]
+    },
+    {
+     "Name": "PARAMETER_HASH",
+     "Values": [
+      "cbeae6f8",
+      "3b50f254"
+     ]
+    }
+   ],
+   "SpatialExtent": {
+    "HorizontalSpatialDomain": {
+     "Geometry": {
+      "GPolygons": [
+       {
+        "Boundary": {
+         "Points": [
+          {
+           "Longitude": -111.9294326352873,
+           "Latitude": 38.54456387899658
+          },
+          {
+           "Longitude": -111.92887056500409,
+           "Latitude": 38.5008501659053
+          },
+          {
+           "Longitude": -111.87104058750346,
+           "Latitude": 38.50129456596398
+          },
+          {
+           "Longitude": -111.87156767535313,
+           "Latitude": 38.54500897098055
+          },
+          {
+           "Longitude": -111.9294326352873,
+           "Latitude": 38.54456387899658
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   },
+   "ProviderDates": [
+    {
+     "Date": "2024-09-30T12:11:35Z",
+     "Type": "Create"
+    }
+   ],
+   "CollectionReference": {
+    "ShortName": "AV3_L1B_RDN_2356",
+    "Version": "1"
+   },
+   "PGEVersionClass": {
+    "PGEName": "L1B_RDN",
+    "PGEVersion": "v1.0.0"
+   },
+   "RelatedUrls": [
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN.nc",
+     "Description": "Download AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN.nc",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_ORT_3b50f254_OBS.nc",
+     "Description": "Download AV320231005t181518_002_L1B_ORT_3b50f254_OBS.nc",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_BANDMASK.nc",
+     "Description": "Download AV320231005t181518_002_L1B_RDN_cbeae6f8_BANDMASK.nc",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN_QL.tif",
+     "Description": "Download AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN_QL.tif",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8.yaml",
+     "Description": "Download AV320231005t181518_002_L1B_RDN_cbeae6f8.yaml",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_ORT_3b50f254.yaml",
+     "Description": "Download AV320231005t181518_002_L1B_ORT_3b50f254.yaml",
+     "Type": "GET DATA"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/public/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+     "Description": "Download AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+     "Type": "GET RELATED VISUALIZATION"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN.nc",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_ORT_3b50f254_OBS.nc",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_BANDMASK.nc",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN_QL.tif",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8.yaml",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_ORT_3b50f254.yaml",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET DATA VIA DIRECT ACCESS"
+    },
+    {
+     "URL": "s3://ornl-cumulus-prod-public/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+     "Description": "This link provides direct download access via S3 to the granule",
+     "Type": "GET RELATED VISUALIZATION"
+    },
+    {
+     "URL": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+     "Description": "api endpoint to retrieve temporary credentials valid for same-region direct s3 access",
+     "Type": "VIEW RELATED INFORMATION"
+    }
+   ],
+   "DataGranule": {
+    "DayNightFlag": "Day",
+    "ArchiveAndDistributionInformation": [
+     {
+      "Name": "AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN.nc",
+      "SizeInBytes": 2007854097,
+      "Format": "netCDF-4",
+      "Checksum": {
+       "Value": "a08fd31a6d187e33eb9524505fb252115b6d22d4413518b274958009ca0dfaee5235fcb70806ae06fe0fb65c2517d658cd798e5fe42388395f5099010957b68e",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_002_L1B_ORT_3b50f254_OBS.nc",
+      "SizeInBytes": 113879198,
+      "Format": "netCDF-4",
+      "Checksum": {
+       "Value": "b9d0152abcb6265b4c1ad571699829f3577ab1b289b183e8c883aa320cea8e9b07409f4886e4f0c47a6ed5dbe30a1a5521bb8754842779f6e280d0b27ad077fe",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_002_L1B_RDN_cbeae6f8_BANDMASK.nc",
+      "SizeInBytes": 58998586,
+      "Format": "netCDF-4",
+      "Checksum": {
+       "Value": "5849d54624de5677dd34e2c5d7e5b9ffad98c79115973d43e9bd5f03f7d2b4a4194d32299938132e6a2471eb53bed70bfe3beeb95c8d26e67ba7a896401896bd",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN_QL.tif",
+      "SizeInBytes": 5236926,
+      "Format": "GeoTIFF",
+      "Checksum": {
+       "Value": "c3d8927f4584adabb818cf73aba86ee854b82793e01c65eeeacaeefc32d99eae1dc114d15b6e3d1d15c54635aadbd62b5d16074a63efbb612a0ce15347675970",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN_BROWSE.jpg",
+      "SizeInBytes": 386521,
+      "Format": "JPEG",
+      "Checksum": {
+       "Value": "69407805335a9ddb9e09d0db538c9a989e655ecb4b34732ccd0eae4ff0540846f3a33eaebe9608344dfc16bec1adbc1e74bd77794031b182348a28406c916b7e",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_002_L1B_RDN_cbeae6f8.yaml",
+      "SizeInBytes": 5538,
+      "Format": "YAML",
+      "Checksum": {
+       "Value": "961248a1f40f9f7075660a14475e1cd2ef783ce71c196ae8381ecbae5673cf72ffbe5806d8e65761d73e531d434fc94d39c791f79c9abeeef6c593f75b62892c",
+       "Algorithm": "SHA-512"
+      }
+     },
+     {
+      "Name": "AV320231005t181518_002_L1B_ORT_3b50f254.yaml",
+      "SizeInBytes": 6011,
+      "Format": "YAML",
+      "Checksum": {
+       "Value": "53b4ff74dc473d154afed5d12ecf2e6155aae99f5d3f7c0311bd95d67f32c587a991138273dfeff36114a19557543ad2a0f4bc67964130e74b33af494fc6a58c",
+       "Algorithm": "SHA-512"
+      }
+     }
+    ],
+    "ProductionDateTime": "2024-09-30T10:53:31Z"
+   },
+   "Platforms": [
+    {
+     "ShortName": "B-200",
+     "Instruments": [
+      {
+       "ShortName": "AVIRIS-3"
+      }
+     ]
+    }
+   ],
+   "MetadataSpecification": {
+    "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+    "Name": "UMM-G",
+    "Version": "1.6.7"
+   }
+  },
+  "size": 2085.0819368362427,
+  "links": [
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN.nc",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_ORT_3b50f254_OBS.nc",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_BANDMASK.nc",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8_RDN_QL.tif",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_RDN_cbeae6f8.yaml",
+   "https://data.ornldaac.earthdata.nasa.gov/protected/aviris/AV3_L1B_RDN/data/AV320231005t181518_002_L1B_ORT_3b50f254.yaml"
+  ]
+ }
+]

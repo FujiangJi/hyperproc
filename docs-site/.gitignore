@@ -1,0 +1,7 @@
+.venv/
+site/
+__pycache__/
+._*
+
+# Retained working copies from the removed notebook preview.
+.notebook-workspace/

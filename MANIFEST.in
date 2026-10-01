@@ -1,0 +1,14 @@
+# The sdist should carry everything needed to run the test suite from a clone.
+include LICENSE
+include CITATION.cff
+include README.md
+include pyproject.toml
+recursive-include tests *.py
+include tests/fingerprints.json
+include tests/data/r_reference/*.npz
+recursive-exclude tests/data *
+recursive-include tests/data/r_reference *.npz
+recursive-include tests/data/archive_fixtures *.json
+recursive-exclude tests/output *
+recursive-exclude tests/0_old *
+global-exclude *.pyc __pycache__ .ipynb_checkpoints
