@@ -18,6 +18,11 @@
 Readers, topographic and BRDF correction, and atmospheric
 correction for airborne and satellite imaging spectrometers.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FujiangJi/hyperproc/main/docs-site/docs/assets/logos/rectangular-dark.svg">
+  <img src="https://raw.githubusercontent.com/FujiangJi/hyperproc/main/docs-site/docs/assets/logos/rectangular.svg" alt="hyperproc" width="560">
+</picture>
+
 **Documentation: <https://fujiangji.github.io/hyperproc/>**
 
 * **Readers** (`hyperproc.open`) return one xarray contract for AVIRIS-3/5/NG/Classic,
