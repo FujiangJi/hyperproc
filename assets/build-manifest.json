@@ -78,9 +78,9 @@
     "hyperproc/spectral/srf.py": "6d17cf424fa1a1d676938e00c95a4653b97296dbe4bf82e33dd2de027eed22d7"
   },
   "metadata_source_sha256": {
-    "pyproject.toml": "d55bf5355fa0e4f1a03b8092ab8e3bf29371ab85769fff834360ac7dd4a3280d",
+    "pyproject.toml": "5d6ecdb6093670054034eb42400a5f1f266d9b6d556a2b0714a90b5b087d2392",
     "LICENSE": "15fdda3048c4b4175c17d9bd3e745f50c70ea589fd354b4b78676103b213c83b",
-    "CITATION.cff": "6a3daec3372e8eaf2a1deafde22294afc2d3e41d178cf7b063a121996c6ba559"
+    "CITATION.cff": "7adfc20b9b41d9d4ca8036285c094765a6f034a638f210831f6aee14c68acfc0"
   },
   "execution_policy": "Static source inspection and saved-output rendering only; no hyperproc import or notebook execution."
 }

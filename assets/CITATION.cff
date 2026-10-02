@@ -7,9 +7,9 @@ authors:
     given-names: Fujiang
     email: fujiang.ji@wisc.edu
     affiliation: "University of Wisconsin-Madison"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"   # <- fill this in
+    orcid: "https://orcid.org/0000-0003-4623-7487"
 repository-code: "https://github.com/FujiangJi/hyperproc"
-url: "https://github.com/FujiangJi/hyperproc"
+url: "https://fujiangji.github.io/hyperproc/"
 abstract: >-
   A Python package for processing imaging-spectrometer data from raw radiance to
   analysis-ready reflectance. Readers for eleven airborne and satellite
@@ -17,7 +17,9 @@ abstract: >-
   correction, topographic correction and two BRDF routes (MODIS c-factor for
   satellites, fitted kernel models for airborne flightline groups) run on top of
   it, alongside spectral transforms, resampling, a unified quality layer and
-  coregistration.
+  coregistration. A search module finds granules across NASA's CMR, NEON's Data
+  API and DLR's EOC catalogue, so an analysis can start from a place and a date
+  rather than from a file already on disk.
 keywords:
   - imaging spectroscopy
   - hyperspectral
@@ -26,6 +28,10 @@ keywords:
   - BRDF
   - topographic correction
   - ISOFIT
+  - EMIT
+  - EnMAP
+  - AVIRIS
+  - NEON AOP
 license: MIT
 version: 0.1.0
-date-released: "2026-09-29"
+date-released: "2026-10-01"
