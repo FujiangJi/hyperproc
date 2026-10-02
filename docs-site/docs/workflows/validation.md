@@ -34,4 +34,13 @@ Consider calibration and noise, atmospheric priors, surface-model assumptions, t
 
 ## Current limitation
 
-**Awaiting validation:** a retained, automated, cross-sensor regression suite and independently reviewed scientific benchmarks. Historical comments referring to synthetic tests or external equivalence should be linked to actual fixtures and reproducible reports before being used as release claims.
+The checkout retains automated tests in `tests/`: synthetic/analytic checks,
+reader fingerprints against provisioned granules, recorded archive responses,
+and R-reference smoothing comparisons. Their existence is separate from a
+fresh successful run; reader/data tests require their fixtures and live archive
+tests are marked separately. See [testing and reproducibility](../development/testing.md).
+
+**Awaiting independent validation:** reviewed scientific benchmarks spanning
+sensors, conditions, and intended applications. A regression suite checks
+implemented behavior and numerical invariants; it does not establish that
+every correction is scientifically appropriate for every observation.

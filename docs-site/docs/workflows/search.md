@@ -34,6 +34,16 @@ if hits:
 
 Download writes files, can transfer several GB for a scene, and needs the archive's credentials. Results may include ancillary files required by the reader. Inspect the selected granule and available space first. The [first dataset guide](../getting-started/quickstart.md) continues with a window, QA, indices, and export.
 
+For NASA CMR, configure Earthdata credentials once before an unattended run:
+
+```bash
+python -c "import earthaccess; earthaccess.login(persist=True)"
+```
+
+The downloader calls `earthaccess.login()`; it can prompt if stored credentials
+are unavailable. `hp.archive.can_download("EMIT", "L2A")` is a local credential
+preflight, not a provider-authentication check. See [data access](../getting-started/data-access.md).
+
 ## NEON deliveries contain flightlines
 
 ```python

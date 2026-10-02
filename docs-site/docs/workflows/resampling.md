@@ -21,6 +21,12 @@ Explicit `wavelengths=` and `fwhm=` are also available. Gaussian, box, interpola
 
 The current SRF registry includes Sentinel-2A/B and Landsat 4/5/7/8/9 responses from agency sources. PlanetScope 4/8 entries are **nominal approximations from band edges**, not measured SRFs. Inspect `hyperproc.spectral.srf.available()` and retain the response source/cache provenance.
 
+Install `pip install 'hyperproc[srf]'` to fetch and read published response
+spreadsheets. It provides `requests` and `openpyxl`; ordinary spectral
+transforms and explicit target-grid resampling do not require this extra.
+Files default to `~/.cache/hyperproc/srf`, or the `srf` subdirectory under
+`HYPERPROC_CACHE_DIR`.
+
 ## Coverage and resolution safeguards
 
 `min_coverage=0.5` is the default support threshold. Unsupported target bands return NaN rather than being presented as fully measured. `band_coverage` helps distinguish sufficient from partial support. Evaluate whether the threshold is strict enough for your application; it is not an accuracy guarantee.

@@ -1,0 +1,34 @@
+{% set source = page.file.src_uri if page else "" %}
+{% set current = namespace(section="Home" if source == "index.md" else "") %}
+{% if page %}
+  {% for ancestor in page.ancestors %}
+    {% if ancestor.title in ["Data", "Tools", "Documentation", "About"] %}
+      {% set current.section = ancestor.title %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+<header class="md-header md-header--home" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Main navigation">
+    <a href="{{ nav.homepage.url | url }}" class="md-header__button md-logo" aria-label="hyperproc home" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+    {% if source != "index.md" %}
+      <label class="md-header__button md-icon" for="__drawer" aria-label="Open documentation navigation">
+        {% include ".icons/material/menu.svg" %}
+      </label>
+    {% endif %}
+    <div class="home-links">
+      {% for label, destination in [("Home", ""), ("Data", "data/"), ("Tools", "tools/"), ("Documentation", "documentation/"), ("About", "project/about/")] %}
+        <a href="{{ destination | url }}"{% if current.section == label %} aria-current="{{ 'page' if page and page.url == destination else 'location' }}"{% endif %}>{{ label }}</a>
+      {% endfor %}
+    </div>
+    {% if config.theme.palette and not config.theme.palette is mapping %}
+      {% include "partials/palette.html" %}
+      {% include "partials/javascripts/palette.html" %}
+    {% endif %}
+    <label class="md-header__button md-icon" for="__search" aria-label="Search documentation">
+      {% include ".icons/material/magnify.svg" %}
+    </label>
+    {% include "partials/search.html" %}
+  </nav>
+</header>

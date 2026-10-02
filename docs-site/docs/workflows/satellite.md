@@ -16,6 +16,12 @@ The example preserves observed solar zenith while normalizing the view. The func
 
 If parameters are not supplied, the default retrieval pathway uses Google Earth Engine and requires external authorization. A local, already prepared parameter object can be passed through `params=`. Read [MCD43 API](../api/hyperproc-correct-mcd43.md) for supported local reading and fetching.
 
+Install the optional dependency with `pip install 'hyperproc[brdf]'`, then
+authenticate once with `earthengine authenticate`. Pass an authorized
+`project=` or set `EARTHENGINE_PROJECT` when your account requires a Cloud
+project. `source="local"` uses an existing MCD43 cache; it does not download
+missing parameters.
+
 ## Spatial and temporal support
 
 MCD43A1 Version 6.1 provides model parameters at a much coarser support than many hyperspectral pixels and draws on a multi-day observation window. Sampling those parameters onto a fine grid does not create fine-resolution BRDF information. [NASA product description](https://data.nasa.gov/dataset/modis-terraaqua-brdf-albedo-model-parameters-daily-l3-global-500m-v061-53475).

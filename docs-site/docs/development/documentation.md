@@ -10,7 +10,7 @@ docs-site/
 ├── hooks.py                Snapshot labels and concise tutorial tables of contents
 ├── navigation.yml          Maintained section order
 ├── mkdocs.yml              Theme, extensions, generated full navigation
-├── overrides/              Theme-aware logo template
+├── overrides/              Shared header, breadcrumbs, homepage, and logo templates
 ├── scripts/generate.py     Static API inventory and notebook conversion
 ├── scripts/check_site.py   Built HTML/link/asset checks
 ├── manage.py               Generate, build, check, and local serve commands
@@ -34,16 +34,28 @@ python manage.py serve --port 8765
 ## Edit the right source
 
 - Edit conceptual/usage pages directly in `docs/`.
-- Edit navigation in `navigation.yml`; generation refreshes the expanded MkDocs navigation.
+- Edit navigation in `navigation.yml`; its five primary sections match the shared header. The generator inserts API modules and the notebook library recursively into Documentation. Each section retains its sibling-guide sidebar on detail pages; header highlighting and breadcrumbs derive from the same navigation ancestry.
 - API descriptions come from package docstrings and signatures. The docs build does not rewrite those source files.
 - Notebook pages come from `tests/0_src_code/`; keep caveat annotations in the maintained companion guides. Edit a notebook only as a separate intentional development action.
 - Logos live under `docs/assets/logos/`; `.theme-light` and `.theme-dark` variants respond to Material's current color scheme.
+- The artwork under `docs/assets/logos` is what the site uses, and a clone needs nothing else to build; the vector masters it was exported from are not distributed. The homepage hero uses `overrides/main.html`; all pages share the header in `overrides/partials/home-header.html`. Data, Tools, and Documentation have landing pages with category highlighting in the header; its local image is `docs/assets/images/forest-mountain-hero.png`.
 
 ## What generation does
 
 The generator uses Python AST to inventory modules/exports, writes reference directives for static mkdocstrings extraction, converts notebook markdown/code, copies original notebooks, and extracts stored PNG figures. Saved text outputs are expanded by default and can be collapsed. Long text outputs are shortened in the page but preserved in the download. Search-map cells receive browser-only Leaflet previews from saved widget geometry or, when geometry is missing, the saved center with an explicit caption. Vendored Leaflet assets supply pan/zoom controls; no kernel is started. It never imports hyperproc, executes notebook cells, or accesses remote data services.
 
 The source-hash manifest and notebook inventories under `docs/assets/` make the documented snapshot explicit. Regenerate after source changes. Human-written scientific explanations still need review; automatic extraction cannot detect every stale docstring.
+
+The build also checks public class methods/properties and uses
+`scripts/audit_guides.py` to parse maintained Python examples, resolve package
+aliases, bind calls against source signatures, and verify installation extras.
+These checks never import hyperproc or execute example code. The dependency
+table and citation date come directly from `pyproject.toml` and `CITATION.cff`;
+the source-hash manifest includes the package README, maintained guides,
+templates, styles, scripts, and source artwork so documentation checks detect
+a changed input snapshot. Run `python manage.py build` after revisions;
+`python manage.py check` reports stale build inputs instead of silently treating
+old rendered pages as current.
 
 ## Before public release
 

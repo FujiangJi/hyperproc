@@ -1,53 +1,58 @@
 - Home: index.md
-- Background:
-    - Why hyperproc: background/overview.md
-    - Measurements and product levels: background/measurements.md
-    - Data model and geometry: background/data-model.md
-    - Processing decision guide: background/decision-guide.md
-    - Scientific references: background/references.md
-- Getting started:
-    - Installation: getting-started/installation.md
-    - First dataset: getting-started/quickstart.md
-    - Input files and data access: getting-started/data-access.md
-    - Configuration and external assets: getting-started/configuration.md
-- Sensors:
-    - Support matrix: sensors/index.md
-    - AVIRIS family: sensors/aviris.md
-    - NEON AOP: sensors/neon.md
-    - EMIT: sensors/emit.md
-    - PRISMA: sensors/prisma.md
-    - EnMAP: sensors/enmap.md
-    - DESIS: sensors/desis.md
-    - PACE OCI: sensors/pace.md
-    - Tanager: sensors/tanager.md
-- Workflows:
+- Data:
+    - Overview: data/index.md
     - Search and download: workflows/search.md
     - Read and inspect: workflows/reading.md
+    - Files and access: getting-started/data-access.md
+    - Sensors:
+        - Support matrix: sensors/index.md
+        - AVIRIS family: sensors/aviris.md
+        - NEON AOP: sensors/neon.md
+        - EMIT: sensors/emit.md
+        - PRISMA: sensors/prisma.md
+        - EnMAP: sensors/enmap.md
+        - DESIS: sensors/desis.md
+        - PACE OCI: sensors/pace.md
+        - Tanager: sensors/tanager.md
+- Tools:
+    - Overview: tools/index.md
+    - Choose a processing path: background/decision-guide.md
+    - Quality and masking: workflows/quality.md
     - Atmospheric correction: workflows/atmosphere.md
-    - Airborne topographic and BRDF: workflows/airborne.md
+    - Airborne terrain and BRDF: workflows/airborne.md
     - Satellite BRDF: workflows/satellite.md
-    - Quality flags and masking: workflows/quality.md
     - Spectral processing: workflows/spectral.md
     - Spectral resampling: workflows/resampling.md
     - Features and indices: workflows/features.md
-    - Spatial grids and alignment: workflows/spatial.md
+    - Spatial alignment: workflows/spatial.md
     - Export and provenance: workflows/export.md
-    - Performance and large scenes: workflows/performance.md
-    - Validation and uncertainty: workflows/validation.md
-- Tutorials:
-    - Overview: tutorials/index.md
-    - AVIRIS-3 walkthrough: tutorials/aviris3-walkthrough.md
-    - PACE tutorial update: tutorials/pace-tutorial.md
-    - Notebook caveats: tutorials/caveats.md
-- API reference: []
-- Developers:
-    - Architecture: development/architecture.md
-    - Adding a reader: development/adding-reader.md
-    - Testing and reproducibility: development/testing.md
-    - Maintaining this site: development/documentation.md
-- Project:
+    - Performance: workflows/performance.md
+    - Validation: workflows/validation.md
+- Documentation:
+    - Overview: documentation/index.md
+    - Getting started:
+        - Installation: getting-started/installation.md
+        - First dataset: getting-started/quickstart.md
+        - Configuration: getting-started/configuration.md
+    - Tutorials:
+        - Overview: tutorials/index.md
+        - AVIRIS-3 walkthrough: tutorials/aviris3-walkthrough.md
+        - PACE tutorial update: tutorials/pace-tutorial.md
+        - Notebook caveats: tutorials/caveats.md
+    - API reference: []
+    - Background:
+        - Why hyperproc: background/overview.md
+        - Measurements and product levels: background/measurements.md
+        - Data model and geometry: background/data-model.md
+        - Scientific references: background/references.md
+    - Developers:
+        - Architecture: development/architecture.md
+        - Adding a reader: development/adding-reader.md
+        - Testing and reproducibility: development/testing.md
+        - Maintaining this site: development/documentation.md
+- About:
     - About and branding: project/about.md
     - Documentation status: project/status.md
     - Troubleshooting: project/troubleshooting.md
-    - Citation, license, and contribution: project/governance.md
+    - Citation and contribution: project/governance.md
     - Release notes: project/releases.md

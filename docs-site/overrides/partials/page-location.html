@@ -1,0 +1,21 @@
+{% if page %}
+<nav class="page-location" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="{{ nav.homepage.url | url }}">Home</a></li>
+    {% for ancestor in page.ancestors | reverse %}
+      {% set index = ancestor.children | selectattr('is_index') | first %}
+      <li>
+        {% if index and index != page %}
+          <a href="{{ index.url | url }}">{{ ancestor.title }}</a>
+        {% elif index == page %}
+          <span aria-current="page">{{ ancestor.title }}</span>
+        {% else %}
+          <span>{{ ancestor.title }}</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+    {% if not page.is_index %}<li><span aria-current="page">{{ page.title }}</span></li>{% endif %}
+  </ol>
+  <label class="page-location__browse" for="__drawer">Browse this section <span aria-hidden="true">☰</span></label>
+</nav>
+{% endif %}

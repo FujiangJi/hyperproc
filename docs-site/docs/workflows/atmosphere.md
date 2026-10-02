@@ -10,6 +10,13 @@ hyperproc prepares inputs, orchestrates ISOFIT's `apply_oe`, reads the retrieval
 - A working ISOFIT installation with required engines and data assets.
 - A bounded initial test window and enough free disk space.
 
+Install `hyperproc[atmos]` and run `hyperproc-atmos-setup --check` first. The
+default sRTMnet route also requires compiled 6S, so `gfortran` and `make` are
+needed even when no explicit `6s` engine was selected. LibRadTran additionally
+needs the C compiler and GSL. Assets default to `~/.isofit`; use `--base` for
+a shared asset directory. See [installation](../getting-started/installation.md)
+for the exact package constraints and setup commands.
+
 NEON's current DP1 reflectance reader is not a radiance source. PRISMA L2B surface radiance must not be treated as L1 at-sensor radiance. PACE L1B uses its dedicated TOA-reflectance conversion. Reader support alone does not prove that every level/grid combination is suitable for this route.
 
 ## One-call processing

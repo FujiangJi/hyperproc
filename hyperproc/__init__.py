@@ -49,7 +49,7 @@ from hyperproc.quality import describe as quality_table
 from hyperproc.quality import summary as quality_summary
 from hyperproc.report import describe
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "open", "read", "describe", "list_readers", "sniff", "summary",

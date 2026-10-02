@@ -87,6 +87,9 @@ docs-site/docs/tutorials/
 docs-site/docs/assets/*
 !docs-site/docs/assets/logos/
 !docs-site/docs/assets/vendor/
+!docs-site/docs/assets/images/
+docs-site/docs/assets/images/*
+!docs-site/docs/assets/images/forest-mountain-hero.png
 
 # py_tests: the scripts are tracked, what they download and produce is not.
 # 1_data is 15 GB of granules the pipelines fetch or copy; 2_outputs is 3.3 GB

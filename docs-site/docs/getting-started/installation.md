@@ -20,6 +20,35 @@ print(hp.__version__)
 print(hp.__file__)
 ```
 
+## Requirements
+
+**Python 3.11 or newer.** Developed and tested on **3.12**; 3.13 is declared
+and expected to work. 3.14 resolves and installs, but nothing has been run on
+it, and `[atmos]` is unlikely to work there until torch and ray catch up.
+
+The Python dependencies do not need installing first. `pip install hyperproc`
+brings NumPy, xarray, Dask, rasterio, rioxarray, h5py, netCDF4, h5netcdf,
+SciPy, pyproj, Shapely, affine and threadpoolctl with it, in versions it has
+resolved together. Installing them by hand beforehand only risks a conflict.
+
+Compiled programs are a different matter: pip cannot supply them, and the
+atmospheric engines are built from them on the machine. Only `[atmos]` needs
+these.
+
+| Tool | Needed by | Note |
+|---|---|---|
+| `gfortran`, `make` | every engine, including the default | sRTMnet compiles 6S underneath |
+| `gcc`, `gsl` | `--engine LibRadTran` only | take GSL from conda-forge even if the system has one |
+
+```bash
+conda create -n hyperproc python=3.12
+conda activate hyperproc
+conda install -c conda-forge gfortran make gcc gsl
+```
+
+The example pipelines under `py_tests/` draw figures and so need matplotlib,
+through `'hyperproc[notebooks]'`. The package itself never imports it.
+
 ## Choose optional capabilities
 
 Use these commands from the repository root. Extras can be combined, for example `'.[search-map,notebooks]'`.
@@ -36,6 +65,14 @@ Use these commands from the repository root. Extras can be combined, for example
 | Tests | `pip install -e '.[test]'` | pytest |
 
 The core dependencies include NumPy, xarray, Dask, rasterio, rioxarray, h5py, netCDF4, h5netcdf, SciPy, pyproj, Shapely, affine, and threadpoolctl. See `pyproject.toml` for constraints. ISOFIT introduces its own constraints on h5py/netCDF4 and brings torch and ray.
+
+### Exact requirements in this checkout
+
+This table is generated from `pyproject.toml` on each build. Constraints listed
+here are hyperproc's direct requirements; optional packages can impose further
+transitive constraints during installation.
+
+{{ dependency_table }}
 
 ## Platforms and atmospheric assets
 

@@ -12,6 +12,7 @@ import shutil
 import tomllib
 from notebook_maps import map_snapshot, WIDGET_VIEW
 from granule_recordings import result_context, recorded_snapshot
+from audit_guides import maintained_pages
 from pathlib import Path
 import yaml
 
@@ -93,6 +94,7 @@ def generate_api():
         path = page_of(module)
         groups[group].append({module: path})
         header = f'# `{module}`\n\n<span class="status-pill">Source-derived reference</span>\n\n'
+        header += 'Generated from the current **hyperproc {{ source_version }}** checkout.\n\n'
         header += f'Implementation: `{p.relative_to(REPO)}`. Signatures, defaults, docstrings, and expandable source are extracted statically; the module is not imported or executed. Names beginning with `_` are implementation details, not a stable public API.\n\n'
         header += 'Use the function signature as the authority for individual parameter defaults and return annotations. Original docstrings sometimes group parameter names or wrap return descriptions across lines; these descriptions are preserved rather than inferred or rewritten.\n\n'
         if module in exports:
@@ -118,8 +120,13 @@ def generate_api():
             if isinstance(n,(ast.FunctionDef,ast.AsyncFunctionDef,ast.ClassDef)):
                 records.append({'name':module+'.'+n.name,'module':module,'line':n.lineno,
                                 'kind':'class' if isinstance(n,ast.ClassDef) else 'function',
-                                'documented':bool(ast.get_docstring(n)), 'private':n.name.startswith('_')})
+                                'documented':bool(ast.get_docstring(n)), 'private':n.name.startswith('_'),
+                                'members':[{'name':module+'.'+n.name+'.'+member.name,'line':member.lineno}
+                                           for member in n.body if isinstance(member,(ast.FunctionDef,ast.AsyncFunctionDef))
+                                           and not member.name.startswith('_')]
+                                          if isinstance(n,ast.ClassDef) else []})
     index = '# API reference\n\nThe reference covers every local Python module, including public interfaces, lower-level functions, classes, and implementation helpers. Prefer documented package exports for application code. **Source-derived does not mean scientifically validated.**\n\n'
+    index += 'Current snapshot: **hyperproc {{ source_version }}**, {{ api_modules }} modules, {{ functions_and_classes }} top-level functions/classes, and {{ class_members }} public class methods/properties. Every build refreshes signatures, defaults, docstrings, source, and exported-name mappings.\n\n'
     index += '## Where to begin\n\n| Task | Main namespace |\n|---|---|\n'
     for desc,module in [('Open, inspect, export, mask, or analyze','hyperproc'),('Find granules, check credentials, download, or draw a search map','hyperproc.archive'),('Airborne topographic/FlexBRDF or satellite NBAR','hyperproc.correct'),('Atmospheric retrieval orchestration','hyperproc.atmos'),('Spectral transforms and resampling','hyperproc.spectral')]:
         index += f'| {desc} | [`{module}`]({Path(page_of(module)).name}) |\n'
@@ -231,15 +238,21 @@ def main():
         'show_source':True,'show_signature_annotations':True,'signature_crossrefs':False,
         'show_symbol_type_heading':True,'heading_level':2,'show_submodules':False}}}}}]
     nav=yaml.safe_load((ROOT/'navigation.yml').read_text())
-    for item in nav:
-        if 'API reference' in item:
-            item['API reference']=[{'Overview':'api/index.md'}]+[{g:entries} for g,entries in groups.items()]
-        if 'Tutorials' in item:
-            item['Tutorials'] += [{'Notebook library':[{r['title']:r['page']} for r in notebooks]}]
+    def populate_navigation(items):
+        for item in items:
+            for label, entries in item.items():
+                if label == 'API reference':
+                    item[label] = [{'Overview':'api/index.md'}]+[{g:entries} for g,entries in groups.items()]
+                elif label == 'Tutorials':
+                    entries.append({'Notebook library':[{r['title']:r['page']} for r in notebooks]})
+                elif isinstance(entries, list):
+                    populate_navigation(entries)
+    populate_navigation(nav)
     config['extra_javascript'] = ['assets/vendor/leaflet/leaflet.js', 'javascripts/notebook-maps.js']
     config['extra_css'] = ['assets/vendor/leaflet/leaflet.css', 'stylesheets/extra.css']
     config['nav']=nav
     project = tomllib.loads((REPO/'pyproject.toml').read_text())['project']
+    citation = yaml.safe_load((REPO/'CITATION.cff').read_text())
     version = next(ast.literal_eval(n.value) for n in ast.parse((PKG/'__init__.py').read_text()).body
                    if isinstance(n, ast.Assign) and any(isinstance(t, ast.Name) and t.id == '__version__' for t in n.targets))
     # both from pyproject, so there is one place to change the address
@@ -253,13 +266,27 @@ def main():
         shutil.copyfile(REPO/name, DOCS/'assets'/name)
 
     (ROOT/'mkdocs.yml').write_text(yaml.safe_dump(config,sort_keys=False,allow_unicode=True,width=100))
+    documentation_sources = set(maintained_pages())
+    documentation_sources.update(ROOT/name for name in ('hooks.py', 'navigation.yml', 'mkdocs.yml'))
+    for directory, pattern in [('scripts','*.py'), ('overrides','*.html'),
+                               ('docs/stylesheets','*.css'), ('docs/javascripts','*.js'),
+                               ('docs/assets/logos','*.svg'), ('docs/assets/images','*'),
+                               ('docs/assets/vendor','*')]:
+        documentation_sources.update(path for path in (ROOT/directory).rglob(pattern) if path.is_file())
     manifest={'source_version':version, 'python_requires':project['requires-python'],'api_modules':sum(map(len,groups.values())),
               'functions_and_classes':len(api),'notebooks':len(notebooks),
+              'class_members':sum(len(record['members']) for record in api),
+              'citation_date':str(citation['date-released']),
+              'citation_version':str(citation['version']),
+              'dependencies':project['dependencies'],
+              'optional_dependencies':project['optional-dependencies'],
+              'console_scripts':project['scripts'],
+              'documentation_source_sha256':{str(p.relative_to(REPO)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(documentation_sources)},
               'saved_figures':sum(r['figures'] for r in notebooks),
               'map_previews':sum(r['maps'] for r in notebooks),
               'map_recordings_sha256':{str(p.relative_to(REPO)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT/'map-recordings').rglob('*.json'))},
               'package_source_sha256':{str(p.relative_to(REPO)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(PKG.rglob('*.py')) if not p.name.startswith('._')},
-              'metadata_source_sha256':{name:hashlib.sha256((REPO/name).read_bytes()).hexdigest() for name in ('pyproject.toml', 'LICENSE', 'CITATION.cff')},
+              'metadata_source_sha256':{name:hashlib.sha256((REPO/name).read_bytes()).hexdigest() for name in ('pyproject.toml', 'LICENSE', 'CITATION.cff', 'README.md')},
               'execution_policy':'Static source inspection and saved-output rendering only; no hyperproc import or notebook execution.'}
     write('assets/build-manifest.json',json.dumps(manifest,indent=2))
     print(json.dumps({k:v for k,v in manifest.items() if k!='package_source_sha256'},indent=2))

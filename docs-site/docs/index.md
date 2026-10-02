@@ -1,25 +1,42 @@
 ---
 title: hyperproc documentation
+hide:
+  - navigation
+  - toc
 ---
+
+<div class="homepage-brand">
+  <img class="theme-light" src="assets/logos/wordmark.svg" alt="hyperproc" width="1840" height="410">
+  <img class="theme-dark" src="assets/logos/wordmark-dark.svg" alt="hyperproc" width="1840" height="410">
+  <div>
+    <p class="homepage-brand__eyebrow">AIRBORNE + SATELLITE</p>
+    <p>Hyperspectral tools for terrestrial ecosystem monitoring</p>
+  </div>
+</div>
 
 <div class="eyebrow">Imaging spectroscopy · Python · {{ source_version }}</div>
 
-# One interface. Many spectral worlds.
-
-![hyperproc — hyperspectral tools for terrestrial ecosystem monitoring](assets/logos/rectangular.svg){ .brand-banner .theme-light }
-![hyperproc — hyperspectral tools for terrestrial ecosystem monitoring](assets/logos/rectangular-dark.svg){ .brand-banner .theme-dark }
+## One interface. Many spectral worlds.
 
 **Find, read, inspect, correct, and prepare airborne and satellite hyperspectral data through a shared Python interface.** hyperproc brings sensor-specific products into `xarray`, with processing tools for terrestrial ecosystem research and other imaging-spectroscopy applications.
 
 **Installation · Python {{ python_requires }}**
 
 ```bash
+conda create -n hyperproc python=3.12
+conda activate hyperproc
+conda install -c conda-forge gfortran make gcc gsl
+
 pip install hyperproc
 pip install 'hyperproc[search]'
 pip install 'hyperproc[search-map]'
 pip install 'hyperproc[brdf]'
 pip install 'hyperproc[atmos]'
 ```
+
+The `conda install` line supplies the compilers the atmospheric engines are
+built from; pip cannot. Everything else `pip install hyperproc` needs, it
+installs itself.
 
 | Extra | Adds |
 |---|---|

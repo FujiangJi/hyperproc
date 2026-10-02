@@ -22,7 +22,11 @@ These sources explain the methods and data concepts used in the documentation. T
 
 The implementation docstrings identify Teillet, Guindon & Goodenough (1982), Gu & Gillespie (1998), and Soenen, Peddle & Coburn (2005) as the foundations of cosine/C/SCS/SCS+C corrections. **A complete, verified bibliography is under construction.** The spectral-index registry also carries per-index references; these are source metadata, not a completed citation audit.
 
-The spline implementation documents a port of R's smoothing-spline behavior. Its numerical equivalence claims require retained, independently reproducible comparison evidence before use in a manuscript.
+The spline implementation documents a port of R's smoothing-spline behavior.
+`tests/test_smoothing_r.py` compares against retained R-reference fixtures
+under `tests/data/r_reference/`. Consult the [test guide](../development/testing.md)
+and the actual test results when reporting numerical equivalence; these
+comparisons do not establish full scientific validity of gap filling.
 
 ## Documentation and neighboring software
 
@@ -32,4 +36,9 @@ The spline implementation documents a port of R's smoothing-spline behavior. Its
 
 ## Citing hyperproc
 
-**Awaiting maintainer confirmation:** authors, release archive, repository URL, license, and preferred citation. Do not cite another package's paper as if it were the hyperproc software paper.
+The checkout supplies an MIT license, repository URL, maintainer details, and
+`CITATION.cff` for hyperproc {{ source_version }} (declared release date
+{{ citation_date }}). Use the [citation guide](../project/governance.md).
+No DOI is declared; a remote release archive or package-index publication is
+not verified by the local build. Cite upstream algorithms separately from
+the hyperproc software citation.

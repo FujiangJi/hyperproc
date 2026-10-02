@@ -19,8 +19,8 @@ Readers, topographic and BRDF correction, and atmospheric
 correction for airborne and satellite imaging spectrometers.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FujiangJi/hyperproc/main/docs-site/docs/assets/logos/rectangular-dark.svg">
-  <img src="https://raw.githubusercontent.com/FujiangJi/hyperproc/main/docs-site/docs/assets/logos/rectangular.svg" alt="hyperproc" width="720">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FujiangJi/hyperproc/main/docs-site/docs/assets/logos/wordmark-dark.svg">
+  <img src="https://raw.githubusercontent.com/FujiangJi/hyperproc/main/docs-site/docs/assets/logos/wordmark.svg" alt="hyperproc" width="720">
 </picture>
 
 **Documentation: <https://fujiangji.github.io/hyperproc/>**
@@ -120,15 +120,56 @@ correction for airborne and satellite imaging spectrometers.
   (`prepare_inputs`, `build_command`, `correct`, `read_outputs`) are exposed for
   step-by-step use, see `tests/0_src_code/emit_tutorial.ipynb`.
 
+## Requirements
+
+**Python 3.11 or newer.** Everything here is developed and tested on **3.12**,
+which is what to use if you have the choice. 3.13 is declared and expected to
+work. 3.14 resolves and installs, but nothing has been run on it and `[atmos]`
+is unlikely to work there until torch and ray catch up.
+
+**You do not need to install the Python dependencies first.** `pip install
+hyperproc` brings NumPy, xarray, Dask, rasterio, rioxarray, h5py, netCDF4,
+h5netcdf, SciPy, pyproj, Shapely, affine and threadpoolctl with it, in
+compatible versions. Installing them by hand beforehand only risks a conflict.
+
+**What pip cannot supply.** The radiative-transfer engines are compiled
+programs, not Python packages, so these have to be in place before
+`hyperproc-atmos-setup` runs. Only `[atmos]` needs them; nothing else in the
+package does.
+
+| Tool | Needed by | Note |
+|---|---|---|
+| `gfortran`, `make` | **every** engine, including the default | sRTMnet compiles 6S underneath, so this is not optional |
+| `gcc`, `gsl` | `--engine LibRadTran` only | take GSL from conda-forge even if the system has one: the build compiles against the environment's own `include` and `lib` |
+
+The example pipelines under `py_tests/` also draw figures, so they need
+matplotlib - `pip install 'hyperproc[notebooks]'`. The package itself never
+imports it.
+
 ## Install
 
+From nothing to a working install, in one block. Drop the lines for anything
+you do not want:
+
 ```bash
+conda create -n hyperproc python=3.12
+conda activate hyperproc
+conda install -c conda-forge gfortran make gcc gsl
+
 pip install hyperproc
 pip install 'hyperproc[search]'
 pip install 'hyperproc[search-map]'
 pip install 'hyperproc[brdf]'
 pip install 'hyperproc[atmos]'
+
+hyperproc-atmos-setup
+hyperproc-atmos-setup --engine LibRadTran
+hyperproc-atmos-setup --check
 ```
+
+The `conda install` line and the last three lines matter only for atmospheric
+correction. Each `pip install` line adds one capability and none of them
+depends on the ones above it, so install only what you need:
 
 | Extra | Adds |
 |---|---|
@@ -138,18 +179,11 @@ pip install 'hyperproc[atmos]'
 | `brdf` | Earth Engine, for the satellite BRDF route |
 | `atmos` | ISOFIT - pins `h5py<=3.14` and `netCDF4<1.7.4`, and pulls torch and ray |
 
-`[atmos]` then needs its engines and data assets, once per machine:
-
-```bash
-hyperproc-atmos-setup
-hyperproc-atmos-setup --engine LibRadTran
-hyperproc-atmos-setup --check
-```
-
-The first line fetches the engines and about 6 GB of data assets. `--engine
-LibRadTran` is optional and compiles libRadtran, which needs gcc, gfortran,
-make and GSL. `--check` reports what is already in place and downloads
-nothing.
+**The `hyperproc-atmos-setup` lines.** The first fetches the engines and about
+6 GB of data assets, once per machine. `--engine LibRadTran` is optional and
+compiles libRadtran. `--check` reports what is already in place and downloads
+nothing - run it first if you are unsure, it is the fastest way to find out
+what a machine still needs.
 
 **Where the assets go.** By default, `~/.isofit`. On a shared machine, give
 every user the same directory instead, so the 6 GB is fetched once rather than
@@ -166,12 +200,10 @@ take it with them.
 
 **Platforms.** The core - readers, topographic and BRDF correction, spectral
 transforms, quality, resampling, export - runs on Linux, macOS and Windows.
-`[atmos]` is Linux and macOS only: ISOFIT pulls ray and torch, and the
-radiative-transfer engines need a Fortran compiler (6S) and a C toolchain with
-GSL (LibRadTran), neither of which builds on Windows. Note that the default
-engine is not compiler-free either - sRTMnet compiles 6S underneath, so
-`gfortran` and `make` must be present before the first setup run.
-`hyperproc-atmos-setup --check` downloads nothing and names what is missing.
+`[atmos]` is Linux and macOS only: ISOFIT pulls ray and torch, and neither
+compiled engine builds on Windows. `hyperproc-atmos-setup --check` downloads
+nothing and names whatever is still missing, with the command that supplies
+it.
 
 Searching an archive needs no account. Downloading needs the archive's own,
 and all of them are free:

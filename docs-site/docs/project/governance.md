@@ -2,7 +2,7 @@
 
 ## Citation
 
-The root `CITATION.cff` supplies the software citation: **Fujiang Ji, hyperproc: readers, atmospheric, topographic and BRDF correction for imaging spectrometers**, version 0.1.0, release date 2026-09-29, University of Wisconsin–Madison. Use the [citation metadata download](../assets/CITATION.cff) or the repository's “Cite this repository” action. No DOI is declared in the current citation file.
+The root `CITATION.cff` supplies the software citation: **Fujiang Ji, hyperproc: readers, atmospheric, topographic and BRDF correction for imaging spectrometers**, version {{ source_version }}, release date {{ citation_date }}, University of Wisconsin–Madison. Use the [citation metadata download](../assets/CITATION.cff) or the repository's “Cite this repository” action. No DOI is declared in the current citation file.
 
 [Source repository](https://github.com/FujiangJi/hyperproc). Cite the upstream algorithms and provider data products used in an analysis alongside the software.
 
@@ -20,4 +20,6 @@ Include the package version, product identifiers, a small reproducible example, 
 
 ## Institutional identity
 
-The GCRL/UW–Madison logo text describes a proposed affiliation label. The software citation names the author's university affiliation; it does not establish institutional approval of the custom artwork.
+The current Spectral Ribbon logo contains no institutional affiliation label.
+The software citation separately records the author's university affiliation;
+it does not establish institutional approval of the custom artwork.

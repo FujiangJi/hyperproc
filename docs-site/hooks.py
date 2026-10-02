@@ -5,8 +5,12 @@ from pathlib import Path
 
 def on_page_markdown(markdown, **kwargs):
     snapshot = json.loads((Path(__file__).parent/'docs/assets/build-manifest.json').read_text())
-    for name in ('source_version', 'python_requires', 'api_modules', 'functions_and_classes', 'notebooks', 'saved_figures'):
+    for name in ('source_version', 'python_requires', 'api_modules', 'functions_and_classes', 'class_members', 'citation_date', 'notebooks', 'saved_figures'):
         markdown = markdown.replace('{{ ' + name + ' }}', str(snapshot[name]))
+    dependency_rows = ['| Install target | Declared Python requirements |', '|---|---|']
+    for name, requirements in [('Core', snapshot['dependencies']), *snapshot['optional_dependencies'].items()]:
+        dependency_rows.append('| ' + name + ' | ' + ', '.join('`'+item+'`' for item in requirements) + ' |')
+    markdown = markdown.replace('{{ dependency_table }}', '\n'.join(dependency_rows))
     return markdown
 
 

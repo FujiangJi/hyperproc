@@ -19,9 +19,12 @@ and password and writes `~/.netrc`, after which every run is non-interactive:
 python -c "import earthaccess; earthaccess.login(persist=True)"
 ```
 
-Nothing in this package prompts for a password during a run. `hp.download()`
-and the example scripts test for a credential first and stop with the command
-that supplies it, so a long job cannot block waiting on input.
+Configure credentials before starting an unattended run. The CMR downloader
+delegates authentication to `earthaccess.login()`, which can prompt when no
+usable stored credentials are available. The example pipelines check
+`hp.archive.can_download()` before downloading; that preflight checks local
+configuration, not the validity of an account or token. The persisted login
+above avoids entering credentials for each run.
 
 Searches use anonymous archive access. NEON flightline listing and downloads require a token in this implementation. For DLR, configure `ENMAP_USERNAME`/`ENMAP_PASSWORD` or `DESIS_USERNAME`/`DESIS_PASSWORD`; `DLR_EOC_USERNAME`/`DLR_EOC_PASSWORD` provides a fallback. Mission access is granted separately, so credentials found locally do not establish authorization for both missions.
 

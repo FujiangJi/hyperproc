@@ -12,6 +12,19 @@ Check provider filenames, sensor/level, and file extensions. Explicit identifica
 
 Install the `search` extra (or `search-map` for widgets). Check `hp.archive.describe()` for searchable levels and `hp.archive.credentials()` for locally configured credentials. Search is anonymous; NEON flightline listing and all archive downloads need credentials. A configured DLR account can still lack mission access or require policy acceptance. See [search and download](../workflows/search.md).
 
+For Earthdata, run `python -c "import earthaccess; earthaccess.login(persist=True)"`
+once before an unattended job. The CMR backend calls `earthaccess.login()`,
+which may prompt when credentials are missing.
+
+## Optional dependency or atmospheric engine missing
+
+Use the capability extra named by the error: `hyperproc[brdf]` for Earth
+Engine, `hyperproc[srf]` for published response spreadsheets, or
+`hyperproc[atmos]` for ISOFIT. Compiled engines also need system/environment
+build tools, which pip does not supply. Run `hyperproc-atmos-setup --check`
+or `--check --engine LibRadTran` to see missing tools/assets without downloads.
+See [installation](../getting-started/installation.md).
+
 ## Missing CRS on export
 
 Determine whether the input is a geolocated swath, a raw detector grid, or a product missing metadata. Use the correct GLT/georeferencing path where available. Do not assign a CRS solely to silence the writer.

@@ -7,12 +7,7 @@ hyperproc is a Python package for reading and processing airborne and satellite 
 
 ## Visual identity
 
-The spectral H represents the package and its spectral channels. A globe grid, living landscape, and orbital element add Earth-observation context. The horizontal logo is used on the documentation home page and this About page, while the circular mark appears in navigation. Both have dedicated dark-mode artwork; the white-background logo is not simply inverted.
-
-The affiliation line identifies the proposed connection to **GCRL, the Global Change Research Laboratory, and UW–Madison**. The user identified the [lab website](https://globalchange.cals.wisc.edu/). This does not establish institutional approval or legal ownership of the software.
-
-!!! note "Affiliation awaiting confirmation"
-    The logo is original project artwork, not an official university mark. Confirm the preferred lab wording and university approval before public institutional use. [UW brand guidance](https://brand.wisc.edu/visual-identity/logos/).
+The Spectral Ribbon identity combines a flowing spectral “h”, gradient wordmark, a forest landscape inside the “o”, and an observation satellite. A compact horizontal wordmark appears in the website header; the full rectangular and circular versions are available below. Each layout has light- and dark-surface artwork and editable vector elements.
 
 ## People and contact
 
@@ -25,4 +20,4 @@ The affiliation line identifies the proposed connection to **GCRL, the Global Ch
 - [Circular logo — light](../assets/logos/circular.svg)
 - [Circular logo — dark](../assets/logos/circular-dark.svg)
 
-All logo masters are editable vectors with outlined lettering. For very small display sizes, the simplified spectral H is used as the favicon.
+The wordmark uses editable outlined lettering; rectangular taglines remain editable text. The simplified spectral-ribbon “h” is used as the favicon.

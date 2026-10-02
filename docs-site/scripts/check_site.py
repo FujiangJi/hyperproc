@@ -5,6 +5,7 @@ from urllib.parse import urlsplit, unquote
 import hashlib
 import json
 import sys
+from audit_guides import audit, maintained_pages
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT/'site'
@@ -31,7 +32,7 @@ def main():
         errors.append('No built HTML found; run python manage.py build first.')
     checked = 0
     for path, page in pages.items():
-        if any('{{ ' + name + ' }}' in path.read_text(encoding='utf-8') for name in ('source_version', 'python_requires', 'api_modules', 'functions_and_classes', 'notebooks', 'saved_figures')):
+        if any('{{ ' + name + ' }}' in path.read_text(encoding='utf-8') for name in ('source_version', 'python_requires', 'api_modules', 'functions_and_classes', 'class_members', 'citation_date', 'dependency_table', 'notebooks', 'saved_figures')):
             errors.append(f'Unresolved snapshot label: {path.relative_to(SITE)}')
         # Material's standalone 404 template intentionally has deployment-root-relative links.
         if path.name == '404.html':
@@ -55,13 +56,24 @@ def main():
         target = (SITE/'api'/record['module'].replace('.', '-')/'index.html').resolve()
         if target not in pages or record['name'] not in pages[target].ids:
             errors.append(f'API definition not rendered: {record["name"]}')
+        for member in record.get('members', []):
+            if target not in pages or member['name'] not in pages[target].ids:
+                errors.append(f'Public class member not rendered: {member["name"]}')
     manifest = json.loads((ROOT/'docs/assets/build-manifest.json').read_text())
+    if manifest['citation_version'] != manifest['source_version']:
+        errors.append('Citation version differs from the package source version')
+    guide_errors, guide_counts = audit()
+    errors.extend(guide_errors)
+    current_guides = {str(path.relative_to(ROOT.parent)) for path in maintained_pages()}
+    recorded_guides = {name for name in manifest['documentation_source_sha256'] if name.endswith('.md')}
+    if current_guides != recorded_guides:
+        errors.append('Maintained guide inventory changed since generation')
     current_sources = {str(p.relative_to(ROOT.parent)) for p in (ROOT.parent/'hyperproc').rglob('*.py') if not p.name.startswith('._')}
     if current_sources != set(manifest['package_source_sha256']):
         errors.append('Package module inventory changed since generation')
-    for name, expected in (manifest['package_source_sha256'] | manifest['metadata_source_sha256'] | manifest.get('map_recordings_sha256', {})).items():
-        if hashlib.sha256((ROOT.parent/name).read_bytes()).hexdigest() != expected:
-            errors.append(f'Package source changed since generation: {name}')
+    for name, expected in (manifest['package_source_sha256'] | manifest['metadata_source_sha256'] | manifest['documentation_source_sha256'] | manifest.get('map_recordings_sha256', {})).items():
+        if not (ROOT.parent/name).is_file() or hashlib.sha256((ROOT.parent/name).read_bytes()).hexdigest() != expected:
+            errors.append(f'Build input changed since generation: {name}')
     for name in ('LICENSE', 'CITATION.cff'):
         if (SITE/'assets'/name).read_bytes() != (ROOT.parent/name).read_bytes():
             errors.append(f'Project metadata copy mismatch: {name}')
@@ -75,7 +87,9 @@ def main():
         print('\n'.join(sorted(set(errors))))
         sys.exit(1)
     print(f'PASS: {len(pages)} HTML pages; {checked} local links/assets/fragments; '
-          f'{len(inventory)} API definitions; {len(notebooks)} unchanged notebook copies; package source hashes match.')
+          f'{len(inventory)} API definitions; {manifest["class_members"]} public class members; '
+          f'{len(notebooks)} unchanged notebook copies; package source hashes match. '
+          f'Guide audit: {guide_counts}')
 
 if __name__ == '__main__':
     main()

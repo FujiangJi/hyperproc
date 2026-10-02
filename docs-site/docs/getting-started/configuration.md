@@ -9,7 +9,12 @@ import os
 os.environ["HYPERPROC_CACHE_DIR"] = "/path/to/hyperproc-cache"
 ```
 
-Set cache configuration before invoking downloads. The default common cache is under the user's home cache directory. MCD43 retrieval also accepts `cache_dir=`/output-directory controls. Keep cache provenance when comparing results across machines or dates.
+Set cache configuration before invoking downloads. The default root is
+`~/.cache/hyperproc`, with `dem`, `srf`, and `mcd43` subdirectories.
+`hyperproc.correct.nbar()` accepts `cache_dir=`, while the lower-level
+`mcd43.fetch()` accepts `out_dir=`. Archive scene downloads use the separate
+`hp.download(out_dir=...)` destination. Keep cache provenance when comparing
+results across machines or dates.
 
 | Resource | Purpose | Important boundary |
 |---|---|---|
@@ -34,3 +39,13 @@ Tutorial worker counts are examples, not hardware-independent defaults. Bound Da
 Archive downloads read Earthdata, NEON, and mission-specific DLR credentials from the sources described in [data access](data-access.md). `hp.archive.credentials()` reports availability without printing secrets.
 
 Earth Engine authentication and project authorization are external to the package's scientific algorithms. The local docs do not authenticate accounts. Never commit tokens into tutorials or environment examples.
+
+Install `hyperproc[brdf]`, authenticate with `earthengine authenticate`, and
+pass `project="your-cloud-project"` to the MCD43/normalization call or set
+`EARTHENGINE_PROJECT`. This project setting is separate from the data cache.
+
+ISOFIT's asset base defaults to `~/.isofit` and is recorded in
+`~/.isofit/isofit.ini`. `hyperproc-atmos-setup --base /data/shared/isofit_assets`
+sets a shared base; `--check` reports missing assets and build tools without
+downloading them. See [installation](installation.md) for the compiler and GSL
+requirements of each engine.

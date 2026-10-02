@@ -5,7 +5,7 @@
 ```python
 import hyperproc as hp
 print(hp.summary())
-entries = hp.list_readers()
+hp.list_readers()  # prints the supported reader table; returns None
 ```
 
 `hp.sniff(path)` identifies a provider product from its filename pattern without reading the spectral cube. `hp.open(path, sensor=None, level=None, **kwargs)` resolves the registry entry, opens the product, and passes keyword arguments to its reader. Read the sensor-specific signature before supplying options; not every reader accepts `chunks`, `geometry`, or `good_bands_only`.

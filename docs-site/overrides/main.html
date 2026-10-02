@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block header %}
+  {% include "partials/home-header.html" %}
+{% endblock %}
+
+{% block hero %}
+  {% if page and page.file.src_uri == "index.md" %}
+    <section class="homepage-hero" aria-labelledby="hero-title">
+      <img class="homepage-hero__image" src="{{ 'assets/images/forest-mountain-hero.png' | url }}" alt="" width="2172" height="724" fetchpriority="high">
+      <div class="homepage-hero__shade"></div>
+      <div class="homepage-hero__inner md-grid">
+        <h1 id="hero-title">Hyperspectral tools<br>for terrestrial<br>ecosystem monitoring</h1>
+        <p>AIRBORNE + SATELLITE</p>
+        <a class="homepage-hero__button" href="{{ 'tools/' | url }}">Explore tools <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
+  {% endif %}
+{% endblock %}
+
+{% block tabs %}{% endblock %}
+
+{% block content %}
+  {% if page and page.file.src_uri == "index.md" %}{{ page.content }}{% else %}
+    {% include "partials/page-location.html" %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
