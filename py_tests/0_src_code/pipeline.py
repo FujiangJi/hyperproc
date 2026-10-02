@@ -359,8 +359,15 @@ def copy_from_tests(cfg):
     if copied:
         total = sum(p.stat().st_size for p in copied) / 1e9
         say(f"copied {len(copied)} files ({total:.2f} GB) from tests/data")
-    else:
+    elif sorted(cfg.data.glob(Path(cfg.l1_glob).name)):
         say("everything was already in place")
+    else:
+        # Nothing copied and nothing to copy to: tests/data holds the granules
+        # the published repository does not carry. Saying "already in place"
+        # here would contradict the refusal three lines later.
+        say(f"nothing to copy: {TESTS_DATA} has no {cfg.name} scene")
+        say("  the repository ships no granules; point --source at an archive "
+            "that has them, or put a scene in tests/data yourself")
     return copied
 
 
