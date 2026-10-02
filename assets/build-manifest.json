@@ -106,7 +106,7 @@
     "docs-site/docs/sensors/pace.md": "3b3077a0cd9725bbd24c96276b405418bebadfb97a01cf7e5fb69d400598c581",
     "docs-site/docs/sensors/prisma.md": "74f5dd2a6c8a420e090a1fc63e21a2ee8277172d0c1b3e8c93e32fa9c4eb38c0",
     "docs-site/docs/sensors/tanager.md": "1c604b1290fe55b1d411c23202a4f7779f075fcecb38d1368c8b2363ae8dff19",
-    "docs-site/docs/stylesheets/extra.css": "54fa5b9679e86152524adb7cc3cc6d25011dba2e42d502cc6796434a82567f66",
+    "docs-site/docs/stylesheets/extra.css": "b2f7c22b8ec58f6ad8d0e98b1dd4f36b285a376a145dfaa2b3b45ced5ce653a7",
     "docs-site/docs/tools/index.md": "ee773f5089f5045e7560622291672d776b522dbdbaad7c4de98390f63479bc6c",
     "docs-site/docs/tutorials/aviris3-walkthrough.md": "17381ce49c6d11ebf902c6cc0c5db715a8a39c4fe069d330638a23080d4e89c7",
     "docs-site/docs/tutorials/caveats.md": "11f577a607ce71c821e93097c81f3af6baefdbea134cdd5b993ec568a75cb0b4",
@@ -125,10 +125,10 @@
     "docs-site/docs/workflows/spectral.md": "932f806037a62b252a51147496d08c69e10f36e94f44c448b7c162d4731e982a",
     "docs-site/docs/workflows/validation.md": "d8ad1603b8a2327e20da01bbe506abe0b38de510f8782c0321bc592cd186d546",
     "docs-site/hooks.py": "a51ea6042dad0640aaf52f9b104dc27eefca05df5c70d809ac56cd761e8d0711",
-    "docs-site/mkdocs.yml": "cf49b6c6bd5cb05da690c4405aa75704acf211199e6610f5f93d745ae5f9a0d5",
+    "docs-site/mkdocs.yml": "4b86464922b6ea2b992198f21d64a16cf9ffce4ef91efc75c1090105e15ec11f",
     "docs-site/navigation.yml": "0412559743bf1cc71ffa51946eeecad38367b79ce2ee4abb6bb95805375e1369",
     "docs-site/overrides/main.html": "7d0f4fba622a29f11f0ba80a410ea21286cbe86e688e8afbb353173ea34cad49",
-    "docs-site/overrides/partials/home-header.html": "d4222fd5ba777011a5464537523ae3497aad25ebd35a71bf3cd541e865d90924",
+    "docs-site/overrides/partials/home-header.html": "b54386ec436116ea01a9c533e36e4f67e774edcf9d4e89617a2bcae982493f65",
     "docs-site/overrides/partials/logo.html": "7b726e4bb746c809d3b8756bb16b2e7a90c038149e13745e34e35573749f16ba",
     "docs-site/overrides/partials/page-location.html": "4ddccaf3f6bd9817520e239ca4130f67f06604dd0e85eae2c7f936f783a373e5",
     "docs-site/scripts/audit_guides.py": "203613eac5c0988a9759d0438131f399a286d37c4b6d97d3b62135efa028c2cd",
@@ -218,7 +218,7 @@
     "pyproject.toml": "5d6ecdb6093670054034eb42400a5f1f266d9b6d556a2b0714a90b5b087d2392",
     "LICENSE": "15fdda3048c4b4175c17d9bd3e745f50c70ea589fd354b4b78676103b213c83b",
     "CITATION.cff": "5ee8ec55106e037865f8b1d4ac256eccf535b842aa5258fa936a8a7b684a46d6",
-    "README.md": "14179af215af772e2b2e0b2c11f6b32e3e6887a750d2f7bce47d522d30fbf3bc"
+    "README.md": "dd4865dfea4c225a43152917706280bf708c9c98a461d097cc63965029f426a4"
   },
   "execution_policy": "Static source inspection and saved-output rendering only; no hyperproc import or notebook execution."
 }
