@@ -1,13 +1,13 @@
 # Local website verification
 
 This report covers the documentation update for the current hyperproc 0.1.0
-checkout. Package source and original tutorial notebooks were not edited by this update. The rectangular logo masters and website copies omit the affiliation footer. The static build does not execute notebooks.
+checkout. Package source and original tutorial notebooks were not edited by this update. The current rectangular and circular logo masters and website copies omit the affiliation footer. The static build does not execute notebooks.
 
 ## Automated checks — passed
 
 - MkDocs 1.6.1 strict build using the pinned documentation requirements.
 - 117 generated HTML pages, including the 404 page and the PACE migration notice.
-- 50,035 local link, asset, and fragment references checked; external URLs excluded.
+- 50,051 local link, asset, and fragment references checked; external URLs excluded.
 - All 459 indexed top-level functions/classes rendered across 53 source modules.
 - All 17 current downloadable notebooks match their originals byte-for-byte.
 - Package module inventory and source hashes match the generation manifest.
@@ -33,11 +33,25 @@ checkout. Package source and original tutorial notebooks were not edited by this
 
 ## Browser evidence
 
+The homepage installation box appears immediately below the introduction and
+before the Python usage example. It lists five pip install commands and three
+atmospheric-asset setup commands, with the theme's copy-to-clipboard control.
+Desktop and 390 px phone layouts were checked without horizontal page overflow.
+
 The tutorial TOC update was checked in Chromium across all 21 tutorial pages.
 All main steps in the 17 notebook tutorials remain linked, function-detail
 anchors still resolve, and the search/download sidebar has 20 entries.
 At 390 px width, the mobile drawer opens the simplified TOC without horizontal
 page overflow. Its 14 map previews and expanded saved outputs remain present.
+
+The homepage and About page serve the updated light and dark rectangular logo
+SVGs without the GCRL/University of Wisconsin–Madison footer or its divider.
+The package name and purpose caption remain present. Both 1440 × 480 PNG exports
+were refreshed from the revised vector masters.
+The rectangular text block sits 12 SVG pixels below the emblem's vertical center
+in both themes, matching the requested downward refinement (verified within 0.05 px). Circular
+masters and header copies omit the bottom affiliation arc; their light and
+dark PNG exports were refreshed at their original dimensions.
 
 The prior site's report recorded desktop/mobile layout, theme switching, search,
 API, and figure checks. Those original layout checks were not repeated exhaustively for the static documentation update. The existing CSS, logo template, and SVG masters were retained. Current

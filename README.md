@@ -1,6 +1,21 @@
 # hyperproc
 
-Readers, topographic and BRDF correction, and optional ISOFIT atmospheric
+[![Docs](https://img.shields.io/badge/docs-fujiangji.github.io-informational)](https://fujiangji.github.io/hyperproc/)
+[![PyPI](https://img.shields.io/pypi/v/hyperproc)](https://pypi.org/project/hyperproc/)
+[![Python](https://img.shields.io/pypi/pyversions/hyperproc)](https://pypi.org/project/hyperproc/)
+[![License](https://img.shields.io/pypi/l/hyperproc)](https://github.com/FujiangJi/hyperproc/blob/main/LICENSE)
+[![Status](https://img.shields.io/pypi/status/hyperproc)](https://pypi.org/project/hyperproc/)
+
+
+<!-- Two more badges belong here once they are true. Adding them early shows
+     "not found", which looks broken rather than early:
+
+[![conda-forge](https://img.shields.io/conda/vn/conda-forge/hyperproc)](https://anaconda.org/conda-forge/hyperproc)
+[![Downloads](https://static.pepy.tech/badge/hyperproc)](https://pepy.tech/project/hyperproc)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](coming soon)
+-->
+
+Readers, topographic and BRDF correction, and atmospheric
 correction for airborne and satellite imaging spectrometers.
 
 **Documentation: <https://fujiangji.github.io/hyperproc/>**

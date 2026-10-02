@@ -11,6 +11,21 @@ title: hyperproc documentation
 
 **Find, read, inspect, correct, and prepare airborne and satellite hyperspectral data through a shared Python interface.** hyperproc brings sensor-specific products into `xarray`, with processing tools for terrestrial ecosystem research and other imaging-spectroscopy applications.
 
+**Installation · Python {{ python_requires }}**
+
+```bash
+pip install hyperproc                 # readers, correction, export
+pip install 'hyperproc[search]'       # + archive search and download
+pip install 'hyperproc[search-map]'   # + interactive notebook maps (ipyleaflet)
+pip install 'hyperproc[brdf]'         # + Earth Engine for satellite BRDF
+pip install 'hyperproc[atmos]'        # + ISOFIT atmospheric correction
+hyperproc-atmos-setup --base /path/to/isofit_assets  # once: engines + data assets (~6 GB)
+hyperproc-atmos-setup --engine LibRadTran           # optional: build libRadtran
+hyperproc-atmos-setup --check                      # inspect installed assets
+```
+
+[Installation guide: environments, optional features, and setup requirements](getting-started/installation.md)
+
 ```python
 import hyperproc as hp
 
