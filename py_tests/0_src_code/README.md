@@ -56,6 +56,16 @@ python /data/fujiang/Hyperspectral_data_processing/py_tests/0_src_code/desis_pip
 
 `pipeline.py` is not meant to be run on its own — it has no `main`.
 
+## Two EMIT scripts
+
+`emit_pipeline.py` is 40 lines and uses the shared engine. `emit_pipeline_standalone.py`
+is the same pipeline written out in full, 881 lines, importing nothing but
+`hyperproc`. Both work and both produce the same products.
+
+The standalone is there to read and to lift: everything a run does is visible
+in one file, in order. The engine version is there so that a fix lands in six
+places at once. Pick whichever fits what you are doing.
+
 ## Why one engine and six configs
 
 The alternative was six copies of an 800-line script. Four real bugs turned up
