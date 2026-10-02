@@ -145,3 +145,13 @@ docs-site/.venv/bin/python docs-site/manage.py serve
 ```
 
 Open http://127.0.0.1:8765/. The server exposes the built site directory only.
+
+## Restored GitHub repository header — passed
+
+The shared header restores Material's repository widget, linking to
+https://github.com/FujiangJi/hyperproc and displaying FujiangJi/hyperproc.
+Desktop star/fork facts use Material's GitHub API integration; no counts are
+hardcoded. Phones retain a compact GitHub icon link. Chromium verified header
+links on home, Tools, and API pages, light/dark modes, and 1440/1024/768/390/360
+px widths without page overflow. Fact rendering was tested using browser-only
+API fixtures, not claims about current repository counts.

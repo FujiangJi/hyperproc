@@ -10,6 +10,8 @@ theme:
   font: false
   logo: assets/logos/wordmark.svg
   favicon: assets/logos/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
   palette:
   - scheme: default
     primary: custom

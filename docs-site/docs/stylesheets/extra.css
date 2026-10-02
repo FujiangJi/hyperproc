@@ -129,3 +129,18 @@ body:has(.homepage-hero) .md-content__inner { margin: 0 1.4rem 2.4rem; }
   .page-location { align-items: flex-start; flex-direction: column; }
   .page-location__browse { display: inline-flex; gap: .5rem; padding: .3rem 0; text-decoration: underline; text-underline-offset: .2em; }
 }
+
+/* Restore Material's GitHub repository link and live star/fork facts. */
+.md-header--home .md-header__source { display: block; flex-shrink: 0; width: 11rem; margin-left: .7rem; }
+.md-header--home .md-source { color: inherit; }
+@media (min-width: 761px) and (max-width: 1100px) {
+  .md-header--home .md-header__inner { flex-wrap: wrap; }
+  .md-header--home .md-logo { margin-right: auto; }
+  .home-links { order: 10; width: 100%; justify-content: center; margin: 0; }
+}
+@media (max-width: 760px) {
+  .md-header--home .md-header__source { width: 1.7rem; margin: 0; }
+  .md-header--home .md-source { width: 1.7rem; }
+  .md-header--home .md-source__icon { width: 1.5rem; height: 1.5rem; }
+  .md-header--home .md-source__repository { display: none; }
+}
