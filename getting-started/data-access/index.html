@@ -5010,11 +5010,18 @@
 </tr>
 </tbody>
 </table>
+<p><strong>Creating the Earthdata credential.</strong> Run this once; it asks for the username
+and password and writes <code>~/.netrc</code>, after which every run is non-interactive:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">"import earthaccess; earthaccess.login(persist=True)"</span>
+</code></pre></div>
+<p>Nothing in this package prompts for a password during a run. <code>hp.download()</code>
+and the example scripts test for a credential first and stop with the command
+that supplies it, so a long job cannot block waiting on input.</p>
 <p>Searches use anonymous archive access. NEON flightline listing and downloads require a token in this implementation. For DLR, configure <code>ENMAP_USERNAME</code>/<code>ENMAP_PASSWORD</code> or <code>DESIS_USERNAME</code>/<code>DESIS_PASSWORD</code>; <code>DLR_EOC_USERNAME</code>/<code>DLR_EOC_PASSWORD</code> provides a fallback. Mission access is granted separately, so credentials found locally do not establish authorization for both missions.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">hyperproc</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">hp</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">hp</span><span class="o">.</span><span class="n">archive</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">hp</span><span class="o">.</span><span class="n">archive</span><span class="o">.</span><span class="n">credentials</span><span class="p">())</span>  <span class="c1"># booleans; does not print secrets</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">hp</span><span class="o">.</span><span class="n">archive</span><span class="o">.</span><span class="n">can_download</span><span class="p">(</span><span class="s2">"ENMAP"</span><span class="p">,</span> <span class="s2">"L2A"</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">hyperproc</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">hp</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">hp</span><span class="o">.</span><span class="n">archive</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">hp</span><span class="o">.</span><span class="n">archive</span><span class="o">.</span><span class="n">credentials</span><span class="p">())</span>  <span class="c1"># booleans; does not print secrets</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">hp</span><span class="o">.</span><span class="n">archive</span><span class="o">.</span><span class="n">can_download</span><span class="p">(</span><span class="s2">"ENMAP"</span><span class="p">,</span> <span class="s2">"L2A"</span><span class="p">))</span>
 </code></pre></div>
 <p>Credential checks inspect local configuration; they do not verify an account against the provider. Registration addresses and missing-credential instructions are included in the backend error messages.</p>
 <h2 id="preserve-the-provider-delivery">Preserve the provider delivery<a class="headerlink" href="#preserve-the-provider-delivery" title="Permanent link">&para;</a></h2>
