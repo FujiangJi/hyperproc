@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1840" height="410" viewBox="40 35 1840 410" role="img" aria-labelledby="rectangular-dark-title rectangular-dark-description">
+  <title id="rectangular-dark-title">hyperproc Spectral Ribbon — rectangular, dark</title>
+  <desc id="rectangular-dark-description">Editable vector reconstruction: gradient hyperproc wordmark, seven spectral ribbons, a forest landscape in the o, orbit, and observation satellite.</desc>
+  <defs>
+    <linearGradient id="rectangular-dark-word-gradient" x1="60" y1="0" x2="1740" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#92C9F1" />
+      <stop offset="36%" stop-color="#92C9F1" />
+      <stop offset="65%" stop-color="#6FBED0" />
+      <stop offset="100%" stop-color="#7FDDC1" />
+    </linearGradient>
+    <linearGradient id="rectangular-dark-earth-gradient" x1="12%" y1="88%" x2="88%" y2="12%">
+      <stop offset="0%" stop-color="#073C3E" />
+      <stop offset="50%" stop-color="#18786D" />
+      <stop offset="100%" stop-color="#4EAC90" />
+    </linearGradient>
+    <linearGradient id="rectangular-dark-word-gradient-y" href="#rectangular-dark-word-gradient" gradientTransform="translate(-299 -174)" />
+    <linearGradient id="rectangular-dark-word-gradient-p1" href="#rectangular-dark-word-gradient" gradientTransform="translate(-511 -174)" />
+    <linearGradient id="rectangular-dark-word-gradient-e" href="#rectangular-dark-word-gradient" gradientTransform="translate(-732 -174)" />
+    <linearGradient id="rectangular-dark-word-gradient-r1" href="#rectangular-dark-word-gradient" gradientTransform="translate(-943 -174)" />
+    <linearGradient id="rectangular-dark-word-gradient-p2" href="#rectangular-dark-word-gradient" gradientTransform="translate(-1081 -174)" />
+    <linearGradient id="rectangular-dark-word-gradient-r2" href="#rectangular-dark-word-gradient" gradientTransform="translate(-1305 -174)" />
+    <linearGradient id="rectangular-dark-word-gradient-c" href="#rectangular-dark-word-gradient" gradientTransform="translate(-1665 -174)" />
+    <clipPath id="rectangular-dark-word-landscape-clip">
+      <circle r="65" />
+    </clipPath>
+  </defs>
+  <g id="rectangular-dark-rectangular-wordmark" aria-label="Rectangular identity" transform="translate(0 4)" inkscape:groupmode="layer" inkscape:label="Rectangular identity">
+    <g id="rectangular-dark-word-stems" aria-label="Spectral h — editable stems" fill="url(#rectangular-dark-word-gradient)">
+      <rect x="60" y="50" width="70" height="324" rx="9" />
+      <rect x="263" y="181" width="63" height="211" rx="8" />
+    </g>
+    <g id="rectangular-dark-word-lettering" aria-label="yperpr and c — custom editable outlined letters" fill="url(#rectangular-dark-word-gradient)" fill-rule="evenodd">
+      <path d="M0 0 H65 L108 114 L150 0 H215 L116 245 H47 L82 185 Z" id="rectangular-dark-word-letter-y" aria-label="y" transform="translate(299 174)" fill="url(#rectangular-dark-word-gradient-y)" />
+      <path d="M0 7 H62 V24 C78 8 100 0 127 0 C186 0 212 48 212 107 C212 169 177 212 123 212 C97 212 78 203 62 189 V262 H0 Z M69 106 C69 135 85 158 110 158 C136 158 151 135 151 106 C151 77 136 54 110 54 C85 54 69 77 69 106 Z" id="rectangular-dark-word-letter-p1" aria-label="p" transform="translate(511 174)" fill="url(#rectangular-dark-word-gradient-p1)" />
+      <path d="M195 124 H63 C68 148 84 166 112 166 C137 166 151 157 164 143 L196 179 C175 201 146 213 107 213 C43 213 0 172 0 107 C0 44 42 0 102 0 C163 0 198 45 198 108 Z M63 81 H137 C133 60 121 47 102 47 C82 47 68 59 63 81 Z" id="rectangular-dark-word-letter-e" aria-label="e" transform="translate(732 174)" fill="url(#rectangular-dark-word-gradient-e)" />
+      <path d="M0 7 H61 V28 C79 6 99 -3 126 2 L116 65 C99 60 81 63 68 77 C63 83 61 95 61 115 V206 H0 Z" id="rectangular-dark-word-letter-r1" aria-label="r" transform="translate(943 174)" fill="url(#rectangular-dark-word-gradient-r1)" />
+      <path d="M0 7 H62 V24 C78 8 100 0 127 0 C186 0 212 48 212 107 C212 169 177 212 123 212 C97 212 78 203 62 189 V262 H0 Z M69 106 C69 135 85 158 110 158 C136 158 151 135 151 106 C151 77 136 54 110 54 C85 54 69 77 69 106 Z" id="rectangular-dark-word-letter-p2" aria-label="p" transform="translate(1081 174)" fill="url(#rectangular-dark-word-gradient-p2)" />
+      <path d="M0 7 H61 V28 C79 6 99 -3 126 2 L116 65 C99 60 81 63 68 77 C63 83 61 95 61 115 V206 H0 Z" id="rectangular-dark-word-letter-r2" aria-label="r" transform="translate(1305 174)" fill="url(#rectangular-dark-word-gradient-r2)" />
+      <path d="M190 38 L145 78 C132 62 118 54 99 54 C74 54 61 76 61 106 C61 137 76 160 101 160 C121 160 134 151 147 136 L191 176 C171 200 141 213 103 213 C42 213 0 169 0 107 C0 44 40 0 103 0 C139 0 170 13 190 38 Z" id="rectangular-dark-word-letter-c" aria-label="c" transform="translate(1665 174)" fill="url(#rectangular-dark-word-gradient-c)" />
+    </g>
+    <g id="rectangular-dark-word-ribbons" aria-label="Seven editable spectral ribbons">
+      <path d="M60 206 C128 159 187 104 236 124 C268 137 292 176 309 207 C339 267 372 321 396 306 L414 286 L406 309 C391 331 369 338 345 308 C325 275 318 252 309 228 C284 188 264 159 234 145 C187 125 129 183 60 228 Z" id="rectangular-dark-word-ribbon-1" fill="#6B3ED7" />
+      <path d="M60 230 C128 183 187 128 236 148 C268 161 292 200 309 231 C339 283 372 329 396 314 L414 294 L406 317 C391 339 369 346 345 324 C325 299 318 276 309 252 C284 212 264 183 234 169 C187 149 129 207 60 252 Z" id="rectangular-dark-word-ribbon-2" fill="#1F6FB2" />
+      <path d="M60 254 C128 207 187 152 236 172 C268 185 292 224 309 255 C339 299 372 337 396 322 L414 302 L406 325 C391 347 369 354 345 340 C325 323 318 300 309 276 C284 236 264 207 234 193 C187 173 129 231 60 276 Z" id="rectangular-dark-word-ribbon-3" fill="#14A3A3" />
+      <path d="M60 278 C128 231 187 176 236 196 C268 209 292 248 309 279 C339 315 372 345 396 330 L414 310 L406 333 C391 355 369 362 345 356 C325 347 318 324 309 300 C284 260 264 231 234 217 C187 197 129 255 60 300 Z" id="rectangular-dark-word-ribbon-4" fill="#4CAF7A" />
+      <path d="M60 302 C128 255 187 200 236 220 C268 233 292 272 309 303 C339 331 372 353 396 338 L414 318 L406 341 C391 363 369 370 345 372 C325 371 318 348 309 324 C284 284 264 255 234 241 C187 221 129 279 60 324 Z" id="rectangular-dark-word-ribbon-5" fill="#A7D38B" />
+      <path d="M60 326 C128 279 187 224 236 244 C268 257 292 296 309 327 C339 347 372 361 396 346 L414 326 L406 349 C391 371 369 378 345 388 C325 395 318 372 309 348 C284 308 264 279 234 265 C187 245 129 303 60 348 Z" id="rectangular-dark-word-ribbon-6" fill="#F4C542" />
+      <path d="M60 350 C128 303 187 248 236 268 C268 281 292 320 309 351 C339 363 372 369 396 354 L414 334 L406 357 C391 379 369 386 345 404 C325 419 318 396 309 372 C284 332 264 303 234 289 C187 269 129 327 60 372 Z" id="rectangular-dark-word-ribbon-7" fill="#F07F3C" />
+    </g>
+    <g id="rectangular-dark-word-orbit-back" aria-label="Editable rear orbit" transform="translate(1549 281) scale(1)" fill="none">
+      <ellipse rx="168" ry="31" transform="rotate(-33)" stroke="#A7E0E1" stroke-width="3" opacity=".6" />
+    </g>
+    <g id="rectangular-dark-word-earth" aria-label="Earth o — editable landscape and ring" transform="translate(1549 281) scale(1.0)">
+      <circle r="110" fill="url(#rectangular-dark-earth-gradient)" />
+      <g id="rectangular-dark-word-landscape" aria-label="Sky, mountains, terrain, and trees" clip-path="url(#rectangular-dark-word-landscape-clip)">
+        <circle r="65" fill="#DCF1F6" />
+        <circle cx="26" cy="-33" r="8" fill="#FFFFFF" />
+        <path d="M-76 14 L-29 -22 L12 8 L46 -6 L84 34 V88 H-76 Z" fill="#A5D0B4" />
+        <path d="M-76 45 L-28 7 L9 22 L47 2 L82 38 V89 H-76 Z" fill="#73B79A" />
+        <path d="M-81 56 Q-36 20 3 44 Q39 57 82 22 V89 H-81 Z" fill="#40977D" />
+        <path d="M-81 70 Q-22 38 11 60 Q43 74 81 43 V90 H-81 Z" fill="#1E725F" />
+        <g id="rectangular-dark-word-tree--49-49" aria-label="Editable conifer" transform="translate(-49 49) scale(0.3)">
+          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+        </g>
+        <g id="rectangular-dark-word-tree--31-48" aria-label="Editable conifer" transform="translate(-31 48) scale(0.45)">
+          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+        </g>
+        <g id="rectangular-dark-word-tree--12-54" aria-label="Editable conifer" transform="translate(-12 54) scale(0.38)">
+          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+        </g>
+        <g id="rectangular-dark-word-tree-5-46" aria-label="Editable conifer" transform="translate(5 46) scale(0.57)">
+          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+        </g>
+        <g id="rectangular-dark-word-tree-23-51" aria-label="Editable conifer" transform="translate(23 51) scale(0.45)">
+          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+        </g>
+        <g id="rectangular-dark-word-tree-41-47" aria-label="Editable conifer" transform="translate(41 47) scale(0.54)">
+          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+        </g>
+        <g id="rectangular-dark-word-tree-57-54" aria-label="Editable conifer" transform="translate(57 54) scale(0.37)">
+          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+        </g>
+      </g>
+    </g>
+    <g id="rectangular-dark-word-orbit-front" aria-label="Editable foreground orbit" transform="translate(1549 281) scale(1)" fill="none">
+      <path d="M-149 53 C-178 126 49 2 129 -65 Q147 -83 149 -112" stroke="#A7E0E1" stroke-width="5" stroke-linecap="round" />
+      <path d="M-149 55 C-173 118 52 0 126 -62" stroke="#B3DBDF" stroke-width="1.6" stroke-linecap="round" />
+    </g>
+    <g id="rectangular-dark-word-satellite" aria-label="Satellite — body and solar-panel layers" transform="translate(1698 120) rotate(25) scale(0.73)">
+      <path d="M-26 0 H-48 M26 0 H48" stroke="#619BD1" stroke-width="7" />
+      <g id="rectangular-dark-word-panel--1" aria-label="Editable solar panel">
+        <rect x="-88" y="-24" width="46" height="48" rx="2" fill="#3889E4" stroke="#619BD1" stroke-width="2" />
+        <path d="M-65 -24 V24 M-88 0 H-42" stroke="#7CBBEE" stroke-width="1.5" />
+      </g>
+      <g id="rectangular-dark-word-panel-1" aria-label="Editable solar panel">
+        <rect x="42" y="-24" width="46" height="48" rx="2" fill="#3889E4" stroke="#619BD1" stroke-width="2" />
+        <path d="M65 -24 V24 M42 0 H88" stroke="#7CBBEE" stroke-width="1.5" />
+      </g>
+      <rect x="-26" y="-27" width="52" height="54" rx="12" fill="#619BD1" />
+      <circle cy="3" r="8" fill="#3889E4" />
+      <path d="M0 27 V41" stroke="#619BD1" stroke-width="6" />
+      <path d="M-13 43 Q0 57 13 43" fill="none" stroke="#A7E0E1" stroke-width="5" />
+    </g>
+  </g>
+</svg>

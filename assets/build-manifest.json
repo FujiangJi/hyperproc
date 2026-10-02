@@ -1,9 +1,146 @@
 {
-  "source_version": "0.1.0",
+  "source_version": "0.1.1",
   "python_requires": ">=3.11",
   "api_modules": 53,
   "functions_and_classes": 459,
   "notebooks": 17,
+  "class_members": 68,
+  "citation_date": "2026-10-02",
+  "citation_version": "0.1.1",
+  "dependencies": [
+    "numpy>=1.24",
+    "xarray",
+    "dask",
+    "rasterio>=1.3",
+    "rioxarray",
+    "h5py",
+    "netCDF4",
+    "h5netcdf",
+    "scipy",
+    "pyproj",
+    "shapely",
+    "affine",
+    "threadpoolctl"
+  ],
+  "optional_dependencies": {
+    "atmos": [
+      "isofit>=4.1,<5"
+    ],
+    "notebooks": [
+      "jupyterlab",
+      "ipykernel",
+      "nbconvert",
+      "matplotlib",
+      "pandas"
+    ],
+    "brdf": [
+      "earthengine-api"
+    ],
+    "search": [
+      "earthaccess>=0.11",
+      "requests"
+    ],
+    "search-map": [
+      "hyperproc[search]",
+      "ipyleaflet>=0.17",
+      "ipywidgets>=7.6",
+      "geopandas"
+    ],
+    "srf": [
+      "openpyxl",
+      "requests"
+    ],
+    "test": [
+      "pytest>=7"
+    ]
+  },
+  "console_scripts": {
+    "hyperproc-atmos-setup": "hyperproc.atmos.setup:main"
+  },
+  "documentation_source_sha256": {
+    "docs-site/docs/assets/images/forest-mountain-hero.png": "e16ca55bad2ba5370aa2e0c94f3b51e8171ac758db97410b1add4d84d5bca27c",
+    "docs-site/docs/assets/logos/circular-dark.svg": "e43e998f07af252052d08dc92a8b00637b50e3d7a483d8fd203c1894c1340284",
+    "docs-site/docs/assets/logos/circular.svg": "8f721e4f470f6788a6e779e9320365023dffd2d2bb8dfc2fbdbfd047be84b917",
+    "docs-site/docs/assets/logos/favicon.svg": "f3d72eb0742f339e9da8457c542d5437c1085f4e619edacd45c06e74a31d8919",
+    "docs-site/docs/assets/logos/rectangular-dark.svg": "1b3a7e9e4a780800b143400758ff78b826086ca75521cadd9074310c5b74588f",
+    "docs-site/docs/assets/logos/rectangular.svg": "0a49366f61c0459604a9d1fbe956bc883b1baa5f49d4c360160707b470c27554",
+    "docs-site/docs/assets/logos/wordmark-dark.svg": "9a645e41582a3224f20f933cc491d5d6a68eae44709eea078a9936bca2fd9471",
+    "docs-site/docs/assets/logos/wordmark.svg": "4290159818a102c87e9669f7beda694af1956adb75fcc092c1c4222add93f6b2",
+    "docs-site/docs/assets/vendor/leaflet/LICENSE": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
+    "docs-site/docs/assets/vendor/leaflet/README.txt": "6973946d4d140195b8ebc2fd6f1f5e8e7d91ee177f223a3717fdb788acb2a702",
+    "docs-site/docs/assets/vendor/leaflet/images/layers-2x.png": "066daca850d8ffbef007af00b06eac0015728dee279c51f3cb6c716df7c42edf",
+    "docs-site/docs/assets/vendor/leaflet/images/layers.png": "1dbbe9d028e292f36fcba8f8b3a28d5e8932754fc2215b9ac69e4cdecf5107c6",
+    "docs-site/docs/assets/vendor/leaflet/images/marker-icon-2x.png": "00179c4c1ee830d3a108412ae0d294f55776cfeb085c60129a39aa6fc4ae2528",
+    "docs-site/docs/assets/vendor/leaflet/images/marker-icon.png": "574c3a5cca85f4114085b6841596d62f00d7c892c7b03f28cbfa301deb1dc437",
+    "docs-site/docs/assets/vendor/leaflet/images/marker-shadow.png": "264f5c640339f042dd729062cfc04c17f8ea0f29882b538e3848ed8f10edb4da",
+    "docs-site/docs/assets/vendor/leaflet/leaflet.css": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+    "docs-site/docs/assets/vendor/leaflet/leaflet.js": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a",
+    "docs-site/docs/background/data-model.md": "5e8a1f3d7f196f8c69af845e070d291ae414f5328e8525d932845ee7db2a0174",
+    "docs-site/docs/background/decision-guide.md": "7a01bb04fd85feabc7aa2261b2d822363fba551081b07b2eb41850b262f00bde",
+    "docs-site/docs/background/measurements.md": "f15b784d721633adb4f3c9cf64c614ca7556b83ba10314642d5942c892e950ea",
+    "docs-site/docs/background/overview.md": "abf98f43f87a0aae0f796f100be06a67c98d9684a78db874cfb52a927ab23dcc",
+    "docs-site/docs/background/references.md": "f70f428d808f8843250674c48a5ea5e09f31b71b336c64234170f4d45a2df07f",
+    "docs-site/docs/data/index.md": "d3deb6adc6422f874a1ea1694d75df90433c509c104c6ea225c16f3b648fba18",
+    "docs-site/docs/development/adding-reader.md": "1d0f1107137681e81280fb099ad1f734cf15855be9f2d6fa9bbebff0dd29f63c",
+    "docs-site/docs/development/architecture.md": "d9bea5f8cee93871baac7b1c385081ac1f21a6e2f6421e6ec31e4443ae7f0cde",
+    "docs-site/docs/development/documentation.md": "29cfe1d44e34ef7bfe9f33e07ffcf69e0b5a4e246e10058fb0fe94a5d262e79b",
+    "docs-site/docs/development/testing.md": "9abbdd4589dac7d3306686e93b8fa369cd53308da5a1d9a8b8137f97b1872e74",
+    "docs-site/docs/documentation/index.md": "c0bd238590605a3e799c7870312e6ee01be469958188ac620ae4d603d395f613",
+    "docs-site/docs/getting-started/configuration.md": "3ab2db20831851737d40a8fa44437b88a8e539844f7dd3e969b7d2856d3dfa46",
+    "docs-site/docs/getting-started/data-access.md": "a80038c03f5240656c612c16fe85bd21f8f491d199d1dc823974cf7d36e75b94",
+    "docs-site/docs/getting-started/installation.md": "fa5459cef3e24bc2ac1078f495aefd774a3766f07fa6209dd1c101eb42eabaa9",
+    "docs-site/docs/getting-started/quickstart.md": "0a93cfe77532bd6ab457d5553252e81f2f9c83ad27d712e2296771297331735e",
+    "docs-site/docs/index.md": "98eb1ebb068bd916a21f6c5849ba049214ec9f5e8143431a51c7e2e673066166",
+    "docs-site/docs/javascripts/notebook-maps.js": "374844ebd5a3fa102b6719bcdba51db32c3628c714dee80b0479a218a7d96894",
+    "docs-site/docs/project/about.md": "833f2930e2e5423997dc282b34a50dd4c5cf2a8c7dd610fff8ced63f4ebccbae",
+    "docs-site/docs/project/governance.md": "6d0d9dc956a48c965ef7e4443adfb4bf767a7b020176df878d2224811ec4f9e4",
+    "docs-site/docs/project/releases.md": "30e0c3e1b9a53734cc6be4ec2ae29e5620fe35f0f0687c7aae516b5c3e987f25",
+    "docs-site/docs/project/status.md": "96b196d6c1826915279f3cadb864d3ae75f2904255a6fa50b929eddde8fa879e",
+    "docs-site/docs/project/troubleshooting.md": "1dafbba38f11bbb1c45b51bd634535ab64825fdd73a4c762572a6d771b9456a5",
+    "docs-site/docs/sensors/aviris.md": "8529f7ef55cc9ada0b92195eeb0461260bafb6499cabda4a597742d8b07a6189",
+    "docs-site/docs/sensors/desis.md": "731844edf2cf0d031f1e721873363777d8e60633b2fd644348c36aa5acd8c68f",
+    "docs-site/docs/sensors/emit.md": "0c6b616b141a11bf83cb1fc51227bf482720b07dc6c8d5acc255038b32b48764",
+    "docs-site/docs/sensors/enmap.md": "2d062fc6a4716dacd7b2fd94663bde7971bad378443e6659234cf88b1d17fb0f",
+    "docs-site/docs/sensors/index.md": "b30de7cb49632697883e6cc1b1ed87a57d2da0a54d2b9ad1e15471475780775e",
+    "docs-site/docs/sensors/neon.md": "39110d4811a59702245544f87767b4a929b459de5515fe57cf531d5d6e43d747",
+    "docs-site/docs/sensors/pace.md": "3b3077a0cd9725bbd24c96276b405418bebadfb97a01cf7e5fb69d400598c581",
+    "docs-site/docs/sensors/prisma.md": "74f5dd2a6c8a420e090a1fc63e21a2ee8277172d0c1b3e8c93e32fa9c4eb38c0",
+    "docs-site/docs/sensors/tanager.md": "1c604b1290fe55b1d411c23202a4f7779f075fcecb38d1368c8b2363ae8dff19",
+    "docs-site/docs/stylesheets/extra.css": "54fa5b9679e86152524adb7cc3cc6d25011dba2e42d502cc6796434a82567f66",
+    "docs-site/docs/tools/index.md": "ee773f5089f5045e7560622291672d776b522dbdbaad7c4de98390f63479bc6c",
+    "docs-site/docs/tutorials/aviris3-walkthrough.md": "17381ce49c6d11ebf902c6cc0c5db715a8a39c4fe069d330638a23080d4e89c7",
+    "docs-site/docs/tutorials/caveats.md": "11f577a607ce71c821e93097c81f3af6baefdbea134cdd5b993ec568a75cb0b4",
+    "docs-site/docs/tutorials/pace-tutorial.md": "d6c7a2d1dbb6c91d8062079074d78f34899f5c590def072fdc6e91d0e1f9e958",
+    "docs-site/docs/workflows/airborne.md": "ba53bc2cb7d38e1d1b5863c7b4d09255607f4f6c879c69fd03c30e140fddf226",
+    "docs-site/docs/workflows/atmosphere.md": "b4969972be1113119a063701567f07cf3ab30aec7ef7ce5141db79f17ec8b032",
+    "docs-site/docs/workflows/export.md": "de478040c5a324602dc8098898f0fea2e67b3a26a3af00ccd9626bef897d997d",
+    "docs-site/docs/workflows/features.md": "c418d72311a1e078b584ffb89d7284746887cbf7ccf914fc8d2c27247bd43db9",
+    "docs-site/docs/workflows/performance.md": "02eb87e90d3d054a5f531fa3d3022abba17675a11b4eecf12a46cb4425a4548d",
+    "docs-site/docs/workflows/quality.md": "6f83a3d259e876d2f6608b4cbfb331794fcc8984144eb943a628491da9737cb4",
+    "docs-site/docs/workflows/reading.md": "12794f717e7cb791aef2204aa60bad36646c8bb6671441be5c1e8b757ba206e9",
+    "docs-site/docs/workflows/resampling.md": "04f84cf43d5b0c49d9d12989525b1cd4d0d4347524fbc604d42621bba4fff2ec",
+    "docs-site/docs/workflows/satellite.md": "1bf3f4d9acf86a2d8ecd252e00ec03e98869f918da93b7469f617ca3f966b2d3",
+    "docs-site/docs/workflows/search.md": "019be41dab8d3c4a709decef696af8dc6fb176c13937ed9f241d4872a362f6bd",
+    "docs-site/docs/workflows/spatial.md": "f5fbcd77c5e9ce38618a7e120bc28caff874798c176ff1216bafe93114c6045b",
+    "docs-site/docs/workflows/spectral.md": "932f806037a62b252a51147496d08c69e10f36e94f44c448b7c162d4731e982a",
+    "docs-site/docs/workflows/validation.md": "d8ad1603b8a2327e20da01bbe506abe0b38de510f8782c0321bc592cd186d546",
+    "docs-site/hooks.py": "a51ea6042dad0640aaf52f9b104dc27eefca05df5c70d809ac56cd761e8d0711",
+    "docs-site/mkdocs.yml": "cf49b6c6bd5cb05da690c4405aa75704acf211199e6610f5f93d745ae5f9a0d5",
+    "docs-site/navigation.yml": "0412559743bf1cc71ffa51946eeecad38367b79ce2ee4abb6bb95805375e1369",
+    "docs-site/overrides/main.html": "7d0f4fba622a29f11f0ba80a410ea21286cbe86e688e8afbb353173ea34cad49",
+    "docs-site/overrides/partials/home-header.html": "d4222fd5ba777011a5464537523ae3497aad25ebd35a71bf3cd541e865d90924",
+    "docs-site/overrides/partials/logo.html": "7b726e4bb746c809d3b8756bb16b2e7a90c038149e13745e34e35573749f16ba",
+    "docs-site/overrides/partials/page-location.html": "4ddccaf3f6bd9817520e239ca4130f67f06604dd0e85eae2c7f936f783a373e5",
+    "docs-site/scripts/audit_guides.py": "203613eac5c0988a9759d0438131f399a286d37c4b6d97d3b62135efa028c2cd",
+    "docs-site/scripts/check_site.py": "90ed0a132088bf84723651b23eaa4a58bb2a2dd678a0a4d3e184dec9881d194b",
+    "docs-site/scripts/generate.py": "fa7bbbf606a8c6380bba34c5eab4fd313dd743595362dcef748bebf747cef38c",
+    "docs-site/scripts/granule_recordings.py": "09473f8e12b8639feb4491b09a9b2fb8815b1bc97dcc2b61339202eaf3a41c20",
+    "docs-site/scripts/notebook_maps.py": "8ff8a2e7bc1b88d2e3fefd4ecd40349d97d2da6b944e6c8986e2ac1ca0e7b3ed",
+    "docs-site/scripts/record_granule_maps.py": "12a4f2e595f8c1f8430509aa5c2d2c856416a58582f74db046acbb852ea53eb1",
+    "docs-site/scripts/test_audit_guides.py": "3025985eb6e6194e1ab15ac5528f38fde8edcffb3d73285b3e736d594aee19d3",
+    "docs-site/scripts/test_granule_recordings.py": "09209e769faebe2b7fce6995a39441d49b65b5c30f63686c4a9bf9a04a7bf853",
+    "docs-site/scripts/test_notebook_maps.py": "d9a3c4e1edd60c988187607ac0725a4f5fe513fb1b6720010922e142e6573be9"
+  },
   "saved_figures": 147,
   "map_previews": 14,
   "map_recordings_sha256": {
@@ -23,7 +160,7 @@
     "docs-site/map-recordings/search_download_tutorial/fd36cc86c20e386a2435fef249337baa9232bc52f7100dc7111ccfd574f854d8.json": "aafefe201e4965f73957fdb69f02df5cd952fa4d6810c0d64059741df7303740"
   },
   "package_source_sha256": {
-    "hyperproc/__init__.py": "025db33bd1839b797cc34bc011306967ed6db969d5bde64fa600b041d3a16e82",
+    "hyperproc/__init__.py": "65bd478063bbf8d94bcb624fb0f41d3a0484a17823f49d1e389fb2659d020fb4",
     "hyperproc/align.py": "4a23eadaf2b9bb2bb0d24c348fb13f421d97fcdeb5ebf68bc11e05e7667d4e47",
     "hyperproc/archive/__init__.py": "1891cec06716ba977af1989c60f50222c231ec14e00f6d7d159d98bfdb57fb34",
     "hyperproc/archive/api.py": "be724a1d1e3ef6f9d3aaedce43e0d372e5fc052d81e864fb8971b47334929512",
@@ -80,7 +217,8 @@
   "metadata_source_sha256": {
     "pyproject.toml": "5d6ecdb6093670054034eb42400a5f1f266d9b6d556a2b0714a90b5b087d2392",
     "LICENSE": "15fdda3048c4b4175c17d9bd3e745f50c70ea589fd354b4b78676103b213c83b",
-    "CITATION.cff": "7adfc20b9b41d9d4ca8036285c094765a6f034a638f210831f6aee14c68acfc0"
+    "CITATION.cff": "5ee8ec55106e037865f8b1d4ac256eccf535b842aa5258fa936a8a7b684a46d6",
+    "README.md": "14179af215af772e2b2e0b2c11f6b32e3e6887a750d2f7bce47d522d30fbf3bc"
   },
   "execution_policy": "Static source inspection and saved-output rendering only; no hyperproc import or notebook execution."
 }

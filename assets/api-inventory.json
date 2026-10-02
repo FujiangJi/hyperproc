@@ -5,7 +5,8 @@
     "line": 70,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.open_builtin",
@@ -13,7 +14,8 @@
     "line": 119,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.__getattr__",
@@ -21,7 +23,8 @@
     "line": 124,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.align._grid_of",
@@ -29,7 +32,8 @@
     "line": 55,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.align._band_on",
@@ -37,7 +41,8 @@
     "line": 68,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.align._prepare",
@@ -45,7 +50,8 @@
     "line": 87,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.align._common_box",
@@ -53,7 +59,8 @@
     "line": 104,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.align._phase_shift",
@@ -61,7 +68,8 @@
     "line": 121,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.align.tie_points",
@@ -69,7 +77,8 @@
     "line": 161,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.align._to_metres",
@@ -77,7 +86,8 @@
     "line": 209,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.align._nearest_band",
@@ -85,7 +95,8 @@
     "line": 228,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.align.estimate_shift",
@@ -93,7 +104,8 @@
     "line": 234,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.align.apply_shift",
@@ -101,7 +113,8 @@
     "line": 301,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.align.coregister",
@@ -109,7 +122,8 @@
     "line": 341,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.align._to_reference_grid",
@@ -117,7 +131,8 @@
     "line": 388,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.__getattr__",
@@ -125,7 +140,8 @@
     "line": 40,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.api.search",
@@ -133,7 +149,8 @@
     "line": 30,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.api.download",
@@ -141,7 +158,8 @@
     "line": 63,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.api.credentials",
@@ -149,7 +167,8 @@
     "line": 125,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.api.can_download",
@@ -157,7 +176,8 @@
     "line": 154,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.api.files",
@@ -165,7 +185,8 @@
     "line": 166,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.cmr._earthaccess",
@@ -173,7 +194,8 @@
     "line": 15,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.cmr._bbox_of",
@@ -181,7 +203,8 @@
     "line": 27,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.cmr._browse_of",
@@ -189,7 +212,8 @@
     "line": 49,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.cmr._time_of",
@@ -197,7 +221,8 @@
     "line": 63,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.cmr.search",
@@ -205,7 +230,8 @@
     "line": 72,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.cmr._granule",
@@ -213,7 +239,8 @@
     "line": 134,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.cmr.download",
@@ -221,7 +248,8 @@
     "line": 148,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.collections.Collection",
@@ -229,7 +257,8 @@
     "line": 30,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.collections.resolve",
@@ -237,7 +266,8 @@
     "line": 167,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.collections.describe",
@@ -245,7 +275,8 @@
     "line": 203,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr.needs_login",
@@ -253,7 +284,8 @@
     "line": 57,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr._requests",
@@ -261,7 +293,8 @@
     "line": 88,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr.credentials",
@@ -269,7 +302,8 @@
     "line": 98,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr._page_says",
@@ -277,7 +311,8 @@
     "line": 132,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr._Forms",
@@ -285,7 +320,33 @@
     "line": 156,
     "kind": "class",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": [
+      {
+        "name": "hyperproc.archive.dlr._Forms.handle_starttag",
+        "line": 175
+      },
+      {
+        "name": "hyperproc.archive.dlr._Forms.handle_endtag",
+        "line": 189
+      },
+      {
+        "name": "hyperproc.archive.dlr._Forms.handle_data",
+        "line": 195
+      },
+      {
+        "name": "hyperproc.archive.dlr._Forms.login",
+        "line": 200
+      },
+      {
+        "name": "hyperproc.archive.dlr._Forms.step",
+        "line": 205
+      },
+      {
+        "name": "hyperproc.archive.dlr._Forms.fields",
+        "line": 210
+      }
+    ]
   },
   {
     "name": "hyperproc.archive.dlr._post_to",
@@ -293,7 +354,8 @@
     "line": 218,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr.sign_in",
@@ -301,7 +363,8 @@
     "line": 237,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr.read_policy",
@@ -309,7 +372,8 @@
     "line": 327,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr._visible_text",
@@ -317,7 +381,8 @@
     "line": 387,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr._rfc3339",
@@ -325,7 +390,8 @@
     "line": 393,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr._time_of",
@@ -333,7 +399,8 @@
     "line": 411,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr._links",
@@ -341,7 +408,8 @@
     "line": 427,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr.search",
@@ -349,7 +417,8 @@
     "line": 443,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr._granule",
@@ -357,7 +426,8 @@
     "line": 532,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.dlr.download",
@@ -365,7 +435,8 @@
     "line": 549,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.interactive.has_cloud",
@@ -373,7 +444,8 @@
     "line": 27,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.interactive.sensors",
@@ -381,7 +453,8 @@
     "line": 44,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.interactive.SearchState",
@@ -389,7 +462,41 @@
     "line": 52,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.archive.interactive.SearchState.set_bbox_from_geojson",
+        "line": 67
+      },
+      {
+        "name": "hyperproc.archive.interactive.SearchState.search",
+        "line": 83
+      },
+      {
+        "name": "hyperproc.archive.interactive.SearchState.toggle",
+        "line": 98
+      },
+      {
+        "name": "hyperproc.archive.interactive.SearchState.select_all",
+        "line": 110
+      },
+      {
+        "name": "hyperproc.archive.interactive.SearchState.clear",
+        "line": 114
+      },
+      {
+        "name": "hyperproc.archive.interactive.SearchState.geojson",
+        "line": 118
+      },
+      {
+        "name": "hyperproc.archive.interactive.SearchState.bounds",
+        "line": 147
+      },
+      {
+        "name": "hyperproc.archive.interactive.SearchState.summary",
+        "line": 155
+      }
+    ]
   },
   {
     "name": "hyperproc.archive.interactive.zoom_for",
@@ -397,7 +504,8 @@
     "line": 170,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.interactive._flatten",
@@ -405,7 +513,8 @@
     "line": 189,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.interactive._px",
@@ -413,7 +522,8 @@
     "line": 204,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.interactive._widgets",
@@ -421,7 +531,8 @@
     "line": 212,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.interactive.Map",
@@ -429,7 +540,41 @@
     "line": 226,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.archive.interactive.Map.bbox",
+        "line": 286
+      },
+      {
+        "name": "hyperproc.archive.interactive.Map.results",
+        "line": 290
+      },
+      {
+        "name": "hyperproc.archive.interactive.Map.selected",
+        "line": 294
+      },
+      {
+        "name": "hyperproc.archive.interactive.Map.preview_html",
+        "line": 409
+      },
+      {
+        "name": "hyperproc.archive.interactive.Map.search",
+        "line": 445
+      },
+      {
+        "name": "hyperproc.archive.interactive.Map.show",
+        "line": 473
+      },
+      {
+        "name": "hyperproc.archive.interactive.Map.fit",
+        "line": 492
+      },
+      {
+        "name": "hyperproc.archive.interactive.Map.download",
+        "line": 547
+      }
+    ]
   },
   {
     "name": "hyperproc.archive.interactive.search_map",
@@ -437,7 +582,8 @@
     "line": 568,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon._requests",
@@ -445,7 +591,8 @@
     "line": 63,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon._get",
@@ -453,7 +600,8 @@
     "line": 73,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon.token_from",
@@ -461,7 +609,8 @@
     "line": 88,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon.sites",
@@ -469,7 +618,8 @@
     "line": 93,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon._months",
@@ -477,7 +627,8 @@
     "line": 107,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon._hit",
@@ -485,7 +636,8 @@
     "line": 123,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon.search",
@@ -493,7 +645,8 @@
     "line": 133,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon.files",
@@ -501,7 +654,8 @@
     "line": 220,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon._flight_time",
@@ -509,7 +663,8 @@
     "line": 279,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.archive.neon.download",
@@ -517,7 +672,8 @@
     "line": 289,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.results.plural",
@@ -525,7 +681,8 @@
     "line": 16,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.archive.results.Granule",
@@ -533,7 +690,13 @@
     "line": 22,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.archive.results.Granule.size_gb",
+        "line": 61
+      }
+    ]
   },
   {
     "name": "hyperproc.archive.results.Results",
@@ -541,7 +704,25 @@
     "line": 71,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.archive.results.Results.size_gb",
+        "line": 97
+      },
+      {
+        "name": "hyperproc.archive.results.Results.unsized",
+        "line": 102
+      },
+      {
+        "name": "hyperproc.archive.results.Results.table",
+        "line": 119
+      },
+      {
+        "name": "hyperproc.archive.results.Results.to_geodataframe",
+        "line": 134
+      }
+    ]
   },
   {
     "name": "hyperproc.atmos._runner.libradtran_dir",
@@ -549,7 +730,8 @@
     "line": 38,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos._runner.apply_overrides",
@@ -557,7 +739,8 @@
     "line": 48,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos._runner.rewrite_config",
@@ -565,7 +748,8 @@
     "line": 74,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos._runner.install",
@@ -573,7 +757,8 @@
     "line": 121,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos._runner.main",
@@ -581,7 +766,8 @@
     "line": 147,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.atmosphere_for",
@@ -589,7 +775,8 @@
     "line": 60,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct._env",
@@ -597,7 +784,8 @@
     "line": 78,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.emulator_path",
@@ -605,7 +793,8 @@
     "line": 86,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.surface_recipe",
@@ -613,7 +802,8 @@
     "line": 95,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct._cache_dir",
@@ -621,7 +811,8 @@
     "line": 109,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct._surface_key",
@@ -629,7 +820,8 @@
     "line": 113,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.resolve_surface",
@@ -637,7 +829,8 @@
     "line": 119,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.build_command",
@@ -645,7 +838,8 @@
     "line": 138,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.atm_terms",
@@ -653,7 +847,8 @@
     "line": 269,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.segment_count",
@@ -661,7 +856,8 @@
     "line": 287,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.neighbor_cap",
@@ -669,7 +865,8 @@
     "line": 308,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.resolve_neighbors",
@@ -677,7 +874,8 @@
     "line": 326,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct._clean_partial",
@@ -685,7 +883,8 @@
     "line": 348,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.run_record",
@@ -693,7 +892,8 @@
     "line": 376,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.settings_of",
@@ -701,7 +901,8 @@
     "line": 392,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.is_complete",
@@ -709,7 +910,8 @@
     "line": 417,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct._tail",
@@ -717,7 +919,8 @@
     "line": 425,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.run_isofit",
@@ -725,7 +928,8 @@
     "line": 433,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct._hdr",
@@ -733,7 +937,8 @@
     "line": 477,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct._hdr_list",
@@ -741,7 +946,8 @@
     "line": 484,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct._open_bil",
@@ -749,7 +955,8 @@
     "line": 490,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.read_outputs",
@@ -757,7 +964,8 @@
     "line": 501,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.redo_line",
@@ -765,7 +973,8 @@
     "line": 608,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct.correct",
@@ -773,7 +982,8 @@
     "line": 628,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.correct._window",
@@ -781,7 +991,8 @@
     "line": 709,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.dem.cache_dir",
@@ -789,7 +1000,8 @@
     "line": 36,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.dem.tile_id",
@@ -797,7 +1009,8 @@
     "line": 42,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.dem.tile_url",
@@ -805,7 +1018,8 @@
     "line": 50,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.dem.fetch_tile",
@@ -813,7 +1027,8 @@
     "line": 55,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.dem._read_tile",
@@ -821,7 +1036,8 @@
     "line": 79,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.dem.sample",
@@ -829,7 +1045,8 @@
     "line": 90,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.dem.add_elevation",
@@ -837,7 +1054,8 @@
     "line": 129,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.engines.read_settings",
@@ -845,7 +1063,8 @@
     "line": 32,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.engines.write_settings",
@@ -853,7 +1072,8 @@
     "line": 37,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.engines.SixS",
@@ -861,7 +1081,17 @@
     "line": 44,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.atmos.engines.SixS.rebuild_cmd",
+        "line": 72
+      },
+      {
+        "name": "hyperproc.atmos.engines.SixS.readSim",
+        "line": 104
+      }
+    ]
   },
   {
     "name": "hyperproc.atmos.engines.LibRadTran",
@@ -869,7 +1099,8 @@
     "line": 121,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.engines.register",
@@ -877,7 +1108,8 @@
     "line": 141,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.SensorSpec",
@@ -885,7 +1117,8 @@
     "line": 71,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.sensor_spec",
@@ -893,7 +1126,8 @@
     "line": 144,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.acquisition_time",
@@ -901,7 +1135,8 @@
     "line": 154,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.names_for",
@@ -909,7 +1144,8 @@
     "line": 170,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.Inputs",
@@ -917,7 +1153,33 @@
     "line": 184,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.atmos.inputs.Inputs.subset",
+        "line": 205
+      },
+      {
+        "name": "hyperproc.atmos.inputs.Inputs.output",
+        "line": 210
+      },
+      {
+        "name": "hyperproc.atmos.inputs.Inputs.json",
+        "line": 218
+      },
+      {
+        "name": "hyperproc.atmos.inputs.Inputs.save",
+        "line": 221
+      },
+      {
+        "name": "hyperproc.atmos.inputs.Inputs.load",
+        "line": 227
+      },
+      {
+        "name": "hyperproc.atmos.inputs.Inputs.describe",
+        "line": 243
+      }
+    ]
   },
   {
     "name": "hyperproc.atmos.inputs.hdr_path",
@@ -925,7 +1187,8 @@
     "line": 261,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.write_envi_header",
@@ -933,7 +1196,8 @@
     "line": 272,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs._row_blocks",
@@ -941,7 +1205,8 @@
     "line": 293,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs._write_cube",
@@ -949,7 +1214,8 @@
     "line": 312,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs._write_layers",
@@ -957,7 +1223,8 @@
     "line": 335,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs._layer",
@@ -965,7 +1232,8 @@
     "line": 344,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs._latlon",
@@ -973,7 +1241,8 @@
     "line": 353,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs._phase",
@@ -981,7 +1250,8 @@
     "line": 362,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs._earth_sun_au",
@@ -989,7 +1259,8 @@
     "line": 367,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.assemble_obs",
@@ -997,7 +1268,8 @@
     "line": 372,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.assemble_loc",
@@ -1005,7 +1277,8 @@
     "line": 408,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs._apply_window",
@@ -1013,7 +1286,8 @@
     "line": 418,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs._stats",
@@ -1021,7 +1295,8 @@
     "line": 430,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.oci_rsr_bands",
@@ -1029,7 +1304,8 @@
     "line": 449,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.match_bands",
@@ -1037,7 +1313,8 @@
     "line": 470,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.pace_rhot_scales",
@@ -1045,7 +1322,8 @@
     "line": 485,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.inputs.prepare_inputs",
@@ -1053,7 +1331,8 @@
     "line": 512,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.process._open_for_ac",
@@ -1061,7 +1340,8 @@
     "line": 32,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.process._ortho_emit",
@@ -1069,7 +1349,8 @@
     "line": 52,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.process.to_map_grid",
@@ -1077,7 +1358,8 @@
     "line": 102,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.process.process",
@@ -1085,7 +1367,8 @@
     "line": 126,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.setup._quiet",
@@ -1093,7 +1376,8 @@
     "line": 39,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.setup._isofit",
@@ -1101,7 +1385,8 @@
     "line": 43,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.setup._assets_for",
@@ -1109,7 +1394,8 @@
     "line": 51,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.setup.libradtran_exe",
@@ -1117,7 +1403,8 @@
     "line": 58,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.setup.build_libradtran",
@@ -1125,7 +1412,8 @@
     "line": 68,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.setup.check",
@@ -1133,7 +1421,8 @@
     "line": 115,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.setup._report",
@@ -1141,7 +1430,8 @@
     "line": 172,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.setup.setup",
@@ -1149,7 +1439,8 @@
     "line": 192,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.atmos.setup.main",
@@ -1157,7 +1448,8 @@
     "line": 249,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.brdf.dynamic_bins",
@@ -1165,7 +1457,8 @@
     "line": 49,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.brdf._second_split",
@@ -1173,7 +1466,8 @@
     "line": 75,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.brdf.assign_bins",
@@ -1181,7 +1475,8 @@
     "line": 86,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.brdf.bin_centres",
@@ -1189,7 +1484,8 @@
     "line": 95,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.brdf.FlexFit",
@@ -1197,7 +1493,17 @@
     "line": 103,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.correct.brdf.FlexFit.to_dict",
+        "line": 118
+      },
+      {
+        "name": "hyperproc.correct.brdf.FlexFit.from_dict",
+        "line": 132
+      }
+    ]
   },
   {
     "name": "hyperproc.correct.brdf.fit_flex",
@@ -1205,7 +1511,8 @@
     "line": 153,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.brdf.interpolate_coeffs",
@@ -1213,7 +1520,8 @@
     "line": 201,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.brdf.apply_flex",
@@ -1221,7 +1529,8 @@
     "line": 237,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.brdf.fit_group",
@@ -1229,7 +1538,8 @@
     "line": 276,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor.band_map",
@@ -1237,7 +1547,8 @@
     "line": 71,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor.band_weights",
@@ -1245,7 +1556,8 @@
     "line": 86,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor.model_reflectance",
@@ -1253,7 +1565,8 @@
     "line": 122,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor.c_factor",
@@ -1261,7 +1574,8 @@
     "line": 142,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor.lonlat_of",
@@ -1269,7 +1583,8 @@
     "line": 185,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor.angles_of",
@@ -1277,7 +1592,8 @@
     "line": 203,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor._fill_gaps",
@@ -1285,7 +1601,8 @@
     "line": 220,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor.nbar",
@@ -1293,7 +1610,8 @@
     "line": 240,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor.view_profile",
@@ -1301,7 +1619,8 @@
     "line": 383,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.cfactor.model_agreement",
@@ -1309,7 +1628,8 @@
     "line": 466,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.coefficients._now",
@@ -1317,7 +1637,8 @@
     "line": 37,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.coefficients.provenance",
@@ -1325,7 +1646,8 @@
     "line": 41,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.coefficients._jsonable",
@@ -1333,7 +1655,8 @@
     "line": 52,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.coefficients._wl_key",
@@ -1341,7 +1664,8 @@
     "line": 72,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.coefficients.align_wavelengths",
@@ -1349,7 +1673,8 @@
     "line": 76,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.coefficients.TopoCoefficients",
@@ -1357,7 +1682,41 @@
     "line": 93,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.correct.coefficients.TopoCoefficients.n_ok",
+        "line": 115
+      },
+      {
+        "name": "hyperproc.correct.coefficients.TopoCoefficients.verdict",
+        "line": 119
+      },
+      {
+        "name": "hyperproc.correct.coefficients.TopoCoefficients.c_for",
+        "line": 122
+      },
+      {
+        "name": "hyperproc.correct.coefficients.TopoCoefficients.summary",
+        "line": 130
+      },
+      {
+        "name": "hyperproc.correct.coefficients.TopoCoefficients.to_dict",
+        "line": 138
+      },
+      {
+        "name": "hyperproc.correct.coefficients.TopoCoefficients.to_json",
+        "line": 154
+      },
+      {
+        "name": "hyperproc.correct.coefficients.TopoCoefficients.from_dict",
+        "line": 165
+      },
+      {
+        "name": "hyperproc.correct.coefficients.TopoCoefficients.from_json",
+        "line": 180
+      }
+    ]
   },
   {
     "name": "hyperproc.correct.coefficients.BRDFCoefficients",
@@ -1365,7 +1724,37 @@
     "line": 186,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.correct.coefficients.BRDFCoefficients.wavelength",
+        "line": 199
+      },
+      {
+        "name": "hyperproc.correct.coefficients.BRDFCoefficients.feasible",
+        "line": 203
+      },
+      {
+        "name": "hyperproc.correct.coefficients.BRDFCoefficients.summary",
+        "line": 206
+      },
+      {
+        "name": "hyperproc.correct.coefficients.BRDFCoefficients.to_dict",
+        "line": 213
+      },
+      {
+        "name": "hyperproc.correct.coefficients.BRDFCoefficients.to_json",
+        "line": 221
+      },
+      {
+        "name": "hyperproc.correct.coefficients.BRDFCoefficients.from_dict",
+        "line": 232
+      },
+      {
+        "name": "hyperproc.correct.coefficients.BRDFCoefficients.from_json",
+        "line": 241
+      }
+    ]
   },
   {
     "name": "hyperproc.correct.coefficients.load",
@@ -1373,7 +1762,8 @@
     "line": 245,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.phase_angle",
@@ -1381,7 +1771,8 @@
     "line": 38,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.ross_thick",
@@ -1389,7 +1780,8 @@
     "line": 47,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.ross_thin",
@@ -1397,7 +1789,8 @@
     "line": 54,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.volume_kernel",
@@ -1405,7 +1798,8 @@
     "line": 61,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels._li_terms",
@@ -1413,7 +1807,8 @@
     "line": 73,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.li_sparse",
@@ -1421,7 +1816,8 @@
     "line": 98,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.li_sparse_r",
@@ -1429,7 +1825,8 @@
     "line": 104,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.li_dense",
@@ -1437,7 +1834,8 @@
     "line": 110,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.li_dense_r",
@@ -1445,7 +1843,8 @@
     "line": 116,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.geometric_kernel",
@@ -1453,7 +1852,8 @@
     "line": 122,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.kernel_pair",
@@ -1461,7 +1861,8 @@
     "line": 134,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.kernels.reference_kernels",
@@ -1469,7 +1870,8 @@
     "line": 141,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.ndi",
@@ -1477,7 +1879,8 @@
     "line": 19,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.ndi_mask",
@@ -1485,7 +1888,8 @@
     "line": 28,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.range_mask",
@@ -1493,7 +1897,8 @@
     "line": 34,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.kernel_finite",
@@ -1501,7 +1906,8 @@
     "line": 44,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.edge_mask",
@@ -1509,7 +1915,8 @@
     "line": 49,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.combine",
@@ -1517,7 +1924,8 @@
     "line": 67,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.sample_indices",
@@ -1525,7 +1933,8 @@
     "line": 79,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks._zhai_indices",
@@ -1533,7 +1942,8 @@
     "line": 94,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.zhai_stats",
@@ -1541,7 +1951,8 @@
     "line": 109,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.zhai_thresholds",
@@ -1549,7 +1960,8 @@
     "line": 128,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.masks.zhai_cloud",
@@ -1557,7 +1969,8 @@
     "line": 136,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43.cache_dir",
@@ -1565,7 +1978,8 @@
     "line": 91,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43.Params",
@@ -1573,7 +1987,33 @@
     "line": 102,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.correct.mcd43.Params.shape",
+        "line": 127
+      },
+      {
+        "name": "hyperproc.correct.mcd43.Params.coverage",
+        "line": 130
+      },
+      {
+        "name": "hyperproc.correct.mcd43.Params.masked",
+        "line": 134
+      },
+      {
+        "name": "hyperproc.correct.mcd43.Params.rowcol",
+        "line": 159
+      },
+      {
+        "name": "hyperproc.correct.mcd43.Params.sample",
+        "line": 164
+      },
+      {
+        "name": "hyperproc.correct.mcd43.Params.to_geotiff",
+        "line": 217
+      }
+    ]
   },
   {
     "name": "hyperproc.correct.mcd43.read",
@@ -1581,7 +2021,8 @@
     "line": 246,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43.bounds_of",
@@ -1589,7 +2030,8 @@
     "line": 279,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43.date_of",
@@ -1597,7 +2039,8 @@
     "line": 305,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43.available",
@@ -1605,7 +2048,8 @@
     "line": 338,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43.resolution_of",
@@ -1613,7 +2057,8 @@
     "line": 352,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43.step_for",
@@ -1621,7 +2066,8 @@
     "line": 390,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43.grid_for",
@@ -1629,7 +2075,8 @@
     "line": 408,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43._init_ee",
@@ -1637,7 +2084,8 @@
     "line": 429,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43._ee_image",
@@ -1645,7 +2093,8 @@
     "line": 451,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43._aggregate",
@@ -1653,7 +2102,8 @@
     "line": 465,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43._download",
@@ -1661,7 +2111,8 @@
     "line": 481,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.mcd43.fetch",
@@ -1669,7 +2120,8 @@
     "line": 511,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.is_airborne",
@@ -1677,7 +2129,8 @@
     "line": 65,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._require_airborne",
@@ -1685,7 +2138,8 @@
     "line": 71,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._main_var",
@@ -1693,7 +2147,8 @@
     "line": 76,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._index_bands",
@@ -1701,7 +2156,8 @@
     "line": 81,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._cloud_stats",
@@ -1709,7 +2165,8 @@
     "line": 95,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._cloud_mask",
@@ -1717,7 +2174,8 @@
     "line": 106,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._geometry_2d",
@@ -1725,7 +2183,8 @@
     "line": 114,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.Sample",
@@ -1733,7 +2192,33 @@
     "line": 133,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.correct.pipeline.Sample.n",
+        "line": 165
+      },
+      {
+        "name": "hyperproc.correct.pipeline.Sample.cloud_flags",
+        "line": 168
+      },
+      {
+        "name": "hyperproc.correct.pipeline.Sample.topo_calc_mask",
+        "line": 190
+      },
+      {
+        "name": "hyperproc.correct.pipeline.Sample.topo_apply_mask",
+        "line": 198
+      },
+      {
+        "name": "hyperproc.correct.pipeline.Sample.brdf_calc_mask",
+        "line": 203
+      },
+      {
+        "name": "hyperproc.correct.pipeline.Sample.summary",
+        "line": 217
+      }
+    ]
   },
   {
     "name": "hyperproc.correct.pipeline.sample_image",
@@ -1741,7 +2226,8 @@
     "line": 229,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._sample_chunks",
@@ -1749,7 +2235,8 @@
     "line": 259,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._iter_chunks",
@@ -1757,7 +2244,8 @@
     "line": 319,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._sample_pixels",
@@ -1765,7 +2253,8 @@
     "line": 329,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.merge_samples",
@@ -1773,7 +2262,8 @@
     "line": 415,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.per_block_effects",
@@ -1781,7 +2271,8 @@
     "line": 464,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.fit_topo",
@@ -1789,7 +2280,8 @@
     "line": 502,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.angular_diversity",
@@ -1797,7 +2289,8 @@
     "line": 598,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._topo_correct_sample",
@@ -1805,7 +2298,8 @@
     "line": 631,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.fit_brdf",
@@ -1813,7 +2307,8 @@
     "line": 647,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.apply",
@@ -1821,7 +2316,8 @@
     "line": 721,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.export",
@@ -1829,7 +2325,8 @@
     "line": 856,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.footprint_bounds",
@@ -1837,7 +2334,8 @@
     "line": 899,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.footprint_polygon",
@@ -1845,7 +2343,8 @@
     "line": 911,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.footprint_overlap",
@@ -1853,7 +2352,8 @@
     "line": 924,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._window_for_bbox",
@@ -1861,7 +2361,8 @@
     "line": 933,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._window_bounds",
@@ -1869,7 +2370,8 @@
     "line": 946,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.overlap_windows",
@@ -1877,7 +2379,8 @@
     "line": 953,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.find_overlapping_pair",
@@ -1885,7 +2388,8 @@
     "line": 982,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._common_grid",
@@ -1893,7 +2397,8 @@
     "line": 999,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline._reproject",
@@ -1901,7 +2406,8 @@
     "line": 1025,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.mosaic_geotiffs",
@@ -1909,7 +2415,8 @@
     "line": 1037,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.overlap_agreement_tifs",
@@ -1917,7 +2424,8 @@
     "line": 1082,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.seam_check",
@@ -1925,7 +2433,8 @@
     "line": 1112,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.view_dependence",
@@ -1933,7 +2442,8 @@
     "line": 1136,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.pipeline.overlap_agreement",
@@ -1941,7 +2451,8 @@
     "line": 1188,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.topo.cos_incidence",
@@ -1949,7 +2460,8 @@
     "line": 46,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.topo.CFit",
@@ -1957,7 +2469,13 @@
     "line": 57,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.correct.topo.CFit.as_dict",
+        "line": 71
+      }
+    ]
   },
   {
     "name": "hyperproc.correct.topo.fit_c",
@@ -1965,7 +2483,8 @@
     "line": 75,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.topo.fit_c_from_sums",
@@ -1973,7 +2492,8 @@
     "line": 157,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.topo._check_c",
@@ -1981,7 +2501,8 @@
     "line": 208,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.topo.correction_factor",
@@ -1989,7 +2510,8 @@
     "line": 217,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.topo.apply_topo",
@@ -1997,7 +2519,8 @@
     "line": 238,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.correct.topo._slope_stats",
@@ -2005,7 +2528,8 @@
     "line": 278,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.correct.topo.illumination_diagnostic",
@@ -2013,7 +2537,8 @@
     "line": 287,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.features._evaluate",
@@ -2021,7 +2546,8 @@
     "line": 81,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.features.index",
@@ -2029,7 +2555,8 @@
     "line": 113,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.features.describe_indices",
@@ -2037,7 +2564,8 @@
     "line": 167,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.features._argmin_wavelength",
@@ -2045,7 +2573,8 @@
     "line": 187,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.features.band_depth",
@@ -2053,7 +2582,8 @@
     "line": 194,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.geometry.check_geometry",
@@ -2061,7 +2591,8 @@
     "line": 17,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.geometry.fix_slope_convention",
@@ -2069,7 +2600,8 @@
     "line": 97,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.grid.utm_epsg",
@@ -2077,7 +2609,8 @@
     "line": 32,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.grid.georeference",
@@ -2085,7 +2618,8 @@
     "line": 51,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.grid.latlon_grid",
@@ -2093,7 +2627,8 @@
     "line": 221,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.grid._ecef",
@@ -2101,7 +2636,8 @@
     "line": 247,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.grid._nearest_glt",
@@ -2109,7 +2645,8 @@
     "line": 261,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.grid._native_spacing",
@@ -2117,7 +2654,8 @@
     "line": 308,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.grid._apply_glt",
@@ -2125,7 +2663,8 @@
     "line": 319,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.io.main_var",
@@ -2133,7 +2672,8 @@
     "line": 16,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io.default_name",
@@ -2141,7 +2681,8 @@
     "line": 27,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io._resolve",
@@ -2149,7 +2690,8 @@
     "line": 43,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.io._transform_for",
@@ -2157,7 +2699,8 @@
     "line": 54,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.io.envi_header",
@@ -2165,7 +2708,8 @@
     "line": 99,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io._write_cube",
@@ -2173,7 +2717,8 @@
     "line": 131,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.io.to_geotiff",
@@ -2181,7 +2726,8 @@
     "line": 239,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io.to_envi",
@@ -2189,7 +2735,8 @@
     "line": 284,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io.to_raster",
@@ -2197,7 +2744,8 @@
     "line": 320,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io.build_overviews",
@@ -2205,7 +2753,8 @@
     "line": 331,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io.to_geotiff_2d",
@@ -2213,7 +2762,8 @@
     "line": 388,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io.export_geometry",
@@ -2221,7 +2771,8 @@
     "line": 453,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io.bands_to_csv",
@@ -2229,7 +2780,8 @@
     "line": 479,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.io._write_stats",
@@ -2237,7 +2789,8 @@
     "line": 516,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.io._spatial_da",
@@ -2245,7 +2798,8 @@
     "line": 537,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.io.to_latlon_geotiff",
@@ -2253,7 +2807,8 @@
     "line": 558,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.quality._bit",
@@ -2261,7 +2816,8 @@
     "line": 132,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.quality._as_2d",
@@ -2269,7 +2825,8 @@
     "line": 138,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.quality._band_nearest",
@@ -2277,7 +2834,8 @@
     "line": 144,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.quality.build",
@@ -2285,7 +2843,8 @@
     "line": 151,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.quality.decode",
@@ -2293,7 +2852,8 @@
     "line": 291,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.quality.set_flag",
@@ -2301,7 +2861,8 @@
     "line": 307,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.quality.summary",
@@ -2309,7 +2870,8 @@
     "line": 319,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.quality.apply",
@@ -2317,7 +2879,8 @@
     "line": 328,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.quality.describe",
@@ -2325,7 +2888,8 @@
     "line": 361,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers._common.crs_text",
@@ -2333,7 +2897,8 @@
     "line": 5,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers._common.datetime_from_id",
@@ -2341,7 +2906,8 @@
     "line": 45,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers._common.finish_bands",
@@ -2349,7 +2915,8 @@
     "line": 64,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers._common.normalise_angles",
@@ -2357,7 +2924,8 @@
     "line": 106,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._Variant",
@@ -2365,7 +2933,8 @@
     "line": 151,
     "kind": "class",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris.open_aviris",
@@ -2373,7 +2942,8 @@
     "line": 187,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._identify",
@@ -2381,7 +2951,8 @@
     "line": 300,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._find_cube",
@@ -2389,7 +2960,8 @@
     "line": 319,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._guess_product",
@@ -2397,7 +2969,8 @@
     "line": 352,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._search",
@@ -2405,7 +2978,8 @@
     "line": 363,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._sibling",
@@ -2413,7 +2987,8 @@
     "line": 389,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris.read_hdr",
@@ -2421,7 +2996,8 @@
     "line": 396,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._good_bands",
@@ -2429,7 +3005,8 @@
     "line": 414,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._fill_value",
@@ -2437,7 +3014,8 @@
     "line": 431,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._hdr_array",
@@ -2445,7 +3023,8 @@
     "line": 443,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._chunks_for",
@@ -2453,7 +3032,8 @@
     "line": 452,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._open_envi",
@@ -2461,7 +3041,8 @@
     "line": 471,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._hdr_for",
@@ -2469,7 +3050,8 @@
     "line": 568,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._rotation",
@@ -2477,7 +3059,8 @@
     "line": 576,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._read_spc",
@@ -2485,7 +3068,8 @@
     "line": 581,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._gain",
@@ -2493,7 +3077,8 @@
     "line": 590,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._band_subset",
@@ -2501,7 +3086,8 @@
     "line": 602,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._open_av5",
@@ -2509,7 +3095,8 @@
     "line": 616,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._gather",
@@ -2517,7 +3104,8 @@
     "line": 719,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._glt_cube",
@@ -2525,7 +3113,8 @@
     "line": 726,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._av5_cube_group",
@@ -2533,7 +3122,8 @@
     "line": 798,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._av5_grid",
@@ -2541,7 +3131,8 @@
     "line": 815,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._as_str",
@@ -2549,7 +3140,8 @@
     "line": 827,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._apply_glt",
@@ -2557,7 +3149,8 @@
     "line": 831,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._finish",
@@ -2565,7 +3158,8 @@
     "line": 851,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._add_map_coords",
@@ -2573,7 +3167,8 @@
     "line": 880,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._blank_water_bands",
@@ -2581,7 +3176,8 @@
     "line": 890,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._add_geometry",
@@ -2589,7 +3185,8 @@
     "line": 911,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._add_geometry_envi",
@@ -2597,7 +3194,8 @@
     "line": 937,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._add_geometry_av5",
@@ -2605,7 +3203,8 @@
     "line": 966,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._elevation_array",
@@ -2613,7 +3212,8 @@
     "line": 1009,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._add_elevation",
@@ -2621,7 +3221,8 @@
     "line": 1047,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._add_extras",
@@ -2629,7 +3230,8 @@
     "line": 1086,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.aviris._add_uncertainty",
@@ -2637,7 +3239,8 @@
     "line": 1137,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.desis.open_desis",
@@ -2645,7 +3248,8 @@
     "line": 77,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.desis._sibling",
@@ -2653,7 +3257,8 @@
     "line": 190,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.desis._parse_metadata",
@@ -2661,7 +3266,8 @@
     "line": 196,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.desis._add_quality",
@@ -2669,7 +3275,8 @@
     "line": 248,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.desis._add_band_quality",
@@ -2677,7 +3284,8 @@
     "line": 272,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.emit.open_emit",
@@ -2685,7 +3293,8 @@
     "line": 60,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.emit._sibling",
@@ -2693,7 +3302,8 @@
     "line": 225,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.emit._add_masks",
@@ -2701,7 +3311,8 @@
     "line": 240,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.emit._add_geometry",
@@ -2709,7 +3320,8 @@
     "line": 258,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.emit._stack_glt",
@@ -2717,7 +3329,8 @@
     "line": 280,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.emit._apply_glt",
@@ -2725,7 +3338,8 @@
     "line": 287,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._beside",
@@ -2733,7 +3347,8 @@
     "line": 72,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap.open_enmap",
@@ -2741,7 +3356,8 @@
     "line": 90,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._lazy_cube",
@@ -2749,7 +3365,8 @@
     "line": 241,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._parse_metadata",
@@ -2757,7 +3374,8 @@
     "line": 248,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._corner_grid",
@@ -2765,7 +3383,8 @@
     "line": 279,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._footprint_pixels",
@@ -2773,7 +3392,8 @@
     "line": 289,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._footprint_grid",
@@ -2781,7 +3401,8 @@
     "line": 319,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._signed_area",
@@ -2789,7 +3410,8 @@
     "line": 343,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._add_angles",
@@ -2797,7 +3419,8 @@
     "line": 348,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._add_quality",
@@ -2805,7 +3428,8 @@
     "line": 371,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.enmap._add_pixelmask",
@@ -2813,7 +3437,8 @@
     "line": 389,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon.open_neon",
@@ -2821,7 +3446,8 @@
     "line": 111,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._as_str",
@@ -2829,7 +3455,8 @@
     "line": 255,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._band_subset",
@@ -2837,7 +3464,8 @@
     "line": 259,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._good_bands",
@@ -2845,7 +3473,8 @@
     "line": 270,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._grid",
@@ -2853,7 +3482,8 @@
     "line": 282,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._H5Array",
@@ -2861,7 +3491,8 @@
     "line": 305,
     "kind": "class",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._chunks_for",
@@ -2869,7 +3500,8 @@
     "line": 322,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._lazy_cube",
@@ -2877,7 +3509,8 @@
     "line": 335,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._lazy_layer",
@@ -2885,7 +3518,8 @@
     "line": 343,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._scaled",
@@ -2893,7 +3527,8 @@
     "line": 352,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._add_layers",
@@ -2901,7 +3536,8 @@
     "line": 368,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._add_geometry",
@@ -2909,7 +3545,8 @@
     "line": 379,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.neon._add_classes",
@@ -2917,7 +3554,8 @@
     "line": 405,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.pace.open_pace",
@@ -2925,7 +3563,8 @@
     "line": 77,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.pace._fwhm_for",
@@ -2933,7 +3572,8 @@
     "line": 157,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.pace._read_l2",
@@ -2941,7 +3581,8 @@
     "line": 167,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.pace._read_l1b",
@@ -2949,7 +3590,8 @@
     "line": 179,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.pace._add_latlon",
@@ -2957,7 +3599,8 @@
     "line": 206,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.pace._add_flags",
@@ -2965,7 +3608,8 @@
     "line": 214,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.pace._add_scanline",
@@ -2973,7 +3617,8 @@
     "line": 231,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.pace._add_geometry",
@@ -2981,7 +3626,8 @@
     "line": 260,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma.open_prisma",
@@ -2989,7 +3635,8 @@
     "line": 74,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._read_arm",
@@ -2997,7 +3644,8 @@
     "line": 217,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._take",
@@ -3005,7 +3653,8 @@
     "line": 272,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._resolve_overlap",
@@ -3013,7 +3662,8 @@
     "line": 279,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._dec",
@@ -3021,7 +3671,8 @@
     "line": 293,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._scene_attrs",
@@ -3029,7 +3680,8 @@
     "line": 297,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._fill_mask",
@@ -3037,7 +3689,8 @@
     "line": 318,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._add_grid",
@@ -3045,7 +3698,8 @@
     "line": 324,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._add_angles",
@@ -3053,7 +3707,8 @@
     "line": 353,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._add_l1_masks",
@@ -3061,7 +3716,8 @@
     "line": 371,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._l2_sibling",
@@ -3069,7 +3725,8 @@
     "line": 381,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._borrow_geolocation",
@@ -3077,7 +3734,8 @@
     "line": 390,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._add_l1_geometry",
@@ -3085,7 +3743,8 @@
     "line": 405,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._view_from_ephemeris",
@@ -3093,7 +3752,8 @@
     "line": 435,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.prisma._add_l2c_maps",
@@ -3101,7 +3761,8 @@
     "line": 479,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.tanager.open_tanager",
@@ -3109,7 +3770,8 @@
     "line": 65,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.readers.tanager._lazy_cube",
@@ -3117,7 +3779,8 @@
     "line": 203,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.tanager._geotransform",
@@ -3125,7 +3788,8 @@
     "line": 212,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.tanager._add_masks",
@@ -3133,7 +3797,8 @@
     "line": 227,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.readers.tanager._add_geometry",
@@ -3141,7 +3806,8 @@
     "line": 237,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.registry.Entry",
@@ -3149,7 +3815,17 @@
     "line": 16,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.registry.Entry.implemented",
+        "line": 30
+      },
+      {
+        "name": "hyperproc.registry.Entry.matches",
+        "line": 33
+      }
+    ]
   },
   {
     "name": "hyperproc.registry._tanager",
@@ -3157,7 +3833,8 @@
     "line": 37,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.registry._pace",
@@ -3165,7 +3842,8 @@
     "line": 43,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.registry._enmap",
@@ -3173,7 +3851,8 @@
     "line": 49,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.registry._desis",
@@ -3181,7 +3860,8 @@
     "line": 55,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.registry._neon",
@@ -3189,7 +3869,8 @@
     "line": 61,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.registry._aviris",
@@ -3197,7 +3878,8 @@
     "line": 67,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.registry._prisma",
@@ -3205,7 +3887,8 @@
     "line": 73,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.registry._emit",
@@ -3213,7 +3896,8 @@
     "line": 79,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.registry.register",
@@ -3221,7 +3905,8 @@
     "line": 91,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.registry.sniff",
@@ -3229,7 +3914,8 @@
     "line": 242,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.registry.resolve",
@@ -3237,7 +3923,8 @@
     "line": 251,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.registry.summary",
@@ -3245,7 +3932,8 @@
     "line": 287,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.registry.list_readers",
@@ -3253,7 +3941,8 @@
     "line": 293,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.report._thin",
@@ -3261,7 +3950,8 @@
     "line": 17,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.report.describe",
@@ -3269,7 +3959,8 @@
     "line": 53,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral._smoothspline.nknots_smspl",
@@ -3277,7 +3968,8 @@
     "line": 40,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral._smoothspline._iqr",
@@ -3285,7 +3977,8 @@
     "line": 56,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral._smoothspline._collapse",
@@ -3293,7 +3986,8 @@
     "line": 62,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral._smoothspline._knot_vector",
@@ -3301,7 +3995,8 @@
     "line": 81,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral._smoothspline._basis",
@@ -3309,7 +4004,8 @@
     "line": 92,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral._smoothspline._gram",
@@ -3317,7 +4013,8 @@
     "line": 102,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral._smoothspline._solve",
@@ -3325,7 +4022,8 @@
     "line": 145,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral._smoothspline.SmoothSpline",
@@ -3333,7 +4031,13 @@
     "line": 156,
     "kind": "class",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": [
+      {
+        "name": "hyperproc.spectral._smoothspline.SmoothSpline.predict",
+        "line": 224
+      }
+    ]
   },
   {
     "name": "hyperproc.spectral._smoothspline._brent_fmin",
@@ -3341,7 +4045,8 @@
     "line": 242,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral._smoothspline.smooth_spline",
@@ -3349,7 +4054,8 @@
     "line": 306,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.bands.good_bands",
@@ -3357,7 +4063,8 @@
     "line": 27,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.bands.runs_of_good_bands",
@@ -3365,7 +4072,8 @@
     "line": 37,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.bands.band_at",
@@ -3373,7 +4081,8 @@
     "line": 54,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.continuum._upper_hull",
@@ -3381,7 +4090,8 @@
     "line": 21,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.continuum._continuum_block",
@@ -3389,7 +4099,8 @@
     "line": 69,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.continuum.continuum_removal",
@@ -3397,7 +4108,8 @@
     "line": 80,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.derivatives._derivative_block",
@@ -3405,7 +4117,8 @@
     "line": 20,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.derivatives.derivative",
@@ -3413,7 +4126,8 @@
     "line": 42,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling._sigma",
@@ -3421,7 +4135,8 @@
     "line": 69,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling._normal_cdf",
@@ -3429,7 +4144,8 @@
     "line": 73,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling.build_fwhm",
@@ -3437,7 +4153,8 @@
     "line": 78,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling._merged_intervals",
@@ -3445,7 +4162,8 @@
     "line": 100,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling.coverage_of",
@@ -3453,7 +4171,8 @@
     "line": 115,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling._weights_gaussian",
@@ -3461,7 +4180,8 @@
     "line": 139,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling._weights_box",
@@ -3469,7 +4189,8 @@
     "line": 146,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling._weights_interp",
@@ -3477,7 +4198,8 @@
     "line": 160,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling._weights_response",
@@ -3485,7 +4207,8 @@
     "line": 168,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling.resampling_matrix",
@@ -3493,7 +4216,8 @@
     "line": 179,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling.target_grid",
@@ -3501,7 +4225,8 @@
     "line": 260,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling._apply_block",
@@ -3509,7 +4234,8 @@
     "line": 312,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling.resample",
@@ -3517,7 +4243,8 @@
     "line": 347,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.resampling._resample_dataset",
@@ -3525,7 +4252,8 @@
     "line": 409,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.smoothing._smooth_block",
@@ -3533,7 +4261,8 @@
     "line": 44,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.smoothing.smooth_spectra",
@@ -3541,7 +4270,8 @@
     "line": 78,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.smoothing.find_spikes",
@@ -3549,7 +4279,8 @@
     "line": 134,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.smoothing._in_ranges",
@@ -3557,7 +4288,8 @@
     "line": 180,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.smoothing._one_blas_thread",
@@ -3565,7 +4297,8 @@
     "line": 188,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.smoothing._gapfill_block",
@@ -3573,7 +4306,8 @@
     "line": 209,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.smoothing.spline_gapfill",
@@ -3581,7 +4315,8 @@
     "line": 236,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf.cache_dir",
@@ -3589,7 +4324,8 @@
     "line": 98,
     "kind": "function",
     "documented": false,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf.resolve",
@@ -3597,7 +4333,8 @@
     "line": 104,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf._load_workbook",
@@ -3605,7 +4342,8 @@
     "line": 119,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf._to_nm",
@@ -3613,7 +4351,8 @@
     "line": 130,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf._parse_sentinel2",
@@ -3621,7 +4360,8 @@
     "line": 136,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf._parse_landsat",
@@ -3629,7 +4369,8 @@
     "line": 150,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf._summarise",
@@ -3637,7 +4378,8 @@
     "line": 184,
     "kind": "function",
     "documented": true,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf._download",
@@ -3645,7 +4387,8 @@
     "line": 201,
     "kind": "function",
     "documented": false,
-    "private": true
+    "private": true,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf.fetch",
@@ -3653,7 +4396,8 @@
     "line": 215,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf.target",
@@ -3661,7 +4405,8 @@
     "line": 272,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   },
   {
     "name": "hyperproc.spectral.srf.available",
@@ -3669,6 +4414,7 @@
     "line": 284,
     "kind": "function",
     "documented": true,
-    "private": false
+    "private": false,
+    "members": []
   }
 ]
