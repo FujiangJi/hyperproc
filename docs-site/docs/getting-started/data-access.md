@@ -12,6 +12,17 @@ The current collection table provides **13 searchable sensor/level pairs**:
 | NEON Data API | AOP DP1 flightline reflectance (`NEON`, `L1`) | `NEON_TOKEN` |
 | DLR EOC STAC | EnMAP L1B/L1C/L2A; DESIS L2A | Mission-specific username/password |
 
+**Creating the Earthdata credential.** Run this once; it asks for the username
+and password and writes `~/.netrc`, after which every run is non-interactive:
+
+```bash
+python -c "import earthaccess; earthaccess.login(persist=True)"
+```
+
+Nothing in this package prompts for a password during a run. `hp.download()`
+and the example scripts test for a credential first and stop with the command
+that supplies it, so a long job cannot block waiting on input.
+
 Searches use anonymous archive access. NEON flightline listing and downloads require a token in this implementation. For DLR, configure `ENMAP_USERNAME`/`ENMAP_PASSWORD` or `DESIS_USERNAME`/`DESIS_PASSWORD`; `DLR_EOC_USERNAME`/`DLR_EOC_PASSWORD` provides a fallback. Mission access is granted separately, so credentials found locally do not establish authorization for both missions.
 
 ```python

@@ -252,7 +252,7 @@ def main(argv=None) -> int:
 
     p = argparse.ArgumentParser(prog="hyperproc-atmos-setup",
                                 description="Fetch and build the ISOFIT engines and assets hyperproc.atmos needs.")
-    p.add_argument("--base", help="directory for all ISOFIT assets (shared machines: one base for everyone)")
+    p.add_argument("--base", help="directory for all ISOFIT assets; default ~/.isofit. On a shared machine give every user the same one so the assets are fetched once")
     p.add_argument("--engine", action="append", choices=ENGINES, help="engine(s) to provision; default sRTMnet")
     p.add_argument("--examples", action="store_true", help="also fetch ISOFIT's tutorial data")
     p.add_argument("--overwrite", action="store_true", help="re-download assets that already validate")

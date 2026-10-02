@@ -432,7 +432,7 @@ def _init_ee(project: str | None = None):
     except ImportError as exc:                       # pragma: no cover - environment dependent
         raise ImportError(
             "the 'gee' source needs earthengine-api:\n"
-            "    pip install earthengine-api\n"
+            "    pip install 'hyperproc[brdf]'\n"
             "then authenticate once with 'earthengine authenticate' (or "
             "ee.Authenticate()). Recent versions also need a Cloud project: pass "
             "project='my-project' or set $EARTHENGINE_PROJECT."

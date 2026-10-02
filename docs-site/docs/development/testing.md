@@ -7,10 +7,14 @@ The checkout contains pytest tests alongside executed tutorial notebooks. The su
 ```bash
 pip install -e '.[test]'
 pytest
-pytest -m "not data and not network"  # no private granules or live archives
-pytest -m data                     # needs tests/data provider granules
-pytest -m network                  # explicitly queries live archives
+pytest -m "not data and not network"
+pytest -m data
+pytest -m network
 ```
+
+The marker selections narrow the run: `not data and not network` needs no
+private granules or live archives, `data` needs the provider granules under
+`tests/data`, and `network` explicitly queries the live archives.
 
 Optional capabilities may need their extras in the test environment. The package README records suite counts and run evidence; the documentation build does not rerun those tests or certify their scientific results.
 

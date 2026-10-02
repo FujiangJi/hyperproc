@@ -344,8 +344,12 @@ def find_and_download(args, hp):
     if not hp.archive.can_download("EMIT", "L1B"):
         who, need = hp.archive.BACKENDS["cmr"]
         sys.exit(f"no credentials for {who}; it needs {need}\n"
-                 f"    register, then put them in ~/.netrc or EARTHDATA_USERNAME/"
-                 f"EARTHDATA_PASSWORD, or rerun with --skip-download")
+                 f"    register, then run this once to be asked for them and have\n"
+                 f"    them written to ~/.netrc:\n"
+                 f'        python -c "import earthaccess; earthaccess.login(persist=True)"\n'
+                 f"    or set EARTHDATA_USERNAME/EARTHDATA_PASSWORD, or rerun with\n"
+                 f"    --skip-download. This script never prompts: it checks first and\n"
+                 f"    stops, so a long run cannot block on a password.")
 
     hits = hp.search("EMIT", "L1B", bbox=tuple(args.bbox), date=tuple(args.date),
                      cloud=(0, args.max_cloud), count=20)

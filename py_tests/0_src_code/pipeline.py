@@ -442,9 +442,12 @@ def acquire(cfg, args, hp):
                 say("falling back to the copy in tests/data")
                 copy_from_tests(cfg)
         else:
-            who, need = hp.archive.BACKENDS[
-                hp.archive.resolve(sensor, l1_level)[2].backend]
+            backend = hp.archive.resolve(sensor, l1_level)[2].backend
+            who, need = hp.archive.BACKENDS[backend]
             say(f"no credentials for {who}; it needs {need}")
+            if backend == "cmr":
+                say('  to get them: python -c "import earthaccess; '
+                    'earthaccess.login(persist=True)"')
             say("copying from tests/data instead")
             copy_from_tests(cfg)
     else:

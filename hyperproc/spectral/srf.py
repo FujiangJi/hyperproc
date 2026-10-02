@@ -121,7 +121,7 @@ def _load_workbook(path: Path):
         import openpyxl
     except ImportError as exc:                      # pragma: no cover - environment dependent
         raise ImportError(
-            "reading a published response function needs openpyxl:\n    pip install openpyxl\n"
+            "reading a published response function needs openpyxl:\n    pip install 'hyperproc[srf]'\n"
             "Sentinel-2 and Landsat both publish theirs as spreadsheets."
         ) from exc
     return openpyxl.load_workbook(path, read_only=True, data_only=True)

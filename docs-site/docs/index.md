@@ -14,15 +14,33 @@ title: hyperproc documentation
 **Installation · Python {{ python_requires }}**
 
 ```bash
-pip install hyperproc                 # readers, correction, export
-pip install 'hyperproc[search]'       # + archive search and download
-pip install 'hyperproc[search-map]'   # + interactive notebook maps (ipyleaflet)
-pip install 'hyperproc[brdf]'         # + Earth Engine for satellite BRDF
-pip install 'hyperproc[atmos]'        # + ISOFIT atmospheric correction
-hyperproc-atmos-setup --base /path/to/isofit_assets  # once: engines + data assets (~6 GB)
-hyperproc-atmos-setup --engine LibRadTran           # optional: build libRadtran
-hyperproc-atmos-setup --check                      # inspect installed assets
+pip install hyperproc
+pip install 'hyperproc[search]'
+pip install 'hyperproc[search-map]'
+pip install 'hyperproc[brdf]'
+pip install 'hyperproc[atmos]'
 ```
+
+| Extra | Adds |
+|---|---|
+| *(none)* | readers, correction, export |
+| `search` | archive search and download |
+| `search-map` | interactive notebook maps (ipyleaflet) |
+| `brdf` | Earth Engine for satellite BRDF |
+| `atmos` | ISOFIT atmospheric correction |
+
+`[atmos]` also needs its engines and data assets, once per machine:
+
+```bash
+hyperproc-atmos-setup
+hyperproc-atmos-setup --engine LibRadTran
+hyperproc-atmos-setup --check
+```
+
+The first line installs the engines and data assets (~6 GB) under `~/.isofit`,
+`--engine LibRadTran` is optional, and `--check` inspects what is already
+installed. On a shared machine, add `--base /data/shared/isofit_assets` so
+every user reads one copy.
 
 [Installation guide: environments, optional features, and setup requirements](getting-started/installation.md)
 

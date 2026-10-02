@@ -181,8 +181,10 @@ def download(results, out_dir: str | Path = "data", workers: int = 8,
         ea.login()
     except Exception as exc:                       # pragma: no cover - environment
         raise RuntimeError(
-            f"Earthdata login failed ({exc}). Register free at {URS}, then put the "
-            "credentials in ~/.netrc, or set EARTHDATA_USERNAME and EARTHDATA_PASSWORD."
+            f"Earthdata login failed ({exc}). Register free at {URS}, then run\n"
+            "    python -c \"import earthaccess; earthaccess.login(persist=True)\"\n"
+            "once - it asks for the username and password and writes ~/.netrc - or set "
+            "EARTHDATA_USERNAME and EARTHDATA_PASSWORD instead."
         ) from exc
 
     files = ea.download(granules, local_path=str(out), threads=workers)

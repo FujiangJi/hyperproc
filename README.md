@@ -123,21 +123,55 @@ correction for airborne and satellite imaging spectrometers.
 ## Install
 
 ```bash
-pip install hyperproc                 # readers, correction, export
-pip install 'hyperproc[search]'       # + archive search and download
-pip install 'hyperproc[search-map]'   # + the interactive map (ipyleaflet)
-pip install 'hyperproc[brdf]'         # + Earth Engine, for the satellite BRDF route
-pip install 'hyperproc[atmos]'        # + ISOFIT (pins h5py<=3.14, netCDF4<1.7.4; pulls torch and ray)
-hyperproc-atmos-setup --base /data/isofit_assets   # once per machine: engines + data assets (~6 GB)
-hyperproc-atmos-setup --engine LibRadTran          # optional: fetch and compile libRadtran (needs gcc, gfortran, make, gsl)
-hyperproc-atmos-setup --check         # what is in place
+pip install hyperproc
+pip install 'hyperproc[search]'
+pip install 'hyperproc[search-map]'
+pip install 'hyperproc[brdf]'
+pip install 'hyperproc[atmos]'
 ```
+
+| Extra | Adds |
+|---|---|
+| *(none)* | readers, topographic and BRDF correction, export |
+| `search` | archive search and download |
+| `search-map` | the interactive granule map (ipyleaflet) |
+| `brdf` | Earth Engine, for the satellite BRDF route |
+| `atmos` | ISOFIT - pins `h5py<=3.14` and `netCDF4<1.7.4`, and pulls torch and ray |
+
+`[atmos]` then needs its engines and data assets, once per machine:
+
+```bash
+hyperproc-atmos-setup
+hyperproc-atmos-setup --engine LibRadTran
+hyperproc-atmos-setup --check
+```
+
+The first line fetches the engines and about 6 GB of data assets. `--engine
+LibRadTran` is optional and compiles libRadtran, which needs gcc, gfortran,
+make and GSL. `--check` reports what is already in place and downloads
+nothing.
+
+**Where the assets go.** By default, `~/.isofit`. On a shared machine, give
+every user the same directory instead, so the 6 GB is fetched once rather than
+once per person:
+
+```bash
+hyperproc-atmos-setup --base /data/shared/isofit_assets
+```
+
+The choice is recorded in `~/.isofit/isofit.ini`, which belongs to ISOFIT -
+hyperproc only points it at the base you name. Do not put it inside the
+package or the environment: `pip install -U` and a rebuilt environment both
+take it with them.
 
 **Platforms.** The core - readers, topographic and BRDF correction, spectral
 transforms, quality, resampling, export - runs on Linux, macOS and Windows.
 `[atmos]` is Linux and macOS only: ISOFIT pulls ray and torch, and the
 radiative-transfer engines need a Fortran compiler (6S) and a C toolchain with
-GSL (LibRadTran), neither of which builds on Windows.
+GSL (LibRadTran), neither of which builds on Windows. Note that the default
+engine is not compiler-free either - sRTMnet compiles 6S underneath, so
+`gfortran` and `make` must be present before the first setup run.
+`hyperproc-atmos-setup --check` downloads nothing and names what is missing.
 
 Searching an archive needs no account. Downloading needs the archive's own,
 and all of them are free:
@@ -173,10 +207,14 @@ ISOFIT's own downloader into one shared base directory recorded in
 
 ```bash
 pip install 'hyperproc[test]'
-pytest                      # 711 tests, ~7 minutes
-pytest -m "not data"        # the 493 that need no granules
-pytest -m network           # 6 more that check the archives still behave as recorded
+pytest
+pytest -m "not data"
+pytest -m network
 ```
+
+`pytest` runs all 711 tests in about seven minutes. `-m "not data"` runs the
+493 that need no granules, and `-m network` adds the 6 that check the archives
+still behave as recorded.
 
 Most tests have an answer known in advance rather than a recorded snapshot: a
 straight line has a flat derivative, resampling onto the grid you are already on

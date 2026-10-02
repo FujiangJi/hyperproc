@@ -8,11 +8,11 @@ From the repository root:
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 python -m pip install -e .
 ```
 
-An editable install uses the source you are updating. For a non-editable install of the checkout, use `python -m pip install .`. The README also documents `pip install hyperproc`; these local documentation checks do not verify publication on PyPI.
+On Windows the activate line is `.venv\Scripts\activate` instead. An editable install uses the source you are updating. For a non-editable install of the checkout, use `python -m pip install .`. The README also documents `pip install hyperproc`; these local documentation checks do not verify publication on PyPI.
 
 ```python
 import hyperproc as hp
@@ -44,15 +44,72 @@ The package README describes the core as available on Linux, macOS, and Windows,
 After installing the atmospheric extra:
 
 ```bash
-hyperproc-atmos-setup --base /path/to/isofit_assets
+hyperproc-atmos-setup
 hyperproc-atmos-setup --check
-# Optional libRadtran engine:
 hyperproc-atmos-setup --engine LibRadTran
 ```
 
-Setup downloads several GB of engines and data assets and records the shared base in ISOFIT's configuration. Building 6S needs `gfortran` and `make`; libRadtran needs C/Fortran tooling and GSL. Inspect [configuration and external assets](configuration.md) before running retrievals.
+The third line is optional; it adds the libRadtran engine. Setup downloads several GB of engines and data assets and records their base in ISOFIT's own `~/.isofit/isofit.ini`. The base defaults to `~/.isofit`; pass `--base /data/shared/isofit_assets` to put it somewhere every user of a shared machine can read, so the assets are fetched once. It does not belong inside the package or the environment, which a reinstall would discard. Building 6S needs `gfortran` and `make`; libRadtran needs C/Fortran tooling and GSL. Inspect [configuration and external assets](configuration.md) before running retrievals.
 
 For satellite BRDF downloads, authenticate Earth Engine with `earthengine authenticate` and configure an authorized project. Archive downloads use separate credentials; see [data access](data-access.md).
+
+## When something reports a missing dependency
+
+Two kinds of thing can be missing, and only one of them is a pip install.
+
+**Python packages.** Every optional import raises with the command that
+supplies it, so the error message is the instruction:
+
+```text
+to_geodataframe needs geopandas:
+    pip install 'hyperproc[search-map]'
+```
+
+The capability table above lists all of them. An extra always installs
+everything that capability needs, so prefer `pip install 'hyperproc[srf]'`
+over installing the one package the traceback happened to name first.
+
+**Compilers and libraries.** The radiative-transfer engines are compiled on
+the machine, so pip cannot supply these. Which ones you need depends on the
+engine, and the default engine needs two of them:
+
+| `--engine` | Needs |
+|---|---|
+| `sRTMnet` (default) | `gfortran`, `make` - it compiles 6S underneath |
+| `6s` | `gfortran`, `make` |
+| `LibRadTran` | `gcc`, `gfortran`, `make`, `gsl-config` |
+
+A tool counts when it is on `PATH` or in the running environment's `bin`, so
+either a system package or conda-forge works:
+
+```bash
+conda install -c conda-forge gfortran make
+conda install -c conda-forge gcc gsl
+```
+
+Take GSL from conda-forge even if the system has one. The libRadtran build
+compiles against the running environment's `include` and `lib`, and ISOFIT's
+own build step does not check for GSL - it exits successfully and leaves no
+`bin/uvspec` behind.
+
+**Ask before guessing.** `--check` downloads nothing and prints every missing
+item with the command that supplies it:
+
+```bash
+hyperproc-atmos-setup --check
+hyperproc-atmos-setup --check --engine LibRadTran
+```
+
+```text
+hyperproc.atmos check  (python 3.12.11, isofit 4.1.5)
+  ini      /home/you/.isofit/isofit.ini
+  gfortran MISSING
+  make     /usr/bin/make
+  sixs       MISSING  /home/you/.isofit/sixs
+  to fix:
+    - gfortran: conda install -c conda-forge gfortran   (needed to build the engine)
+    - sixs: isofit download sixs   -> /home/you/.isofit/sixs
+```
 
 ## Building only this website
 
