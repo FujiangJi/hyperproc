@@ -73,7 +73,7 @@ extra_css:
 - stylesheets/extra.css
 extra:
   generator: false
-copyright: hyperproc 0.1.1 · MIT · Fujiang Ji
+copyright: hyperproc 0.1.2 · MIT · Fujiang Ji
 nav:
 - Home: index.md
 - Data:
@@ -138,6 +138,7 @@ nav:
     - Overview: api/index.md
     - Core:
       - hyperproc: api/hyperproc.md
+      - hyperproc._ncrc: api/hyperproc-_ncrc.md
       - hyperproc.align: api/hyperproc-align.md
       - hyperproc.features: api/hyperproc-features.md
       - hyperproc.geometry: api/hyperproc-geometry.md

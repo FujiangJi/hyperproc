@@ -122,10 +122,12 @@ correction for airborne and satellite imaging spectrometers.
 
 ## Requirements
 
-**Python 3.11 or newer.** Everything here is developed and tested on **3.12**,
-which is what to use if you have the choice. 3.13 is declared and expected to
-work. 3.14 resolves and installs, but nothing has been run on it and `[atmos]`
-is unlikely to work there until torch and ray catch up.
+**Use Python 3.12**, the development and testing target. The package itself
+declares `>=3.11`; the current ISOFIT 4.1.5 installation requires
+`>=3.11,<3.13`, so that atmospheric installation must stay below 3.13.
+This upstream constraint does not require exactly 3.12, but 3.12 is the
+recommended environment here. Without `[atmos]`, 3.13 should be fine;
+3.14 resolves and installs but nothing has been run on it.
 
 **You do not need to install the Python dependencies first.** `pip install
 hyperproc` brings NumPy, xarray, Dask, rasterio, rioxarray, h5py, netCDF4,
@@ -146,6 +148,57 @@ The example pipelines under `py_tests/` also draw figures, so they need
 matplotlib - `pip install 'hyperproc[notebooks]'`. The package itself never
 imports it.
 
+## If you do not have conda yet
+
+Not sure which you have? `uname -m` prints `arm64` on Apple silicon and
+`x86_64` on an Intel Mac; on Linux it prints `x86_64` or `aarch64`. Pick the
+box, copy all four lines, run them.
+
+**Mac, Apple silicon (M1-M4)**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+bash Miniconda3-latest-MacOSX-arm64.sh
+source ~/.zshrc
+conda --version
+```
+
+**Mac, Intel**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+bash Miniconda3-latest-MacOSX-x86_64.sh
+source ~/.zshrc
+conda --version
+```
+
+**Linux, Intel/AMD (x86-64)**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+conda --version
+```
+
+**Linux, ARM (aarch64)**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+bash Miniconda3-latest-Linux-aarch64.sh
+source ~/.bashrc
+conda --version
+```
+
+**Windows**: use WSL2, then follow the Linux box for your chip. Every Linux
+instruction on this page then applies exactly as written.
+
+The installer asks you to accept the licence, choose a location, and whether
+to initialise your shell. **Answer yes to the last one** - that is what makes
+the `source` line work. If `conda --version` still says the command is not
+found, the shell was never initialised: run `conda init zsh` on macOS or
+`conda init bash` on Linux, then open a new terminal.
+
 ## Install
 
 From nothing to a working install, in one block. Drop the lines for anything
@@ -158,32 +211,40 @@ conda install -c conda-forge gfortran make gcc gsl
 
 pip install hyperproc
 pip install 'hyperproc[search]'
+pip install 'hyperproc[srf]'
 pip install 'hyperproc[search-map]'
 pip install 'hyperproc[brdf]'
 pip install 'hyperproc[atmos]'
+pip install 'hyperproc[notebooks]'
 
 hyperproc-atmos-setup
+hyperproc-atmos-setup --examples
 hyperproc-atmos-setup --engine LibRadTran
 hyperproc-atmos-setup --check
 ```
 
-The `conda install` line and the last three lines matter only for atmospheric
-correction. Each `pip install` line adds one capability and none of them
-depends on the ones above it, so install only what you need:
+That is everything. The `conda install` line and the four
+`hyperproc-atmos-setup` lines matter only for atmospheric correction; each
+`pip install` line adds one capability and none depends on the ones above it,
+so drop whatever you do not need:
 
 | Extra | Adds |
 |---|---|
 | *(none)* | readers, topographic and BRDF correction, export |
 | `search` | archive search and download |
+| `srf` | published Sentinel-2 and Landsat response functions, for resampling |
 | `search-map` | the interactive granule map (ipyleaflet) |
 | `brdf` | Earth Engine, for the satellite BRDF route |
 | `atmos` | ISOFIT - pins `h5py<=3.14` and `netCDF4<1.7.4`, and pulls torch and ray |
+| `notebooks` | JupyterLab, matplotlib and pandas - what the example pipelines plot with |
 
 **The `hyperproc-atmos-setup` lines.** The first fetches the engines and about
-6 GB of data assets, once per machine. `--engine LibRadTran` is optional and
-compiles libRadtran. `--check` reports what is already in place and downloads
-nothing - run it first if you are unsure, it is the fastest way to find out
-what a machine still needs.
+6 GB of data assets, once per machine. The other three are optional:
+`--examples` adds ISOFIT's own tutorial scenes (~340 MB) which nothing here
+needs but which let you prove a fresh install end to end, `--engine
+LibRadTran` compiles libRadtran, and `--check` reports what is already in
+place and downloads nothing. Run `--check` first if you are unsure: it is the
+fastest way to find out what a machine still needs.
 
 **Where the assets go.** By default, `~/.isofit`. On a shared machine, give
 every user the same directory instead, so the 6 GB is fetched once rather than
@@ -198,12 +259,22 @@ hyperproc only points it at the base you name. Do not put it inside the
 package or the environment: `pip install -U` and a rebuilt environment both
 take it with them.
 
-**Platforms.** The core - readers, topographic and BRDF correction, spectral
-transforms, quality, resampling, export - runs on Linux, macOS and Windows.
-`[atmos]` is Linux and macOS only: ISOFIT pulls ray and torch, and neither
-compiled engine builds on Windows. `hyperproc-atmos-setup --check` downloads
-nothing and names whatever is still missing, with the command that supplies
-it.
+**Platforms.** Linux and macOS are what this is developed and run on.
+
+Every dependency of the core and of `[search]`, `[srf]`, `[search-map]` and
+`[brdf]` publishes a Windows wheel or is pure Python, so they should install
+natively on Windows - but nothing here has been run there, so treat that as
+untested rather than supported.
+
+`[atmos]` will not work on Windows, and that is not a packaging gap: the
+engines are compiled on the machine, 6S in Fortran and libRadtran in C and
+Fortran against GSL, and neither builds with the Microsoft toolchain. On
+Windows use **WSL2**, which makes the Linux instructions above apply exactly
+as written, including the `conda install -c conda-forge gfortran make gcc gsl`
+line.
+
+`hyperproc-atmos-setup --check` downloads nothing and names whatever is still
+missing, with the command that supplies it.
 
 Searching an archive needs no account. Downloading needs the archive's own,
 and all of them are free:
@@ -244,9 +315,11 @@ pytest -m "not data"
 pytest -m network
 ```
 
-`pytest` runs all 711 tests in about seven minutes. `-m "not data"` runs the
-493 that need no granules, and `-m network` adds the 6 that check the archives
-still behave as recorded.
+The current checkout collects **748 tests** (`pytest --collect-only -q`).
+Collection is an inventory, not a passing full-suite result. Use
+`-m "not data and not network"` for offline tests without private granules;
+`-m "not data"` still includes live archive checks. `-m network` selects
+those checks explicitly.
 
 Most tests have an answer known in advance rather than a recorded snapshot: a
 straight line has a flat derivative, resampling onto the grid you are already on
@@ -262,7 +335,7 @@ Four groups are worth naming:
   `pracma` and `FieldSpectroscopyCC`);
 * **atmos** - the parts that can be checked without a retrieval: the sensor
   table, the MODTRAN atmosphere choice, DEM tile naming, config rewriting;
-* **archive** - 212 tests. Every search replays a recorded response from CMR,
+* **archive** - 230 collected tests. Every search replays a recorded response from CMR,
   NEON and DLR, so the whole of `hyperproc.search` runs offline. Re-record with
   `python tests/tools/make_archive_fixtures.py`, and read the diff. The six
   `network` tests ask whether the recordings are still true, and two of them

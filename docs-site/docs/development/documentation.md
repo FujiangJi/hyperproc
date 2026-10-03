@@ -53,7 +53,7 @@ These checks never import hyperproc or execute example code. The dependency
 table and citation date come directly from `pyproject.toml` and `CITATION.cff`;
 the source-hash manifest includes the package README, maintained guides,
 templates, styles, scripts, and source artwork so documentation checks detect
-a changed input snapshot. Run `python manage.py build` after revisions;
+a changed input snapshot. Unresolved and malformed snapshot placeholders are rejected in rendered pages. Run `python manage.py build` after revisions;
 `python manage.py check` reports stale build inputs instead of silently treating
 old rendered pages as current.
 

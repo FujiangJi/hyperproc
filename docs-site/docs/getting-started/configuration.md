@@ -49,3 +49,14 @@ ISOFIT's asset base defaults to `~/.isofit` and is recorded in
 sets a shared base; `--check` reports missing assets and build tools without
 downloading them. See [installation](installation.md) for the compiler and GSL
 requirements of each engine.
+
+## netCDF configuration diagnostics
+
+The current release checks `.ncrc`, `.daprc`, and `.dodsrc` for a missing final
+newline. Atmospheric setup repairs affected home-directory files by appending
+one newline; `--check` only reports them. CMR checks after Earthdata login and
+warns. Before an ISOFIT subprocess, the atmospheric runner checks both the
+home directory and the work directory unless `NCRCENV_RC` is already set.
+That environment variable selects an explicit netCDF configuration file;
+its contents and final newline are the caller's responsibility. Details and
+repair commands are in [troubleshooting](../project/troubleshooting.md).

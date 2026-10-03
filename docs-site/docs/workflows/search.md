@@ -62,6 +62,21 @@ DLR downloads use the provider's CAS sign-on form. The backend does not use HTTP
 
 See [data access](../getting-started/data-access.md) for credential names and search coverage. Unsupported instruments or levels raise an explanatory error; an empty supported search can mean no observations match the query or no processed product was published.
 
+## Interrupted DLR downloads
+
+The DLR backend keeps incomplete transfers beside the final file as `*.part`.
+It resumes from the saved byte offset with an HTTP Range request when the
+server supports it, including on a later `hp.download()` call. A server that
+ignores Range causes the partial file to be overwritten by a complete
+transfer rather than appended twice. When the server supplies a total size,
+a short transfer is retried before the file receives its final name.
+
+Connections that add bytes reset the no-progress retry counter. Repeated
+failures without progress use increasing waits and eventually stop, leaving
+the partial file for another attempt. Permission errors are not retried.
+Existing nonempty final files are reused; this is not a checksum verification.
+This recovery behavior is specific to DLR, not a promise about every backend.
+
 ## Draw and select in a notebook
 
 ```python

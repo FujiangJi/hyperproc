@@ -24,6 +24,7 @@ Optional capabilities may need their extras in the test environment. The package
 - Reader tests check recorded metadata fingerprints and physical invariants against provisioned granules.
 - The R-compatible spline route uses retained reference spectra/results from R.
 - Archive tests replay fixtures from CMR, NEON, and DLR and test map state without requiring live queries. `tests/tools/make_archive_fixtures.py` refreshes recordings; review their changes.
+- New offline regressions check netCDF configuration detection/repair, interrupted DLR transfers and Range behavior, and small-window neighbor-count consistency.
 - Tests marked `network` check live archive behavior separately, including sign-on assumptions.
 - Saved notebook outputs document historical examples; they are not fresh regression-test results.
 

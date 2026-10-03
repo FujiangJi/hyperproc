@@ -12,13 +12,24 @@ The current package provides:
 - Archive search and download across NASA CMR, NEON Data API, and DLR EOC STAC, plus an optional interactive notebook map.
 - Packaging metadata, installation extras, the atmospheric setup console command, an MIT license, and software citation metadata.
 
-## Revisions in the current checkout
+## Changes for 0.1.2
 
-- Earthdata download errors now recommend a persisted `earthaccess.login(persist=True)` login or environment credentials.
-- Atmospheric setup help documents the default `~/.isofit` asset base and a shared `--base` directory.
-- Earth Engine and published SRF dependency errors recommend the `brdf` and `srf` extras.
-- Setuptools discovers `hyperproc*` packages, so new subpackages such as `hyperproc.archive` are included without a hand-maintained package list.
-- Package version, citation metadata, installation requirements, and example-pipeline setup guidance were updated.
+- DLR downloads resume incomplete `*.part` files, retry dropped connections,
+  and detect short transfers when the server announces a total size. Progress
+  resets the retry counter; permission failures are not retried.
+- A new internal netCDF configuration helper detects missing final newlines
+  in `.ncrc`, `.daprc`, and `.dodsrc`. Atmospheric setup repairs home-directory
+  files, `--check` reports them, and CMR/ISOFIT entry points warn when needed.
+- Atmospheric neighbor caps use a conservative estimate that existing
+  segmentation labels can lower but cannot raise, improving small-window reuse.
+- Installation guidance distinguishes core Python requirements from ISOFIT's
+  supported range, clarifies Windows/WSL expectations, and includes Miniconda,
+  the SRF/notebook extras, and optional ISOFIT example assets.
+- Example pipeline inputs and outputs move beside the scripts under
+  `py_tests/0_src_code/`. Terminal credential prompts, explicit download failure
+  messages, scene pairing, and DLR policy acceptance are documented.
+- Package version and software citation metadata identify 0.1.2 with the
+  declared release date {{ citation_date }}. Publication is a separate action.
 
 ## Website update for the current package
 

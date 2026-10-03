@@ -25,6 +25,38 @@ build tools, which pip does not supply. Run `hyperproc-atmos-setup --check`
 or `--check --engine LibRadTran` to see missing tools/assets without downloads.
 See [installation](../getting-started/installation.md).
 
+## ISOFIT workers crash or report a netCDF configuration warning
+
+Check the `.ncrc`, `.daprc`, and `.dodsrc` paths named by the warning. A
+nonempty file without a final newline is flagged by the current package's
+netCDF diagnostic. `hyperproc-atmos-setup --check` reports affected
+home-directory files; running setup appends the missing newline there.
+For a specific affected file, append only the final newline, for example:
+
+```bash
+printf '\n' >> "$HOME/.dodsrc"
+```
+
+Use the actual path from the warning. Work-directory files need the same
+repair if reported. Alternatively, set `NCRCENV_RC` to a newline-terminated
+copy; when that variable is present, the atmospheric runner skips its default
+home/work scan. This addresses the reported configuration issue, not every
+possible retrieval or worker failure.
+
+## DLR download leaves a .part file
+
+A `.part` file retains bytes from an unfinished transfer. Rerun the same
+selected download to resume when the server supports Range. No-progress
+failures eventually stop; the file is retained for a later call. Check the
+reported exception and account access rather than renaming the partial file
+as a finished product. See [DLR recovery](../workflows/search.md#interrupted-dlr-downloads).
+
+## Atmospheric extra does not install on Python 3.13
+
+Use a Python 3.12 environment. The ISOFIT 4.1.5 installation used for this
+release requires Python `>=3.11,<3.13`, while hyperproc's core requirement
+remains {{ python_requires }}. See [installation](../getting-started/installation.md).
+
 ## Missing CRS on export
 
 Determine whether the input is a geolocated swath, a raw detector grid, or a product missing metadata. Use the correct GLT/georeferencing path where available. Do not assign a CRS solely to silence the writer.

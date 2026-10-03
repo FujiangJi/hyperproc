@@ -40,6 +40,7 @@ CONFIG = SensorConfig(
     subset="isel",            # both levels are the same swath
     source="cmr",
     search=("PACE", "L1B", "L2"),
+    scene="PACE_OCI.20251028T191029.L1B*",         # the swath the window is on
     pair=mate,
     note="the L1B is TOA reflectance, not radiance; both levels are a swath",
 )

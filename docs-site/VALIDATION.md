@@ -1,14 +1,27 @@
 # Local website verification
 
-This report covers the documentation update for the current hyperproc 0.1.1
+This report covers the documentation update for the current hyperproc 0.1.2
 checkout. Package source and original tutorial notebooks were not edited by the homepage redesign. The website uses the v3 Spectral Ribbon logo family and a generated forest-and-mountain hero. The static build does not execute notebooks.
+
+## 0.1.2 revision verification — passed
+
+Current package and citation metadata agree on 0.1.2 and 2026-10-03.
+126 relevant offline package regressions passed (3 deselected); full test
+collection found 748 tests, without executing the full suite. Chromium checked
+all 54 API module version labels, the new internal netCDF helper, current
+source/guide behavior, installation constraints, release/citation dates,
+and desktop/mobile layouts. Five guide-auditor tests passed. The detailed
+review is [REVISION_REVIEW_0.1.2.md](REVISION_REVIEW_0.1.2.md).
+
+The remaining visual/interaction evidence below includes checks from earlier
+website updates; it does not imply that every old interaction test was rerun.
 
 ## Automated checks — passed
 
 - MkDocs 1.6.1 strict build using the pinned documentation requirements.
-- 120 generated HTML pages, including the 404 page and the PACE migration notice.
-- 50,774 local link, asset, and fragment references checked; external URLs excluded.
-- All 459 indexed top-level functions/classes and 68 public class methods/properties rendered across 53 source modules.
+- 121 generated HTML pages, including the 404 page and the PACE migration notice.
+- 51,328 local link, asset, and fragment references checked; external URLs excluded.
+- All 465 indexed top-level functions/classes and 68 public class methods/properties rendered across 54 source modules.
 - All 17 current downloadable notebooks match their originals byte-for-byte.
 - Package module inventory and source hashes match the generation manifest. Maintained guides, README/metadata, templates, styles, scripts, artwork, and vendored assets are also checked against the generation snapshot.
 - Package metadata hashes and copied LICENSE/CITATION.cff match their originals.
@@ -75,7 +88,7 @@ Screenshots: `/tmp/hyperproc-navigation-home-desktop.png`,
 `/tmp/hyperproc-navigation-home-phone.png`, and
 `/tmp/hyperproc-navigation-tutorial-phone.png`.
 
-## Current package revision browser checks — passed
+## Previous 0.1.1 revision browser checks — passed
 
 Chromium verified the version 0.1.1 label on all 53 API module pages, current source text for the four changed modules, the generated dependency table, citation/release dates, and the BRDF installation instruction in all 11 edited tutorials. API, installation, and home pages have no horizontal page overflow at 390 px; API was also checked at desktop width. No JavaScript errors were reported. The detailed findings are in [REVISION_REVIEW.md](REVISION_REVIEW.md).
 

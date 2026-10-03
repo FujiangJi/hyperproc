@@ -26,6 +26,7 @@ import fnmatch
 import os
 import re
 import textwrap
+import time
 from html.parser import HTMLParser
 from urllib.parse import urljoin
 from concurrent.futures import ThreadPoolExecutor
@@ -38,6 +39,15 @@ from hyperproc.archive.results import Granule, Results, plural
 
 #: DLR EOC Geoservice STAC. Overridable for testing against a mirror.
 BASE = os.environ.get("DLR_STAC_URL", "https://geoservice.dlr.de/eoc/ogc/stac/v1")
+
+#: A download gives up after this many broken connections **in a row that
+#: added nothing** to the file. DLR's file server ends a connection after
+#: roughly 75 MB, so a 650 MB EnMAP L1C image takes eight or nine of them;
+#: counting every break would fail a download that was steadily getting
+#: there. A connection that added bytes resets the count and is followed
+#: after BACKOFF_S; one that added none waits twice as long as the last.
+RETRIES = 5
+BACKOFF_S = 5.0
 
 #: Where an account comes from, per mission. Both missions' files sit on one
 #: server behind one sign-on, but access is granted separately, through two
@@ -546,6 +556,88 @@ def _granule(item: dict, sensor: str, level: str, collection: str,
     )
 
 
+def _content_range(r) -> tuple[int | None, int | None]:
+    """``(first byte, total size)`` from a 206 or 416 answer, None where absent."""
+    m = re.match(r"bytes\s+(?:(\d+)-\d+|\*)/(\d+)", r.headers.get("Content-Range", ""))
+    if not m:
+        return None, None
+    return (int(m.group(1)) if m.group(1) else None), int(m.group(2))
+
+
+def _retryable(exc: BaseException) -> bool:
+    """A dropped or stalled connection, or the server failing on its own side."""
+    from requests import exceptions as rex
+    if isinstance(exc, (rex.ChunkedEncodingError, rex.ConnectionError, rex.Timeout)):
+        return True
+    resp = getattr(exc, "response", None)
+    return isinstance(exc, rex.HTTPError) and resp is not None and resp.status_code >= 500
+
+
+def _stream(session, url: str, dest: Path, tmp: Path, key: str,
+            seen: dict | None = None) -> int:
+    """Write ``url`` into ``tmp``, carrying on from whatever ``tmp`` already holds.
+
+    The rest is asked for with a Range header. A server that honours it
+    answers 206 and the bytes are appended; one that ignores it answers 200
+    with the whole file, which then overwrites the partial one - appending a
+    second full copy would make a file that looks finished and is not.
+
+    Compression is refused (``Accept-Encoding: identity``) because byte ranges
+    and the announced size count the bytes on the wire, and a decoded stream
+    would match neither.
+
+    ``seen["appending"]`` is set before the first byte is written, so a caller
+    whose transfer then breaks can tell bytes added from a file rewritten.
+
+    Returns the byte the transfer resumed at, 0 when the file came whole.
+
+    Raises:
+        requests.exceptions.ChunkedEncodingError: fewer bytes arrived than the
+            server announced, so a short file is retried rather than renamed
+            into place looking finished.
+    """
+    from requests import exceptions as rex
+
+    have = tmp.stat().st_size if tmp.exists() else 0
+    headers = {"Accept-Encoding": "identity"}
+    if have:
+        headers["Range"] = f"bytes={have}-"
+    with session.get(url, stream=True, timeout=300, headers=headers) as r:
+        if r.status_code in (401, 403) or "sso." in r.url:
+            raise PermissionError(
+                f"DLR refused {dest.name} after signing in - the account is "
+                f"probably not cleared for {key}. {needs_login(key)}")
+        if r.status_code == 416:                   # nothing past `have` to send
+            _, total = _content_range(r)
+            if total == have:
+                return have                        # the partial file was whole
+            tmp.unlink()
+            raise rex.ChunkedEncodingError(
+                f"{tmp.name} holds {have:,d} bytes of a {total or '?'}-byte file; "
+                f"starting it again")
+        r.raise_for_status()
+        start, total = 0, None
+        if r.status_code == 206:
+            start, total = _content_range(r)
+            if start != have:
+                tmp.unlink()
+                raise rex.ChunkedEncodingError(
+                    f"asked for byte {have:,d} and was sent byte {start}; "
+                    f"starting {dest.name} again")
+        elif "Content-Length" in r.headers and not r.headers.get("Content-Encoding"):
+            total = int(r.headers["Content-Length"])
+        if seen is not None:
+            seen["appending"] = bool(start)
+        with open(tmp, "ab" if start else "wb") as fh:
+            for chunk in r.iter_content(1 << 20):
+                fh.write(chunk)
+    got = tmp.stat().st_size
+    if total is not None and got != total:
+        raise rex.ChunkedEncodingError(
+            f"{got:,d} of {total:,d} bytes of {dest.name} arrived")
+    return start
+
+
 def download(results, out_dir: str | Path = "data", workers: int = 4,
              user: str | None = None, password: str | None = None,
              accept_policy: bool = False, verbose: bool = True) -> list[Path]:
@@ -561,6 +653,13 @@ def download(results, out_dir: str | Path = "data", workers: int = 4,
 
     ``accept_policy=True`` agrees to DLR's Acceptable Usage Policy from here;
     without it, a pending policy stops the download and says where to read it.
+
+    A file whose connection breaks is resumed from the bytes already written,
+    where the server allows it, for as long as each connection adds some; it
+    gives up after :data:`RETRIES` breaks in a row that add nothing. Until it
+    is whole it sits beside its final name as ``*.part``, so a later call
+    carries on from it too, and a file shorter than the server announced is
+    never renamed into place.
     """
     requests = _requests()
     if isinstance(results, Granule):
@@ -606,19 +705,41 @@ def download(results, out_dir: str | Path = "data", workers: int = 4,
         dest = out / url.rsplit("/", 1)[-1]
         if dest.exists() and dest.stat().st_size > 0:
             return dest
-        with sessions[key].get(url, stream=True, timeout=300) as r:
-            if r.status_code in (401, 403) or "sso." in r.url:
-                raise PermissionError(
-                    f"DLR refused {dest.name} after signing in - the account is "
-                    f"probably not cleared for {key}. {needs_login(key)}")
-            r.raise_for_status()
-            tmp = dest.with_suffix(dest.suffix + ".part")
-            with open(tmp, "wb") as fh:
-                for chunk in r.iter_content(1 << 20):
-                    fh.write(chunk)
-            tmp.replace(dest)
+        tmp = dest.with_suffix(dest.suffix + ".part")
+        stalls = 0                          # breaks in a row that added nothing
+        while True:
+            had = tmp.stat().st_size if tmp.exists() else 0
+            seen: dict = {}
+            try:
+                start = _stream(sessions[key], url, dest, tmp, key, seen)
+                break
+            except Exception as exc:
+                if not _retryable(exc):
+                    raise
+                held = tmp.stat().st_size if tmp.exists() else 0
+                # Progress is bytes added. A server that ignores Range rewrites
+                # the file from 0, which is not progress however far it gets -
+                # counting it would let such a server loop for ever.
+                added = held > had and (seen.get("appending") or had == 0)
+                stalls = 0 if added else stalls + 1
+                if stalls > RETRIES:
+                    raise ConnectionError(
+                        f"{dest.name}: {stalls} connections in a row broke without "
+                        f"adding a byte ({type(exc).__name__}: {exc}). The "
+                        f"{held / 1e6:,.0f} MB that arrived are kept in "
+                        f"{tmp.name}, and a later download carries on from "
+                        f"there.") from exc
+                wait = BACKOFF_S * 2 ** stalls
+                if verbose:
+                    count = "" if added else f", {stalls} of {RETRIES} with no progress"
+                    print(f"  {dest.name}: connection broke at {held / 1e6:,.0f} MB "
+                          f"({type(exc).__name__}); resuming in {wait:.0f} s{count}")
+                time.sleep(wait)
+        tmp.replace(dest)
         if verbose:
-            print(f"  {dest.name}  {dest.stat().st_size / 1e6:,.0f} MB")
+            note = (f"  (resumed at {start / 1e6:,.0f} MB)" if start else
+                    "  (the server would not resume, so it came whole)" if had else "")
+            print(f"  {dest.name}  {dest.stat().st_size / 1e6:,.0f} MB{note}")
         return dest
 
     with ThreadPoolExecutor(max_workers=max(1, int(workers))) as pool:

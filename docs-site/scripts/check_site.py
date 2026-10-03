@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 import hashlib
 import json
+import re
 import sys
 from audit_guides import audit, maintained_pages
 
@@ -32,8 +33,8 @@ def main():
         errors.append('No built HTML found; run python manage.py build first.')
     checked = 0
     for path, page in pages.items():
-        if any('{{ ' + name + ' }}' in path.read_text(encoding='utf-8') for name in ('source_version', 'python_requires', 'api_modules', 'functions_and_classes', 'class_members', 'citation_date', 'dependency_table', 'notebooks', 'saved_figures')):
-            errors.append(f'Unresolved snapshot label: {path.relative_to(SITE)}')
+        if re.search(r'\{+\s*(?:source_version|python_requires|api_modules|functions_and_classes|class_members|citation_date|dependency_table|notebooks|saved_figures)\s*\}+', path.read_text(encoding='utf-8')):
+            errors.append(f'Unresolved or malformed snapshot label: {path.relative_to(SITE)}')
         # Material's standalone 404 template intentionally has deployment-root-relative links.
         if path.name == '404.html':
             continue

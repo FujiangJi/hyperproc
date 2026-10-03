@@ -20,11 +20,65 @@ print(hp.__version__)
 print(hp.__file__)
 ```
 
+## If you do not have conda yet
+
+Not sure which you have? `uname -m` prints `arm64` on Apple silicon and
+`x86_64` on an Intel Mac; on Linux it prints `x86_64` or `aarch64`. Pick the
+box, copy all four lines, run them.
+
+**Mac, Apple silicon (M1-M4)**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+bash Miniconda3-latest-MacOSX-arm64.sh
+source ~/.zshrc
+conda --version
+```
+
+**Mac, Intel**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+bash Miniconda3-latest-MacOSX-x86_64.sh
+source ~/.zshrc
+conda --version
+```
+
+**Linux, Intel/AMD (x86-64)**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+conda --version
+```
+
+**Linux, ARM (aarch64)**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+bash Miniconda3-latest-Linux-aarch64.sh
+source ~/.bashrc
+conda --version
+```
+
+**Windows**: use WSL2, then follow the Linux box for your chip. Every Linux
+instruction on this page then applies exactly as written.
+
+The installer asks you to accept the licence, choose a location, and whether
+to initialise your shell. **Answer yes to the last one** - that is what makes
+the `source` line work. If `conda --version` still says the command is not
+found, the shell was never initialised: run `conda init zsh` on macOS or
+`conda init bash` on Linux, then open a new terminal.
+
 ## Requirements
 
-**Python 3.11 or newer.** Developed and tested on **3.12**; 3.13 is declared
-and expected to work. 3.14 resolves and installs, but nothing has been run on
-it, and `[atmos]` is unlikely to work there until torch and ray catch up.
+**Use Python 3.12**, the package's development and testing target. The core
+package declares **Python {{ python_requires }}**. The current ISOFIT 4.1.5
+metadata requires `>=3.11,<3.13`, so the atmospheric installation used here
+must stay below 3.13; this is an upstream constraint rather than a change to
+hyperproc's core requirement. Core-only 3.13 is expected to work; the README
+reports that 3.14 installs but has not been exercised.
 
 The Python dependencies do not need installing first. `pip install hyperproc`
 brings NumPy, xarray, Dask, rasterio, rioxarray, h5py, netCDF4, h5netcdf,
@@ -40,10 +94,26 @@ these.
 | `gfortran`, `make` | every engine, including the default | sRTMnet compiles 6S underneath |
 | `gcc`, `gsl` | `--engine LibRadTran` only | take GSL from conda-forge even if the system has one |
 
+Everything, in one block. Drop the lines for anything you do not want; the
+sections below explain each one.
+
 ```bash
 conda create -n hyperproc python=3.12
 conda activate hyperproc
 conda install -c conda-forge gfortran make gcc gsl
+
+pip install hyperproc
+pip install 'hyperproc[search]'
+pip install 'hyperproc[srf]'
+pip install 'hyperproc[search-map]'
+pip install 'hyperproc[brdf]'
+pip install 'hyperproc[atmos]'
+pip install 'hyperproc[notebooks]'
+
+hyperproc-atmos-setup
+hyperproc-atmos-setup --examples
+hyperproc-atmos-setup --engine LibRadTran
+hyperproc-atmos-setup --check
 ```
 
 The example pipelines under `py_tests/` draw figures and so need matplotlib,
@@ -76,17 +146,26 @@ transitive constraints during installation.
 
 ## Platforms and atmospheric assets
 
-The package README describes the core as available on Linux, macOS, and Windows, with atmospheric correction on Linux/macOS. A declared platform is separate from a tested dependency/platform matrix.
+Linux and macOS are what this is developed and run on. Every dependency of the core and of `[search]`, `[srf]`, `[search-map]` and `[brdf]` publishes a Windows wheel or is pure Python, so those should install natively on Windows - untested rather than supported. `[atmos]` will not: its engines are compiled on the machine, 6S in Fortran and libRadtran in C and Fortran against GSL, and neither builds with the Microsoft toolchain. On Windows use WSL2, which makes the Linux instructions apply exactly as written. A declared platform is separate from a tested dependency/platform matrix.
 
 After installing the atmospheric extra:
 
 ```bash
 hyperproc-atmos-setup
-hyperproc-atmos-setup --check
+hyperproc-atmos-setup --examples
 hyperproc-atmos-setup --engine LibRadTran
+hyperproc-atmos-setup --check
 ```
 
-The third line is optional; it adds the libRadtran engine. Setup downloads several GB of engines and data assets and records their base in ISOFIT's own `~/.isofit/isofit.ini`. The base defaults to `~/.isofit`; pass `--base /data/shared/isofit_assets` to put it somewhere every user of a shared machine can read, so the assets are fetched once. It does not belong inside the package or the environment, which a reinstall would discard. Building 6S needs `gfortran` and `make`; libRadtran needs C/Fortran tooling and GSL. Inspect [configuration and external assets](configuration.md) before running retrievals.
+Only the first line provisions the default assets; the other commands are optional. `--examples` adds ISOFIT's own tutorial scenes
+(about 340 MB), which nothing in hyperproc reads but which let you prove a
+fresh install end to end; `--engine LibRadTran` adds the libRadtran engine;
+`--check` reports what is present and downloads nothing. Setup downloads several GB of engines and data assets and records their base in ISOFIT's own `~/.isofit/isofit.ini`. The base defaults to `~/.isofit`; pass `--base /data/shared/isofit_assets` to put it somewhere every user of a shared machine can read, so the assets are fetched once. It does not belong inside the package or the environment, which a reinstall would discard. Building 6S needs `gfortran` and `make`; libRadtran needs C/Fortran tooling and GSL. Inspect [configuration and external assets](configuration.md) before running retrievals.
+
+Setup also checks the home-directory `.ncrc`, `.daprc`, and `.dodsrc` files
+and appends a missing final newline when needed. `--check` reports that issue
+without modifying the files. Atmospheric retrieval checks the home and work
+directories and warns before launching ISOFIT; see [troubleshooting](../project/troubleshooting.md).
 
 For satellite BRDF downloads, authenticate Earth Engine with `earthengine authenticate` and configure an authorized project. Archive downloads use separate credentials; see [data access](data-access.md).
 

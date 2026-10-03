@@ -2,10 +2,12 @@
 from __future__ import annotations
 
 from datetime import datetime
+import warnings
 from pathlib import Path
 from typing import Any
 
 from hyperproc.archive.collections import resolve
+from hyperproc._ncrc import rc_warning, unterminated_rc_files
 from hyperproc.archive.results import Granule, Results, plural
 
 #: Earthdata login page, quoted in the error when a download has no credentials.
@@ -186,6 +188,12 @@ def download(results, out_dir: str | Path = "data", workers: int = 8,
             "once - it asks for the username and password and writes ~/.netrc - or set "
             "EARTHDATA_USERNAME and EARTHDATA_PASSWORD instead."
         ) from exc
+
+    # earthaccess writes ~/.dodsrc here, without a trailing newline, and that
+    # is what makes netCDF4 crash later inside ISOFIT. Catch it at the source.
+    bad = unterminated_rc_files()
+    if bad:
+        warnings.warn(rc_warning(bad), RuntimeWarning, stacklevel=2)
 
     files = ea.download(granules, local_path=str(out), threads=workers)
     paths = [Path(f) for f in files if f]

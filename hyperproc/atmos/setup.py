@@ -18,6 +18,8 @@ from __future__ import annotations
 
 import importlib
 import shutil
+
+from hyperproc._ncrc import terminate_rc_file, unterminated_rc_files
 import sys
 from pathlib import Path
 
@@ -132,6 +134,10 @@ def check(engines=("sRTMnet",), verbose: bool = True) -> dict:
 
     report["ini"] = str(env.ini)
     report["base"] = str(getattr(env, "base", "")) or None
+    for rc in unterminated_rc_files():
+        report["missing"].append(
+            f"{rc}: printf '\\n' >> {rc}   (no newline at the end; netCDF-C "
+            f"reads past it and ISOFIT's workers crash at random)")
     needed_tools = sorted({t for k in _assets_for(engines) for t in COMPILERS.get(k, ())})
     for tool in needed_tools:
         # the conda environment's own bin (gsl-config lives there) counts even when it is not on PATH
@@ -218,6 +224,10 @@ def setup(base: str | None = None, engines=("sRTMnet",), examples: bool = False,
         env.save(diff_only=False)
         if verbose:
             print(f"ISOFIT assets base -> {env.base}  (saved to {env.ini})")
+    for rc in unterminated_rc_files():
+        if terminate_rc_file(rc) and verbose:
+            print(f"{rc}: added the missing newline at the end of the file "
+                  f"(netCDF-C reads past a last line without one)")
     keys = _assets_for(engines)
     missing_tools = [t for k in keys for t in COMPILERS.get(k, ())
                      if shutil.which(t) is None and shutil.which(t, path=str(Path(sys.prefix) / "bin")) is None]

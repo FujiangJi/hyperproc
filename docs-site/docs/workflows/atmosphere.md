@@ -66,6 +66,20 @@ The standardized radiance units are µW cm⁻² nm⁻¹ sr⁻¹. The implementat
 | `config_overrides` | Advanced ISOFIT settings; record every override |
 | `segmentation_size` | Superpixel configuration, affecting resources and interpolation |
 
+## Small windows and analytical-line neighbors
+
+`resolve_neighbors()` caps requested counts using the valid pixel fraction,
+window size, and `segmentation_size`, with a minimum of five. The conservative
+estimate is half the nominal segment count. If a previous label image is
+available, 80% of its measured segment count can lower the cap, but never
+raise it. This avoids a larger neighbor request merely because a completed
+work directory now has a label image, while allowing a smaller measured
+segmentation to reduce the request after a failure.
+
+The atmospheric runner also checks netCDF configuration files before starting
+ISOFIT. Setup can repair missing final newlines; the runner warns rather than
+editing those files. See [configuration](../getting-started/configuration.md).
+
 ## Optional satellite BRDF stage
 
 `stages=("ac", "brdf")` enables the satellite normalization route. Airborne grouped correction belongs in the separate [airborne workflow](airborne.md), not this stage list.

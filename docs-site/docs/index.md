@@ -20,7 +20,58 @@ hide:
 
 **Find, read, inspect, correct, and prepare airborne and satellite hyperspectral data through a shared Python interface.** hyperproc brings sensor-specific products into `xarray`, with processing tools for terrestrial ecosystem research and other imaging-spectroscopy applications.
 
-**Installation · Python {{ python_requires }}**
+**No conda yet?**
+
+Not sure which you have? `uname -m` prints `arm64` on Apple silicon and
+`x86_64` on an Intel Mac; on Linux it prints `x86_64` or `aarch64`. Pick the
+box, copy all four lines, run them.
+
+**Mac, Apple silicon (M1-M4)**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+bash Miniconda3-latest-MacOSX-arm64.sh
+source ~/.zshrc
+conda --version
+```
+
+**Mac, Intel**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+bash Miniconda3-latest-MacOSX-x86_64.sh
+source ~/.zshrc
+conda --version
+```
+
+**Linux, Intel/AMD (x86-64)**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+conda --version
+```
+
+**Linux, ARM (aarch64)**
+
+```bash
+curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+bash Miniconda3-latest-Linux-aarch64.sh
+source ~/.bashrc
+conda --version
+```
+
+**Windows**: use WSL2, then follow the Linux box for your chip. Every Linux
+instruction on this page then applies exactly as written.
+
+The installer asks you to accept the licence, choose a location, and whether
+to initialise your shell. **Answer yes to the last one** - that is what makes
+the `source` line work. If `conda --version` still says the command is not
+found, the shell was never initialised: run `conda init zsh` on macOS or
+`conda init bash` on Linux, then open a new terminal.
+
+**Installation · Python {{ python_requires }} · Use Python 3.12 for atmospheric correction**
 
 ```bash
 conda create -n hyperproc python=3.12
@@ -29,35 +80,38 @@ conda install -c conda-forge gfortran make gcc gsl
 
 pip install hyperproc
 pip install 'hyperproc[search]'
+pip install 'hyperproc[srf]'
 pip install 'hyperproc[search-map]'
 pip install 'hyperproc[brdf]'
 pip install 'hyperproc[atmos]'
+pip install 'hyperproc[notebooks]'
+
+hyperproc-atmos-setup
+hyperproc-atmos-setup --examples
+hyperproc-atmos-setup --engine LibRadTran
+hyperproc-atmos-setup --check
 ```
 
-The `conda install` line supplies the compilers the atmospheric engines are
-built from; pip cannot. Everything else `pip install hyperproc` needs, it
-installs itself.
+That is the whole installation. The `conda install` line supplies the
+compilers the atmospheric engines are built from, which pip cannot; everything
+else `pip install hyperproc` needs, it installs itself.
 
 | Extra | Adds |
 |---|---|
 | *(none)* | readers, correction, export |
 | `search` | archive search and download |
+| `srf` | published Sentinel-2 and Landsat response functions |
 | `search-map` | interactive notebook maps (ipyleaflet) |
 | `brdf` | Earth Engine for satellite BRDF |
 | `atmos` | ISOFIT atmospheric correction |
+| `notebooks` | JupyterLab, matplotlib and pandas |
 
-`[atmos]` also needs its engines and data assets, once per machine:
-
-```bash
-hyperproc-atmos-setup
-hyperproc-atmos-setup --engine LibRadTran
-hyperproc-atmos-setup --check
-```
-
-The first line installs the engines and data assets (~6 GB) under `~/.isofit`,
-`--engine LibRadTran` is optional, and `--check` inspects what is already
-installed. On a shared machine, add `--base /data/shared/isofit_assets` so
-every user reads one copy.
+The `hyperproc-atmos-setup` lines run once per machine and matter only for
+`[atmos]`. The first installs the engines and data assets (~6 GB) under
+`~/.isofit`; `--examples` adds ISOFIT's tutorial scenes (~340 MB),
+`--engine LibRadTran` compiles libRadtran, and `--check` reports what is
+already in place without downloading anything. On a shared machine, add
+`--base /data/shared/isofit_assets` so every user reads one copy.
 
 [Installation guide: environments, optional features, and setup requirements](getting-started/installation.md)
 

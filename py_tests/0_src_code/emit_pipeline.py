@@ -29,6 +29,7 @@ CONFIG = SensorConfig(
     subset="detector",                             # detector grid -> ground
     source="cmr",
     search=("EMIT", "L1B", "L2A"),
+    scene="EMIT_L1B_RAD_002_20230401T203751*",     # the granule the window is on
     pair=("L1B_RAD", "L2A_RFL"),                   # same overpass, both levels
     bbox=(-121.0, 34.0, -119.8, 35.1),
     date=("2023-01-01", "2024-12-31"),

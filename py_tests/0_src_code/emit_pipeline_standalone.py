@@ -68,11 +68,11 @@ from pathlib import Path
 # --------------------------------------------------------------------------- #
 
 HERE = Path(__file__).resolve().parent          # py_tests/0_src_code
-PY_TESTS = HERE.parent                          # py_tests
+WORK = HERE                                     # 1_data and 2_outputs sit beside the scripts
 SENSOR = "EMIT"
 
-DATA = PY_TESTS / "1_data" / SENSOR
-OUT = PY_TESTS / "2_outputs" / SENSOR
+DATA = WORK / "1_data" / SENSOR
+OUT = WORK / "2_outputs" / SENSOR
 FIGS = OUT / "figures"
 
 # ISOFIT caches surface priors and elevation tiles under the output tree rather
@@ -314,7 +314,7 @@ def savefig(fig, name):
     fig.savefig(path, dpi=140, bbox_inches="tight")
     import matplotlib.pyplot as plt
     plt.close(fig)
-    say(f"figure -> {path.relative_to(PY_TESTS)}")
+    say(f"figure -> {path.relative_to(WORK)}")
     return path
 
 
@@ -343,13 +343,24 @@ def find_and_download(args, hp):
 
     if not hp.archive.can_download("EMIT", "L1B"):
         who, need = hp.archive.BACKENDS["cmr"]
-        sys.exit(f"no credentials for {who}; it needs {need}\n"
-                 f"    register, then run this once to be asked for them and have\n"
-                 f"    them written to ~/.netrc:\n"
-                 f'        python -c "import earthaccess; earthaccess.login(persist=True)"\n'
-                 f"    or set EARTHDATA_USERNAME/EARTHDATA_PASSWORD, or rerun with\n"
-                 f"    --skip-download. This script never prompts: it checks first and\n"
-                 f"    stops, so a long run cannot block on a password.")
+        say(f"{who} needs {need}")
+        # Asked here, before the first byte, so nothing long is already running.
+        # Set in this process only: no file is written, so the next run asks
+        # again. earthaccess.login(persist=True) writes ~/.netrc if you would
+        # rather be asked once per machine.
+        if sys.stdin.isatty():
+            import getpass
+            user = input("    Earthdata username (blank to skip): ").strip()
+            if user:
+                os.environ["EARTHDATA_USERNAME"] = user
+                os.environ["EARTHDATA_PASSWORD"] = getpass.getpass(
+                    "    Earthdata password: ")
+    if not hp.archive.can_download("EMIT", "L1B"):
+        sys.exit("no Earthdata credentials, so there is nothing to download.\n"
+                 "    Register free at https://urs.earthdata.nasa.gov, then either\n"
+                 "    answer the prompt above, or set EARTHDATA_USERNAME and\n"
+                 "    EARTHDATA_PASSWORD, or rerun with --skip-download to use a\n"
+                 "    pair already in 1_data/EMIT.")
 
     hits = hp.search("EMIT", "L1B", bbox=tuple(args.bbox), date=tuple(args.date),
                      cloud=(0, args.max_cloud), count=20)
@@ -369,7 +380,7 @@ def find_and_download(args, hp):
     say(f"its L2A  {mate[0].name}  ({mate[0].size_mb:,.0f} MB)")
 
     total = (pick.size_mb + mate[0].size_mb) / 1024
-    say(f"downloading {total:.1f} GB into {DATA.relative_to(PY_TESTS)} ...")
+    say(f"downloading {total:.1f} GB into {DATA.relative_to(WORK)} ...")
     t0 = time.time()
     hp.download([pick, mate[0]], DATA, workers=4)
     say(f"{(time.time() - t0) / 60:.1f} min")

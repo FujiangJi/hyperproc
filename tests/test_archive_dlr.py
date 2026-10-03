@@ -455,6 +455,144 @@ def test_downloading_nothing_does_nothing(monkeypatch, tmp_path):
 
 
 # --------------------------------------------------------------------------- #
+# a connection that breaks part way through a file                             #
+# --------------------------------------------------------------------------- #
+
+BODY = bytes(range(256)) * 40          # 10,240 bytes, every offset distinguishable
+
+
+class _Flaky:
+    """A signed-in file server whose first ``breaks`` transfers stop part way.
+
+    A breaking transfer sends ``cap`` bytes, or half of what is left when
+    ``cap`` is None. ``ranges=False`` plays a server that ignores Range and
+    sends the whole file every time; ``clean=True`` one that closes early
+    without an error, which only the announced length gives away.
+    """
+
+    def __init__(self, breaks=1, cap=None, ranges=True, clean=False):
+        self.breaks, self.cap, self.ranges, self.clean = breaks, cap, ranges, clean
+        self.headers, self.cookies, self.asked = {}, {}, []
+
+    def get(self, url, headers=None, **kw):
+        import requests
+        rng = (headers or {}).get("Range")
+        self.asked.append(rng)
+        start = int(rng[len("bytes="):-1]) if rng and self.ranges else 0
+        if start >= len(BODY):
+            r = _Resp(url, status=416)
+            r.headers = {"Content-Range": f"bytes */{len(BODY)}"}
+            return r
+        part, server = BODY[start:], self
+        cut = len(part) // 2 if self.cap is None else self.cap
+
+        class _File(_Resp):
+            def iter_content(self, n):
+                if server.breaks and cut < len(part):
+                    server.breaks -= 1
+                    yield part[:cut]
+                    if not server.clean:
+                        raise requests.exceptions.ChunkedEncodingError(
+                            "Connection broken: IncompleteRead")
+                    return
+                yield part
+
+        r = _File(url, status=206 if start else 200)
+        r.headers = {"Content-Length": str(len(part))}
+        if start:
+            r.headers["Content-Range"] = f"bytes {start}-{len(BODY) - 1}/{len(BODY)}"
+        return r
+
+
+@pytest.fixture
+def flaky(monkeypatch):
+    """``download`` one EnMAP file from a _Flaky server, with no waiting."""
+    from hyperproc.archive.results import Granule
+
+    def run(server, out):
+        monkeypatch.setattr(dlr, "_requests",
+                            lambda: type("R", (), {"Session": staticmethod(lambda: server)}))
+        monkeypatch.setattr(dlr, "credentials", lambda *a, **k: ("u", "p"))
+        monkeypatch.setattr(dlr, "sign_in", lambda *a, **k: None)
+        monkeypatch.setattr(dlr, "BACKOFF_S", 0.0)
+        g = Granule(name="g", sensor="ENMAP", level="L1C", collection="c",
+                    version=None, time=None, bbox=None, size_mb=None, cloud=None,
+                    links=["https://download.geoservice.dlr.de/ENMAP/x-SPECTRAL_IMAGE_COG.TIF"])
+        dlr.download([g], out, workers=1, verbose=False)
+        return out / "x-SPECTRAL_IMAGE_COG.TIF"
+
+    return run
+
+
+def test_a_broken_connection_resumes_where_it_stopped(flaky, tmp_path):
+    """What a 650 MB EnMAP L1C image did on its first real download."""
+    server = _Flaky(breaks=1)
+    assert flaky(server, tmp_path).read_bytes() == BODY
+    assert server.asked == [None, f"bytes={len(BODY) // 2}-"]
+
+
+def test_a_server_that_ignores_range_gets_the_file_whole_not_doubled(flaky, tmp_path):
+    """Appending a 200's full body to the half already written would leave a
+    file longer than the original that nothing downstream would question."""
+    assert flaky(_Flaky(breaks=1, ranges=False), tmp_path).read_bytes() == BODY
+
+
+def test_a_transfer_that_ends_early_without_an_error_is_not_taken_as_finished(flaky, tmp_path):
+    server = _Flaky(breaks=1, clean=True)
+    assert flaky(server, tmp_path).read_bytes() == BODY
+    assert len(server.asked) == 2
+
+
+def test_a_part_file_left_by_an_earlier_run_is_carried_on_from(flaky, tmp_path):
+    (tmp_path / "x-SPECTRAL_IMAGE_COG.TIF.part").write_bytes(BODY[:3000])
+    server = _Flaky(breaks=0)
+    assert flaky(server, tmp_path).read_bytes() == BODY
+    assert server.asked == ["bytes=3000-"]
+
+
+def test_a_part_file_that_is_already_whole_is_just_renamed(flaky, tmp_path):
+    """The server answers 416 to a range past the end; that is a finished file."""
+    (tmp_path / "x-SPECTRAL_IMAGE_COG.TIF.part").write_bytes(BODY)
+    server = _Flaky(breaks=0)
+    assert flaky(server, tmp_path).read_bytes() == BODY
+    assert server.asked == [f"bytes={len(BODY)}-"]
+
+
+def test_a_server_that_cuts_every_connection_still_finishes_while_each_adds_bytes(
+        flaky, tmp_path, monkeypatch):
+    """What DLR did on the second real download: every connection ended after
+    about 75 MB of a 648 MB image. Eleven breaks against a limit of two - only
+    breaks that add nothing may count, or this never finishes."""
+    monkeypatch.setattr(dlr, "RETRIES", 2)
+    server = _Flaky(breaks=99, cap=1000)
+    assert flaky(server, tmp_path).read_bytes() == BODY
+    assert server.asked == [None] + [f"bytes={n}-" for n in range(1000, len(BODY), 1000)]
+
+
+def test_a_server_that_neither_resumes_nor_holds_a_connection_gives_up(
+        flaky, tmp_path, monkeypatch):
+    """Rewriting the file from 0 each time is not progress however far it gets,
+    so this gives up rather than looping for ever, and keeps what arrived."""
+    monkeypatch.setattr(dlr, "RETRIES", 2)
+    server = _Flaky(breaks=99, ranges=False)
+    with pytest.raises(ConnectionError, match="without adding a byte"):
+        flaky(server, tmp_path)
+    assert len(server.asked) == 4            # the first adds bytes, then 3 stalls
+    assert not (tmp_path / "x-SPECTRAL_IMAGE_COG.TIF").exists()
+    assert (tmp_path / "x-SPECTRAL_IMAGE_COG.TIF.part").stat().st_size > 0
+
+
+def test_a_refusal_is_not_retried(monkeypatch):
+    """A wrong account fails the same way every time; retrying only delays it."""
+    import requests
+    assert not dlr._retryable(PermissionError("refused"))
+    r = requests.Response(); r.status_code = 404
+    assert not dlr._retryable(requests.HTTPError(response=r))
+    r.status_code = 503
+    assert dlr._retryable(requests.HTTPError(response=r))
+
+
+# --------------------------------------------------------------------------- #
 # the levels DLR does not publish                                              #
 # --------------------------------------------------------------------------- #
 

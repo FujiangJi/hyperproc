@@ -41,6 +41,7 @@ from pathlib import Path
 import numpy as np
 import xarray as xr
 
+from hyperproc._ncrc import rc_warning, unterminated_rc_files
 from hyperproc.atmos.aerosols import AEROSOLS
 from hyperproc.atmos.inputs import FILL, Inputs, prepare_inputs
 
@@ -310,17 +311,26 @@ def neighbor_cap(inputs: Inputs, segmentation_size: int) -> int:
 
     Asking for more neighbours than there are superpixels makes the KD-tree
     query return out-of-range indices and the analytical line crashes with an
-    IndexError. The count is measured from a previous run's label image when
-    there is one (SLIC merges small segments, so it yields fewer than
-    pixels/size: a 60 x 60 patch at size 40 gave 61, not 90), otherwise
-    estimated conservatively at half the nominal count.
+    IndexError. The count is estimated conservatively at half the nominal
+    count, and a previous run's label image, where there is one, can only
+    lower that (SLIC merges small segments, so it yields fewer than
+    pixels/size: a 60 x 60 patch at size 40 gave 61, not 90).
+
+    Only lower: taking the measured count outright made the cap - and with it
+    ``--num_neighbors`` - depend on whether the work dir had run before. On a
+    window small enough for the cap to bind, the second call then always
+    asked for different settings from the first and found its own finished
+    product "made with different settings" (45 against 72 on 60 x 60 DESIS
+    and EnMAP windows). After a crash the measured count is still what lowers
+    the retry.
     """
     ny, nx, _ = inputs.shape
+    valid = float(inputs.stats.get("valid_fraction", 1.0)) or 1.0
+    estimate = max(5, int(0.5 * valid * ny * nx / max(1, segmentation_size)))
     measured = segment_count(inputs)
     if measured:
-        return max(5, int(0.8 * measured))
-    valid = float(inputs.stats.get("valid_fraction", 1.0)) or 1.0
-    return max(5, int(0.5 * valid * ny * nx / max(1, segmentation_size)))
+        return min(estimate, max(5, int(0.8 * measured)))
+    return estimate
 
 
 def resolve_neighbors(inputs: Inputs, segmentation_size: int, num_neighbors=None) -> list:
@@ -454,6 +464,13 @@ def run_isofit(inputs: Inputs, command: list[str], timeout: float | None = None,
     env = dict(os.environ)
     for var in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS"):
         env.setdefault(var, "1")
+    # Every Ray worker imports netCDF4, and netCDF-C reads the rc files at
+    # import. One of them ending without a newline is enough to crash workers
+    # at random, so say so before a retrieval that takes minutes, not after.
+    if "NCRCENV_RC" not in env:
+        bad = unterminated_rc_files(Path.home(), work)
+        if bad:
+            warnings.warn(rc_warning(bad), RuntimeWarning, stacklevel=2)
     with open(out_txt, "w") as fh:
         proc = subprocess.run(command, stdout=fh, stderr=subprocess.STDOUT, cwd=str(work), timeout=timeout, env=env)
     rec.update(seconds=round(time.time() - t0, 1), returncode=proc.returncode)

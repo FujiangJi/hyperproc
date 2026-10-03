@@ -23,10 +23,12 @@ prisma_pipeline.py and tanager_pipeline.py. Run those, not this.
 from __future__ import annotations
 
 import argparse
+import fnmatch
 import json
 import os
 import shutil
 import sys
+import textwrap
 import time
 import warnings
 from dataclasses import dataclass, field
@@ -34,9 +36,13 @@ from datetime import datetime
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent          # py_tests/0_src_code
+WORK = HERE                                     # 1_data and 2_outputs sit beside the scripts
 PY_TESTS = HERE.parent                          # py_tests
 REPO = PY_TESTS.parent                          # the repository root
-TESTS_DATA = REPO / "tests" / "data"            # where the existing granules live
+# where the existing granules live; HYPERPROC_TESTS_DATA overrides it, which a
+# copy of these scripts outside the repository needs - REPO is wrong there
+TESTS_DATA = Path(os.environ.get("HYPERPROC_TESTS_DATA",
+                                 REPO / "tests" / "data")).expanduser()
 
 
 # --------------------------------------------------------------------------- #
@@ -66,14 +72,23 @@ class SensorConfig:
             when the window indexes the **detector** grid and both levels are
             selected by the ground it covers (EMIT).
         pair: how to find the L2 of the same acquisition from the L1's name.
-            Either ``(from, to)`` substrings, or a callable returning a search
-            pattern - PACE needs the second, because CMR prefixes its granule
-            names with the collection and the two collections differ.
-        bbox, date, max_cloud: a fresh search, used when neither 1_data nor
-            tests/data already has the scene.
+            Either ``(from, to)`` substrings, or a callable returning a glob -
+            PACE needs the second, because CMR prefixes its granule names with
+            the collection and the two collections differ, and so does EnMAP,
+            whose two levels end in different processing timestamps.
+        scene: the acquisition to download, as a glob on the name of the
+            first level the archive publishes - the L1, or the L2 where the L1
+            is not published (DESIS). The default window was chosen on this
+            scene, so pinning it keeps the window over the ground it was meant
+            for. ``None`` takes the clearest scene in ``bbox`` and ``date``.
+        bbox, date, max_cloud: where and when to search. CMR finds a pinned
+            ``scene`` by name alone; DLR's catalogue cannot search by name, so
+            EnMAP and DESIS need a box and a day that contain the scene.
         diag_nm: the wavelength every map and comparison uses.
         source: where to get the data - ``"cmr"``, ``"dlr"`` or ``"copy"``.
-        search: ``(sensor, l1_level, l2_level)`` for a searchable archive.
+        search: ``(sensor, l1_level, l2_level)`` for a searchable archive. A
+            level hyperproc cannot fetch is named here all the same; the run
+            downloads the rest, says why that one is yours to get, and stops.
         note: printed at the start, for anything a user should know up front.
     """
     name: str
@@ -87,18 +102,19 @@ class SensorConfig:
     source: str = "copy"
     search: tuple | None = None
     pair: tuple | None = None
+    scene: str | None = None
     bbox: tuple | None = None
-    date: tuple | None = None
+    date: tuple | str | None = None
     max_cloud: float = 20.0
     note: str = ""
 
     @property
     def data(self):
-        return PY_TESTS / "1_data" / self.name
+        return WORK / "1_data" / self.name
 
     @property
     def out(self):
-        return PY_TESTS / "2_outputs" / self.name
+        return WORK / "2_outputs" / self.name
 
     @property
     def figs(self):
@@ -134,9 +150,15 @@ def parse_args(cfg, argv=None):
 
     g = p.add_argument_group("where the data comes from")
     g.add_argument("--source", choices=["auto", "download", "copy"], default="auto",
-                   help=f"auto (default) downloads where the archive allows it "
-                        f"and copies from tests/data otherwise; this sensor's "
-                        f"route is '{cfg.source}'")
+                   help=f"auto (default) downloads every level the archive "
+                        f"publishes and stops to say what it does not; copy "
+                        f"takes the scene from tests/data instead. This "
+                        f"sensor's route is '{cfg.source}'")
+    g.add_argument("--accept-dlr-policy", action="store_true",
+                   help="agree to DLR's Acceptable Usage Policy when it is "
+                        "waiting on your account (EnMAP, DESIS). The first "
+                        "download stops and says where to read it; read it, "
+                        "then rerun with this")
 
     g = p.add_argument_group("how far to go")
     g.add_argument("--stage", choices=["data", "read", "ac", "brdf", "all"],
@@ -294,7 +316,7 @@ def savefig(cfg, fig, name):
     path = cfg.figs / name
     fig.savefig(path, dpi=140, bbox_inches="tight")
     plt.close(fig)
-    say(f"figure -> {path.relative_to(PY_TESTS)}")
+    say(f"figure -> {path.relative_to(WORK)}")
     return path
 
 
@@ -339,8 +361,9 @@ def describe_window(ds, var=None):
 def copy_from_tests(cfg):
     """Copy the existing granule out of tests/data.
 
-    PRISMA and Tanager have no public search API at all, and DESIS publishes
-    only its L2A, so for those the scene already on disk is the scene.
+    PRISMA and Tanager have no public search API at all, so for those the
+    scene already on disk is the scene. Every other sensor comes here only
+    when ``--source copy`` asks.
     """
     cfg.data.mkdir(parents=True, exist_ok=True)
     copied = []
@@ -366,108 +389,243 @@ def copy_from_tests(cfg):
         # the published repository does not carry. Saying "already in place"
         # here would contradict the refusal three lines later.
         say(f"nothing to copy: {TESTS_DATA} has no {cfg.name} scene")
-        say("  the repository ships no granules; point --source at an archive "
-            "that has them, or put a scene in tests/data yourself")
+        say("  the repository ships no granules; set HYPERPROC_TESTS_DATA to "
+            f"a folder that has them, or put the scene in {cfg.data} yourself")
     return copied
 
 
-def download_pair(cfg, hp, args):
-    """Fetch one scene at both levels, matched so they are the same acquisition.
+def ask_for_credentials(hp, sensor, level) -> bool:
+    """Ask at the terminal for the credential this collection needs.
+
+    Set in this process's environment and nowhere else. Nothing is written to
+    disk, so the next run asks again - that is the trade for leaving no file
+    behind. ``~/.netrc`` or the environment variables avoid the prompt.
+
+    Asks only when there is a keyboard. Under nbconvert, cron or a pipe,
+    ``stdin`` is not a terminal and this returns False rather than hanging on
+    an ``input()`` nobody can answer.
+
+    Returns True when hyperproc can see a credential afterwards.
+    """
+    import getpass
+
+    sensor, level, coll = hp.archive.resolve(sensor, level)
+    who, need = hp.archive.BACKENDS[coll.backend]
+    if not sys.stdin.isatty():
+        return False
+
+    say(f"{who} needs {need}")
+    if coll.backend == "cmr":
+        user = input("    Earthdata username (blank to skip): ").strip()
+        if not user:
+            return False
+        os.environ["EARTHDATA_USERNAME"] = user
+        os.environ["EARTHDATA_PASSWORD"] = getpass.getpass("    Earthdata password: ")
+    elif coll.backend == "dlr":
+        user = input(f"    {sensor} username (blank to skip): ").strip()
+        if not user:
+            return False
+        os.environ[f"{sensor}_USERNAME"] = user
+        os.environ[f"{sensor}_PASSWORD"] = getpass.getpass(f"    {sensor} password: ")
+    elif coll.backend == "neon":
+        token = getpass.getpass("    NEON API token (blank to skip): ").strip()
+        if not token:
+            return False
+        os.environ["NEON_TOKEN"] = token
+    else:
+        return False
+
+    ok = hp.archive.can_download(sensor, level)
+    say("credentials accepted for this run" if ok else "still nothing usable")
+    return ok
+
+
+def why_not_fetchable(hp, sensor, level):
+    """hyperproc's own reason it cannot fetch a level, or None if it can.
+
+    Asked of the package rather than written here, so what gets printed is
+    what hyperproc says - which makes the run a check of that message too.
+    """
+    try:
+        hp.archive.resolve(sensor, level)
+    except ValueError as exc:
+        return str(exc)
+    return None
+
+
+def find_granules(cfg, hp, level, pattern=None, near=None):
+    """Granules of ``level`` named like ``pattern``, else the configured search.
+
+    CMR searches by name. DLR's STAC cannot, so there the search runs over a
+    place and a day - those of ``near``, the granule being matched, else the
+    configured box and dates - and the names are filtered here.
+    """
+    sensor = cfg.search[0]
+    if pattern and hp.archive.resolve(sensor, level)[2].backend == "cmr":
+        return list(hp.search(sensor, level, granule_name=pattern, count=10,
+                              verbose=False))
+    if near is not None and near.bbox and near.time:
+        box, when = near.bbox, near.time.strftime("%Y-%m-%d")
+    else:
+        box, when = cfg.bbox, cfg.date
+    if box is None:
+        say(f"  no bbox to search {sensor} {level} with; set one in the config")
+        return []
+    hits = hp.search(sensor, level, bbox=tuple(box), date=when,
+                     cloud=None if pattern else (0, cfg.max_cloud),
+                     count=50 if pattern else 20, verbose=pattern is None)
+    return [g for g in hits if pattern is None or fnmatch.fnmatch(g.name, pattern)]
+
+
+def download_scene(cfg, hp, args, levels):
+    """Fetch one acquisition at every level in ``levels``, matched by name.
 
     The comparison at the end only means anything if the L1 we correct and the
     L2 we compare it against are the same overpass. Names make that checkable:
-    the two differ only in a product code, so the mate is found by name rather
-    than by searching the same box again and hoping.
+    the scene is chosen on the first level and every other level is found from
+    its name, rather than by searching the same box again and hoping.
     """
-    sensor, l1_level, l2_level = cfg.search
-
-    # prefer the scene already in tests/data, so a run reproduces what the
-    # notebooks used; fall back to a fresh search of the configured box
-    local = sorted(TESTS_DATA.glob(cfg.l1_glob))
-    pick = None
-    if local:
-        name = local[0].name
-        say(f"looking for the scene already in tests/data: {name}")
-        hits = hp.search(sensor, l1_level, granule_name=name.replace(".nc", "*"),
-                         count=2, verbose=False)
-        pick = hits[0] if len(hits) else None
-        if pick is None:
-            say("  not in the archive under that name")
-    if pick is None and cfg.bbox:
+    sensor = cfg.search[0]
+    first, rest = levels[0], levels[1:]
+    if cfg.scene:
+        say(f"looking for {cfg.scene} ({sensor} {first})")
+        hits = find_granules(cfg, hp, first, cfg.scene)
+    else:
         say(f"searching {cfg.bbox} {cfg.date} for a clear scene")
-        hits = hp.search(sensor, l1_level, bbox=tuple(cfg.bbox),
-                         date=tuple(cfg.date), cloud=(0, cfg.max_cloud), count=20)
-        if not len(hits):
-            return None
-        pick = min(hits, key=lambda g: (g.cloud if g.cloud is not None else 100,
-                                        g.size_mb or 0))
-    if pick is None:
+        hits = find_granules(cfg, hp, first)
+    if not hits:
+        say("  nothing in the archive matches")
         return None
-
+    pick = min(hits, key=lambda g: (g.cloud if g.cloud is not None else 100,
+                                    g.size_mb or 0))
     cloud = f", {pick.cloud:.0f}% cloud" if pick.cloud is not None else ""
     size = f", {pick.size_mb:,.0f} MB" if pick.size_mb else ""
     say(f"chosen {pick.name}{cloud}{size}")
 
     want = [pick]
-    if cfg.pair:
-        mate_name = (cfg.pair(pick.name) if callable(cfg.pair)
-                     else pick.name.replace(*cfg.pair))
-        mate = hp.search(sensor, l2_level, granule_name=mate_name, count=1,
-                         verbose=False)
-        if not len(mate):
-            say(f"the matching {l2_level} ({mate_name}) is not in the archive")
+    for level in rest:
+        if cfg.pair is None:
+            say(f"no pair= in the config, so nothing finds the {level} of {pick.name}")
             return None
-        say(f"its {l2_level}  {mate[0].name}")
+        pattern = (cfg.pair(pick.name) if callable(cfg.pair)
+                   else pick.name.replace(*cfg.pair))
+        mate = find_granules(cfg, hp, level, pattern, near=pick)
+        if not mate:
+            say(f"the matching {level} ({pattern}) is not in the archive")
+            return None
+        say(f"its {level}  {mate[0].name}")
         want.append(mate[0])
 
-    hp.download(want, cfg.data, workers=4)
+    # DLR asks each account once to agree to its usage policy. Agreeing is the
+    # user's to do, so it is a flag and never a default.
+    extra = ({"accept_policy": True}
+             if args.accept_dlr_policy
+             and hp.archive.resolve(sensor, first)[2].backend == "dlr" else {})
+    hp.download(want, cfg.data, workers=4, **extra)
     return want
 
 
+def fetch_or_stop(cfg, args, hp, levels):
+    """Download ``levels``, or exit saying why not. Never falls back to a copy."""
+    sensor = cfg.search[0]
+    if not (hp.archive.can_download(sensor, levels[0])
+            or ask_for_credentials(hp, sensor, levels[0])):
+        backend = hp.archive.resolve(sensor, levels[0])[2].backend
+        who, need = hp.archive.BACKENDS[backend]
+        say(f"no credentials for {who}; it needs {need}")
+        if backend == "cmr":
+            say('  once per machine: python -c "import earthaccess; '
+                'earthaccess.login(persist=True)"')
+        elif backend == "dlr":
+            say(f"  then set {sensor}_USERNAME and {sensor}_PASSWORD, or put the "
+                f"account in ~/.netrc for download.geoservice.dlr.de")
+        if not sys.stdin.isatty():
+            say("  no keyboard here, so nothing was asked")
+        sys.exit(f"{cfg.name}: nothing downloaded without credentials "
+                 f"(--source copy takes tests/data instead)")
+
+    say(f"downloading from the archive ({sensor} {' and '.join(levels)})")
+    try:
+        got = download_scene(cfg, hp, args, levels)
+    except Exception as exc:
+        hint = ""
+        if "policy" in str(exc).lower() and not args.accept_dlr_policy:
+            hint = "\n    once you have read it, rerun with --accept-dlr-policy"
+        sys.exit(f"{cfg.name}: the download did not work\n"
+                 f"    {type(exc).__name__}: {exc}{hint}")
+    if got is None:
+        sys.exit(f"{cfg.name}: could not find the scene at {' and '.join(levels)}")
+
+
 def acquire(cfg, args, hp):
-    """Put the L1 and L2 of one scene into 1_data/<sensor>/."""
+    """Put the L1 and L2 of one scene into 1_data/<sensor>/.
+
+    Every level an archive publishes is downloaded. A level none publishes -
+    DESIS radiance - is named with hyperproc's reason and the run stops there,
+    to start once you have put it in place. Nothing falls back to tests/data
+    unless ``--source copy`` asks for it: a run meant to test the downloads
+    that quietly copied instead would pass without downloading anything.
+    """
     step(f"get the {cfg.name} scene")
     cfg.data.mkdir(parents=True, exist_ok=True)
+    sensor, l1_level, l2_level = cfg.search or (cfg.name, "L1", "L2")
+    glob_of = {l1_level: cfg.l1_glob, l2_level: cfg.l2_glob}
 
-    have_l1 = sorted(cfg.data.glob(Path(cfg.l1_glob).name))
-    have_l2 = sorted(cfg.data.glob(Path(cfg.l2_glob).name))
-    if have_l1 and have_l2:
-        say(f"already there: {have_l1[0].name}")
-        say(f"              {have_l2[0].name}")
-        return have_l1[0], have_l2[0]
+    def on_disk():
+        return {lv: sorted(cfg.data.glob(Path(g).name)) for lv, g in glob_of.items()}
+
+    have = on_disk()
+    if all(have.values()):
+        say(f"already there: {have[l1_level][0].name}")
+        say(f"              {have[l2_level][0].name}")
+        return have[l1_level][0], have[l2_level][0]
 
     route = cfg.source if args.source == "auto" else args.source
-    if route in ("cmr", "dlr", "download") and cfg.search:
-        sensor, l1_level, l2_level = cfg.search
-        if hp.archive.can_download(sensor, l1_level):
-            say(f"downloading from the archive ({sensor} {l1_level} and {l2_level})")
-            try:
-                if download_pair(cfg, hp, args) is None:
-                    raise RuntimeError("could not match the scene at both levels")
-            except Exception as exc:
-                say(f"download did not work ({type(exc).__name__}: {exc})")
-                say("falling back to the copy in tests/data")
-                copy_from_tests(cfg)
-        else:
-            backend = hp.archive.resolve(sensor, l1_level)[2].backend
-            who, need = hp.archive.BACKENDS[backend]
-            say(f"no credentials for {who}; it needs {need}")
-            if backend == "cmr":
-                say('  to get them: python -c "import earthaccess; '
-                    'earthaccess.login(persist=True)"')
-            say("copying from tests/data instead")
-            copy_from_tests(cfg)
-    else:
-        if cfg.source == "copy":
+    if route == "copy" or not cfg.search:
+        if cfg.source == "copy" and cfg.search:
+            say(f"no archive publishes this {cfg.name} scene, so it comes "
+                f"from tests/data")
+        elif cfg.source == "copy":
             say(f"{cfg.name} has no public search API, so the scene in "
                 f"tests/data is the scene")
         copy_from_tests(cfg)
+    else:
+        fetchable = [lv for lv in glob_of if why_not_fetchable(hp, sensor, lv) is None]
+        if fetchable and not all(have[lv] for lv in fetchable):
+            fetch_or_stop(cfg, args, hp, fetchable)
+        elif fetchable:
+            say(f"{' and '.join(fetchable)} already there")
 
-    l1 = sorted(cfg.data.glob(Path(cfg.l1_glob).name))
-    l2 = sorted(cfg.data.glob(Path(cfg.l2_glob).name))
-    if not (l1 and l2):
-        sys.exit(f"still no {cfg.name} pair in {cfg.data}\n"
-                 f"    expected {cfg.l1_glob} and {cfg.l2_glob}")
+    have = on_disk()
+    missing = [lv for lv in glob_of if not have[lv]]
+    if missing:
+        present = [have[lv][0] for lv in glob_of if have[lv]]
+        for lv in missing:
+            why = why_not_fetchable(hp, sensor, lv)
+            if why is None and route != "copy":
+                say(f"{sensor} {lv} was downloaded, but nothing in {cfg.data} "
+                    f"matches {Path(glob_of[lv]).name} - the archive names its "
+                    f"files differently from the glob in the config")
+                continue
+            print()
+            say(f"{sensor} {lv} is not here - you need to get it yourself"
+                + (", because:" if why else ""))
+            for line in textwrap.wrap(why or "", width=72, break_long_words=False,
+                                      break_on_hyphens=False):
+                say(f"    {line}")
+            if present:
+                same = Path(present[0].name.split("-SPECTRAL_IMAGE")[0]).stem
+                say(f"  it must be the same acquisition as {same}")
+                say("    - another date or tile and the comparison is of two "
+                    "different scenes")
+            say(f"  put it in {cfg.data}")
+            say(f"    as {Path(glob_of[lv]).name}, with every file that came "
+                f"with it beside it")
+        sys.exit(f"{cfg.name}: waiting for {' and '.join(missing)}; "
+                 f"rerun once {'it is' if len(missing) == 1 else 'they are'} "
+                 f"in {cfg.data}")
+
+    l1, l2 = have[l1_level], have[l2_level]
     for f in sorted(cfg.data.iterdir()):
         if f.is_file() and f.stat().st_size > 1e7:
             say(f"  {f.name}  {f.stat().st_size / 1e9:.2f} GB")

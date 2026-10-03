@@ -13,7 +13,7 @@ The current collection table provides **13 searchable sensor/level pairs**:
 | DLR EOC STAC | EnMAP L1B/L1C/L2A; DESIS L2A | Mission-specific username/password |
 
 **Creating the Earthdata credential.** Run this once; it asks for the username
-and password and writes `~/.netrc`, after which every run is non-interactive:
+and password and writes `~/.netrc` for later runs:
 
 ```bash
 python -c "import earthaccess; earthaccess.login(persist=True)"
@@ -22,7 +22,9 @@ python -c "import earthaccess; earthaccess.login(persist=True)"
 Configure credentials before starting an unattended run. The CMR downloader
 delegates authentication to `earthaccess.login()`, which can prompt when no
 usable stored credentials are available. The example pipelines check
-`hp.archive.can_download()` before downloading; that preflight checks local
+`hp.archive.can_download()` before downloading and can request missing
+credentials at an interactive terminal. Piped or unattended pipeline runs
+skip that prompt and stop with setup instructions. This preflight checks local
 configuration, not the validity of an account or token. The persisted login
 above avoids entering credentials for each run.
 
@@ -57,3 +59,19 @@ Keep provider filenames and ancillary files next to the primary cube. Most `hp.o
 PRISMA, Tanager, AVIRIS-NG, and AVIRIS Classic have readers but no search backend here. DESIS L1B/L1C are readable but not searchable through this package. Unsupported search requests raise an explanation with the alternate archive, rather than returning a misleading empty result. NEON DP3 mosaics have an unimplemented reader route. HISUI, GF-5/AHSI, and Hyperion have no reader in this checkout.
 
 Tutorials use `tests/data/` and saved outputs may reference another machine's paths. Set input/output roots for your own environment. Retain product identifiers, versions, dates, archive, quality documentation, and scaling/geolocation metadata. Store credentials outside notebooks.
+
+## Example pipeline locations
+
+The scripts in `py_tests/0_src_code/` now keep `1_data/<sensor>/` and
+`2_outputs/<sensor>/` beside the scripts. `--source copy` reads provisioned
+scenes from `tests/data`; set `HYPERPROC_TESTS_DATA` when that source is elsewhere.
+Download routes stop when credentials, scenes, or required levels are missing
+rather than silently substituting a local scene. PRISMA, Tanager, and the
+configured DESIS example use local products. EnMAP pairs levels by acquisition
+identity rather than assuming identical processing timestamps. These scripts
+are separate from the saved notebook tutorials.
+
+After reviewing a DLR account's usage policy, the shared pipeline accepts
+`--accept-dlr-policy`; the package downloader's corresponding option is
+`accept_policy=True`. See [DLR download recovery](../workflows/search.md#interrupted-dlr-downloads)
+for incomplete transfers.

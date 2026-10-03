@@ -95,15 +95,15 @@ docs-site/docs/assets/images/*
 # 1_data is 15 GB of granules the pipelines fetch or copy; 2_outputs is 3.3 GB
 # of products they write. Both are reproducible by running the scripts, so the
 # folders are kept (a .gitkeep each) and their contents are not.
-py_tests/1_data/*
-!py_tests/1_data/.gitkeep
+py_tests/0_src_code/1_data/*
+!py_tests/0_src_code/1_data/.gitkeep
 # ...except the figures, which are the point of running the pipelines and are
-# small (19 MB for 42). Git needs the intermediate folders un-ignored before a
+# small (18 MB for 42). Git needs the intermediate folders un-ignored before a
 # path inside them can be kept, hence the three steps.
-py_tests/2_outputs/*
-!py_tests/2_outputs/.gitkeep
-!py_tests/2_outputs/*/
-py_tests/2_outputs/*/*
-!py_tests/2_outputs/*/figures/
+py_tests/0_src_code/2_outputs/*
+!py_tests/0_src_code/2_outputs/.gitkeep
+!py_tests/0_src_code/2_outputs/*/
+py_tests/0_src_code/2_outputs/*/*
+!py_tests/0_src_code/2_outputs/*/figures/
 py_tests/**/__pycache__/
 *.bak

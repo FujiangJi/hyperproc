@@ -20,7 +20,8 @@ import xarray as xr
 
 from hyperproc.atmos import aerosols
 from hyperproc.atmos._runner import apply_overrides
-from hyperproc.atmos.correct import ATMOSPHERES, ENGINES, atmosphere_for
+from hyperproc.atmos.correct import (ATMOSPHERES, ENGINES, atmosphere_for, neighbor_cap,
+                                     resolve_neighbors)
 from hyperproc.atmos.dem import SOURCES, tile_id, tile_url
 from hyperproc.atmos.inputs import (SENSORS, SensorSpec, _ALIASES, acquisition_time,
                                     hdr_path, names_for, sensor_spec, write_envi_header)
@@ -292,3 +293,51 @@ def test_overrides_never_create_new_keys():
     cfg = _cfg()
     apply_overrides(cfg, {"implementation/made_up": 1})
     assert "made_up" not in cfg["implementation"]
+
+
+# --------------------------------------------------------------------------- #
+# how many superpixel neighbours the analytical line is given                  #
+# --------------------------------------------------------------------------- #
+
+def _scene(tmp_path, lines, samples, valid=1.0):
+    """The parts of an Inputs that neighbour counting reads."""
+    import types
+    out = tmp_path / "output"
+    return types.SimpleNamespace(shape=(lines, samples, 285), stats={"valid_fraction": valid},
+                                 output=lambda product: out / f"scene_{product}")
+
+
+def _segment(scene, n):
+    """Leave the label image a run with ``n`` superpixels would have written."""
+    lbl = scene.output("lbl")
+    lbl.parent.mkdir(parents=True, exist_ok=True)
+    ny, nx, _ = scene.shape
+    (np.arange(ny * nx) % n + 1).astype("<f4").tofile(lbl)
+    hdr_path(lbl).write_text(f"ENVI\nsamples = {nx}\nlines = {ny}\nbands = 1\n"
+                             "header offset = 0\ndata type = 4\ninterleave = bsq\nbyte order = 0\n")
+
+
+def test_a_second_call_asks_for_the_neighbours_the_first_did(tmp_path):
+    """A finished run is checked against the settings a new call would use, so
+    those must not depend on whether the run has happened: a 60 x 60 window got
+    45 the first time and 72 once its own label image existed, and every reuse
+    then warned of "different settings"."""
+    scene = _scene(tmp_path, 60, 60)
+    first = resolve_neighbors(scene, 40)
+    _segment(scene, 90)
+    assert resolve_neighbors(scene, 40) == first == [45, 10]
+
+
+def test_a_scene_with_fewer_segments_than_asked_for_still_lowers_the_cap(tmp_path):
+    """The label image is what rescues a run that crashed asking for more
+    neighbours than the scene had superpixels."""
+    scene = _scene(tmp_path, 60, 60)
+    _segment(scene, 30)
+    assert neighbor_cap(scene, 40) == 24              # 0.8 x 30, below the estimate of 45
+
+
+def test_a_window_large_enough_never_meets_the_cap(tmp_path):
+    scene = _scene(tmp_path, 200, 200)
+    first = resolve_neighbors(scene, 40)
+    _segment(scene, 900)
+    assert resolve_neighbors(scene, 40) == first == [100, 10]
