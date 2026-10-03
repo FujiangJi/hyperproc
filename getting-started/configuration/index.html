@@ -1499,6 +1499,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#netcdf-configuration-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        netCDF configuration diagnostics
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2367,6 +2378,8 @@
       
         
       
+        
+      
     
     
     
@@ -2427,6 +2440,34 @@
     
   
     hyperproc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/hyperproc-_ncrc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc._ncrc
   
 
     
@@ -4968,6 +5009,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#netcdf-configuration-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        netCDF configuration diagnostics
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5075,6 +5127,15 @@ pass <code>project="your-cloud-project"</code> to the MCD43/normalization call o
 sets a shared base; <code>--check</code> reports missing assets and build tools without
 downloading them. See <a href="../installation/">installation</a> for the compiler and GSL
 requirements of each engine.</p>
+<h2 id="netcdf-configuration-diagnostics">netCDF configuration diagnostics<a class="headerlink" href="#netcdf-configuration-diagnostics" title="Permanent link">&para;</a></h2>
+<p>The current release checks <code>.ncrc</code>, <code>.daprc</code>, and <code>.dodsrc</code> for a missing final
+newline. Atmospheric setup repairs affected home-directory files by appending
+one newline; <code>--check</code> only reports them. CMR checks after Earthdata login and
+warns. Before an ISOFIT subprocess, the atmospheric runner checks both the
+home directory and the work directory unless <code>NCRCENV_RC</code> is already set.
+That environment variable selects an explicit netCDF configuration file;
+its contents and final newline are the caller's responsibility. Details and
+repair commands are in <a href="../../project/troubleshooting/">troubleshooting</a>.</p>
 
 
 
@@ -5152,7 +5213,7 @@ requirements of each engine.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      hyperproc 0.1.1 · MIT · Fujiang Ji
+      hyperproc 0.1.2 · MIT · Fujiang Ji
     </div>
   
   

@@ -27,6 +27,33 @@
     "members": []
   },
   {
+    "name": "hyperproc._ncrc.unterminated_rc_files",
+    "module": "hyperproc._ncrc",
+    "line": 31,
+    "kind": "function",
+    "documented": true,
+    "private": false,
+    "members": []
+  },
+  {
+    "name": "hyperproc._ncrc.rc_warning",
+    "module": "hyperproc._ncrc",
+    "line": 51,
+    "kind": "function",
+    "documented": true,
+    "private": false,
+    "members": []
+  },
+  {
+    "name": "hyperproc._ncrc.terminate_rc_file",
+    "module": "hyperproc._ncrc",
+    "line": 64,
+    "kind": "function",
+    "documented": true,
+    "private": false,
+    "members": []
+  },
+  {
     "name": "hyperproc.align._grid_of",
     "module": "hyperproc.align",
     "line": 55,
@@ -191,7 +218,7 @@
   {
     "name": "hyperproc.archive.cmr._earthaccess",
     "module": "hyperproc.archive.cmr",
-    "line": 15,
+    "line": 17,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -200,7 +227,7 @@
   {
     "name": "hyperproc.archive.cmr._bbox_of",
     "module": "hyperproc.archive.cmr",
-    "line": 27,
+    "line": 29,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -209,7 +236,7 @@
   {
     "name": "hyperproc.archive.cmr._browse_of",
     "module": "hyperproc.archive.cmr",
-    "line": 49,
+    "line": 51,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -218,7 +245,7 @@
   {
     "name": "hyperproc.archive.cmr._time_of",
     "module": "hyperproc.archive.cmr",
-    "line": 63,
+    "line": 65,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -227,7 +254,7 @@
   {
     "name": "hyperproc.archive.cmr.search",
     "module": "hyperproc.archive.cmr",
-    "line": 72,
+    "line": 74,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -236,7 +263,7 @@
   {
     "name": "hyperproc.archive.cmr._granule",
     "module": "hyperproc.archive.cmr",
-    "line": 134,
+    "line": 136,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -245,7 +272,7 @@
   {
     "name": "hyperproc.archive.cmr.download",
     "module": "hyperproc.archive.cmr",
-    "line": 148,
+    "line": 150,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -281,7 +308,7 @@
   {
     "name": "hyperproc.archive.dlr.needs_login",
     "module": "hyperproc.archive.dlr",
-    "line": 57,
+    "line": 67,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -290,7 +317,7 @@
   {
     "name": "hyperproc.archive.dlr._requests",
     "module": "hyperproc.archive.dlr",
-    "line": 88,
+    "line": 98,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -299,7 +326,7 @@
   {
     "name": "hyperproc.archive.dlr.credentials",
     "module": "hyperproc.archive.dlr",
-    "line": 98,
+    "line": 108,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -308,7 +335,7 @@
   {
     "name": "hyperproc.archive.dlr._page_says",
     "module": "hyperproc.archive.dlr",
-    "line": 132,
+    "line": 142,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -317,41 +344,41 @@
   {
     "name": "hyperproc.archive.dlr._Forms",
     "module": "hyperproc.archive.dlr",
-    "line": 156,
+    "line": 166,
     "kind": "class",
     "documented": true,
     "private": true,
     "members": [
       {
         "name": "hyperproc.archive.dlr._Forms.handle_starttag",
-        "line": 175
+        "line": 185
       },
       {
         "name": "hyperproc.archive.dlr._Forms.handle_endtag",
-        "line": 189
+        "line": 199
       },
       {
         "name": "hyperproc.archive.dlr._Forms.handle_data",
-        "line": 195
-      },
-      {
-        "name": "hyperproc.archive.dlr._Forms.login",
-        "line": 200
-      },
-      {
-        "name": "hyperproc.archive.dlr._Forms.step",
         "line": 205
       },
       {
-        "name": "hyperproc.archive.dlr._Forms.fields",
+        "name": "hyperproc.archive.dlr._Forms.login",
         "line": 210
+      },
+      {
+        "name": "hyperproc.archive.dlr._Forms.step",
+        "line": 215
+      },
+      {
+        "name": "hyperproc.archive.dlr._Forms.fields",
+        "line": 220
       }
     ]
   },
   {
     "name": "hyperproc.archive.dlr._post_to",
     "module": "hyperproc.archive.dlr",
-    "line": 218,
+    "line": 228,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -360,7 +387,7 @@
   {
     "name": "hyperproc.archive.dlr.sign_in",
     "module": "hyperproc.archive.dlr",
-    "line": 237,
+    "line": 247,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -369,7 +396,7 @@
   {
     "name": "hyperproc.archive.dlr.read_policy",
     "module": "hyperproc.archive.dlr",
-    "line": 327,
+    "line": 337,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -378,7 +405,7 @@
   {
     "name": "hyperproc.archive.dlr._visible_text",
     "module": "hyperproc.archive.dlr",
-    "line": 387,
+    "line": 397,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -387,7 +414,7 @@
   {
     "name": "hyperproc.archive.dlr._rfc3339",
     "module": "hyperproc.archive.dlr",
-    "line": 393,
+    "line": 403,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -396,7 +423,7 @@
   {
     "name": "hyperproc.archive.dlr._time_of",
     "module": "hyperproc.archive.dlr",
-    "line": 411,
+    "line": 421,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -405,7 +432,7 @@
   {
     "name": "hyperproc.archive.dlr._links",
     "module": "hyperproc.archive.dlr",
-    "line": 427,
+    "line": 437,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -414,7 +441,7 @@
   {
     "name": "hyperproc.archive.dlr.search",
     "module": "hyperproc.archive.dlr",
-    "line": 443,
+    "line": 453,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -423,16 +450,43 @@
   {
     "name": "hyperproc.archive.dlr._granule",
     "module": "hyperproc.archive.dlr",
-    "line": 532,
+    "line": 542,
     "kind": "function",
     "documented": false,
     "private": true,
     "members": []
   },
   {
+    "name": "hyperproc.archive.dlr._content_range",
+    "module": "hyperproc.archive.dlr",
+    "line": 559,
+    "kind": "function",
+    "documented": true,
+    "private": true,
+    "members": []
+  },
+  {
+    "name": "hyperproc.archive.dlr._retryable",
+    "module": "hyperproc.archive.dlr",
+    "line": 567,
+    "kind": "function",
+    "documented": true,
+    "private": true,
+    "members": []
+  },
+  {
+    "name": "hyperproc.archive.dlr._stream",
+    "module": "hyperproc.archive.dlr",
+    "line": 576,
+    "kind": "function",
+    "documented": true,
+    "private": true,
+    "members": []
+  },
+  {
     "name": "hyperproc.archive.dlr.download",
     "module": "hyperproc.archive.dlr",
-    "line": 549,
+    "line": 641,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -772,7 +826,7 @@
   {
     "name": "hyperproc.atmos.correct.atmosphere_for",
     "module": "hyperproc.atmos.correct",
-    "line": 60,
+    "line": 61,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -781,7 +835,7 @@
   {
     "name": "hyperproc.atmos.correct._env",
     "module": "hyperproc.atmos.correct",
-    "line": 78,
+    "line": 79,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -790,7 +844,7 @@
   {
     "name": "hyperproc.atmos.correct.emulator_path",
     "module": "hyperproc.atmos.correct",
-    "line": 86,
+    "line": 87,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -799,7 +853,7 @@
   {
     "name": "hyperproc.atmos.correct.surface_recipe",
     "module": "hyperproc.atmos.correct",
-    "line": 95,
+    "line": 96,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -808,7 +862,7 @@
   {
     "name": "hyperproc.atmos.correct._cache_dir",
     "module": "hyperproc.atmos.correct",
-    "line": 109,
+    "line": 110,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -817,7 +871,7 @@
   {
     "name": "hyperproc.atmos.correct._surface_key",
     "module": "hyperproc.atmos.correct",
-    "line": 113,
+    "line": 114,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -826,7 +880,7 @@
   {
     "name": "hyperproc.atmos.correct.resolve_surface",
     "module": "hyperproc.atmos.correct",
-    "line": 119,
+    "line": 120,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -835,7 +889,7 @@
   {
     "name": "hyperproc.atmos.correct.build_command",
     "module": "hyperproc.atmos.correct",
-    "line": 138,
+    "line": 139,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -844,7 +898,7 @@
   {
     "name": "hyperproc.atmos.correct.atm_terms",
     "module": "hyperproc.atmos.correct",
-    "line": 269,
+    "line": 270,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -853,7 +907,7 @@
   {
     "name": "hyperproc.atmos.correct.segment_count",
     "module": "hyperproc.atmos.correct",
-    "line": 287,
+    "line": 288,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -862,7 +916,7 @@
   {
     "name": "hyperproc.atmos.correct.neighbor_cap",
     "module": "hyperproc.atmos.correct",
-    "line": 308,
+    "line": 309,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -871,7 +925,7 @@
   {
     "name": "hyperproc.atmos.correct.resolve_neighbors",
     "module": "hyperproc.atmos.correct",
-    "line": 326,
+    "line": 336,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -880,7 +934,7 @@
   {
     "name": "hyperproc.atmos.correct._clean_partial",
     "module": "hyperproc.atmos.correct",
-    "line": 348,
+    "line": 358,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -889,7 +943,7 @@
   {
     "name": "hyperproc.atmos.correct.run_record",
     "module": "hyperproc.atmos.correct",
-    "line": 376,
+    "line": 386,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -898,7 +952,7 @@
   {
     "name": "hyperproc.atmos.correct.settings_of",
     "module": "hyperproc.atmos.correct",
-    "line": 392,
+    "line": 402,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -907,7 +961,7 @@
   {
     "name": "hyperproc.atmos.correct.is_complete",
     "module": "hyperproc.atmos.correct",
-    "line": 417,
+    "line": 427,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -916,7 +970,7 @@
   {
     "name": "hyperproc.atmos.correct._tail",
     "module": "hyperproc.atmos.correct",
-    "line": 425,
+    "line": 435,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -925,7 +979,7 @@
   {
     "name": "hyperproc.atmos.correct.run_isofit",
     "module": "hyperproc.atmos.correct",
-    "line": 433,
+    "line": 443,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -934,7 +988,7 @@
   {
     "name": "hyperproc.atmos.correct._hdr",
     "module": "hyperproc.atmos.correct",
-    "line": 477,
+    "line": 494,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -943,7 +997,7 @@
   {
     "name": "hyperproc.atmos.correct._hdr_list",
     "module": "hyperproc.atmos.correct",
-    "line": 484,
+    "line": 501,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -952,7 +1006,7 @@
   {
     "name": "hyperproc.atmos.correct._open_bil",
     "module": "hyperproc.atmos.correct",
-    "line": 490,
+    "line": 507,
     "kind": "function",
     "documented": true,
     "private": true,
@@ -961,7 +1015,7 @@
   {
     "name": "hyperproc.atmos.correct.read_outputs",
     "module": "hyperproc.atmos.correct",
-    "line": 501,
+    "line": 518,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -970,7 +1024,7 @@
   {
     "name": "hyperproc.atmos.correct.redo_line",
     "module": "hyperproc.atmos.correct",
-    "line": 608,
+    "line": 625,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -979,7 +1033,7 @@
   {
     "name": "hyperproc.atmos.correct.correct",
     "module": "hyperproc.atmos.correct",
-    "line": 628,
+    "line": 645,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -988,7 +1042,7 @@
   {
     "name": "hyperproc.atmos.correct._window",
     "module": "hyperproc.atmos.correct",
-    "line": 709,
+    "line": 726,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -1373,7 +1427,7 @@
   {
     "name": "hyperproc.atmos.setup._quiet",
     "module": "hyperproc.atmos.setup",
-    "line": 39,
+    "line": 41,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -1382,7 +1436,7 @@
   {
     "name": "hyperproc.atmos.setup._isofit",
     "module": "hyperproc.atmos.setup",
-    "line": 43,
+    "line": 45,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -1391,7 +1445,7 @@
   {
     "name": "hyperproc.atmos.setup._assets_for",
     "module": "hyperproc.atmos.setup",
-    "line": 51,
+    "line": 53,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -1400,7 +1454,7 @@
   {
     "name": "hyperproc.atmos.setup.libradtran_exe",
     "module": "hyperproc.atmos.setup",
-    "line": 58,
+    "line": 60,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -1409,7 +1463,7 @@
   {
     "name": "hyperproc.atmos.setup.build_libradtran",
     "module": "hyperproc.atmos.setup",
-    "line": 68,
+    "line": 70,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -1418,7 +1472,7 @@
   {
     "name": "hyperproc.atmos.setup.check",
     "module": "hyperproc.atmos.setup",
-    "line": 115,
+    "line": 117,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -1427,7 +1481,7 @@
   {
     "name": "hyperproc.atmos.setup._report",
     "module": "hyperproc.atmos.setup",
-    "line": 172,
+    "line": 178,
     "kind": "function",
     "documented": false,
     "private": true,
@@ -1436,7 +1490,7 @@
   {
     "name": "hyperproc.atmos.setup.setup",
     "module": "hyperproc.atmos.setup",
-    "line": 192,
+    "line": 198,
     "kind": "function",
     "documented": true,
     "private": false,
@@ -1445,7 +1499,7 @@
   {
     "name": "hyperproc.atmos.setup.main",
     "module": "hyperproc.atmos.setup",
-    "line": 249,
+    "line": 259,
     "kind": "function",
     "documented": true,
     "private": false,

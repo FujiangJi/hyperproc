@@ -2258,6 +2258,8 @@
       
         
       
+        
+      
     
     
     
@@ -2318,6 +2320,34 @@
     
   
     hyperproc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/hyperproc-_ncrc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc._ncrc
   
 
     
@@ -4808,6 +4838,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#isofit-workers-crash-or-report-a-netcdf-configuration-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISOFIT workers crash or report a netCDF configuration warning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dlr-download-leaves-a-part-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DLR download leaves a .part file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atmospheric-extra-does-not-install-on-python-313" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atmospheric extra does not install on Python 3.13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#missing-crs-on-export" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5038,6 +5101,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#isofit-workers-crash-or-report-a-netcdf-configuration-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISOFIT workers crash or report a netCDF configuration warning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dlr-download-leaves-a-part-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DLR download leaves a .part file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atmospheric-extra-does-not-install-on-python-313" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atmospheric extra does not install on Python 3.13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#missing-crs-on-export" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5178,6 +5274,29 @@ Engine, <code>hyperproc[srf]</code> for published response spreadsheets, or
 build tools, which pip does not supply. Run <code>hyperproc-atmos-setup --check</code>
 or <code>--check --engine LibRadTran</code> to see missing tools/assets without downloads.
 See <a href="../../getting-started/installation/">installation</a>.</p>
+<h2 id="isofit-workers-crash-or-report-a-netcdf-configuration-warning">ISOFIT workers crash or report a netCDF configuration warning<a class="headerlink" href="#isofit-workers-crash-or-report-a-netcdf-configuration-warning" title="Permanent link">&para;</a></h2>
+<p>Check the <code>.ncrc</code>, <code>.daprc</code>, and <code>.dodsrc</code> paths named by the warning. A
+nonempty file without a final newline is flagged by the current package's
+netCDF diagnostic. <code>hyperproc-atmos-setup --check</code> reports affected
+home-directory files; running setup appends the missing newline there.
+For a specific affected file, append only the final newline, for example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">printf</span><span class="w"> </span><span class="s1">'\n'</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.dodsrc"</span>
+</code></pre></div>
+<p>Use the actual path from the warning. Work-directory files need the same
+repair if reported. Alternatively, set <code>NCRCENV_RC</code> to a newline-terminated
+copy; when that variable is present, the atmospheric runner skips its default
+home/work scan. This addresses the reported configuration issue, not every
+possible retrieval or worker failure.</p>
+<h2 id="dlr-download-leaves-a-part-file">DLR download leaves a .part file<a class="headerlink" href="#dlr-download-leaves-a-part-file" title="Permanent link">&para;</a></h2>
+<p>A <code>.part</code> file retains bytes from an unfinished transfer. Rerun the same
+selected download to resume when the server supports Range. No-progress
+failures eventually stop; the file is retained for a later call. Check the
+reported exception and account access rather than renaming the partial file
+as a finished product. See <a href="../../workflows/search/#interrupted-dlr-downloads">DLR recovery</a>.</p>
+<h2 id="atmospheric-extra-does-not-install-on-python-313">Atmospheric extra does not install on Python 3.13<a class="headerlink" href="#atmospheric-extra-does-not-install-on-python-313" title="Permanent link">&para;</a></h2>
+<p>Use a Python 3.12 environment. The ISOFIT 4.1.5 installation used for this
+release requires Python <code>&gt;=3.11,&lt;3.13</code>, while hyperproc's core requirement
+remains &gt;=3.11. See <a href="../../getting-started/installation/">installation</a>.</p>
 <h2 id="missing-crs-on-export">Missing CRS on export<a class="headerlink" href="#missing-crs-on-export" title="Permanent link">&para;</a></h2>
 <p>Determine whether the input is a geolocated swath, a raw detector grid, or a product missing metadata. Use the correct GLT/georeferencing path where available. Do not assign a CRS solely to silence the writer.</p>
 <h2 id="brdf-fit-rejected">BRDF fit rejected<a class="headerlink" href="#brdf-fit-rejected" title="Permanent link">&para;</a></h2>
@@ -5271,7 +5390,7 @@ See <a href="../../getting-started/installation/">installation</a>.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      hyperproc 0.1.1 · MIT · Fujiang Ji
+      hyperproc 0.1.2 · MIT · Fujiang Ji
     </div>
   
   

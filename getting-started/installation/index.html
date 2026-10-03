@@ -1411,6 +1411,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#if-you-do-not-have-conda-yet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If you do not have conda yet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#requirements" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2406,6 +2417,8 @@
       
         
       
+        
+      
     
     
     
@@ -2466,6 +2479,34 @@
     
   
     hyperproc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/hyperproc-_ncrc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc._ncrc
   
 
     
@@ -4975,6 +5016,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#if-you-do-not-have-conda-yet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If you do not have conda yet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#requirements" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5090,7 +5142,7 @@
 
 
 <h1 id="installation-and-environment">Installation and environment<a class="headerlink" href="#installation-and-environment" title="Permanent link">&para;</a></h1>
-<p>The current package declares <strong>Python &gt;=3.11</strong> and version <strong>0.1.1</strong>. Its installation metadata lives in <code>pyproject.toml</code>. Use an isolated environment for processing; the website has its own environment.</p>
+<p>The current package declares <strong>Python &gt;=3.11</strong> and version <strong>0.1.2</strong>. Its installation metadata lives in <code>pyproject.toml</code>. Use an isolated environment for processing; the website has its own environment.</p>
 <h2 id="install-this-checkout">Install this checkout<a class="headerlink" href="#install-this-checkout" title="Permanent link">&para;</a></h2>
 <p>From the repository root:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
@@ -5102,10 +5154,48 @@
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">hp</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">hp</span><span class="o">.</span><span class="vm">__file__</span><span class="p">)</span>
 </code></pre></div>
+<h2 id="if-you-do-not-have-conda-yet">If you do not have conda yet<a class="headerlink" href="#if-you-do-not-have-conda-yet" title="Permanent link">&para;</a></h2>
+<p>Not sure which you have? <code>uname -m</code> prints <code>arm64</code> on Apple silicon and
+<code>x86_64</code> on an Intel Mac; on Linux it prints <code>x86_64</code> or <code>aarch64</code>. Pick the
+box, copy all four lines, run them.</p>
+<p><strong>Mac, Apple silicon (M1-M4)</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>-fsSLO<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>bash<span class="w"> </span>Miniconda3-latest-MacOSX-arm64.sh
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">source</span><span class="w"> </span>~/.zshrc
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>conda<span class="w"> </span>--version
+</code></pre></div>
+<p><strong>Mac, Intel</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>-fsSLO<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>bash<span class="w"> </span>Miniconda3-latest-MacOSX-x86_64.sh
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">source</span><span class="w"> </span>~/.zshrc
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>conda<span class="w"> </span>--version
+</code></pre></div>
+<p><strong>Linux, Intel/AMD (x86-64)</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>-fsSLO<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>bash<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nb">source</span><span class="w"> </span>~/.bashrc
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>conda<span class="w"> </span>--version
+</code></pre></div>
+<p><strong>Linux, ARM (aarch64)</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>curl<span class="w"> </span>-fsSLO<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>bash<span class="w"> </span>Miniconda3-latest-Linux-aarch64.sh
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">source</span><span class="w"> </span>~/.bashrc
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>conda<span class="w"> </span>--version
+</code></pre></div>
+<p><strong>Windows</strong>: use WSL2, then follow the Linux box for your chip. Every Linux
+instruction on this page then applies exactly as written.</p>
+<p>The installer asks you to accept the licence, choose a location, and whether
+to initialise your shell. <strong>Answer yes to the last one</strong> - that is what makes
+the <code>source</code> line work. If <code>conda --version</code> still says the command is not
+found, the shell was never initialised: run <code>conda init zsh</code> on macOS or
+<code>conda init bash</code> on Linux, then open a new terminal.</p>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
-<p><strong>Python 3.11 or newer.</strong> Developed and tested on <strong>3.12</strong>; 3.13 is declared
-and expected to work. 3.14 resolves and installs, but nothing has been run on
-it, and <code>[atmos]</code> is unlikely to work there until torch and ray catch up.</p>
+<p><strong>Use Python 3.12</strong>, the package's development and testing target. The core
+package declares <strong>Python &gt;=3.11</strong>. The current ISOFIT 4.1.5
+metadata requires <code>&gt;=3.11,&lt;3.13</code>, so the atmospheric installation used here
+must stay below 3.13; this is an upstream constraint rather than a change to
+hyperproc's core requirement. Core-only 3.13 is expected to work; the README
+reports that 3.14 installs but has not been exercised.</p>
 <p>The Python dependencies do not need installing first. <code>pip install hyperproc</code>
 brings NumPy, xarray, Dask, rasterio, rioxarray, h5py, netCDF4, h5netcdf,
 SciPy, pyproj, Shapely, affine and threadpoolctl with it, in versions it has
@@ -5134,9 +5224,24 @@ these.</p>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>hyperproc<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>hyperproc
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gfortran<span class="w"> </span>make<span class="w"> </span>gcc<span class="w"> </span>gsl
+<p>Everything, in one block. Drop the lines for anything you do not want; the
+sections below explain each one.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>hyperproc<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>hyperproc
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gfortran<span class="w"> </span>make<span class="w"> </span>gcc<span class="w"> </span>gsl
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>pip<span class="w"> </span>install<span class="w"> </span>hyperproc
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[search]'</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[srf]'</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[search-map]'</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[brdf]'</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[atmos]'</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[notebooks]'</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>hyperproc-atmos-setup
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>hyperproc-atmos-setup<span class="w"> </span>--examples
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>hyperproc-atmos-setup<span class="w"> </span>--engine<span class="w"> </span>LibRadTran
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>hyperproc-atmos-setup<span class="w"> </span>--check
 </code></pre></div>
 <p>The example pipelines under <code>py_tests/</code> draw figures and so need matplotlib,
 through <code>'hyperproc[notebooks]'</code>. The package itself never imports it.</p>
@@ -5241,20 +5346,28 @@ transitive constraints during installation.</p>
 </tbody>
 </table>
 <h2 id="platforms-and-atmospheric-assets">Platforms and atmospheric assets<a class="headerlink" href="#platforms-and-atmospheric-assets" title="Permanent link">&para;</a></h2>
-<p>The package README describes the core as available on Linux, macOS, and Windows, with atmospheric correction on Linux/macOS. A declared platform is separate from a tested dependency/platform matrix.</p>
+<p>Linux and macOS are what this is developed and run on. Every dependency of the core and of <code>[search]</code>, <code>[srf]</code>, <code>[search-map]</code> and <code>[brdf]</code> publishes a Windows wheel or is pure Python, so those should install natively on Windows - untested rather than supported. <code>[atmos]</code> will not: its engines are compiled on the machine, 6S in Fortran and libRadtran in C and Fortran against GSL, and neither builds with the Microsoft toolchain. On Windows use WSL2, which makes the Linux instructions apply exactly as written. A declared platform is separate from a tested dependency/platform matrix.</p>
 <p>After installing the atmospheric extra:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>hyperproc-atmos-setup
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>hyperproc-atmos-setup<span class="w"> </span>--check
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>hyperproc-atmos-setup<span class="w"> </span>--engine<span class="w"> </span>LibRadTran
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>hyperproc-atmos-setup
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>hyperproc-atmos-setup<span class="w"> </span>--examples
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>hyperproc-atmos-setup<span class="w"> </span>--engine<span class="w"> </span>LibRadTran
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>hyperproc-atmos-setup<span class="w"> </span>--check
 </code></pre></div>
-<p>The third line is optional; it adds the libRadtran engine. Setup downloads several GB of engines and data assets and records their base in ISOFIT's own <code>~/.isofit/isofit.ini</code>. The base defaults to <code>~/.isofit</code>; pass <code>--base /data/shared/isofit_assets</code> to put it somewhere every user of a shared machine can read, so the assets are fetched once. It does not belong inside the package or the environment, which a reinstall would discard. Building 6S needs <code>gfortran</code> and <code>make</code>; libRadtran needs C/Fortran tooling and GSL. Inspect <a href="../configuration/">configuration and external assets</a> before running retrievals.</p>
+<p>Only the first line provisions the default assets; the other commands are optional. <code>--examples</code> adds ISOFIT's own tutorial scenes
+(about 340 MB), which nothing in hyperproc reads but which let you prove a
+fresh install end to end; <code>--engine LibRadTran</code> adds the libRadtran engine;
+<code>--check</code> reports what is present and downloads nothing. Setup downloads several GB of engines and data assets and records their base in ISOFIT's own <code>~/.isofit/isofit.ini</code>. The base defaults to <code>~/.isofit</code>; pass <code>--base /data/shared/isofit_assets</code> to put it somewhere every user of a shared machine can read, so the assets are fetched once. It does not belong inside the package or the environment, which a reinstall would discard. Building 6S needs <code>gfortran</code> and <code>make</code>; libRadtran needs C/Fortran tooling and GSL. Inspect <a href="../configuration/">configuration and external assets</a> before running retrievals.</p>
+<p>Setup also checks the home-directory <code>.ncrc</code>, <code>.daprc</code>, and <code>.dodsrc</code> files
+and appends a missing final newline when needed. <code>--check</code> reports that issue
+without modifying the files. Atmospheric retrieval checks the home and work
+directories and warns before launching ISOFIT; see <a href="../../project/troubleshooting/">troubleshooting</a>.</p>
 <p>For satellite BRDF downloads, authenticate Earth Engine with <code>earthengine authenticate</code> and configure an authorized project. Archive downloads use separate credentials; see <a href="../data-access/">data access</a>.</p>
 <h2 id="when-something-reports-a-missing-dependency">When something reports a missing dependency<a class="headerlink" href="#when-something-reports-a-missing-dependency" title="Permanent link">&para;</a></h2>
 <p>Two kinds of thing can be missing, and only one of them is a pip install.</p>
 <p><strong>Python packages.</strong> Every optional import raises with the command that
 supplies it, so the error message is the instruction:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>to_geodataframe needs geopandas:
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    pip install 'hyperproc[search-map]'
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>to_geodataframe needs geopandas:
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    pip install 'hyperproc[search-map]'
 </code></pre></div>
 <p>The capability table above lists all of them. An extra always installs
 everything that capability needs, so prefer <code>pip install 'hyperproc[srf]'</code>
@@ -5286,8 +5399,8 @@ engine, and the default engine needs two of them:</p>
 </table>
 <p>A tool counts when it is on <code>PATH</code> or in the running environment's <code>bin</code>, so
 either a system package or conda-forge works:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gfortran<span class="w"> </span>make
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gcc<span class="w"> </span>gsl
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gfortran<span class="w"> </span>make
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gcc<span class="w"> </span>gsl
 </code></pre></div>
 <p>Take GSL from conda-forge even if the system has one. The libRadtran build
 compiles against the running environment's <code>include</code> and <code>lib</code>, and ISOFIT's
@@ -5295,17 +5408,17 @@ own build step does not check for GSL - it exits successfully and leaves no
 <code>bin/uvspec</code> behind.</p>
 <p><strong>Ask before guessing.</strong> <code>--check</code> downloads nothing and prints every missing
 item with the command that supplies it:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>hyperproc-atmos-setup<span class="w"> </span>--check
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>hyperproc-atmos-setup<span class="w"> </span>--check<span class="w"> </span>--engine<span class="w"> </span>LibRadTran
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>hyperproc-atmos-setup<span class="w"> </span>--check
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>hyperproc-atmos-setup<span class="w"> </span>--check<span class="w"> </span>--engine<span class="w"> </span>LibRadTran
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>hyperproc.atmos check  (python 3.12.11, isofit 4.1.5)
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  ini      /home/you/.isofit/isofit.ini
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  gfortran MISSING
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  make     /usr/bin/make
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>  sixs       MISSING  /home/you/.isofit/sixs
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>  to fix:
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    - gfortran: conda install -c conda-forge gfortran   (needed to build the engine)
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    - sixs: isofit download sixs   -&gt; /home/you/.isofit/sixs
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>hyperproc.atmos check  (python 3.12.11, isofit 4.1.5)
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  ini      /home/you/.isofit/isofit.ini
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>  gfortran MISSING
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>  make     /usr/bin/make
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>  sixs       MISSING  /home/you/.isofit/sixs
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>  to fix:
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    - gfortran: conda install -c conda-forge gfortran   (needed to build the engine)
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    - sixs: isofit download sixs   -&gt; /home/you/.isofit/sixs
 </code></pre></div>
 <h2 id="building-only-this-website">Building only this website<a class="headerlink" href="#building-only-this-website" title="Permanent link">&para;</a></h2>
 <p>Install <code>docs-site/requirements.txt</code> in a separate environment. API extraction is static and notebooks are rendered from saved outputs. See <a href="../../development/documentation/">maintaining this site</a>.</p>
@@ -5386,7 +5499,7 @@ item with the command that supplies it:</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      hyperproc 0.1.1 · MIT · Fujiang Ji
+      hyperproc 0.1.2 · MIT · Fujiang Ji
     </div>
   
   

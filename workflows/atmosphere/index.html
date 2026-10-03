@@ -1013,6 +1013,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#small-windows-and-analytical-line-neighbors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Small windows and analytical-line neighbors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#optional-satellite-brdf-stage" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2376,6 +2387,8 @@
       
         
       
+        
+      
     
     
     
@@ -2436,6 +2449,34 @@
     
   
     hyperproc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/hyperproc-_ncrc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc._ncrc
   
 
     
@@ -4972,6 +5013,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#small-windows-and-analytical-line-neighbors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Small windows and analytical-line neighbors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#optional-satellite-brdf-stage" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5118,6 +5170,17 @@ for the exact package constraints and setup commands.</p>
 </tr>
 </tbody>
 </table>
+<h2 id="small-windows-and-analytical-line-neighbors">Small windows and analytical-line neighbors<a class="headerlink" href="#small-windows-and-analytical-line-neighbors" title="Permanent link">&para;</a></h2>
+<p><code>resolve_neighbors()</code> caps requested counts using the valid pixel fraction,
+window size, and <code>segmentation_size</code>, with a minimum of five. The conservative
+estimate is half the nominal segment count. If a previous label image is
+available, 80% of its measured segment count can lower the cap, but never
+raise it. This avoids a larger neighbor request merely because a completed
+work directory now has a label image, while allowing a smaller measured
+segmentation to reduce the request after a failure.</p>
+<p>The atmospheric runner also checks netCDF configuration files before starting
+ISOFIT. Setup can repair missing final newlines; the runner warns rather than
+editing those files. See <a href="../../getting-started/configuration/">configuration</a>.</p>
 <h2 id="optional-satellite-brdf-stage">Optional satellite BRDF stage<a class="headerlink" href="#optional-satellite-brdf-stage" title="Permanent link">&para;</a></h2>
 <p><code>stages=("ac", "brdf")</code> enables the satellite normalization route. Airborne grouped correction belongs in the separate <a href="../airborne/">airborne workflow</a>, not this stage list.</p>
 <h2 id="validation-and-reuse">Validation and reuse<a class="headerlink" href="#validation-and-reuse" title="Permanent link">&para;</a></h2>
@@ -5200,7 +5263,7 @@ for the exact package constraints and setup commands.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      hyperproc 0.1.1 · MIT · Fujiang Ji
+      hyperproc 0.1.2 · MIT · Fujiang Ji
     </div>
   
   

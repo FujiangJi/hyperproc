@@ -504,6 +504,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example-pipeline-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example pipeline locations
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2346,6 +2357,8 @@
       
         
       
+        
+      
     
     
     
@@ -2406,6 +2419,34 @@
     
   
     hyperproc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/hyperproc-_ncrc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc._ncrc
   
 
     
@@ -4930,6 +4971,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example-pipeline-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example pipeline locations
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4997,13 +5049,15 @@
 </tbody>
 </table>
 <p><strong>Creating the Earthdata credential.</strong> Run this once; it asks for the username
-and password and writes <code>~/.netrc</code>, after which every run is non-interactive:</p>
+and password and writes <code>~/.netrc</code> for later runs:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">"import earthaccess; earthaccess.login(persist=True)"</span>
 </code></pre></div>
 <p>Configure credentials before starting an unattended run. The CMR downloader
 delegates authentication to <code>earthaccess.login()</code>, which can prompt when no
 usable stored credentials are available. The example pipelines check
-<code>hp.archive.can_download()</code> before downloading; that preflight checks local
+<code>hp.archive.can_download()</code> before downloading and can request missing
+credentials at an interactive terminal. Piped or unattended pipeline runs
+skip that prompt and stop with setup instructions. This preflight checks local
 configuration, not the validity of an account or token. The persisted login
 above avoids entering credentials for each run.</p>
 <p>Searches use anonymous archive access. NEON flightline listing and downloads require a token in this implementation. For DLR, configure <code>ENMAP_USERNAME</code>/<code>ENMAP_PASSWORD</code> or <code>DESIS_USERNAME</code>/<code>DESIS_PASSWORD</code>; <code>DLR_EOC_USERNAME</code>/<code>DLR_EOC_PASSWORD</code> provides a fallback. Mission access is granted separately, so credentials found locally do not establish authorization for both missions.</p>
@@ -5069,6 +5123,19 @@ above avoids entering credentials for each run.</p>
 <h2 id="reader-support-and-search-coverage">Reader support and search coverage<a class="headerlink" href="#reader-support-and-search-coverage" title="Permanent link">&para;</a></h2>
 <p>PRISMA, Tanager, AVIRIS-NG, and AVIRIS Classic have readers but no search backend here. DESIS L1B/L1C are readable but not searchable through this package. Unsupported search requests raise an explanation with the alternate archive, rather than returning a misleading empty result. NEON DP3 mosaics have an unimplemented reader route. HISUI, GF-5/AHSI, and Hyperion have no reader in this checkout.</p>
 <p>Tutorials use <code>tests/data/</code> and saved outputs may reference another machine's paths. Set input/output roots for your own environment. Retain product identifiers, versions, dates, archive, quality documentation, and scaling/geolocation metadata. Store credentials outside notebooks.</p>
+<h2 id="example-pipeline-locations">Example pipeline locations<a class="headerlink" href="#example-pipeline-locations" title="Permanent link">&para;</a></h2>
+<p>The scripts in <code>py_tests/0_src_code/</code> now keep <code>1_data/&lt;sensor&gt;/</code> and
+<code>2_outputs/&lt;sensor&gt;/</code> beside the scripts. <code>--source copy</code> reads provisioned
+scenes from <code>tests/data</code>; set <code>HYPERPROC_TESTS_DATA</code> when that source is elsewhere.
+Download routes stop when credentials, scenes, or required levels are missing
+rather than silently substituting a local scene. PRISMA, Tanager, and the
+configured DESIS example use local products. EnMAP pairs levels by acquisition
+identity rather than assuming identical processing timestamps. These scripts
+are separate from the saved notebook tutorials.</p>
+<p>After reviewing a DLR account's usage policy, the shared pipeline accepts
+<code>--accept-dlr-policy</code>; the package downloader's corresponding option is
+<code>accept_policy=True</code>. See <a href="../../workflows/search/#interrupted-dlr-downloads">DLR download recovery</a>
+for incomplete transfers.</p>
 
 
 
@@ -5146,7 +5213,7 @@ above avoids entering credentials for each run.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      hyperproc 0.1.1 · MIT · Fujiang Ji
+      hyperproc 0.1.2 · MIT · Fujiang Ji
     </div>
   
   

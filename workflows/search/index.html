@@ -460,6 +460,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#interrupted-dlr-downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interrupted DLR downloads
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#draw-and-select-in-a-notebook" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2368,6 +2379,8 @@
       
         
       
+        
+      
     
     
     
@@ -2428,6 +2441,34 @@
     
   
     hyperproc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/hyperproc-_ncrc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc._ncrc
   
 
     
@@ -4964,6 +5005,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#interrupted-dlr-downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interrupted DLR downloads
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#draw-and-select-in-a-notebook" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5052,6 +5104,18 @@ preflight, not a provider-authentication check. See <a href="../../getting-start
 <h2 id="dlr-mission-access-and-policy">DLR mission access and policy<a class="headerlink" href="#dlr-mission-access-and-policy" title="Permanent link">&para;</a></h2>
 <p>DLR downloads use the provider's CAS sign-on form. The backend does not use HTTP Basic authentication. EnMAP and DESIS can need distinct accounts or mission approvals. If the first sign-in requires an Acceptable Usage Policy, inspect it with <code>hp.archive.dlr.read_policy("ENMAP")</code> and accept it through the provider's browser flow. The downloader also supports <code>accept_policy=True</code> for a policy you have reviewed and agreed to.</p>
 <p>See <a href="../../getting-started/data-access/">data access</a> for credential names and search coverage. Unsupported instruments or levels raise an explanatory error; an empty supported search can mean no observations match the query or no processed product was published.</p>
+<h2 id="interrupted-dlr-downloads">Interrupted DLR downloads<a class="headerlink" href="#interrupted-dlr-downloads" title="Permanent link">&para;</a></h2>
+<p>The DLR backend keeps incomplete transfers beside the final file as <code>*.part</code>.
+It resumes from the saved byte offset with an HTTP Range request when the
+server supports it, including on a later <code>hp.download()</code> call. A server that
+ignores Range causes the partial file to be overwritten by a complete
+transfer rather than appended twice. When the server supplies a total size,
+a short transfer is retried before the file receives its final name.</p>
+<p>Connections that add bytes reset the no-progress retry counter. Repeated
+failures without progress use increasing waits and eventually stop, leaving
+the partial file for another attempt. Permission errors are not retried.
+Existing nonempty final files are reused; this is not a checksum verification.
+This recovery behavior is specific to DLR, not a promise about every backend.</p>
 <h2 id="draw-and-select-in-a-notebook">Draw and select in a notebook<a class="headerlink" href="#draw-and-select-in-a-notebook" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">m</span> <span class="o">=</span> <span class="n">hp</span><span class="o">.</span><span class="n">search_map</span><span class="p">(</span><span class="n">bbox</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">121.0</span><span class="p">,</span> <span class="mf">34.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">119.8</span><span class="p">,</span> <span class="mf">35.1</span><span class="p">))</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">m</span>  <span class="c1"># display in a notebook cell</span>
@@ -5140,7 +5204,7 @@ preflight, not a provider-authentication check. See <a href="../../getting-start
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      hyperproc 0.1.1 · MIT · Fujiang Ji
+      hyperproc 0.1.2 · MIT · Fujiang Ji
     </div>
   
   

@@ -2274,6 +2274,8 @@
       
         
       
+        
+      
     
     
     
@@ -2334,6 +2336,34 @@
     
   
     hyperproc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/hyperproc-_ncrc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hyperproc._ncrc
   
 
     
@@ -5030,6 +5060,7 @@ private granules or live archives, <code>data</code> needs the provider granules
 <li>Reader tests check recorded metadata fingerprints and physical invariants against provisioned granules.</li>
 <li>The R-compatible spline route uses retained reference spectra/results from R.</li>
 <li>Archive tests replay fixtures from CMR, NEON, and DLR and test map state without requiring live queries. <code>tests/tools/make_archive_fixtures.py</code> refreshes recordings; review their changes.</li>
+<li>New offline regressions check netCDF configuration detection/repair, interrupted DLR transfers and Range behavior, and small-window neighbor-count consistency.</li>
 <li>Tests marked <code>network</code> check live archive behavior separately, including sign-on assumptions.</li>
 <li>Saved notebook outputs document historical examples; they are not fresh regression-test results.</li>
 </ul>
@@ -5115,7 +5146,7 @@ private granules or live archives, <code>data</code> needs the provider granules
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      hyperproc 0.1.1 · MIT · Fujiang Ji
+      hyperproc 0.1.2 · MIT · Fujiang Ji
     </div>
   
   
