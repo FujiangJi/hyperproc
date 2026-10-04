@@ -4958,7 +4958,7 @@
 <p>Not sure which you have? <code>uname -m</code> prints <code>arm64</code> on Apple silicon and
 <code>x86_64</code> on an Intel Mac; on Linux it prints <code>x86_64</code> or <code>aarch64</code>. Pick the
 box, copy all four lines, run them.</p>
-<p><strong>Mac, Apple silicon (M1-M4)</strong></p>
+<p><strong>Mac, Apple silicon</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>-fsSLO<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>bash<span class="w"> </span>Miniconda3-latest-MacOSX-arm64.sh
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">source</span><span class="w"> </span>~/.zshrc
@@ -4984,28 +4984,53 @@ box, copy all four lines, run them.</p>
 </code></pre></div>
 <p><strong>Windows</strong>: use WSL2, then follow the Linux box for your chip. Every Linux
 instruction on this page then applies exactly as written.</p>
+<p>Native Windows runs everything <strong>except atmospheric correction</strong>: the readers,
+topographic and BRDF correction, quality flags, spectral tools, resampling,
+alignment and export, and the <code>search</code>, <code>srf</code>, <code>search-map</code> and <code>brdf</code> extras.
+Every package those need publishes a Windows wheel or is pure Python. Install conda from
+<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe"><code>Miniconda3-latest-Windows-x86_64.exe</code></a>,
+open <strong>Anaconda Prompt</strong>, and use these - the same lines as the Linux box
+without the compilers, without <code>[atmos]</code>, and <strong>without the quotes</strong>, which
+Anaconda Prompt passes through to pip instead of removing:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>conda create -n hyperproc python=3.12
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>conda activate hyperproc
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>pip install hyperproc
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>pip install hyperproc[search]
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>pip install hyperproc[srf]
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>pip install hyperproc[search-map]
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>pip install hyperproc[brdf]
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>pip install hyperproc[notebooks]
+</code></pre></div>
+<p><code>[atmos]</code> is the one that will not work, and the reason is not packaging.
+ISOFIT installs, but the radiative-transfer engines are compiled from source
+on the machine: 6S is Fortran and needs <code>gfortran</code> and <code>make</code>, libRadtran is C
+and Fortran against GSL and runs <code>./configure</code>. None of that is part of a
+Windows toolchain, and the engines have no Windows build - not even for the
+default engine, since sRTMnet compiles 6S underneath. WSL2 is the way to run
+atmospheric correction on a Windows machine.</p>
 <p>The installer asks you to accept the licence, choose a location, and whether
 to initialise your shell. <strong>Answer yes to the last one</strong> - that is what makes
 the <code>source</code> line work. If <code>conda --version</code> still says the command is not
 found, the shell was never initialised: run <code>conda init zsh</code> on macOS or
 <code>conda init bash</code> on Linux, then open a new terminal.</p>
 <p><strong>Installation · Python &gt;=3.11 · Use Python 3.12 for atmospheric correction</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>hyperproc<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>hyperproc
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gfortran<span class="w"> </span>make<span class="w"> </span>gcc<span class="w"> </span>gsl
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>pip<span class="w"> </span>install<span class="w"> </span>hyperproc
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[search]'</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[srf]'</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[search-map]'</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[brdf]'</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[atmos]'</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[notebooks]'</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>hyperproc-atmos-setup
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>hyperproc-atmos-setup<span class="w"> </span>--examples
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>hyperproc-atmos-setup<span class="w"> </span>--engine<span class="w"> </span>LibRadTran
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>hyperproc-atmos-setup<span class="w"> </span>--check
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>hyperproc<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>hyperproc
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gfortran<span class="w"> </span>make<span class="w"> </span>gcc<span class="w"> </span>gsl
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>pip<span class="w"> </span>install<span class="w"> </span>hyperproc
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[search]'</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[srf]'</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[search-map]'</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[brdf]'</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[atmos]'</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'hyperproc[notebooks]'</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>hyperproc-atmos-setup
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>hyperproc-atmos-setup<span class="w"> </span>--examples
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>hyperproc-atmos-setup<span class="w"> </span>--engine<span class="w"> </span>LibRadTran
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>hyperproc-atmos-setup<span class="w"> </span>--check
 </code></pre></div>
 <p>That is the whole installation. The <code>conda install</code> line supplies the
 compilers the atmospheric engines are built from, which pip cannot; everything
@@ -5055,11 +5080,11 @@ else <code>pip install hyperproc</code> needs, it installs itself.</p>
 already in place without downloading anything. On a shared machine, add
 <code>--base /data/shared/isofit_assets</code> so every user reads one copy.</p>
 <p><a href="getting-started/installation/">Installation guide: environments, optional features, and setup requirements</a></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">hyperproc</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">hp</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">ds</span> <span class="o">=</span> <span class="n">hp</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"/path/to/a/supported/provider_product"</span><span class="p">)</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">hp</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">ds</span><span class="p">)</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">ndvi</span> <span class="o">=</span> <span class="n">hp</span><span class="o">.</span><span class="n">spectral_index</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="s2">"NDVI"</span><span class="p">)</span>  <span class="c1"># use suitable reflectance, not radiance</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">hyperproc</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">hp</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">ds</span> <span class="o">=</span> <span class="n">hp</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"/path/to/a/supported/provider_product"</span><span class="p">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">hp</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">ds</span><span class="p">)</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">ndvi</span> <span class="o">=</span> <span class="n">hp</span><span class="o">.</span><span class="n">spectral_index</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="s2">"NDVI"</span><span class="p">)</span>  <span class="c1"># use suitable reflectance, not radiance</span>
 </code></pre></div>
 <div class="grid cards">
 <ul>

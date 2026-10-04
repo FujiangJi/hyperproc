@@ -88,9 +88,9 @@
     "docs-site/docs/documentation/index.md": "c0bd238590605a3e799c7870312e6ee01be469958188ac620ae4d603d395f613",
     "docs-site/docs/getting-started/configuration.md": "1767ce05a18171f6de10c4bfe29f9c9dd317a91b568a5b7aa8296055b6320ee4",
     "docs-site/docs/getting-started/data-access.md": "93f261256764cbb5ff6341da258fdd9396319403386c863ed4c31bda06896b17",
-    "docs-site/docs/getting-started/installation.md": "941678c93c70af20b5755dc21c8d9454c8274d537bfcbd13db31edfac0af0f36",
+    "docs-site/docs/getting-started/installation.md": "faf039b63853164a95b1775db833cbd0ed56127dc4a8c34bfc00d02fcd6dbd47",
     "docs-site/docs/getting-started/quickstart.md": "0a93cfe77532bd6ab457d5553252e81f2f9c83ad27d712e2296771297331735e",
-    "docs-site/docs/index.md": "c556007433697f0604906dc5aa96f370c30ee3a576c854c4d8544de4ffce97b8",
+    "docs-site/docs/index.md": "9494bbfc4f7a174efdec0926888b8586bd7aacddcdf5fb6eef1dc3b97bd87c55",
     "docs-site/docs/javascripts/notebook-maps.js": "374844ebd5a3fa102b6719bcdba51db32c3628c714dee80b0479a218a7d96894",
     "docs-site/docs/project/about.md": "833f2930e2e5423997dc282b34a50dd4c5cf2a8c7dd610fff8ced63f4ebccbae",
     "docs-site/docs/project/governance.md": "6d0d9dc956a48c965ef7e4443adfb4bf767a7b020176df878d2224811ec4f9e4",
@@ -219,7 +219,7 @@
     "pyproject.toml": "5d6ecdb6093670054034eb42400a5f1f266d9b6d556a2b0714a90b5b087d2392",
     "LICENSE": "15fdda3048c4b4175c17d9bd3e745f50c70ea589fd354b4b78676103b213c83b",
     "CITATION.cff": "19b5b8782e472e17e5afaa2ba5e6de03e9b77324a71bf96c7dc839963bc9e0f0",
-    "README.md": "2e6b9128c3493b46bb919099a8c762a8a05fbed5276554080b87d3a43e4b3598"
+    "README.md": "04c5b4e0e1b7c9712687bc26caabfed1b03720ba27f7ed69de71accaccf263e7"
   },
   "execution_policy": "Static source inspection and saved-output rendering only; no hyperproc import or notebook execution."
 }
