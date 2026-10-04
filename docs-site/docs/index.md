@@ -26,7 +26,7 @@ Not sure which you have? `uname -m` prints `arm64` on Apple silicon and
 `x86_64` on an Intel Mac; on Linux it prints `x86_64` or `aarch64`. Pick the
 box, copy all four lines, run them.
 
-**Mac, Apple silicon (M1-M4)**
+**Mac, Apple silicon**
 
 ```bash
 curl -fsSLO https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
@@ -64,6 +64,35 @@ conda --version
 
 **Windows**: use WSL2, then follow the Linux box for your chip. Every Linux
 instruction on this page then applies exactly as written.
+
+Native Windows runs everything **except atmospheric correction**: the readers,
+topographic and BRDF correction, quality flags, spectral tools, resampling,
+alignment and export, and the `search`, `srf`, `search-map` and `brdf` extras.
+Every package those need publishes a Windows wheel or is pure Python. Install conda from
+[`Miniconda3-latest-Windows-x86_64.exe`](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe),
+open **Anaconda Prompt**, and use these - the same lines as the Linux box
+without the compilers, without `[atmos]`, and **without the quotes**, which
+Anaconda Prompt passes through to pip instead of removing:
+
+```bat
+conda create -n hyperproc python=3.12
+conda activate hyperproc
+
+pip install hyperproc
+pip install hyperproc[search]
+pip install hyperproc[srf]
+pip install hyperproc[search-map]
+pip install hyperproc[brdf]
+pip install hyperproc[notebooks]
+```
+
+`[atmos]` is the one that will not work, and the reason is not packaging.
+ISOFIT installs, but the radiative-transfer engines are compiled from source
+on the machine: 6S is Fortran and needs `gfortran` and `make`, libRadtran is C
+and Fortran against GSL and runs `./configure`. None of that is part of a
+Windows toolchain, and the engines have no Windows build - not even for the
+default engine, since sRTMnet compiles 6S underneath. WSL2 is the way to run
+atmospheric correction on a Windows machine.
 
 The installer asks you to accept the licence, choose a location, and whether
 to initialise your shell. **Answer yes to the last one** - that is what makes
