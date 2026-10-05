@@ -38,7 +38,7 @@ python manage.py serve --port 8765
 - API descriptions come from package docstrings and signatures. The docs build does not rewrite those source files.
 - Notebook pages come from `tests/0_src_code/`; keep caveat annotations in the maintained companion guides. Edit a notebook only as a separate intentional development action.
 - Logos live under `docs/assets/logos/`; `.theme-light` and `.theme-dark` variants respond to Material's current color scheme.
-- The artwork under `docs/assets/logos` is what the site uses, and a clone needs nothing else to build; the vector masters it was exported from are not distributed. The homepage hero uses `overrides/main.html`; all pages share the header in `overrides/partials/home-header.html`. Data, Tools, and Documentation have landing pages with category highlighting in the header; its local image is `docs/assets/images/forest-mountain-hero.png`.
+- The artwork under `docs/assets/logos` is what the site uses, and a clone needs nothing else to build. PNGs preserve the supplied logo reference; separate editable SVG reconstructions trace its six ribbons and letter outlines and rebuild the illustration. Local regeneration sources are in `design_assets/hyperproc-logo-v4/` at the package root; these are not original font files. The homepage hero uses `overrides/main.html`; all pages share the header in `overrides/partials/home-header.html`. Data, Tools, and Documentation have landing pages with category highlighting in the header; its local image is `docs/assets/images/forest-mountain-hero.png`.
 
 ## What generation does
 

@@ -6,8 +6,8 @@ hide:
 ---
 
 <div class="homepage-brand">
-  <img class="theme-light" src="assets/logos/wordmark.svg" alt="hyperproc" width="1840" height="410">
-  <img class="theme-dark" src="assets/logos/wordmark-dark.svg" alt="hyperproc" width="1840" height="410">
+  <img class="theme-light" src="assets/logos/wordmark.svg" alt="hyperproc" width="1736" height="426">
+  <img class="theme-dark" src="assets/logos/wordmark-dark.svg" alt="hyperproc" width="1736" height="426">
   <div>
     <p class="homepage-brand__eyebrow">AIRBORNE + SATELLITE</p>
     <p>Hyperspectral tools for terrestrial ecosystem monitoring</p>

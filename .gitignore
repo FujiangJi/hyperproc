@@ -107,3 +107,8 @@ py_tests/0_src_code/2_outputs/*/*
 !py_tests/0_src_code/2_outputs/*/figures/
 py_tests/**/__pycache__/
 *.bak
+
+# Manuscript work in progress: feasibility analyses, drafts and the figures
+# they generate. Tracked once something is ready to share - remove this rule
+# then rather than committing around it.
+0_manuscript/

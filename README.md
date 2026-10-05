@@ -20,7 +20,7 @@ correction for airborne and satellite imaging spectrometers.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FujiangJi/hyperproc/main/docs-site/docs/assets/logos/wordmark-dark.svg">
-  <img src="https://raw.githubusercontent.com/FujiangJi/hyperproc/main/docs-site/docs/assets/logos/wordmark.svg" alt="hyperproc" width="720">
+  <img src="https://raw.githubusercontent.com/FujiangJi/hyperproc/main/docs-site/docs/assets/logos/wordmark.svg" alt="hyperproc — six spectral ribbons, Earth and an observation satellite" width="720">
 </picture>
 
 **Documentation: <https://fujiangji.github.io/hyperproc/>**

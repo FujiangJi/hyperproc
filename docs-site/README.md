@@ -42,26 +42,28 @@ research environment. Use Python 3.11 or newer, matching the package requirement
 - `navigation.yml`: navigation structure; API/notebook items are inserted by generation.
 - `mkdocs.yml`: theme/build settings; navigation and API plugin settings are generated.
 - `docs/stylesheets/extra.css` and `overrides/partials/logo.html`: design/theme switching.
-- `docs/assets/logos`: the website's own copies of the artwork, and the only
-  ones it needs. The vector masters they were exported from are not
-  distributed with the repository.
+- `docs/assets/logos`: reference-preserving PNG display artwork, editable SVG
+  reconstructions, and the favicon. These copies are sufficient to build the site.
 
 The compact rectangular wordmark switches in the header and homepage brand strip.
 The full rectangular artwork appears on the About page, and both circular variants
 are available in its downloads. All use Material's `data-md-color-scheme` state.
-Outlined wordmark lettering needs no external font download; the full rectangular
-taglines are editable SVG text with a system-font fallback.
+Display images retain the supplied reference's lettering and six spectral bands,
+so no font download is needed. The separate SVGs trace the lettering and ribbons
+and reconstruct the illustration; their taglines remain editable SVG text.
 
 The homepage layout lives in `overrides/main.html`; every page shares the
 header in `overrides/partials/home-header.html`. Data, Tools, and Documentation
 open dedicated landing pages, with the current category highlighted throughout
 the site. The header displays the logo without a duplicate site-name label. The generated forest-and-mountain hero is
 stored in `docs/assets/images/forest-mountain-hero.png`; it is an illustrative
-landscape, not a processing output. The SVGs under `docs/assets/logos` are
-exports; the masters they came from are kept outside the repository, so
-changing the artwork means regenerating them rather than editing these in
-place. Compact wordmark copies omit the taglines and use a tighter SVG
-viewBox; the favicon uses the spectral-ribbon h alone.
+landscape, not a processing output. Local regeneration sources and the untouched
+supplied PNG are in `../design_assets/hyperproc-logo-v4/`; that directory's README
+distinguishes faithful display exports from editable vector reconstructions.
+The header, homepage and package README use the PNGs. The About page links both
+formats. Compact wordmarks omit the taglines and retain their aspect ratio;
+the favicon uses the six-band spectral h alone. SVG reconstructions are not
+the original font or vector source files.
 
 ## Evidence and pending details
 

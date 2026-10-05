@@ -2,12 +2,12 @@
 
 hyperproc is a Python package for reading and processing airborne and satellite imaging-spectroscopy data. This documentation presents the current local implementation and tutorials, with terrestrial ecosystem research as an application focus.
 
-![hyperproc rectangular identity](../assets/logos/rectangular.svg){ .brand-banner .theme-light }
-![hyperproc rectangular identity, dark theme](../assets/logos/rectangular-dark.svg){ .brand-banner .theme-dark }
+![hyperproc rectangular identity](../assets/logos/rectangular.png){ .brand-banner .theme-light }
+![hyperproc rectangular identity, dark theme](../assets/logos/rectangular-dark.png){ .brand-banner .theme-dark }
 
 ## Visual identity
 
-The Spectral Ribbon identity combines a flowing spectral “h”, gradient wordmark, a forest landscape inside the “o”, and an observation satellite. A compact horizontal wordmark appears in the website header; the full rectangular and circular versions are available below. Each layout has light- and dark-surface artwork and editable vector elements.
+The identity combines six rising spectral ribbons in the “h”, a blue-to-green wordmark, a landscape with two trees inside the “o”, and an observation satellite. Website images preserve the supplied reference artwork and its lettering. Light- and dark-surface display images and editable SVG reconstructions are available below.
 
 ## People and contact
 
@@ -15,9 +15,13 @@ The Spectral Ribbon identity combines a flowing spectral “h”, gradient wordm
 
 ## Downloads
 
-- [Rectangular logo — light](../assets/logos/rectangular.svg)
-- [Rectangular logo — dark](../assets/logos/rectangular-dark.svg)
-- [Circular logo — light](../assets/logos/circular.svg)
-- [Circular logo — dark](../assets/logos/circular-dark.svg)
+- [Rectangular display image — light](../assets/logos/rectangular.png)
+- [Rectangular display image — dark](../assets/logos/rectangular-dark.png)
+- [Circular display image — light](../assets/logos/circular.png)
+- [Circular display image — dark](../assets/logos/circular-dark.png)
+- [Editable rectangular SVG — light](../assets/logos/rectangular.svg)
+- [Editable rectangular SVG — dark](../assets/logos/rectangular-dark.svg)
+- [Editable circular SVG — light](../assets/logos/circular.svg)
+- [Editable circular SVG — dark](../assets/logos/circular-dark.svg)
 
-The wordmark uses editable outlined lettering; rectangular taglines remain editable text. The simplified spectral-ribbon “h” is used as the favicon.
+The supplied source is a PNG. Display PNGs retain its artwork; editable SVGs trace the letter and ribbon outlines and reconstruct the illustration as separate vector elements. They are not original font files or exact vector source files. Rectangular taglines remain editable text. The six-ribbon “h” is used as the favicon.

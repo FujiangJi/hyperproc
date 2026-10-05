@@ -270,7 +270,7 @@ def main():
     documentation_sources.update(ROOT/name for name in ('hooks.py', 'navigation.yml', 'mkdocs.yml'))
     for directory, pattern in [('scripts','*.py'), ('overrides','*.html'),
                                ('docs/stylesheets','*.css'), ('docs/javascripts','*.js'),
-                               ('docs/assets/logos','*.svg'), ('docs/assets/images','*'),
+                               ('docs/assets/logos','*'), ('docs/assets/images','*'),
                                ('docs/assets/vendor','*')]:
         documentation_sources.update(path for path in (ROOT/directory).rglob(pattern) if path.is_file())
     manifest={'source_version':version, 'python_requires':project['requires-python'],'api_modules':sum(map(len,groups.values())),
