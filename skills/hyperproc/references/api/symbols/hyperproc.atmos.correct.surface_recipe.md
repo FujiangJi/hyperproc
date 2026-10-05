@@ -1,0 +1,13 @@
+# hyperproc.atmos.correct.surface_recipe
+
+Release baseline: **0.1.2**. Non-underscore declaration; verify export/usage context.
+
+```text
+def surface_recipe(name: str | Path=DEFAULT_SURFACE) -> Path
+```
+
+A surface-prior recipe (``.json``) or built model (``.mat``).
+
+A bare name is looked up in ISOFIT's ``surface`` asset directory.
+
+[Module and aliases](../hyperproc-atmos-correct.md). For another installed version, use `scripts/api_index.py --symbol hyperproc.atmos.correct.surface_recipe --runtime`.

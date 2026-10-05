@@ -1,0 +1,122 @@
+{
+  "module": "hyperproc.readers.pace",
+  "source_path": "hyperproc/readers/pace.py",
+  "sha256": "83f2755438542c05d38167c3ba4a88cb22b69193792de5860e2856537f3954ca",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "finish_bands",
+      "from": "hyperproc.readers._common",
+      "name": "finish_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "normalise_angles",
+      "from": "hyperproc.readers._common",
+      "name": "normalise_angles",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers-pace.md",
+  "constants": [
+    {
+      "name": "FILL",
+      "reference": "api/constants/hyperproc.readers.pace.FILL.md"
+    },
+    {
+      "name": "NOMINAL_FWHM_NM",
+      "reference": "api/constants/hyperproc.readers.pace.NOMINAL_FWHM_NM.md"
+    },
+    {
+      "name": "SWIR_BANDPASS",
+      "reference": "api/constants/hyperproc.readers.pace.SWIR_BANDPASS.md"
+    },
+    {
+      "name": "ARMS",
+      "reference": "api/constants/hyperproc.readers.pace.ARMS.md"
+    },
+    {
+      "name": "FLAGS",
+      "reference": "api/constants/hyperproc.readers.pace.FLAGS.md"
+    },
+    {
+      "name": "GEOM",
+      "reference": "api/constants/hyperproc.readers.pace.GEOM.md"
+    },
+    {
+      "name": "_GRANULE",
+      "reference": "api/constants/hyperproc.readers.pace._GRANULE.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.readers.pace.open_pace",
+      "line": 77,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.pace.open_pace.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.pace._fwhm_for",
+      "line": 157,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.pace._fwhm_for.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.pace._read_l2",
+      "line": 167,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.pace._read_l2.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.pace._read_l1b",
+      "line": 179,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.pace._read_l1b.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.pace._add_latlon",
+      "line": 206,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.pace._add_latlon.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.pace._add_flags",
+      "line": 214,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.pace._add_flags.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.pace._add_scanline",
+      "line": 231,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.pace._add_scanline.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.pace._add_geometry",
+      "line": 260,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.pace._add_geometry.md"
+    }
+  ],
+  "classes": []
+}

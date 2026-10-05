@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-atmos/",
+    "html_sha256": "60f3f6c5032316f151f8e8aa92ec4b16e554299489fc666c284c029bcd83d3d8"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-correct-brdf/",
+    "html_sha256": "b681d90136c159ef69c66da332bbb86e28c4a6d05c6c6996a46ba8968f0ac7be"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-correct-cfactor/",
+    "html_sha256": "3517ddadf7849388d15bf1a546a13fa5e48616c032f73c71ea12b20bb5417beb"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-correct-coefficients/",
+    "html_sha256": "42222a6d882fbfaa8786a5cfee3a9d9ac9fcd0c33f88864945d20621b26dd86a"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-correct-kernels/",
+    "html_sha256": "a492a939754caee129333b2ddbe3cbbc4f1d2209ea5e0483ca40a30c687a25e7"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-correct-masks/",
+    "html_sha256": "53058daa4aa4ca94807b572570bf5d7f664d3f02a683180e2a11c7433579e9ba"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-correct-mcd43/",
+    "html_sha256": "f55d70560812bc6dcd6275a7b2314f4c8d8f9257463e4f6dd1dab71f96c0ec51"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-correct-pipeline/",
+    "html_sha256": "be60f952ad989ba52b5fa2a03ca70d9aae0dee245fcf66c798298a35b27b8c91"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-correct-topo/",
+    "html_sha256": "6a95e441cc3b2f87893a4f746a95006083b52790f7f45deac407646958364725"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-correct/",
+    "html_sha256": "aa5713d90fc37c43cee4632019ea44c5dcb0d0b1a74a124810a781d0c25ecd11"
+  }
+]

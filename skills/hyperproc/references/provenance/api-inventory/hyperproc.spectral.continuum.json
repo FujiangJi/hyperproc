@@ -1,0 +1,60 @@
+{
+  "module": "hyperproc.spectral.continuum",
+  "source_path": "hyperproc/spectral/continuum.py",
+  "sha256": "254a070ec23299c4e931c80a8224349cc961d1939ee1b3cdc6ef9a228db2b943",
+  "exports": [
+    "continuum_removal"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "main_var",
+      "from": "hyperproc.io",
+      "name": "main_var",
+      "relative_level": 0
+    },
+    {
+      "local": "good_bands",
+      "from": "hyperproc.spectral.bands",
+      "name": "good_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "_runs",
+      "from": "hyperproc.spectral.bands",
+      "name": "runs_of_good_bands",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-spectral-continuum.md",
+  "constants": [],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.spectral.continuum._upper_hull",
+      "line": 21,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.continuum._upper_hull.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.continuum._continuum_block",
+      "line": 69,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.continuum._continuum_block.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.continuum.continuum_removal",
+      "line": 80,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.continuum.continuum_removal.md"
+    }
+  ],
+  "classes": []
+}

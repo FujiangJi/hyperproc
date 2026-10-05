@@ -1,0 +1,64 @@
+{
+  "module": "hyperproc.readers._common",
+  "source_path": "hyperproc/readers/_common.py",
+  "sha256": "df7d6dd342796e2c76011a784856948bd0cc3d5a93e241ea0e60225aa69c6bb7",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers-_common.md",
+  "constants": [
+    {
+      "name": "WATER_WINDOWS",
+      "reference": "api/constants/hyperproc.readers._common.WATER_WINDOWS.md"
+    },
+    {
+      "name": "_ID_PATTERNS",
+      "reference": "api/constants/hyperproc.readers._common._ID_PATTERNS.md"
+    },
+    {
+      "name": "_CLASSIC",
+      "reference": "api/constants/hyperproc.readers._common._CLASSIC.md"
+    },
+    {
+      "name": "_SCALAR_ALIASES",
+      "reference": "api/constants/hyperproc.readers._common._SCALAR_ALIASES.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.readers._common.crs_text",
+      "line": 5,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers._common.crs_text.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers._common.datetime_from_id",
+      "line": 45,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers._common.datetime_from_id.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers._common.finish_bands",
+      "line": 64,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers._common.finish_bands.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers._common.normalise_angles",
+      "line": 106,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers._common.normalise_angles.md"
+    }
+  ],
+  "classes": []
+}

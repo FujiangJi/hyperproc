@@ -1,0 +1,107 @@
+{
+  "module": "hyperproc.readers.tanager",
+  "source_path": "hyperproc/readers/tanager.py",
+  "sha256": "d0b0429180d114332c052d61b162e5ea8455f144e89af7ebd3f2646d7c261cbd",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "datetime_from_id",
+      "from": "hyperproc.readers._common",
+      "name": "datetime_from_id",
+      "relative_level": 0
+    },
+    {
+      "local": "finish_bands",
+      "from": "hyperproc.readers._common",
+      "name": "finish_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "normalise_angles",
+      "from": "hyperproc.readers._common",
+      "name": "normalise_angles",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers-tanager.md",
+  "constants": [
+    {
+      "name": "FILL",
+      "reference": "api/constants/hyperproc.readers.tanager.FILL.md"
+    },
+    {
+      "name": "GRID",
+      "reference": "api/constants/hyperproc.readers.tanager.GRID.md"
+    },
+    {
+      "name": "PRODUCTS",
+      "reference": "api/constants/hyperproc.readers.tanager.PRODUCTS.md"
+    },
+    {
+      "name": "GEOM",
+      "reference": "api/constants/hyperproc.readers.tanager.GEOM.md"
+    },
+    {
+      "name": "MASKS",
+      "reference": "api/constants/hyperproc.readers.tanager.MASKS.md"
+    },
+    {
+      "name": "EXTRAS",
+      "reference": "api/constants/hyperproc.readers.tanager.EXTRAS.md"
+    },
+    {
+      "name": "_GRANULE",
+      "reference": "api/constants/hyperproc.readers.tanager._GRANULE.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.readers.tanager.open_tanager",
+      "line": 65,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.tanager.open_tanager.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.tanager._lazy_cube",
+      "line": 203,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.tanager._lazy_cube.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.tanager._geotransform",
+      "line": 212,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.tanager._geotransform.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.tanager._add_masks",
+      "line": 227,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.tanager._add_masks.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.tanager._add_geometry",
+      "line": 237,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.tanager._add_geometry.md"
+    }
+  ],
+  "classes": []
+}

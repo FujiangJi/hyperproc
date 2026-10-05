@@ -1,0 +1,114 @@
+{
+  "module": "hyperproc.align",
+  "source_path": "hyperproc/align.py",
+  "sha256": "4a23eadaf2b9bb2bb0d24c348fb13f421d97fcdeb5ebf68bc11e05e7667d4e47",
+  "exports": [
+    "estimate_shift",
+    "tie_points",
+    "apply_shift",
+    "coregister",
+    "DEFAULT_WAVELENGTH"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-align.md",
+  "constants": [
+    {
+      "name": "DEFAULT_WAVELENGTH",
+      "reference": "api/constants/hyperproc.align.DEFAULT_WAVELENGTH.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.align._grid_of",
+      "line": 55,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align._grid_of.md"
+    },
+    {
+      "qualified_name": "hyperproc.align._band_on",
+      "line": 68,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align._band_on.md"
+    },
+    {
+      "qualified_name": "hyperproc.align._prepare",
+      "line": 87,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align._prepare.md"
+    },
+    {
+      "qualified_name": "hyperproc.align._common_box",
+      "line": 104,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align._common_box.md"
+    },
+    {
+      "qualified_name": "hyperproc.align._phase_shift",
+      "line": 121,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align._phase_shift.md"
+    },
+    {
+      "qualified_name": "hyperproc.align.tie_points",
+      "line": 161,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align.tie_points.md"
+    },
+    {
+      "qualified_name": "hyperproc.align._to_metres",
+      "line": 209,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align._to_metres.md"
+    },
+    {
+      "qualified_name": "hyperproc.align._nearest_band",
+      "line": 228,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align._nearest_band.md"
+    },
+    {
+      "qualified_name": "hyperproc.align.estimate_shift",
+      "line": 234,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align.estimate_shift.md"
+    },
+    {
+      "qualified_name": "hyperproc.align.apply_shift",
+      "line": 301,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align.apply_shift.md"
+    },
+    {
+      "qualified_name": "hyperproc.align.coregister",
+      "line": 341,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align.coregister.md"
+    },
+    {
+      "qualified_name": "hyperproc.align._to_reference_grid",
+      "line": 388,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.align._to_reference_grid.md"
+    }
+  ],
+  "classes": []
+}

@@ -1,0 +1,7 @@
+## Coverage and return objects
+
+Read [archive collection table](../api/hyperproc-archive-collections.md) rather than inventing search support from reader support. NASA CMR covers released EMIT/PACE/AVIRIS-3/-5 collections; NEON covers site-month AOP deliveries; DLR STAC covers EnMAP/DESIS. PRISMA, Tanager, AVIRIS-NG and Classic are not searched here; unsupported instruments/levels raise useful errors with access information. Search collection availability can change externally: verify provider results when executing.
+
+`hp.search` returns `Results` of `Granule` records. These carry name, acquisition time, collection, size when known, bbox/download links/browse and provider `raw` metadata. Missing size/cloud/quicklook is not proof of missing science data. Inspect class methods/properties in [results](../api/hyperproc-archive-results.md) before assuming arbitrary DataFrame/list behavior. Slicing/selecting retains the intended records.
+
+Use west,south,east,north bbox and explicit dates. Set bounded `count` for exploration; `-1` requests all matches. Percentage cloud filtering applies only where published; PACE L1B, NEON and AVIRIS collections do not support it. CMR `version=` can pin processing collections; default searches do not pin them. NEON supports site/site_radius_km; DLR supports assets. Read backend-specific arguments rather than forwarding the same kwargs to all collections.

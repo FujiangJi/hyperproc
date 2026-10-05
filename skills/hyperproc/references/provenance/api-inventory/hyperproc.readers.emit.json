@@ -1,0 +1,120 @@
+{
+  "module": "hyperproc.readers.emit",
+  "source_path": "hyperproc/readers/emit.py",
+  "sha256": "b4ea9ad015d18b31744e331d290d41e2f1477db7344dc09a092788cafcefc3b6",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "crs_text",
+      "from": "hyperproc.readers._common",
+      "name": "crs_text",
+      "relative_level": 0
+    },
+    {
+      "local": "finish_bands",
+      "from": "hyperproc.readers._common",
+      "name": "finish_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "normalise_angles",
+      "from": "hyperproc.readers._common",
+      "name": "normalise_angles",
+      "relative_level": 0
+    },
+    {
+      "local": "_glt_cube",
+      "from": "hyperproc.readers.aviris",
+      "name": "_glt_cube",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers-emit.md",
+  "constants": [
+    {
+      "name": "GLT_NODATA",
+      "reference": "api/constants/hyperproc.readers.emit.GLT_NODATA.md"
+    },
+    {
+      "name": "FILL_VALUE",
+      "reference": "api/constants/hyperproc.readers.emit.FILL_VALUE.md"
+    },
+    {
+      "name": "PRODUCTS",
+      "reference": "api/constants/hyperproc.readers.emit.PRODUCTS.md"
+    },
+    {
+      "name": "MASK_FLAGS",
+      "reference": "api/constants/hyperproc.readers.emit.MASK_FLAGS.md"
+    },
+    {
+      "name": "MASK_VALUES",
+      "reference": "api/constants/hyperproc.readers.emit.MASK_VALUES.md"
+    },
+    {
+      "name": "OBS_BANDS",
+      "reference": "api/constants/hyperproc.readers.emit.OBS_BANDS.md"
+    },
+    {
+      "name": "_GRANULE",
+      "reference": "api/constants/hyperproc.readers.emit._GRANULE.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.readers.emit.open_emit",
+      "line": 60,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.emit.open_emit.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.emit._sibling",
+      "line": 225,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.emit._sibling.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.emit._add_masks",
+      "line": 240,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.emit._add_masks.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.emit._add_geometry",
+      "line": 258,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.emit._add_geometry.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.emit._stack_glt",
+      "line": 280,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.emit._stack_glt.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.emit._apply_glt",
+      "line": 287,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.emit._apply_glt.md"
+    }
+  ],
+  "classes": []
+}

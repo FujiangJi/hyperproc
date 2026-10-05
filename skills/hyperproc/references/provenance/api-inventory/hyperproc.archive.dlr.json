@@ -1,0 +1,297 @@
+{
+  "module": "hyperproc.archive.dlr",
+  "source_path": "hyperproc/archive/dlr.py",
+  "sha256": "cbb22eef8c2ce1bf176fbfcdda7a9442b9f22f38aeaa38e23acf3a46b2090ee6",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "HTMLParser",
+      "from": "html.parser",
+      "name": "HTMLParser",
+      "relative_level": 0
+    },
+    {
+      "local": "urljoin",
+      "from": "urllib.parse",
+      "name": "urljoin",
+      "relative_level": 0
+    },
+    {
+      "local": "ThreadPoolExecutor",
+      "from": "concurrent.futures",
+      "name": "ThreadPoolExecutor",
+      "relative_level": 0
+    },
+    {
+      "local": "datetime",
+      "from": "datetime",
+      "name": "datetime",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "Any",
+      "from": "typing",
+      "name": "Any",
+      "relative_level": 0
+    },
+    {
+      "local": "resolve",
+      "from": "hyperproc.archive.collections",
+      "name": "resolve",
+      "relative_level": 0
+    },
+    {
+      "local": "Granule",
+      "from": "hyperproc.archive.results",
+      "name": "Granule",
+      "relative_level": 0
+    },
+    {
+      "local": "Results",
+      "from": "hyperproc.archive.results",
+      "name": "Results",
+      "relative_level": 0
+    },
+    {
+      "local": "plural",
+      "from": "hyperproc.archive.results",
+      "name": "plural",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-archive-dlr.md",
+  "constants": [
+    {
+      "name": "BASE",
+      "reference": "api/constants/hyperproc.archive.dlr.BASE.md"
+    },
+    {
+      "name": "RETRIES",
+      "reference": "api/constants/hyperproc.archive.dlr.RETRIES.md"
+    },
+    {
+      "name": "BACKOFF_S",
+      "reference": "api/constants/hyperproc.archive.dlr.BACKOFF_S.md"
+    },
+    {
+      "name": "SIGNUP",
+      "reference": "api/constants/hyperproc.archive.dlr.SIGNUP.md"
+    },
+    {
+      "name": "SSO",
+      "reference": "api/constants/hyperproc.archive.dlr.SSO.md"
+    },
+    {
+      "name": "NEEDS_LOGIN",
+      "reference": "api/constants/hyperproc.archive.dlr.NEEDS_LOGIN.md"
+    },
+    {
+      "name": "PAGE",
+      "reference": "api/constants/hyperproc.archive.dlr.PAGE.md"
+    },
+    {
+      "name": "_FRACTION",
+      "reference": "api/constants/hyperproc.archive.dlr._FRACTION.md"
+    },
+    {
+      "name": "READER_FILES",
+      "reference": "api/constants/hyperproc.archive.dlr.READER_FILES.md"
+    },
+    {
+      "name": "POLICY_WORDS",
+      "reference": "api/constants/hyperproc.archive.dlr.POLICY_WORDS.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.archive.dlr.needs_login",
+      "line": 67,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr.needs_login.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._requests",
+      "line": 98,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._requests.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr.credentials",
+      "line": 108,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr.credentials.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._page_says",
+      "line": 142,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._page_says.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._post_to",
+      "line": 228,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._post_to.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr.sign_in",
+      "line": 247,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr.sign_in.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr.read_policy",
+      "line": 337,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr.read_policy.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._visible_text",
+      "line": 397,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._visible_text.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._rfc3339",
+      "line": 403,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._rfc3339.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._time_of",
+      "line": 421,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._time_of.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._links",
+      "line": 437,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._links.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr.search",
+      "line": 453,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr.search.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._granule",
+      "line": 542,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._granule.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._content_range",
+      "line": 559,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._content_range.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._retryable",
+      "line": 567,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._retryable.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._stream",
+      "line": 576,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr._stream.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr.download",
+      "line": 641,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.dlr.download.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._Forms.__init__",
+      "line": 178,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.dlr._Forms.__init__.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._Forms.handle_starttag",
+      "line": 185,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.dlr._Forms.handle_starttag.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._Forms.handle_endtag",
+      "line": 199,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.dlr._Forms.handle_endtag.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._Forms.handle_data",
+      "line": 205,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.dlr._Forms.handle_data.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._Forms.login",
+      "line": 210,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.dlr._Forms.login.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._Forms.step",
+      "line": 215,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.dlr._Forms.step.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.dlr._Forms.fields",
+      "line": 220,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.dlr._Forms.fields.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.archive.dlr._Forms",
+      "line": 166,
+      "bases": [
+        "HTMLParser"
+      ],
+      "reference": "api/symbols/hyperproc.archive.dlr._Forms.md"
+    }
+  ]
+}

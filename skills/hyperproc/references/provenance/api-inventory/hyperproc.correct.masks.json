@@ -1,0 +1,96 @@
+{
+  "module": "hyperproc.correct.masks",
+  "source_path": "hyperproc/correct/masks.py",
+  "sha256": "7953ba42f0c9c8803e522b57d6a0ca660baeaf1ae0af4f2b2373adef894b776d",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-correct-masks.md",
+  "constants": [],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.correct.masks.ndi",
+      "line": 19,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.ndi.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks.ndi_mask",
+      "line": 28,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.ndi_mask.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks.range_mask",
+      "line": 34,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.range_mask.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks.kernel_finite",
+      "line": 44,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.kernel_finite.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks.edge_mask",
+      "line": 49,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.edge_mask.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks.combine",
+      "line": 67,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.combine.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks.sample_indices",
+      "line": 79,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.sample_indices.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks._zhai_indices",
+      "line": 94,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks._zhai_indices.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks.zhai_stats",
+      "line": 109,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.zhai_stats.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks.zhai_thresholds",
+      "line": 128,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.zhai_thresholds.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.masks.zhai_cloud",
+      "line": 136,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.masks.zhai_cloud.md"
+    }
+  ],
+  "classes": []
+}

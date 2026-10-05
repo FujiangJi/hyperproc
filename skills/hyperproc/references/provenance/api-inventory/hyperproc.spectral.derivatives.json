@@ -1,0 +1,53 @@
+{
+  "module": "hyperproc.spectral.derivatives",
+  "source_path": "hyperproc/spectral/derivatives.py",
+  "sha256": "e880f151e9aee89918a9dbb989d324dc90a38c63e7aa1dab7041419f163ba0af",
+  "exports": [
+    "derivative"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "main_var",
+      "from": "hyperproc.io",
+      "name": "main_var",
+      "relative_level": 0
+    },
+    {
+      "local": "good_bands",
+      "from": "hyperproc.spectral.bands",
+      "name": "good_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "_runs",
+      "from": "hyperproc.spectral.bands",
+      "name": "runs_of_good_bands",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-spectral-derivatives.md",
+  "constants": [],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.spectral.derivatives._derivative_block",
+      "line": 20,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.derivatives._derivative_block.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.derivatives.derivative",
+      "line": 42,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.derivatives.derivative.md"
+    }
+  ],
+  "classes": []
+}

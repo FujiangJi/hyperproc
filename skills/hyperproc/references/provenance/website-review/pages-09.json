@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://fujiangji.github.io/hyperproc/sensors/enmap/",
+    "html_sha256": "653f6775bc9778a700724386012a4b3bd1f76c1b377b682fdcb3b8ed3dee97bc"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/sensors/neon/",
+    "html_sha256": "a9dcd8870f989c34ece3d9eee3bd47f924130e27eae13a15c453d0fabe914347"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/sensors/pace/",
+    "html_sha256": "1c5b9bf365b5b93c86af62aab28401e35c77bc8fe2f5f7266ab52fe889e40aeb"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/sensors/prisma/",
+    "html_sha256": "589840e1531513e52485d3dd661ecec6a92afbadcbe6119321c0cf13f9e78e6a"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/sensors/tanager/",
+    "html_sha256": "1b857fa6670218e432a57037808fd7e40f6bf6f046004e436d395cd4418acc02"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tools/",
+    "html_sha256": "5c6666d5c496a6adc1d73cb2aa5d93fbb00a92e9810bbb2f5bf7b927554f758b"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/",
+    "html_sha256": "d7ca6fcc10d22dc48aac4635b96bbfd252ededc266dc6d63a0c9255106bf757f"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/aviris3-tutorial/",
+    "html_sha256": "ebe74a0359585013469dbfbec1718bef5ae89ed9c405c8690dc3bf654deef5f6"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/aviris3-walkthrough/",
+    "html_sha256": "add6b810509fd070e53bdb760b4a09d3a427951018672d2be7dd940426112da1"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/aviris5-tutorial/",
+    "html_sha256": "1a31d5b779c6429071e96186a6fb4b7cf6583e513cd59624679f009921d139a6"
+  }
+]

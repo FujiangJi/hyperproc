@@ -1,0 +1,264 @@
+{
+  "module": "hyperproc.correct.mcd43",
+  "source_path": "hyperproc/correct/mcd43.py",
+  "sha256": "6aa8766ad0737d81b1df42d80c34e9e0535c369dee2d2500fa94def8aeb2fcef",
+  "exports": [
+    "MODIS_BANDS",
+    "MODIS_RANGES",
+    "MODIS_CENTRES",
+    "KERNELS",
+    "PARAM_BANDS",
+    "Params",
+    "cache_dir",
+    "fetch",
+    "read",
+    "grid_for",
+    "bounds_of",
+    "date_of",
+    "resolution_of",
+    "step_for",
+    "available"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "dataclass",
+      "from": "dataclasses",
+      "name": "dataclass",
+      "relative_level": 0
+    },
+    {
+      "local": "field",
+      "from": "dataclasses",
+      "name": "field",
+      "relative_level": 0
+    },
+    {
+      "local": "_date",
+      "from": "datetime",
+      "name": "date",
+      "relative_level": 0
+    },
+    {
+      "local": "datetime",
+      "from": "datetime",
+      "name": "datetime",
+      "relative_level": 0
+    },
+    {
+      "local": "timedelta",
+      "from": "datetime",
+      "name": "timedelta",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-correct-mcd43.md",
+  "constants": [
+    {
+      "name": "MODIS_RANGES",
+      "reference": "api/constants/hyperproc.correct.mcd43.MODIS_RANGES.md"
+    },
+    {
+      "name": "MODIS_BANDS",
+      "reference": "api/constants/hyperproc.correct.mcd43.MODIS_BANDS.md"
+    },
+    {
+      "name": "MODIS_CENTRES",
+      "reference": "api/constants/hyperproc.correct.mcd43.MODIS_CENTRES.md"
+    },
+    {
+      "name": "KERNELS",
+      "reference": "api/constants/hyperproc.correct.mcd43.KERNELS.md"
+    },
+    {
+      "name": "PARAM_BANDS",
+      "reference": "api/constants/hyperproc.correct.mcd43.PARAM_BANDS.md"
+    },
+    {
+      "name": "QA_BANDS",
+      "reference": "api/constants/hyperproc.correct.mcd43.QA_BANDS.md"
+    },
+    {
+      "name": "COLLECTION",
+      "reference": "api/constants/hyperproc.correct.mcd43.COLLECTION.md"
+    },
+    {
+      "name": "QA_COLLECTION",
+      "reference": "api/constants/hyperproc.correct.mcd43.QA_COLLECTION.md"
+    },
+    {
+      "name": "SCALE",
+      "reference": "api/constants/hyperproc.correct.mcd43.SCALE.md"
+    },
+    {
+      "name": "FILL",
+      "reference": "api/constants/hyperproc.correct.mcd43.FILL.md"
+    },
+    {
+      "name": "QA_FILL",
+      "reference": "api/constants/hyperproc.correct.mcd43.QA_FILL.md"
+    },
+    {
+      "name": "RES_DEG",
+      "reference": "api/constants/hyperproc.correct.mcd43.RES_DEG.md"
+    },
+    {
+      "name": "TILE",
+      "reference": "api/constants/hyperproc.correct.mcd43.TILE.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.correct.mcd43.cache_dir",
+      "line": 91,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43.cache_dir.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.read",
+      "line": 246,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43.read.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.bounds_of",
+      "line": 279,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43.bounds_of.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.date_of",
+      "line": 305,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43.date_of.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.available",
+      "line": 338,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43.available.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.resolution_of",
+      "line": 352,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43.resolution_of.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.step_for",
+      "line": 390,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43.step_for.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.grid_for",
+      "line": 408,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43.grid_for.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43._init_ee",
+      "line": 429,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43._init_ee.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43._ee_image",
+      "line": 451,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43._ee_image.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43._aggregate",
+      "line": 465,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43._aggregate.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43._download",
+      "line": 481,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43._download.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.fetch",
+      "line": 511,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.mcd43.fetch.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.Params.shape",
+      "line": 127,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.mcd43.Params.shape.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.Params.coverage",
+      "line": 130,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.mcd43.Params.coverage.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.Params.masked",
+      "line": 134,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.mcd43.Params.masked.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.Params.rowcol",
+      "line": 159,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.mcd43.Params.rowcol.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.Params.sample",
+      "line": 164,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.mcd43.Params.sample.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.mcd43.Params.to_geotiff",
+      "line": 217,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.mcd43.Params.to_geotiff.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.correct.mcd43.Params",
+      "line": 102,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.correct.mcd43.Params.md"
+    }
+  ]
+}

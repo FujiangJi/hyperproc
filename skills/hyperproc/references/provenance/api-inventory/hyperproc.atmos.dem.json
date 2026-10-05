@@ -1,0 +1,83 @@
+{
+  "module": "hyperproc.atmos.dem",
+  "source_path": "hyperproc/atmos/dem.py",
+  "sha256": "1a708595e30d736167c77890d218d025c6b879fb48e6c9b4bf89118818d24e8e",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-atmos-dem.md",
+  "constants": [
+    {
+      "name": "SOURCES",
+      "reference": "api/constants/hyperproc.atmos.dem.SOURCES.md"
+    },
+    {
+      "name": "MAX_TILES_30",
+      "reference": "api/constants/hyperproc.atmos.dem.MAX_TILES_30.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.atmos.dem.cache_dir",
+      "line": 36,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.dem.cache_dir.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.dem.tile_id",
+      "line": 42,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.dem.tile_id.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.dem.tile_url",
+      "line": 50,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.dem.tile_url.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.dem.fetch_tile",
+      "line": 55,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.dem.fetch_tile.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.dem._read_tile",
+      "line": 79,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.dem._read_tile.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.dem.sample",
+      "line": 90,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.dem.sample.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.dem.add_elevation",
+      "line": 129,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.dem.add_elevation.md"
+    }
+  ],
+  "classes": []
+}

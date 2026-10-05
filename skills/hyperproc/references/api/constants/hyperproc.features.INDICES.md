@@ -1,0 +1,9 @@
+# hyperproc.features.INDICES
+
+Release **0.1.2** source expression; not an evaluated runtime value. For a later release inspect the installed source.
+
+```text
+{'NDVI': {'formula': '(R860 - R660) / (R860 + R660)', 'name': 'normalised difference vegetation index', 'reference': 'Rouse et al. 1974'}, 'EVI': {'formula': '2.5 * (R860 - R660) / (R860 + 6*R660 - 7.5*R480 + 1)', 'name': 'enhanced vegetation index', 'reference': 'Huete et al. 2002'}, 'NDWI': {'formula': '(R860 - R1240) / (R860 + R1240)', 'name': 'normalised difference water index', 'reference': 'Gao 1996'}, 'NDII': {'formula': '(R820 - R1650) / (R820 + R1650)', 'name': 'normalised difference infrared index', 'reference': 'Hunt and Rock 1989'}, 'PRI': {'formula': '(R531 - R570) / (R531 + R570)', 'name': 'photochemical reflectance index', 'reference': 'Gamon et al. 1992'}, 'NDNI': {'formula': '(log(1/R1510) - log(1/R1680)) / (log(1/R1510) + log(1/R1680))', 'name': 'normalised difference nitrogen index', 'reference': 'Serrano et al. 2002'}, 'CAI': {'formula': '0.5 * (R2020 + R2220) - R2100', 'name': 'cellulose absorption index', 'reference': 'Nagler et al. 2003'}, 'MCARI': {'formula': '((R700 - R670) - 0.2 * (R700 - R550)) * (R700 / R670)', 'name': 'modified chlorophyll absorption ratio index', 'reference': 'Daughtry et al. 2000'}, 'ARI1': {'formula': '1/R550 - 1/R700', 'name': 'anthocyanin reflectance index', 'reference': 'Gitelson et al. 2001'}, 'CRI1': {'formula': '1/R510 - 1/R550', 'name': 'carotenoid reflectance index', 'reference': 'Gitelson et al. 2002'}, 'PSRI': {'formula': '(R680 - R500) / R750', 'name': 'plant senescence reflectance index', 'reference': 'Merzlyak et al. 1999'}, 'NDSI': {'formula': '(R550 - R1640) / (R550 + R1640)', 'name': 'normalised difference snow index', 'reference': 'Hall et al. 1995'}}
+```
+
+[Module](../hyperproc-features.md).

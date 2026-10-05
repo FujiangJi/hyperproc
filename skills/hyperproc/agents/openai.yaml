@@ -1,0 +1,4 @@
+interface:
+  display_name: "hyperproc"
+  short_description: "Prepare validated hyperspectral reflectance with hyperproc"
+  default_prompt: "Use $hyperproc to check my environment, inspect my product, and prepare validated science-ready reflectance for my research task."

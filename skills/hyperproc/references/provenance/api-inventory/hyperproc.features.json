@@ -1,0 +1,102 @@
+{
+  "module": "hyperproc.features",
+  "source_path": "hyperproc/features.py",
+  "sha256": "86d3703e17c09dcee128b4ca24376e7368cf08a226844ce3c9ac0ad8f3ee3a89",
+  "exports": [
+    "band_at",
+    "index",
+    "INDICES",
+    "band_depth",
+    "FEATURES",
+    "describe_indices"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "main_var",
+      "from": "hyperproc.io",
+      "name": "main_var",
+      "relative_level": 0
+    },
+    {
+      "local": "TOLERANCE",
+      "from": "hyperproc.spectral.bands",
+      "name": "TOLERANCE",
+      "relative_level": 0
+    },
+    {
+      "local": "band_at",
+      "from": "hyperproc.spectral.bands",
+      "name": "band_at",
+      "relative_level": 0
+    },
+    {
+      "local": "continuum_removal",
+      "from": "hyperproc.spectral.continuum",
+      "name": "continuum_removal",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-features.md",
+  "constants": [
+    {
+      "name": "INDICES",
+      "reference": "api/constants/hyperproc.features.INDICES.md"
+    },
+    {
+      "name": "FEATURES",
+      "reference": "api/constants/hyperproc.features.FEATURES.md"
+    },
+    {
+      "name": "_TOKEN",
+      "reference": "api/constants/hyperproc.features._TOKEN.md"
+    },
+    {
+      "name": "_FUNCS",
+      "reference": "api/constants/hyperproc.features._FUNCS.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.features._evaluate",
+      "line": 81,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.features._evaluate.md"
+    },
+    {
+      "qualified_name": "hyperproc.features.index",
+      "line": 113,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.features.index.md"
+    },
+    {
+      "qualified_name": "hyperproc.features.describe_indices",
+      "line": 167,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.features.describe_indices.md"
+    },
+    {
+      "qualified_name": "hyperproc.features._argmin_wavelength",
+      "line": 187,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.features._argmin_wavelength.md"
+    },
+    {
+      "qualified_name": "hyperproc.features.band_depth",
+      "line": 194,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.features.band_depth.md"
+    }
+  ],
+  "classes": []
+}

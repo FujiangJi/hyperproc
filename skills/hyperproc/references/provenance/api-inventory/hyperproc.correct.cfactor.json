@@ -1,0 +1,136 @@
+{
+  "module": "hyperproc.correct.cfactor",
+  "source_path": "hyperproc/correct/cfactor.py",
+  "sha256": "26f10dadb8548df9af6843f3ed3c32c03466148055b87de3ac9d2e1ae4e075d0",
+  "exports": [
+    "band_weights",
+    "band_map",
+    "model_reflectance",
+    "c_factor",
+    "nbar",
+    "view_profile",
+    "model_agreement",
+    "lonlat_of",
+    "angles_of"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "mcd43",
+      "from": "hyperproc.correct",
+      "name": "mcd43",
+      "relative_level": 0
+    },
+    {
+      "local": "geometric_kernel",
+      "from": "hyperproc.correct.kernels",
+      "name": "geometric_kernel",
+      "relative_level": 0
+    },
+    {
+      "local": "volume_kernel",
+      "from": "hyperproc.correct.kernels",
+      "name": "volume_kernel",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-correct-cfactor.md",
+  "constants": [
+    {
+      "name": "SPECTRAL_MODES",
+      "reference": "api/constants/hyperproc.correct.cfactor.SPECTRAL_MODES.md"
+    },
+    {
+      "name": "DEFAULT_CLIP",
+      "reference": "api/constants/hyperproc.correct.cfactor.DEFAULT_CLIP.md"
+    },
+    {
+      "name": "MIN_MODEL",
+      "reference": "api/constants/hyperproc.correct.cfactor.MIN_MODEL.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.correct.cfactor.band_map",
+      "line": 71,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor.band_map.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.cfactor.band_weights",
+      "line": 86,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor.band_weights.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.cfactor.model_reflectance",
+      "line": 122,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor.model_reflectance.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.cfactor.c_factor",
+      "line": 142,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor.c_factor.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.cfactor.lonlat_of",
+      "line": 185,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor.lonlat_of.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.cfactor.angles_of",
+      "line": 203,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor.angles_of.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.cfactor._fill_gaps",
+      "line": 220,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor._fill_gaps.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.cfactor.nbar",
+      "line": 240,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor.nbar.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.cfactor.view_profile",
+      "line": 383,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor.view_profile.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.cfactor.model_agreement",
+      "line": 466,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.cfactor.model_agreement.md"
+    }
+  ],
+  "classes": []
+}

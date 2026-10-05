@@ -1,0 +1,56 @@
+{
+  "module": "hyperproc.spectral.bands",
+  "source_path": "hyperproc/spectral/bands.py",
+  "sha256": "470c5dc3d0cb4baad4222512780a09b0b433914a6704630064d5e1ec19bdd72c",
+  "exports": [
+    "TOLERANCE",
+    "band_at",
+    "runs_of_good_bands",
+    "good_bands"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "main_var",
+      "from": "hyperproc.io",
+      "name": "main_var",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-spectral-bands.md",
+  "constants": [
+    {
+      "name": "TOLERANCE",
+      "reference": "api/constants/hyperproc.spectral.bands.TOLERANCE.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.spectral.bands.good_bands",
+      "line": 27,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.bands.good_bands.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.bands.runs_of_good_bands",
+      "line": 37,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.bands.runs_of_good_bands.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.bands.band_at",
+      "line": 54,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.bands.band_at.md"
+    }
+  ],
+  "classes": []
+}

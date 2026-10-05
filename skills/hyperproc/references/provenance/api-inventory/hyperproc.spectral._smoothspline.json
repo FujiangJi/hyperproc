@@ -1,0 +1,116 @@
+{
+  "module": "hyperproc.spectral._smoothspline",
+  "source_path": "hyperproc/spectral/_smoothspline.py",
+  "sha256": "9f7b82086ddeb856d8f277aa00e6dc9302cd1a6c767c17a9589dec7f40cc7fba",
+  "exports": [
+    "SmoothSpline",
+    "smooth_spline",
+    "nknots_smspl"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-spectral-_smoothspline.md",
+  "constants": [
+    {
+      "name": "_GOLD",
+      "reference": "api/constants/hyperproc.spectral._smoothspline._GOLD.md"
+    },
+    {
+      "name": "_BIG",
+      "reference": "api/constants/hyperproc.spectral._smoothspline._BIG.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline.nknots_smspl",
+      "line": 40,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline.nknots_smspl.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline._iqr",
+      "line": 56,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline._iqr.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline._collapse",
+      "line": 62,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline._collapse.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline._knot_vector",
+      "line": 81,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline._knot_vector.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline._basis",
+      "line": 92,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline._basis.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline._gram",
+      "line": 102,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline._gram.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline._solve",
+      "line": 145,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline._solve.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline._brent_fmin",
+      "line": 242,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline._brent_fmin.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline.smooth_spline",
+      "line": 306,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline.smooth_spline.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline.SmoothSpline.__init__",
+      "line": 163,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline.SmoothSpline.__init__.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline.SmoothSpline.predict",
+      "line": 224,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.spectral._smoothspline.SmoothSpline.predict.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.spectral._smoothspline.SmoothSpline",
+      "line": 156,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.spectral._smoothspline.SmoothSpline.md"
+    }
+  ]
+}

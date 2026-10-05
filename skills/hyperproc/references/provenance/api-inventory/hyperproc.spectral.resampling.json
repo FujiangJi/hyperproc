@@ -1,0 +1,144 @@
+{
+  "module": "hyperproc.spectral.resampling",
+  "source_path": "hyperproc/spectral/resampling.py",
+  "sha256": "3533950e1b7045abc26b3d9d0faa446269d854f151edde1fd53e9e416fc2de79",
+  "exports": [
+    "METHODS",
+    "build_fwhm",
+    "resampling_matrix",
+    "resample",
+    "target_grid"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "main_var",
+      "from": "hyperproc.io",
+      "name": "main_var",
+      "relative_level": 0
+    },
+    {
+      "local": "good_bands",
+      "from": "hyperproc.spectral.bands",
+      "name": "good_bands",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-spectral-resampling.md",
+  "constants": [
+    {
+      "name": "METHODS",
+      "reference": "api/constants/hyperproc.spectral.resampling.METHODS.md"
+    },
+    {
+      "name": "SQRT_8LN2",
+      "reference": "api/constants/hyperproc.spectral.resampling.SQRT_8LN2.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.spectral.resampling._sigma",
+      "line": 69,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling._sigma.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling._normal_cdf",
+      "line": 73,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling._normal_cdf.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling.build_fwhm",
+      "line": 78,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling.build_fwhm.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling._merged_intervals",
+      "line": 100,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling._merged_intervals.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling.coverage_of",
+      "line": 115,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling.coverage_of.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling._weights_gaussian",
+      "line": 139,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling._weights_gaussian.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling._weights_box",
+      "line": 146,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling._weights_box.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling._weights_interp",
+      "line": 160,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling._weights_interp.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling._weights_response",
+      "line": 168,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling._weights_response.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling.resampling_matrix",
+      "line": 179,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling.resampling_matrix.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling.target_grid",
+      "line": 260,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling.target_grid.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling._apply_block",
+      "line": 312,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling._apply_block.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling.resample",
+      "line": 347,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling.resample.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.resampling._resample_dataset",
+      "line": 409,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.resampling._resample_dataset.md"
+    }
+  ],
+  "classes": []
+}

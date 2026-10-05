@@ -1,0 +1,46 @@
+{
+  "module": "hyperproc.report",
+  "source_path": "hyperproc/report.py",
+  "sha256": "ad5309df0267b9131a1b0f1a8074e15a69e80651c603fcfa668cbc29e181f109",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-report.md",
+  "constants": [
+    {
+      "name": "_FLAGS",
+      "reference": "api/constants/hyperproc.report._FLAGS.md"
+    },
+    {
+      "name": "_ANGLES",
+      "reference": "api/constants/hyperproc.report._ANGLES.md"
+    },
+    {
+      "name": "_SAMPLE",
+      "reference": "api/constants/hyperproc.report._SAMPLE.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.report._thin",
+      "line": 17,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.report._thin.md"
+    },
+    {
+      "qualified_name": "hyperproc.report.describe",
+      "line": 53,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.report.describe.md"
+    }
+  ],
+  "classes": []
+}

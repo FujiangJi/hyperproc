@@ -1,0 +1,3 @@
+## Release-specific operational changes
+
+Version 0.1.2 includes netCDF configuration final-newline diagnostics/repair in appropriate paths, conservative analytical-line neighbor caps that previous segment labels can only lower, and DLR partial-transfer resume/retry handling. The checkout testing/demo pipeline updates credential interaction, local data roots and EnMAP identity pairing; those demo utilities under tests are not wheel APIs. Refer to [release page](https://fujiangji.github.io/hyperproc/project/releases/) and exact modules rather than requiring users to have repository-only scripts.

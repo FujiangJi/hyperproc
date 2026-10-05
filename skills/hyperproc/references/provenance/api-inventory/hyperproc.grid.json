@@ -1,0 +1,73 @@
+{
+  "module": "hyperproc.grid",
+  "source_path": "hyperproc/grid.py",
+  "sha256": "2fc7496951ad3f1788d7244aac0b8c50811d5accbbe917f6451f48210b10d703",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-grid.md",
+  "constants": [
+    {
+      "name": "DEFAULT_RESOLUTION_DEG",
+      "reference": "api/constants/hyperproc.grid.DEFAULT_RESOLUTION_DEG.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.grid.utm_epsg",
+      "line": 32,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.grid.utm_epsg.md"
+    },
+    {
+      "qualified_name": "hyperproc.grid.georeference",
+      "line": 51,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.grid.georeference.md"
+    },
+    {
+      "qualified_name": "hyperproc.grid.latlon_grid",
+      "line": 221,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.grid.latlon_grid.md"
+    },
+    {
+      "qualified_name": "hyperproc.grid._ecef",
+      "line": 247,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.grid._ecef.md"
+    },
+    {
+      "qualified_name": "hyperproc.grid._nearest_glt",
+      "line": 261,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.grid._nearest_glt.md"
+    },
+    {
+      "qualified_name": "hyperproc.grid._native_spacing",
+      "line": 308,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.grid._native_spacing.md"
+    },
+    {
+      "qualified_name": "hyperproc.grid._apply_glt",
+      "line": 319,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.grid._apply_glt.md"
+    }
+  ],
+  "classes": []
+}

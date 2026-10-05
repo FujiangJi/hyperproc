@@ -1,0 +1,349 @@
+{
+  "module": "hyperproc.readers.aviris",
+  "source_path": "hyperproc/readers/aviris.py",
+  "sha256": "2a0eb260b2383a091eea33823c8476edd762af3d60081777963ba41b0c615b31",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "dataclass",
+      "from": "dataclasses",
+      "name": "dataclass",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "crs_text",
+      "from": "hyperproc.readers._common",
+      "name": "crs_text",
+      "relative_level": 0
+    },
+    {
+      "local": "datetime_from_id",
+      "from": "hyperproc.readers._common",
+      "name": "datetime_from_id",
+      "relative_level": 0
+    },
+    {
+      "local": "finish_bands",
+      "from": "hyperproc.readers._common",
+      "name": "finish_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "normalise_angles",
+      "from": "hyperproc.readers._common",
+      "name": "normalise_angles",
+      "relative_level": 0
+    },
+    {
+      "local": "check_geometry",
+      "from": "hyperproc.geometry",
+      "name": "check_geometry",
+      "relative_level": 0
+    },
+    {
+      "local": "fix_slope_convention",
+      "from": "hyperproc.geometry",
+      "name": "fix_slope_convention",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers-aviris.md",
+  "constants": [
+    {
+      "name": "FILL",
+      "reference": "api/constants/hyperproc.readers.aviris.FILL.md"
+    },
+    {
+      "name": "CLASSIC_RDN_FILL",
+      "reference": "api/constants/hyperproc.readers.aviris.CLASSIC_RDN_FILL.md"
+    },
+    {
+      "name": "WATER_BANDS",
+      "reference": "api/constants/hyperproc.readers.aviris.WATER_BANDS.md"
+    },
+    {
+      "name": "OBS_BANDS",
+      "reference": "api/constants/hyperproc.readers.aviris.OBS_BANDS.md"
+    },
+    {
+      "name": "OBS_UNITS",
+      "reference": "api/constants/hyperproc.readers.aviris.OBS_UNITS.md"
+    },
+    {
+      "name": "AV5_OBS",
+      "reference": "api/constants/hyperproc.readers.aviris.AV5_OBS.md"
+    },
+    {
+      "name": "ELEVATION",
+      "reference": "api/constants/hyperproc.readers.aviris.ELEVATION.md"
+    },
+    {
+      "name": "TOPO_LAYERS",
+      "reference": "api/constants/hyperproc.readers.aviris.TOPO_LAYERS.md"
+    },
+    {
+      "name": "VARIANTS",
+      "reference": "api/constants/hyperproc.readers.aviris.VARIANTS.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.readers.aviris.open_aviris",
+      "line": 187,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris.open_aviris.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._identify",
+      "line": 300,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._identify.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._find_cube",
+      "line": 319,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._find_cube.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._guess_product",
+      "line": 352,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._guess_product.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._search",
+      "line": 363,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._search.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._sibling",
+      "line": 389,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._sibling.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris.read_hdr",
+      "line": 396,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris.read_hdr.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._good_bands",
+      "line": 414,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._good_bands.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._fill_value",
+      "line": 431,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._fill_value.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._hdr_array",
+      "line": 443,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._hdr_array.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._chunks_for",
+      "line": 452,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._chunks_for.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._open_envi",
+      "line": 471,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._open_envi.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._hdr_for",
+      "line": 568,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._hdr_for.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._rotation",
+      "line": 576,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._rotation.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._read_spc",
+      "line": 581,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._read_spc.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._gain",
+      "line": 590,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._gain.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._band_subset",
+      "line": 602,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._band_subset.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._open_av5",
+      "line": 616,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._open_av5.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._gather",
+      "line": 719,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._gather.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._glt_cube",
+      "line": 726,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._glt_cube.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._av5_cube_group",
+      "line": 798,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._av5_cube_group.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._av5_grid",
+      "line": 815,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._av5_grid.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._as_str",
+      "line": 827,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._as_str.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._apply_glt",
+      "line": 831,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._apply_glt.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._finish",
+      "line": 851,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._finish.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._add_map_coords",
+      "line": 880,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._add_map_coords.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._blank_water_bands",
+      "line": 890,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._blank_water_bands.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._add_geometry",
+      "line": 911,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._add_geometry.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._add_geometry_envi",
+      "line": 937,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._add_geometry_envi.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._add_geometry_av5",
+      "line": 966,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._add_geometry_av5.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._elevation_array",
+      "line": 1009,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._elevation_array.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._add_elevation",
+      "line": 1047,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._add_elevation.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._add_extras",
+      "line": 1086,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._add_extras.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.aviris._add_uncertainty",
+      "line": 1137,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.aviris._add_uncertainty.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.readers.aviris._Variant",
+      "line": 151,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.readers.aviris._Variant.md"
+    }
+  ]
+}

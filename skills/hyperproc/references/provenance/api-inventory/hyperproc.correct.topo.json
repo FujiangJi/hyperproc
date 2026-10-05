@@ -1,0 +1,106 @@
+{
+  "module": "hyperproc.correct.topo",
+  "source_path": "hyperproc/correct/topo.py",
+  "sha256": "7ea689fcab51986c3ce61e473b60e301d8d186fd7d3d45a267090ba62a34945e",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "dataclass",
+      "from": "dataclasses",
+      "name": "dataclass",
+      "relative_level": 0
+    },
+    {
+      "local": "asdict",
+      "from": "dataclasses",
+      "name": "asdict",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-correct-topo.md",
+  "constants": [
+    {
+      "name": "METHODS",
+      "reference": "api/constants/hyperproc.correct.topo.METHODS.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.correct.topo.cos_incidence",
+      "line": 46,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.topo.cos_incidence.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.topo.fit_c",
+      "line": 75,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.topo.fit_c.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.topo.fit_c_from_sums",
+      "line": 157,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.topo.fit_c_from_sums.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.topo._check_c",
+      "line": 208,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.topo._check_c.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.topo.correction_factor",
+      "line": 217,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.topo.correction_factor.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.topo.apply_topo",
+      "line": 238,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.topo.apply_topo.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.topo._slope_stats",
+      "line": 278,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.topo._slope_stats.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.topo.illumination_diagnostic",
+      "line": 287,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.topo.illumination_diagnostic.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.topo.CFit.as_dict",
+      "line": 71,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.topo.CFit.as_dict.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.correct.topo.CFit",
+      "line": 57,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.correct.topo.CFit.md"
+    }
+  ]
+}

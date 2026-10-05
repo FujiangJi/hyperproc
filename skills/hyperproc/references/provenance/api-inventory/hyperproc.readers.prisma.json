@@ -1,0 +1,167 @@
+{
+  "module": "hyperproc.readers.prisma",
+  "source_path": "hyperproc/readers/prisma.py",
+  "sha256": "95287b439c5ab285ceee6a57d25570f9689019171847cd832e71bc186ffdd214",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "finish_bands",
+      "from": "hyperproc.readers._common",
+      "name": "finish_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "normalise_angles",
+      "from": "hyperproc.readers._common",
+      "name": "normalise_angles",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers-prisma.md",
+  "constants": [
+    {
+      "name": "DN_MAX",
+      "reference": "api/constants/hyperproc.readers.prisma.DN_MAX.md"
+    },
+    {
+      "name": "LEVEL_SPEC",
+      "reference": "api/constants/hyperproc.readers.prisma.LEVEL_SPEC.md"
+    },
+    {
+      "name": "ANGLE_FIELDS",
+      "reference": "api/constants/hyperproc.readers.prisma.ANGLE_FIELDS.md"
+    },
+    {
+      "name": "L2C_MAPS",
+      "reference": "api/constants/hyperproc.readers.prisma.L2C_MAPS.md"
+    },
+    {
+      "name": "_GRANULE",
+      "reference": "api/constants/hyperproc.readers.prisma._GRANULE.md"
+    },
+    {
+      "name": "L1_MASKS",
+      "reference": "api/constants/hyperproc.readers.prisma.L1_MASKS.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.readers.prisma.open_prisma",
+      "line": 74,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma.open_prisma.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._read_arm",
+      "line": 217,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._read_arm.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._take",
+      "line": 272,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._take.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._resolve_overlap",
+      "line": 279,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._resolve_overlap.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._dec",
+      "line": 293,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._dec.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._scene_attrs",
+      "line": 297,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._scene_attrs.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._fill_mask",
+      "line": 318,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._fill_mask.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._add_grid",
+      "line": 324,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._add_grid.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._add_angles",
+      "line": 353,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._add_angles.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._add_l1_masks",
+      "line": 371,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._add_l1_masks.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._l2_sibling",
+      "line": 381,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._l2_sibling.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._borrow_geolocation",
+      "line": 390,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._borrow_geolocation.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._add_l1_geometry",
+      "line": 405,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._add_l1_geometry.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._view_from_ephemeris",
+      "line": 435,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._view_from_ephemeris.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.prisma._add_l2c_maps",
+      "line": 479,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.prisma._add_l2c_maps.md"
+    }
+  ],
+  "classes": []
+}

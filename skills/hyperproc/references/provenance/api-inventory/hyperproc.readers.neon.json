@@ -1,0 +1,183 @@
+{
+  "module": "hyperproc.readers.neon",
+  "source_path": "hyperproc/readers/neon.py",
+  "sha256": "9d40f2c149b0b30530686fb8dca099ab207ffe0b3bfad518df8be0a2440c3ebd",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "finish_bands",
+      "from": "hyperproc.readers._common",
+      "name": "finish_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "normalise_angles",
+      "from": "hyperproc.readers._common",
+      "name": "normalise_angles",
+      "relative_level": 0
+    },
+    {
+      "local": "check_geometry",
+      "from": "hyperproc.geometry",
+      "name": "check_geometry",
+      "relative_level": 0
+    },
+    {
+      "local": "fix_slope_convention",
+      "from": "hyperproc.geometry",
+      "name": "fix_slope_convention",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers-neon.md",
+  "constants": [
+    {
+      "name": "FILL",
+      "reference": "api/constants/hyperproc.readers.neon.FILL.md"
+    },
+    {
+      "name": "SCALE",
+      "reference": "api/constants/hyperproc.readers.neon.SCALE.md"
+    },
+    {
+      "name": "_GRANULE",
+      "reference": "api/constants/hyperproc.readers.neon._GRANULE.md"
+    },
+    {
+      "name": "ANCILLARY",
+      "reference": "api/constants/hyperproc.readers.neon.ANCILLARY.md"
+    },
+    {
+      "name": "BYTE_NODATA",
+      "reference": "api/constants/hyperproc.readers.neon.BYTE_NODATA.md"
+    },
+    {
+      "name": "CLASSES",
+      "reference": "api/constants/hyperproc.readers.neon.CLASSES.md"
+    },
+    {
+      "name": "NOTES",
+      "reference": "api/constants/hyperproc.readers.neon.NOTES.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.readers.neon.open_neon",
+      "line": 111,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon.open_neon.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._as_str",
+      "line": 255,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._as_str.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._band_subset",
+      "line": 259,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._band_subset.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._good_bands",
+      "line": 270,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._good_bands.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._grid",
+      "line": 282,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._grid.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._chunks_for",
+      "line": 322,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._chunks_for.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._lazy_cube",
+      "line": 335,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._lazy_cube.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._lazy_layer",
+      "line": 343,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._lazy_layer.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._scaled",
+      "line": 352,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._scaled.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._add_layers",
+      "line": 368,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._add_layers.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._add_geometry",
+      "line": 379,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._add_geometry.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._add_classes",
+      "line": 405,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.neon._add_classes.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._H5Array.__init__",
+      "line": 311,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.readers.neon._H5Array.__init__.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.neon._H5Array.__getitem__",
+      "line": 316,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.readers.neon._H5Array.__getitem__.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.readers.neon._H5Array",
+      "line": 305,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.readers.neon._H5Array.md"
+    }
+  ]
+}

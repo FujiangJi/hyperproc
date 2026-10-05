@@ -1,0 +1,160 @@
+{
+  "module": "hyperproc.registry",
+  "source_path": "hyperproc/registry.py",
+  "sha256": "e43f0558f1ae00b71705ffbe6fa6d3a7f57715054a054101086571d20b659b6c",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "dataclass",
+      "from": "dataclasses",
+      "name": "dataclass",
+      "relative_level": 0
+    },
+    {
+      "local": "field",
+      "from": "dataclasses",
+      "name": "field",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "Callable",
+      "from": "typing",
+      "name": "Callable",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-registry.md",
+  "constants": [
+    {
+      "name": "REGISTRY",
+      "reference": "api/constants/hyperproc.registry.REGISTRY.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.registry._tanager",
+      "line": 37,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry._tanager.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry._pace",
+      "line": 43,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry._pace.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry._enmap",
+      "line": 49,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry._enmap.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry._desis",
+      "line": 55,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry._desis.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry._neon",
+      "line": 61,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry._neon.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry._aviris",
+      "line": 67,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry._aviris.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry._prisma",
+      "line": 73,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry._prisma.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry._emit",
+      "line": 79,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry._emit.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry.register",
+      "line": 91,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry.register.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry.sniff",
+      "line": 242,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry.sniff.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry.resolve",
+      "line": 251,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry.resolve.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry.summary",
+      "line": 287,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry.summary.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry.list_readers",
+      "line": 293,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.registry.list_readers.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry.Entry.implemented",
+      "line": 30,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.registry.Entry.implemented.md"
+    },
+    {
+      "qualified_name": "hyperproc.registry.Entry.matches",
+      "line": 33,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.registry.Entry.matches.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.registry.Entry",
+      "line": 16,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.registry.Entry.md"
+    }
+  ]
+}

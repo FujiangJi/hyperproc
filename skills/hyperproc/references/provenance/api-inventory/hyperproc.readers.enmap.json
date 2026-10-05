@@ -1,0 +1,141 @@
+{
+  "module": "hyperproc.readers.enmap",
+  "source_path": "hyperproc/readers/enmap.py",
+  "sha256": "c90471eb70cb10e55f63c7ae63661f13afd76546b0bd10e2f00a6e4105f21324",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "crs_text",
+      "from": "hyperproc.readers._common",
+      "name": "crs_text",
+      "relative_level": 0
+    },
+    {
+      "local": "finish_bands",
+      "from": "hyperproc.readers._common",
+      "name": "finish_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "normalise_angles",
+      "from": "hyperproc.readers._common",
+      "name": "normalise_angles",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers-enmap.md",
+  "constants": [
+    {
+      "name": "LEVEL_SPEC",
+      "reference": "api/constants/hyperproc.readers.enmap.LEVEL_SPEC.md"
+    },
+    {
+      "name": "QUALITY_LAYERS",
+      "reference": "api/constants/hyperproc.readers.enmap.QUALITY_LAYERS.md"
+    },
+    {
+      "name": "ANGLE_TAGS",
+      "reference": "api/constants/hyperproc.readers.enmap.ANGLE_TAGS.md"
+    },
+    {
+      "name": "_CORNERS",
+      "reference": "api/constants/hyperproc.readers.enmap._CORNERS.md"
+    },
+    {
+      "name": "_GRANULE",
+      "reference": "api/constants/hyperproc.readers.enmap._GRANULE.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.readers.enmap._beside",
+      "line": 72,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._beside.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap.open_enmap",
+      "line": 90,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap.open_enmap.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap._lazy_cube",
+      "line": 241,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._lazy_cube.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap._parse_metadata",
+      "line": 248,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._parse_metadata.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap._corner_grid",
+      "line": 279,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._corner_grid.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap._footprint_pixels",
+      "line": 289,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._footprint_pixels.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap._footprint_grid",
+      "line": 319,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._footprint_grid.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap._signed_area",
+      "line": 343,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._signed_area.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap._add_angles",
+      "line": 348,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._add_angles.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap._add_quality",
+      "line": 371,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._add_quality.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.enmap._add_pixelmask",
+      "line": 389,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.enmap._add_pixelmask.md"
+    }
+  ],
+  "classes": []
+}

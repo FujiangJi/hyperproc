@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/avirisclassic-tutorial/",
+    "html_sha256": "a984f09fa795c5dc0d470f2db95a93be4a391bba7ad18e9c979f000989a6b553"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/avirisng-tutorial/",
+    "html_sha256": "4457738e1cbea9e3f5b8520c8dd5d9ee75000cc657a092b3175eb4d2eb85c006"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/caveats/",
+    "html_sha256": "4052e644d09e127d5e6e9a0ba1b0cb4b1cf540708890b9137cfbb7b43fc8ef7b"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/desis-tutorial/",
+    "html_sha256": "504c59307878852df6a240671d4b39e671247a13a62b813dc516f2f89b6317c7"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/desis-window-tutorial/",
+    "html_sha256": "57022da2fb8975556993936471d5c2d77e1dd11e716ea396f73957079b3c442c"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/emit-tutorial/",
+    "html_sha256": "f816c78db8f35daf2058ebbb53fe65581e53d98db155ac7b211df52ef6bb367f"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/emit-window-tutorial/",
+    "html_sha256": "ba7ce8e17f938aec70b94e87ce313aa474f8ec2070b2af55f7a28a7530c14a8e"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/enmap-tutorial/",
+    "html_sha256": "40b72d583dcb5bd0702e5624b4c7a3eb21d9c115cdbeeb61faf1ea46950c31ef"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/enmap-window-tutorial/",
+    "html_sha256": "32e9bee9129d684fec9f84a8bc3c13ad3f230b4ed67cd6cf6c6c0619b248a2f5"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/tutorials/neon-tutorial/",
+    "html_sha256": "d7d0fd2e5fcf934f49ad04e96311ebb4332ac86bbed8a7c6886700bacc1d7b9d"
+  }
+]

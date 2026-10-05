@@ -1,0 +1,336 @@
+{
+  "version": "0.1.2",
+  "coverage": {
+    "modules": 54,
+    "functions": 445,
+    "classes": 20,
+    "class_members": 100
+  },
+  "module_records": [
+    {
+      "module": "hyperproc",
+      "record": "api-inventory/hyperproc.json",
+      "source_path": "hyperproc/__init__.py",
+      "sha256": "8b313a6e16615e947d8ba86ce3f2446367a2eeab1a5467894e77e32cb3e8b940"
+    },
+    {
+      "module": "hyperproc._ncrc",
+      "record": "api-inventory/hyperproc._ncrc.json",
+      "source_path": "hyperproc/_ncrc.py",
+      "sha256": "a2127806d79dc62bcb0574abc1c0067387226ff982ec44e5875971c2fd0aea95"
+    },
+    {
+      "module": "hyperproc.align",
+      "record": "api-inventory/hyperproc.align.json",
+      "source_path": "hyperproc/align.py",
+      "sha256": "4a23eadaf2b9bb2bb0d24c348fb13f421d97fcdeb5ebf68bc11e05e7667d4e47"
+    },
+    {
+      "module": "hyperproc.archive",
+      "record": "api-inventory/hyperproc.archive.json",
+      "source_path": "hyperproc/archive/__init__.py",
+      "sha256": "1891cec06716ba977af1989c60f50222c231ec14e00f6d7d159d98bfdb57fb34"
+    },
+    {
+      "module": "hyperproc.archive.api",
+      "record": "api-inventory/hyperproc.archive.api.json",
+      "source_path": "hyperproc/archive/api.py",
+      "sha256": "be724a1d1e3ef6f9d3aaedce43e0d372e5fc052d81e864fb8971b47334929512"
+    },
+    {
+      "module": "hyperproc.archive.cmr",
+      "record": "api-inventory/hyperproc.archive.cmr.json",
+      "source_path": "hyperproc/archive/cmr.py",
+      "sha256": "05436c876075852ac0aff3be2abcc274bea18739e0657693b7dd22e746ab349b"
+    },
+    {
+      "module": "hyperproc.archive.collections",
+      "record": "api-inventory/hyperproc.archive.collections.json",
+      "source_path": "hyperproc/archive/collections.py",
+      "sha256": "472350432d15b2ae580b981ec7415f8f92ef5f78bb14568b589fad4d29ffe4b3"
+    },
+    {
+      "module": "hyperproc.archive.dlr",
+      "record": "api-inventory/hyperproc.archive.dlr.json",
+      "source_path": "hyperproc/archive/dlr.py",
+      "sha256": "cbb22eef8c2ce1bf176fbfcdda7a9442b9f22f38aeaa38e23acf3a46b2090ee6"
+    },
+    {
+      "module": "hyperproc.archive.interactive",
+      "record": "api-inventory/hyperproc.archive.interactive.json",
+      "source_path": "hyperproc/archive/interactive.py",
+      "sha256": "d8d90ffe202997afb1ca003262d3ea582ceaa723055a84d12247a2f2ef09c9cb"
+    },
+    {
+      "module": "hyperproc.archive.neon",
+      "record": "api-inventory/hyperproc.archive.neon.json",
+      "source_path": "hyperproc/archive/neon.py",
+      "sha256": "4b66a2a1a2e267094fb4615ad2b7559159eab1f8ee846035dc42ec74e7cab0c4"
+    },
+    {
+      "module": "hyperproc.archive.results",
+      "record": "api-inventory/hyperproc.archive.results.json",
+      "source_path": "hyperproc/archive/results.py",
+      "sha256": "e9f01c41f5ab915dc9f7e07017b77de38f8952d8b9ee3a24d5db6d8e163dda8c"
+    },
+    {
+      "module": "hyperproc.atmos",
+      "record": "api-inventory/hyperproc.atmos.json",
+      "source_path": "hyperproc/atmos/__init__.py",
+      "sha256": "873f3031da5d235476f5159d6ae9824ce37ab1a1093e33280c5338ba223a9701"
+    },
+    {
+      "module": "hyperproc.atmos._runner",
+      "record": "api-inventory/hyperproc.atmos._runner.json",
+      "source_path": "hyperproc/atmos/_runner.py",
+      "sha256": "70ddce271289017a22949d29170192fda9c74021f4b104cd357613b8ddc33dc5"
+    },
+    {
+      "module": "hyperproc.atmos.aerosols",
+      "record": "api-inventory/hyperproc.atmos.aerosols.json",
+      "source_path": "hyperproc/atmos/aerosols.py",
+      "sha256": "da7bbdf6a18068ea9852593051ec016868753a6ebee88b2568cfa7a3c8886934"
+    },
+    {
+      "module": "hyperproc.atmos.correct",
+      "record": "api-inventory/hyperproc.atmos.correct.json",
+      "source_path": "hyperproc/atmos/correct.py",
+      "sha256": "fe8e6a083e5ec0fa01862373ccd753bc76fbdcbf8b5f065667088dc969896810"
+    },
+    {
+      "module": "hyperproc.atmos.dem",
+      "record": "api-inventory/hyperproc.atmos.dem.json",
+      "source_path": "hyperproc/atmos/dem.py",
+      "sha256": "1a708595e30d736167c77890d218d025c6b879fb48e6c9b4bf89118818d24e8e"
+    },
+    {
+      "module": "hyperproc.atmos.engines",
+      "record": "api-inventory/hyperproc.atmos.engines.json",
+      "source_path": "hyperproc/atmos/engines.py",
+      "sha256": "abbba1de8493eb8cd4d07e8e2f436ee3c5de18383d585093ea08339bb1a81a4f"
+    },
+    {
+      "module": "hyperproc.atmos.inputs",
+      "record": "api-inventory/hyperproc.atmos.inputs.json",
+      "source_path": "hyperproc/atmos/inputs.py",
+      "sha256": "20da0f1ff981e6b2d36b191560c8ac09ec0d6eb732919551c2b88e22346c7194"
+    },
+    {
+      "module": "hyperproc.atmos.process",
+      "record": "api-inventory/hyperproc.atmos.process.json",
+      "source_path": "hyperproc/atmos/process.py",
+      "sha256": "3ba7dd579794638190c3a2880fb37522e8fd0d77173e16415a3dbb178f9a749b"
+    },
+    {
+      "module": "hyperproc.atmos.setup",
+      "record": "api-inventory/hyperproc.atmos.setup.json",
+      "source_path": "hyperproc/atmos/setup.py",
+      "sha256": "c084b25c5c35869924e57b5fdcabb88959043bfcc3c10ed1dfd8b1236cb5ddac"
+    },
+    {
+      "module": "hyperproc.correct",
+      "record": "api-inventory/hyperproc.correct.json",
+      "source_path": "hyperproc/correct/__init__.py",
+      "sha256": "dbcd3592c6859e507ad97b596a36d37c7636c99b8207b6c47a4160bb32372c5a"
+    },
+    {
+      "module": "hyperproc.correct.brdf",
+      "record": "api-inventory/hyperproc.correct.brdf.json",
+      "source_path": "hyperproc/correct/brdf.py",
+      "sha256": "ef0b4dbda0411b0939fd14f6ad3705037678343cef3a7c2daa0890fd80d37ae9"
+    },
+    {
+      "module": "hyperproc.correct.cfactor",
+      "record": "api-inventory/hyperproc.correct.cfactor.json",
+      "source_path": "hyperproc/correct/cfactor.py",
+      "sha256": "26f10dadb8548df9af6843f3ed3c32c03466148055b87de3ac9d2e1ae4e075d0"
+    },
+    {
+      "module": "hyperproc.correct.coefficients",
+      "record": "api-inventory/hyperproc.correct.coefficients.json",
+      "source_path": "hyperproc/correct/coefficients.py",
+      "sha256": "a0069496e6f7a0943faa90c20399f3031624ee574a2f867a8f1d10cf2efc7d46"
+    },
+    {
+      "module": "hyperproc.correct.kernels",
+      "record": "api-inventory/hyperproc.correct.kernels.json",
+      "source_path": "hyperproc/correct/kernels.py",
+      "sha256": "28bff36d0ad82b644c7a97bf69af8a07d9175594aa1a7a05be04fc9e08e7d3f8"
+    },
+    {
+      "module": "hyperproc.correct.masks",
+      "record": "api-inventory/hyperproc.correct.masks.json",
+      "source_path": "hyperproc/correct/masks.py",
+      "sha256": "7953ba42f0c9c8803e522b57d6a0ca660baeaf1ae0af4f2b2373adef894b776d"
+    },
+    {
+      "module": "hyperproc.correct.mcd43",
+      "record": "api-inventory/hyperproc.correct.mcd43.json",
+      "source_path": "hyperproc/correct/mcd43.py",
+      "sha256": "6aa8766ad0737d81b1df42d80c34e9e0535c369dee2d2500fa94def8aeb2fcef"
+    },
+    {
+      "module": "hyperproc.correct.pipeline",
+      "record": "api-inventory/hyperproc.correct.pipeline.json",
+      "source_path": "hyperproc/correct/pipeline.py",
+      "sha256": "3ab84ce31170e958912e702a584ca051e9db972ebff365fbebdf51acfecc6c3b"
+    },
+    {
+      "module": "hyperproc.correct.topo",
+      "record": "api-inventory/hyperproc.correct.topo.json",
+      "source_path": "hyperproc/correct/topo.py",
+      "sha256": "7ea689fcab51986c3ce61e473b60e301d8d186fd7d3d45a267090ba62a34945e"
+    },
+    {
+      "module": "hyperproc.features",
+      "record": "api-inventory/hyperproc.features.json",
+      "source_path": "hyperproc/features.py",
+      "sha256": "86d3703e17c09dcee128b4ca24376e7368cf08a226844ce3c9ac0ad8f3ee3a89"
+    },
+    {
+      "module": "hyperproc.geometry",
+      "record": "api-inventory/hyperproc.geometry.json",
+      "source_path": "hyperproc/geometry.py",
+      "sha256": "6d98a0c13e2d441ce5f12ef64f7c783663859d525441d5917716aef64a244b23"
+    },
+    {
+      "module": "hyperproc.grid",
+      "record": "api-inventory/hyperproc.grid.json",
+      "source_path": "hyperproc/grid.py",
+      "sha256": "2fc7496951ad3f1788d7244aac0b8c50811d5accbbe917f6451f48210b10d703"
+    },
+    {
+      "module": "hyperproc.io",
+      "record": "api-inventory/hyperproc.io.json",
+      "source_path": "hyperproc/io.py",
+      "sha256": "1774a49c32ffb08a3df6a11c651f56aff1d53e078283c690bf4ac3c643773772"
+    },
+    {
+      "module": "hyperproc.quality",
+      "record": "api-inventory/hyperproc.quality.json",
+      "source_path": "hyperproc/quality.py",
+      "sha256": "97c38817cbfd55e2c690c9579c3696492beee5e69d1a681f066444e0d5a374c0"
+    },
+    {
+      "module": "hyperproc.readers",
+      "record": "api-inventory/hyperproc.readers.json",
+      "source_path": "hyperproc/readers/__init__.py",
+      "sha256": "fe839f53582c1557d55b7ae25c1e4002b261e37f345a0dab077edab5e6949ee6"
+    },
+    {
+      "module": "hyperproc.readers._common",
+      "record": "api-inventory/hyperproc.readers._common.json",
+      "source_path": "hyperproc/readers/_common.py",
+      "sha256": "df7d6dd342796e2c76011a784856948bd0cc3d5a93e241ea0e60225aa69c6bb7"
+    },
+    {
+      "module": "hyperproc.readers.aviris",
+      "record": "api-inventory/hyperproc.readers.aviris.json",
+      "source_path": "hyperproc/readers/aviris.py",
+      "sha256": "2a0eb260b2383a091eea33823c8476edd762af3d60081777963ba41b0c615b31"
+    },
+    {
+      "module": "hyperproc.readers.desis",
+      "record": "api-inventory/hyperproc.readers.desis.json",
+      "source_path": "hyperproc/readers/desis.py",
+      "sha256": "e1edbbe9779c913c9f1f474638f92eaaef468e4381fcc4a2e98472a94ea4e3a1"
+    },
+    {
+      "module": "hyperproc.readers.emit",
+      "record": "api-inventory/hyperproc.readers.emit.json",
+      "source_path": "hyperproc/readers/emit.py",
+      "sha256": "b4ea9ad015d18b31744e331d290d41e2f1477db7344dc09a092788cafcefc3b6"
+    },
+    {
+      "module": "hyperproc.readers.enmap",
+      "record": "api-inventory/hyperproc.readers.enmap.json",
+      "source_path": "hyperproc/readers/enmap.py",
+      "sha256": "c90471eb70cb10e55f63c7ae63661f13afd76546b0bd10e2f00a6e4105f21324"
+    },
+    {
+      "module": "hyperproc.readers.neon",
+      "record": "api-inventory/hyperproc.readers.neon.json",
+      "source_path": "hyperproc/readers/neon.py",
+      "sha256": "9d40f2c149b0b30530686fb8dca099ab207ffe0b3bfad518df8be0a2440c3ebd"
+    },
+    {
+      "module": "hyperproc.readers.pace",
+      "record": "api-inventory/hyperproc.readers.pace.json",
+      "source_path": "hyperproc/readers/pace.py",
+      "sha256": "83f2755438542c05d38167c3ba4a88cb22b69193792de5860e2856537f3954ca"
+    },
+    {
+      "module": "hyperproc.readers.prisma",
+      "record": "api-inventory/hyperproc.readers.prisma.json",
+      "source_path": "hyperproc/readers/prisma.py",
+      "sha256": "95287b439c5ab285ceee6a57d25570f9689019171847cd832e71bc186ffdd214"
+    },
+    {
+      "module": "hyperproc.readers.tanager",
+      "record": "api-inventory/hyperproc.readers.tanager.json",
+      "source_path": "hyperproc/readers/tanager.py",
+      "sha256": "d0b0429180d114332c052d61b162e5ea8455f144e89af7ebd3f2646d7c261cbd"
+    },
+    {
+      "module": "hyperproc.registry",
+      "record": "api-inventory/hyperproc.registry.json",
+      "source_path": "hyperproc/registry.py",
+      "sha256": "e43f0558f1ae00b71705ffbe6fa6d3a7f57715054a054101086571d20b659b6c"
+    },
+    {
+      "module": "hyperproc.report",
+      "record": "api-inventory/hyperproc.report.json",
+      "source_path": "hyperproc/report.py",
+      "sha256": "ad5309df0267b9131a1b0f1a8074e15a69e80651c603fcfa668cbc29e181f109"
+    },
+    {
+      "module": "hyperproc.spectral",
+      "record": "api-inventory/hyperproc.spectral.json",
+      "source_path": "hyperproc/spectral/__init__.py",
+      "sha256": "171f351c89c38c0c7767463711b39171d5ba4995ce000b1af18df68e3520a504"
+    },
+    {
+      "module": "hyperproc.spectral._smoothspline",
+      "record": "api-inventory/hyperproc.spectral._smoothspline.json",
+      "source_path": "hyperproc/spectral/_smoothspline.py",
+      "sha256": "9f7b82086ddeb856d8f277aa00e6dc9302cd1a6c767c17a9589dec7f40cc7fba"
+    },
+    {
+      "module": "hyperproc.spectral.bands",
+      "record": "api-inventory/hyperproc.spectral.bands.json",
+      "source_path": "hyperproc/spectral/bands.py",
+      "sha256": "470c5dc3d0cb4baad4222512780a09b0b433914a6704630064d5e1ec19bdd72c"
+    },
+    {
+      "module": "hyperproc.spectral.continuum",
+      "record": "api-inventory/hyperproc.spectral.continuum.json",
+      "source_path": "hyperproc/spectral/continuum.py",
+      "sha256": "254a070ec23299c4e931c80a8224349cc961d1939ee1b3cdc6ef9a228db2b943"
+    },
+    {
+      "module": "hyperproc.spectral.derivatives",
+      "record": "api-inventory/hyperproc.spectral.derivatives.json",
+      "source_path": "hyperproc/spectral/derivatives.py",
+      "sha256": "e880f151e9aee89918a9dbb989d324dc90a38c63e7aa1dab7041419f163ba0af"
+    },
+    {
+      "module": "hyperproc.spectral.resampling",
+      "record": "api-inventory/hyperproc.spectral.resampling.json",
+      "source_path": "hyperproc/spectral/resampling.py",
+      "sha256": "3533950e1b7045abc26b3d9d0faa446269d854f151edde1fd53e9e416fc2de79"
+    },
+    {
+      "module": "hyperproc.spectral.smoothing",
+      "record": "api-inventory/hyperproc.spectral.smoothing.json",
+      "source_path": "hyperproc/spectral/smoothing.py",
+      "sha256": "ed1557d09f3f6a43a97ec15972be929bcaa0601e546319a44252f01ea549a9e9"
+    },
+    {
+      "module": "hyperproc.spectral.srf",
+      "record": "api-inventory/hyperproc.spectral.srf.json",
+      "source_path": "hyperproc/spectral/srf.py",
+      "sha256": "9c8c9a3f08cdd47f0515ae100d6fe3ca8beafabca2e1c2c09055d80413e32497"
+    }
+  ],
+  "scope": "Machine index only; symbol signatures/docstrings live once in their short Markdown references."
+}

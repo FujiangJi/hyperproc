@@ -1,0 +1,33 @@
+{
+  "module": "hyperproc.geometry",
+  "source_path": "hyperproc/geometry.py",
+  "sha256": "6d98a0c13e2d441ce5f12ef64f7c783663859d525441d5917716aef64a244b23",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-geometry.md",
+  "constants": [],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.geometry.check_geometry",
+      "line": 17,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.geometry.check_geometry.md"
+    },
+    {
+      "qualified_name": "hyperproc.geometry.fix_slope_convention",
+      "line": 97,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.geometry.fix_slope_convention.md"
+    }
+  ],
+  "classes": []
+}

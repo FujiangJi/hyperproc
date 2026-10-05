@@ -1,0 +1,394 @@
+{
+  "module": "hyperproc.correct.pipeline",
+  "source_path": "hyperproc/correct/pipeline.py",
+  "sha256": "3ab84ce31170e958912e702a584ca051e9db972ebff365fbebdf51acfecc6c3b",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "dataclass",
+      "from": "dataclasses",
+      "name": "dataclass",
+      "relative_level": 0
+    },
+    {
+      "local": "field",
+      "from": "dataclasses",
+      "name": "field",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "B",
+      "from": "hyperproc.correct",
+      "name": "brdf",
+      "relative_level": 0
+    },
+    {
+      "local": "M",
+      "from": "hyperproc.correct",
+      "name": "masks",
+      "relative_level": 0
+    },
+    {
+      "local": "T",
+      "from": "hyperproc.correct",
+      "name": "topo",
+      "relative_level": 0
+    },
+    {
+      "local": "BRDFCoefficients",
+      "from": "hyperproc.correct.coefficients",
+      "name": "BRDFCoefficients",
+      "relative_level": 0
+    },
+    {
+      "local": "TopoCoefficients",
+      "from": "hyperproc.correct.coefficients",
+      "name": "TopoCoefficients",
+      "relative_level": 0
+    },
+    {
+      "local": "align_wavelengths",
+      "from": "hyperproc.correct.coefficients",
+      "name": "align_wavelengths",
+      "relative_level": 0
+    },
+    {
+      "local": "provenance",
+      "from": "hyperproc.correct.coefficients",
+      "name": "provenance",
+      "relative_level": 0
+    },
+    {
+      "local": "kernel_pair",
+      "from": "hyperproc.correct.kernels",
+      "name": "kernel_pair",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-correct-pipeline.md",
+  "constants": [
+    {
+      "name": "TOPO_CALC",
+      "reference": "api/constants/hyperproc.correct.pipeline.TOPO_CALC.md"
+    },
+    {
+      "name": "TOPO_APPLY",
+      "reference": "api/constants/hyperproc.correct.pipeline.TOPO_APPLY.md"
+    },
+    {
+      "name": "BRDF_CALC",
+      "reference": "api/constants/hyperproc.correct.pipeline.BRDF_CALC.md"
+    },
+    {
+      "name": "BRDF_APPLY",
+      "reference": "api/constants/hyperproc.correct.pipeline.BRDF_APPLY.md"
+    },
+    {
+      "name": "INDEX_BANDS",
+      "reference": "api/constants/hyperproc.correct.pipeline.INDEX_BANDS.md"
+    },
+    {
+      "name": "GEOMETRY",
+      "reference": "api/constants/hyperproc.correct.pipeline.GEOMETRY.md"
+    },
+    {
+      "name": "AIRBORNE_SENSORS",
+      "reference": "api/constants/hyperproc.correct.pipeline.AIRBORNE_SENSORS.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.correct.pipeline.is_airborne",
+      "line": 65,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.is_airborne.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._require_airborne",
+      "line": 71,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._require_airborne.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._main_var",
+      "line": 76,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._main_var.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._index_bands",
+      "line": 81,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._index_bands.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._cloud_stats",
+      "line": 95,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._cloud_stats.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._cloud_mask",
+      "line": 106,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._cloud_mask.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._geometry_2d",
+      "line": 114,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._geometry_2d.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.sample_image",
+      "line": 229,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.sample_image.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._sample_chunks",
+      "line": 259,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._sample_chunks.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._iter_chunks",
+      "line": 319,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._iter_chunks.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._sample_pixels",
+      "line": 329,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._sample_pixels.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.merge_samples",
+      "line": 415,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.merge_samples.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.per_block_effects",
+      "line": 464,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.per_block_effects.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.fit_topo",
+      "line": 502,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.fit_topo.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.angular_diversity",
+      "line": 598,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.angular_diversity.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._topo_correct_sample",
+      "line": 631,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._topo_correct_sample.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.fit_brdf",
+      "line": 647,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.fit_brdf.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.apply",
+      "line": 721,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.apply.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.export",
+      "line": 856,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.export.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.footprint_bounds",
+      "line": 899,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.footprint_bounds.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.footprint_polygon",
+      "line": 911,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.footprint_polygon.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.footprint_overlap",
+      "line": 924,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.footprint_overlap.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._window_for_bbox",
+      "line": 933,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._window_for_bbox.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._window_bounds",
+      "line": 946,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._window_bounds.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.overlap_windows",
+      "line": 953,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.overlap_windows.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.find_overlapping_pair",
+      "line": 982,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.find_overlapping_pair.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._common_grid",
+      "line": 999,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._common_grid.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline._reproject",
+      "line": 1025,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline._reproject.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.mosaic_geotiffs",
+      "line": 1037,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.mosaic_geotiffs.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.overlap_agreement_tifs",
+      "line": 1082,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.overlap_agreement_tifs.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.seam_check",
+      "line": 1112,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.seam_check.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.view_dependence",
+      "line": 1136,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.view_dependence.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.overlap_agreement",
+      "line": 1188,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.pipeline.overlap_agreement.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.Sample.n",
+      "line": 165,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.pipeline.Sample.n.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.Sample.cloud_flags",
+      "line": 168,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.pipeline.Sample.cloud_flags.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.Sample.topo_calc_mask",
+      "line": 190,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.pipeline.Sample.topo_calc_mask.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.Sample.topo_apply_mask",
+      "line": 198,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.pipeline.Sample.topo_apply_mask.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.Sample.brdf_calc_mask",
+      "line": 203,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.pipeline.Sample.brdf_calc_mask.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.pipeline.Sample.summary",
+      "line": 217,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.pipeline.Sample.summary.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.correct.pipeline.Sample",
+      "line": 133,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.correct.pipeline.Sample.md"
+    }
+  ]
+}

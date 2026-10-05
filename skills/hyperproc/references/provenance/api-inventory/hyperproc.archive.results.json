@@ -1,0 +1,161 @@
+{
+  "module": "hyperproc.archive.results",
+  "source_path": "hyperproc/archive/results.py",
+  "sha256": "e9f01c41f5ab915dc9f7e07017b77de38f8952d8b9ee3a24d5db6d8e163dda8c",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "dataclass",
+      "from": "dataclasses",
+      "name": "dataclass",
+      "relative_level": 0
+    },
+    {
+      "local": "field",
+      "from": "dataclasses",
+      "name": "field",
+      "relative_level": 0
+    },
+    {
+      "local": "datetime",
+      "from": "datetime",
+      "name": "datetime",
+      "relative_level": 0
+    },
+    {
+      "local": "Any",
+      "from": "typing",
+      "name": "Any",
+      "relative_level": 0
+    },
+    {
+      "local": "Iterable",
+      "from": "typing",
+      "name": "Iterable",
+      "relative_level": 0
+    },
+    {
+      "local": "Sequence",
+      "from": "typing",
+      "name": "Sequence",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-archive-results.md",
+  "constants": [],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.archive.results.plural",
+      "line": 16,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.results.plural.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Granule.size_gb",
+      "line": 61,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Granule.size_gb.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Granule.__repr__",
+      "line": 64,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Granule.__repr__.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results.__init__",
+      "line": 78,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results.__init__.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results.__len__",
+      "line": 86,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results.__len__.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results.__getitem__",
+      "line": 89,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results.__getitem__.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results.__iter__",
+      "line": 93,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results.__iter__.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results.size_gb",
+      "line": 97,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results.size_gb.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results.unsized",
+      "line": 102,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results.unsized.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results._total",
+      "line": 106,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results._total.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results.__repr__",
+      "line": 114,
+      "private": true,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results.__repr__.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results.table",
+      "line": 119,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results.table.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results.to_geodataframe",
+      "line": 134,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.archive.results.Results.to_geodataframe.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.archive.results.Granule",
+      "line": 22,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.archive.results.Granule.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.results.Results",
+      "line": 71,
+      "bases": [
+        "Sequence"
+      ],
+      "reference": "api/symbols/hyperproc.archive.results.Results.md"
+    }
+  ]
+}

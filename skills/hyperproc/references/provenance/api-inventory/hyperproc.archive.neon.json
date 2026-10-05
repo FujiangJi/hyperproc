@@ -1,0 +1,162 @@
+{
+  "module": "hyperproc.archive.neon",
+  "source_path": "hyperproc/archive/neon.py",
+  "sha256": "4b66a2a1a2e267094fb4615ad2b7559159eab1f8ee846035dc42ec74e7cab0c4",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "ThreadPoolExecutor",
+      "from": "concurrent.futures",
+      "name": "ThreadPoolExecutor",
+      "relative_level": 0
+    },
+    {
+      "local": "datetime",
+      "from": "datetime",
+      "name": "datetime",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "Sequence",
+      "from": "typing",
+      "name": "Sequence",
+      "relative_level": 0
+    },
+    {
+      "local": "resolve",
+      "from": "hyperproc.archive.collections",
+      "name": "resolve",
+      "relative_level": 0
+    },
+    {
+      "local": "Granule",
+      "from": "hyperproc.archive.results",
+      "name": "Granule",
+      "relative_level": 0
+    },
+    {
+      "local": "Results",
+      "from": "hyperproc.archive.results",
+      "name": "Results",
+      "relative_level": 0
+    },
+    {
+      "local": "plural",
+      "from": "hyperproc.archive.results",
+      "name": "plural",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-archive-neon.md",
+  "constants": [
+    {
+      "name": "BASE",
+      "reference": "api/constants/hyperproc.archive.neon.BASE.md"
+    },
+    {
+      "name": "ACCOUNT",
+      "reference": "api/constants/hyperproc.archive.neon.ACCOUNT.md"
+    },
+    {
+      "name": "NEEDS_TOKEN",
+      "reference": "api/constants/hyperproc.archive.neon.NEEDS_TOKEN.md"
+    },
+    {
+      "name": "DEFAULT_PATTERN",
+      "reference": "api/constants/hyperproc.archive.neon.DEFAULT_PATTERN.md"
+    },
+    {
+      "name": "_FLIGHTLINE",
+      "reference": "api/constants/hyperproc.archive.neon._FLIGHTLINE.md"
+    },
+    {
+      "name": "_SITES",
+      "reference": "api/constants/hyperproc.archive.neon._SITES.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.archive.neon._requests",
+      "line": 63,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon._requests.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.neon._get",
+      "line": 73,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon._get.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.neon.token_from",
+      "line": 88,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon.token_from.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.neon.sites",
+      "line": 93,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon.sites.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.neon._months",
+      "line": 107,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon._months.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.neon._hit",
+      "line": 123,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon._hit.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.neon.search",
+      "line": 133,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon.search.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.neon.files",
+      "line": 220,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon.files.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.neon._flight_time",
+      "line": 279,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon._flight_time.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.neon.download",
+      "line": 289,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.neon.download.md"
+    }
+  ],
+  "classes": []
+}

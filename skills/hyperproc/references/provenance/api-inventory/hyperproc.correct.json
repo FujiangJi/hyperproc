@@ -1,0 +1,328 @@
+{
+  "module": "hyperproc.correct",
+  "source_path": "hyperproc/correct/__init__.py",
+  "sha256": "dbcd3592c6859e507ad97b596a36d37c7636c99b8207b6c47a4160bb32372c5a",
+  "exports": [
+    "brdf",
+    "cfactor",
+    "coefficients",
+    "masks",
+    "mcd43",
+    "pipeline",
+    "topo",
+    "angles_of",
+    "band_map",
+    "band_weights",
+    "c_factor",
+    "lonlat_of",
+    "model_agreement",
+    "model_reflectance",
+    "nbar",
+    "view_profile",
+    "BRDFCoefficients",
+    "TopoCoefficients",
+    "load",
+    "angular_diversity",
+    "apply",
+    "export",
+    "find_overlapping_pair",
+    "fit_brdf",
+    "fit_topo",
+    "footprint_bounds",
+    "footprint_overlap",
+    "footprint_polygon",
+    "is_airborne",
+    "merge_samples",
+    "mosaic_geotiffs",
+    "overlap_agreement",
+    "overlap_agreement_tifs",
+    "overlap_windows",
+    "per_block_effects",
+    "sample_image",
+    "seam_check",
+    "view_dependence",
+    "GEOMETRIC_KERNELS",
+    "VOLUME_KERNELS",
+    "geometric_kernel",
+    "kernel_pair",
+    "phase_angle",
+    "reference_kernels",
+    "volume_kernel"
+  ],
+  "imports": [
+    {
+      "local": "brdf",
+      "from": "hyperproc.correct",
+      "name": "brdf",
+      "relative_level": 0
+    },
+    {
+      "local": "cfactor",
+      "from": "hyperproc.correct",
+      "name": "cfactor",
+      "relative_level": 0
+    },
+    {
+      "local": "coefficients",
+      "from": "hyperproc.correct",
+      "name": "coefficients",
+      "relative_level": 0
+    },
+    {
+      "local": "masks",
+      "from": "hyperproc.correct",
+      "name": "masks",
+      "relative_level": 0
+    },
+    {
+      "local": "mcd43",
+      "from": "hyperproc.correct",
+      "name": "mcd43",
+      "relative_level": 0
+    },
+    {
+      "local": "pipeline",
+      "from": "hyperproc.correct",
+      "name": "pipeline",
+      "relative_level": 0
+    },
+    {
+      "local": "topo",
+      "from": "hyperproc.correct",
+      "name": "topo",
+      "relative_level": 0
+    },
+    {
+      "local": "BRDFCoefficients",
+      "from": "hyperproc.correct.coefficients",
+      "name": "BRDFCoefficients",
+      "relative_level": 0
+    },
+    {
+      "local": "TopoCoefficients",
+      "from": "hyperproc.correct.coefficients",
+      "name": "TopoCoefficients",
+      "relative_level": 0
+    },
+    {
+      "local": "load",
+      "from": "hyperproc.correct.coefficients",
+      "name": "load",
+      "relative_level": 0
+    },
+    {
+      "local": "angular_diversity",
+      "from": "hyperproc.correct.pipeline",
+      "name": "angular_diversity",
+      "relative_level": 0
+    },
+    {
+      "local": "apply",
+      "from": "hyperproc.correct.pipeline",
+      "name": "apply",
+      "relative_level": 0
+    },
+    {
+      "local": "export",
+      "from": "hyperproc.correct.pipeline",
+      "name": "export",
+      "relative_level": 0
+    },
+    {
+      "local": "find_overlapping_pair",
+      "from": "hyperproc.correct.pipeline",
+      "name": "find_overlapping_pair",
+      "relative_level": 0
+    },
+    {
+      "local": "fit_brdf",
+      "from": "hyperproc.correct.pipeline",
+      "name": "fit_brdf",
+      "relative_level": 0
+    },
+    {
+      "local": "fit_topo",
+      "from": "hyperproc.correct.pipeline",
+      "name": "fit_topo",
+      "relative_level": 0
+    },
+    {
+      "local": "footprint_bounds",
+      "from": "hyperproc.correct.pipeline",
+      "name": "footprint_bounds",
+      "relative_level": 0
+    },
+    {
+      "local": "footprint_overlap",
+      "from": "hyperproc.correct.pipeline",
+      "name": "footprint_overlap",
+      "relative_level": 0
+    },
+    {
+      "local": "footprint_polygon",
+      "from": "hyperproc.correct.pipeline",
+      "name": "footprint_polygon",
+      "relative_level": 0
+    },
+    {
+      "local": "is_airborne",
+      "from": "hyperproc.correct.pipeline",
+      "name": "is_airborne",
+      "relative_level": 0
+    },
+    {
+      "local": "merge_samples",
+      "from": "hyperproc.correct.pipeline",
+      "name": "merge_samples",
+      "relative_level": 0
+    },
+    {
+      "local": "mosaic_geotiffs",
+      "from": "hyperproc.correct.pipeline",
+      "name": "mosaic_geotiffs",
+      "relative_level": 0
+    },
+    {
+      "local": "overlap_agreement",
+      "from": "hyperproc.correct.pipeline",
+      "name": "overlap_agreement",
+      "relative_level": 0
+    },
+    {
+      "local": "overlap_agreement_tifs",
+      "from": "hyperproc.correct.pipeline",
+      "name": "overlap_agreement_tifs",
+      "relative_level": 0
+    },
+    {
+      "local": "overlap_windows",
+      "from": "hyperproc.correct.pipeline",
+      "name": "overlap_windows",
+      "relative_level": 0
+    },
+    {
+      "local": "per_block_effects",
+      "from": "hyperproc.correct.pipeline",
+      "name": "per_block_effects",
+      "relative_level": 0
+    },
+    {
+      "local": "sample_image",
+      "from": "hyperproc.correct.pipeline",
+      "name": "sample_image",
+      "relative_level": 0
+    },
+    {
+      "local": "seam_check",
+      "from": "hyperproc.correct.pipeline",
+      "name": "seam_check",
+      "relative_level": 0
+    },
+    {
+      "local": "view_dependence",
+      "from": "hyperproc.correct.pipeline",
+      "name": "view_dependence",
+      "relative_level": 0
+    },
+    {
+      "local": "angles_of",
+      "from": "hyperproc.correct.cfactor",
+      "name": "angles_of",
+      "relative_level": 0
+    },
+    {
+      "local": "band_map",
+      "from": "hyperproc.correct.cfactor",
+      "name": "band_map",
+      "relative_level": 0
+    },
+    {
+      "local": "band_weights",
+      "from": "hyperproc.correct.cfactor",
+      "name": "band_weights",
+      "relative_level": 0
+    },
+    {
+      "local": "c_factor",
+      "from": "hyperproc.correct.cfactor",
+      "name": "c_factor",
+      "relative_level": 0
+    },
+    {
+      "local": "lonlat_of",
+      "from": "hyperproc.correct.cfactor",
+      "name": "lonlat_of",
+      "relative_level": 0
+    },
+    {
+      "local": "model_agreement",
+      "from": "hyperproc.correct.cfactor",
+      "name": "model_agreement",
+      "relative_level": 0
+    },
+    {
+      "local": "model_reflectance",
+      "from": "hyperproc.correct.cfactor",
+      "name": "model_reflectance",
+      "relative_level": 0
+    },
+    {
+      "local": "nbar",
+      "from": "hyperproc.correct.cfactor",
+      "name": "nbar",
+      "relative_level": 0
+    },
+    {
+      "local": "view_profile",
+      "from": "hyperproc.correct.cfactor",
+      "name": "view_profile",
+      "relative_level": 0
+    },
+    {
+      "local": "GEOMETRIC_KERNELS",
+      "from": "hyperproc.correct.kernels",
+      "name": "GEOMETRIC_KERNELS",
+      "relative_level": 0
+    },
+    {
+      "local": "VOLUME_KERNELS",
+      "from": "hyperproc.correct.kernels",
+      "name": "VOLUME_KERNELS",
+      "relative_level": 0
+    },
+    {
+      "local": "geometric_kernel",
+      "from": "hyperproc.correct.kernels",
+      "name": "geometric_kernel",
+      "relative_level": 0
+    },
+    {
+      "local": "kernel_pair",
+      "from": "hyperproc.correct.kernels",
+      "name": "kernel_pair",
+      "relative_level": 0
+    },
+    {
+      "local": "phase_angle",
+      "from": "hyperproc.correct.kernels",
+      "name": "phase_angle",
+      "relative_level": 0
+    },
+    {
+      "local": "reference_kernels",
+      "from": "hyperproc.correct.kernels",
+      "name": "reference_kernels",
+      "relative_level": 0
+    },
+    {
+      "local": "volume_kernel",
+      "from": "hyperproc.correct.kernels",
+      "name": "volume_kernel",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-correct.md",
+  "constants": [],
+  "symbols": [],
+  "classes": []
+}

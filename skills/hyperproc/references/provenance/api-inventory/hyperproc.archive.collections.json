@@ -1,0 +1,67 @@
+{
+  "module": "hyperproc.archive.collections",
+  "source_path": "hyperproc/archive/collections.py",
+  "sha256": "472350432d15b2ae580b981ec7415f8f92ef5f78bb14568b589fad4d29ffe4b3",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "dataclass",
+      "from": "dataclasses",
+      "name": "dataclass",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-archive-collections.md",
+  "constants": [
+    {
+      "name": "COLLECTIONS",
+      "reference": "api/constants/hyperproc.archive.collections.COLLECTIONS.md"
+    },
+    {
+      "name": "ALIASES",
+      "reference": "api/constants/hyperproc.archive.collections.ALIASES.md"
+    },
+    {
+      "name": "LEVEL_NOTES",
+      "reference": "api/constants/hyperproc.archive.collections.LEVEL_NOTES.md"
+    },
+    {
+      "name": "ELSEWHERE",
+      "reference": "api/constants/hyperproc.archive.collections.ELSEWHERE.md"
+    },
+    {
+      "name": "BACKENDS",
+      "reference": "api/constants/hyperproc.archive.collections.BACKENDS.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.archive.collections.resolve",
+      "line": 167,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.collections.resolve.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.collections.describe",
+      "line": 203,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.collections.describe.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.archive.collections.Collection",
+      "line": 30,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.archive.collections.Collection.md"
+    }
+  ]
+}

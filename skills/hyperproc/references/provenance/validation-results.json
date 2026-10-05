@@ -1,0 +1,65 @@
+{
+  "integrity": {
+    "coverage": {
+      "modules": 54,
+      "functions": 445,
+      "classes": 20,
+      "class_members": 100
+    },
+    "source_modules_verified": 54,
+    "local_links_checked": 1712,
+    "scripts_parsed": 8,
+    "largest_markdown_words": 706,
+    "largest_markdown_file": "SKILL.md",
+    "scope": "Source/reference integrity and small-document granularity, not every algorithm independently validated."
+  },
+  "runtime": {
+    "hyperproc_version": "0.1.2",
+    "source": "/tmp/hyperproc-skill-source/wheel/hyperproc/__init__.py",
+    "checks": [
+      "live installed source enumeration/export aliases",
+      "exact runtime callable signature",
+      "reader registry including unimplemented levels",
+      "environment metadata",
+      "metadata-only no cube evaluation",
+      "bounded sampling and invalid-window rejection",
+      "credential-like options rejected",
+      "QA fill and exact NDVI known answers",
+      "different windows produce distinct work identities without writes",
+      "secret-like run settings rejected",
+      "known/unknown download volume planning without downloads/writes",
+      "spectral raster geometry/value round trip and band CSV",
+      "uint16 QA raster values/bit metadata round trip",
+      "explicit processing imports in a fresh interpreter",
+      "Base interpreter without dependencies correctly reports missing packages and exit 2"
+    ],
+    "scope": "Synthetic Linux helper/output tests; no real scene download, authentication, asset installation or atmospheric retrieval, and no claim of cross-OS execution."
+  },
+  "status": "passed",
+  "review_date": "2026-10-04",
+  "skill_structure_validator": "Passed skill-creator quick_validate.py",
+  "recipe_audit": {
+    "python_blocks": 13,
+    "statically_bound_hyperproc_calls": 33,
+    "signature_errors": [],
+    "unresolved_calls": [],
+    "parse_errors": [],
+    "scope": "Static binding of resolvable hyperproc calls in merged workflow/reference recipes, not runtime execution or notebook-local variable validation."
+  },
+  "package_publication_recheck": {
+    "pypi_version": "0.1.2",
+    "wheel_sha256": "ef961563a59ac22f7a293d617d6f4c5146a47c4016f465d30b93ac1e5a5b425b"
+  },
+  "size_snapshot": {
+    "content_bytes_before_final_report": 1005788,
+    "original_codex_content_bytes": 5699346,
+    "no_mirrored_website_articles": true,
+    "largest_markdown_words": 706
+  },
+  "scope_limits": [
+    "No environment or skill installation performed",
+    "No real scene/asset transfer or authentication performed",
+    "No real ISOFIT inversion performed",
+    "No macOS/native Windows/WSL2 execution test claimed"
+  ]
+}

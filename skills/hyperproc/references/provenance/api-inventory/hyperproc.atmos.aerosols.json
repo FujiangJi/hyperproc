@@ -1,0 +1,24 @@
+{
+  "module": "hyperproc.atmos.aerosols",
+  "source_path": "hyperproc/atmos/aerosols.py",
+  "sha256": "da7bbdf6a18068ea9852593051ec016868753a6ebee88b2568cfa7a3c8886934",
+  "exports": [],
+  "imports": [],
+  "reference": "api/hyperproc-atmos-aerosols.md",
+  "constants": [
+    {
+      "name": "SIXS_AEROSOL",
+      "reference": "api/constants/hyperproc.atmos.aerosols.SIXS_AEROSOL.md"
+    },
+    {
+      "name": "LRT_AEROSOL",
+      "reference": "api/constants/hyperproc.atmos.aerosols.LRT_AEROSOL.md"
+    },
+    {
+      "name": "AEROSOLS",
+      "reference": "api/constants/hyperproc.atmos.aerosols.AEROSOLS.md"
+    }
+  ],
+  "symbols": [],
+  "classes": []
+}

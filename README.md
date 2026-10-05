@@ -334,6 +334,24 @@ libraries) cannot ship in a wheel; `hyperproc-atmos-setup` fetches them with
 ISOFIT's own downloader into one shared base directory recorded in
 `~/.isofit/isofit.ini`. Building 6S needs `gfortran` and `make`.
 
+## Using hyperproc with an AI assistant
+
+A skill that teaches Claude Code and Codex how this package works: the sensor
+and archive matrices, which grid a window indexes on each sensor and level,
+the atmospheric route and its work-directory rules, and what the correction
+diagnostics mean. It reports what a diagnostic found; it does not make the
+scientific decisions for you.
+
+```bash
+git clone --depth 1 --filter=blob:none --sparse https://github.com/FujiangJi/hyperproc.git
+cd hyperproc && git sparse-checkout set skills
+./skills/install.sh --claude
+```
+
+The last line takes `--claude`, `--codex` or `--both`. Full details, including
+what to do when you already have an `AGENTS.md`:
+[AI assistant skill](https://fujiangji.github.io/hyperproc/tools/ai-assistants/).
+
 ## Tests
 
 ```bash

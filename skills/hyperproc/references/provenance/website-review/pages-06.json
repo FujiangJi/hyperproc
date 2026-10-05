@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-derivatives/",
+    "html_sha256": "46ad0e3deccdbd126063bae06cf24acc1a81e132b00ce2e14290a70225a8e6ba"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-resampling/",
+    "html_sha256": "f37596903549dabbee71f3125173e9b0e96e0670f08444a7ecd1a0dec6864534"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-smoothing/",
+    "html_sha256": "813a831e70e90acff1edad1bcc474df30ea24d486b48ee45dc2480a8051ca260"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-srf/",
+    "html_sha256": "0e41cac4d1be51825b183db491f29be327c9fe8e3e486a4ff95afe52f417e636"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-spectral/",
+    "html_sha256": "c1b404979f44bf3ffb006bd424b1eb4beeb46b8cf809f3aedc3a4a4afc273075"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc/",
+    "html_sha256": "3ab5f74edd79f65e51f4a2f71b3b0b54635b02ae2ce42b2232cb79957b03de0f"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/background/data-model/",
+    "html_sha256": "84c96e353cbfe440578d810bcf52013d7546394601f140687b8743d49f8dff9e"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/background/decision-guide/",
+    "html_sha256": "09301bcd2aac81f019aa6bd85b536412adc60c2e1b8a0a898afc98096b1e2516"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/background/measurements/",
+    "html_sha256": "389533fdae524cffe6bb7db4d58faa7f5544526c1fbb40b7c9b69a001db16361"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/background/overview/",
+    "html_sha256": "df91b4224bc47db1f8c827b3ee0e137378759d190e0b6735850915cc7b28581c"
+  }
+]

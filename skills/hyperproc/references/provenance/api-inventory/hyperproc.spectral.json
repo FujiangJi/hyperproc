@@ -1,0 +1,167 @@
+{
+  "module": "hyperproc.spectral",
+  "source_path": "hyperproc/spectral/__init__.py",
+  "sha256": "171f351c89c38c0c7767463711b39171d5ba4995ce000b1af18df68e3520a504",
+  "exports": [
+    "bands",
+    "continuum",
+    "derivatives",
+    "resampling",
+    "smoothing",
+    "srf",
+    "TOLERANCE",
+    "band_at",
+    "good_bands",
+    "runs_of_good_bands",
+    "continuum_removal",
+    "derivative",
+    "smooth_spectra",
+    "find_spikes",
+    "spline_gapfill",
+    "PRISMA_ARTEFACT_RANGES",
+    "PRISMA_MASK_AFTER",
+    "METHODS",
+    "build_fwhm",
+    "resample",
+    "resampling_matrix",
+    "target_grid"
+  ],
+  "imports": [
+    {
+      "local": "bands",
+      "from": "hyperproc.spectral",
+      "name": "bands",
+      "relative_level": 0
+    },
+    {
+      "local": "continuum",
+      "from": "hyperproc.spectral",
+      "name": "continuum",
+      "relative_level": 0
+    },
+    {
+      "local": "derivatives",
+      "from": "hyperproc.spectral",
+      "name": "derivatives",
+      "relative_level": 0
+    },
+    {
+      "local": "resampling",
+      "from": "hyperproc.spectral",
+      "name": "resampling",
+      "relative_level": 0
+    },
+    {
+      "local": "smoothing",
+      "from": "hyperproc.spectral",
+      "name": "smoothing",
+      "relative_level": 0
+    },
+    {
+      "local": "srf",
+      "from": "hyperproc.spectral",
+      "name": "srf",
+      "relative_level": 0
+    },
+    {
+      "local": "TOLERANCE",
+      "from": "hyperproc.spectral.bands",
+      "name": "TOLERANCE",
+      "relative_level": 0
+    },
+    {
+      "local": "band_at",
+      "from": "hyperproc.spectral.bands",
+      "name": "band_at",
+      "relative_level": 0
+    },
+    {
+      "local": "good_bands",
+      "from": "hyperproc.spectral.bands",
+      "name": "good_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "runs_of_good_bands",
+      "from": "hyperproc.spectral.bands",
+      "name": "runs_of_good_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "continuum_removal",
+      "from": "hyperproc.spectral.continuum",
+      "name": "continuum_removal",
+      "relative_level": 0
+    },
+    {
+      "local": "derivative",
+      "from": "hyperproc.spectral.derivatives",
+      "name": "derivative",
+      "relative_level": 0
+    },
+    {
+      "local": "METHODS",
+      "from": "hyperproc.spectral.resampling",
+      "name": "METHODS",
+      "relative_level": 0
+    },
+    {
+      "local": "build_fwhm",
+      "from": "hyperproc.spectral.resampling",
+      "name": "build_fwhm",
+      "relative_level": 0
+    },
+    {
+      "local": "resample",
+      "from": "hyperproc.spectral.resampling",
+      "name": "resample",
+      "relative_level": 0
+    },
+    {
+      "local": "resampling_matrix",
+      "from": "hyperproc.spectral.resampling",
+      "name": "resampling_matrix",
+      "relative_level": 0
+    },
+    {
+      "local": "target_grid",
+      "from": "hyperproc.spectral.resampling",
+      "name": "target_grid",
+      "relative_level": 0
+    },
+    {
+      "local": "PRISMA_ARTEFACT_RANGES",
+      "from": "hyperproc.spectral.smoothing",
+      "name": "PRISMA_ARTEFACT_RANGES",
+      "relative_level": 0
+    },
+    {
+      "local": "PRISMA_MASK_AFTER",
+      "from": "hyperproc.spectral.smoothing",
+      "name": "PRISMA_MASK_AFTER",
+      "relative_level": 0
+    },
+    {
+      "local": "find_spikes",
+      "from": "hyperproc.spectral.smoothing",
+      "name": "find_spikes",
+      "relative_level": 0
+    },
+    {
+      "local": "smooth_spectra",
+      "from": "hyperproc.spectral.smoothing",
+      "name": "smooth_spectra",
+      "relative_level": 0
+    },
+    {
+      "local": "spline_gapfill",
+      "from": "hyperproc.spectral.smoothing",
+      "name": "spline_gapfill",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-spectral.md",
+  "constants": [],
+  "symbols": [],
+  "classes": []
+}

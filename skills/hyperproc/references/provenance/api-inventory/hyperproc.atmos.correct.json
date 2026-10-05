@@ -1,0 +1,265 @@
+{
+  "module": "hyperproc.atmos.correct",
+  "source_path": "hyperproc/atmos/correct.py",
+  "sha256": "fe8e6a083e5ec0fa01862373ccd753bc76fbdcbf8b5f065667088dc969896810",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "rc_warning",
+      "from": "hyperproc._ncrc",
+      "name": "rc_warning",
+      "relative_level": 0
+    },
+    {
+      "local": "unterminated_rc_files",
+      "from": "hyperproc._ncrc",
+      "name": "unterminated_rc_files",
+      "relative_level": 0
+    },
+    {
+      "local": "AEROSOLS",
+      "from": "hyperproc.atmos.aerosols",
+      "name": "AEROSOLS",
+      "relative_level": 0
+    },
+    {
+      "local": "FILL",
+      "from": "hyperproc.atmos.inputs",
+      "name": "FILL",
+      "relative_level": 0
+    },
+    {
+      "local": "Inputs",
+      "from": "hyperproc.atmos.inputs",
+      "name": "Inputs",
+      "relative_level": 0
+    },
+    {
+      "local": "prepare_inputs",
+      "from": "hyperproc.atmos.inputs",
+      "name": "prepare_inputs",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-atmos-correct.md",
+  "constants": [
+    {
+      "name": "ENGINES",
+      "reference": "api/constants/hyperproc.atmos.correct.ENGINES.md"
+    },
+    {
+      "name": "ATMOSPHERES",
+      "reference": "api/constants/hyperproc.atmos.correct.ATMOSPHERES.md"
+    },
+    {
+      "name": "DEFAULT_SURFACE",
+      "reference": "api/constants/hyperproc.atmos.correct.DEFAULT_SURFACE.md"
+    },
+    {
+      "name": "LINES",
+      "reference": "api/constants/hyperproc.atmos.correct.LINES.md"
+    },
+    {
+      "name": "ATM_NEIGHBORS",
+      "reference": "api/constants/hyperproc.atmos.correct.ATM_NEIGHBORS.md"
+    },
+    {
+      "name": "_SETTING_FLAGS",
+      "reference": "api/constants/hyperproc.atmos.correct._SETTING_FLAGS.md"
+    },
+    {
+      "name": "_SETTING_SWITCHES",
+      "reference": "api/constants/hyperproc.atmos.correct._SETTING_SWITCHES.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.atmos.correct.atmosphere_for",
+      "line": 61,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.atmosphere_for.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct._env",
+      "line": 79,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct._env.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.emulator_path",
+      "line": 87,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.emulator_path.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.surface_recipe",
+      "line": 96,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.surface_recipe.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct._cache_dir",
+      "line": 110,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct._cache_dir.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct._surface_key",
+      "line": 114,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct._surface_key.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.resolve_surface",
+      "line": 120,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.resolve_surface.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.build_command",
+      "line": 139,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.build_command.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.atm_terms",
+      "line": 270,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.atm_terms.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.segment_count",
+      "line": 288,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.segment_count.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.neighbor_cap",
+      "line": 309,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.neighbor_cap.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.resolve_neighbors",
+      "line": 336,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.resolve_neighbors.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct._clean_partial",
+      "line": 358,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct._clean_partial.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.run_record",
+      "line": 386,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.run_record.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.settings_of",
+      "line": 402,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.settings_of.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.is_complete",
+      "line": 427,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.is_complete.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct._tail",
+      "line": 435,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct._tail.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.run_isofit",
+      "line": 443,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.run_isofit.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct._hdr",
+      "line": 494,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct._hdr.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct._hdr_list",
+      "line": 501,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct._hdr_list.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct._open_bil",
+      "line": 507,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct._open_bil.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.read_outputs",
+      "line": 518,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.read_outputs.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.redo_line",
+      "line": 625,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.redo_line.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct.correct",
+      "line": 645,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct.correct.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.correct._window",
+      "line": 726,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.correct._window.md"
+    }
+  ],
+  "classes": []
+}

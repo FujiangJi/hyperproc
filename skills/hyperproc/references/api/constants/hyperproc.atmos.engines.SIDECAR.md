@@ -1,0 +1,9 @@
+# hyperproc.atmos.engines.SIDECAR
+
+Release **0.1.2** source expression; not an evaluated runtime value. For a later release inspect the installed source.
+
+```text
+'hyperproc_engine.json'
+```
+
+[Module](../hyperproc-atmos-engines.md).

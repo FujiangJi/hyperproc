@@ -28,6 +28,7 @@
     - Export and provenance: workflows/export.md
     - Performance: workflows/performance.md
     - Validation: workflows/validation.md
+    - AI assistant skill: tools/ai-assistants.md
 - Documentation:
     - Overview: documentation/index.md
     - Getting started:

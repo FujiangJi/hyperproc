@@ -1,0 +1,111 @@
+{
+  "module": "hyperproc.archive.api",
+  "source_path": "hyperproc/archive/api.py",
+  "sha256": "be724a1d1e3ef6f9d3aaedce43e0d372e5fc052d81e864fb8971b47334929512",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "cmr",
+      "from": "hyperproc.archive",
+      "name": "cmr",
+      "relative_level": 0
+    },
+    {
+      "local": "dlr",
+      "from": "hyperproc.archive",
+      "name": "dlr",
+      "relative_level": 0
+    },
+    {
+      "local": "neon",
+      "from": "hyperproc.archive",
+      "name": "neon",
+      "relative_level": 0
+    },
+    {
+      "local": "BACKENDS",
+      "from": "hyperproc.archive.collections",
+      "name": "BACKENDS",
+      "relative_level": 0
+    },
+    {
+      "local": "resolve",
+      "from": "hyperproc.archive.collections",
+      "name": "resolve",
+      "relative_level": 0
+    },
+    {
+      "local": "Granule",
+      "from": "hyperproc.archive.results",
+      "name": "Granule",
+      "relative_level": 0
+    },
+    {
+      "local": "Results",
+      "from": "hyperproc.archive.results",
+      "name": "Results",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-archive-api.md",
+  "constants": [
+    {
+      "name": "_BACKEND",
+      "reference": "api/constants/hyperproc.archive.api._BACKEND.md"
+    },
+    {
+      "name": "_DOWNLOAD_ARGS",
+      "reference": "api/constants/hyperproc.archive.api._DOWNLOAD_ARGS.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.archive.api.search",
+      "line": 30,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.api.search.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.api.download",
+      "line": 63,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.api.download.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.api.credentials",
+      "line": 125,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.api.credentials.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.api.can_download",
+      "line": 154,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.api.can_download.md"
+    },
+    {
+      "qualified_name": "hyperproc.archive.api.files",
+      "line": 166,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.api.files.md"
+    }
+  ],
+  "classes": []
+}

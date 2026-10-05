@@ -1,0 +1,120 @@
+{
+  "module": "hyperproc.correct.brdf",
+  "source_path": "hyperproc/correct/brdf.py",
+  "sha256": "ef0b4dbda0411b0939fd14f6ad3705037678343cef3a7c2daa0890fd80d37ae9",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "dataclass",
+      "from": "dataclasses",
+      "name": "dataclass",
+      "relative_level": 0
+    },
+    {
+      "local": "field",
+      "from": "dataclasses",
+      "name": "field",
+      "relative_level": 0
+    },
+    {
+      "local": "kernel_pair",
+      "from": "hyperproc.correct.kernels",
+      "name": "kernel_pair",
+      "relative_level": 0
+    },
+    {
+      "local": "reference_kernels",
+      "from": "hyperproc.correct.kernels",
+      "name": "reference_kernels",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-correct-brdf.md",
+  "constants": [],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.correct.brdf.dynamic_bins",
+      "line": 49,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.brdf.dynamic_bins.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.brdf._second_split",
+      "line": 75,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.brdf._second_split.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.brdf.assign_bins",
+      "line": 86,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.brdf.assign_bins.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.brdf.bin_centres",
+      "line": 95,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.brdf.bin_centres.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.brdf.fit_flex",
+      "line": 153,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.brdf.fit_flex.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.brdf.interpolate_coeffs",
+      "line": 201,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.brdf.interpolate_coeffs.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.brdf.apply_flex",
+      "line": 237,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.brdf.apply_flex.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.brdf.fit_group",
+      "line": 276,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.brdf.fit_group.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.brdf.FlexFit.to_dict",
+      "line": 118,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.brdf.FlexFit.to_dict.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.brdf.FlexFit.from_dict",
+      "line": 132,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.brdf.FlexFit.from_dict.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.correct.brdf.FlexFit",
+      "line": 103,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.correct.brdf.FlexFit.md"
+    }
+  ]
+}

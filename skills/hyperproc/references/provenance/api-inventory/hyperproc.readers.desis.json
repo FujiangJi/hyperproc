@@ -1,0 +1,103 @@
+{
+  "module": "hyperproc.readers.desis",
+  "source_path": "hyperproc/readers/desis.py",
+  "sha256": "e1edbbe9779c913c9f1f474638f92eaaef468e4381fcc4a2e98472a94ea4e3a1",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "crs_text",
+      "from": "hyperproc.readers._common",
+      "name": "crs_text",
+      "relative_level": 0
+    },
+    {
+      "local": "finish_bands",
+      "from": "hyperproc.readers._common",
+      "name": "finish_bands",
+      "relative_level": 0
+    },
+    {
+      "local": "normalise_angles",
+      "from": "hyperproc.readers._common",
+      "name": "normalise_angles",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers-desis.md",
+  "constants": [
+    {
+      "name": "NODATA",
+      "reference": "api/constants/hyperproc.readers.desis.NODATA.md"
+    },
+    {
+      "name": "LEVEL_SPEC",
+      "reference": "api/constants/hyperproc.readers.desis.LEVEL_SPEC.md"
+    },
+    {
+      "name": "QUALITY_FLAGS",
+      "reference": "api/constants/hyperproc.readers.desis.QUALITY_FLAGS.md"
+    },
+    {
+      "name": "QUALITY_VALUES",
+      "reference": "api/constants/hyperproc.readers.desis.QUALITY_VALUES.md"
+    },
+    {
+      "name": "SCENE_TAGS",
+      "reference": "api/constants/hyperproc.readers.desis.SCENE_TAGS.md"
+    },
+    {
+      "name": "_GRANULE",
+      "reference": "api/constants/hyperproc.readers.desis._GRANULE.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.readers.desis.open_desis",
+      "line": 77,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.desis.open_desis.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.desis._sibling",
+      "line": 190,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.desis._sibling.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.desis._parse_metadata",
+      "line": 196,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.desis._parse_metadata.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.desis._add_quality",
+      "line": 248,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.desis._add_quality.md"
+    },
+    {
+      "qualified_name": "hyperproc.readers.desis._add_band_quality",
+      "line": 272,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.readers.desis._add_band_quality.md"
+    }
+  ],
+  "classes": []
+}

@@ -1,0 +1,9 @@
+# hyperproc.spectral.bands.TOLERANCE
+
+Release **0.1.2** source expression; not an evaluated runtime value. For a later release inspect the installed source.
+
+```text
+20.0
+```
+
+[Module](../hyperproc-spectral-bands.md).

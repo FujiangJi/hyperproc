@@ -1,0 +1,123 @@
+{
+  "module": "hyperproc.quality",
+  "source_path": "hyperproc/quality.py",
+  "sha256": "97c38817cbfd55e2c690c9579c3696492beee5e69d1a681f066444e0d5a374c0",
+  "exports": [
+    "FLAGS",
+    "FLAG_DESCRIPTIONS",
+    "BOOLEAN_SOURCES",
+    "CODED_SOURCES",
+    "DEFAULT_DROP",
+    "build",
+    "decode",
+    "summary",
+    "apply",
+    "set_flag",
+    "describe"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-quality.md",
+  "constants": [
+    {
+      "name": "FLAGS",
+      "reference": "api/constants/hyperproc.quality.FLAGS.md"
+    },
+    {
+      "name": "FLAG_DESCRIPTIONS",
+      "reference": "api/constants/hyperproc.quality.FLAG_DESCRIPTIONS.md"
+    },
+    {
+      "name": "DEFAULT_DROP",
+      "reference": "api/constants/hyperproc.quality.DEFAULT_DROP.md"
+    },
+    {
+      "name": "BOOLEAN_SOURCES",
+      "reference": "api/constants/hyperproc.quality.BOOLEAN_SOURCES.md"
+    },
+    {
+      "name": "CODED_SOURCES",
+      "reference": "api/constants/hyperproc.quality.CODED_SOURCES.md"
+    },
+    {
+      "name": "_DTYPE",
+      "reference": "api/constants/hyperproc.quality._DTYPE.md"
+    },
+    {
+      "name": "_DTYPE_ONE",
+      "reference": "api/constants/hyperproc.quality._DTYPE_ONE.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.quality._bit",
+      "line": 132,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.quality._bit.md"
+    },
+    {
+      "qualified_name": "hyperproc.quality._as_2d",
+      "line": 138,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.quality._as_2d.md"
+    },
+    {
+      "qualified_name": "hyperproc.quality._band_nearest",
+      "line": 144,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.quality._band_nearest.md"
+    },
+    {
+      "qualified_name": "hyperproc.quality.build",
+      "line": 151,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.quality.build.md"
+    },
+    {
+      "qualified_name": "hyperproc.quality.decode",
+      "line": 291,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.quality.decode.md"
+    },
+    {
+      "qualified_name": "hyperproc.quality.set_flag",
+      "line": 307,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.quality.set_flag.md"
+    },
+    {
+      "qualified_name": "hyperproc.quality.summary",
+      "line": 319,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.quality.summary.md"
+    },
+    {
+      "qualified_name": "hyperproc.quality.apply",
+      "line": 328,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.quality.apply.md"
+    },
+    {
+      "qualified_name": "hyperproc.quality.describe",
+      "line": 361,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.quality.describe.md"
+    }
+  ],
+  "classes": []
+}

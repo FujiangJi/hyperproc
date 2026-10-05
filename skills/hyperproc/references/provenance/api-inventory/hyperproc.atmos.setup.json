@@ -1,0 +1,117 @@
+{
+  "module": "hyperproc.atmos.setup",
+  "source_path": "hyperproc/atmos/setup.py",
+  "sha256": "c084b25c5c35869924e57b5fdcabb88959043bfcc3c10ed1dfd8b1236cb5ddac",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "terminate_rc_file",
+      "from": "hyperproc._ncrc",
+      "name": "terminate_rc_file",
+      "relative_level": 0
+    },
+    {
+      "local": "unterminated_rc_files",
+      "from": "hyperproc._ncrc",
+      "name": "unterminated_rc_files",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-atmos-setup.md",
+  "constants": [
+    {
+      "name": "ENGINES",
+      "reference": "api/constants/hyperproc.atmos.setup.ENGINES.md"
+    },
+    {
+      "name": "NEEDS",
+      "reference": "api/constants/hyperproc.atmos.setup.NEEDS.md"
+    },
+    {
+      "name": "COMPILERS",
+      "reference": "api/constants/hyperproc.atmos.setup.COMPILERS.md"
+    },
+    {
+      "name": "PIP_HINT",
+      "reference": "api/constants/hyperproc.atmos.setup.PIP_HINT.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.atmos.setup._quiet",
+      "line": 41,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.setup._quiet.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.setup._isofit",
+      "line": 45,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.setup._isofit.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.setup._assets_for",
+      "line": 53,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.setup._assets_for.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.setup.libradtran_exe",
+      "line": 60,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.setup.libradtran_exe.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.setup.build_libradtran",
+      "line": 70,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.setup.build_libradtran.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.setup.check",
+      "line": 117,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.setup.check.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.setup._report",
+      "line": 178,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.setup._report.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.setup.setup",
+      "line": 198,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.setup.setup.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.setup.main",
+      "line": 259,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.setup.main.md"
+    }
+  ],
+  "classes": []
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://fujiangji.github.io/hyperproc/getting-started/quickstart/",
+    "html_sha256": "d4e4ecd5ca9e214fd578686a4a006bbdd940e7f9928130c78cfd513f86722567"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/project/about/",
+    "html_sha256": "e784803c5402413ac1b36e53d27a3eaf739c071f357e28557b2de1332ad43872"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/project/governance/",
+    "html_sha256": "df71ff099d142d8368e68518a2a9fe59724a32e8a6773fcc538cc3546adc3989"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/project/releases/",
+    "html_sha256": "c90380f362674f6937cb604faf67ce6e1f55679e2504bc834ee6f0cd5cb8d3c6"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/project/status/",
+    "html_sha256": "6312a8d77de35a8720bb1a77bbab4dc0d92c84b47e13b677c5a3d1847e32fb35"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/project/troubleshooting/",
+    "html_sha256": "01d3b865a69ad873ea308b29351b0093168c7bc0c4f0611092962ec513456e82"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/sensors/",
+    "html_sha256": "6ebdef4f1b3c96bb005de37c6df1d63280c9c83df4f71e942031aae57a0ecd9b"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/sensors/aviris/",
+    "html_sha256": "0ccf138df3180248d7f3bdcf893acc79f38f0173980fecb095e4f411e95c454a"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/sensors/desis/",
+    "html_sha256": "68fe43f2e5623c697c8f3600aaa9368428d05a4687f99c45f20f38ccbe0ddef8"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/sensors/emit/",
+    "html_sha256": "e7c01b77ce7f355431a420e22d1bcf62988de43b9fb2fdc3edd7fc3410b3647b"
+  }
+]

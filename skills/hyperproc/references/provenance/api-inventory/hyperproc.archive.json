@@ -1,0 +1,120 @@
+{
+  "module": "hyperproc.archive",
+  "source_path": "hyperproc/archive/__init__.py",
+  "sha256": "1891cec06716ba977af1989c60f50222c231ec14e00f6d7d159d98bfdb57fb34",
+  "exports": [
+    "search",
+    "download",
+    "files",
+    "describe",
+    "credentials",
+    "can_download",
+    "Granule",
+    "Results",
+    "COLLECTIONS",
+    "ELSEWHERE",
+    "BACKENDS",
+    "Collection",
+    "resolve",
+    "search_map",
+    "Map"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "can_download",
+      "from": "hyperproc.archive.api",
+      "name": "can_download",
+      "relative_level": 0
+    },
+    {
+      "local": "credentials",
+      "from": "hyperproc.archive.api",
+      "name": "credentials",
+      "relative_level": 0
+    },
+    {
+      "local": "download",
+      "from": "hyperproc.archive.api",
+      "name": "download",
+      "relative_level": 0
+    },
+    {
+      "local": "files",
+      "from": "hyperproc.archive.api",
+      "name": "files",
+      "relative_level": 0
+    },
+    {
+      "local": "search",
+      "from": "hyperproc.archive.api",
+      "name": "search",
+      "relative_level": 0
+    },
+    {
+      "local": "BACKENDS",
+      "from": "hyperproc.archive.collections",
+      "name": "BACKENDS",
+      "relative_level": 0
+    },
+    {
+      "local": "COLLECTIONS",
+      "from": "hyperproc.archive.collections",
+      "name": "COLLECTIONS",
+      "relative_level": 0
+    },
+    {
+      "local": "ELSEWHERE",
+      "from": "hyperproc.archive.collections",
+      "name": "ELSEWHERE",
+      "relative_level": 0
+    },
+    {
+      "local": "Collection",
+      "from": "hyperproc.archive.collections",
+      "name": "Collection",
+      "relative_level": 0
+    },
+    {
+      "local": "describe",
+      "from": "hyperproc.archive.collections",
+      "name": "describe",
+      "relative_level": 0
+    },
+    {
+      "local": "resolve",
+      "from": "hyperproc.archive.collections",
+      "name": "resolve",
+      "relative_level": 0
+    },
+    {
+      "local": "Granule",
+      "from": "hyperproc.archive.results",
+      "name": "Granule",
+      "relative_level": 0
+    },
+    {
+      "local": "Results",
+      "from": "hyperproc.archive.results",
+      "name": "Results",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-archive.md",
+  "constants": [],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.archive.__getattr__",
+      "line": 40,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.archive.__getattr__.md"
+    }
+  ],
+  "classes": []
+}

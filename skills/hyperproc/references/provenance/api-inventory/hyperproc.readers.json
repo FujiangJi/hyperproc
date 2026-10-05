@@ -1,0 +1,83 @@
+{
+  "module": "hyperproc.readers",
+  "source_path": "hyperproc/readers/__init__.py",
+  "sha256": "fe839f53582c1557d55b7ae25c1e4002b261e37f345a0dab077edab5e6949ee6",
+  "exports": [
+    "check_geometry",
+    "fix_slope_convention",
+    "open_aviris",
+    "open_desis",
+    "open_emit",
+    "open_enmap",
+    "open_neon",
+    "open_pace",
+    "open_prisma",
+    "open_tanager"
+  ],
+  "imports": [
+    {
+      "local": "check_geometry",
+      "from": "hyperproc.readers.aviris",
+      "name": "check_geometry",
+      "relative_level": 0
+    },
+    {
+      "local": "fix_slope_convention",
+      "from": "hyperproc.readers.aviris",
+      "name": "fix_slope_convention",
+      "relative_level": 0
+    },
+    {
+      "local": "open_aviris",
+      "from": "hyperproc.readers.aviris",
+      "name": "open_aviris",
+      "relative_level": 0
+    },
+    {
+      "local": "open_desis",
+      "from": "hyperproc.readers.desis",
+      "name": "open_desis",
+      "relative_level": 0
+    },
+    {
+      "local": "open_emit",
+      "from": "hyperproc.readers.emit",
+      "name": "open_emit",
+      "relative_level": 0
+    },
+    {
+      "local": "open_enmap",
+      "from": "hyperproc.readers.enmap",
+      "name": "open_enmap",
+      "relative_level": 0
+    },
+    {
+      "local": "open_neon",
+      "from": "hyperproc.readers.neon",
+      "name": "open_neon",
+      "relative_level": 0
+    },
+    {
+      "local": "open_pace",
+      "from": "hyperproc.readers.pace",
+      "name": "open_pace",
+      "relative_level": 0
+    },
+    {
+      "local": "open_prisma",
+      "from": "hyperproc.readers.prisma",
+      "name": "open_prisma",
+      "relative_level": 0
+    },
+    {
+      "local": "open_tanager",
+      "from": "hyperproc.readers.tanager",
+      "name": "open_tanager",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-readers.md",
+  "constants": [],
+  "symbols": [],
+  "classes": []
+}

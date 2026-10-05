@@ -1,0 +1,125 @@
+{
+  "module": "hyperproc.atmos",
+  "source_path": "hyperproc/atmos/__init__.py",
+  "sha256": "873f3031da5d235476f5159d6ae9824ce37ab1a1093e33280c5338ba223a9701",
+  "exports": [
+    "check",
+    "setup",
+    "SENSORS",
+    "Inputs",
+    "names_for",
+    "prepare_inputs",
+    "ATMOSPHERES",
+    "ENGINES",
+    "atmosphere_for",
+    "build_command",
+    "correct",
+    "read_outputs",
+    "run_isofit",
+    "process",
+    "to_map_grid",
+    "dem"
+  ],
+  "imports": [
+    {
+      "local": "check",
+      "from": "hyperproc.atmos.setup",
+      "name": "check",
+      "relative_level": 0
+    },
+    {
+      "local": "setup",
+      "from": "hyperproc.atmos.setup",
+      "name": "setup",
+      "relative_level": 0
+    },
+    {
+      "local": "SENSORS",
+      "from": "hyperproc.atmos.inputs",
+      "name": "SENSORS",
+      "relative_level": 0
+    },
+    {
+      "local": "Inputs",
+      "from": "hyperproc.atmos.inputs",
+      "name": "Inputs",
+      "relative_level": 0
+    },
+    {
+      "local": "names_for",
+      "from": "hyperproc.atmos.inputs",
+      "name": "names_for",
+      "relative_level": 0
+    },
+    {
+      "local": "prepare_inputs",
+      "from": "hyperproc.atmos.inputs",
+      "name": "prepare_inputs",
+      "relative_level": 0
+    },
+    {
+      "local": "ATMOSPHERES",
+      "from": "hyperproc.atmos.correct",
+      "name": "ATMOSPHERES",
+      "relative_level": 0
+    },
+    {
+      "local": "ENGINES",
+      "from": "hyperproc.atmos.correct",
+      "name": "ENGINES",
+      "relative_level": 0
+    },
+    {
+      "local": "atmosphere_for",
+      "from": "hyperproc.atmos.correct",
+      "name": "atmosphere_for",
+      "relative_level": 0
+    },
+    {
+      "local": "build_command",
+      "from": "hyperproc.atmos.correct",
+      "name": "build_command",
+      "relative_level": 0
+    },
+    {
+      "local": "correct",
+      "from": "hyperproc.atmos.correct",
+      "name": "correct",
+      "relative_level": 0
+    },
+    {
+      "local": "read_outputs",
+      "from": "hyperproc.atmos.correct",
+      "name": "read_outputs",
+      "relative_level": 0
+    },
+    {
+      "local": "run_isofit",
+      "from": "hyperproc.atmos.correct",
+      "name": "run_isofit",
+      "relative_level": 0
+    },
+    {
+      "local": "process",
+      "from": "hyperproc.atmos.process",
+      "name": "process",
+      "relative_level": 0
+    },
+    {
+      "local": "to_map_grid",
+      "from": "hyperproc.atmos.process",
+      "name": "to_map_grid",
+      "relative_level": 0
+    },
+    {
+      "local": "dem",
+      "from": "hyperproc.atmos",
+      "name": "dem",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-atmos.md",
+  "constants": [],
+  "symbols": [],
+  "classes": []
+}

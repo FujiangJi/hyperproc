@@ -1,0 +1,112 @@
+{
+  "module": "hyperproc.correct.kernels",
+  "source_path": "hyperproc/correct/kernels.py",
+  "sha256": "28bff36d0ad82b644c7a97bf69af8a07d9175594aa1a7a05be04fc9e08e7d3f8",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-correct-kernels.md",
+  "constants": [
+    {
+      "name": "VOLUME_KERNELS",
+      "reference": "api/constants/hyperproc.correct.kernels.VOLUME_KERNELS.md"
+    },
+    {
+      "name": "GEOMETRIC_KERNELS",
+      "reference": "api/constants/hyperproc.correct.kernels.GEOMETRIC_KERNELS.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.correct.kernels.phase_angle",
+      "line": 38,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.phase_angle.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.ross_thick",
+      "line": 47,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.ross_thick.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.ross_thin",
+      "line": 54,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.ross_thin.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.volume_kernel",
+      "line": 61,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.volume_kernel.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels._li_terms",
+      "line": 73,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels._li_terms.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.li_sparse",
+      "line": 98,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.li_sparse.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.li_sparse_r",
+      "line": 104,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.li_sparse_r.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.li_dense",
+      "line": 110,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.li_dense.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.li_dense_r",
+      "line": 116,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.li_dense_r.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.geometric_kernel",
+      "line": 122,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.geometric_kernel.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.kernel_pair",
+      "line": 134,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.kernel_pair.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.kernels.reference_kernels",
+      "line": 141,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.kernels.reference_kernels.md"
+    }
+  ],
+  "classes": []
+}

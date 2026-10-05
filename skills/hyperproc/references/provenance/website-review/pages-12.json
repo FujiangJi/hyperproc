@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/features/",
+    "html_sha256": "04550ac10a679e28fcc290bbd7b89f7a8aa5860830a733f06c7cb159440c691d"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/performance/",
+    "html_sha256": "946d1e3e6710e096a7de5e293c57274b380b668426dd1cf0c0bf4a980dd36fda"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/quality/",
+    "html_sha256": "2ec95a2786ea750d2b1d3acad952d6713131fcecb612f1908518d30095006319"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/reading/",
+    "html_sha256": "92d8c539571d8ac340910d432824fd867453580b97b7297e00865d69e0a0de72"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/resampling/",
+    "html_sha256": "442372fdf184eb48e92daf2b9331b770f6dc032c1d702583790b0c972ab9bdb8"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/satellite/",
+    "html_sha256": "06aba18206f162e657de0f41788f564d79c5e9625e2c49174afedf2809928ef3"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/search/",
+    "html_sha256": "a8d6aac2b49bfe20bd9231ecf0c1e13a3ea1b0a77a2af75418a855681f478064"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/spatial/",
+    "html_sha256": "12edb4221a8080788736d53cc856c00d0cb01e57f22670b529ba6ac66386a26a"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/spectral/",
+    "html_sha256": "f9f30988532e1eef8e8d789342350357f49204db8ceb6a48bf18219bd85ef6bc"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/workflows/validation/",
+    "html_sha256": "235804b80e5854aec9fac04215200f37a09c31f0e95dfa1dcf642e3ee481b652"
+  }
+]

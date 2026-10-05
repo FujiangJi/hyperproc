@@ -1,0 +1,51 @@
+{
+  "module": "hyperproc._ncrc",
+  "source_path": "hyperproc/_ncrc.py",
+  "sha256": "a2127806d79dc62bcb0574abc1c0067387226ff982ec44e5875971c2fd0aea95",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-_ncrc.md",
+  "constants": [
+    {
+      "name": "NC_RC_NAMES",
+      "reference": "api/constants/hyperproc._ncrc.NC_RC_NAMES.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc._ncrc.unterminated_rc_files",
+      "line": 31,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc._ncrc.unterminated_rc_files.md"
+    },
+    {
+      "qualified_name": "hyperproc._ncrc.rc_warning",
+      "line": 51,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc._ncrc.rc_warning.md"
+    },
+    {
+      "qualified_name": "hyperproc._ncrc.terminate_rc_file",
+      "line": 64,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc._ncrc.terminate_rc_file.md"
+    }
+  ],
+  "classes": []
+}

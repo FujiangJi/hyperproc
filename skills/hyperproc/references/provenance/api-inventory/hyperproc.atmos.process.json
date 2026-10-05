@@ -1,0 +1,76 @@
+{
+  "module": "hyperproc.atmos.process",
+  "source_path": "hyperproc/atmos/process.py",
+  "sha256": "3ba7dd579794638190c3a2880fb37522e8fd0d77173e16415a3dbb178f9a749b",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "correct",
+      "from": "hyperproc.atmos.correct",
+      "name": "correct",
+      "relative_level": 0
+    },
+    {
+      "local": "is_complete",
+      "from": "hyperproc.atmos.correct",
+      "name": "is_complete",
+      "relative_level": 0
+    },
+    {
+      "local": "Inputs",
+      "from": "hyperproc.atmos.inputs",
+      "name": "Inputs",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-atmos-process.md",
+  "constants": [
+    {
+      "name": "STAGES",
+      "reference": "api/constants/hyperproc.atmos.process.STAGES.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.atmos.process._open_for_ac",
+      "line": 32,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.process._open_for_ac.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.process._ortho_emit",
+      "line": 52,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.process._ortho_emit.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.process.to_map_grid",
+      "line": 102,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.process.to_map_grid.md"
+    },
+    {
+      "qualified_name": "hyperproc.atmos.process.process",
+      "line": 126,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.atmos.process.process.md"
+    }
+  ],
+  "classes": []
+}

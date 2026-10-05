@@ -1,0 +1,140 @@
+{
+  "module": "hyperproc.spectral.srf",
+  "source_path": "hyperproc/spectral/srf.py",
+  "sha256": "9c8c9a3f08cdd47f0515ae100d6fe3ca8beafabca2e1c2c09055d80413e32497",
+  "exports": [
+    "SOURCES",
+    "NOMINAL",
+    "ALIASES",
+    "available",
+    "fetch",
+    "target",
+    "cache_dir",
+    "resolve"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-spectral-srf.md",
+  "constants": [
+    {
+      "name": "_S2",
+      "reference": "api/constants/hyperproc.spectral.srf._S2.md"
+    },
+    {
+      "name": "_USGS",
+      "reference": "api/constants/hyperproc.spectral.srf._USGS.md"
+    },
+    {
+      "name": "SOURCES",
+      "reference": "api/constants/hyperproc.spectral.srf.SOURCES.md"
+    },
+    {
+      "name": "NOMINAL",
+      "reference": "api/constants/hyperproc.spectral.srf.NOMINAL.md"
+    },
+    {
+      "name": "ALIASES",
+      "reference": "api/constants/hyperproc.spectral.srf.ALIASES.md"
+    },
+    {
+      "name": "_UA",
+      "reference": "api/constants/hyperproc.spectral.srf._UA.md"
+    },
+    {
+      "name": "SQRT_8LN2",
+      "reference": "api/constants/hyperproc.spectral.srf.SQRT_8LN2.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.spectral.srf.cache_dir",
+      "line": 98,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf.cache_dir.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf.resolve",
+      "line": 104,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf.resolve.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf._load_workbook",
+      "line": 119,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf._load_workbook.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf._to_nm",
+      "line": 130,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf._to_nm.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf._parse_sentinel2",
+      "line": 136,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf._parse_sentinel2.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf._parse_landsat",
+      "line": 150,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf._parse_landsat.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf._summarise",
+      "line": 184,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf._summarise.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf._download",
+      "line": 201,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf._download.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf.fetch",
+      "line": 215,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf.fetch.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf.target",
+      "line": 272,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf.target.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.srf.available",
+      "line": 284,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.srf.available.md"
+    }
+  ],
+  "classes": []
+}

@@ -1,0 +1,414 @@
+{
+  "module": "hyperproc",
+  "source_path": "hyperproc/__init__.py",
+  "sha256": "8b313a6e16615e947d8ba86ce3f2446367a2eeab1a5467894e77e32cb3e8b940",
+  "exports": [
+    "open",
+    "read",
+    "describe",
+    "list_readers",
+    "sniff",
+    "summary",
+    "to_geotiff",
+    "to_geotiff_2d",
+    "to_envi",
+    "to_raster",
+    "envi_header",
+    "FORMATS",
+    "build_overviews",
+    "bands_to_csv",
+    "main_var",
+    "default_name",
+    "export_geometry",
+    "GEOMETRY_LAYERS",
+    "check_geometry",
+    "fix_slope_convention",
+    "georeference",
+    "utm_epsg",
+    "latlon_grid",
+    "to_latlon_geotiff",
+    "smooth_spectra",
+    "align",
+    "coregister",
+    "estimate_shift",
+    "apply_shift",
+    "tie_points",
+    "quality",
+    "quality_flags",
+    "quality_apply",
+    "quality_decode",
+    "quality_summary",
+    "quality_table",
+    "features",
+    "spectral",
+    "band_at",
+    "band_depth",
+    "continuum_removal",
+    "describe_indices",
+    "resample",
+    "find_spikes",
+    "spline_gapfill",
+    "spectral_derivative",
+    "spectral_index",
+    "REGISTRY",
+    "Entry",
+    "__version__",
+    "archive",
+    "search",
+    "download",
+    "files",
+    "search_map"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "REGISTRY",
+      "from": "hyperproc.registry",
+      "name": "REGISTRY",
+      "relative_level": 0
+    },
+    {
+      "local": "Entry",
+      "from": "hyperproc.registry",
+      "name": "Entry",
+      "relative_level": 0
+    },
+    {
+      "local": "list_readers",
+      "from": "hyperproc.registry",
+      "name": "list_readers",
+      "relative_level": 0
+    },
+    {
+      "local": "resolve",
+      "from": "hyperproc.registry",
+      "name": "resolve",
+      "relative_level": 0
+    },
+    {
+      "local": "sniff",
+      "from": "hyperproc.registry",
+      "name": "sniff",
+      "relative_level": 0
+    },
+    {
+      "local": "summary",
+      "from": "hyperproc.registry",
+      "name": "summary",
+      "relative_level": 0
+    },
+    {
+      "local": "apply_shift",
+      "from": "hyperproc.align",
+      "name": "apply_shift",
+      "relative_level": 0
+    },
+    {
+      "local": "coregister",
+      "from": "hyperproc.align",
+      "name": "coregister",
+      "relative_level": 0
+    },
+    {
+      "local": "estimate_shift",
+      "from": "hyperproc.align",
+      "name": "estimate_shift",
+      "relative_level": 0
+    },
+    {
+      "local": "tie_points",
+      "from": "hyperproc.align",
+      "name": "tie_points",
+      "relative_level": 0
+    },
+    {
+      "local": "georeference",
+      "from": "hyperproc.grid",
+      "name": "georeference",
+      "relative_level": 0
+    },
+    {
+      "local": "latlon_grid",
+      "from": "hyperproc.grid",
+      "name": "latlon_grid",
+      "relative_level": 0
+    },
+    {
+      "local": "utm_epsg",
+      "from": "hyperproc.grid",
+      "name": "utm_epsg",
+      "relative_level": 0
+    },
+    {
+      "local": "FORMATS",
+      "from": "hyperproc.io",
+      "name": "FORMATS",
+      "relative_level": 0
+    },
+    {
+      "local": "GEOMETRY_LAYERS",
+      "from": "hyperproc.io",
+      "name": "GEOMETRY_LAYERS",
+      "relative_level": 0
+    },
+    {
+      "local": "bands_to_csv",
+      "from": "hyperproc.io",
+      "name": "bands_to_csv",
+      "relative_level": 0
+    },
+    {
+      "local": "build_overviews",
+      "from": "hyperproc.io",
+      "name": "build_overviews",
+      "relative_level": 0
+    },
+    {
+      "local": "default_name",
+      "from": "hyperproc.io",
+      "name": "default_name",
+      "relative_level": 0
+    },
+    {
+      "local": "envi_header",
+      "from": "hyperproc.io",
+      "name": "envi_header",
+      "relative_level": 0
+    },
+    {
+      "local": "export_geometry",
+      "from": "hyperproc.io",
+      "name": "export_geometry",
+      "relative_level": 0
+    },
+    {
+      "local": "main_var",
+      "from": "hyperproc.io",
+      "name": "main_var",
+      "relative_level": 0
+    },
+    {
+      "local": "to_envi",
+      "from": "hyperproc.io",
+      "name": "to_envi",
+      "relative_level": 0
+    },
+    {
+      "local": "to_geotiff",
+      "from": "hyperproc.io",
+      "name": "to_geotiff",
+      "relative_level": 0
+    },
+    {
+      "local": "to_geotiff_2d",
+      "from": "hyperproc.io",
+      "name": "to_geotiff_2d",
+      "relative_level": 0
+    },
+    {
+      "local": "to_latlon_geotiff",
+      "from": "hyperproc.io",
+      "name": "to_latlon_geotiff",
+      "relative_level": 0
+    },
+    {
+      "local": "to_raster",
+      "from": "hyperproc.io",
+      "name": "to_raster",
+      "relative_level": 0
+    },
+    {
+      "local": "check_geometry",
+      "from": "hyperproc.readers.aviris",
+      "name": "check_geometry",
+      "relative_level": 0
+    },
+    {
+      "local": "fix_slope_convention",
+      "from": "hyperproc.readers.aviris",
+      "name": "fix_slope_convention",
+      "relative_level": 0
+    },
+    {
+      "local": "align",
+      "from": "hyperproc",
+      "name": "align",
+      "relative_level": 0
+    },
+    {
+      "local": "archive",
+      "from": "hyperproc",
+      "name": "archive",
+      "relative_level": 0
+    },
+    {
+      "local": "features",
+      "from": "hyperproc",
+      "name": "features",
+      "relative_level": 0
+    },
+    {
+      "local": "quality",
+      "from": "hyperproc",
+      "name": "quality",
+      "relative_level": 0
+    },
+    {
+      "local": "spectral",
+      "from": "hyperproc",
+      "name": "spectral",
+      "relative_level": 0
+    },
+    {
+      "local": "download",
+      "from": "hyperproc.archive",
+      "name": "download",
+      "relative_level": 0
+    },
+    {
+      "local": "files",
+      "from": "hyperproc.archive",
+      "name": "files",
+      "relative_level": 0
+    },
+    {
+      "local": "search",
+      "from": "hyperproc.archive",
+      "name": "search",
+      "relative_level": 0
+    },
+    {
+      "local": "band_depth",
+      "from": "hyperproc.features",
+      "name": "band_depth",
+      "relative_level": 0
+    },
+    {
+      "local": "describe_indices",
+      "from": "hyperproc.features",
+      "name": "describe_indices",
+      "relative_level": 0
+    },
+    {
+      "local": "spectral_index",
+      "from": "hyperproc.features",
+      "name": "index",
+      "relative_level": 0
+    },
+    {
+      "local": "band_at",
+      "from": "hyperproc.spectral",
+      "name": "band_at",
+      "relative_level": 0
+    },
+    {
+      "local": "continuum_removal",
+      "from": "hyperproc.spectral",
+      "name": "continuum_removal",
+      "relative_level": 0
+    },
+    {
+      "local": "find_spikes",
+      "from": "hyperproc.spectral",
+      "name": "find_spikes",
+      "relative_level": 0
+    },
+    {
+      "local": "resample",
+      "from": "hyperproc.spectral",
+      "name": "resample",
+      "relative_level": 0
+    },
+    {
+      "local": "smooth_spectra",
+      "from": "hyperproc.spectral",
+      "name": "smooth_spectra",
+      "relative_level": 0
+    },
+    {
+      "local": "spline_gapfill",
+      "from": "hyperproc.spectral",
+      "name": "spline_gapfill",
+      "relative_level": 0
+    },
+    {
+      "local": "spectral_derivative",
+      "from": "hyperproc.spectral",
+      "name": "derivative",
+      "relative_level": 0
+    },
+    {
+      "local": "quality_apply",
+      "from": "hyperproc.quality",
+      "name": "apply",
+      "relative_level": 0
+    },
+    {
+      "local": "quality_flags",
+      "from": "hyperproc.quality",
+      "name": "build",
+      "relative_level": 0
+    },
+    {
+      "local": "quality_decode",
+      "from": "hyperproc.quality",
+      "name": "decode",
+      "relative_level": 0
+    },
+    {
+      "local": "quality_table",
+      "from": "hyperproc.quality",
+      "name": "describe",
+      "relative_level": 0
+    },
+    {
+      "local": "quality_summary",
+      "from": "hyperproc.quality",
+      "name": "summary",
+      "relative_level": 0
+    },
+    {
+      "local": "describe",
+      "from": "hyperproc.report",
+      "name": "describe",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc.md",
+  "constants": [],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.open",
+      "line": 70,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.open.md"
+    },
+    {
+      "qualified_name": "hyperproc.open_builtin",
+      "line": 119,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.open_builtin.md"
+    },
+    {
+      "qualified_name": "hyperproc.__getattr__",
+      "line": 124,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.__getattr__.md"
+    }
+  ],
+  "classes": []
+}

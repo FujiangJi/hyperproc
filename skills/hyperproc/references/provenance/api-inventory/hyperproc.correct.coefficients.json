@@ -1,0 +1,212 @@
+{
+  "module": "hyperproc.correct.coefficients",
+  "source_path": "hyperproc/correct/coefficients.py",
+  "sha256": "a0069496e6f7a0943faa90c20399f3031624ee574a2f867a8f1d10cf2efc7d46",
+  "exports": [],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "dataclass",
+      "from": "dataclasses",
+      "name": "dataclass",
+      "relative_level": 0
+    },
+    {
+      "local": "field",
+      "from": "dataclasses",
+      "name": "field",
+      "relative_level": 0
+    },
+    {
+      "local": "Path",
+      "from": "pathlib",
+      "name": "Path",
+      "relative_level": 0
+    },
+    {
+      "local": "FlexFit",
+      "from": "hyperproc.correct.brdf",
+      "name": "FlexFit",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-correct-coefficients.md",
+  "constants": [
+    {
+      "name": "FORMAT",
+      "reference": "api/constants/hyperproc.correct.coefficients.FORMAT.md"
+    },
+    {
+      "name": "VERSION",
+      "reference": "api/constants/hyperproc.correct.coefficients.VERSION.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.correct.coefficients._now",
+      "line": 37,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.coefficients._now.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.provenance",
+      "line": 41,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.coefficients.provenance.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients._jsonable",
+      "line": 52,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.coefficients._jsonable.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients._wl_key",
+      "line": 72,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.coefficients._wl_key.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.align_wavelengths",
+      "line": 76,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.coefficients.align_wavelengths.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.load",
+      "line": 245,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.correct.coefficients.load.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.TopoCoefficients.n_ok",
+      "line": 115,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.TopoCoefficients.n_ok.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.TopoCoefficients.verdict",
+      "line": 119,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.TopoCoefficients.verdict.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.TopoCoefficients.c_for",
+      "line": 122,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.TopoCoefficients.c_for.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.TopoCoefficients.summary",
+      "line": 130,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.TopoCoefficients.summary.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.TopoCoefficients.to_dict",
+      "line": 138,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.TopoCoefficients.to_dict.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.TopoCoefficients.to_json",
+      "line": 154,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.TopoCoefficients.to_json.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.TopoCoefficients.from_dict",
+      "line": 165,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.TopoCoefficients.from_dict.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.TopoCoefficients.from_json",
+      "line": 180,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.TopoCoefficients.from_json.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.BRDFCoefficients.wavelength",
+      "line": 199,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.BRDFCoefficients.wavelength.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.BRDFCoefficients.feasible",
+      "line": 203,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.BRDFCoefficients.feasible.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.BRDFCoefficients.summary",
+      "line": 206,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.BRDFCoefficients.summary.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.BRDFCoefficients.to_dict",
+      "line": 213,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.BRDFCoefficients.to_dict.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.BRDFCoefficients.to_json",
+      "line": 221,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.BRDFCoefficients.to_json.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.BRDFCoefficients.from_dict",
+      "line": 232,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.BRDFCoefficients.from_dict.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.BRDFCoefficients.from_json",
+      "line": 241,
+      "private": false,
+      "kind": "member",
+      "reference": "api/symbols/hyperproc.correct.coefficients.BRDFCoefficients.from_json.md"
+    }
+  ],
+  "classes": [
+    {
+      "qualified_name": "hyperproc.correct.coefficients.TopoCoefficients",
+      "line": 93,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.correct.coefficients.TopoCoefficients.md"
+    },
+    {
+      "qualified_name": "hyperproc.correct.coefficients.BRDFCoefficients",
+      "line": 186,
+      "bases": [],
+      "reference": "api/symbols/hyperproc.correct.coefficients.BRDFCoefficients.md"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://fujiangji.github.io/hyperproc/background/references/",
+    "html_sha256": "d97c6dc0311248c36939d2bda794ecce2dcf083f0a18661b8805e9e216bcbd40"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/data/",
+    "html_sha256": "a4fd1be68234bdb753aebe97c679ebcf8e57995d19dbc902c1b772d76289c162"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/development/adding-reader/",
+    "html_sha256": "51191d949c3bd3f97176fdfccdec9d3a01d07baf388ad79f74027ac877755dd5"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/development/architecture/",
+    "html_sha256": "771342be10bd3c484a6fa9db4446e9f3320c4aa6b7efa91c50c71f914c00a954"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/development/documentation/",
+    "html_sha256": "706030f6cdf5563a30ba7f16cc450b9054e13c139d39603706bd62f06c2b0627"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/development/testing/",
+    "html_sha256": "69088d5dc0d35f69b9e35ee4f196826dc1bdaa131ee757fd5842cea35a0004c7"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/documentation/",
+    "html_sha256": "adc2a3fea9012933449d4330f4778b7dcd71be5b968d688aa462a757b65fafad"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/getting-started/configuration/",
+    "html_sha256": "ae8a7ff64e4f7ee6d233ed5a795671ff703c0273a431e02f05e22bd1b2cea9e5"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/getting-started/data-access/",
+    "html_sha256": "b464c577ac7b9b116805150d02b32af154993b13d12910df4abe16c568cb4f85"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/getting-started/installation/",
+    "html_sha256": "bea17795790596017073dfe9163cbf5504acb95022ec547b40c5216510254046"
+  }
+]

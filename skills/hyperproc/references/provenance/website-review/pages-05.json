@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-readers-neon/",
+    "html_sha256": "bd6bee600d6f00fefb69474905675de1b7620d93dbc945f03695119c61e83c4e"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-readers-pace/",
+    "html_sha256": "a20e64f1cf11145982b388409f1f2b1da4df0bd4c2535b3c8254735a34cf653e"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-readers-prisma/",
+    "html_sha256": "92193e36da31c2a1a1a4b33a5e3cd0f52fb452e3427cde3b7d8f8878ff2d42cd"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-readers-tanager/",
+    "html_sha256": "51c7ead893d3cb832b75674137d18a8e481db161744eb2431a8cdbc450a52203"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-readers/",
+    "html_sha256": "20c87ceea1931a6846a8fc23c7252f5679a610b98cdebff662869e3dcbb2f593"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-registry/",
+    "html_sha256": "d10c54d0d53181fa9c3a4d0dcee9b1217147e75665e7365c2a671ed22f300f89"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-report/",
+    "html_sha256": "630cfe2643d8e9ea91c4b4f56323b14e6ab8137b2246066b91c2223984892c16"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-_smoothspline/",
+    "html_sha256": "24a8f9aa46154fe4cf0b7fb97d4cff59dfdbc56f446242a198a6312432dd8a4f"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-bands/",
+    "html_sha256": "7570455fa775985fad928f3884e60116ff8c4e14d281aa9a01face388a5ce34f"
+  },
+  {
+    "url": "https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-continuum/",
+    "html_sha256": "96aa376a02052cb9458c536e85f1bf75a1c03bfd6fff255367a423a1ea8be9c7"
+  }
+]

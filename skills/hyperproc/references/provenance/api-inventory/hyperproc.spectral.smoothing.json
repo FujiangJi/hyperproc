@@ -1,0 +1,101 @@
+{
+  "module": "hyperproc.spectral.smoothing",
+  "source_path": "hyperproc/spectral/smoothing.py",
+  "sha256": "ed1557d09f3f6a43a97ec15972be929bcaa0601e546319a44252f01ea549a9e9",
+  "exports": [
+    "smooth_spectra",
+    "find_spikes",
+    "spline_gapfill",
+    "PRISMA_ARTEFACT_RANGES",
+    "PRISMA_MASK_AFTER"
+  ],
+  "imports": [
+    {
+      "local": "annotations",
+      "from": "__future__",
+      "name": "annotations",
+      "relative_level": 0
+    },
+    {
+      "local": "contextmanager",
+      "from": "contextlib",
+      "name": "contextmanager",
+      "relative_level": 0
+    },
+    {
+      "local": "main_var",
+      "from": "hyperproc.io",
+      "name": "main_var",
+      "relative_level": 0
+    },
+    {
+      "local": "_runs",
+      "from": "hyperproc.spectral.bands",
+      "name": "runs_of_good_bands",
+      "relative_level": 0
+    }
+  ],
+  "reference": "api/hyperproc-spectral-smoothing.md",
+  "constants": [
+    {
+      "name": "PRISMA_ARTEFACT_RANGES",
+      "reference": "api/constants/hyperproc.spectral.smoothing.PRISMA_ARTEFACT_RANGES.md"
+    },
+    {
+      "name": "PRISMA_MASK_AFTER",
+      "reference": "api/constants/hyperproc.spectral.smoothing.PRISMA_MASK_AFTER.md"
+    }
+  ],
+  "symbols": [
+    {
+      "qualified_name": "hyperproc.spectral.smoothing._smooth_block",
+      "line": 44,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.smoothing._smooth_block.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.smoothing.smooth_spectra",
+      "line": 78,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.smoothing.smooth_spectra.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.smoothing.find_spikes",
+      "line": 134,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.smoothing.find_spikes.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.smoothing._in_ranges",
+      "line": 180,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.smoothing._in_ranges.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.smoothing._one_blas_thread",
+      "line": 188,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.smoothing._one_blas_thread.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.smoothing._gapfill_block",
+      "line": 209,
+      "private": true,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.smoothing._gapfill_block.md"
+    },
+    {
+      "qualified_name": "hyperproc.spectral.smoothing.spline_gapfill",
+      "line": 236,
+      "private": false,
+      "kind": "function",
+      "reference": "api/symbols/hyperproc.spectral.smoothing.spline_gapfill.md"
+    }
+  ],
+  "classes": []
+}
