@@ -49,6 +49,10 @@ landed. **An existing `AGENTS.md` is never overwritten**: if one is there and
 does not already mention hyperproc, the entry is written beside it as
 `AGENTS.hyperproc.md` for you to merge.
 
+Running the installer again updates an earlier install of this skill, so
+`git pull` followed by the same command is how you take an update. Anything
+else already at the destination is left alone.
+
 Working inside a clone of this repository needs none of this. The root
 `AGENTS.md` and `.claude/skills/hyperproc` are already in place, and running
 the installer there will say so rather than duplicating them.

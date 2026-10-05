@@ -5,9 +5,9 @@
 #   ./install.sh --codex               into ~/.codex/skills/hyperproc + ~/.codex/AGENTS.md
 #   ./install.sh --both
 #
-# Both are global: they apply in every project on this machine. Add --project
-# to scope an install to the current directory instead. An AGENTS.md that is
-# already there is never overwritten.
+# Both are global: they apply in every project on this machine. Running it
+# again updates an earlier install of this skill; anything else already at the
+# destination, including an AGENTS.md, is left alone.
 set -euo pipefail
 
 SOURCE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/hyperproc"
@@ -38,15 +38,21 @@ copy_skill() {                       # $1 destination; 0 when it put files there
     echo "  the skill is already here: $dest"
     return 0
   fi
-  if [ -e "$dest" ] && [ "$FORCE" = 0 ]; then
-    echo "  $dest already exists; pass --force to replace it"
-    return 0
+  local replacing=""
+  if [ -e "$dest" ]; then
+    # A previous install of this same skill is updated; anything else is left
+    # alone, because the installer did not put it there.
+    if [ "$FORCE" = 0 ] && ! grep -qs '^name: hyperproc$' "$dest/SKILL.md"; then
+      echo "  $dest exists and is not a hyperproc skill; pass --force to replace it"
+      return 0
+    fi
+    replacing=" (replacing the previous install)"
   fi
   mkdir -p "$(dirname "$dest")"
   rm -rf "$dest"
   cp -R "$SOURCE" "$dest"
   find "$dest" -name __pycache__ -type d -exec rm -rf {} + 2>/dev/null || true
-  echo "  installed to $dest"
+  echo "  installed to ${dest}${replacing}"
 }
 
 # The routing file is read from wherever Codex happens to be running, so a
