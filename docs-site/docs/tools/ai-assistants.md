@@ -36,19 +36,22 @@ cd hyperproc && git sparse-checkout set skills
 
 The last line takes `--claude`, `--codex` or `--both`.
 
+Both are global: they apply in every project on this machine.
+
 | Option | Installs to |
 |---|---|
 | `--claude` | `~/.claude/skills/hyperproc` |
-| `--codex` | `./skills/hyperproc`, plus a routing entry at the project root |
+| `--codex` | `~/.codex/skills/hyperproc`, and a routing entry in `~/.codex/AGENTS.md` |
 
-For Codex the routing entry's paths are generated from where the skill
-actually landed, because an `AGENTS.md` copied from elsewhere would point at
-directories that do not exist. **An existing `AGENTS.md` is never
-overwritten**: the entry is written beside it as `AGENTS.hyperproc.md` for
-you to merge.
+Codex reads `~/.codex/AGENTS.md` from wherever it happens to be running, so
+the routing entry is written with absolute paths to where the skill actually
+landed. **An existing `AGENTS.md` is never overwritten**: if one is there and
+does not already mention hyperproc, the entry is written beside it as
+`AGENTS.hyperproc.md` for you to merge.
 
 Working inside a clone of this repository needs none of this. The root
-`AGENTS.md` and `.claude/skills/hyperproc` are already in place.
+`AGENTS.md` and `.claude/skills/hyperproc` are already in place, and running
+the installer there will say so rather than duplicating them.
 
 ## Checking it
 

@@ -348,7 +348,8 @@ cd hyperproc && git sparse-checkout set skills
 ./skills/install.sh --claude
 ```
 
-The last line takes `--claude`, `--codex` or `--both`. Full details, including
+The last line takes `--claude`, `--codex` or `--both`; both install
+globally, so they apply in every project on the machine. Full details, including
 what to do when you already have an `AGENTS.md`:
 [AI assistant skill](https://fujiangji.github.io/hyperproc/tools/ai-assistants/).
 
