@@ -90,7 +90,7 @@
     "docs-site/docs/getting-started/data-access.md": "93f261256764cbb5ff6341da258fdd9396319403386c863ed4c31bda06896b17",
     "docs-site/docs/getting-started/installation.md": "faf039b63853164a95b1775db833cbd0ed56127dc4a8c34bfc00d02fcd6dbd47",
     "docs-site/docs/getting-started/quickstart.md": "0a93cfe77532bd6ab457d5553252e81f2f9c83ad27d712e2296771297331735e",
-    "docs-site/docs/index.md": "7ceb2eadabfb4415f80196bca6fb09551d8b61cbc8a0b24c25cbb08e2884c857",
+    "docs-site/docs/index.md": "5f1a70b40f9639286f338e399d093d0c41af0e2df850ac87e8631e2a335da749",
     "docs-site/docs/javascripts/notebook-maps.js": "374844ebd5a3fa102b6719bcdba51db32c3628c714dee80b0479a218a7d96894",
     "docs-site/docs/project/about.md": "833f2930e2e5423997dc282b34a50dd4c5cf2a8c7dd610fff8ced63f4ebccbae",
     "docs-site/docs/project/governance.md": "6d0d9dc956a48c965ef7e4443adfb4bf767a7b020176df878d2224811ec4f9e4",
@@ -107,7 +107,7 @@
     "docs-site/docs/sensors/prisma.md": "74f5dd2a6c8a420e090a1fc63e21a2ee8277172d0c1b3e8c93e32fa9c4eb38c0",
     "docs-site/docs/sensors/tanager.md": "1c604b1290fe55b1d411c23202a4f7779f075fcecb38d1368c8b2363ae8dff19",
     "docs-site/docs/stylesheets/extra.css": "b2f7c22b8ec58f6ad8d0e98b1dd4f36b285a376a145dfaa2b3b45ced5ce653a7",
-    "docs-site/docs/tools/ai-assistants.md": "1ee1002b86df0169025fd7ea649bad73b1983ebf0c08ec2f7f536d14ac09e52f",
+    "docs-site/docs/tools/ai-assistants.md": "fd2da2471f141d467fa1392f7d77fb95f9f0f53a0da498ceb0e85f7da535fb3f",
     "docs-site/docs/tools/index.md": "ee773f5089f5045e7560622291672d776b522dbdbaad7c4de98390f63479bc6c",
     "docs-site/docs/tutorials/aviris3-walkthrough.md": "17381ce49c6d11ebf902c6cc0c5db715a8a39c4fe069d330638a23080d4e89c7",
     "docs-site/docs/tutorials/caveats.md": "11f577a607ce71c821e93097c81f3af6baefdbea134cdd5b993ec568a75cb0b4",
@@ -220,7 +220,7 @@
     "pyproject.toml": "5d6ecdb6093670054034eb42400a5f1f266d9b6d556a2b0714a90b5b087d2392",
     "LICENSE": "15fdda3048c4b4175c17d9bd3e745f50c70ea589fd354b4b78676103b213c83b",
     "CITATION.cff": "19b5b8782e472e17e5afaa2ba5e6de03e9b77324a71bf96c7dc839963bc9e0f0",
-    "README.md": "6e65ddd5c7c4109d21399d1f929c3151e3fca50f44a41051d3289cee768d224b"
+    "README.md": "c6a0b7348681215766d7d23ecea781e96ae71e20bbacee28f2f00420bc1c90e1"
   },
   "execution_policy": "Static source inspection and saved-output rendering only; no hyperproc import or notebook execution."
 }
