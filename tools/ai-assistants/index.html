@@ -5100,6 +5100,9 @@ the routing entry is written with absolute paths to where the skill actually
 landed. <strong>An existing <code>AGENTS.md</code> is never overwritten</strong>: if one is there and
 does not already mention hyperproc, the entry is written beside it as
 <code>AGENTS.hyperproc.md</code> for you to merge.</p>
+<p>Running the installer again updates an earlier install of this skill, so
+<code>git pull</code> followed by the same command is how you take an update. Anything
+else already at the destination is left alone.</p>
 <p>Working inside a clone of this repository needs none of this. The root
 <code>AGENTS.md</code> and <code>.claude/skills/hyperproc</code> are already in place, and running
 the installer there will say so rather than duplicating them.</p>
