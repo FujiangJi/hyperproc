@@ -102,8 +102,8 @@
 <header class="md-header md-header--home" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Main navigation">
     <a href="../.." class="md-header__button md-logo" aria-label="hyperproc home" data-md-component="logo">
-      <img class="theme-light" src="../../assets/logos/wordmark.svg" alt="hyperproc" width="184" height="41">
-<img class="theme-dark" src="../../assets/logos/wordmark-dark.svg" alt="hyperproc" width="184" height="41">
+      <img class="theme-light" src="../../assets/logos/wordmark.svg" alt="hyperproc" width="184" height="45">
+<img class="theme-dark" src="../../assets/logos/wordmark-dark.svg" alt="hyperproc" width="184" height="45">
     </a>
     
       <label class="md-header__button md-icon" for="__drawer" aria-label="Open documentation navigation">
@@ -224,8 +224,8 @@
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="hyperproc" class="md-nav__button md-logo" aria-label="hyperproc" data-md-component="logo">
-      <img class="theme-light" src="../../assets/logos/wordmark.svg" alt="hyperproc" width="184" height="41">
-<img class="theme-dark" src="../../assets/logos/wordmark-dark.svg" alt="hyperproc" width="184" height="41">
+      <img class="theme-light" src="../../assets/logos/wordmark.svg" alt="hyperproc" width="184" height="45">
+<img class="theme-dark" src="../../assets/logos/wordmark-dark.svg" alt="hyperproc" width="184" height="45">
     </a>
     hyperproc
   </label>
@@ -5167,7 +5167,7 @@
 <li>API descriptions come from package docstrings and signatures. The docs build does not rewrite those source files.</li>
 <li>Notebook pages come from <code>tests/0_src_code/</code>; keep caveat annotations in the maintained companion guides. Edit a notebook only as a separate intentional development action.</li>
 <li>Logos live under <code>docs/assets/logos/</code>; <code>.theme-light</code> and <code>.theme-dark</code> variants respond to Material's current color scheme.</li>
-<li>The artwork under <code>docs/assets/logos</code> is what the site uses, and a clone needs nothing else to build; the vector masters it was exported from are not distributed. The homepage hero uses <code>overrides/main.html</code>; all pages share the header in <code>overrides/partials/home-header.html</code>. Data, Tools, and Documentation have landing pages with category highlighting in the header; its local image is <code>docs/assets/images/forest-mountain-hero.png</code>.</li>
+<li>The artwork under <code>docs/assets/logos</code> is what the site uses, and a clone needs nothing else to build. PNGs preserve the supplied logo reference; separate editable SVG reconstructions trace its six ribbons and letter outlines and rebuild the illustration. Local regeneration sources are in <code>design_assets/hyperproc-logo-v4/</code> at the package root; these are not original font files. The homepage hero uses <code>overrides/main.html</code>; all pages share the header in <code>overrides/partials/home-header.html</code>. Data, Tools, and Documentation have landing pages with category highlighting in the header; its local image is <code>docs/assets/images/forest-mountain-hero.png</code>.</li>
 </ul>
 <h2 id="what-generation-does">What generation does<a class="headerlink" href="#what-generation-does" title="Permanent link">&para;</a></h2>
 <p>The generator uses Python AST to inventory modules/exports, writes reference directives for static mkdocstrings extraction, converts notebook markdown/code, copies original notebooks, and extracts stored PNG figures. Saved text outputs are expanded by default and can be collapsed. Long text outputs are shortened in the page but preserved in the download. Search-map cells receive browser-only Leaflet previews from saved widget geometry or, when geometry is missing, the saved center with an explicit caption. Vendored Leaflet assets supply pan/zoom controls; no kernel is started. It never imports hyperproc, executes notebook cells, or accesses remote data services.</p>

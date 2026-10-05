@@ -1,182 +1,343 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="800" height="800" viewBox="0 0 800 800" role="img" aria-labelledby="circular-dark-title circular-dark-description">
-  <title id="circular-dark-title">hyperproc Spectral Ribbon — circular, dark</title>
-  <desc id="circular-dark-description">Editable vector reconstruction: gradient hyperproc wordmark, seven spectral ribbons, a forest landscape in the o, orbit, and observation satellite.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="800" height="800" viewBox="0 0 800 800" role="img" aria-labelledby="logo-v4-circular-dark-title logo-v4-circular-dark-description">
+  <title id="logo-v4-circular-dark-title">hyperproc — reference-derived circular, dark</title>
+  <desc id="logo-v4-circular-dark-description">Original reference letter contours and six rising spectral ribbons; Earth landscape, two trees, orbit and satellite. Editable vector paths.</desc>
   <defs>
-    <linearGradient id="circular-dark-word-gradient" x1="60" y1="0" x2="1740" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#92C9F1" />
-      <stop offset="36%" stop-color="#92C9F1" />
-      <stop offset="65%" stop-color="#6FBED0" />
-      <stop offset="100%" stop-color="#7FDDC1" />
+    <linearGradient id="logo-v4-circular-dark-h-gradient-h-stems" gradientUnits="userSpaceOnUse" x1="-4.65" y1="153.627" x2="-15.274" y2="504.614">
+      <stop offset="0%" stop-color="#90aabc" />
+      <stop offset="16.7%" stop-color="#90aabc" />
+      <stop offset="33.3%" stop-color="#91aabc" />
+      <stop offset="50%" stop-color="#91aabc" />
+      <stop offset="66.7%" stop-color="#90a8b7" />
+      <stop offset="83.3%" stop-color="#8fa8b7" />
+      <stop offset="100%" stop-color="#90a8b7" />
     </linearGradient>
-    <linearGradient id="circular-dark-earth-gradient" x1="12%" y1="88%" x2="88%" y2="12%">
-      <stop offset="0%" stop-color="#073C3E" />
-      <stop offset="50%" stop-color="#18786D" />
-      <stop offset="100%" stop-color="#4EAC90" />
+    <linearGradient id="logo-v4-circular-dark-h-gradient-violet" gradientUnits="userSpaceOnUse" x1="456.822" y1="172.943" x2="311.807" y2="118.044">
+      <stop offset="0%" stop-color="#6067bb" />
+      <stop offset="16.7%" stop-color="#6167bd" />
+      <stop offset="33.3%" stop-color="#6065bb" />
+      <stop offset="50%" stop-color="#5c63b7" />
+      <stop offset="66.7%" stop-color="#565fb1" />
+      <stop offset="83.3%" stop-color="#535eae" />
+      <stop offset="100%" stop-color="#525dad" />
     </linearGradient>
-    <clipPath id="circular-dark-hero-landscape-clip">
-      <circle r="65" />
+    <linearGradient id="logo-v4-circular-dark-h-gradient-blue" gradientUnits="userSpaceOnUse" x1="-97.672" y1="205.311" x2="-25.46" y2="53.518">
+      <stop offset="0%" stop-color="#2d69b4" />
+      <stop offset="16.7%" stop-color="#2d6bb5" />
+      <stop offset="33.3%" stop-color="#326dbb" />
+      <stop offset="50%" stop-color="#3b6cc2" />
+      <stop offset="66.7%" stop-color="#4172ca" />
+      <stop offset="83.3%" stop-color="#4275ce" />
+      <stop offset="100%" stop-color="#4679d1" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-h-gradient-cyan" gradientUnits="userSpaceOnUse" x1="483.591" y1="29.831" x2="260.696" y2="16.082">
+      <stop offset="0%" stop-color="#31a6ba" />
+      <stop offset="16.7%" stop-color="#2fa5b9" />
+      <stop offset="33.3%" stop-color="#2da1b7" />
+      <stop offset="50%" stop-color="#28a0b8" />
+      <stop offset="66.7%" stop-color="#2499b6" />
+      <stop offset="83.3%" stop-color="#2095b4" />
+      <stop offset="100%" stop-color="#1f94b2" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-h-gradient-green" gradientUnits="userSpaceOnUse" x1="513.874" y1="61.373" x2="284.226" y2="33.945">
+      <stop offset="0%" stop-color="#76b36a" />
+      <stop offset="16.7%" stop-color="#72b26d" />
+      <stop offset="33.3%" stop-color="#6ab06e" />
+      <stop offset="50%" stop-color="#61aa6f" />
+      <stop offset="66.7%" stop-color="#58a470" />
+      <stop offset="83.3%" stop-color="#4f9c6f" />
+      <stop offset="100%" stop-color="#4b966e" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-h-gradient-yellow" gradientUnits="userSpaceOnUse" x1="-40.718" y1="280.053" x2="-62.848" y2="432.258">
+      <stop offset="0%" stop-color="#ddbf4f" />
+      <stop offset="16.7%" stop-color="#dbbc4d" />
+      <stop offset="33.3%" stop-color="#dab649" />
+      <stop offset="50%" stop-color="#d9af46" />
+      <stop offset="66.7%" stop-color="#d9ac43" />
+      <stop offset="83.3%" stop-color="#d8aa43" />
+      <stop offset="100%" stop-color="#d6a742" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-h-gradient-orange" gradientUnits="userSpaceOnUse" x1="-14.114" y1="363.678" x2="-19.25" y2="496.017">
+      <stop offset="0%" stop-color="#f6a546" />
+      <stop offset="16.7%" stop-color="#f6a246" />
+      <stop offset="33.3%" stop-color="#f59a48" />
+      <stop offset="50%" stop-color="#f49349" />
+      <stop offset="66.7%" stop-color="#f28c4a" />
+      <stop offset="83.3%" stop-color="#f18549" />
+      <stop offset="100%" stop-color="#ef8048" />
+    </linearGradient>
+    <radialGradient id="logo-v4-circular-dark-earth-earth-fill" cx="82%" cy="36%" r="92%">
+      <stop offset="0%" stop-color="#65AD69" />
+      <stop offset="39%" stop-color="#359080" />
+      <stop offset="72%" stop-color="#185D62" />
+      <stop offset="100%" stop-color="#073F3B" />
+    </radialGradient>
+    <linearGradient id="logo-v4-circular-dark-earth-sky-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDEAF3" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <clipPath id="logo-v4-circular-dark-earth-earth-clip">
+      <ellipse cx="1623" cy="397" rx="122" ry="121" />
     </clipPath>
-    <linearGradient id="circular-dark-badge-word-gradient-y" href="#circular-dark-word-gradient" gradientTransform="translate(-299 -174)" />
-    <linearGradient id="circular-dark-badge-word-gradient-p1" href="#circular-dark-word-gradient" gradientTransform="translate(-511 -174)" />
-    <linearGradient id="circular-dark-badge-word-gradient-e" href="#circular-dark-word-gradient" gradientTransform="translate(-732 -174)" />
-    <linearGradient id="circular-dark-badge-word-gradient-r1" href="#circular-dark-word-gradient" gradientTransform="translate(-943 -174)" />
-    <linearGradient id="circular-dark-badge-word-gradient-p2" href="#circular-dark-word-gradient" gradientTransform="translate(-1081 -174)" />
-    <linearGradient id="circular-dark-badge-word-gradient-r2" href="#circular-dark-word-gradient" gradientTransform="translate(-1305 -174)" />
-    <linearGradient id="circular-dark-badge-word-gradient-c" href="#circular-dark-word-gradient" gradientTransform="translate(-1665 -174)" />
-    <clipPath id="circular-dark-badge-word-landscape-clip">
-      <circle r="65" />
+    <clipPath id="logo-v4-circular-dark-earth-window-clip">
+      <circle cx="1623" cy="397" r="73" />
+    </clipPath>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-y" gradientUnits="userSpaceOnUse" x1="-14.777" y1="40.484" x2="-119.861" y2="328.383">
+      <stop offset="0%" stop-color="#91aec4" />
+      <stop offset="16.7%" stop-color="#90acc1" />
+      <stop offset="33.3%" stop-color="#90abbd" />
+      <stop offset="50%" stop-color="#8fa9ba" />
+      <stop offset="66.7%" stop-color="#8ea8b7" />
+      <stop offset="83.3%" stop-color="#8ea7b6" />
+      <stop offset="100%" stop-color="#8ea7b6" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-p-first" gradientUnits="userSpaceOnUse" x1="-20.503" y1="79.427" x2="-92.022" y2="356.49">
+      <stop offset="0%" stop-color="#91afc5" />
+      <stop offset="16.7%" stop-color="#91aec3" />
+      <stop offset="33.3%" stop-color="#90adc1" />
+      <stop offset="50%" stop-color="#90acbe" />
+      <stop offset="66.7%" stop-color="#90aabc" />
+      <stop offset="83.3%" stop-color="#8ea8b8" />
+      <stop offset="100%" stop-color="#8ea7b6" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-e" gradientUnits="userSpaceOnUse" x1="-47.634" y1="136.66" x2="18.827" y2="-54.014">
+      <stop offset="0%" stop-color="#90abbc" />
+      <stop offset="16.7%" stop-color="#91adbe" />
+      <stop offset="33.3%" stop-color="#91aec0" />
+      <stop offset="50%" stop-color="#91afc2" />
+      <stop offset="66.7%" stop-color="#91b1c3" />
+      <stop offset="83.3%" stop-color="#92b2c5" />
+      <stop offset="100%" stop-color="#93b4c5" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-r-first" gradientUnits="userSpaceOnUse" x1="175.134" y1="-302.909" x2="63.376" y2="-109.613">
+      <stop offset="0%" stop-color="#97bec9" />
+      <stop offset="16.7%" stop-color="#96bac7" />
+      <stop offset="33.3%" stop-color="#94b7c6" />
+      <stop offset="50%" stop-color="#93b4c4" />
+      <stop offset="66.7%" stop-color="#92b2c2" />
+      <stop offset="83.3%" stop-color="#91b0c0" />
+      <stop offset="100%" stop-color="#91afbe" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-p-second" gradientUnits="userSpaceOnUse" x1="36.606" y1="-115.686" x2="-49.689" y2="157.03">
+      <stop offset="0%" stop-color="#9ac2c9" />
+      <stop offset="16.7%" stop-color="#97bec8" />
+      <stop offset="33.3%" stop-color="#95bac6" />
+      <stop offset="50%" stop-color="#93b6c3" />
+      <stop offset="66.7%" stop-color="#92b3c1" />
+      <stop offset="83.3%" stop-color="#91afbe" />
+      <stop offset="100%" stop-color="#91aebc" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-r-second" gradientUnits="userSpaceOnUse" x1="248.4" y1="-434.566" x2="136.436" y2="-238.689">
+      <stop offset="0%" stop-color="#a0cccc" />
+      <stop offset="16.7%" stop-color="#9ec8ca" />
+      <stop offset="33.3%" stop-color="#9bc4c9" />
+      <stop offset="50%" stop-color="#98bfc6" />
+      <stop offset="66.7%" stop-color="#96bcc5" />
+      <stop offset="83.3%" stop-color="#94b9c3" />
+      <stop offset="100%" stop-color="#93b6c2" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-c" gradientUnits="userSpaceOnUse" x1="93.987" y1="-287.273" x2="32.829" y2="-100.344">
+      <stop offset="0%" stop-color="#a1cdcd" />
+      <stop offset="16.7%" stop-color="#9fcbcb" />
+      <stop offset="33.3%" stop-color="#9ec9ca" />
+      <stop offset="50%" stop-color="#9bc6c7" />
+      <stop offset="66.7%" stop-color="#9ac4c5" />
+      <stop offset="83.3%" stop-color="#98c1c4" />
+      <stop offset="100%" stop-color="#97bfc3" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-h-stems" gradientUnits="userSpaceOnUse" x1="-4.65" y1="153.627" x2="-15.274" y2="504.614">
+      <stop offset="0%" stop-color="#90aabc" />
+      <stop offset="16.7%" stop-color="#90aabc" />
+      <stop offset="33.3%" stop-color="#91aabc" />
+      <stop offset="50%" stop-color="#91aabc" />
+      <stop offset="66.7%" stop-color="#90a8b7" />
+      <stop offset="83.3%" stop-color="#8fa8b7" />
+      <stop offset="100%" stop-color="#90a8b7" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-violet" gradientUnits="userSpaceOnUse" x1="456.822" y1="172.943" x2="311.807" y2="118.044">
+      <stop offset="0%" stop-color="#6067bb" />
+      <stop offset="16.7%" stop-color="#6167bd" />
+      <stop offset="33.3%" stop-color="#6065bb" />
+      <stop offset="50%" stop-color="#5c63b7" />
+      <stop offset="66.7%" stop-color="#565fb1" />
+      <stop offset="83.3%" stop-color="#535eae" />
+      <stop offset="100%" stop-color="#525dad" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-blue" gradientUnits="userSpaceOnUse" x1="-97.672" y1="205.311" x2="-25.46" y2="53.518">
+      <stop offset="0%" stop-color="#2d69b4" />
+      <stop offset="16.7%" stop-color="#2d6bb5" />
+      <stop offset="33.3%" stop-color="#326dbb" />
+      <stop offset="50%" stop-color="#3b6cc2" />
+      <stop offset="66.7%" stop-color="#4172ca" />
+      <stop offset="83.3%" stop-color="#4275ce" />
+      <stop offset="100%" stop-color="#4679d1" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-cyan" gradientUnits="userSpaceOnUse" x1="483.591" y1="29.831" x2="260.696" y2="16.082">
+      <stop offset="0%" stop-color="#31a6ba" />
+      <stop offset="16.7%" stop-color="#2fa5b9" />
+      <stop offset="33.3%" stop-color="#2da1b7" />
+      <stop offset="50%" stop-color="#28a0b8" />
+      <stop offset="66.7%" stop-color="#2499b6" />
+      <stop offset="83.3%" stop-color="#2095b4" />
+      <stop offset="100%" stop-color="#1f94b2" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-green" gradientUnits="userSpaceOnUse" x1="513.874" y1="61.373" x2="284.226" y2="33.945">
+      <stop offset="0%" stop-color="#76b36a" />
+      <stop offset="16.7%" stop-color="#72b26d" />
+      <stop offset="33.3%" stop-color="#6ab06e" />
+      <stop offset="50%" stop-color="#61aa6f" />
+      <stop offset="66.7%" stop-color="#58a470" />
+      <stop offset="83.3%" stop-color="#4f9c6f" />
+      <stop offset="100%" stop-color="#4b966e" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-yellow" gradientUnits="userSpaceOnUse" x1="-40.718" y1="280.053" x2="-62.848" y2="432.258">
+      <stop offset="0%" stop-color="#ddbf4f" />
+      <stop offset="16.7%" stop-color="#dbbc4d" />
+      <stop offset="33.3%" stop-color="#dab649" />
+      <stop offset="50%" stop-color="#d9af46" />
+      <stop offset="66.7%" stop-color="#d9ac43" />
+      <stop offset="83.3%" stop-color="#d8aa43" />
+      <stop offset="100%" stop-color="#d6a742" />
+    </linearGradient>
+    <linearGradient id="logo-v4-circular-dark-name-gradient-orange" gradientUnits="userSpaceOnUse" x1="-14.114" y1="363.678" x2="-19.25" y2="496.017">
+      <stop offset="0%" stop-color="#f6a546" />
+      <stop offset="16.7%" stop-color="#f6a246" />
+      <stop offset="33.3%" stop-color="#f59a48" />
+      <stop offset="50%" stop-color="#f49349" />
+      <stop offset="66.7%" stop-color="#f28c4a" />
+      <stop offset="83.3%" stop-color="#f18549" />
+      <stop offset="100%" stop-color="#ef8048" />
+    </linearGradient>
+    <radialGradient id="logo-v4-circular-dark-name-earth-fill" cx="82%" cy="36%" r="92%">
+      <stop offset="0%" stop-color="#65AD69" />
+      <stop offset="39%" stop-color="#359080" />
+      <stop offset="72%" stop-color="#185D62" />
+      <stop offset="100%" stop-color="#073F3B" />
+    </radialGradient>
+    <linearGradient id="logo-v4-circular-dark-name-sky-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDEAF3" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <clipPath id="logo-v4-circular-dark-name-earth-clip">
+      <ellipse cx="1623" cy="397" rx="122" ry="121" />
+    </clipPath>
+    <clipPath id="logo-v4-circular-dark-name-window-clip">
+      <circle cx="1623" cy="397" r="73" />
     </clipPath>
   </defs>
-  <g id="circular-dark-badge-base" aria-label="Circular badge background" inkscape:groupmode="layer" inkscape:label="Circular badge background">
-    <circle cx="400" cy="400" r="384" fill="#112532" stroke="#416A7A" stroke-width="3" />
+  <g id="logo-v4-circular-dark-base" inkscape:groupmode="layer" inkscape:label="Circular badge background">
+    <circle cx="400" cy="400" r="384" fill="#142333" stroke="#537A88" stroke-width="3" />
   </g>
-  <g id="circular-dark-badge-emblem" aria-label="Spectral h, Earth, and satellite" inkscape:groupmode="layer" inkscape:label="Spectral h, Earth, and satellite">
-    <g id="circular-dark-hero-h" aria-label="Large spectral h" transform="translate(64 158) scale(.9)">
-      <g id="circular-dark-hero-stems" aria-label="Spectral h — editable stems" fill="url(#circular-dark-word-gradient)">
-        <rect x="60" y="50" width="70" height="324" rx="9" />
-        <rect x="263" y="181" width="63" height="211" rx="8" />
-      </g>
-      <g id="circular-dark-hero-ribbons" aria-label="Seven editable spectral ribbons">
-        <path d="M60 206 C128 159 187 104 236 124 C268 137 292 176 309 207 C339 267 372 321 396 306 L414 286 L406 309 C391 331 369 338 345 308 C325 275 318 252 309 228 C284 188 264 159 234 145 C187 125 129 183 60 228 Z" id="circular-dark-hero-ribbon-1" fill="#6B3ED7" />
-        <path d="M60 230 C128 183 187 128 236 148 C268 161 292 200 309 231 C339 283 372 329 396 314 L414 294 L406 317 C391 339 369 346 345 324 C325 299 318 276 309 252 C284 212 264 183 234 169 C187 149 129 207 60 252 Z" id="circular-dark-hero-ribbon-2" fill="#1F6FB2" />
-        <path d="M60 254 C128 207 187 152 236 172 C268 185 292 224 309 255 C339 299 372 337 396 322 L414 302 L406 325 C391 347 369 354 345 340 C325 323 318 300 309 276 C284 236 264 207 234 193 C187 173 129 231 60 276 Z" id="circular-dark-hero-ribbon-3" fill="#14A3A3" />
-        <path d="M60 278 C128 231 187 176 236 196 C268 209 292 248 309 279 C339 315 372 345 396 330 L414 310 L406 333 C391 355 369 362 345 356 C325 347 318 324 309 300 C284 260 264 231 234 217 C187 197 129 255 60 300 Z" id="circular-dark-hero-ribbon-4" fill="#4CAF7A" />
-        <path d="M60 302 C128 255 187 200 236 220 C268 233 292 272 309 303 C339 331 372 353 396 338 L414 318 L406 341 C391 363 369 370 345 372 C325 371 318 348 309 324 C284 284 264 255 234 241 C187 221 129 279 60 324 Z" id="circular-dark-hero-ribbon-5" fill="#A7D38B" />
-        <path d="M60 326 C128 279 187 224 236 244 C268 257 292 296 309 327 C339 347 372 361 396 346 L414 326 L406 349 C391 371 369 378 345 388 C325 395 318 372 309 348 C284 308 264 279 234 265 C187 245 129 303 60 348 Z" id="circular-dark-hero-ribbon-6" fill="#F4C542" />
-        <path d="M60 350 C128 303 187 248 236 268 C268 281 292 320 309 351 C339 363 372 369 396 354 L414 334 L406 357 C391 379 369 386 345 404 C325 419 318 396 309 372 C284 332 264 303 234 289 C187 269 129 327 60 372 Z" id="circular-dark-hero-ribbon-7" fill="#F07F3C" />
-      </g>
+  <g id="logo-v4-circular-dark-h-art" transform="translate(-91 6) scale(.87)" inkscape:groupmode="layer" inkscape:label="Reference-derived editable logo">
+    <g id="logo-v4-circular-dark-h-lettering" fill-rule="evenodd" inkscape:groupmode="layer" inkscape:label="Original reference letter contours">
+      <path id="logo-v4-circular-dark-h-letter-h-stems" d="M236.00,310.17 C236.00,310.17,234.75,308.80,234.50,308.00 C234.25,307.20,234.01,165.83,234.75,164.00 C235.48,162.17,237.18,160.31,239.00,159.53 C240.82,158.76,303.42,159.01,305.00,159.77 C306.58,160.52,307.87,162.35,308.47,164.00 C309.06,165.65,322.41,236.04,309.23,261.00 C296.05,285.96,236.00,310.17,236.00,310.17 Z M512.00,522.23 C510.00,523.16,463.22,523.04,461.00,522.47 C458.78,521.90,455.58,520.04,454.74,519.00 C453.89,517.96,453.70,516.32,453.50,515.00 C453.30,513.68,453.26,414.11,453.50,413.00 C453.75,411.89,455.00,409.77,455.00,409.77 C455.00,409.77,467.97,408.77,474.00,409.53 C480.03,410.29,497.32,414.67,501.00,416.77 C504.68,418.86,508.32,423.35,510.48,426.00 C512.64,428.65,515.27,431.72,516.23,435.00 C517.20,438.28,517.23,514.93,516.47,517.00 C515.71,519.07,514.00,521.31,512.00,522.23 Z" fill="url(#logo-v4-circular-dark-h-gradient-h-stems)" />
     </g>
-    <g id="circular-dark-hero-orbit-back" aria-label="Editable rear orbit" transform="translate(486 370) scale(1.38)" fill="none">
-      <ellipse rx="168" ry="31" transform="rotate(-33)" stroke="#A7E0E1" stroke-width="3" opacity=".6" />
-    </g>
-    <g id="circular-dark-hero-earth" aria-label="Earth o — editable landscape and ring" transform="translate(486 370) scale(1.4090909090909092)">
-      <circle r="110" fill="url(#circular-dark-earth-gradient)" />
-      <g id="circular-dark-hero-landscape" aria-label="Sky, mountains, terrain, and trees" clip-path="url(#circular-dark-hero-landscape-clip)">
-        <circle r="65" fill="#DCF1F6" />
-        <circle cx="26" cy="-33" r="8" fill="#FFFFFF" />
-        <path d="M-76 14 L-29 -22 L12 8 L46 -6 L84 34 V88 H-76 Z" fill="#A5D0B4" />
-        <path d="M-76 45 L-28 7 L9 22 L47 2 L82 38 V89 H-76 Z" fill="#73B79A" />
-        <path d="M-81 56 Q-36 20 3 44 Q39 57 82 22 V89 H-81 Z" fill="#40977D" />
-        <path d="M-81 70 Q-22 38 11 60 Q43 74 81 43 V90 H-81 Z" fill="#1E725F" />
-        <g id="circular-dark-hero-tree--49-49" aria-label="Editable conifer" transform="translate(-49 49) scale(0.3)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-hero-tree--31-48" aria-label="Editable conifer" transform="translate(-31 48) scale(0.45)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-hero-tree--12-54" aria-label="Editable conifer" transform="translate(-12 54) scale(0.38)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-hero-tree-5-46" aria-label="Editable conifer" transform="translate(5 46) scale(0.57)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-hero-tree-23-51" aria-label="Editable conifer" transform="translate(23 51) scale(0.45)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-hero-tree-41-47" aria-label="Editable conifer" transform="translate(41 47) scale(0.54)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-hero-tree-57-54" aria-label="Editable conifer" transform="translate(57 54) scale(0.37)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-      </g>
-    </g>
-    <g id="circular-dark-hero-orbit-front" aria-label="Editable foreground orbit" transform="translate(486 370) scale(1.38)" fill="none">
-      <path d="M-149 53 C-178 126 49 2 129 -65 Q147 -83 149 -112" stroke="#A7E0E1" stroke-width="5" stroke-linecap="round" />
-      <path d="M-149 55 C-173 118 52 0 126 -62" stroke="#B3DBDF" stroke-width="1.6" stroke-linecap="round" />
-    </g>
-    <g id="circular-dark-hero-satellite" aria-label="Satellite — body and solar-panel layers" transform="translate(657 184) rotate(25) scale(0.73)">
-      <path d="M-26 0 H-48 M26 0 H48" stroke="#619BD1" stroke-width="7" />
-      <g id="circular-dark-hero-panel--1" aria-label="Editable solar panel">
-        <rect x="-88" y="-24" width="46" height="48" rx="2" fill="#3889E4" stroke="#619BD1" stroke-width="2" />
-        <path d="M-65 -24 V24 M-88 0 H-42" stroke="#7CBBEE" stroke-width="1.5" />
-      </g>
-      <g id="circular-dark-hero-panel-1" aria-label="Editable solar panel">
-        <rect x="42" y="-24" width="46" height="48" rx="2" fill="#3889E4" stroke="#619BD1" stroke-width="2" />
-        <path d="M65 -24 V24 M42 0 H88" stroke="#7CBBEE" stroke-width="1.5" />
-      </g>
-      <rect x="-26" y="-27" width="52" height="54" rx="12" fill="#619BD1" />
-      <circle cy="3" r="8" fill="#3889E4" />
-      <path d="M0 27 V41" stroke="#619BD1" stroke-width="6" />
-      <path d="M-13 43 Q0 57 13 43" fill="none" stroke="#A7E0E1" stroke-width="5" />
+    <g id="logo-v4-circular-dark-h-spectrum" fill-rule="evenodd" inkscape:groupmode="layer" inkscape:label="Six spectral ribbons from the reference">
+      <path id="logo-v4-circular-dark-h-band-violet" d="M238.00,332.26 C237.11,332.48,235.16,332.00,235.16,332.00 C235.16,332.00,234.54,329.30,234.53,328.00 C234.52,326.70,235.48,323.26,235.50,321.00 C235.52,318.74,234.25,314.14,234.53,313.00 C234.82,311.86,235.79,310.82,236.63,310.00 C237.47,309.18,300.23,266.71,311.00,260.73 C321.77,254.76,339.16,247.09,346.00,244.75 C352.84,242.40,361.34,240.47,368.00,239.53 C374.66,238.59,385.42,238.26,389.00,238.53 C392.58,238.80,396.55,239.74,400.00,240.75 C403.45,241.75,409.15,243.79,413.00,245.73 C416.85,247.68,421.30,250.47,424.37,253.00 C427.45,255.53,432.96,262.00,432.96,262.00 C432.96,262.00,411.77,257.03,407.00,256.53 C402.23,256.03,396.79,256.22,392.00,256.50 C387.21,256.78,380.38,257.51,375.00,258.53 C369.62,259.55,359.24,262.38,355.00,263.75 C350.76,265.11,346.06,266.92,342.00,268.75 C337.94,270.57,323.42,277.86,315.00,282.73 C306.58,287.61,238.89,332.05,238.00,332.26 Z" fill="url(#logo-v4-circular-dark-h-gradient-violet)" />
+      <path id="logo-v4-circular-dark-h-band-blue" d="M236.00,369.19 C236.00,369.19,234.75,367.81,234.50,367.00 C234.25,366.19,234.35,348.71,234.53,348.00 C234.72,347.29,235.15,346.54,235.64,346.00 C236.14,345.46,304.26,300.71,309.00,297.73 C313.74,294.76,319.08,291.42,324.00,288.76 C328.92,286.11,344.14,278.48,351.00,275.75 C357.86,273.01,367.32,270.15,373.00,268.75 C378.68,267.34,385.16,265.96,391.00,265.53 C396.84,265.11,419.75,266.12,423.00,266.53 C426.25,266.94,429.89,267.71,433.00,268.75 C436.11,269.78,439.66,271.12,442.37,273.00 C445.08,274.88,447.88,277.90,450.00,280.63 C452.12,283.35,456.17,291.00,456.17,291.00 C456.17,291.00,455.00,292.17,455.00,292.17 C455.00,292.17,449.03,288.79,446.00,287.75 C442.97,286.70,432.50,284.21,426.00,283.53 C419.50,282.85,411.15,282.98,405.00,283.50 C398.85,284.02,392.01,285.36,386.00,286.75 C379.99,288.13,367.25,291.84,362.00,293.75 C356.75,295.65,351.02,298.27,346.00,300.72 C340.98,303.17,329.49,309.23,322.00,313.73 C314.51,318.24,253.05,359.85,249.00,362.27 C244.95,364.68,236.00,369.19,236.00,369.19 Z" fill="url(#logo-v4-circular-dark-h-gradient-blue)" />
+      <path id="logo-v4-circular-dark-h-band-cyan" d="M237.00,405.23 C237.00,405.23,234.55,404.00,234.55,404.00 C234.55,404.00,234.35,384.71,234.53,384.00 C234.72,383.29,235.15,382.54,235.64,382.00 C236.14,381.46,314.03,329.65,324.00,323.73 C333.97,317.82,350.09,309.39,356.00,306.75 C361.91,304.10,370.57,301.19,375.00,299.75 C379.43,298.30,384.46,296.79,389.00,295.75 C393.54,294.70,407.90,291.98,413.00,291.53 C418.10,291.09,425.12,291.21,429.00,291.53 C432.88,291.85,437.42,292.71,441.00,293.53 C444.58,294.35,448.63,295.30,452.00,296.75 C455.37,298.19,460.32,301.06,462.00,302.52 C463.68,303.98,465.09,306.12,466.27,308.00 C467.44,309.88,472.17,320.00,472.17,320.00 C472.17,320.00,471.00,321.15,471.00,321.15 C471.00,321.15,464.36,317.14,461.00,315.75 C457.64,314.35,451.61,312.30,447.00,311.53 C442.39,310.76,429.10,309.98,421.00,310.50 C412.90,311.02,403.18,313.00,396.00,314.75 C388.82,316.49,380.86,319.01,374.00,321.75 C367.14,324.49,348.93,333.21,339.00,338.73 C329.07,344.26,318.47,351.45,309.00,357.73 C299.53,364.02,277.74,379.91,268.00,386.27 C258.26,392.62,237.00,405.23,237.00,405.23 Z" fill="url(#logo-v4-circular-dark-h-gradient-cyan)" />
+      <path id="logo-v4-circular-dark-h-band-green" d="M237.00,442.25 C236.37,442.38,235.00,442.06,235.00,442.06 C235.00,442.06,234.58,440.67,234.50,440.00 C234.42,439.33,234.18,422.12,234.53,421.00 C234.88,419.88,235.79,418.82,236.63,418.00 C237.47,417.18,324.65,359.09,330.00,355.73 C335.35,352.38,341.43,348.71,347.00,345.73 C352.57,342.76,366.38,335.44,376.00,331.75 C385.62,328.05,406.26,322.53,411.00,321.53 C415.74,320.53,421.17,319.85,426.00,319.53 C430.83,319.21,437.58,319.02,443.00,319.53 C448.42,320.04,456.31,321.58,460.00,322.75 C463.69,323.91,468.15,325.92,471.00,327.73 C473.85,329.55,476.97,331.93,479.00,334.63 C481.03,337.33,483.90,345.06,484.25,346.00 C484.61,346.94,485.17,349.00,485.17,349.00 C485.17,349.00,484.00,350.17,484.00,350.17 C484.00,350.17,477.36,346.14,474.00,344.75 C470.64,343.35,464.62,341.29,460.00,340.53 C455.38,339.77,435.15,338.93,428.00,339.50 C420.85,340.07,411.20,342.44,406.00,343.75 C400.80,345.06,395.03,346.89,390.00,348.75 C384.97,350.60,375.54,354.48,369.00,357.73 C362.46,360.99,349.75,368.26,341.00,373.73 C332.25,379.21,259.27,430.08,254.00,433.27 C248.73,436.45,237.63,442.13,237.00,442.25 Z" fill="url(#logo-v4-circular-dark-h-gradient-green)" />
+      <path id="logo-v4-circular-dark-h-band-yellow" d="M236.00,480.19 C236.00,480.19,234.75,478.81,234.50,478.00 C234.26,477.19,235.00,455.90,235.00,455.90 C235.00,455.90,263.83,438.90,277.00,430.27 C290.17,421.63,329.95,392.55,339.00,386.73 C348.05,380.92,363.31,372.19,368.00,369.73 C372.69,367.27,378.12,364.81,383.00,362.75 C387.88,360.68,398.65,356.42,404.00,354.75 C409.35,353.07,415.61,351.51,421.00,350.53 C426.39,349.55,433.21,348.81,438.00,348.53 C442.79,348.25,448.22,348.06,453.00,348.53 C457.78,349.01,464.02,350.18,469.00,351.75 C473.98,353.31,482.02,356.72,485.00,358.73 C487.98,360.75,491.65,364.78,493.00,366.63 C494.35,368.48,495.36,370.89,496.25,373.00 C497.15,375.11,500.77,386.00,500.77,386.00 C500.77,386.00,482.38,375.17,479.00,373.75 C475.62,372.32,471.59,371.27,468.00,370.53 C464.41,369.79,457.13,368.69,452.00,368.53 C446.87,368.37,441.09,368.90,436.00,369.53 C430.91,370.16,425.05,371.24,420.00,372.53 C414.95,373.83,404.87,376.98,398.00,379.75 C391.13,382.51,375.93,390.08,371.00,392.73 C366.07,395.39,360.70,398.69,356.00,401.73 C351.30,404.78,290.73,447.88,281.00,454.27 C271.27,460.65,254.38,470.85,250.00,473.27 C245.62,475.68,236.00,480.19,236.00,480.19 Z" fill="url(#logo-v4-circular-dark-h-gradient-yellow)" />
+      <path id="logo-v4-circular-dark-h-band-orange" d="M247.00,509.25 C243.83,509.68,237.71,509.65,237.00,509.47 C236.29,509.29,235.00,508.33,235.00,508.33 C235.00,508.33,234.36,495.71,234.53,495.00 C234.70,494.29,235.13,493.52,235.64,493.00 C236.16,492.48,266.88,476.15,281.00,467.27 C295.12,458.38,360.26,411.02,371.00,404.73 C381.74,398.45,401.31,389.65,406.00,387.75 C410.69,385.84,416.09,383.99,421.00,382.75 C425.91,381.50,441.17,378.86,445.00,378.53 C448.83,378.20,453.17,378.27,457.00,378.53 C460.83,378.79,470.72,380.26,473.00,380.75 C475.28,381.23,477.85,381.85,480.00,382.75 C482.15,383.64,495.03,390.32,498.37,393.00 C501.71,395.68,505.56,400.35,507.27,403.00 C508.97,405.65,510.21,409.03,511.25,412.00 C512.30,414.97,515.38,426.75,515.47,428.00 C515.55,429.25,515.00,431.89,515.00,431.89 C515.00,431.89,511.51,426.32,509.48,424.00 C507.46,421.68,497.15,412.02,494.37,410.00 C491.59,407.98,487.78,405.97,485.00,404.75 C482.22,403.52,478.97,402.38,476.00,401.75 C473.03,401.12,456.22,399.52,453.00,399.53 C449.78,399.54,446.17,400.00,443.00,400.53 C439.83,401.06,427.84,403.38,421.00,405.75 C414.16,408.12,398.31,415.86,393.00,418.73 C387.69,421.61,382.03,425.40,377.00,428.73 C371.97,432.07,356.18,442.96,346.63,450.00 C337.08,457.04,322.92,468.85,314.37,475.00 C305.83,481.15,294.43,488.96,287.00,493.27 C279.57,497.57,267.95,503.42,263.00,505.25 C258.05,507.08,250.17,508.83,247.00,509.25 Z" fill="url(#logo-v4-circular-dark-h-gradient-orange)" />
     </g>
   </g>
-  <g id="circular-dark-badge-wordmark" aria-label="Full hyperproc wordmark" transform="translate(122 555) scale(.29)" inkscape:groupmode="layer" inkscape:label="Full hyperproc wordmark">
-    <g id="circular-dark-badge-word-stems" aria-label="Spectral h — editable stems" fill="url(#circular-dark-word-gradient)">
-      <rect x="60" y="50" width="70" height="324" rx="9" />
-      <rect x="263" y="181" width="63" height="211" rx="8" />
-    </g>
-    <g id="circular-dark-badge-word-lettering" aria-label="yperpr and c — custom editable outlined letters" fill="url(#circular-dark-word-gradient)" fill-rule="evenodd">
-      <path d="M0 0 H65 L108 114 L150 0 H215 L116 245 H47 L82 185 Z" id="circular-dark-badge-word-letter-y" aria-label="y" transform="translate(299 174)" fill="url(#circular-dark-badge-word-gradient-y)" />
-      <path d="M0 7 H62 V24 C78 8 100 0 127 0 C186 0 212 48 212 107 C212 169 177 212 123 212 C97 212 78 203 62 189 V262 H0 Z M69 106 C69 135 85 158 110 158 C136 158 151 135 151 106 C151 77 136 54 110 54 C85 54 69 77 69 106 Z" id="circular-dark-badge-word-letter-p1" aria-label="p" transform="translate(511 174)" fill="url(#circular-dark-badge-word-gradient-p1)" />
-      <path d="M195 124 H63 C68 148 84 166 112 166 C137 166 151 157 164 143 L196 179 C175 201 146 213 107 213 C43 213 0 172 0 107 C0 44 42 0 102 0 C163 0 198 45 198 108 Z M63 81 H137 C133 60 121 47 102 47 C82 47 68 59 63 81 Z" id="circular-dark-badge-word-letter-e" aria-label="e" transform="translate(732 174)" fill="url(#circular-dark-badge-word-gradient-e)" />
-      <path d="M0 7 H61 V28 C79 6 99 -3 126 2 L116 65 C99 60 81 63 68 77 C63 83 61 95 61 115 V206 H0 Z" id="circular-dark-badge-word-letter-r1" aria-label="r" transform="translate(943 174)" fill="url(#circular-dark-badge-word-gradient-r1)" />
-      <path d="M0 7 H62 V24 C78 8 100 0 127 0 C186 0 212 48 212 107 C212 169 177 212 123 212 C97 212 78 203 62 189 V262 H0 Z M69 106 C69 135 85 158 110 158 C136 158 151 135 151 106 C151 77 136 54 110 54 C85 54 69 77 69 106 Z" id="circular-dark-badge-word-letter-p2" aria-label="p" transform="translate(1081 174)" fill="url(#circular-dark-badge-word-gradient-p2)" />
-      <path d="M0 7 H61 V28 C79 6 99 -3 126 2 L116 65 C99 60 81 63 68 77 C63 83 61 95 61 115 V206 H0 Z" id="circular-dark-badge-word-letter-r2" aria-label="r" transform="translate(1305 174)" fill="url(#circular-dark-badge-word-gradient-r2)" />
-      <path d="M190 38 L145 78 C132 62 118 54 99 54 C74 54 61 76 61 106 C61 137 76 160 101 160 C121 160 134 151 147 136 L191 176 C171 200 141 213 103 213 C42 213 0 169 0 107 C0 44 40 0 103 0 C139 0 170 13 190 38 Z" id="circular-dark-badge-word-letter-c" aria-label="c" transform="translate(1665 174)" fill="url(#circular-dark-badge-word-gradient-c)" />
-    </g>
-    <g id="circular-dark-badge-word-ribbons" aria-label="Seven editable spectral ribbons">
-      <path d="M60 206 C128 159 187 104 236 124 C268 137 292 176 309 207 C339 267 372 321 396 306 L414 286 L406 309 C391 331 369 338 345 308 C325 275 318 252 309 228 C284 188 264 159 234 145 C187 125 129 183 60 228 Z" id="circular-dark-badge-word-ribbon-1" fill="#6B3ED7" />
-      <path d="M60 230 C128 183 187 128 236 148 C268 161 292 200 309 231 C339 283 372 329 396 314 L414 294 L406 317 C391 339 369 346 345 324 C325 299 318 276 309 252 C284 212 264 183 234 169 C187 149 129 207 60 252 Z" id="circular-dark-badge-word-ribbon-2" fill="#1F6FB2" />
-      <path d="M60 254 C128 207 187 152 236 172 C268 185 292 224 309 255 C339 299 372 337 396 322 L414 302 L406 325 C391 347 369 354 345 340 C325 323 318 300 309 276 C284 236 264 207 234 193 C187 173 129 231 60 276 Z" id="circular-dark-badge-word-ribbon-3" fill="#14A3A3" />
-      <path d="M60 278 C128 231 187 176 236 196 C268 209 292 248 309 279 C339 315 372 345 396 330 L414 310 L406 333 C391 355 369 362 345 356 C325 347 318 324 309 300 C284 260 264 231 234 217 C187 197 129 255 60 300 Z" id="circular-dark-badge-word-ribbon-4" fill="#4CAF7A" />
-      <path d="M60 302 C128 255 187 200 236 220 C268 233 292 272 309 303 C339 331 372 353 396 338 L414 318 L406 341 C391 363 369 370 345 372 C325 371 318 348 309 324 C284 284 264 255 234 241 C187 221 129 279 60 324 Z" id="circular-dark-badge-word-ribbon-5" fill="#A7D38B" />
-      <path d="M60 326 C128 279 187 224 236 244 C268 257 292 296 309 327 C339 347 372 361 396 346 L414 326 L406 349 C391 371 369 378 345 388 C325 395 318 372 309 348 C284 308 264 279 234 265 C187 245 129 303 60 348 Z" id="circular-dark-badge-word-ribbon-6" fill="#F4C542" />
-      <path d="M60 350 C128 303 187 248 236 268 C268 281 292 320 309 351 C339 363 372 369 396 354 L414 334 L406 357 C391 379 369 386 345 404 C325 419 318 396 309 372 C284 332 264 303 234 289 C187 269 129 327 60 372 Z" id="circular-dark-badge-word-ribbon-7" fill="#F07F3C" />
-    </g>
-    <g id="circular-dark-badge-word-orbit-back" aria-label="Editable rear orbit" transform="translate(1549 281) scale(1)" fill="none">
-      <ellipse rx="168" ry="31" transform="rotate(-33)" stroke="#A7E0E1" stroke-width="3" opacity=".6" />
-    </g>
-    <g id="circular-dark-badge-word-earth" aria-label="Earth o — editable landscape and ring" transform="translate(1549 281) scale(1.0)">
-      <circle r="110" fill="url(#circular-dark-earth-gradient)" />
-      <g id="circular-dark-badge-word-landscape" aria-label="Sky, mountains, terrain, and trees" clip-path="url(#circular-dark-badge-word-landscape-clip)">
-        <circle r="65" fill="#DCF1F6" />
-        <circle cx="26" cy="-33" r="8" fill="#FFFFFF" />
-        <path d="M-76 14 L-29 -22 L12 8 L46 -6 L84 34 V88 H-76 Z" fill="#A5D0B4" />
-        <path d="M-76 45 L-28 7 L9 22 L47 2 L82 38 V89 H-76 Z" fill="#73B79A" />
-        <path d="M-81 56 Q-36 20 3 44 Q39 57 82 22 V89 H-81 Z" fill="#40977D" />
-        <path d="M-81 70 Q-22 38 11 60 Q43 74 81 43 V90 H-81 Z" fill="#1E725F" />
-        <g id="circular-dark-badge-word-tree--49-49" aria-label="Editable conifer" transform="translate(-49 49) scale(0.3)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+  <g id="logo-v4-circular-dark-earth-art" transform="translate(-1177 -16) scale(1.02)" inkscape:groupmode="layer" inkscape:label="Reference-derived editable logo">
+    <g id="logo-v4-circular-dark-earth-lettering" fill-rule="evenodd" inkscape:groupmode="layer" inkscape:label="Original reference letter contours" />
+    <g id="logo-v4-circular-dark-earth-spectrum" fill-rule="evenodd" inkscape:groupmode="layer" inkscape:label="Six spectral ribbons from the reference" />
+    <g id="logo-v4-circular-dark-earth-earth-satellite" inkscape:groupmode="layer" inkscape:label="Earth, two reference conifers, orbit and satellite">
+      <g id="logo-v4-circular-dark-earth-earth" clip-path="url(#logo-v4-circular-dark-earth-earth-clip)">
+        <ellipse id="logo-v4-circular-dark-earth-earth-ring" cx="1623" cy="397" rx="122" ry="121" fill="url(#logo-v4-circular-dark-earth-earth-fill)" />
+        <circle id="logo-v4-circular-dark-earth-sky" cx="1623" cy="397" r="73" fill="url(#logo-v4-circular-dark-earth-sky-fill)" />
+        <g id="logo-v4-circular-dark-earth-mountains" clip-path="url(#logo-v4-circular-dark-earth-window-clip)">
+          <path id="logo-v4-circular-dark-earth-distant-mountain" d="M1547 409 L1558 399 L1594 373 L1623 390 L1641 398 L1658 410 L1697 390 L1710 459 L1538 484 Z" fill="#A8D3BA" />
+          <path id="logo-v4-circular-dark-earth-near-mountain" d="M1540 447 Q1572 425 1603 431 L1649 403 L1678 409 L1706 435 L1710 487 L1535 487 Z" fill="#7FBF9E" />
         </g>
-        <g id="circular-dark-badge-word-tree--31-48" aria-label="Editable conifer" transform="translate(-31 48) scale(0.45)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+        <path id="logo-v4-circular-dark-earth-right-ridge" d="M1634 438 L1699 371 L1722 389 L1756 417 L1758 519 L1578 531 L1574 486 Z" fill="#52A765" opacity=".76" />
+        <path id="logo-v4-circular-dark-earth-forest-slope" d="M1590 458 Q1622 442 1644 427 Q1665 442 1693 436 L1748 466 L1765 542 L1559 539 L1559 480 Z" fill="#247B5C" opacity=".76" />
+        <path id="logo-v4-circular-dark-earth-foreground" d="M1519 482 Q1571 467 1625 485 Q1681 510 1740 469 L1775 548 L1478 550 Z" fill="#0B4C42" opacity=".67" />
+        <g id="logo-v4-circular-dark-earth-tree-tall" transform="translate(1663 447) scale(0.79)">
+          <path d="M0 -38 L-8 -21 L-5 -22 L-14 -5 L-10 -6 L-21 13 L-15 12 L-25 29 L-3 25 V33 H3 V25 L22 28 L15 14 L19 15 L10 -5 L13 -4 L4 -22 L7 -21 Z" fill="#155949" stroke="#D9E6D2" stroke-width="2.3" stroke-linejoin="round" />
         </g>
-        <g id="circular-dark-badge-word-tree--12-54" aria-label="Editable conifer" transform="translate(-12 54) scale(0.38)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-badge-word-tree-5-46" aria-label="Editable conifer" transform="translate(5 46) scale(0.57)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-badge-word-tree-23-51" aria-label="Editable conifer" transform="translate(23 51) scale(0.45)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-badge-word-tree-41-47" aria-label="Editable conifer" transform="translate(41 47) scale(0.54)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
-        </g>
-        <g id="circular-dark-badge-word-tree-57-54" aria-label="Editable conifer" transform="translate(57 54) scale(0.37)">
-          <path d="M0 -37 L-11 -15 H-7 L-18 3 H-11 L-24 24 H-4 V35 H4 V24 H24 L11 3 H18 L7 -15 H11 Z" fill="#155C4B" stroke="#C5E5D0" stroke-width="2.7" stroke-linejoin="round" />
+        <g id="logo-v4-circular-dark-earth-tree-short" transform="translate(1686 459) scale(0.64)">
+          <path d="M0 -38 L-8 -21 L-5 -22 L-14 -5 L-10 -6 L-21 13 L-15 12 L-25 29 L-3 25 V33 H3 V25 L22 28 L15 14 L19 15 L10 -5 L13 -4 L4 -22 L7 -21 Z" fill="#155949" stroke="#D9E6D2" stroke-width="2.3" stroke-linejoin="round" />
         </g>
       </g>
-    </g>
-    <g id="circular-dark-badge-word-orbit-front" aria-label="Editable foreground orbit" transform="translate(1549 281) scale(1)" fill="none">
-      <path d="M-149 53 C-178 126 49 2 129 -65 Q147 -83 149 -112" stroke="#A7E0E1" stroke-width="5" stroke-linecap="round" />
-      <path d="M-149 55 C-173 118 52 0 126 -62" stroke="#B3DBDF" stroke-width="1.6" stroke-linecap="round" />
-    </g>
-    <g id="circular-dark-badge-word-satellite" aria-label="Satellite — body and solar-panel layers" transform="translate(1698 120) rotate(25) scale(0.73)">
-      <path d="M-26 0 H-48 M26 0 H48" stroke="#619BD1" stroke-width="7" />
-      <g id="circular-dark-badge-word-panel--1" aria-label="Editable solar panel">
-        <rect x="-88" y="-24" width="46" height="48" rx="2" fill="#3889E4" stroke="#619BD1" stroke-width="2" />
-        <path d="M-65 -24 V24 M-88 0 H-42" stroke="#7CBBEE" stroke-width="1.5" />
+      <g id="logo-v4-circular-dark-earth-orbit" fill="none" stroke-linecap="round">
+        <path id="logo-v4-circular-dark-earth-orbit-highlight" d="M1479 456 C1459 522 1690 395 1748 321 C1768 298 1778 280 1771 270" stroke="#DCECEE" stroke-width="6" />
+        <path id="logo-v4-circular-dark-earth-orbit-line" d="M1479 456 C1459 522 1690 395 1748 321 C1768 298 1778 280 1771 270" stroke="#71BABC" stroke-width="3" />
       </g>
-      <g id="circular-dark-badge-word-panel-1" aria-label="Editable solar panel">
-        <rect x="42" y="-24" width="46" height="48" rx="2" fill="#3889E4" stroke="#619BD1" stroke-width="2" />
-        <path d="M65 -24 V24 M42 0 H88" stroke="#7CBBEE" stroke-width="1.5" />
+      <g id="logo-v4-circular-dark-earth-satellite" transform="translate(1788 229) rotate(25)">
+        <path d="M-46 0 H-28 M28 0 H46" stroke="#7DAAC4" stroke-width="5" />
+        <g id="logo-v4-circular-dark-earth-solar-panel--1">
+          <rect x="-89" y="-23" width="46" height="46" fill="#195CC7" rx="1" />
+          <path d="M-66 -23 V23 M-89 0 H-43" stroke="#C1D1DF" stroke-width="1.6" opacity=".8" />
+        </g>
+        <g id="logo-v4-circular-dark-earth-solar-panel-1">
+          <rect x="43" y="-23" width="46" height="46" fill="#195CC7" rx="1" />
+          <path d="M66 -23 V23 M43 0 H89" stroke="#C1D1DF" stroke-width="1.6" opacity=".8" />
+        </g>
+        <rect id="logo-v4-circular-dark-earth-satellite-body" x="-27" y="-27" width="54" height="54" rx="11" fill="#7DAAC4" />
+        <circle id="logo-v4-circular-dark-earth-satellite-lens" r="8" fill="#164C91" />
+        <ellipse id="logo-v4-circular-dark-earth-antenna" cx="0" cy="50" rx="19" ry="11" fill="#7DAAC4" />
+        <path d="M-12 57 Q-1 48 8 64" fill="none" stroke="#428B8C" stroke-width="5" stroke-linecap="round" />
       </g>
-      <rect x="-26" y="-27" width="52" height="54" rx="12" fill="#619BD1" />
-      <circle cy="3" r="8" fill="#3889E4" />
-      <path d="M0 27 V41" stroke="#619BD1" stroke-width="6" />
-      <path d="M-13 43 Q0 57 13 43" fill="none" stroke="#A7E0E1" stroke-width="5" />
+    </g>
+  </g>
+  <g id="logo-v4-circular-dark-name-art" transform="translate(74 520) scale(.3)" inkscape:groupmode="layer" inkscape:label="Reference-derived editable logo">
+    <g id="logo-v4-circular-dark-name-lettering" fill-rule="evenodd" inkscape:groupmode="layer" inkscape:label="Original reference letter contours">
+      <path id="logo-v4-circular-dark-name-letter-y" d="M545.00,558.25 C541.07,558.73,495.51,558.00,495.51,558.00 C495.51,558.00,523.48,529.39,529.00,522.37 C534.52,515.35,540.06,506.43,544.27,499.00 C548.47,491.57,555.76,483.54,555.93,475.00 C556.10,466.46,477.16,295.00,477.16,295.00 C477.16,295.00,480.40,293.74,482.00,293.50 C483.60,293.26,534.61,293.17,536.00,293.50 C537.39,293.83,539.03,294.45,540.00,295.50 C540.97,296.55,579.58,393.70,580.75,396.00 C581.92,398.30,585.00,402.85,585.00,402.85 C585.00,402.85,586.67,401.01,587.25,400.00 C587.84,398.99,627.19,297.39,628.52,296.00 C629.85,294.61,632.12,293.93,634.00,293.53 C635.88,293.13,691.00,293.94,691.00,293.94 C691.00,293.94,690.77,298.11,690.25,300.00 C689.74,301.89,653.38,386.42,640.25,416.00 C627.13,445.58,601.81,501.27,598.27,508.00 C594.72,514.73,590.51,522.24,586.00,528.37 C581.49,534.50,572.47,544.50,569.00,547.48 C565.53,550.46,560.63,553.68,557.00,555.25 C553.37,556.83,548.93,557.78,545.00,558.25 Z" fill="url(#logo-v4-circular-dark-name-gradient-y)" />
+      <path id="logo-v4-circular-dark-name-letter-p-first" d="M732.00,558.06 C732.00,558.06,678.11,558.74,677.00,558.50 C675.89,558.26,673.77,557.00,673.77,557.00 C673.77,557.00,674.13,390.79,674.50,385.00 C674.87,379.21,675.54,372.68,676.75,367.00 C677.95,361.32,681.14,350.35,683.75,344.00 C686.36,337.65,691.54,328.41,693.73,325.00 C695.93,321.59,698.77,317.98,701.52,315.00 C704.27,312.02,710.93,305.45,716.00,301.73 C721.07,298.02,728.58,293.34,735.00,290.75 C741.42,288.15,749.15,286.51,756.00,285.53 C762.85,284.55,776.47,284.27,781.00,284.53 C785.53,284.80,790.58,285.71,795.00,286.75 C799.42,287.78,806.10,289.56,811.00,291.75 C815.90,293.93,828.80,301.61,833.37,305.00 C837.94,308.39,842.68,312.77,846.48,317.00 C850.29,321.23,855.06,327.51,858.27,333.00 C861.47,338.49,865.23,346.78,867.25,353.00 C869.28,359.22,870.79,366.49,871.47,373.00 C872.15,379.51,871.82,395.80,871.47,400.00 C871.11,404.20,870.28,408.91,869.25,413.00 C868.23,417.09,864.66,428.79,862.25,434.00 C859.85,439.21,856.36,444.72,853.00,449.37 C849.64,454.02,844.67,460.14,840.00,464.48 C835.33,468.83,825.44,476.12,820.00,479.28 C814.56,482.45,806.98,485.67,802.00,487.25 C797.02,488.84,791.20,489.98,786.00,490.50 C780.80,491.02,769.94,491.32,764.00,490.47 C758.06,489.62,749.29,486.47,746.00,485.25 C742.71,484.04,737.00,480.81,736.00,480.75 C735.00,480.69,733.00,481.67,733.00,481.67 C733.00,481.67,732.00,558.06,732.00,558.06 Z M780.50,430.00 C784.72,429.08,792.03,426.10,796.00,423.27 C799.97,420.43,804.24,414.95,806.27,412.00 C808.29,409.05,810.30,404.48,811.25,402.00 C812.21,399.52,813.11,396.63,813.47,394.00 C813.83,391.37,814.48,382.09,813.47,377.00 C812.46,371.91,809.42,365.69,807.27,362.00 C805.11,358.31,802.21,354.34,799.00,351.52 C795.79,348.70,789.96,345.21,786.00,343.75 C782.04,342.28,776.59,341.48,773.00,341.53 C769.41,341.58,764.33,343.02,762.00,343.75 C759.67,344.47,757.07,345.45,755.00,346.73 C752.93,348.02,744.53,353.93,741.00,358.63 C737.47,363.33,733.99,371.37,732.75,377.00 C731.50,382.63,731.40,389.35,732.53,395.00 C733.66,400.65,738.25,410.52,740.73,414.00 C743.22,417.48,747.84,420.99,750.63,423.00 C753.42,425.01,757.85,427.36,760.00,428.25 C762.15,429.15,764.69,429.95,767.00,430.25 C769.31,430.56,776.28,430.92,780.50,430.00 Z" fill="url(#logo-v4-circular-dark-name-gradient-p-first)" />
+      <path id="logo-v4-circular-dark-name-letter-e" d="M997.00,492.25 C991.18,492.76,981.14,493.11,974.00,492.47 C966.86,491.83,957.94,489.97,952.00,488.25 C946.06,486.54,938.50,483.48,934.00,481.24 C929.50,479.00,924.69,475.95,920.63,473.00 C916.56,470.05,910.58,465.32,906.52,461.00 C902.45,456.68,896.84,449.15,893.73,444.00 C890.63,438.85,887.69,432.59,885.75,427.00 C883.80,421.41,882.10,412.49,881.53,409.00 C880.96,405.51,880.60,401.53,880.50,398.00 C880.40,394.47,880.39,376.54,881.53,369.00 C882.67,361.46,885.49,351.73,887.75,346.00 C890.00,340.27,894.80,332.04,896.73,329.00 C898.67,325.96,901.15,322.72,903.52,320.00 C905.88,317.28,911.13,311.71,915.00,308.52 C918.87,305.32,923.68,302.26,928.00,299.73 C932.32,297.21,937.32,294.53,942.00,292.75 C946.68,290.97,957.46,287.68,965.00,286.53 C972.54,285.38,984.86,285.17,991.00,285.53 C997.14,285.89,1005.75,287.51,1010.00,288.53 C1014.25,289.55,1018.97,291.04,1023.00,292.75 C1027.03,294.45,1036.60,299.01,1042.37,303.00 C1048.14,306.99,1057.28,315.48,1060.48,319.00 C1063.69,322.52,1067.12,327.62,1069.27,331.00 C1071.41,334.38,1073.66,338.32,1075.25,342.00 C1076.85,345.68,1078.20,350.09,1079.25,354.00 C1080.31,357.91,1082.79,367.49,1083.47,374.00 C1084.15,380.51,1083.71,405.18,1083.47,406.00 C1083.22,406.82,1082.75,407.83,1082.00,408.23 C1081.25,408.64,945.02,408.30,944.00,408.50 C942.98,408.70,941.00,409.72,941.00,409.72 C941.00,409.72,943.55,418.40,945.73,422.00 C947.91,425.60,951.13,429.40,954.50,432.00 C957.87,434.60,966.60,439.56,973.00,441.25 C979.40,442.95,992.73,442.74,996.00,442.47 C999.27,442.20,1002.89,441.28,1006.00,440.25 C1009.11,439.23,1020.11,434.68,1024.00,432.27 C1027.89,429.85,1035.00,423.13,1035.00,423.13 C1035.00,423.13,1072.19,453.00,1072.19,453.00 C1072.19,453.00,1065.03,461.94,1061.00,465.48 C1056.97,469.03,1047.88,475.64,1041.00,479.27 C1034.12,482.89,1020.63,487.72,1015.00,489.25 C1009.37,490.79,1002.82,491.75,997.00,492.25 Z M1023.29,367.00 C1023.29,367.00,1023.14,361.42,1022.25,359.00 C1021.37,356.58,1015.18,346.96,1013.00,344.64 C1010.82,342.33,1007.83,340.21,1005.00,338.76 C1002.17,337.31,996.32,335.22,992.00,334.53 C987.68,333.84,980.01,333.69,975.00,334.53 C969.99,335.38,963.19,338.02,960.00,339.73 C956.81,341.45,953.02,344.54,951.00,346.63 C948.98,348.71,947.15,351.47,945.73,354.00 C944.32,356.53,941.61,363.24,941.53,364.00 C941.46,364.76,941.57,365.74,942.00,366.33 C942.43,366.93,943.29,367.28,944.00,367.47 C944.71,367.65,1023.29,367.00,1023.29,367.00 Z" fill="url(#logo-v4-circular-dark-name-gradient-e)" />
+      <path id="logo-v4-circular-dark-name-letter-r-first" d="M1147.00,491.23 C1145.65,491.80,1096.89,491.74,1096.00,491.50 C1095.11,491.25,1093.55,490.00,1093.55,490.00 C1093.55,490.00,1093.05,311.22,1093.75,308.00 C1094.44,304.78,1096.23,300.95,1098.00,298.63 C1099.77,296.30,1102.41,294.11,1105.00,292.76 C1107.59,291.41,1113.06,290.05,1117.00,289.53 C1120.94,289.01,1145.03,289.44,1146.00,289.53 C1146.97,289.61,1148.34,289.65,1149.00,290.06 C1149.66,290.46,1150.22,291.26,1150.47,292.00 C1150.72,292.74,1150.28,314.28,1150.53,315.00 C1150.78,315.72,1152.00,316.86,1152.00,316.86 C1152.00,316.86,1159.43,308.24,1163.63,305.00 C1167.82,301.76,1173.40,298.68,1178.00,296.75 C1182.60,294.81,1188.06,293.18,1193.00,292.53 C1197.94,291.88,1210.84,292.18,1212.00,292.77 C1213.16,293.35,1214.06,294.76,1214.47,296.00 C1214.87,297.24,1215.02,304.24,1214.25,308.00 C1213.49,311.76,1198.77,347.34,1198.23,348.00 C1197.69,348.66,1196.80,349.17,1196.00,349.47 C1195.20,349.77,1183.55,350.63,1180.00,351.75 C1176.45,352.86,1172.64,354.81,1169.63,357.00 C1166.62,359.19,1161.46,363.96,1158.73,368.00 C1156.01,372.04,1153.33,380.13,1152.75,382.00 C1152.16,383.87,1151.70,386.05,1151.50,388.00 C1151.30,389.95,1151.67,481.36,1151.47,483.00 C1151.27,484.64,1150.95,486.73,1150.23,488.00 C1149.52,489.27,1148.35,490.67,1147.00,491.23 Z" fill="url(#logo-v4-circular-dark-name-gradient-r-first)" />
+      <path id="logo-v4-circular-dark-name-letter-p-second" d="M1262.00,558.06 C1262.00,558.06,1207.89,558.74,1207.00,558.50 C1206.11,558.25,1205.06,557.76,1204.55,557.00 C1204.03,556.24,1203.48,552.63,1203.50,551.00 C1203.52,549.37,1204.35,547.62,1204.50,546.00 C1204.65,544.38,1203.36,489.26,1203.50,487.00 C1203.64,484.74,1204.34,482.26,1204.50,480.00 C1204.66,477.74,1204.18,384.83,1204.50,380.00 C1204.83,375.17,1205.62,369.76,1206.53,365.00 C1207.44,360.24,1209.03,353.33,1210.75,348.00 C1212.46,342.67,1216.23,332.86,1218.73,328.00 C1221.24,323.14,1224.56,317.89,1228.00,313.63 C1231.44,309.37,1236.68,304.12,1240.63,301.00 C1244.57,297.88,1249.43,294.86,1254.00,292.76 C1258.57,290.67,1272.85,286.44,1276.00,285.75 C1279.15,285.05,1282.78,284.63,1286.00,284.50 C1289.22,284.37,1304.46,284.55,1311.00,285.53 C1317.54,286.51,1326.69,289.20,1331.00,290.75 C1335.31,292.29,1340.05,294.42,1344.00,296.73 C1347.95,299.05,1357.75,305.56,1363.00,310.52 C1368.25,315.48,1375.42,325.27,1377.27,328.00 C1379.11,330.73,1380.86,334.02,1382.25,337.00 C1383.65,339.98,1387.90,350.61,1389.25,355.00 C1390.60,359.39,1391.70,364.47,1392.47,369.00 C1393.24,373.53,1394.41,381.20,1394.47,387.00 C1394.53,392.80,1393.40,403.47,1392.47,409.00 C1391.54,414.53,1390.08,420.70,1388.25,426.00 C1386.42,431.30,1382.42,440.78,1379.27,446.00 C1376.11,451.22,1370.65,457.45,1367.50,461.00 C1364.35,464.55,1360.30,468.71,1357.00,471.48 C1353.70,474.26,1349.76,477.16,1346.00,479.27 C1342.24,481.37,1330.92,486.51,1325.00,488.25 C1319.08,489.99,1311.44,491.17,1306.00,491.47 C1300.56,491.77,1294.34,491.57,1289.00,490.47 C1283.66,489.37,1265.70,481.79,1265.00,481.81 C1264.30,481.83,1263.00,482.67,1263.00,482.67 C1263.00,482.67,1262.00,558.06,1262.00,558.06 Z M1305.50,430.00 C1309.69,429.16,1314.35,427.50,1318.00,425.27 C1321.65,423.03,1327.22,417.58,1329.27,415.00 C1331.31,412.42,1333.03,408.78,1334.25,406.00 C1335.48,403.22,1336.65,399.97,1337.25,397.00 C1337.86,394.03,1338.57,384.27,1338.47,382.00 C1338.37,379.73,1337.89,377.18,1337.25,375.00 C1336.62,372.82,1334.41,366.57,1332.28,363.00 C1330.16,359.43,1326.62,354.56,1323.00,351.52 C1319.38,348.48,1313.91,345.21,1309.00,343.75 C1304.09,342.29,1297.13,341.70,1292.00,342.53 C1286.87,343.36,1281.26,345.76,1277.00,348.73 C1272.74,351.71,1268.42,356.90,1265.73,361.00 C1263.05,365.10,1260.66,370.23,1259.53,375.00 C1258.40,379.77,1257.66,389.58,1258.53,395.00 C1259.41,400.42,1262.87,407.70,1264.73,411.00 C1266.60,414.30,1270.67,419.02,1272.00,420.36 C1273.33,421.69,1275.00,423.04,1276.63,424.00 C1278.25,424.96,1287.75,429.69,1292.00,430.47 C1296.25,431.25,1301.31,430.84,1305.50,430.00 Z" fill="url(#logo-v4-circular-dark-name-gradient-p-second)" />
+      <path id="logo-v4-circular-dark-name-letter-r-second" d="M1460.00,490.06 C1460.00,490.06,1407.11,490.74,1406.00,490.50 C1404.89,490.26,1402.77,489.00,1402.77,489.00 C1402.77,489.00,1402.30,312.95,1402.50,311.00 C1402.70,309.05,1403.04,306.83,1403.75,305.00 C1404.46,303.17,1406.44,299.15,1408.50,297.00 C1410.56,294.85,1416.49,291.40,1418.00,290.75 C1419.51,290.09,1421.37,289.73,1423.00,289.53 C1424.63,289.33,1452.97,289.10,1454.00,289.53 C1455.03,289.96,1456.04,290.97,1456.47,292.00 C1456.90,293.03,1456.29,308.29,1456.53,309.00 C1456.78,309.71,1458.00,310.85,1458.00,310.85 C1458.00,310.85,1464.31,302.65,1468.00,299.52 C1471.69,296.39,1477.11,292.75,1482.00,290.75 C1486.89,288.74,1495.91,287.05,1501.00,286.53 C1506.09,286.01,1516.01,286.35,1517.00,286.75 C1517.99,287.14,1519.03,288.02,1519.46,289.00 C1519.88,289.98,1521.64,307.70,1519.23,316.00 C1516.83,324.30,1507.63,338.77,1503.07,342.00 C1498.50,345.23,1489.60,344.31,1486.00,345.75 C1482.40,347.18,1478.57,349.54,1475.63,352.00 C1472.69,354.46,1469.76,357.75,1467.73,361.00 C1465.71,364.25,1463.84,368.99,1462.75,373.00 C1461.65,377.01,1460.48,387.05,1460.50,389.00 C1460.53,390.95,1461.44,393.05,1461.50,395.00 C1461.56,396.95,1460.63,401.79,1460.50,405.00 C1460.37,408.21,1461.67,455.65,1461.50,464.00 C1461.33,472.35,1460.00,490.06,1460.00,490.06 Z" fill="url(#logo-v4-circular-dark-name-gradient-r-second)" />
+      <path id="logo-v4-circular-dark-name-letter-c" d="M1873.00,494.25 C1866.82,494.93,1854.51,494.96,1849.00,494.47 C1843.49,493.98,1837.32,492.78,1832.00,491.25 C1826.68,489.73,1813.87,484.78,1809.00,482.28 C1804.13,479.79,1798.43,475.91,1794.63,473.00 C1790.83,470.09,1786.78,466.49,1783.52,463.00 C1780.25,459.51,1774.86,453.24,1771.73,448.00 C1768.61,442.76,1763.73,431.23,1761.75,425.00 C1759.76,418.77,1758.21,411.51,1757.53,405.00 C1756.85,398.49,1756.85,388.51,1757.53,382.00 C1758.21,375.49,1759.79,368.24,1761.75,362.00 C1763.70,355.76,1767.01,347.93,1769.76,343.00 C1772.52,338.07,1777.07,332.11,1780.00,328.63 C1782.93,325.15,1786.57,321.51,1790.00,318.52 C1793.43,315.52,1798.57,311.47,1803.00,308.73 C1807.43,306.00,1814.02,302.75,1819.00,300.75 C1823.98,298.74,1830.90,296.73,1835.00,295.75 C1839.10,294.76,1843.80,293.89,1848.00,293.53 C1852.20,293.18,1865.06,292.56,1873.00,293.53 C1880.94,294.50,1892.71,297.95,1898.00,299.75 C1903.29,301.54,1910.32,304.77,1914.00,306.73 C1917.68,308.70,1921.71,311.17,1925.00,313.73 C1928.29,316.30,1943.19,331.00,1943.19,331.00 C1943.19,331.00,1939.47,335.89,1937.50,338.00 C1935.52,340.11,1906.72,367.01,1906.00,367.25 C1905.28,367.49,1904.34,367.31,1903.65,367.00 C1902.96,366.69,1892.37,356.34,1890.00,354.73 C1887.63,353.13,1884.66,351.79,1882.00,350.75 C1879.34,349.70,1874.61,348.20,1871.00,347.53 C1867.39,346.86,1862.84,346.16,1859.00,346.53 C1855.16,346.90,1847.55,349.21,1844.00,350.75 C1840.45,352.28,1836.23,354.82,1833.64,357.00 C1831.06,359.18,1828.66,362.22,1826.73,365.00 C1824.81,367.78,1822.17,372.25,1820.75,376.00 C1819.33,379.75,1817.78,385.41,1817.53,390.00 C1817.28,394.59,1818.92,405.96,1819.75,409.00 C1820.58,412.04,1822.30,415.48,1823.73,418.00 C1825.17,420.52,1827.06,423.22,1829.00,425.37 C1830.94,427.53,1835.30,432.10,1839.00,434.27 C1842.70,436.43,1851.59,439.76,1857.00,440.47 C1862.41,441.18,1868.71,440.57,1874.00,439.25 C1879.29,437.93,1887.07,434.30,1892.00,431.27 C1896.93,428.23,1906.00,419.81,1906.00,419.81 C1906.00,419.81,1942.19,453.41,1942.44,454.00 C1942.70,454.59,1942.67,455.40,1942.44,456.00 C1942.22,456.60,1937.64,462.02,1935.00,464.48 C1932.36,466.95,1919.31,477.58,1913.00,481.27 C1906.69,484.95,1897.92,488.38,1892.00,490.25 C1886.08,492.13,1879.18,493.58,1873.00,494.25 Z" fill="url(#logo-v4-circular-dark-name-gradient-c)" />
+      <path id="logo-v4-circular-dark-name-letter-h-stems" d="M236.00,310.17 C236.00,310.17,234.75,308.80,234.50,308.00 C234.25,307.20,234.01,165.83,234.75,164.00 C235.48,162.17,237.18,160.31,239.00,159.53 C240.82,158.76,303.42,159.01,305.00,159.77 C306.58,160.52,307.87,162.35,308.47,164.00 C309.06,165.65,322.41,236.04,309.23,261.00 C296.05,285.96,236.00,310.17,236.00,310.17 Z M512.00,522.23 C510.00,523.16,463.22,523.04,461.00,522.47 C458.78,521.90,455.58,520.04,454.74,519.00 C453.89,517.96,453.70,516.32,453.50,515.00 C453.30,513.68,453.26,414.11,453.50,413.00 C453.75,411.89,455.00,409.77,455.00,409.77 C455.00,409.77,467.97,408.77,474.00,409.53 C480.03,410.29,497.32,414.67,501.00,416.77 C504.68,418.86,508.32,423.35,510.48,426.00 C512.64,428.65,515.27,431.72,516.23,435.00 C517.20,438.28,517.23,514.93,516.47,517.00 C515.71,519.07,514.00,521.31,512.00,522.23 Z" fill="url(#logo-v4-circular-dark-name-gradient-h-stems)" />
+    </g>
+    <g id="logo-v4-circular-dark-name-spectrum" fill-rule="evenodd" inkscape:groupmode="layer" inkscape:label="Six spectral ribbons from the reference">
+      <path id="logo-v4-circular-dark-name-band-violet" d="M238.00,332.26 C237.11,332.48,235.16,332.00,235.16,332.00 C235.16,332.00,234.54,329.30,234.53,328.00 C234.52,326.70,235.48,323.26,235.50,321.00 C235.52,318.74,234.25,314.14,234.53,313.00 C234.82,311.86,235.79,310.82,236.63,310.00 C237.47,309.18,300.23,266.71,311.00,260.73 C321.77,254.76,339.16,247.09,346.00,244.75 C352.84,242.40,361.34,240.47,368.00,239.53 C374.66,238.59,385.42,238.26,389.00,238.53 C392.58,238.80,396.55,239.74,400.00,240.75 C403.45,241.75,409.15,243.79,413.00,245.73 C416.85,247.68,421.30,250.47,424.37,253.00 C427.45,255.53,432.96,262.00,432.96,262.00 C432.96,262.00,411.77,257.03,407.00,256.53 C402.23,256.03,396.79,256.22,392.00,256.50 C387.21,256.78,380.38,257.51,375.00,258.53 C369.62,259.55,359.24,262.38,355.00,263.75 C350.76,265.11,346.06,266.92,342.00,268.75 C337.94,270.57,323.42,277.86,315.00,282.73 C306.58,287.61,238.89,332.05,238.00,332.26 Z" fill="url(#logo-v4-circular-dark-name-gradient-violet)" />
+      <path id="logo-v4-circular-dark-name-band-blue" d="M236.00,369.19 C236.00,369.19,234.75,367.81,234.50,367.00 C234.25,366.19,234.35,348.71,234.53,348.00 C234.72,347.29,235.15,346.54,235.64,346.00 C236.14,345.46,304.26,300.71,309.00,297.73 C313.74,294.76,319.08,291.42,324.00,288.76 C328.92,286.11,344.14,278.48,351.00,275.75 C357.86,273.01,367.32,270.15,373.00,268.75 C378.68,267.34,385.16,265.96,391.00,265.53 C396.84,265.11,419.75,266.12,423.00,266.53 C426.25,266.94,429.89,267.71,433.00,268.75 C436.11,269.78,439.66,271.12,442.37,273.00 C445.08,274.88,447.88,277.90,450.00,280.63 C452.12,283.35,456.17,291.00,456.17,291.00 C456.17,291.00,455.00,292.17,455.00,292.17 C455.00,292.17,449.03,288.79,446.00,287.75 C442.97,286.70,432.50,284.21,426.00,283.53 C419.50,282.85,411.15,282.98,405.00,283.50 C398.85,284.02,392.01,285.36,386.00,286.75 C379.99,288.13,367.25,291.84,362.00,293.75 C356.75,295.65,351.02,298.27,346.00,300.72 C340.98,303.17,329.49,309.23,322.00,313.73 C314.51,318.24,253.05,359.85,249.00,362.27 C244.95,364.68,236.00,369.19,236.00,369.19 Z" fill="url(#logo-v4-circular-dark-name-gradient-blue)" />
+      <path id="logo-v4-circular-dark-name-band-cyan" d="M237.00,405.23 C237.00,405.23,234.55,404.00,234.55,404.00 C234.55,404.00,234.35,384.71,234.53,384.00 C234.72,383.29,235.15,382.54,235.64,382.00 C236.14,381.46,314.03,329.65,324.00,323.73 C333.97,317.82,350.09,309.39,356.00,306.75 C361.91,304.10,370.57,301.19,375.00,299.75 C379.43,298.30,384.46,296.79,389.00,295.75 C393.54,294.70,407.90,291.98,413.00,291.53 C418.10,291.09,425.12,291.21,429.00,291.53 C432.88,291.85,437.42,292.71,441.00,293.53 C444.58,294.35,448.63,295.30,452.00,296.75 C455.37,298.19,460.32,301.06,462.00,302.52 C463.68,303.98,465.09,306.12,466.27,308.00 C467.44,309.88,472.17,320.00,472.17,320.00 C472.17,320.00,471.00,321.15,471.00,321.15 C471.00,321.15,464.36,317.14,461.00,315.75 C457.64,314.35,451.61,312.30,447.00,311.53 C442.39,310.76,429.10,309.98,421.00,310.50 C412.90,311.02,403.18,313.00,396.00,314.75 C388.82,316.49,380.86,319.01,374.00,321.75 C367.14,324.49,348.93,333.21,339.00,338.73 C329.07,344.26,318.47,351.45,309.00,357.73 C299.53,364.02,277.74,379.91,268.00,386.27 C258.26,392.62,237.00,405.23,237.00,405.23 Z" fill="url(#logo-v4-circular-dark-name-gradient-cyan)" />
+      <path id="logo-v4-circular-dark-name-band-green" d="M237.00,442.25 C236.37,442.38,235.00,442.06,235.00,442.06 C235.00,442.06,234.58,440.67,234.50,440.00 C234.42,439.33,234.18,422.12,234.53,421.00 C234.88,419.88,235.79,418.82,236.63,418.00 C237.47,417.18,324.65,359.09,330.00,355.73 C335.35,352.38,341.43,348.71,347.00,345.73 C352.57,342.76,366.38,335.44,376.00,331.75 C385.62,328.05,406.26,322.53,411.00,321.53 C415.74,320.53,421.17,319.85,426.00,319.53 C430.83,319.21,437.58,319.02,443.00,319.53 C448.42,320.04,456.31,321.58,460.00,322.75 C463.69,323.91,468.15,325.92,471.00,327.73 C473.85,329.55,476.97,331.93,479.00,334.63 C481.03,337.33,483.90,345.06,484.25,346.00 C484.61,346.94,485.17,349.00,485.17,349.00 C485.17,349.00,484.00,350.17,484.00,350.17 C484.00,350.17,477.36,346.14,474.00,344.75 C470.64,343.35,464.62,341.29,460.00,340.53 C455.38,339.77,435.15,338.93,428.00,339.50 C420.85,340.07,411.20,342.44,406.00,343.75 C400.80,345.06,395.03,346.89,390.00,348.75 C384.97,350.60,375.54,354.48,369.00,357.73 C362.46,360.99,349.75,368.26,341.00,373.73 C332.25,379.21,259.27,430.08,254.00,433.27 C248.73,436.45,237.63,442.13,237.00,442.25 Z" fill="url(#logo-v4-circular-dark-name-gradient-green)" />
+      <path id="logo-v4-circular-dark-name-band-yellow" d="M236.00,480.19 C236.00,480.19,234.75,478.81,234.50,478.00 C234.26,477.19,235.00,455.90,235.00,455.90 C235.00,455.90,263.83,438.90,277.00,430.27 C290.17,421.63,329.95,392.55,339.00,386.73 C348.05,380.92,363.31,372.19,368.00,369.73 C372.69,367.27,378.12,364.81,383.00,362.75 C387.88,360.68,398.65,356.42,404.00,354.75 C409.35,353.07,415.61,351.51,421.00,350.53 C426.39,349.55,433.21,348.81,438.00,348.53 C442.79,348.25,448.22,348.06,453.00,348.53 C457.78,349.01,464.02,350.18,469.00,351.75 C473.98,353.31,482.02,356.72,485.00,358.73 C487.98,360.75,491.65,364.78,493.00,366.63 C494.35,368.48,495.36,370.89,496.25,373.00 C497.15,375.11,500.77,386.00,500.77,386.00 C500.77,386.00,482.38,375.17,479.00,373.75 C475.62,372.32,471.59,371.27,468.00,370.53 C464.41,369.79,457.13,368.69,452.00,368.53 C446.87,368.37,441.09,368.90,436.00,369.53 C430.91,370.16,425.05,371.24,420.00,372.53 C414.95,373.83,404.87,376.98,398.00,379.75 C391.13,382.51,375.93,390.08,371.00,392.73 C366.07,395.39,360.70,398.69,356.00,401.73 C351.30,404.78,290.73,447.88,281.00,454.27 C271.27,460.65,254.38,470.85,250.00,473.27 C245.62,475.68,236.00,480.19,236.00,480.19 Z" fill="url(#logo-v4-circular-dark-name-gradient-yellow)" />
+      <path id="logo-v4-circular-dark-name-band-orange" d="M247.00,509.25 C243.83,509.68,237.71,509.65,237.00,509.47 C236.29,509.29,235.00,508.33,235.00,508.33 C235.00,508.33,234.36,495.71,234.53,495.00 C234.70,494.29,235.13,493.52,235.64,493.00 C236.16,492.48,266.88,476.15,281.00,467.27 C295.12,458.38,360.26,411.02,371.00,404.73 C381.74,398.45,401.31,389.65,406.00,387.75 C410.69,385.84,416.09,383.99,421.00,382.75 C425.91,381.50,441.17,378.86,445.00,378.53 C448.83,378.20,453.17,378.27,457.00,378.53 C460.83,378.79,470.72,380.26,473.00,380.75 C475.28,381.23,477.85,381.85,480.00,382.75 C482.15,383.64,495.03,390.32,498.37,393.00 C501.71,395.68,505.56,400.35,507.27,403.00 C508.97,405.65,510.21,409.03,511.25,412.00 C512.30,414.97,515.38,426.75,515.47,428.00 C515.55,429.25,515.00,431.89,515.00,431.89 C515.00,431.89,511.51,426.32,509.48,424.00 C507.46,421.68,497.15,412.02,494.37,410.00 C491.59,407.98,487.78,405.97,485.00,404.75 C482.22,403.52,478.97,402.38,476.00,401.75 C473.03,401.12,456.22,399.52,453.00,399.53 C449.78,399.54,446.17,400.00,443.00,400.53 C439.83,401.06,427.84,403.38,421.00,405.75 C414.16,408.12,398.31,415.86,393.00,418.73 C387.69,421.61,382.03,425.40,377.00,428.73 C371.97,432.07,356.18,442.96,346.63,450.00 C337.08,457.04,322.92,468.85,314.37,475.00 C305.83,481.15,294.43,488.96,287.00,493.27 C279.57,497.57,267.95,503.42,263.00,505.25 C258.05,507.08,250.17,508.83,247.00,509.25 Z" fill="url(#logo-v4-circular-dark-name-gradient-orange)" />
+    </g>
+    <g id="logo-v4-circular-dark-name-earth-satellite" inkscape:groupmode="layer" inkscape:label="Earth, two reference conifers, orbit and satellite">
+      <g id="logo-v4-circular-dark-name-earth" clip-path="url(#logo-v4-circular-dark-name-earth-clip)">
+        <ellipse id="logo-v4-circular-dark-name-earth-ring" cx="1623" cy="397" rx="122" ry="121" fill="url(#logo-v4-circular-dark-name-earth-fill)" />
+        <circle id="logo-v4-circular-dark-name-sky" cx="1623" cy="397" r="73" fill="url(#logo-v4-circular-dark-name-sky-fill)" />
+        <g id="logo-v4-circular-dark-name-mountains" clip-path="url(#logo-v4-circular-dark-name-window-clip)">
+          <path id="logo-v4-circular-dark-name-distant-mountain" d="M1547 409 L1558 399 L1594 373 L1623 390 L1641 398 L1658 410 L1697 390 L1710 459 L1538 484 Z" fill="#A8D3BA" />
+          <path id="logo-v4-circular-dark-name-near-mountain" d="M1540 447 Q1572 425 1603 431 L1649 403 L1678 409 L1706 435 L1710 487 L1535 487 Z" fill="#7FBF9E" />
+        </g>
+        <path id="logo-v4-circular-dark-name-right-ridge" d="M1634 438 L1699 371 L1722 389 L1756 417 L1758 519 L1578 531 L1574 486 Z" fill="#52A765" opacity=".76" />
+        <path id="logo-v4-circular-dark-name-forest-slope" d="M1590 458 Q1622 442 1644 427 Q1665 442 1693 436 L1748 466 L1765 542 L1559 539 L1559 480 Z" fill="#247B5C" opacity=".76" />
+        <path id="logo-v4-circular-dark-name-foreground" d="M1519 482 Q1571 467 1625 485 Q1681 510 1740 469 L1775 548 L1478 550 Z" fill="#0B4C42" opacity=".67" />
+        <g id="logo-v4-circular-dark-name-tree-tall" transform="translate(1663 447) scale(0.79)">
+          <path d="M0 -38 L-8 -21 L-5 -22 L-14 -5 L-10 -6 L-21 13 L-15 12 L-25 29 L-3 25 V33 H3 V25 L22 28 L15 14 L19 15 L10 -5 L13 -4 L4 -22 L7 -21 Z" fill="#155949" stroke="#D9E6D2" stroke-width="2.3" stroke-linejoin="round" />
+        </g>
+        <g id="logo-v4-circular-dark-name-tree-short" transform="translate(1686 459) scale(0.64)">
+          <path d="M0 -38 L-8 -21 L-5 -22 L-14 -5 L-10 -6 L-21 13 L-15 12 L-25 29 L-3 25 V33 H3 V25 L22 28 L15 14 L19 15 L10 -5 L13 -4 L4 -22 L7 -21 Z" fill="#155949" stroke="#D9E6D2" stroke-width="2.3" stroke-linejoin="round" />
+        </g>
+      </g>
+      <g id="logo-v4-circular-dark-name-orbit" fill="none" stroke-linecap="round">
+        <path id="logo-v4-circular-dark-name-orbit-highlight" d="M1479 456 C1459 522 1690 395 1748 321 C1768 298 1778 280 1771 270" stroke="#DCECEE" stroke-width="6" />
+        <path id="logo-v4-circular-dark-name-orbit-line" d="M1479 456 C1459 522 1690 395 1748 321 C1768 298 1778 280 1771 270" stroke="#71BABC" stroke-width="3" />
+      </g>
+      <g id="logo-v4-circular-dark-name-satellite" transform="translate(1788 229) rotate(25)">
+        <path d="M-46 0 H-28 M28 0 H46" stroke="#7DAAC4" stroke-width="5" />
+        <g id="logo-v4-circular-dark-name-solar-panel--1">
+          <rect x="-89" y="-23" width="46" height="46" fill="#195CC7" rx="1" />
+          <path d="M-66 -23 V23 M-89 0 H-43" stroke="#C1D1DF" stroke-width="1.6" opacity=".8" />
+        </g>
+        <g id="logo-v4-circular-dark-name-solar-panel-1">
+          <rect x="43" y="-23" width="46" height="46" fill="#195CC7" rx="1" />
+          <path d="M66 -23 V23 M43 0 H89" stroke="#C1D1DF" stroke-width="1.6" opacity=".8" />
+        </g>
+        <rect id="logo-v4-circular-dark-name-satellite-body" x="-27" y="-27" width="54" height="54" rx="11" fill="#7DAAC4" />
+        <circle id="logo-v4-circular-dark-name-satellite-lens" r="8" fill="#164C91" />
+        <ellipse id="logo-v4-circular-dark-name-antenna" cx="0" cy="50" rx="19" ry="11" fill="#7DAAC4" />
+        <path d="M-12 57 Q-1 48 8 64" fill="none" stroke="#428B8C" stroke-width="5" stroke-linecap="round" />
+      </g>
     </g>
   </g>
 </svg>
