@@ -854,6 +854,8 @@
       
         
       
+        
+      
     
     
     
@@ -1231,6 +1233,34 @@
     
   
     Validation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tools/ai-assistants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI assistant skill
   
 
     
@@ -5080,11 +5110,24 @@ else <code>pip install hyperproc</code> needs, it installs itself.</p>
 already in place without downloading anything. On a shared machine, add
 <code>--base /data/shared/isofit_assets</code> so every user reads one copy.</p>
 <p><a href="getting-started/installation/">Installation guide: environments, optional features, and setup requirements</a></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">hyperproc</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">hp</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">ds</span> <span class="o">=</span> <span class="n">hp</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"/path/to/a/supported/provider_product"</span><span class="p">)</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">hp</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">ds</span><span class="p">)</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">ndvi</span> <span class="o">=</span> <span class="n">hp</span><span class="o">.</span><span class="n">spectral_index</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="s2">"NDVI"</span><span class="p">)</span>  <span class="c1"># use suitable reflectance, not radiance</span>
+<p><strong>Using hyperproc with an AI assistant</strong></p>
+<p>A skill that teaches Claude Code and Codex how this package works: the sensor
+and archive matrices, which grid a window indexes on each sensor and level,
+the atmospheric route and its work-directory rules, and what the correction
+diagnostics mean. It reports what a diagnostic found; it does not make the
+scientific decisions for you.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span><span class="w"> </span>--filter<span class="o">=</span>blob:none<span class="w"> </span>--sparse<span class="w"> </span>https://github.com/FujiangJi/hyperproc.git
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">cd</span><span class="w"> </span>hyperproc<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>sparse-checkout<span class="w"> </span><span class="nb">set</span><span class="w"> </span>skills
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>./skills/install.sh<span class="w"> </span>--claude
+</code></pre></div>
+<p>The last line takes <code>--claude</code>, <code>--codex</code> or <code>--both</code>. Full details, including
+what to do when you already have an <code>AGENTS.md</code>:
+<a href="tools/ai-assistants/">AI assistant skill</a>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">hyperproc</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">hp</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">ds</span> <span class="o">=</span> <span class="n">hp</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"/path/to/a/supported/provider_product"</span><span class="p">)</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">hp</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">ds</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">ndvi</span> <span class="o">=</span> <span class="n">hp</span><span class="o">.</span><span class="n">spectral_index</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="s2">"NDVI"</span><span class="p">)</span>  <span class="c1"># use suitable reflectance, not radiance</span>
 </code></pre></div>
 <div class="grid cards">
 <ul>

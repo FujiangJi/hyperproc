@@ -2,482 +2,486 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://fujiangji.github.io/hyperproc/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-_ncrc/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-align/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-archive-api/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-archive-cmr/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-archive-collections/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-archive-dlr/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-archive-interactive/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-archive-neon/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-archive-results/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-archive/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-atmos-_runner/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-atmos-aerosols/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-atmos-correct/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-atmos-dem/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-atmos-engines/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-atmos-inputs/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-atmos-process/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-atmos-setup/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-atmos/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-correct-brdf/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-correct-cfactor/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-correct-coefficients/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-correct-kernels/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-correct-masks/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-correct-mcd43/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-correct-pipeline/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-correct-topo/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-correct/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-features/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-geometry/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-grid/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-io/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-quality/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers-_common/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers-aviris/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers-desis/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers-emit/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers-enmap/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers-neon/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers-pace/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers-prisma/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers-tanager/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-readers/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-registry/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-report/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-_smoothspline/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-bands/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-continuum/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-derivatives/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-resampling/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-smoothing/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-spectral-srf/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc-spectral/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/api/hyperproc/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/background/data-model/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/background/decision-guide/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/background/measurements/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/background/overview/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/background/references/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/data/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/development/adding-reader/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/development/architecture/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/development/documentation/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/development/testing/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/documentation/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/getting-started/configuration/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/getting-started/data-access/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/getting-started/installation/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/getting-started/quickstart/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/project/about/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/project/governance/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/project/releases/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/project/status/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/project/troubleshooting/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/sensors/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/sensors/aviris/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/sensors/desis/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/sensors/emit/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/sensors/enmap/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/sensors/neon/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/sensors/pace/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/sensors/prisma/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/sensors/tanager/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tools/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
+    </url>
+    <url>
+         <loc>https://fujiangji.github.io/hyperproc/tools/ai-assistants/</loc>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/aviris3-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/aviris3-walkthrough/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/aviris5-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/avirisclassic-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/avirisng-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/caveats/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/desis-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/desis-window-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/emit-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/emit-window-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/enmap-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/enmap-window-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/neon-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/pace-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/pace-window-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/prisma-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/prisma-window-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/search-download-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/tanager-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/tutorials/tanager-window-tutorial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/airborne/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/atmosphere/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/export/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/features/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/performance/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/quality/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/reading/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/resampling/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/satellite/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/search/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/spatial/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/spectral/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
     <url>
          <loc>https://fujiangji.github.io/hyperproc/workflows/validation/</loc>
-         <lastmod>2026-10-04</lastmod>
+         <lastmod>2026-10-05</lastmod>
     </url>
 </urlset>
